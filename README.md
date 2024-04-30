@@ -14,7 +14,7 @@ pip install mzn-bench
 ## Structure
 
 We adopt the _convention over configuration_ philosophy, meaning we expect files to be structured in a certain way.
-In your project, you should have the following directory structure (template files can be copied from [Turbo/benchmarks](https://github.com/ptal/turbo/tree/main/benchmarks)):
+By cloning this project, you will have the following directory structure:
 
 * benchmarks/
   - analyzing/
