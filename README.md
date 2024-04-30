@@ -5,6 +5,9 @@ In this document, we discuss our workflow to benchmark constraint solvers.
 ## Prerequisites
 
 ```
+git clone --recursive git@github.com:lattice-land/bench.git
+python -m venv benchmarks/pybench
+source benchmarks/pybench/bin/activate
 pip install mzn-bench
 ```
 
