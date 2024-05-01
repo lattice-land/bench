@@ -3,18 +3,17 @@
 # Exits when an error occurs.
 set -e
 
-# I. Define the campaign to run and hardware information.
+# I. Define the campaign to run.
 
 MZN_SOLVER="org.choco.choco"
 VERSION="v4.10.13"
 MZN_TIMEOUT=1200000
 NUM_JOBS=8
+MACHINE="aion"
+INSTANCE_FILE="mzn2023.csv"
 
-HARDWARE="\"AMD Epyc ROME 7H12@2.6GHz; RAM 256GO\""
-SHORT_HARDWARE="aion"
 MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream -t $MZN_TIMEOUT --output-mode json --output-time --output-objective"
-INSTANCE_FILE="mzn2021-23.csv"
-OUTPUT_DIR=$(pwd)"/../data/campaign/$MZN_SOLVER-$VERSION-$SHORT_HARDWARE"
+OUTPUT_DIR=$(pwd)"/../campaign/$MACHINE/$MZN_SOLVER-$VERSION"
 mkdir -p $OUTPUT_DIR
 
 ## II. Gather the list of Slurm nodes to run the experiments on many nodes if available.
@@ -28,14 +27,20 @@ if [ -n "${SLURM_JOB_NODELIST}" ]; then
       ssh-keyscan "$node" >> ~/.ssh/known_hosts
   done < "$NODES_HOSTNAME"
   MULTINODES_OPTION="--sshloginfile $NODES_HOSTNAME"
-  cp $(realpath "$(dirname "$0")")/slurm.sh $OUTPUT_DIR/
+
+  if [ -z "$1" ]; then
+    echo "Usage: $0 path_to_slurm_script (we store the slurm script in the campaign for replicability)"
+    exit 1
+  fi
+  cp "$1" $OUTPUT_DIR/ # this is the Slurm script
 fi
 
 # III. Run the experiments in parallel (one per sockets).
 
-DUMP_PY_PATH=$(pwd)/dump.py
+DUMP_PY_PATH=$(pwd)/minizinc/dump.py
 
-cp $0 $OUTPUT_DIR/ # for replicability.
+# For replicability.
+cp "$0" $OUTPUT_DIR/
 cp $DUMP_PY_PATH $OUTPUT_DIR/
 cp $INSTANCE_FILE $OUTPUT_DIR/
 

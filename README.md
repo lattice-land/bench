@@ -6,6 +6,9 @@ In this document, we discuss our workflow to benchmark constraint solvers.
 
 ```
 git clone --recursive git@github.com:lattice-land/bench.git
+cd bench
+salloc -p interactive --qos debug -C batch    # skip if not on HPC
+module load lang/Python/3.8.6-GCCcore-10.2.0  # skip if not on HPC
 python -m venv benchmarks/pybench
 source benchmarks/pybench/bin/activate
 pip install mzn-bench
@@ -25,7 +28,7 @@ By cloning this project, you will have the following directory structure:
   - benchmarking/
     - configure.sh
     - dump.py
-    - run.sh
+    - run-mzn.sh
     - slurm.sh
   - campaign/
   - [mzn-challenge/](https://github.com/MiniZinc/mzn-challenge/)
@@ -33,9 +36,7 @@ By cloning this project, you will have the following directory structure:
 
 ## Benchmarking
 
-This project must be cloned and you can directly edit the files provided for your own usage.
-
-We call a _campaign_ a benchmarking session uniquely identified by a solver's identifier (`com.google.or-tools`, `org.choco.choco`), the version of the solver and a short description of the hardware (for Turbo, I use the name of the GPU, e.g. `A100`).
+We call a _campaign_ a benchmarking session uniquely identified by a solver's identifier (`com.google.or-tools`, `org.choco.choco`), the version of the solver and a short description of the hardware (can be the name of the HPC system, e.g., aion at the University of Luxembourg).
 The _set of instances_ is a simple CSV file with three columns.
 You can generate automatically this CSV using:
 
@@ -43,7 +44,7 @@ You can generate automatically this CSV using:
 mzn-bench collect-instances ../data/mzn-challenge/2023 > mzn2023.csv
 ```
 
-The main parameters of your campaign are specified in the script `benchmarking/run.sh` that you must adapt depending on your needs.
+The main parameters of your campaign are specified in the script `benchmarking/run-mzn.sh` that you must adapt depending on your needs.
 In particular, we have the following variables:
 
 * `INSTANCE_FILE` is the name of the CSV generated above.
@@ -58,7 +59,7 @@ In particular, we have the following variables:
 The `parallel` command runs the set of experiments in parallel.
 It works locally on your computer, but when you are on a HPC, the experiments are automatically run _across nodes_ (for 10 nodes and 8 sockets per nodes, it runs 80 experiments in parallel at each instant).
 This command is useful when the Slurm jobs queue is limited in size per user, and you have thousands of experiments to run.
-The full command (in `run.sh`) is:
+The full command (in `run-mzn.sh`) is:
 ```
 parallel --no-run-if-empty $MULTINODES_OPTION --rpl '{} uq()' --jobs $NUM_JOBS -k --colsep ',' --skip-first-line $MZN_COMMAND {2} {3} '|' python3 $DUMP_PY_PATH $OUTPUT_DIR {1} {2} {3} $MZN_SOLVER :::: $INSTANCE_FILE
 ```
@@ -84,7 +85,7 @@ It is possible to pass more arguments in case these 4 are not sufficient to gene
 
 ### HPC Slurm Configuration
 
-The file `run.sh` can be used locally (the `slurm` multinodes option will simply be ignored).
+The file `run-mzn.sh` can be used locally (the `slurm` multinodes option will simply be ignored).
 If you want to use it on the HPC, there are two additional scripts to complete:
 
 * `slurm.sh` which contains all the reservation detail (account name, number of nodes, time, ...).
@@ -98,7 +99,7 @@ source /project/scratch/p200244/lattice-land/bench/benchmarks/benchmarking/confi
 cd /project/scratch/p200244/lattice-land/bench/benchmarks/benchmarking
 ```
 
-When running on multiple nodes, the SSH connections triggered by `parallel` will automatically set up the configuration and we will be in the right directory to execute the command.
+When running on multiple nodes, the SSH connections triggered by `parallel` will automatically set up the configuration, and we will be in the right directory to execute the command.
 
 ### More Experiments with Different Solver's Options
 

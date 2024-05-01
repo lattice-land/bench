@@ -13,4 +13,10 @@
 
 echo $SLURM_JOB_NODELIST
 
-./run.sh
+# Check if a script name has been provided as an argument
+if [ -z "$1" ]; then
+    echo "Usage: $0 path_to_script"
+    exit 1
+fi
+
+./"$1" "$0"
