@@ -4,6 +4,7 @@
 set -e
 
 BENCH_PATH=$(dirname $(realpath "$0"))
+BENCHMARKING_PATH="$BENCH_PATH/../"
 BENCH_ROOT_PATH="$BENCH_PATH/../../"
 
 # I. Define the campaign to run.
@@ -40,4 +41,4 @@ DUMP_PY_PATH="$BENCH_PATH/dump.py"
 cp -r $BENCH_PATH $OUTPUT_DIR/
 cp $INSTANCES_PATH $OUTPUT_DIR/$(basename "$BENCH_PATH")/
 
-parallel --no-run-if-empty $MULTINODES_OPTION --rpl '{} uq()' --jobs $NUM_JOBS -k --colsep ',' --skip-first-line $MZN_COMMAND $BENCH_PATH/{2} $BENCH_PATH/{3} '|' python3 $DUMP_PY_PATH $OUTPUT_DIR {1} {2} {3} $MZN_SOLVER :::: $INSTANCES_PATH
+parallel --no-run-if-empty $MULTINODES_OPTION --rpl '{} uq()' --jobs $NUM_JOBS -k --colsep ',' --skip-first-line $MZN_COMMAND $BENCHMARKING_PATH/{2} $BENCHMARKING_PATH/{3} '|' python3 $DUMP_PY_PATH $OUTPUT_DIR {1} {2} {3} $MZN_SOLVER :::: $INSTANCES_PATH
