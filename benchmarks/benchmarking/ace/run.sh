@@ -6,14 +6,14 @@
 #SBATCH --exclusive
 #SBATCH --mem=0
 #SBATCH --export=ALL
-#SBATCH --output=slurm.out
+#SBATCH --output=slurm-ace.out
 
 # Exits when an error occurs.
 set -e
 set -x # useful for debugging.
 
 # Shortcuts of paths to benchmarking directories.
-ACE_WORKFLOW_PATH=$(dirname $(realpath "$0"))
+ACE_WORKFLOW_PATH=$(dirname $(realpath "run.sh"))
 BENCHMARKING_DIR_PATH="$ACE_WORKFLOW_PATH/.."
 BENCHMARKS_DIR_PATH="$ACE_WORKFLOW_PATH/../.."
 
@@ -39,8 +39,9 @@ CORES=1 # The number of core used on the node.
 MACHINE=$(basename "$1" ".sh")
 INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/xcsp22_minicop.csv"
 
+MEM_GB_PER_XP=32 # similar to Minizinc competition.
 # II. Prepare the command lines and output directory.
-ACE_COMMAND="java -jar $HOME/deps/ACE/build/libs/ACE-2.3.jar"
+ACE_COMMAND="java -Xmx${MEM_PER_XP}g -jar $HOME/deps/ACE/build/libs/ACE-2.3.jar"
 ACE_OPTIONS="-t=$TIMEOUT" # be careful, in ACE the options must be situed after the instance file.
 OUTPUT_DIR="$BENCHMARKS_DIR_PATH/campaign/$MACHINE/ACE-2.3"
 mkdir -p $OUTPUT_DIR
@@ -64,4 +65,4 @@ lshw -json > $OUTPUT_DIR/$(basename "$ACE_WORKFLOW_PATH")/hardware-"$MACHINE".js
 # The `parallel` command spawns one `srun` command per experiment, which executes the minizinc solver with the right resources.
 
 COMMANDS_LOG="$OUTPUT_DIR/$(basename "$ACE_WORKFLOW_PATH")/jobs.log"
-parallel --no-run-if-empty --rpl '{} uq()' -k --colsep ',' --skip-first-line -j $NUM_PARALLEL_EXPERIMENTS --resume --joblog $COMMANDS_LOG $SRUN_COMMAND $ACE_COMMAND $BENCHMARKING_DIR_PATH/{3} $ACE_OPTIONS '2>&1' '>' $OUTPUT_DIR/{1}"_"{2}.log :::: $INSTANCES_PATH
+parallel --verbose --no-run-if-empty --rpl '{} uq()' -k --colsep ',' --skip-first-line -j $NUM_PARALLEL_EXPERIMENTS --resume --joblog $COMMANDS_LOG $SRUN_COMMAND $ACE_COMMAND $BENCHMARKING_DIR_PATH/{3} $ACE_OPTIONS '2>&1' '>' $OUTPUT_DIR/{1}"_"{2}.log :::: $INSTANCES_PATH

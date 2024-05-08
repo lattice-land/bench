@@ -6,14 +6,14 @@
 #SBATCH --exclusive
 #SBATCH --mem=0
 #SBATCH --export=ALL
-#SBATCH --output=slurm.out
+#SBATCH --output=slurm-mzn.out
 
 # Exits when an error occurs.
 set -e
 set -x # useful for debugging.
 
 # Shortcuts of paths to benchmarking directories.
-MZN_WORKFLOW_PATH=$(dirname $(realpath "$0"))
+MZN_WORKFLOW_PATH=$(dirname $(realpath "run.sh"))
 BENCHMARKING_DIR_PATH="$MZN_WORKFLOW_PATH/.."
 BENCHMARKS_DIR_PATH="$MZN_WORKFLOW_PATH/../.."
 
@@ -23,7 +23,7 @@ if [ -z "$1" ]; then
   echo "  Name of the machine running the experiments with the configuration of the environment."
   exit 1
 fi
-./$1
+source $1
 source ${BENCHMARKS_DIR_PATH}/../pybench/bin/activate
 
 # If it has an argument, we retry the jobs that failed on a previous run.
@@ -56,7 +56,6 @@ else
   NUM_PARALLEL_EXPERIMENTS=1
 fi
 
-
 DUMP_PY_PATH="$MZN_WORKFLOW_PATH/dump.py"
 
 # For replicability.
@@ -70,4 +69,4 @@ lshw -json > $OUTPUT_DIR/$(basename "$MZN_WORKFLOW_PATH")/hardware-"$MACHINE".js
 # The `parallel` command spawns one `srun` command per experiment, which executes the minizinc solver with the right resources.
 
 COMMANDS_LOG="$OUTPUT_DIR/$(basename "$MZN_WORKFLOW_PATH")/jobs.log"
-parallel --no-run-if-empty --rpl '{} uq()' -k --colsep ',' --skip-first-line -j $NUM_PARALLEL_EXPERIMENTS --resume --joblog $COMMANDS_LOG $SRUN_COMMAND $MZN_COMMAND $BENCHMARKING_DIR_PATH/{2} $BENCHMARKING_DIR_PATH/{3} '2>&1' '|' python3 $DUMP_PY_PATH $OUTPUT_DIR {1} {2} {3} $MZN_SOLVER $CORES $THREADS :::: $INSTANCES_PATH
+parallel --verbose --no-run-if-empty --rpl '{} uq()' -k --colsep ',' --skip-first-line -j $NUM_PARALLEL_EXPERIMENTS --resume --joblog $COMMANDS_LOG $SRUN_COMMAND $MZN_COMMAND $BENCHMARKING_DIR_PATH/{2} $BENCHMARKING_DIR_PATH/{3} '2>&1' '|' python3 $DUMP_PY_PATH $OUTPUT_DIR {1} {2} {3} $MZN_SOLVER $CORES $THREADS :::: $INSTANCES_PATH
