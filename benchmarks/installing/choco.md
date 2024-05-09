@@ -34,7 +34,6 @@ with (where you replace `PATH_HOME` with the output of `echo $HOME`):
 ## Running
 
 You can then test with:
-
 ```
 module load compiler/GCCcore/10.2.0 # for minizinc
 module load lang/Java/16.0.1 # for Choco

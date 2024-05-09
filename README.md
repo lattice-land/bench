@@ -11,7 +11,7 @@ salloc -p interactive --qos debug -C batch    # skip if not on HPC
 module load lang/Python/3.8.6-GCCcore-10.2.0  # skip if not on HPC
 python -m venv benchmarks/pybench
 source benchmarks/pybench/bin/activate
-pip install mzn-bench
+pip install git+https://github.com/MiniZinc/mzn-bench.git#egg=mzn-bench[scripts]
 ```
 
 ## Structure
