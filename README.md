@@ -128,23 +128,17 @@ We notice three things:
 The option `--dry-run` of `parallel` becomes very interesting: it lists all the commands that will be launched by `parallel`, without executing them.
 You can verify the well-formedness of the commands before starting the experiments.
 
-## Analyzing
+## Postprocessing
 
-Once the experiments are finished, you can verify the results using:
-
-```
-./analyzing/mznbench_check.sh campaign/turbo.gpu.profiling-v1.1.3-A100
-```
-
-Then, you can generate a summary of the experiments, to be further analyzed using:
+Once the experiments are finished, you can create verify the answers given by the solver and create two CSV summary files (in `benchmarking/minizinc`):
 
 ```
-./analyzing/mznbench_collect.sh campaign/turbo.gpu.release-v1.1.7-A5000
+./postprocess.sh ../../campaign/aion/org.choco.choco-v4.10.14/
 ```
 
 It creates two files:
-* `campaign/turbo.gpu.release-v1.1.7-A5000.csv`: The statistics and best objective found for each experiment.
-* `campaign/turbo.gpu.release-v1.1.7-A5000-objectives.csv`: All the objectives found for each experiment.
+* `campaign/aion/org.choco.choco-v4.10.14.csv`: The statistics and best objective found for each experiment.
+* `campaign/aion/org.choco.choco-v4.10.14-objectives.csv`: All the objectives found for each experiment.
 
 The analysis of the benchmarks is then carried out in the Jupyter notebook `analysis.ipynb` which uses `analysis.py` to gather/summarize/display the data.
-Once again, these files can be extended or modified for your particular purposes.
+These files can be extended or modified for your particular purposes.
