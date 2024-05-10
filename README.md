@@ -133,6 +133,7 @@ You can verify the well-formedness of the commands before starting the experimen
 Once the experiments are finished, you can create verify the answers given by the solver and create two CSV summary files (in `benchmarking/minizinc`):
 
 ```
+source ../../../pybench/bin/activate
 ./postprocess.sh ../../campaign/aion/org.choco.choco-v4.10.14/
 ```
 

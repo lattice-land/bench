@@ -41,7 +41,7 @@ INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/xcsp22_minicop.csv"
 
 MEM_GB_PER_XP=32 # similar to Minizinc competition.
 # II. Prepare the command lines and output directory.
-ACE_COMMAND="java -Xmx${MEM_PER_XP}g -jar $HOME/deps/ACE/build/libs/ACE-2.3.jar"
+ACE_COMMAND="java -Xmx${MEM_GB_PER_XP}g -jar $HOME/deps/ACE/build/libs/ACE-2.3.jar"
 ACE_OPTIONS="-t=$TIMEOUT" # be careful, in ACE the options must be situed after the instance file.
 OUTPUT_DIR="$BENCHMARKS_DIR_PATH/campaign/$MACHINE/ACE-2.3"
 mkdir -p $OUTPUT_DIR
