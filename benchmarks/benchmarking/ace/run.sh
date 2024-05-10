@@ -23,7 +23,7 @@ if [ -z "$1" ]; then
   echo "  Name of the machine running the experiments with the configuration of the environment."
   exit 1
 fi
-./$1
+source $1
 
 # If it has an argument, we retry the jobs that failed on a previous run.
 # If the experiments were not complete, you can simply rerun the script, parallel will ignore the jobs that are already done.
