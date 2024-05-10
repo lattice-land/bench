@@ -34,7 +34,7 @@ fi
 
 # I. Define the campaign to run.
 
-TIMEOUT=60000
+TIMEOUT=1200000
 CORES=1 # The number of core used on the node.
 MACHINE=$(basename "$1" ".sh")
 INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/xcsp22_minicop.csv"
