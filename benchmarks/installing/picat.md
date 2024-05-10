@@ -43,5 +43,5 @@ You can check whether it works by running:
 ```
 module load compiler/GCCcore/10.2.0 # for minizinc
 cd ~/lattice-land/bench/benchmarks/data/mzn-challenge/2023/mrcpsp/
-minizinc --solver com.google.ortools.sat -t 60000 mrcpsp.mzn j30_25_5.dzn
+minizinc --solver org.picat-lang.picat -t 60000 mrcpsp.mzn j30_25_5.dzn
 ```
