@@ -17,21 +17,21 @@ if __name__=="__main__":
       config["source"]["path"]=sys.argv[1]
       with tempfile.NamedTemporaryFile(delete=False,mode="w",suffix=".yaml") as tmp:
         yaml.dump(config, tmp)
-        my_campaign = BasicAnalysis(input_file=tmp.name, log_level='WARNING')
+        my_campaign = BasicAnalysis(input_file=tmp.name, log_level='INFO')
         df = my_campaign.data_frame
         df["configuration"] = df.apply(lambda x: x["experiment_ware"].lower()+"_"+x["input"].lower(), axis=1)
         df["problem"] = df["input"].apply(lambda x: x.split("-")[0].lower())
         df["model"]=df["input"].values
         df["time"]=df["cpu_time"].values
         df["method"]=df["method"].apply(lambda x: "minimize" if x=="min" else  ("maximize" if x=='max' else x)) 
-        
-        campaign_name = os.path.basename(sys.argv[1])
-        
-        stat_df = df[["configuration","problem","model","status","time","cores","thread","datetime","failures","propagations","method","nSolutions","objective"]]
+        campaign_name = sys.argv[1].split("/")[-2]
+        stat_df = df[["configuration","problem","model","status","time","cores","threads","datetime","failures","propagations","method","nSolutions","objective"]]
+        loguru.logger.info(f"Writing statistics to csv: {sys.argv[1]}/../{campaign_name}.csv")
         stat_df.to_csv(f"{sys.argv[1]}/../{campaign_name}.csv",index=False)
-        
-        obj_df = df[["configuration","problem","model","time","objective"]] 
+        obj_df = df[["configuration","problem","model","time","objective"]]
+        loguru.logger.info(f"Writing objectives to csv: {sys.argv[1]}/../{campaign_name}-objectives.csv") 
         obj_df.to_csv(f"{sys.argv[1]}/../{campaign_name}-objectives.csv",index=False)
+
     except yaml.YAMLError as exc:
       loguru.logger.error(exc)
   

@@ -8,6 +8,5 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
-
-python3 postprocess.py $1
-
+dir=$(dirname $0)
+python3 $dir/postprocess.py $1
