@@ -1,0 +1,36 @@
+setup:
+  timeout: 1200
+  memout: 1024
+source:
+  path: .
+  format: one-file
+data:
+  default-values:
+    experiment_ware: ace_2.3_aion
+    status: UNKNOWN
+    nSolutions: 0
+    cores: 0
+    threads: 0
+    failures: 0
+    propagations: 0
+    datetime: null
+  file-name-meta:
+    pattern: "XCSP23_COP23_{any}.log"
+    groups:
+      input: 1
+  raw-data:
+    - log-data: status
+      file: "*.log"
+      pattern: "s {word}"
+    - log-data: objective
+      file: "*.log"
+      pattern: "BOUND {integer}"
+    - log-data: nSolutions
+      file: "*.log"
+      pattern: "FOUND SOLUTIONS {integer}"
+    - log-data: cpu_time 
+      file: "*.log"
+      pattern: "c real time : {real}"
+    - log-data: method
+      file: "*.log"
+      pattern: "way:{word}"
