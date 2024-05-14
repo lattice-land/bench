@@ -11,7 +11,7 @@ if __name__=="__main__":
     loguru.logger.error("Usage: python postprocess.py <path_to_campaign>")
     sys.exit(1)
   loguru.logger.info("Starting postprocessing....")
-  with open(os.path.join(pathlib.Path(__file__).parent.resolve(),'config.yml'), 'r') as stream:
+  with open(os.path.join(pathlib.Path(__file__).parent.resolve(),'postprocess_config.yml'), 'r') as stream:
     try:
       config = yaml.safe_load(stream)
       config["source"]["path"]=sys.argv[1]
