@@ -12,6 +12,7 @@ module load lang/Python/3.8.6-GCCcore-10.2.0  # skip if not on HPC
 python -m venv pybench
 source pybench/bin/activate
 pip install git+https://github.com/MiniZinc/mzn-bench.git#egg=mzn-bench[scripts]
+pip install crillab-metrics
 ```
 
 ## Structure
