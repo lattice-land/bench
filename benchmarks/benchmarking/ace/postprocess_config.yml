@@ -6,18 +6,14 @@ source:
   format: one-file
 data:
   default-values:
-    experiment_ware: ace_2.3_aion
     status: UNKNOWN
     nSolutions: 0
-    cores: 0
-    threads: 0
+    cores: 1
+    threads: 1
     failures: 0
     propagations: 0
     datetime: null
-  file-name-meta:
-    pattern: "XCSP23_COP23_{any}.log"
-    groups:
-      input: 1
+    method: satisfy
   raw-data:
     - log-data: status
       file: "*.log"
@@ -25,7 +21,7 @@ data:
     - log-data: objective
       file: "*.log"
       pattern: "BOUND {integer}"
-    - log-data: nSolutions
+    - log-data: solutions
       file: "*.log"
       pattern: "FOUND SOLUTIONS {integer}"
     - log-data: cpu_time 
@@ -34,3 +30,18 @@ data:
     - log-data: method
       file: "*.log"
       pattern: "way:{word}"
+    - log-data: cores
+      file: "*.log"
+      pattern: "cores: {integer}"
+    - log-data: threads
+      file: "*.log"
+      pattern: "threads: {integer}"
+    - log-data: datetime
+      file: "*.log"
+      pattern: "datetime: {any}"
+    - log-data: experiment_ware
+      file: "*.log"
+      pattern: "experiment_ware: {any}"
+    - log-data: options
+      file: "*.log"
+      pattern: "extras: {any}"
