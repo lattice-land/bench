@@ -15,6 +15,7 @@ To compile Turbo, you need four modules: CUDA-12.4.0, Doxygen-1.9.8, libxml2-2.1
 On the HPC of uni.lu, the version of CMake and Doxygen provided by default are not recent enough, we need to compile them ourselves.
 ```
 salloc -p interactive --qos debug -C batch --mem=0 # note --mem=0 to have more memory for the compilation and avoid ptxas to crash.
+module load lang/Python
 python -m venv eb-venv
 source eb-venv/bin/activate
 python3 -m pip install easybuild # install latest version of easybuild.
