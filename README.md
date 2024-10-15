@@ -68,7 +68,7 @@ Depending on the solver you want to benchmark you must select a _workflow_, we h
 
 The first thing to do is to copy locally a directory depending on the campaign you are preparing:
 ```
-cp minizinc mzn2023
+cp -r minizinc mzn2023
 ```
 Inside `mzn2023` you can modify the parameters in the script `run.sh` (changing the solvers, timeout, cores, etc.).
 It is also in `run.sh` that you set up the number of nodes you want to allocate to run the experiments.

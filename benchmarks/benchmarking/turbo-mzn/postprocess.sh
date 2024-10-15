@@ -12,12 +12,12 @@ fi
 MZNBENCH_TMP=$1/tmp
 mkdir -p $MZNBENCH_TMP
 MZNBENCH_TMP=$(realpath $MZNBENCH_TMP)
-#for file in $1/*.json; do
-#  python3 postprocess.py $MZNBENCH_TMP $file
-#done
+for file in $1/*.json; do
+  python3 postprocess.py $MZNBENCH_TMP $file
+done
 
 cd ..  # mzn-bench needs to access the model and data files from "../data".
-#mzn-bench check-solutions $MZNBENCH_TMP || exit 1
+mzn-bench check-solutions $MZNBENCH_TMP || exit 1
 mzn-bench check-statuses $MZNBENCH_TMP || exit 1
 cd minizinc
 

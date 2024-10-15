@@ -44,7 +44,7 @@ MACHINE=$(basename "$1" ".sh")
 INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2023.csv"
 
 # II. Prepare the command lines and output directory.
-MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream -t $MZN_TIMEOUT --output-mode json --output-time --output-objective -f -p $THREADS"
+MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream -i -t $MZN_TIMEOUT --output-mode json --output-time --output-objective -f -p $THREADS"
 OUTPUT_DIR="$BENCHMARKS_DIR_PATH/campaign/$MACHINE/$MZN_SOLVER-$VERSION"
 mkdir -p $OUTPUT_DIR
 
@@ -69,4 +69,4 @@ lshw -json > $OUTPUT_DIR/$(basename "$MZN_WORKFLOW_PATH")/hardware-"$MACHINE".js
 # The `parallel` command spawns one `srun` command per experiment, which executes the minizinc solver with the right resources.
 
 COMMANDS_LOG="$OUTPUT_DIR/$(basename "$MZN_WORKFLOW_PATH")/jobs.log"
-parallel --verbose --no-run-if-empty --rpl '{} uq()' -k --colsep ',' --skip-first-line -j $NUM_PARALLEL_EXPERIMENTS --resume --joblog $COMMANDS_LOG $SRUN_COMMAND $MZN_COMMAND $BENCHMARKING_DIR_PATH/{2} $BENCHMARKING_DIR_PATH/{3} '2>&1' '|' python3 $DUMP_PY_PATH $OUTPUT_DIR {1} {2} {3} $MZN_SOLVER $CORES $THREADS :::: $INSTANCES_PATH
+parallel --verbose --no-run-if-empty --rpl '{} uq()' -k --colsep ',' --skip-first-line -j $NUM_PARALLEL_EXPERIMENTS --resume --joblog $COMMANDS_LOG $SRUN_COMMAND $MZN_COMMAND $BENCHMARKING_DIR_PATH/{2} $BENCHMARKING_DIR_PATH/{3} '2>&1' '|' python3 $DUMP_PY_PATH $OUTPUT_DIR {1} {2} {3} $MZN_SOLVER $VERSION $MZN_TIMEOUT $CORES $THREADS :::: $INSTANCES_PATH

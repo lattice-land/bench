@@ -19,8 +19,8 @@ done
 mzn-bench collect-objectives $MZNBENCH_TMP $1/../$(basename $1)-objectives.csv
 mzn-bench collect-statistics $MZNBENCH_TMP $1/../$(basename $1).csv
 
-# cd ..  # mzn-bench needs to access the model and data files from "../data".
-# mzn-bench check-solutions $MZNBENCH_TMP | tee checker.log
-# mzn-bench check-statuses $MZNBENCH_TMP | tee checker-status.log
-# cd minizinc
+cd ..  # mzn-bench needs to access the model and data files from "../data".
+mzn-bench check-solutions $MZNBENCH_TMP | tee checker.log
+mzn-bench check-statuses $MZNBENCH_TMP | tee checker-status.log
+cd minizinc
 

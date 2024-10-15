@@ -16,8 +16,10 @@ if __name__ == "__main__":
   model = Path(sys.argv[3])
   data = Path(sys.argv[4])
   solver = sys.argv[5]
-  cores = sys.argv[6]
-  threads = sys.argv[7]
+  solver_version = sys.argv[6]
+  timeout_ms = sys.argv[7]
+  cores = sys.argv[8]
+  threads = sys.argv[9]
   extras = []
   for i in range(8, len(sys.argv)):
     arg = sys.argv[i].strip().replace(' ', '-')
@@ -27,9 +29,10 @@ if __name__ == "__main__":
       if extras[-1].startswith("-"):
         extras[-1] = extras[-1][1:]
 
-  uid = solver.replace('.', '-') + "_" + model.stem + "_" + data.stem
+  uid = solver.replace('.', '-') + "_" + solver_version + "_" + model.stem + "_" + data.stem
   if cores != "1" or threads != "1":
     uid += f"_{cores}cores_{threads}threads"
+  uid += f"_timeout{timeout_ms}ms"
   if len(extras) > 0:
     uid += "_"
     uid += "_".join(extras)
@@ -46,6 +49,8 @@ if __name__ == "__main__":
     "model": str(model),
     "data_file": str(data),
     "mzn_solver": solver,
+    "version": solver_version,
+    "timeout_ms": timeout_ms,
     "datetime": datetime.datetime.now().isoformat(),
     "status": str(minizinc.result.Status.UNKNOWN),
     "cores": cores,

@@ -6,9 +6,9 @@
 cd deps
 git clone https://github.com/chocoteam/choco-solver
 cd choco-solver
-git checkout v4.10.14 # or any version more recent
-wget https://github.com/chocoteam/choco-solver/releases/download/v4.10.14/choco-parsers-4.10.14-light.jar
-ln -s choco-parsers-4.10.14-light.jar choco.jar
+git checkout v4.10.15 # or any version more recent
+wget https://github.com/chocoteam/choco-solver/releases/download/v4.10.15/choco-solver-4.10.15-light.jar
+ln -s choco-solver-4.10.15-light.jar choco.jar
 cp parsers/src/main/minizinc/choco.msc ~/.minizinc/solvers/
 ```
 
