@@ -1,7 +1,8 @@
 #!/bin/bash -l
 #SBATCH --time=00:10:00
-#SBATCH --partition=plgrid-gpu-gh200
-#SBATCH -A=tutorial
+#SBATCH -p gpu
+#SBATCH -A tutorial
+#SBATCH --gres=gpu:4
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=4 # 4 GPUs so 4 tasks per nodes.
 #SBATCH --mem=0
