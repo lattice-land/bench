@@ -1,0 +1,130 @@
++++ realpath run-helios264.sh
+++ dirname /net/scratch/hscra/project/tutorial/tutorial020/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/run-helios264.sh
++ MZN_WORKFLOW_PATH=/net/scratch/hscra/project/tutorial/tutorial020/lattice-land/bench/benchmarks/benchmarking/turbo-mzn
++ BENCHMARKING_DIR_PATH=/net/scratch/hscra/project/tutorial/tutorial020/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/..
++ BENCHMARKS_DIR_PATH=/net/scratch/hscra/project/tutorial/tutorial020/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../..
++ '[' -z helios.sh ']'
++ source helios.sh
+++ module add GCCcore/13.2.0 parallel
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+ GCCcore/13.2.0 loaded.
+ zlib/1.2.13 loaded.
+ Perl/5.38.0 loaded.
+ parallel/20240322 loaded.
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load CUDA/12.4.0
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+ CUDA/12.4.0 loaded.
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load CMake/3.27.6
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+ ncurses/6.4 loaded.
+ bzip2/1.0.8 loaded.
+ OpenSSL/1.1 loaded.
+ cURL/8.3.0 loaded.
+ XZ/5.4.4 loaded.
+ libarchive/3.7.2 loaded.
+ CMake/3.27.6 loaded.
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load Doxygen/1.9.8
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+ libiconv/1.17 loaded.
+ Doxygen/1.9.8 loaded.
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load libxml2/2.11.5
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+ libxml2/2.11.5 loaded.
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load Python/3.11.5
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+ binutils/2.40 loaded.
+ libreadline/8.2 loaded.
+ Tcl/8.6.13 loaded.
+ SQLite/3.43.1 loaded.
+ libffi/3.4.4 loaded.
+ Python/3.11.5 loaded.
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
++ source /net/scratch/hscra/project/tutorial/tutorial020/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../../pybench/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n /bin/bash -o -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ VIRTUAL_ENV=/net/home/project/tutorial/tutorial020/lattice-land/bench/pybench
+++ export VIRTUAL_ENV
+++ _OLD_VIRTUAL_PATH=/net/software/aarch64/el8/Python/3.11.5-GCCcore-13.2.0/bin:/net/software/aarch64/el8/SQLite/3.43.1-GCCcore-13.2.0/bin:/net/software/aarch64/el8/Tcl/8.6.13-GCCcore-13.2.0/bin:/net/software/aarch64/el8/binutils/2.40-GCCcore-13.2.0/bin:/net/software/aarch64/el8/libxml2/2.11.5-GCCcore-13.2.0/bin:/net/software/aarch64/el8/Doxygen/1.9.8-GCCcore-13.2.0/bin:/net/software/aarch64/el8/libiconv/1.17-GCCcore-13.2.0/bin:/net/software/aarch64/el8/CMake/3.27.6-GCCcore-13.2.0/bin:/net/software/aarch64/el8/libarchive/3.7.2-GCCcore-13.2.0/bin:/net/software/aarch64/el8/XZ/5.4.4-GCCcore-13.2.0/bin:/net/software/aarch64/el8/cURL/8.3.0-GCCcore-13.2.0/bin:/net/software/aarch64/el8/OpenSSL/1.1/bin:/net/software/aarch64/el8/bzip2/1.0.8-GCCcore-13.2.0/bin:/net/software/aarch64/el8/ncurses/6.4-GCCcore-13.2.0/bin:/net/software/aarch64/el8/CUDA/12.4.0/nvvm/bin:/net/software/aarch64/el8/CUDA/12.4.0/bin:/net/software/aarch64/el8/parallel/20240322-GCCcore-13.2.0/bin:/net/software/aarch64/el8/Perl/5.38.0-GCCcore-13.2.0/bin:/net/software/aarch64/el8/GCCcore/13.2.0/bin:/net/home/project/tutorial/tutorial020/.local/bin:/net/home/project/tutorial/tutorial020/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/net/scratch/hscra/project/tutorial/tutorial020/deps/libminizinc/build
+++ PATH=/net/home/project/tutorial/tutorial020/lattice-land/bench/pybench/bin:/net/software/aarch64/el8/Python/3.11.5-GCCcore-13.2.0/bin:/net/software/aarch64/el8/SQLite/3.43.1-GCCcore-13.2.0/bin:/net/software/aarch64/el8/Tcl/8.6.13-GCCcore-13.2.0/bin:/net/software/aarch64/el8/binutils/2.40-GCCcore-13.2.0/bin:/net/software/aarch64/el8/libxml2/2.11.5-GCCcore-13.2.0/bin:/net/software/aarch64/el8/Doxygen/1.9.8-GCCcore-13.2.0/bin:/net/software/aarch64/el8/libiconv/1.17-GCCcore-13.2.0/bin:/net/software/aarch64/el8/CMake/3.27.6-GCCcore-13.2.0/bin:/net/software/aarch64/el8/libarchive/3.7.2-GCCcore-13.2.0/bin:/net/software/aarch64/el8/XZ/5.4.4-GCCcore-13.2.0/bin:/net/software/aarch64/el8/cURL/8.3.0-GCCcore-13.2.0/bin:/net/software/aarch64/el8/OpenSSL/1.1/bin:/net/software/aarch64/el8/bzip2/1.0.8-GCCcore-13.2.0/bin:/net/software/aarch64/el8/ncurses/6.4-GCCcore-13.2.0/bin:/net/software/aarch64/el8/CUDA/12.4.0/nvvm/bin:/net/software/aarch64/el8/CUDA/12.4.0/bin:/net/software/aarch64/el8/parallel/20240322-GCCcore-13.2.0/bin:/net/software/aarch64/el8/Perl/5.38.0-GCCcore-13.2.0/bin:/net/software/aarch64/el8/GCCcore/13.2.0/bin:/net/home/project/tutorial/tutorial020/.local/bin:/net/home/project/tutorial/tutorial020/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/net/scratch/hscra/project/tutorial/tutorial020/deps/libminizinc/build
+++ export PATH
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='(pybench) '
+++ export PS1
+++ VIRTUAL_ENV_PROMPT='(pybench) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n /bin/bash -o -n '' ']'
+++ hash -r
++ '[' -n '' ']'
++ MZN_SOLVER=turbo.gpu.release
++ VERSION=v1.2.3
++ MZN_TIMEOUT=360000
++ REAL_TIMEOUT=300000
++ CORES=72
++ THREADS=264
+++ basename helios.sh .sh
++ MACHINE=helios
++ INSTANCES_PATH=/net/scratch/hscra/project/tutorial/tutorial020/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../benchmarking/short.csv
++ MZN_COMMAND='minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -and 256 -arch hybrid -hardware helios -version v1.2.3 -timeout 300000'
++ OUTPUT_DIR=/net/scratch/hscra/project/tutorial/tutorial020/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.3
++ mkdir -p /net/scratch/hscra/project/tutorial/tutorial020/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.3
++ '[' -n x1002c6s5b1n0,x1002c6s6b0n0,x1002c6s6b1n0,x1002c7s0b0n0 ']'
++ SRUN_COMMAND='srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose'
++ NUM_PARALLEL_EXPERIMENTS=16
++ DUMP_PY_PATH=/net/scratch/hscra/project/tutorial/tutorial020/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py
++ cp -r /net/scratch/hscra/project/tutorial/tutorial020/lattice-land/bench/benchmarks/benchmarking/turbo-mzn /net/scratch/hscra/project/tutorial/tutorial020/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.3/

@@ -7,14 +7,14 @@
 #SBATCH --mem=0
 #SBATCH --qos=normal
 #SBATCH --export=ALL
-#SBATCH --output=slurm-turbo-gpu.out
+#SBATCH --output=slurm-turbo-gpu264.out
 
 # Exits when an error occurs.
 set -e
 set -x # useful for debugging.
 
 # Shortcuts of paths to benchmarking directories.
-MZN_WORKFLOW_PATH=$(dirname $(realpath "run-helios.sh"))
+MZN_WORKFLOW_PATH=$(dirname $(realpath "run-helios264.sh"))
 BENCHMARKING_DIR_PATH="$MZN_WORKFLOW_PATH/.."
 BENCHMARKS_DIR_PATH="$MZN_WORKFLOW_PATH/../.."
 
@@ -42,7 +42,7 @@ VERSION="v1.2.3" # Note that this is only for the naming of the output directory
 MZN_TIMEOUT=360000
 REAL_TIMEOUT=300000
 CORES=72 # The number of core used on the node.
-THREADS=132 # The number of core used on the node.
+THREADS=264 # The number of core used on the node.
 MACHINE=$(basename "$1" ".sh")
 INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/short.csv"
 

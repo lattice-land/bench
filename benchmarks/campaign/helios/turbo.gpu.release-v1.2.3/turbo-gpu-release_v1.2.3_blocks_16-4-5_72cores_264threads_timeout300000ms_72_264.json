@@ -1,0 +1,14 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.3_blocks_16-4-5_72cores_264threads_timeout300000ms_72_264", "problem": "blocks-world", "model": "../data/mzn-challenge/2022/blocks-world/blocks.mzn", "data_file": "../data/mzn-challenge/2022/blocks-world/16-4-5.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.3", "timeout_ms": "300000", "datetime": "2024-10-29T19:23:25.553613", "status": "UNKNOWN", "cores": "72", "threads": "264"}}
+cpu-bind=MASK - x1002c6s5b1n0, task  0  0 [173042]: mask 0xffffffffffffffffff000000000000000000000000000000000000000000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 23074, "flatIntVars": 20179, "flatBoolConstraints": 5228, "flatIntConstraints": 39757, "evaluatedReifiedConstraints": 21436, "eliminatedImplications": 249, "method": "minimize", "flatTime": 1.92576}}
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "comment", "comment": "% stack_memory=8650752000 [8.65GB]\n"}
+{"type": "comment", "comment": "% heap_memory=84019249152 [84.02GB]\n"}
+{"type": "comment", "comment": "% and_nodes=256\n"}
+{"type": "comment", "comment": "% or_nodes=264\n"}
+{"type": "comment", "comment": "% max_blocks_per_sm=2\n"}
+{"type": "statistics", "statistics": {"memory_configuration": "global", "shared_mem": 0, "store_mem": 199788, "propagator_mem": 18975436}}
+{"type": "status", "status": "UNKNOWN", "time": 302794}
+{"type": "statistics", "statistics": {"problem_path": "/net/scratch/hscra/project/tutorial/tutorial020/slurm_jobdir/43115/tmp/mznfileWTsnTM.fzn", "solver": "Turbo", "version": "v1.2.3", "hardware": "helios", "arch": "hybrid", "free_search": "no", "or_nodes": 264, "timeout_ms": 300000, "and_nodes": 256, "stack_size": 32000, "cuda_version": 12040, "cutnodes": 0, "nodes": 799706, "failures": 390674, "variables": 24966, "propagators": 28762, "peakDepth": 107, "initTime": 1.957, "solveTime": 300.055, "num_solutions": 0, "eps_num_subproblems": 4096, "eps_solved_subproblems": 640, "eps_skipped_subproblems": 0, "num_blocks_done": 0, "fixpoint_iterations": 18612575, "eliminated_variables": 24498, "eliminated_formulas": 44674}}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

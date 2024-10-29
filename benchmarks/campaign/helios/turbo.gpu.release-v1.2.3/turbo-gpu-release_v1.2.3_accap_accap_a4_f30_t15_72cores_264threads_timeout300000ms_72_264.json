@@ -1,0 +1,13 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.3_accap_accap_a4_f30_t15_72cores_264threads_timeout300000ms_72_264", "problem": "accap", "model": "../data/mzn-challenge/2022/accap/accap.mzn", "data_file": "../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json", "mzn_solver": "turbo.gpu.release", "version": "v1.2.3", "timeout_ms": "300000", "datetime": "2024-10-29T19:23:25.535059", "status": "UNKNOWN", "cores": "72", "threads": "264"}}
+cpu-bind=MASK - x1002c6s6b1n0, task  0  0 [761130]: mask 0xffffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 460, "flatIntVars": 36, "flatBoolConstraints": 230, "flatIntConstraints": 689, "evaluatedReifiedConstraints": 460, "method": "minimize", "flatTime": 0.401392}}
+{"type": "comment", "comment": "% stack_memory=8650752000 [8.65GB]\n"}
+{"type": "comment", "comment": "% heap_memory=84019249152 [84.02GB]\n"}
+{"type": "comment", "comment": "% and_nodes=256\n"}
+{"type": "comment", "comment": "% or_nodes=264\n"}
+{"type": "comment", "comment": "% max_blocks_per_sm=2\n"}
+{"type": "statistics", "statistics": {"memory_configuration": "store_shared", "shared_mem": 4168, "store_mem": 4028, "propagator_mem": 524724}}
+{"type": "solution", "output": {"default": "yCoor = [17, 6, 41, 1, 16, 1, 1, 25, 37, 20, 17, 14, 45, 47, 4, 41, 38, 22, 17, 7, 10, 48, 10, 11, 30, 26, 25, 17, 32, 37];\nS = [9, 11, 19, 25];\nD = 48;\nobjective = 112;\n", "raw": "yCoor = [17, 6, 41, 1, 16, 1, 1, 25, 37, 20, 17, 14, 45, 47, 4, 41, 38, 22, 17, 7, 10, 48, 10, 11, 30, 26, 25, 17, 32, 37];\nS = [9, 11, 19, 25];\nD = 48;\nobjective = 112;\n", "json": {  "yCoor" : [17, 6, 41, 1, 16, 1, 1, 25, 37, 20, 17, 14, 45, 47, 4, 41, 38, 22, 17, 7, 10, 48, 10, 11, 30, 26, 25, 17, 32, 37],  "objective" : 112,  "S" : [9, 11, 19, 25],  "D" : 48,  "_objective" : 112}}, "sections": ["default", "raw", "json"], "time": 300466}
+{"type": "statistics", "statistics": {"problem_path": "/net/scratch/hscra/project/tutorial/tutorial020/slurm_jobdir/43115/tmp/mznfileEK8plh.fzn", "solver": "Turbo", "version": "v1.2.3", "hardware": "helios", "arch": "hybrid", "free_search": "no", "or_nodes": 264, "timeout_ms": 300000, "and_nodes": 256, "stack_size": 32000, "cuda_version": 12040, "cutnodes": 0, "nodes": 52228525, "failures": 26107765, "variables": 496, "propagators": 919, "peakDepth": 132, "initTime": 0.037, "solveTime": 300.017, "num_solutions": 46, "eps_num_subproblems": 4096, "eps_solved_subproblems": 138, "eps_skipped_subproblems": 1728, "num_blocks_done": 0, "fixpoint_iterations": 450626190, "eliminated_variables": 34, "eliminated_formulas": 70, "objective": 112}}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
