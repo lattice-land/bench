@@ -1,0 +1,13 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.2_tower_100_100_20_100-04_72cores_132threads_timeout300000ms_72_132", "problem": "tower", "model": "../data/mzn-challenge/2022/tower/tower.mzn", "data_file": "../data/mzn-challenge/2022/tower/100_100_20_100-04.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.2", "timeout_ms": "300000", "datetime": "2024-10-29T21:01:21.834103", "status": "UNKNOWN", "cores": "72", "threads": "132"}}
+cpu-bind=MASK - x1002c0s6b0n0, task  0  0 [868136]: mask 0xffffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 4260, "flatIntVars": 4747, "flatBoolConstraints": 100, "flatIntConstraints": 10887, "evaluatedReifiedConstraints": 8060, "method": "maximize", "flatTime": 1.09553}}
+{"type": "comment", "comment": "% stack_memory=8650752000 [8.65GB]\n"}
+{"type": "comment", "comment": "% heap_memory=84019249152 [84.02GB]\n"}
+{"type": "comment", "comment": "% and_nodes=256\n"}
+{"type": "comment", "comment": "% or_nodes=132\n"}
+{"type": "comment", "comment": "% max_blocks_per_sm=4\n"}
+{"type": "statistics", "statistics": {"memory_configuration": "global", "shared_mem": 100}}
+{"type": "solution", "output": {"json": {  "power" : [10, 3, 7, 3, 2, 4, 2, 3, 4, 4, 4, 4, 1, 3, 4, 3, 6, 3, 1, 3],  "_objective" : 60}}, "sections": ["json"], "time": 309274}
+{"type": "statistics", "statistics": {"problem_path": "/net/scratch/hscra/project/tutorial/tutorial020/slurm_jobdir/43142/tmp/mznfile99qRAy.fzn", "solver": "Turbo", "version": "v1.2.2", "hardware": "helios", "arch": "HYBRID", "free_search": "no", "or_nodes": 132, "timeout_ms": 300000, "and_nodes": 256, "stack_size": 32000, "cuda_version": 12040, "cutnodes": 0, "nodes": 217677, "failures": 101894, "variables": 6907, "propagators": 12867, "peakDepth": 315, "initTime": 0.531, "solveTime": 300.003, "num_solutions": 56, "eps_num_subproblems": 4096, "eps_solved_subproblems": 171, "eps_skipped_subproblems": 2300, "num_blocks_done": 0, "fixpoint_iterations": 8584557, "eliminated_variables": 5640, "eliminated_formulas": 10387, "objective": 60}}
+{"type": "statistics", "statistics": {"nSolutions": 1}}

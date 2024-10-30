@@ -37,7 +37,7 @@ fi
 # I. Define the campaign to run.
 
 MZN_SOLVER="turbo.gpu.release"
-VERSION="v1.2.3" # Note that this is only for the naming of the output directory, we do not verify the actual version of the solver.
+VERSION="v1.2.2" # Note that this is only for the naming of the output directory, we do not verify the actual version of the solver.
 # This is to avoid MiniZinc to kill Turbo before it can print the statistics.
 MZN_TIMEOUT=360000
 REAL_TIMEOUT=300000

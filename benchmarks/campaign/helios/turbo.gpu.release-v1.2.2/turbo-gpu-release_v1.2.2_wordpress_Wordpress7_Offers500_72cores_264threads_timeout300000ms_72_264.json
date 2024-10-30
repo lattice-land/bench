@@ -1,0 +1,13 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.2_wordpress_Wordpress7_Offers500_72cores_264threads_timeout300000ms_72_264", "problem": "wordpress", "model": "../data/mzn-challenge/2022/wordpress/wordpress.mzn", "data_file": "../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.2", "timeout_ms": "300000", "datetime": "2024-10-29T21:01:27.441483", "status": "UNKNOWN", "cores": "72", "threads": "264"}}
+cpu-bind=MASK - x1002c5s2b0n0, task  0  0 [2915169]: mask 0xffffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 35, "flatIntVars": 182, "flatBoolConstraints": 19, "flatIntConstraints": 300, "evaluatedReifiedConstraints": 37, "method": "minimize", "flatTime": 0.41001}}
+{"type": "comment", "comment": "% stack_memory=8650752000 [8.65GB]\n"}
+{"type": "comment", "comment": "% heap_memory=84019249152 [84.02GB]\n"}
+{"type": "comment", "comment": "% and_nodes=256\n"}
+{"type": "comment", "comment": "% or_nodes=264\n"}
+{"type": "comment", "comment": "% max_blocks_per_sm=4\n"}
+{"type": "statistics", "statistics": {"memory_configuration": "store_shared", "shared_mem": 2036}}
+{"type": "solution", "output": {"json": {  "AssignmentMatrix" : [[0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]],  "OccupancyVector" : [0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],  "VMType" : [1, 1, 1, 1, 433, 1, 2, 6, 174, 341, 2, 2, 2, 2, 2],  "Price" : [0, 0, 0, 0, 116, 8403, 9152, 4400, 582, 210, 9152, 9152, 9152, 9152, 9152],  "_objective" : 68623}}, "sections": ["json"], "time": 301497}
+{"type": "statistics", "statistics": {"problem_path": "/net/scratch/hscra/project/tutorial/tutorial020/slurm_jobdir/43143/tmp/mznfileoob7Zz.fzn", "solver": "Turbo", "version": "v1.2.2", "hardware": "helios", "arch": "HYBRID", "free_search": "no", "or_nodes": 264, "timeout_ms": 300000, "and_nodes": 256, "stack_size": 32000, "cuda_version": 12040, "cutnodes": 0, "nodes": 213295, "failures": 99523, "variables": 217, "propagators": 30259, "peakDepth": 110, "initTime": 0.673, "solveTime": 300.064, "num_solutions": 572, "eps_num_subproblems": 4096, "eps_solved_subproblems": 0, "eps_skipped_subproblems": 0, "num_blocks_done": 0, "fixpoint_iterations": 27648782, "eliminated_variables": 450, "eliminated_formulas": 632, "objective": 68623}}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
