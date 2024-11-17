@@ -1,0 +1,1503 @@
+- boolVariables: 620
+  configuration: org-choco-choco_v4.10.15_bool-model-sickness_small-4_10cores_10threads_timeout300000ms_10_10
+  constraints: 1410
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/roster-sickness/small-4.dzn
+  datetime: '2024-09-11T22:01:04.332651'
+  failures: 0
+  flatBoolVars: 1444
+  flatIntConstraints: 1391
+  flatIntVars: 344
+  flatTime: 1.07047
+  initTime: 0.497
+  intVariables: 69
+  method: maximize
+  model: ../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn
+  mzn_solver: org.choco.choco
+  nodes: 77
+  objective: 14186
+  paths: 0
+  peakDepth: 77
+  problem: roster-sickness
+  restarts: 0
+  setVariables: 0
+  solution:
+    assigned:
+    - [false, false, true, false, false, false, false, false, false, true, false,
+      false, false, false, false, true, false, false, false, false, false, true, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, true, false,
+      true, false, false, false, false, false, false, false, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, true, false, true,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, true, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, true, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, true, false, false, false, false, false]
+    - [false, false, false, true, false, false, false, true, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    objective: 14186
+  solutions: 1
+  solveTime: 0.085
+  status: SATISFIED
+  threads: '10'
+  time: 1.842
+  timeout_ms: '300000'
+  variables: 689
+  version: v4.10.15
+- boolVariables: 620
+  configuration: org-choco-choco_v4.10.15_bool-model-sickness_small-4_10cores_10threads_timeout300000ms_10_10
+  constraints: 1410
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/roster-sickness/small-4.dzn
+  datetime: '2024-09-11T22:01:04.332651'
+  failures: 11
+  flatBoolVars: 1444
+  flatIntConstraints: 1391
+  flatIntVars: 344
+  flatTime: 1.07047
+  initTime: 0.497
+  intVariables: 69
+  method: maximize
+  model: ../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn
+  mzn_solver: org.choco.choco
+  nodes: 123
+  objective: 14190
+  paths: 0
+  peakDepth: 77
+  problem: roster-sickness
+  restarts: 1
+  setVariables: 0
+  solution:
+    assigned:
+    - [false, false, true, false, false, false, false, false, false, true, false,
+      false, false, false, false, true, false, false, false, false, false, true, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, true, false,
+      true, false, false, false, false, false, false, false, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, true, false, true,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, true, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, true, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, true, false, false, false, false, false]
+    - [false, false, false, true, false, false, false, true, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    objective: 14190
+  solutions: 2
+  solveTime: 0.109
+  status: SATISFIED
+  threads: '10'
+  time: 1.865
+  timeout_ms: '300000'
+  variables: 689
+  version: v4.10.15
+- boolVariables: 620
+  configuration: org-choco-choco_v4.10.15_bool-model-sickness_small-4_10cores_10threads_timeout300000ms_10_10
+  constraints: 1410
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/roster-sickness/small-4.dzn
+  datetime: '2024-09-11T22:01:04.332651'
+  failures: 15
+  flatBoolVars: 1444
+  flatIntConstraints: 1391
+  flatIntVars: 344
+  flatTime: 1.07047
+  initTime: 0.497
+  intVariables: 69
+  method: maximize
+  model: ../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn
+  mzn_solver: org.choco.choco
+  nodes: 129
+  objective: 14399
+  paths: 0
+  peakDepth: 77
+  problem: roster-sickness
+  restarts: 1
+  setVariables: 0
+  solution:
+    assigned:
+    - [false, false, true, false, false, false, false, false, false, true, false,
+      false, false, false, false, true, false, false, false, false, false, true, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, true, false,
+      true, false, false, false, false, false, false, false, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, true, false, true,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false]
+    - [false, false, false, false, false, true, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, true, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, true, false, false, false, false, false]
+    - [false, false, false, true, false, false, false, true, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    objective: 14399
+  solutions: 3
+  solveTime: 0.138
+  status: SATISFIED
+  threads: '10'
+  time: 1.894
+  timeout_ms: '300000'
+  variables: 689
+  version: v4.10.15
+- boolVariables: 620
+  configuration: org-choco-choco_v4.10.15_bool-model-sickness_small-4_10cores_10threads_timeout300000ms_10_10
+  constraints: 1410
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/roster-sickness/small-4.dzn
+  datetime: '2024-09-11T22:01:04.332651'
+  failures: 18
+  flatBoolVars: 1444
+  flatIntConstraints: 1391
+  flatIntVars: 344
+  flatTime: 1.07047
+  initTime: 0.497
+  intVariables: 69
+  method: maximize
+  model: ../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn
+  mzn_solver: org.choco.choco
+  nodes: 131
+  objective: 14405
+  paths: 0
+  peakDepth: 77
+  problem: roster-sickness
+  restarts: 1
+  setVariables: 0
+  solution:
+    assigned:
+    - [false, false, true, false, false, false, false, false, false, true, false,
+      false, false, false, false, true, false, false, false, false, false, true, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, true, false,
+      true, false, false, false, false, false, false, false, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, true, false, true,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false]
+    - [false, false, false, false, false, true, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, true, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, true, false, false, false, false, false]
+    - [false, false, false, true, false, false, false, true, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    objective: 14405
+  solutions: 4
+  solveTime: 0.143
+  status: SATISFIED
+  threads: '10'
+  time: 1.901
+  timeout_ms: '300000'
+  variables: 689
+  version: v4.10.15
+- boolVariables: 620
+  configuration: org-choco-choco_v4.10.15_bool-model-sickness_small-4_10cores_10threads_timeout300000ms_10_10
+  constraints: 1410
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/roster-sickness/small-4.dzn
+  datetime: '2024-09-11T22:01:04.332651'
+  failures: 37
+  flatBoolVars: 1444
+  flatIntConstraints: 1391
+  flatIntVars: 344
+  flatTime: 1.07047
+  initTime: 0.497
+  intVariables: 69
+  method: maximize
+  model: ../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn
+  mzn_solver: org.choco.choco
+  nodes: 208
+  objective: 14409
+  paths: 0
+  peakDepth: 77
+  problem: roster-sickness
+  restarts: 3
+  setVariables: 0
+  solution:
+    assigned:
+    - [false, false, true, false, false, false, false, false, false, true, false,
+      false, false, false, false, true, false, false, false, false, false, true, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, true, false,
+      true, false, false, false, false, false, false, false, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, true, false, true,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false]
+    - [false, false, false, false, false, true, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, true, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, true, false, false, false, false, false]
+    - [false, false, false, true, false, false, false, true, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    objective: 14409
+  solutions: 5
+  solveTime: 0.159
+  status: SATISFIED
+  threads: '10'
+  time: 1.916
+  timeout_ms: '300000'
+  variables: 689
+  version: v4.10.15
+- boolVariables: 620
+  configuration: org-choco-choco_v4.10.15_bool-model-sickness_small-4_10cores_10threads_timeout300000ms_10_10
+  constraints: 1410
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/roster-sickness/small-4.dzn
+  datetime: '2024-09-11T22:01:04.332651'
+  failures: 65
+  flatBoolVars: 1444
+  flatIntConstraints: 1391
+  flatIntVars: 344
+  flatTime: 1.07047
+  initTime: 0.497
+  intVariables: 69
+  method: maximize
+  model: ../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn
+  mzn_solver: org.choco.choco
+  nodes: 334
+  objective: 14441
+  paths: 0
+  peakDepth: 77
+  problem: roster-sickness
+  restarts: 6
+  setVariables: 0
+  solution:
+    assigned:
+    - [false, false, true, false, false, false, false, false, false, true, false,
+      false, false, false, false, true, false, false, false, false, false, true, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, true, false,
+      true, false, false, false, false, false, false, false, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, true, false, true,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, true, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, true, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, true, false, false, false, false, false]
+    - [false, false, false, true, false, false, false, true, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    objective: 14441
+  solutions: 6
+  solveTime: 0.176
+  status: SATISFIED
+  threads: '10'
+  time: 1.933
+  timeout_ms: '300000'
+  variables: 689
+  version: v4.10.15
+- boolVariables: 620
+  configuration: org-choco-choco_v4.10.15_bool-model-sickness_small-4_10cores_10threads_timeout300000ms_10_10
+  constraints: 1410
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/roster-sickness/small-4.dzn
+  datetime: '2024-09-11T22:01:04.332651'
+  failures: 74
+  flatBoolVars: 1444
+  flatIntConstraints: 1391
+  flatIntVars: 344
+  flatTime: 1.07047
+  initTime: 0.497
+  intVariables: 69
+  method: maximize
+  model: ../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn
+  mzn_solver: org.choco.choco
+  nodes: 376
+  objective: 14443
+  paths: 0
+  peakDepth: 77
+  problem: roster-sickness
+  restarts: 7
+  setVariables: 0
+  solution:
+    assigned:
+    - [false, false, true, false, false, false, false, false, false, true, false,
+      false, false, false, false, true, false, false, false, false, false, true, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, true, false,
+      true, false, false, false, false, false, false, false, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, true, false, true,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, true, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, true, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, true, false, false, false, false, false]
+    - [false, false, false, true, false, false, false, true, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    objective: 14443
+  solutions: 7
+  solveTime: 0.191
+  status: SATISFIED
+  threads: '10'
+  time: 1.947
+  timeout_ms: '300000'
+  variables: 689
+  version: v4.10.15
+- boolVariables: 620
+  configuration: org-choco-choco_v4.10.15_bool-model-sickness_small-4_10cores_10threads_timeout300000ms_10_10
+  constraints: 1410
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/roster-sickness/small-4.dzn
+  datetime: '2024-09-11T22:01:04.332651'
+  failures: 74
+  flatBoolVars: 1444
+  flatIntConstraints: 1391
+  flatIntVars: 344
+  flatTime: 1.07047
+  initTime: 0.497
+  intVariables: 69
+  method: maximize
+  model: ../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn
+  mzn_solver: org.choco.choco
+  nodes: 377
+  objective: 14449
+  paths: 0
+  peakDepth: 77
+  problem: roster-sickness
+  restarts: 7
+  setVariables: 0
+  solution:
+    assigned:
+    - [false, false, true, false, false, false, false, false, false, true, false,
+      false, false, false, false, true, false, false, false, false, false, true, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, true, false,
+      true, false, false, false, false, false, false, false, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, true, false, true,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, true, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, true, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, true, false, false, false, false, false]
+    - [false, false, false, true, false, false, false, true, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    objective: 14449
+  solutions: 8
+  solveTime: 0.194
+  status: SATISFIED
+  threads: '10'
+  time: 1.95
+  timeout_ms: '300000'
+  variables: 689
+  version: v4.10.15
+- boolVariables: 620
+  configuration: org-choco-choco_v4.10.15_bool-model-sickness_small-4_10cores_10threads_timeout300000ms_10_10
+  constraints: 1410
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/roster-sickness/small-4.dzn
+  datetime: '2024-09-11T22:01:04.332651'
+  failures: 238
+  flatBoolVars: 1444
+  flatIntConstraints: 1391
+  flatIntVars: 344
+  flatTime: 1.07047
+  initTime: 0.497
+  intVariables: 69
+  method: maximize
+  model: ../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn
+  mzn_solver: org.choco.choco
+  nodes: 827
+  objective: 14457
+  paths: 0
+  peakDepth: 77
+  problem: roster-sickness
+  restarts: 19
+  setVariables: 0
+  solution:
+    assigned:
+    - [false, false, true, false, false, false, false, false, false, true, false,
+      false, false, false, false, true, false, false, false, false, false, true, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, true, false,
+      true, false, false, false, false, false, false, false, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, true, false, true,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, true, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, true, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, true, false, false, false, false, false]
+    - [false, false, false, true, false, false, false, true, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false]
+    objective: 14457
+  solutions: 9
+  solveTime: 0.274
+  status: SATISFIED
+  threads: '10'
+  time: 2.031
+  timeout_ms: '300000'
+  variables: 689
+  version: v4.10.15

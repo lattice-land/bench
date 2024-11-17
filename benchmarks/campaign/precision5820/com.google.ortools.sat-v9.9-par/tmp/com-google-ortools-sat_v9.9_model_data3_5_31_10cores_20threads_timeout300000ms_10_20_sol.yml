@@ -1,0 +1,828 @@
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 9
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2549
+  objectiveBound: 76000
+  paths: 0
+  problem: team-assignment
+  propagations: 696908
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 10, 8, 12, 5, 25, 15, 9, 3, 4, 6,
+      16, 22, 1, 7, 13, 18, 21, 24, 20, 23, 11, 29, 17, 30, 2, 26, 27, 28, 31, 14,
+      19, 6, 23, 4, 22, 25, 7, 26, 9, 31, 8, 16, 15, 3, 11, 5, 21, 17, 27, 20, 19,
+      29, 13, 2, 24, 12, 30, 18, 1, 10, 14, 28, 13, 9, 8, 16, 26, 27, 4, 31, 14, 11,
+      3, 6, 25, 7, 29, 5, 15, 18, 17, 10, 12, 28, 24, 2, 30, 1, 19, 23, 22, 20, 21,
+      16, 26, 1, 17, 18, 6, 29, 14, 12, 19, 21, 25, 28, 23, 22, 10, 27, 5, 9, 8, 20,
+      30, 11, 31, 24, 4, 3, 7, 15, 2, 13]
+    objective: 2549
+  solveTime: 0.642412
+  status: SATISFIED
+  threads: '20'
+  time: 1.15
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 0
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2616
+  objectiveBound: 74000
+  paths: 0
+  problem: team-assignment
+  propagations: 529810
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 10, 8, 12, 5, 25, 15, 9, 3, 29,
+      6, 16, 22, 1, 7, 13, 18, 21, 24, 20, 23, 11, 28, 17, 30, 2, 26, 27, 4, 31, 14,
+      19, 6, 25, 4, 22, 17, 7, 26, 16, 31, 8, 20, 15, 3, 11, 5, 21, 29, 27, 9, 19,
+      23, 13, 2, 24, 12, 30, 18, 1, 10, 14, 28, 13, 9, 8, 16, 26, 27, 4, 31, 14, 11,
+      3, 6, 25, 29, 24, 28, 15, 19, 12, 10, 7, 22, 17, 2, 30, 5, 1, 23, 18, 20, 21,
+      30, 26, 1, 28, 18, 6, 29, 14, 12, 22, 21, 24, 23, 25, 19, 16, 27, 5, 9, 8, 20,
+      17, 11, 31, 10, 4, 3, 7, 15, 2, 13]
+    objective: 2616
+  solveTime: 0.693644
+  status: SATISFIED
+  threads: '20'
+  time: 1.199
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 0
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 5549
+  objectiveBound: 74000
+  paths: 0
+  problem: team-assignment
+  propagations: 529810
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 13, 8, 12, 5, 25, 15, 9, 3, 4, 6,
+      16, 22, 1, 7, 10, 18, 21, 24, 20, 23, 11, 29, 17, 30, 2, 26, 27, 28, 31, 14,
+      19, 6, 23, 4, 21, 25, 7, 26, 9, 31, 8, 16, 15, 3, 11, 5, 10, 17, 27, 20, 19,
+      13, 29, 2, 24, 12, 30, 18, 1, 14, 22, 28, 13, 9, 8, 16, 26, 27, 4, 31, 14, 11,
+      3, 6, 25, 7, 21, 5, 15, 18, 17, 22, 12, 28, 24, 2, 30, 1, 19, 23, 29, 20, 10,
+      16, 26, 1, 17, 18, 29, 6, 14, 12, 19, 22, 25, 28, 23, 21, 10, 27, 5, 9, 8, 20,
+      30, 11, 31, 24, 4, 3, 7, 15, 2, 13]
+    objective: 5549
+  solveTime: 0.726698
+  status: SATISFIED
+  threads: '20'
+  time: 1.234
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 0
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 5616
+  objectiveBound: 73000
+  paths: 0
+  problem: team-assignment
+  propagations: 529810
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 10, 8, 12, 5, 25, 15, 17, 3, 29,
+      6, 16, 22, 1, 7, 13, 18, 21, 24, 20, 23, 11, 28, 9, 30, 2, 26, 27, 4, 31, 14,
+      19, 6, 25, 4, 22, 9, 7, 26, 17, 31, 8, 20, 15, 3, 11, 5, 21, 29, 27, 16, 19,
+      23, 13, 2, 24, 12, 30, 18, 1, 10, 14, 28, 13, 9, 8, 17, 26, 27, 4, 31, 14, 11,
+      3, 6, 25, 29, 24, 28, 15, 19, 12, 10, 7, 22, 16, 2, 30, 5, 1, 23, 18, 20, 21,
+      30, 26, 1, 28, 18, 6, 29, 14, 12, 22, 21, 24, 23, 25, 19, 9, 27, 5, 17, 8, 20,
+      16, 11, 31, 10, 4, 3, 7, 15, 2, 13]
+    objective: 5616
+  solveTime: 0.787293
+  status: SATISFIED
+  threads: '20'
+  time: 1.293
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 0
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 52611
+  objectiveBound: 72000
+  paths: 0
+  problem: team-assignment
+  propagations: 529810
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 28, 22, 27, 25, 31, 7, 30, 18, 12,
+      14, 16, 24, 6, 29, 9, 5, 4, 20, 26, 15, 2, 11, 1, 10, 3, 19, 13, 8, 23, 21,
+      17, 26, 17, 28, 14, 25, 30, 8, 12, 23, 24, 15, 21, 29, 2, 22, 19, 6, 3, 13,
+      20, 7, 5, 18, 16, 31, 10, 27, 1, 9, 11, 4, 21, 30, 25, 24, 2, 29, 19, 22, 13,
+      23, 7, 1, 12, 5, 4, 17, 18, 20, 10, 11, 26, 9, 16, 6, 27, 15, 28, 3, 14, 31,
+      8, 26, 2, 20, 23, 8, 25, 22, 13, 27, 28, 11, 12, 4, 10, 18, 15, 29, 6, 31, 16,
+      30, 3, 21, 9, 17, 5, 1, 14, 24, 19, 7]
+    objective: 52611
+  solveTime: 0.945905
+  status: SATISFIED
+  threads: '20'
+  time: 1.453
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 0
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 61663
+  objectiveBound: 72000
+  paths: 0
+  problem: team-assignment
+  propagations: 529810
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 30, 22, 25, 19, 27, 7, 12, 28, 29,
+      6, 16, 24, 11, 15, 20, 18, 17, 31, 26, 5, 2, 14, 1, 10, 3, 23, 21, 9, 13, 4,
+      8, 26, 31, 27, 17, 9, 30, 5, 12, 21, 24, 23, 25, 29, 2, 22, 19, 16, 14, 28,
+      20, 3, 11, 7, 18, 6, 10, 13, 1, 8, 15, 4, 22, 14, 29, 24, 2, 8, 19, 31, 18,
+      13, 7, 23, 21, 27, 9, 20, 4, 17, 10, 11, 26, 1, 16, 15, 12, 5, 28, 3, 6, 30,
+      25, 23, 26, 2, 21, 27, 28, 13, 30, 25, 22, 20, 12, 31, 10, 1, 15, 17, 18, 14,
+      16, 11, 3, 9, 8, 6, 4, 7, 5, 24, 19, 29]
+    objective: 61663
+  solveTime: 1.1241
+  status: SATISFIED
+  threads: '20'
+  time: 1.63
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 0
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 63662
+  objectiveBound: 72000
+  paths: 0
+  problem: team-assignment
+  propagations: 529810
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 18, 22, 27, 25, 29, 7, 9, 21, 30,
+      19, 16, 24, 28, 31, 17, 20, 15, 11, 26, 5, 2, 6, 1, 10, 4, 14, 13, 3, 23, 12,
+      8, 26, 25, 28, 23, 27, 18, 16, 12, 14, 24, 30, 21, 13, 2, 22, 19, 15, 5, 31,
+      20, 17, 8, 9, 3, 11, 10, 1, 7, 6, 29, 4, 10, 18, 25, 24, 2, 15, 29, 31, 30,
+      23, 7, 22, 12, 14, 13, 9, 19, 20, 6, 21, 26, 8, 16, 1, 27, 17, 28, 4, 3, 11,
+      5, 27, 26, 2, 28, 5, 31, 23, 13, 14, 25, 20, 8, 11, 3, 12, 17, 4, 9, 30, 16,
+      7, 6, 18, 22, 1, 10, 29, 15, 24, 19, 21]
+    objective: 63662
+  solveTime: 1.1338
+  status: SATISFIED
+  threads: '20'
+  time: 1.64
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 0
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 63663
+  objectiveBound: 71000
+  paths: 0
+  problem: team-assignment
+  propagations: 529810
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 18, 22, 27, 6, 31, 7, 17, 21, 12,
+      29, 16, 24, 28, 30, 25, 20, 13, 11, 26, 19, 2, 14, 1, 10, 3, 9, 15, 5, 23, 8,
+      4, 26, 27, 28, 23, 13, 18, 30, 12, 3, 24, 15, 21, 9, 2, 22, 19, 25, 5, 29, 20,
+      7, 8, 14, 4, 11, 10, 1, 31, 16, 6, 17, 10, 18, 25, 24, 2, 29, 19, 14, 30, 23,
+      7, 17, 12, 31, 13, 22, 15, 20, 6, 21, 26, 8, 16, 1, 27, 9, 28, 3, 4, 11, 5,
+      28, 26, 2, 1, 8, 31, 23, 13, 9, 29, 20, 15, 11, 25, 18, 30, 5, 17, 6, 16, 7,
+      22, 3, 12, 27, 4, 10, 14, 24, 19, 21]
+    objective: 63663
+  solveTime: 1.26153
+  status: SATISFIED
+  threads: '20'
+  time: 1.77
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 0
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 63664
+  objectiveBound: 71000
+  paths: 0
+  problem: team-assignment
+  propagations: 529810
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 18, 22, 15, 6, 31, 7, 17, 27, 28,
+      21, 16, 24, 20, 29, 19, 12, 4, 11, 26, 9, 2, 14, 1, 10, 3, 25, 13, 5, 23, 8,
+      30, 26, 23, 8, 25, 28, 18, 5, 12, 3, 24, 30, 21, 13, 2, 22, 19, 29, 7, 27, 20,
+      14, 17, 15, 9, 11, 10, 31, 1, 16, 6, 4, 10, 18, 30, 24, 2, 29, 27, 25, 21, 23,
+      7, 19, 20, 17, 13, 22, 15, 14, 12, 8, 26, 9, 16, 31, 5, 6, 28, 3, 4, 11, 1,
+      26, 13, 2, 30, 31, 28, 23, 25, 7, 29, 18, 20, 11, 15, 14, 12, 27, 17, 8, 16,
+      9, 22, 3, 1, 4, 6, 10, 5, 24, 19, 21]
+    objective: 63664
+  solveTime: 1.57742
+  status: SATISFIED
+  threads: '20'
+  time: 2.084
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 27
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 63665
+  objectiveBound: 71000
+  paths: 0
+  problem: team-assignment
+  propagations: 4250759
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 18, 22, 28, 6, 31, 7, 17, 27, 15,
+      21, 16, 24, 20, 29, 19, 13, 4, 12, 26, 11, 2, 14, 1, 10, 3, 25, 8, 30, 23, 9,
+      5, 26, 23, 16, 25, 9, 18, 8, 12, 5, 24, 30, 21, 13, 2, 22, 19, 29, 7, 4, 20,
+      14, 1, 15, 3, 11, 10, 31, 17, 27, 6, 28, 10, 18, 30, 24, 2, 29, 27, 25, 21,
+      23, 7, 19, 20, 17, 13, 22, 15, 14, 12, 8, 26, 9, 16, 31, 5, 6, 28, 3, 4, 11,
+      1, 26, 13, 2, 30, 23, 28, 31, 25, 7, 29, 18, 20, 11, 15, 14, 12, 27, 17, 8,
+      16, 9, 22, 3, 1, 4, 6, 10, 5, 24, 19, 21]
+    objective: 63665
+  solveTime: 1.63212
+  status: SATISFIED
+  threads: '20'
+  time: 2.138
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 0
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 65665
+  objectiveBound: 71000
+  paths: 0
+  problem: team-assignment
+  propagations: 529810
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 20, 27, 31, 7, 30, 21, 28,
+      24, 16, 29, 15, 12, 17, 19, 18, 14, 26, 13, 2, 11, 1, 10, 3, 8, 5, 9, 23, 6,
+      25, 26, 31, 30, 23, 27, 4, 28, 12, 25, 24, 18, 21, 16, 2, 22, 19, 15, 13, 14,
+      20, 8, 11, 9, 1, 17, 10, 6, 7, 5, 29, 3, 6, 4, 25, 24, 2, 29, 30, 10, 19, 23,
+      7, 9, 22, 31, 13, 5, 11, 20, 14, 21, 26, 18, 16, 8, 27, 12, 28, 3, 15, 17, 1,
+      26, 1, 2, 23, 29, 17, 27, 25, 22, 6, 28, 15, 8, 14, 18, 12, 13, 30, 11, 16,
+      10, 9, 7, 20, 3, 4, 5, 31, 24, 19, 21]
+    objective: 65665
+  solveTime: 1.63688
+  status: SATISFIED
+  threads: '20'
+  time: 2.143
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 1762
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 65666
+  objectiveBound: 71000
+  paths: 0
+  problem: team-assignment
+  propagations: 5545053
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 31, 27, 24, 7, 30, 21, 28,
+      20, 16, 29, 15, 12, 17, 19, 18, 14, 26, 13, 2, 11, 1, 10, 3, 9, 8, 5, 23, 6,
+      25, 26, 31, 30, 23, 27, 4, 28, 12, 25, 24, 18, 21, 16, 2, 22, 19, 15, 13, 14,
+      20, 7, 11, 9, 1, 17, 10, 6, 5, 8, 29, 3, 6, 4, 27, 1, 25, 29, 30, 10, 19, 23,
+      7, 9, 22, 31, 13, 5, 11, 20, 14, 21, 26, 18, 16, 8, 24, 12, 28, 3, 15, 17, 2,
+      26, 1, 2, 23, 29, 17, 27, 25, 22, 6, 28, 15, 8, 14, 18, 12, 13, 30, 11, 16,
+      10, 9, 7, 20, 3, 4, 5, 31, 24, 19, 21]
+    objective: 65666
+  solveTime: 2.29022
+  status: SATISFIED
+  threads: '20'
+  time: 2.796
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 1882
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 65667
+  objectiveBound: 71000
+  paths: 0
+  problem: team-assignment
+  propagations: 5655516
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 31, 27, 24, 7, 30, 21, 28,
+      20, 16, 29, 15, 12, 17, 19, 18, 14, 26, 6, 2, 11, 1, 10, 3, 9, 13, 25, 23, 8,
+      5, 26, 31, 8, 23, 30, 4, 28, 12, 25, 24, 5, 21, 16, 2, 22, 19, 3, 13, 14, 20,
+      7, 11, 9, 1, 17, 10, 6, 15, 27, 29, 18, 6, 4, 27, 1, 25, 29, 30, 10, 19, 23,
+      7, 9, 22, 31, 13, 5, 11, 20, 14, 21, 26, 18, 16, 8, 24, 12, 28, 3, 15, 17, 2,
+      18, 1, 2, 26, 29, 23, 17, 25, 22, 6, 28, 15, 27, 14, 8, 12, 13, 30, 11, 16,
+      10, 9, 7, 20, 3, 4, 5, 31, 24, 19, 21]
+    objective: 65667
+  solveTime: 2.35525
+  status: SATISFIED
+  threads: '20'
+  time: 2.864
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 1997
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 65668
+  objectiveBound: 71000
+  paths: 0
+  problem: team-assignment
+  propagations: 5753268
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 31, 27, 24, 7, 30, 21, 28,
+      20, 16, 29, 15, 12, 17, 19, 18, 14, 26, 6, 2, 11, 1, 10, 3, 9, 25, 5, 23, 8,
+      13, 26, 31, 8, 23, 28, 4, 30, 12, 25, 24, 5, 21, 16, 2, 22, 19, 3, 13, 14, 20,
+      7, 11, 9, 1, 17, 10, 6, 27, 18, 29, 15, 6, 4, 27, 1, 25, 29, 30, 10, 19, 23,
+      7, 9, 22, 31, 13, 5, 11, 20, 14, 21, 26, 18, 16, 8, 24, 12, 28, 3, 15, 17, 2,
+      3, 1, 2, 26, 29, 23, 17, 25, 22, 6, 18, 15, 27, 13, 8, 12, 28, 30, 11, 16, 10,
+      9, 7, 14, 20, 4, 5, 31, 24, 19, 21]
+    objective: 65668
+  solveTime: 2.41931
+  status: SATISFIED
+  threads: '20'
+  time: 2.925
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 2114
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 65669
+  objectiveBound: 71000
+  paths: 0
+  problem: team-assignment
+  propagations: 5848164
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 31, 27, 24, 7, 30, 21, 28,
+      20, 16, 29, 19, 12, 17, 14, 18, 25, 26, 6, 2, 11, 1, 10, 3, 5, 15, 9, 23, 8,
+      13, 26, 31, 8, 15, 28, 4, 30, 12, 23, 24, 5, 21, 16, 2, 22, 19, 27, 13, 14,
+      20, 7, 11, 9, 1, 17, 10, 6, 3, 18, 29, 25, 6, 4, 27, 1, 25, 29, 30, 10, 19,
+      23, 7, 9, 22, 31, 13, 5, 11, 20, 14, 21, 26, 18, 16, 8, 24, 12, 28, 3, 15, 17,
+      2, 9, 1, 2, 26, 29, 23, 17, 25, 22, 6, 18, 15, 27, 13, 28, 12, 10, 30, 11, 16,
+      3, 8, 7, 14, 20, 4, 5, 31, 24, 19, 21]
+    objective: 65669
+  solveTime: 2.48246
+  status: SATISFIED
+  threads: '20'
+  time: 2.988
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 0
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 65681
+  objectiveBound: 71000
+  paths: 0
+  problem: team-assignment
+  propagations: 529810
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 31, 27, 24, 7, 28, 30, 21,
+      20, 16, 29, 25, 12, 19, 15, 17, 14, 26, 18, 2, 11, 1, 10, 5, 9, 8, 13, 23, 6,
+      3, 26, 31, 28, 23, 27, 4, 18, 12, 25, 24, 21, 30, 16, 2, 22, 19, 15, 13, 14,
+      20, 7, 11, 9, 5, 17, 10, 6, 1, 8, 29, 3, 9, 4, 8, 1, 25, 30, 29, 27, 19, 23,
+      7, 18, 22, 6, 13, 10, 11, 20, 14, 21, 26, 31, 16, 3, 24, 12, 28, 5, 15, 17,
+      2, 26, 1, 2, 23, 17, 29, 20, 25, 22, 9, 13, 10, 31, 14, 12, 21, 8, 28, 11, 16,
+      15, 7, 27, 6, 18, 4, 5, 3, 24, 19, 30]
+    objective: 65681
+  solveTime: 2.53073
+  status: SATISFIED
+  threads: '20'
+  time: 3.037
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 2420
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 65683
+  objectiveBound: 70000
+  paths: 0
+  problem: team-assignment
+  propagations: 6107821
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 24, 27, 31, 7, 28, 30, 21,
+      20, 16, 29, 25, 12, 19, 15, 17, 14, 26, 18, 2, 13, 1, 10, 5, 11, 9, 8, 23, 6,
+      3, 26, 31, 28, 23, 27, 4, 18, 12, 25, 24, 21, 30, 16, 2, 22, 19, 15, 13, 14,
+      20, 8, 11, 9, 5, 17, 10, 6, 1, 7, 29, 3, 9, 4, 11, 1, 25, 30, 29, 27, 19, 23,
+      7, 18, 22, 8, 13, 10, 6, 20, 14, 21, 26, 31, 16, 3, 24, 12, 28, 5, 15, 17, 2,
+      26, 1, 2, 23, 17, 29, 20, 25, 22, 9, 13, 10, 6, 14, 12, 21, 8, 28, 11, 16, 15,
+      7, 27, 31, 18, 4, 5, 3, 24, 19, 30]
+    objective: 65683
+  solveTime: 2.66022
+  status: SATISFIED
+  threads: '20'
+  time: 3.167
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 2433
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 65686
+  objectiveBound: 70000
+  paths: 0
+  problem: team-assignment
+  propagations: 6132394
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 24, 27, 31, 7, 28, 30, 21,
+      20, 16, 29, 25, 12, 19, 15, 17, 14, 26, 18, 2, 13, 1, 10, 5, 11, 9, 8, 23, 6,
+      3, 26, 31, 28, 23, 27, 4, 18, 12, 25, 24, 21, 30, 16, 2, 22, 19, 15, 13, 14,
+      20, 8, 11, 9, 5, 17, 10, 6, 1, 7, 29, 3, 9, 4, 11, 1, 25, 30, 29, 27, 19, 23,
+      7, 18, 22, 8, 13, 10, 6, 20, 14, 21, 26, 31, 16, 3, 24, 12, 28, 5, 15, 17, 2,
+      26, 1, 2, 23, 17, 29, 20, 25, 22, 9, 13, 10, 6, 14, 12, 21, 8, 28, 11, 16, 15,
+      7, 3, 31, 18, 27, 5, 4, 24, 19, 30]
+    objective: 65686
+  solveTime: 2.68704
+  status: SATISFIED
+  threads: '20'
+  time: 3.193
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 3193
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 66610
+  objectiveBound: 69000
+  paths: 0
+  problem: team-assignment
+  propagations: 6721043
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 24, 18, 31, 7, 28, 30, 21,
+      17, 16, 29, 15, 25, 19, 20, 14, 13, 26, 12, 2, 9, 1, 10, 5, 27, 8, 3, 23, 6,
+      11, 26, 31, 28, 23, 27, 4, 18, 12, 25, 24, 21, 30, 17, 2, 22, 19, 16, 13, 8,
+      20, 11, 14, 9, 7, 15, 10, 6, 1, 5, 29, 3, 9, 4, 25, 17, 2, 30, 27, 29, 19, 23,
+      7, 18, 22, 20, 14, 13, 12, 11, 10, 21, 26, 31, 16, 3, 24, 6, 28, 5, 8, 15, 1,
+      26, 1, 2, 27, 23, 29, 25, 20, 22, 9, 17, 15, 14, 10, 12, 21, 6, 28, 5, 16, 8,
+      13, 3, 31, 18, 7, 11, 4, 24, 19, 30]
+    objective: 66610
+  solveTime: 3.08338
+  status: SATISFIED
+  threads: '20'
+  time: 3.589
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 3308
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 66611
+  objectiveBound: 69000
+  paths: 0
+  problem: team-assignment
+  propagations: 6803414
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 24, 18, 31, 7, 28, 30, 27,
+      17, 16, 29, 21, 25, 19, 20, 14, 13, 26, 12, 2, 9, 1, 10, 5, 3, 8, 15, 23, 6,
+      11, 26, 31, 28, 3, 27, 4, 18, 12, 25, 24, 23, 30, 17, 2, 22, 19, 16, 21, 8,
+      20, 11, 14, 9, 7, 15, 10, 6, 1, 13, 29, 5, 9, 4, 25, 17, 2, 30, 27, 29, 19,
+      23, 7, 11, 22, 20, 14, 13, 18, 12, 10, 21, 26, 31, 16, 3, 24, 6, 28, 5, 8, 15,
+      1, 29, 1, 2, 27, 23, 12, 25, 20, 22, 9, 17, 15, 14, 10, 26, 21, 6, 28, 5, 16,
+      8, 13, 3, 31, 18, 7, 11, 4, 24, 19, 30]
+    objective: 66611
+  solveTime: 3.138
+  status: SATISFIED
+  threads: '20'
+  time: 3.644
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 3469
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 66613
+  objectiveBound: 69000
+  paths: 0
+  problem: team-assignment
+  propagations: 6932501
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 24, 18, 31, 7, 28, 30, 15,
+      17, 16, 29, 21, 25, 19, 20, 14, 13, 26, 12, 2, 9, 1, 10, 5, 8, 27, 3, 23, 6,
+      11, 26, 31, 28, 13, 5, 4, 18, 12, 25, 24, 23, 30, 17, 2, 22, 19, 16, 21, 8,
+      20, 11, 14, 9, 7, 15, 10, 6, 1, 27, 29, 3, 9, 4, 25, 17, 2, 30, 27, 29, 19,
+      23, 7, 11, 22, 20, 14, 13, 18, 12, 10, 21, 26, 31, 16, 3, 24, 6, 28, 5, 8, 15,
+      1, 29, 1, 2, 27, 23, 12, 25, 20, 22, 9, 17, 15, 14, 10, 26, 21, 6, 28, 5, 16,
+      8, 13, 3, 31, 18, 7, 11, 4, 24, 19, 30]
+    objective: 66613
+  solveTime: 3.22175
+  status: SATISFIED
+  threads: '20'
+  time: 3.728
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 3490
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 66617
+  objectiveBound: 69000
+  paths: 0
+  problem: team-assignment
+  propagations: 6956507
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 27, 18, 31, 7, 28, 30, 24,
+      17, 16, 29, 21, 25, 19, 20, 14, 15, 26, 12, 2, 9, 1, 10, 5, 8, 13, 3, 23, 6,
+      11, 26, 31, 28, 13, 1, 4, 18, 12, 25, 24, 23, 30, 17, 2, 22, 19, 16, 21, 8,
+      20, 11, 14, 9, 7, 15, 10, 6, 27, 5, 29, 3, 9, 4, 25, 17, 2, 30, 27, 29, 19,
+      23, 7, 11, 22, 20, 14, 13, 18, 12, 10, 21, 26, 31, 16, 3, 24, 6, 28, 5, 8, 15,
+      1, 29, 1, 2, 27, 23, 12, 25, 20, 22, 9, 17, 15, 14, 10, 26, 21, 6, 28, 5, 16,
+      8, 13, 3, 31, 18, 7, 11, 4, 24, 19, 30]
+    objective: 66617
+  solveTime: 3.24325
+  status: SATISFIED
+  threads: '20'
+  time: 3.749
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 5200
+  configuration: com-google-ortools-sat_v9.9_model_data3_5_31_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T09:10:24.159775'
+  evaluatedHalfReifiedConstraints: 3844
+  evaluatedReifiedConstraints: 3920
+  failures: 0
+  flatBoolVars: 7764
+  flatIntConstraints: 15601
+  flatIntVars: 7924
+  flatTime: 0.313375
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 66664
+  objectiveBound: 69000
+  paths: 0
+  problem: team-assignment
+  propagations: 529810
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 24, 18, 25, 7, 28, 30, 21,
+      31, 16, 29, 15, 27, 19, 20, 11, 13, 26, 12, 2, 14, 1, 10, 5, 23, 8, 3, 9, 6,
+      17, 26, 31, 28, 23, 27, 4, 18, 12, 21, 24, 25, 30, 17, 2, 22, 19, 16, 13, 8,
+      20, 11, 14, 9, 5, 15, 10, 6, 1, 3, 29, 7, 10, 4, 23, 17, 2, 30, 27, 29, 19,
+      9, 7, 14, 22, 20, 13, 25, 1, 11, 12, 21, 26, 31, 16, 6, 24, 18, 28, 5, 8, 15,
+      3, 26, 1, 2, 8, 23, 29, 25, 31, 22, 10, 17, 15, 20, 27, 12, 21, 9, 28, 14, 16,
+      6, 13, 3, 7, 18, 5, 11, 4, 24, 19, 30]
+    objective: 66664
+  solveTime: 3.26903
+  status: SATISFIED
+  threads: '20'
+  time: 3.775
+  timeout_ms: '300000'
+  version: v9.9

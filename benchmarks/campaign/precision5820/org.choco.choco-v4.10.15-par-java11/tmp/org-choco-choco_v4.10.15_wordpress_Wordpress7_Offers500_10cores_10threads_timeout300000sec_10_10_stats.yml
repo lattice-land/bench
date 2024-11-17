@@ -1,0 +1,9 @@
+{boolVariables: 145, configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_10threads_timeout300000sec_10_10,
+  constraints: 333, cores: '10', data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn,
+  datetime: '2024-09-11T11:21:47.607382', evaluatedReifiedConstraints: 36, failures: 1093822,
+  flatBoolConstraints: 16, flatBoolVars: 34, flatIntConstraints: 300, flatIntVars: 182,
+  flatTime: 0.0743994, initTime: 0.431, intVariables: 599, method: minimize, model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn,
+  mzn_solver: org.choco.choco, nSolutions: 33, nodes: 1101553, objective: 2022, paths: 0,
+  peakDepth: 49, problem: wordpress, restarts: 183, setVariables: 0, solutions: 6,
+  solveTime: 299.997, status: SATISFIED, threads: '10', timeout_sec: '300000', variables: 744,
+  version: v4.10.15}

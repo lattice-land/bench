@@ -1,0 +1,26 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_blocks_16-4-5_timeout300000ms_1_1", "problem": "blocks-world", "model": "../data/mzn-challenge/2022/blocks-world/blocks.mzn", "data_file": "../data/mzn-challenge/2022/blocks-world/16-4-5.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "300000", "datetime": "2024-09-12T08:24:52.298056", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 22950, "flatIntVars": 20179, "flatBoolConstraints": 5039, "flatIntConstraints": 39757, "evaluatedReifiedConstraints": 20176, "evaluatedHalfReifiedConstraints": 1260, "eliminatedImplications": 438, "method": "minimize", "flatTime": 0.707469}}
+{"type": "comment", "comment": "%% File /tmp/mznfileFw1Cii.fzn parsed in 307 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 17907 times\n"}
+{"type": "comment", "comment": "%%   - rule 'int_lin_eq: store affine mapping' was applied 64 times\n"}
+{"type": "comment", "comment": "%%   - done in 13 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileFw1Cii\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 1626\n"}
+{"type": "comment", "comment": "%%   - array_var_int_element: 128\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 2390\n"}
+{"type": "comment", "comment": "%%   - bool_eq: 16\n"}
+{"type": "comment", "comment": "%%   - bool_eq_reif: 1008\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 18145\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 1136\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 93\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_imp: 63\n"}
+{"type": "comment", "comment": "%%   - int_lin_ne_imp: 252\n"}
+{"type": "comment", "comment": "%%   - int_lin_ne_reif: 960\n"}
+{"type": "comment", "comment": "%%   - int_ne: 65\n"}
+{"type": "comment", "comment": "%%   - int_ne_imp: 945\n"}
+{"type": "comment", "comment": "%%   - int_ne_reif: 63\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 300912}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

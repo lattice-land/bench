@@ -1,0 +1,520 @@
+- boolVariables: 43
+  configuration: org-choco-choco_v4.10.15_peaceable_queens_n8_q3_10cores_10threads_timeout300000ms_10_10
+  constraints: 270
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/generalized-peacable-queens/n8_q3.json
+  datetime: '2024-09-11T21:59:42.553669'
+  failures: 0
+  flatIntConstraints: 59
+  flatIntVars: 67
+  flatTime: 0.173509
+  initTime: 0.386
+  intVariables: 1215
+  method: maximize
+  model: ../data/mzn-challenge/2022/generalized-peacable-queens/peaceable_queens.mzn
+  mzn_solver: org.choco.choco
+  nodes: 55
+  objective: 0
+  paths: 0
+  peakDepth: 54
+  problem: generalized-peacable-queens
+  restarts: 1
+  setVariables: 0
+  solution:
+    counts: [0, 0, 0]
+    objective: 0
+    x:
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+  solutions: 1
+  solveTime: 0.112
+  status: SATISFIED
+  threads: '10'
+  time: 0.816
+  timeout_ms: '300000'
+  variables: 1258
+  version: v4.10.15
+- boolVariables: 43
+  configuration: org-choco-choco_v4.10.15_peaceable_queens_n8_q3_10cores_10threads_timeout300000ms_10_10
+  constraints: 270
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/generalized-peacable-queens/n8_q3.json
+  datetime: '2024-09-11T21:59:42.553669'
+  failures: 52
+  flatIntConstraints: 59
+  flatIntVars: 67
+  flatTime: 0.173509
+  initTime: 0.385
+  intVariables: 1215
+  method: maximize
+  model: ../data/mzn-challenge/2022/generalized-peacable-queens/peaceable_queens.mzn
+  mzn_solver: org.choco.choco
+  nodes: 248
+  objective: 1
+  paths: 0
+  peakDepth: 61
+  problem: generalized-peacable-queens
+  restarts: 4
+  setVariables: 0
+  solution:
+    counts: [1, 1, 1]
+    objective: 1
+    x:
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 1}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 2}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 3}
+  solutions: 1
+  solveTime: 0.402
+  status: SATISFIED
+  threads: '10'
+  time: 1.105
+  timeout_ms: '300000'
+  variables: 1258
+  version: v4.10.15
+- boolVariables: 43
+  configuration: org-choco-choco_v4.10.15_peaceable_queens_n8_q3_10cores_10threads_timeout300000ms_10_10
+  constraints: 270
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/generalized-peacable-queens/n8_q3.json
+  datetime: '2024-09-11T21:59:42.553669'
+  failures: 142
+  flatIntConstraints: 59
+  flatIntVars: 67
+  flatTime: 0.173509
+  initTime: 0.385
+  intVariables: 1215
+  method: maximize
+  model: ../data/mzn-challenge/2022/generalized-peacable-queens/peaceable_queens.mzn
+  mzn_solver: org.choco.choco
+  nodes: 568
+  objective: 2
+  paths: 0
+  peakDepth: 61
+  problem: generalized-peacable-queens
+  restarts: 11
+  setVariables: 0
+  solution:
+    counts: [2, 2, 2]
+    objective: 2
+    x:
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 1}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 2}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - c: Q
+        e: {c: Army, e: 3}
+      - c: Q
+        e: {c: Army, e: 3}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 1}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 2}
+  solutions: 2
+  solveTime: 0.511
+  status: SATISFIED
+  threads: '10'
+  time: 1.214
+  timeout_ms: '300000'
+  variables: 1258
+  version: v4.10.15
+- boolVariables: 43
+  configuration: org-choco-choco_v4.10.15_peaceable_queens_n8_q3_10cores_10threads_timeout300000ms_10_10
+  constraints: 270
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/generalized-peacable-queens/n8_q3.json
+  datetime: '2024-09-11T21:59:42.553669'
+  failures: 303
+  flatIntConstraints: 59
+  flatIntVars: 67
+  flatTime: 0.173509
+  initTime: 0.385
+  intVariables: 1215
+  method: maximize
+  model: ../data/mzn-challenge/2022/generalized-peacable-queens/peaceable_queens.mzn
+  mzn_solver: org.choco.choco
+  nodes: 1374
+  objective: 3
+  paths: 0
+  peakDepth: 61
+  problem: generalized-peacable-queens
+  restarts: 23
+  setVariables: 0
+  solution:
+    counts: [3, 3, 3]
+    objective: 3
+    x:
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 1}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 2}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - c: Q
+        e: {c: Army, e: 3}
+      - c: Q
+        e: {c: Army, e: 3}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 3}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 2}
+      - c: Q
+        e: {c: Army, e: 2}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 1}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 1}
+  solutions: 3
+  solveTime: 0.638
+  status: SATISFIED
+  threads: '10'
+  time: 1.341
+  timeout_ms: '300000'
+  variables: 1258
+  version: v4.10.15
+- boolVariables: 43
+  configuration: org-choco-choco_v4.10.15_peaceable_queens_n8_q3_10cores_10threads_timeout300000ms_10_10
+  constraints: 270
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/generalized-peacable-queens/n8_q3.json
+  datetime: '2024-09-11T21:59:42.553669'
+  failures: 16540
+  flatIntConstraints: 59
+  flatIntVars: 67
+  flatTime: 0.173509
+  initTime: 0.385
+  intVariables: 1215
+  method: maximize
+  model: ../data/mzn-challenge/2022/generalized-peacable-queens/peaceable_queens.mzn
+  mzn_solver: org.choco.choco
+  nodes: 19471
+  objective: 4
+  paths: 0
+  peakDepth: 61
+  problem: generalized-peacable-queens
+  restarts: 99
+  setVariables: 0
+  solution:
+    counts: [4, 4, 4]
+    objective: 4
+    x:
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 1}
+      - c: Q
+        e: {c: Army, e: 1}
+    - - c: Q
+        e: {c: Army, e: 2}
+      - c: Q
+        e: {c: Army, e: 2}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 2}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 2}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 1}
+      - c: Q
+        e: {c: Army, e: 1}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 3}
+      - c: Q
+        e: {c: Army, e: 3}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 3}
+      - c: Q
+        e: {c: Army, e: 3}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+  solutions: 2
+  solveTime: 2.236
+  status: SATISFIED
+  threads: '10'
+  time: 2.942
+  timeout_ms: '300000'
+  variables: 1258
+  version: v4.10.15

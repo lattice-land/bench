@@ -1,0 +1,13 @@
+{and_nodes: 256, arch: gpu, configuration: turbo-gpu-release_v1.2.0_stripboard_common-emitter-simple_timeout300000ms_1_1_globalmem,
+  cores: '1', cuda_version: 12050, cutnodes: 0, data_file: ../data/mzn-challenge/2022/stripboard/common-emitter-simple.dzn,
+  datetime: '2024-09-12T13:49:27.678733', eliminatedImplications: 6, eliminated_formulas: 677,
+  eliminated_variables: 272, eps_num_subproblems: 4096, eps_skipped_subproblems: 1524,
+  eps_solved_subproblems: 9, evaluatedReifiedConstraints: 1627, failures: 627903,
+  fixpoint_iterations: 10855613, flatBoolConstraints: 641, flatBoolVars: 1615, flatIntConstraints: 2178,
+  flatIntVars: 298, flatTime: 0.205761, free_search: no, hardware: precision5820,
+  initTime: 0.212, memory_configuration: global, method: minimize, model: ../data/mzn-challenge/2022/stripboard/stripboard.mzn,
+  mzn_solver: turbo.gpu.release, nSolutions: 0, nodes: 1263585, num_blocks_done: 0,
+  num_solutions: 0, or_nodes: 64, paths: 0, peakDepth: 68, problem: stripboard, problem_path: /tmp/mznfilex5nlUb.fzn,
+  propagator_mem: 3223588, propagators: 3874, shared_mem: 100, solveTime: 300.089,
+  solver: Turbo, stack_size: 32000, status: UNKNOWN, store_mem: 15056, threads: '1',
+  timeout_ms: 300000, variables: 1851, version: v1.2.0}

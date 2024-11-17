@@ -1,0 +1,8 @@
+{boolVariables: 28736, configuration: com-google-ortools-sat_v9.9_blocks_16-4-5_10cores_20threads_timeout300000ms_10_20,
+  cores: '10', data_file: ../data/mzn-challenge/2022/blocks-world/16-4-5.dzn, datetime: '2024-09-12T08:56:26.993082',
+  eliminatedImplications: 438, evaluatedHalfReifiedConstraints: 1260, evaluatedReifiedConstraints: 20176,
+  failures: 138, flatBoolConstraints: 5039, flatBoolVars: 22950, flatIntConstraints: 39757,
+  flatIntVars: 20179, flatTime: 0.714154, method: minimize, model: ../data/mzn-challenge/2022/blocks-world/blocks.mzn,
+  mzn_solver: com.google.ortools.sat, nSolutions: 6, objective: 25, objectiveBound: 25,
+  paths: 0, problem: blocks-world, propagations: 26431611, solveTime: 22.3765, status: OPTIMAL_SOLUTION,
+  threads: '20', timeout_ms: '300000', version: v9.9}

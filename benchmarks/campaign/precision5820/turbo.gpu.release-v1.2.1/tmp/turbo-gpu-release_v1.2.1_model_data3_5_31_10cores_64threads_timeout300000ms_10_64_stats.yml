@@ -1,0 +1,12 @@
+{and_nodes: 256, arch: HYBRID, configuration: turbo-gpu-release_v1.2.1_model_data3_5_31_10cores_64threads_timeout300000ms_10_64,
+  cores: '10', cuda_version: 12060, cutnodes: 0, data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn,
+  datetime: '2024-10-24T22:54:55.625630', eliminated_formulas: 15932, eliminated_variables: 7950,
+  eps_num_subproblems: 4096, eps_skipped_subproblems: 0, eps_solved_subproblems: 0,
+  evaluatedReifiedConstraints: 7764, failures: 166187, fixpoint_iterations: 5633477,
+  flatBoolVars: 7764, flatIntConstraints: 17514, flatIntVars: 7982, flatTime: 0.336599,
+  free_search: no, hardware: precision5820, initTime: 1.027, memory_configuration: global,
+  method: maximize, model: ../data/mzn-challenge/2022/team-assignment/model.mzn, mzn_solver: turbo.gpu.release,
+  nSolutions: 1, nodes: 340499, num_blocks_done: 0, num_solutions: 21, objective: 5256,
+  or_nodes: 64, paths: 0, peakDepth: 138, problem: team-assignment, problem_path: /tmp/mznfilefx88pl.fzn,
+  propagators: 9750, shared_mem: 100, solveTime: 300.012, solver: Turbo, stack_size: 32000,
+  status: SATISFIED, threads: '64', timeout_ms: 300000, variables: 7982, version: v1.2.1}

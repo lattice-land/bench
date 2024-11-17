@@ -1,0 +1,258 @@
+- boolVariables: 201
+  configuration: org-choco-choco_spot5_404
+  constraints: 812
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/spot5/404.dzn
+  datetime: '2024-09-10T20:13:27.650265'
+  evaluatedReifiedConstraints: 100
+  failures: 411
+  flatBoolVars: 100
+  flatIntConstraints: 811
+  flatIntVars: 201
+  flatTime: 0.0975391
+  initTime: 0.25
+  intVariables: 101
+  method: minimize
+  model: ../data/mzn-challenge/2022/spot5/spot5.mzn
+  mzn_solver: org.choco.choco
+  nodes: 505
+  objective: 124
+  paths: 0
+  peakDepth: 103
+  problem: spot5
+  restarts: 0
+  setVariables: 0
+  solution:
+    objective: 124
+    p: [2, 2, 1, 2, 0, 0, 0, 13, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0, 0, 0, 13,
+      0, 0, 0, 3, 2, 0, 1, 0, 2, 0, 0, 13, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2,
+      0, 0, 0, 0, 0, 0, 3, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 13, 0, 0, 13, 0,
+      13, 0, 13, 0, 0, 0, 2, 0, 3, 0, 1, 0, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 0, 3]
+  solutions: 1
+  solveTime: 0.074
+  status: SATISFIED
+  threads: '1'
+  time: 0.582
+  variables: 302
+- boolVariables: 201
+  configuration: org-choco-choco_spot5_404
+  constraints: 812
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/spot5/404.dzn
+  datetime: '2024-09-10T20:13:27.650265'
+  evaluatedReifiedConstraints: 100
+  failures: 529
+  flatBoolVars: 100
+  flatIntConstraints: 811
+  flatIntVars: 201
+  flatTime: 0.0975391
+  initTime: 0.25
+  intVariables: 101
+  method: minimize
+  model: ../data/mzn-challenge/2022/spot5/spot5.mzn
+  mzn_solver: org.choco.choco
+  nodes: 673
+  objective: 123
+  paths: 0
+  peakDepth: 103
+  problem: spot5
+  restarts: 1
+  setVariables: 0
+  solution:
+    objective: 123
+    p: [2, 2, 1, 2, 0, 0, 0, 13, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 13, 0, 0, 0,
+      13, 0, 0, 0, 3, 2, 0, 1, 0, 2, 0, 0, 13, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      2, 0, 0, 0, 0, 0, 0, 3, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 13, 0, 0, 13,
+      0, 13, 0, 13, 0, 0, 0, 2, 0, 3, 0, 1, 0, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 0,
+      3]
+  solutions: 2
+  solveTime: 0.096
+  status: SATISFIED
+  threads: '1'
+  time: 0.604
+  variables: 302
+- boolVariables: 201
+  configuration: org-choco-choco_spot5_404
+  constraints: 812
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/spot5/404.dzn
+  datetime: '2024-09-10T20:13:27.650265'
+  evaluatedReifiedConstraints: 100
+  failures: 3127
+  flatBoolVars: 100
+  flatIntConstraints: 811
+  flatIntVars: 201
+  flatTime: 0.0975391
+  initTime: 0.25
+  intVariables: 101
+  method: minimize
+  model: ../data/mzn-challenge/2022/spot5/spot5.mzn
+  mzn_solver: org.choco.choco
+  nodes: 3524
+  objective: 122
+  paths: 0
+  peakDepth: 103
+  problem: spot5
+  restarts: 5
+  setVariables: 0
+  solution:
+    objective: 122
+    p: [2, 2, 1, 2, 0, 0, 0, 13, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 13, 0, 0, 0,
+      13, 0, 0, 0, 3, 2, 0, 1, 0, 2, 0, 0, 13, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      1, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 13, 13, 0, 13,
+      0, 13, 0, 13, 0, 0, 0, 2, 0, 3, 0, 1, 0, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 0,
+      3]
+  solutions: 3
+  solveTime: 0.201
+  status: SATISFIED
+  threads: '1'
+  time: 0.708
+  variables: 302
+- boolVariables: 201
+  configuration: org-choco-choco_spot5_404
+  constraints: 812
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/spot5/404.dzn
+  datetime: '2024-09-10T20:13:27.650265'
+  evaluatedReifiedConstraints: 100
+  failures: 3144
+  flatBoolVars: 100
+  flatIntConstraints: 811
+  flatIntVars: 201
+  flatTime: 0.0975391
+  initTime: 0.25
+  intVariables: 101
+  method: minimize
+  model: ../data/mzn-challenge/2022/spot5/spot5.mzn
+  mzn_solver: org.choco.choco
+  nodes: 3540
+  objective: 121
+  paths: 0
+  peakDepth: 103
+  problem: spot5
+  restarts: 5
+  setVariables: 0
+  solution:
+    objective: 121
+    p: [2, 2, 1, 2, 0, 0, 0, 13, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 13, 0, 0, 0,
+      13, 0, 0, 0, 3, 2, 0, 1, 0, 2, 0, 0, 13, 0, 0, 13, 0, 0, 0, 2, 0, 0, 0, 0, 0,
+      1, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 13, 13, 0, 13,
+      0, 13, 0, 13, 0, 0, 0, 2, 0, 3, 0, 1, 0, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 0,
+      3]
+  solutions: 4
+  solveTime: 0.203
+  status: SATISFIED
+  threads: '1'
+  time: 0.71
+  variables: 302
+- boolVariables: 201
+  configuration: org-choco-choco_spot5_404
+  constraints: 812
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/spot5/404.dzn
+  datetime: '2024-09-10T20:13:27.650265'
+  evaluatedReifiedConstraints: 100
+  failures: 11521
+  flatBoolVars: 100
+  flatIntConstraints: 811
+  flatIntVars: 201
+  flatTime: 0.0975391
+  initTime: 0.25
+  intVariables: 101
+  method: minimize
+  model: ../data/mzn-challenge/2022/spot5/spot5.mzn
+  mzn_solver: org.choco.choco
+  nodes: 12560
+  objective: 119
+  paths: 0
+  peakDepth: 103
+  problem: spot5
+  restarts: 16
+  setVariables: 0
+  solution:
+    objective: 119
+    p: [2, 2, 1, 2, 0, 0, 0, 13, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 13, 0, 0, 0,
+      13, 0, 0, 0, 3, 2, 0, 1, 0, 2, 0, 0, 13, 0, 0, 13, 0, 0, 0, 2, 0, 0, 0, 0, 0,
+      1, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 13, 13, 0, 13,
+      0, 13, 0, 0, 0, 13, 13, 2, 0, 3, 0, 1, 0, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 0,
+      3]
+  solutions: 5
+  solveTime: 0.382
+  status: SATISFIED
+  threads: '1'
+  time: 0.889
+  variables: 302
+- boolVariables: 201
+  configuration: org-choco-choco_spot5_404
+  constraints: 812
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/spot5/404.dzn
+  datetime: '2024-09-10T20:13:27.650265'
+  evaluatedReifiedConstraints: 100
+  failures: 14317
+  flatBoolVars: 100
+  flatIntConstraints: 811
+  flatIntVars: 201
+  flatTime: 0.0975391
+  initTime: 0.25
+  intVariables: 101
+  method: minimize
+  model: ../data/mzn-challenge/2022/spot5/spot5.mzn
+  mzn_solver: org.choco.choco
+  nodes: 15574
+  objective: 118
+  paths: 0
+  peakDepth: 103
+  problem: spot5
+  restarts: 20
+  setVariables: 0
+  solution:
+    objective: 118
+    p: [2, 2, 1, 2, 0, 0, 0, 13, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 13, 0, 0, 0,
+      13, 0, 0, 0, 3, 2, 0, 1, 0, 2, 0, 0, 13, 0, 0, 13, 0, 0, 0, 2, 0, 0, 0, 0, 0,
+      0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 2, 0, 0, 13, 13, 0,
+      13, 0, 13, 0, 0, 0, 13, 13, 2, 0, 3, 0, 1, 0, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0,
+      2, 0, 3]
+  solutions: 6
+  solveTime: 0.431
+  status: SATISFIED
+  threads: '1'
+  time: 0.937
+  variables: 302
+- boolVariables: 201
+  configuration: org-choco-choco_spot5_404
+  constraints: 812
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/spot5/404.dzn
+  datetime: '2024-09-10T20:13:27.650265'
+  evaluatedReifiedConstraints: 100
+  failures: 16533
+  flatBoolVars: 100
+  flatIntConstraints: 811
+  flatIntVars: 201
+  flatTime: 0.0975391
+  initTime: 0.25
+  intVariables: 101
+  method: minimize
+  model: ../data/mzn-challenge/2022/spot5/spot5.mzn
+  mzn_solver: org.choco.choco
+  nodes: 18008
+  objective: 116
+  paths: 0
+  peakDepth: 103
+  problem: spot5
+  restarts: 24
+  setVariables: 0
+  solution:
+    objective: 116
+    p: [2, 2, 1, 2, 13, 0, 0, 0, 0, 2, 0, 0, 13, 0, 0, 0, 0, 0, 2, 0, 0, 13, 0, 0,
+      13, 0, 0, 0, 3, 2, 0, 1, 0, 2, 0, 0, 13, 0, 0, 13, 0, 0, 0, 2, 0, 0, 0, 0, 0,
+      0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 2, 0, 0, 13, 13, 0,
+      13, 0, 13, 0, 0, 0, 13, 13, 2, 0, 3, 0, 1, 0, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0,
+      2, 0, 3]
+  solutions: 7
+  solveTime: 0.469
+  status: SATISFIED
+  threads: '1'
+  time: 0.976
+  variables: 302

@@ -1,0 +1,26 @@
+- configuration: turbo-gpu-release_v1.2.1_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-10-21T19:59:04.894719'
+  evaluatedReifiedConstraints: 460
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.132407
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: turbo.gpu.release
+  paths: 0
+  problem: accap
+  solution:
+    D: 48
+    S: [9, 20, 26, 29]
+    objective: 132
+    yCoor: [22, 6, 23, 1, 20, 1, 1, 10, 10, 25, 22, 18, 27, 22, 4, 30, 14, 46, 22,
+      7, 14, 21, 10, 12, 34, 36, 36, 29, 41, 11]
+  status: SATISFIED
+  threads: '20'
+  time: 300.232
+  timeout_ms: '300000'
+  version: v1.2.1

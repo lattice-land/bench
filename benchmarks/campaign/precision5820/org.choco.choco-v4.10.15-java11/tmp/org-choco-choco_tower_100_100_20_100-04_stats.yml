@@ -1,0 +1,8 @@
+{boolVariables: 4382, configuration: org-choco-choco_tower_100_100_20_100-04, constraints: 5092,
+  cores: '1', data_file: ../data/mzn-challenge/2022/tower/100_100_20_100-04.dzn, datetime: '2024-09-10T20:28:31.523460',
+  evaluatedHalfReifiedConstraints: 40, evaluatedReifiedConstraints: 2020, failures: 720645,
+  flatBoolConstraints: 100, flatBoolVars: 2260, flatIntConstraints: 4991, flatIntVars: 2751,
+  flatTime: 0.252651, initTime: 0.385, intVariables: 677, method: maximize, model: ../data/mzn-challenge/2022/tower/tower.mzn,
+  mzn_solver: org.choco.choco, nSolutions: 32, nodes: 766695, objective: 79, paths: 0,
+  peakDepth: 351, problem: tower, restarts: 400, setVariables: 0, solutions: 32, solveTime: 300.0,
+  status: SATISFIED, threads: '1', variables: 5059}

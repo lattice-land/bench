@@ -1,0 +1,10 @@
+{arch: cpu, configuration: turbo-cpu-release_spot5_404, cutnodes: 0, data_file: ../data/mzn-challenge/2022/spot5/404.dzn,
+  datetime: '2024-08-29T19:15:28.133126', eliminated_formulas: 1041, eliminated_variables: 301,
+  eps_num_subproblems: 1, eps_skipped_subproblems: 0, eps_solved_subproblems: 0, evaluatedReifiedConstraints: 100,
+  failures: 119998, fixpoint_iterations: 1023620, flatBoolVars: 100, flatIntConstraints: 1439,
+  flatIntVars: 811, flatTime: 0.152933, free_search: no, hardware: precision5820,
+  initTime: 0.213, method: minimize, model: ../data/mzn-challenge/2022/spot5/spot5.mzn,
+  mzn_solver: turbo.cpu.release, nSolutions: 1, nodes: 240091, num_blocks_done: 0,
+  num_solutions: 12, objective: 141, or_nodes: 0, paths: 0, peakDepth: 100, problem: spot5,
+  problem_path: /tmp/mznfileGjvq9H.fzn, propagators: 7080, solveTime: 300.0, solver: Turbo,
+  status: SATISFIED, timeout_ms: 300000, variables: 811, version: v1.2.0}

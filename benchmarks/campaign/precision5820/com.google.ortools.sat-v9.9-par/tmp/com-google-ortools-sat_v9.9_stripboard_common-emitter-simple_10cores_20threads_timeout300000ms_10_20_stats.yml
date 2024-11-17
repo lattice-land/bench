@@ -1,0 +1,9 @@
+{boolVariables: 1417, configuration: com-google-ortools-sat_v9.9_stripboard_common-emitter-simple_10cores_20threads_timeout300000ms_10_20,
+  cores: '10', data_file: ../data/mzn-challenge/2022/stripboard/common-emitter-simple.dzn,
+  datetime: '2024-09-12T08:56:21.502414', eliminatedImplications: 14, evaluatedHalfReifiedConstraints: 840,
+  evaluatedReifiedConstraints: 31, failures: 332, flatBoolConstraints: 312, flatBoolVars: 851,
+  flatIntConstraints: 1115, flatIntVars: 289, flatTime: 0.165169, method: minimize,
+  model: ../data/mzn-challenge/2022/stripboard/stripboard.mzn, mzn_solver: com.google.ortools.sat,
+  nSolutions: 3, objective: 40, objectiveBound: 40, paths: 0, problem: stripboard,
+  propagations: 1575808, solveTime: 4.66186, status: OPTIMAL_SOLUTION, threads: '20',
+  timeout_ms: '300000', version: v9.9}

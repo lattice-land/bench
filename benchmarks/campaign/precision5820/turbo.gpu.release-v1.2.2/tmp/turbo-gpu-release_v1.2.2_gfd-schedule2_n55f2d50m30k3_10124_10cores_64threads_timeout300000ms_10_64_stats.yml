@@ -1,0 +1,13 @@
+{and_nodes: 256, arch: HYBRID, configuration: turbo-gpu-release_v1.2.2_gfd-schedule2_n55f2d50m30k3_10124_10cores_64threads_timeout300000ms_10_64,
+  cores: '10', cuda_version: 12060, cutnodes: 0, data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn,
+  datetime: '2024-10-25T09:17:39.161650', eliminated_formulas: 30238, eliminated_variables: 10754,
+  eps_num_subproblems: 4096, eps_skipped_subproblems: 12, eps_solved_subproblems: 0,
+  evaluatedReifiedConstraints: 11641, failures: 117206, fixpoint_iterations: 3468652,
+  flatBoolConstraints: 7659, flatBoolVars: 16973, flatIntConstraints: 25585, flatIntVars: 13350,
+  flatTime: 0.517406, free_search: no, hardware: precision5820, initTime: 2.017, memory_configuration: global,
+  method: minimize, model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn,
+  mzn_solver: turbo.gpu.release, nSolutions: 1, nodes: 236530, num_blocks_done: 0,
+  num_solutions: 9, objective: 5205, or_nodes: 64, paths: 0, peakDepth: 53, problem: gfd-schedule,
+  problem_path: /tmp/mznfilertMAUs.fzn, propagators: 24334, shared_mem: 100, solveTime: 300.047,
+  solver: Turbo, stack_size: 32000, status: SATISFIED, threads: '64', timeout_ms: 300000,
+  variables: 21850, version: v1.2.2}

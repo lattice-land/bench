@@ -1,0 +1,8 @@
+{boolVariables: 971, configuration: com-google-ortools-sat_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1,
+  cores: '1', data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn,
+  datetime: '2024-09-12T08:51:05.446244', evaluatedHalfReifiedConstraints: 1199, evaluatedReifiedConstraints: 372,
+  failures: 12930, flatBoolConstraints: 3852, flatBoolVars: 2141, flatIntConstraints: 1785,
+  flatIntVars: 252, flatTime: 0.2291, method: minimize, model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn,
+  mzn_solver: com.google.ortools.sat, nSolutions: 18, objective: 349, objectiveBound: 349,
+  paths: 0, problem: diameterc-mst, propagations: 8039123, solveTime: 3.19894, status: OPTIMAL_SOLUTION,
+  threads: '1', timeout_ms: '300000', version: v9.9}

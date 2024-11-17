@@ -1,0 +1,192 @@
+- boolVariables: 1
+  configuration: org-choco-choco_rcpsp_J30_15_5
+  constraints: 50
+  cores: '1'
+  data_file: ../data/minizinc-benchmarks/rcpsp/data_psplib/j30/J30_15_5.dzn
+  datetime: '2024-09-10T20:53:02.901402'
+  failures: 0
+  flatIntConstraints: 49
+  flatIntVars: 31
+  flatTime: 0.12759
+  initTime: 0.179
+  intVariables: 173
+  method: minimize
+  model: ../data/minizinc-benchmarks/rcpsp/rcpsp.mzn
+  mzn_solver: org.choco.choco
+  nodes: 21
+  objective: 63
+  paths: 0
+  peakDepth: 21
+  problem: rcpsp
+  restarts: 0
+  setVariables: 0
+  solution:
+    objective: 63
+    s: [0, 0, 0, 6, 8, 15, 6, 15, 24, 21, 16, 31, 34, 16, 45, 33, 23, 31, 25, 41,
+      40, 22, 29, 34, 41, 44, 53, 53, 50, 62]
+  solutions: 1
+  solveTime: 0.039
+  status: SATISFIED
+  threads: '1'
+  time: 0.516
+  variables: 174
+- boolVariables: 1
+  configuration: org-choco-choco_rcpsp_J30_15_5
+  constraints: 50
+  cores: '1'
+  data_file: ../data/minizinc-benchmarks/rcpsp/data_psplib/j30/J30_15_5.dzn
+  datetime: '2024-09-10T20:53:02.901402'
+  failures: 7
+  flatIntConstraints: 49
+  flatIntVars: 31
+  flatTime: 0.12759
+  initTime: 0.179
+  intVariables: 173
+  method: minimize
+  model: ../data/minizinc-benchmarks/rcpsp/rcpsp.mzn
+  mzn_solver: org.choco.choco
+  nodes: 30
+  objective: 62
+  paths: 0
+  peakDepth: 21
+  problem: rcpsp
+  restarts: 0
+  setVariables: 0
+  solution:
+    objective: 62
+    s: [0, 0, 0, 6, 8, 15, 6, 15, 24, 21, 16, 31, 34, 16, 45, 33, 23, 31, 25, 41,
+      40, 22, 29, 34, 41, 44, 50, 53, 53, 59]
+  solutions: 2
+  solveTime: 0.044
+  status: SATISFIED
+  threads: '1'
+  time: 0.519
+  variables: 174
+- boolVariables: 1
+  configuration: org-choco-choco_rcpsp_J30_15_5
+  constraints: 50
+  cores: '1'
+  data_file: ../data/minizinc-benchmarks/rcpsp/data_psplib/j30/J30_15_5.dzn
+  datetime: '2024-09-10T20:53:02.901402'
+  failures: 536
+  flatIntConstraints: 49
+  flatIntVars: 31
+  flatTime: 0.12759
+  initTime: 0.179
+  intVariables: 173
+  method: minimize
+  model: ../data/minizinc-benchmarks/rcpsp/rcpsp.mzn
+  mzn_solver: org.choco.choco
+  nodes: 568
+  objective: 61
+  paths: 0
+  peakDepth: 21
+  problem: rcpsp
+  restarts: 1
+  setVariables: 0
+  solution:
+    objective: 61
+    s: [0, 0, 0, 6, 8, 15, 6, 15, 24, 21, 16, 31, 34, 16, 41, 33, 23, 25, 25, 41,
+      34, 22, 34, 34, 29, 44, 43, 53, 52, 59]
+  solutions: 3
+  solveTime: 0.662
+  status: SATISFIED
+  threads: '1'
+  time: 1.137
+  variables: 174
+- boolVariables: 1
+  configuration: org-choco-choco_rcpsp_J30_15_5
+  constraints: 50
+  cores: '1'
+  data_file: ../data/minizinc-benchmarks/rcpsp/data_psplib/j30/J30_15_5.dzn
+  datetime: '2024-09-10T20:53:02.901402'
+  failures: 3996
+  flatIntConstraints: 49
+  flatIntVars: 31
+  flatTime: 0.12759
+  initTime: 0.179
+  intVariables: 173
+  method: minimize
+  model: ../data/minizinc-benchmarks/rcpsp/rcpsp.mzn
+  mzn_solver: org.choco.choco
+  nodes: 4072
+  objective: 60
+  paths: 0
+  peakDepth: 21
+  problem: rcpsp
+  restarts: 6
+  setVariables: 0
+  solution:
+    objective: 60
+    s: [0, 0, 0, 6, 8, 15, 6, 15, 24, 21, 16, 31, 22, 16, 34, 33, 23, 28, 25, 41,
+      37, 31, 37, 36, 29, 47, 41, 56, 50, 59]
+  solutions: 4
+  solveTime: 1.903
+  status: SATISFIED
+  threads: '1'
+  time: 2.378
+  variables: 174
+- boolVariables: 1
+  configuration: org-choco-choco_rcpsp_J30_15_5
+  constraints: 50
+  cores: '1'
+  data_file: ../data/minizinc-benchmarks/rcpsp/data_psplib/j30/J30_15_5.dzn
+  datetime: '2024-09-10T20:53:02.901402'
+  failures: 3996
+  flatIntConstraints: 49
+  flatIntVars: 31
+  flatTime: 0.12759
+  initTime: 0.179
+  intVariables: 173
+  method: minimize
+  model: ../data/minizinc-benchmarks/rcpsp/rcpsp.mzn
+  mzn_solver: org.choco.choco
+  nodes: 4074
+  objective: 59
+  paths: 0
+  peakDepth: 21
+  problem: rcpsp
+  restarts: 6
+  setVariables: 0
+  solution:
+    objective: 59
+    s: [0, 0, 0, 6, 8, 15, 6, 15, 24, 21, 16, 31, 22, 16, 34, 33, 23, 28, 25, 41,
+      37, 31, 37, 36, 29, 47, 41, 56, 50, 50]
+  solutions: 5
+  solveTime: 1.904
+  status: SATISFIED
+  threads: '1'
+  time: 2.379
+  variables: 174
+- boolVariables: 1
+  configuration: org-choco-choco_rcpsp_J30_15_5
+  constraints: 50
+  cores: '1'
+  data_file: ../data/minizinc-benchmarks/rcpsp/data_psplib/j30/J30_15_5.dzn
+  datetime: '2024-09-10T20:53:02.901402'
+  failures: 5039
+  flatIntConstraints: 49
+  flatIntVars: 31
+  flatTime: 0.12759
+  initTime: 0.179
+  intVariables: 173
+  method: minimize
+  model: ../data/minizinc-benchmarks/rcpsp/rcpsp.mzn
+  mzn_solver: org.choco.choco
+  nodes: 5147
+  objective: 58
+  paths: 0
+  peakDepth: 21
+  problem: rcpsp
+  restarts: 9
+  setVariables: 0
+  solution:
+    objective: 58
+    s: [0, 0, 0, 6, 8, 15, 6, 16, 23, 22, 16, 32, 32, 15, 38, 24, 23, 25, 29, 38,
+      35, 22, 35, 35, 34, 45, 40, 54, 49, 50]
+  solutions: 6
+  solveTime: 2.14
+  status: SATISFIED
+  threads: '1'
+  time: 2.615
+  variables: 174

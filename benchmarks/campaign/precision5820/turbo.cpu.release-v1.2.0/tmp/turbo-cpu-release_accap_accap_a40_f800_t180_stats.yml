@@ -1,0 +1,11 @@
+{arch: cpu, configuration: turbo-cpu-release_accap_accap_a40_f800_t180, cutnodes: 0,
+  data_file: ../data/mzn-challenge/2022/accap/accap_a40_f800_t180.json, datetime: '2024-08-29T19:20:28.844228',
+  eliminated_formulas: 1724, eliminated_variables: 882, eps_num_subproblems: 1, eps_skipped_subproblems: 0,
+  eps_solved_subproblems: 0, evaluatedReifiedConstraints: 26770, failures: 2809, fixpoint_iterations: 54167,
+  flatBoolConstraints: 13385, flatBoolVars: 26770, flatIntConstraints: 43503, flatIntVars: 842,
+  flatTime: 7.23745, free_search: no, hardware: precision5820, initTime: 5.8, method: minimize,
+  model: ../data/mzn-challenge/2022/accap/accap.mzn, mzn_solver: turbo.cpu.release,
+  nSolutions: 1, nodes: 6455, num_blocks_done: 0, num_solutions: 64, objective: 3601,
+  or_nodes: 0, paths: 0, peakDepth: 845, problem: accap, problem_path: /tmp/mznfile6talFx.fzn,
+  propagators: 56888, solveTime: 300.222, solver: Turbo, status: SATISFIED, timeout_ms: 300000,
+  variables: 27612, version: v1.2.0}

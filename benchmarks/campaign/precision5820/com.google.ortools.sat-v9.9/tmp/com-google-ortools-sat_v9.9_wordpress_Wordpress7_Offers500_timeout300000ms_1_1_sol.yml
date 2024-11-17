@@ -1,0 +1,839 @@
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 5
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 4774
+  objectiveBound: 922
+  paths: 0
+  problem: wordpress
+  propagations: 8510706
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0]
+    - [1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1]
+    - [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [350, 350, 350, 350, 350, 308, 308, 308, 308, 308, 308, 296, 296, 292,
+      292]
+    VMType: [316, 316, 316, 316, 316, 387, 387, 387, 387, 387, 387, 418, 418, 368,
+      368]
+    objective: 4774
+  solveTime: 7.82534
+  status: SATISFIED
+  threads: '1'
+  time: 7.945
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 53
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 3146
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 21893548
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0]
+    - [0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [478, 465, 465, 460, 117, 117, 116, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [202, 403, 403, 254, 478, 478, 433, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 3146
+  solveTime: 8.57181
+  status: SATISFIED
+  threads: '1'
+  time: 8.691
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 54
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 3111
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 21905851
+  solution:
+    AssignmentMatrix:
+    - [0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0]
+    - [0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [651, 420, 371, 370, 129, 126, 116, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [402, 278, 364, 308, 485, 477, 433, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 3111
+  solveTime: 8.58806
+  status: SATISFIED
+  threads: '1'
+  time: 8.707
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 55
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2848
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 21917968
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0]
+    - [0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [420, 379, 379, 370, 129, 126, 117, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [278, 408, 345, 308, 485, 477, 478, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 2848
+  solveTime: 8.59388
+  status: SATISFIED
+  threads: '1'
+  time: 8.713
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 59
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2815
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 21938391
+  solution:
+    AssignmentMatrix:
+    - [1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0]
+    - [1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+    Price: [423, 420, 420, 350, 230, 116, 116, 116, 116, 116, 116, 116, 116, 44, 0]
+    VMType: [339, 278, 278, 316, 399, 433, 433, 433, 433, 433, 433, 433, 433, 479,
+      436]
+    objective: 2815
+  solveTime: 8.60287
+  status: SATISFIED
+  threads: '1'
+  time: 8.722
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 104
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2813
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 21964575
+  solution:
+    AssignmentMatrix:
+    - [1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0]
+    - [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [460, 423, 420, 210, 129, 126, 117, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [254, 339, 278, 341, 485, 477, 478, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 2813
+  solveTime: 8.62629
+  status: SATISFIED
+  threads: '1'
+  time: 8.745
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 104
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2808
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 21976422
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [460, 439, 420, 190, 129, 126, 116, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [254, 359, 278, 454, 485, 477, 433, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 2808
+  solveTime: 8.63193
+  status: SATISFIED
+  threads: '1'
+  time: 8.751
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 105
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2787
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 21988331
+  solution:
+    AssignmentMatrix:
+    - [0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [439, 439, 420, 190, 129, 126, 116, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [359, 359, 278, 454, 485, 477, 433, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 2787
+  solveTime: 8.63634
+  status: SATISFIED
+  threads: '1'
+  time: 8.755
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 105
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2772
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 22000122
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [460, 439, 420, 175, 117, 117, 116, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [254, 359, 278, 447, 478, 478, 433, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 2772
+  solveTime: 8.64038
+  status: SATISFIED
+  threads: '1'
+  time: 8.759
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 105
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2767
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 22011952
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [460, 439, 420, 148, 129, 126, 117, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [254, 359, 278, 466, 485, 477, 478, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 2767
+  solveTime: 8.64376
+  status: SATISFIED
+  threads: '1'
+  time: 8.763
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 106
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2761
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 22023926
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1]
+    - [1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0]
+    - [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [379, 379, 350, 210, 210, 134, 130, 126, 126, 126, 126, 117, 116, 116,
+      116]
+    VMType: [345, 408, 316, 341, 341, 499, 457, 477, 464, 477, 477, 478, 433, 433,
+      433]
+    objective: 2761
+  solveTime: 8.65136
+  status: SATISFIED
+  threads: '1'
+  time: 8.77
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 204
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2707
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 22081916
+  solution:
+    AssignmentMatrix:
+    - [1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0]
+    - [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [420, 420, 210, 210, 205, 134, 130, 126, 126, 126, 126, 126, 116, 116,
+      116]
+    VMType: [278, 278, 341, 341, 475, 499, 457, 477, 464, 477, 477, 477, 433, 433,
+      433]
+    objective: 2707
+  solveTime: 8.68921
+  status: SATISFIED
+  threads: '1'
+  time: 8.808
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 215
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2677
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 22103475
+  solution:
+    AssignmentMatrix:
+    - [1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1]
+    - [0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0]
+    - [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [420, 420, 350, 210, 117, 116, 116, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [278, 278, 316, 341, 478, 433, 433, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 2677
+  solveTime: 8.69632
+  status: SATISFIED
+  threads: '1'
+  time: 8.815
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 231
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2466
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 22128899
+  solution:
+    AssignmentMatrix:
+    - [1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1]
+    - [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [420, 350, 210, 210, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [278, 316, 341, 341, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 2466
+  solveTime: 8.70627
+  status: SATISFIED
+  threads: '1'
+  time: 8.825
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 355
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2444
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 22482126
+  solution:
+    AssignmentMatrix:
+    - [1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1]
+    - [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [350, 210, 210, 210, 210, 210, 116, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [316, 341, 341, 341, 341, 341, 433, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 2444
+  solveTime: 8.75612
+  status: SATISFIED
+  threads: '1'
+  time: 8.875
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 369
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2440
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 22502352
+  solution:
+    AssignmentMatrix:
+    - [0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0]
+    - [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+    Price: [420, 420, 210, 210, 126, 126, 116, 116, 116, 116, 116, 116, 116, 116,
+      0]
+    VMType: [278, 278, 341, 341, 477, 477, 433, 433, 433, 433, 433, 433, 433, 433,
+      478]
+    objective: 2440
+  solveTime: 8.76907
+  status: SATISFIED
+  threads: '1'
+  time: 8.888
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 375
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2420
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 22519705
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1]
+    - [0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [420, 210, 210, 210, 210, 116, 116, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [278, 341, 341, 341, 341, 433, 433, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 2420
+  solveTime: 8.7782
+  status: SATISFIED
+  threads: '1'
+  time: 8.897
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 714
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2232
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 22836442
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0]
+    - [0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [420, 210, 210, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [278, 341, 341, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 2232
+  solveTime: 8.82997
+  status: SATISFIED
+  threads: '1'
+  time: 8.949
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 714
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2130
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 22848007
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1]
+    - [0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [210, 210, 210, 210, 130, 116, 116, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [341, 341, 341, 341, 457, 433, 433, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 2130
+  solveTime: 8.83411
+  status: SATISFIED
+  threads: '1'
+  time: 8.953
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 721
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2116
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 22865985
+  solution:
+    AssignmentMatrix:
+    - [0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0]
+    - [0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1]
+    - [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [210, 210, 210, 210, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [341, 341, 341, 341, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 2116
+  solveTime: 8.84345
+  status: SATISFIED
+  threads: '1'
+  time: 8.962
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 15363
+  configuration: com-google-ortools-sat_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-12T08:24:32.900779'
+  evaluatedHalfReifiedConstraints: 1
+  evaluatedReifiedConstraints: 36
+  failures: 842
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0930354
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2022
+  objectiveBound: 1210
+  paths: 0
+  problem: wordpress
+  propagations: 23168390
+  solution:
+    AssignmentMatrix:
+    - [0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0]
+    - [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [210, 210, 210, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116,
+      116]
+    VMType: [341, 341, 341, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433,
+      433]
+    objective: 2022
+  solveTime: 8.91857
+  status: SATISFIED
+  threads: '1'
+  time: 9.038
+  timeout_ms: '300000'
+  version: v9.9

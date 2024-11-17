@@ -1,0 +1,9 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_rcpsp_J30_1_3", "problem": "rcpsp", "model": "../data/minizinc-benchmarks/rcpsp/rcpsp.mzn", "data_file": "../data/minizinc-benchmarks/rcpsp/data_psplib/j30/J30_1_3.dzn", "mzn_solver": "org.choco.choco", "datetime": "2024-09-10T20:53:20.212717", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 66, "flatIntVars": 31, "flatBoolConstraints": 33, "flatIntConstraints": 115, "evaluatedHalfReifiedConstraints": 66, "method": "minimize", "flatTime": 0.108202}}
+{"type": "comment", "comment": "%% Choco 240909_14:08\n"}
+{"type": "statistics", "statistics": {"initTime": 0.176, "solveTime": 0.055, "solutions": 1, "variables": 150, "intVariables": 82, "boolVariables": 68, "setVariables": 0, "constraints": 149, "objective": 47, "nodes": 70, "failures": 0, "restarts": 0, "peakDepth": 70}}
+{"type": "solution", "output": {"default": "Start times = [0, 0, 0, 10, 1, 1, 5, 5, 17, 13, 21, 42, 10, 27, 28, 21, 10, 13, 26, 20, 36, 17, 23, 38, 42, 27, 28, 45, 45, 37]\nmakespan = 47\n", "raw": "Start times = [0, 0, 0, 10, 1, 1, 5, 5, 17, 13, 21, 42, 10, 27, 28, 21, 10, 13, 26, 20, 36, 17, 23, 38, 42, 27, 28, 45, 45, 37]\nmakespan = 47\n", "json": {  "s" : [0, 0, 0, 10, 1, 1, 5, 5, 17, 13, 21, 42, 10, 27, 28, 21, 10, 13, 26, 20, 36, 17, 23, 38, 42, 27, 28, 45, 45, 37],  "objective" : 47,  "_objective" : 47}}, "sections": ["default", "raw", "json"], "time": 510}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 514}
+{"type": "statistics", "statistics": {"initTime": 0.176, "solveTime": 0.062, "solutions": 1, "variables": 150, "intVariables": 82, "boolVariables": 68, "setVariables": 0, "constraints": 149, "objective": 47, "nodes": 70, "failures": 69, "restarts": 0, "peakDepth": 70}}
+{"type": "statistics", "statistics": {"nSolutions": 1}}

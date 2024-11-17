@@ -1,0 +1,9 @@
+{arch: cpu, configuration: turbo-cpu-release_nfc_24_4_2, cutnodes: 0, data_file: ../data/mzn-challenge/2022/nfc/24_4_2.dzn,
+  datetime: '2024-08-29T19:35:39.327596', eliminated_formulas: 169, eliminated_variables: 121,
+  eps_num_subproblems: 1, eps_skipped_subproblems: 0, eps_solved_subproblems: 0, failures: 2252652,
+  fixpoint_iterations: 23523522, flatIntConstraints: 49, flatIntVars: 49, flatTime: 0.0650532,
+  free_search: no, hardware: precision5820, initTime: 0.03, method: minimize, model: ../data/mzn-challenge/2022/nfc/nfc.mzn,
+  mzn_solver: turbo.cpu.release, nSolutions: 1, nodes: 4505399, num_blocks_done: 0,
+  num_solutions: 1, objective: 1836, or_nodes: 0, paths: 0, peakDepth: 110, problem: nfc,
+  problem_path: /tmp/mznfile622ASX.fzn, propagators: 49, solveTime: 300.0, solver: Turbo,
+  status: SATISFIED, timeout_ms: 300000, variables: 48, version: v1.2.0}

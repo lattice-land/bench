@@ -1,0 +1,97 @@
+- configuration: turbo-gpu-release_v1.2.1_peaceable_queens_n8_q3_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/generalized-peacable-queens/n8_q3.json
+  datetime: '2024-10-21T20:14:13.218701'
+  evaluatedReifiedConstraints: 1384
+  flatBoolConstraints: 1679
+  flatBoolVars: 1788
+  flatIntConstraints: 1783
+  flatIntVars: 826
+  flatTime: 0.238499
+  method: maximize
+  model: ../data/mzn-challenge/2022/generalized-peacable-queens/peaceable_queens.mzn
+  mzn_solver: turbo.gpu.release
+  paths: 0
+  problem: generalized-peacable-queens
+  solution:
+    counts: [3, 3, 3]
+    objective: 3
+    x:
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 1}
+      - {e: EMPTY}
+    - - c: Q
+        e: {c: Army, e: 1}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 1}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 2}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 2}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 2}
+    - - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 3}
+      - c: Q
+        e: {c: Army, e: 3}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 3}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+  status: SATISFIED
+  threads: '20'
+  time: 300.452
+  timeout_ms: '300000'
+  version: v1.2.1

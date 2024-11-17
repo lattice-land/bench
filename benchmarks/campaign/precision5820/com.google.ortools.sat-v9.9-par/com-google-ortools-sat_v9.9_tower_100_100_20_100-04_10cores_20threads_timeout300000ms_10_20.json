@@ -1,0 +1,52 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_tower_100_100_20_100-04_10cores_20threads_timeout300000ms_10_20", "problem": "tower", "model": "../data/mzn-challenge/2022/tower/tower.mzn", "data_file": "../data/mzn-challenge/2022/tower/100_100_20_100-04.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "300000", "datetime": "2024-09-12T09:07:13.067745", "status": "UNKNOWN", "cores": "10", "threads": "20"}}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 4260, "flatIntVars": 2871, "flatBoolConstraints": 100, "flatIntConstraints": 9011, "evaluatedReifiedConstraints": 8020, "evaluatedHalfReifiedConstraints": 40, "method": "maximize", "flatTime": 0.314105}}
+{"type": "comment", "comment": "%% File /tmp/mznfileIqFZlm.fzn parsed in 59 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 2100 times\n"}
+{"type": "comment", "comment": "%%   - done in 1 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileIqFZlm\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 20\n"}
+{"type": "comment", "comment": "%%   - array_int_maximum: 100\n"}
+{"type": "comment", "comment": "%%   - array_var_bool_element: 200\n"}
+{"type": "comment", "comment": "%%   - bool_not: 100\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 2000\n"}
+{"type": "comment", "comment": "%%   - int_le_imp: 40\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 531\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 2020\n"}
+{"type": "comment", "comment": "%%   - int_ne_reif: 2000\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "statistics", "statistics": {"objective": 3, "objectiveBound": 100, "boolVariables": 0, "failures": 0, "propagations": 0, "solveTime": 4.70474}}
+{"type": "solution", "output": {"json": {  "power" : [2, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2],  "_objective" : 3}}, "sections": ["json"], "time": 5139}
+{"type": "statistics", "statistics": {"objective": 13, "objectiveBound": 100, "boolVariables": 2619, "failures": 0, "propagations": 41706, "solveTime": 5.18931}}
+{"type": "solution", "output": {"json": {  "power" : [2, 1, 3, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 3],  "_objective" : 13}}, "sections": ["json"], "time": 5623}
+{"type": "statistics", "statistics": {"objective": 20, "objectiveBound": 100, "boolVariables": 2619, "failures": 0, "propagations": 41706, "solveTime": 5.24326}}
+{"type": "solution", "output": {"json": {  "power" : [2, 2, 3, 1, 2, 4, 2, 1, 1, 1, 1, 2, 1, 2, 1, 2, 3, 1, 1, 2],  "_objective" : 20}}, "sections": ["json"], "time": 5680}
+{"type": "statistics", "statistics": {"objective": 34, "objectiveBound": 100, "boolVariables": 2619, "failures": 0, "propagations": 41706, "solveTime": 5.48176}}
+{"type": "solution", "output": {"json": {  "power" : [2, 2, 3, 1, 2, 4, 2, 1, 2, 1, 1, 2, 1, 2, 2, 2, 3, 1, 2, 2],  "_objective" : 34}}, "sections": ["json"], "time": 5916}
+{"type": "statistics", "statistics": {"objective": 35, "objectiveBound": 100, "boolVariables": 2619, "failures": 0, "propagations": 41706, "solveTime": 5.90379}}
+{"type": "solution", "output": {"json": {  "power" : [2, 2, 3, 1, 2, 4, 2, 1, 2, 1, 2, 2, 1, 2, 2, 2, 3, 1, 2, 2],  "_objective" : 35}}, "sections": ["json"], "time": 6338}
+{"type": "statistics", "statistics": {"objective": 51, "objectiveBound": 100, "boolVariables": 2619, "failures": 0, "propagations": 41706, "solveTime": 5.98225}}
+{"type": "solution", "output": {"json": {  "power" : [4, 2, 3, 2, 2, 4, 2, 1, 2, 1, 2, 2, 1, 3, 2, 2, 4, 1, 2, 2],  "_objective" : 51}}, "sections": ["json"], "time": 6416}
+{"type": "statistics", "statistics": {"objective": 52, "objectiveBound": 100, "boolVariables": 2619, "failures": 0, "propagations": 41706, "solveTime": 7.35109}}
+{"type": "solution", "output": {"json": {  "power" : [4, 2, 3, 2, 2, 4, 2, 1, 2, 2, 2, 2, 2, 3, 2, 2, 4, 2, 1, 1],  "_objective" : 52}}, "sections": ["json"], "time": 7787}
+{"type": "statistics", "statistics": {"objective": 56, "objectiveBound": 100, "boolVariables": 2619, "failures": 2, "propagations": 1907582, "solveTime": 8.6835}}
+{"type": "solution", "output": {"json": {  "power" : [10, 9, 9, 9, 9, 10, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],  "_objective" : 56}}, "sections": ["json"], "time": 9117}
+{"type": "statistics", "statistics": {"objective": 57, "objectiveBound": 100, "boolVariables": 2619, "failures": 0, "propagations": 41706, "solveTime": 9.093310000000001}}
+{"type": "solution", "output": {"json": {  "power" : [10, 9, 9, 9, 9, 10, 9, 9, 9, 10, 10, 9, 9, 9, 9, 9, 9, 10, 9, 9],  "_objective" : 57}}, "sections": ["json"], "time": 9530}
+{"type": "statistics", "statistics": {"objective": 75, "objectiveBound": 100, "boolVariables": 2619, "failures": 0, "propagations": 41706, "solveTime": 9.13607}}
+{"type": "solution", "output": {"json": {  "power" : [10, 8, 9, 9, 8, 8, 9, 6, 4, 2, 9, 6, 9, 9, 10, 8, 9, 9, 9, 4],  "_objective" : 75}}, "sections": ["json"], "time": 9570}
+{"type": "statistics", "statistics": {"objective": 80, "objectiveBound": 100, "boolVariables": 2619, "failures": 0, "propagations": 41706, "solveTime": 9.70693}}
+{"type": "solution", "output": {"json": {  "power" : [10, 8, 9, 9, 8, 8, 10, 6, 4, 10, 9, 6, 10, 3, 10, 8, 9, 9, 9, 7],  "_objective" : 80}}, "sections": ["json"], "time": 10141}
+{"type": "statistics", "statistics": {"objective": 84, "objectiveBound": 100, "boolVariables": 2619, "failures": 0, "propagations": 41706, "solveTime": 10.3058}}
+{"type": "solution", "output": {"json": {  "power" : [10, 8, 9, 8, 10, 8, 9, 6, 4, 7, 8, 6, 8, 1, 9, 9, 8, 7, 1, 5],  "_objective" : 84}}, "sections": ["json"], "time": 10743}
+{"type": "statistics", "statistics": {"objective": 85, "objectiveBound": 100, "boolVariables": 2619, "failures": 0, "propagations": 41706, "solveTime": 10.4833}}
+{"type": "solution", "output": {"json": {  "power" : [10, 8, 9, 8, 10, 7, 9, 6, 4, 8, 8, 6, 9, 6, 9, 9, 10, 8, 1, 6],  "_objective" : 85}}, "sections": ["json"], "time": 10917}
+{"type": "statistics", "statistics": {"objective": 88, "objectiveBound": 100, "boolVariables": 2619, "failures": 0, "propagations": 41706, "solveTime": 11.215}}
+{"type": "solution", "output": {"json": {  "power" : [10, 7, 9, 8, 7, 7, 10, 6, 4, 8, 8, 6, 10, 6, 6, 7, 8, 8, 7, 6],  "_objective" : 88}}, "sections": ["json"], "time": 11649}
+{"type": "statistics", "statistics": {"objective": 90, "objectiveBound": 100, "boolVariables": 2619, "failures": 0, "propagations": 41706, "solveTime": 11.2589}}
+{"type": "solution", "output": {"json": {  "power" : [10, 7, 9, 8, 6, 7, 10, 5, 4, 8, 6, 5, 10, 10, 7, 6, 7, 9, 10, 6],  "_objective" : 90}}, "sections": ["json"], "time": 11693}
+{"type": "solution", "output": {"json": {  "power" : [10, 7, 7, 7, 6, 5, 10, 6, 4, 8, 8, 6, 10, 8, 7, 6, 7, 10, 10, 6],  "_objective" : 90}}, "sections": ["json"], "time": 31142}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 31142}
+{"type": "statistics", "statistics": {"nSolutions": 16}}
+{"type": "statistics", "statistics": {"objective": 90, "objectiveBound": 90, "boolVariables": 2619, "failures": 0, "propagations": 41706, "solveTime": 30.7012}}

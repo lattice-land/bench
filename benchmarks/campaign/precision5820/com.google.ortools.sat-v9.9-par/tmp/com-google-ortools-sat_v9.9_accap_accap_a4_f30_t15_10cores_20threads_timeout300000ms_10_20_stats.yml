@@ -1,0 +1,7 @@
+{boolVariables: 0, configuration: com-google-ortools-sat_v9.9_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20,
+  cores: '10', data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json,
+  datetime: '2024-09-12T09:07:09.180969', failures: 0, flatIntConstraints: 230, flatIntVars: 36,
+  flatTime: 0.0674989, method: minimize, model: ../data/mzn-challenge/2022/accap/accap.mzn,
+  mzn_solver: com.google.ortools.sat, nSolutions: 32, objective: 103, objectiveBound: 103,
+  paths: 0, problem: accap, propagations: 0, solveTime: 3.29417, status: OPTIMAL_SOLUTION,
+  threads: '20', timeout_ms: '300000', version: v9.9}

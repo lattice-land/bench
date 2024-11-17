@@ -1,0 +1,1297 @@
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 41
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 911
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 642024
+  solution:
+    es: [false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      true, false, false, false, false, false, true, false, false, false, false, true,
+      false, false, false, true, false, false, true, false, true, false, true]
+    h: [0, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2]
+    objective: 911
+    p: [1, 7, 19, 19, 19, 7, 1, 19, 19, 19, 7, 19, 19, 19, 19, 19, 19, 19, 1, 19]
+    root: 1
+  solveTime: 0.678063
+  status: SATISFIED
+  threads: '1'
+  time: 0.97
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 46
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 885
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 2773284
+  solution:
+    es: [true, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, true, false, false, true, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      true, false, false, false, false, false, true, false, false, false, false, true,
+      false, false, false, true, false, false, true, false, false, false, true]
+    h: [0, 1, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2]
+    objective: 885
+    p: [1, 1, 19, 19, 19, 7, 1, 2, 19, 19, 2, 19, 19, 19, 19, 19, 19, 2, 1, 19]
+    root: 1
+  solveTime: 1.36135
+  status: SATISFIED
+  threads: '1'
+  time: 1.654
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 46
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 634
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 2775924
+  solution:
+    es: [false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, true, false, true, true, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, true, false, false, false, false, false, false, false,
+      true, false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, true, false, false]
+    h: [1, 1, 1, 2, 1, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 2]
+    objective: 634
+    p: [7, 7, 7, 5, 7, 2, 7, 5, 2, 2, 2, 17, 3, 17, 17, 5, 7, 19, 7, 5]
+    root: 7
+  solveTime: 1.36493
+  status: SATISFIED
+  threads: '1'
+  time: 1.657
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 46
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 613
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 2778644
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      true, true, false, true, true, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, true, false, false, false, false, false, false, false,
+      true, false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, true, false, false]
+    h: [2, 1, 1, 2, 1, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 2]
+    objective: 613
+    p: [17, 7, 7, 5, 7, 2, 7, 5, 2, 2, 2, 17, 3, 17, 17, 5, 7, 19, 7, 5]
+    root: 7
+  solveTime: 1.36843
+  status: SATISFIED
+  threads: '1'
+  time: 1.661
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 47
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 591
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 2781623
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, true, false, false, false, false, false, false,
+      false, true, false, false, false, true, true, false, true, true, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, true, false, false]
+    h: [2, 2, 1, 2, 1, 1, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 2]
+    objective: 591
+    p: [17, 6, 7, 5, 7, 7, 7, 5, 6, 6, 6, 17, 3, 17, 17, 5, 7, 19, 7, 5]
+    root: 7
+  solveTime: 1.37215
+  status: SATISFIED
+  threads: '1'
+  time: 1.664
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 59
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 579
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 2789660
+  solution:
+    es: [false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, true, false, true, false, false, false, false, true,
+      true, false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, true, false, false, false, false, false, false, false,
+      true, false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, true, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    h: [1, 1, 2, 2, 1, 2, 0, 2, 2, 2, 2, 1, 1, 2, 1, 2, 2, 2, 2, 2]
+    objective: 579
+    p: [7, 7, 12, 5, 7, 2, 7, 5, 13, 13, 2, 7, 7, 15, 7, 5, 1, 13, 1, 5]
+    root: 7
+  solveTime: 1.37897
+  status: SATISFIED
+  threads: '1'
+  time: 1.671
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 80
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 574
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 2806411
+  solution:
+    es: [false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      true, false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, true, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, true, false, false, true,
+      true, false, true, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, true, false, false, true, false, false, false]
+    h: [1, 1, 2, 2, 1, 0, 1, 2, 1, 2, 2, 1, 1, 2, 1, 2, 2, 2, 2, 1]
+    objective: 574
+    p: [6, 6, 12, 20, 6, 6, 6, 5, 6, 9, 2, 6, 6, 20, 6, 20, 20, 13, 1, 6]
+    root: 6
+  solveTime: 1.38768
+  status: SATISFIED
+  threads: '1'
+  time: 1.68
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 82
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 568
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 2809502
+  solution:
+    es: [false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, true, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, true, true, true, false, false, false, false, true,
+      true, false, true, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, true, false, false, true, false, false, false]
+    h: [1, 1, 0, 2, 1, 1, 1, 2, 2, 2, 2, 1, 1, 2, 1, 2, 2, 2, 2, 1]
+    objective: 568
+    p: [3, 3, 3, 20, 3, 3, 3, 5, 13, 13, 2, 3, 3, 20, 3, 20, 20, 13, 1, 3]
+    root: 3
+  solveTime: 1.39088
+  status: SATISFIED
+  threads: '1'
+  time: 1.683
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 84
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 558
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 2813986
+  solution:
+    es: [false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, true, false, true, false, false, false, false, false,
+      true, false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, true, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, true, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, true, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false]
+    h: [1, 1, 2, 2, 2, 1, 0, 1, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 1]
+    objective: 558
+    p: [7, 7, 12, 20, 20, 7, 7, 7, 6, 12, 2, 7, 12, 20, 12, 8, 1, 8, 1, 7]
+    root: 7
+  solveTime: 1.39459
+  status: SATISFIED
+  threads: '1'
+  time: 1.687
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 86
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 550
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 2818097
+  solution:
+    es: [false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, true, false, true, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, true, false, false, false, false, false, true, false, true, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false]
+    h: [1, 2, 2, 2, 2, 2, 0, 2, 2, 1, 2, 1, 2, 2, 2, 2, 2, 1, 2, 1]
+    objective: 550
+    p: [7, 10, 12, 20, 20, 10, 7, 18, 10, 7, 10, 7, 18, 20, 12, 20, 1, 7, 1, 7]
+    root: 7
+  solveTime: 1.39831
+  status: SATISFIED
+  threads: '1'
+  time: 1.69
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 87
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 465
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 2821337
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, true, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, true, false, false, true, false, false,
+      true, false, false, false, false, false, false, true, false, false, true, false,
+      false, false, true, false, false, false, false, false, false]
+    h: [1, 2, 2, 2, 2, 2, 1, 2, 2, 1, 2, 1, 1, 1, 0, 2, 1, 2, 2, 1]
+    objective: 465
+    p: [15, 10, 12, 20, 20, 10, 15, 12, 10, 15, 10, 15, 15, 15, 15, 20, 15, 13, 1,
+      15]
+    root: 15
+  solveTime: 1.40113
+  status: SATISFIED
+  threads: '1'
+  time: 1.693
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 215
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 459
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 2874161
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, true, false, true, true,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, true, false, false, true,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, true, false, false, true, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, true, false, false, false, false]
+    h: [2, 2, 2, 2, 2, 1, 0, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 1]
+    objective: 459
+    p: [17, 6, 20, 20, 20, 7, 7, 13, 6, 6, 6, 13, 7, 17, 13, 20, 7, 13, 17, 7]
+    root: 7
+  solveTime: 1.43397
+  status: SATISFIED
+  threads: '1'
+  time: 1.726
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 217
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 444
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 2877686
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, true, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, true, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, true, false, true, true, true, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false]
+    h: [1, 1, 1, 2, 2, 2, 2, 2, 1, 2, 2, 2, 0, 2, 1, 2, 1, 1, 1, 2]
+    objective: 444
+    p: [13, 13, 13, 15, 3, 9, 19, 18, 13, 9, 2, 15, 13, 17, 13, 18, 13, 13, 13, 3]
+    root: 13
+  solveTime: 1.43731
+  status: SATISFIED
+  threads: '1'
+  time: 1.73
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 221
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 426
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 2882295
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, true, false, false, false, false, false, false, true, false, true, true,
+      true, true, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, true, false, false, false, true, false, false, false,
+      false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 2, 2, 2, 2, 2, 0, 1, 2, 2, 2, 2, 2, 2, 1, 2, 1, 1, 1]
+    objective: 426
+    p: [19, 9, 20, 20, 16, 9, 19, 8, 8, 9, 9, 18, 18, 19, 18, 8, 19, 8, 8, 8]
+    root: 8
+  solveTime: 1.44112
+  status: SATISFIED
+  threads: '1'
+  time: 1.733
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 995
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 398
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 3204035
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, true, false, true, false,
+      false, true, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, true, false, false, false, true, false, false,
+      false, false, false, false, false, true, false, true, true, false]
+    h: [2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 1, 2, 1, 2, 2, 0, 1, 1]
+    objective: 398
+    p: [19, 9, 20, 20, 20, 9, 19, 18, 18, 9, 9, 15, 18, 19, 18, 8, 19, 18, 18, 18]
+    root: 18
+  solveTime: 1.63848
+  status: SATISFIED
+  threads: '1'
+  time: 1.947
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 1001
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 395
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 3209942
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, true, false, true, false,
+      false, true, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, true, false, false, true, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, true, true, false]
+    h: [2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 1, 2, 2, 2, 2, 0, 1, 1]
+    objective: 395
+    p: [19, 9, 20, 20, 20, 9, 19, 18, 18, 9, 9, 13, 18, 19, 13, 8, 19, 18, 18, 18]
+    root: 18
+  solveTime: 1.64912
+  status: SATISFIED
+  threads: '1'
+  time: 1.947
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 1002
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 394
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 3212811
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, true, false, true, false,
+      false, true, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, true, false, false,
+      false, false, false, false, false, true, false, true, true, false]
+    h: [2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 1, 2, 2, 0, 1, 1]
+    objective: 394
+    p: [19, 9, 20, 20, 20, 9, 19, 18, 18, 9, 9, 15, 15, 19, 18, 8, 19, 18, 18, 18]
+    root: 18
+  solveTime: 1.65635
+  status: SATISFIED
+  threads: '1'
+  time: 1.948
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 1013
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 390
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 3220688
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, true, false, true, false, false,
+      true, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, true, false, false, false,
+      false, false, false, false, true, false, true, false, false]
+    h: [2, 2, 1, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 1, 2, 2, 0, 1, 2]
+    objective: 390
+    p: [19, 9, 18, 3, 3, 9, 19, 18, 18, 9, 9, 15, 15, 19, 18, 8, 19, 18, 18, 3]
+    root: 18
+  solveTime: 1.66838
+  status: SATISFIED
+  threads: '1'
+  time: 1.96
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 1014
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 388
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 3223801
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, true, false, false, false, false, false, false,
+      true, false, false, false, false, false, true, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, true, false, true, false, false,
+      true, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, true, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, true, false, false]
+    h: [2, 2, 1, 2, 2, 2, 2, 1, 1, 2, 2, 2, 1, 2, 2, 2, 2, 0, 1, 2]
+    objective: 388
+    p: [19, 9, 18, 3, 3, 9, 19, 18, 18, 9, 9, 3, 18, 19, 13, 8, 19, 18, 18, 3]
+    root: 18
+  solveTime: 1.67227
+  status: SATISFIED
+  threads: '1'
+  time: 1.964
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 1350
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 381
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 3410883
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, true, false, false, false, false, false, false,
+      true, false, false, false, false, false, true, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, true, false, false,
+      true, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, true, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, true, false, false, false, false]
+    h: [2, 2, 1, 2, 2, 2, 2, 1, 1, 2, 2, 2, 1, 2, 2, 2, 1, 0, 2, 2]
+    objective: 381
+    p: [17, 9, 18, 3, 3, 9, 9, 18, 18, 9, 9, 3, 18, 17, 13, 8, 18, 18, 17, 3]
+    root: 18
+  solveTime: 1.75205
+  status: SATISFIED
+  threads: '1'
+  time: 2.044
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 1366
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 375
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 3420116
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, true, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, true, false, false, false, false,
+      true, true, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, true, false, true, true, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 1, 2, 2, 2, 2, 1, 1, 2, 2, 1, 0, 2, 1, 2, 1, 1, 2, 2]
+    objective: 375
+    p: [17, 9, 13, 3, 3, 9, 9, 13, 13, 9, 9, 13, 13, 17, 13, 8, 13, 13, 17, 3]
+    root: 13
+  solveTime: 1.75819
+  status: SATISFIED
+  threads: '1'
+  time: 2.05
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 1367
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 368
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 3422994
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, true, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, true, false, false, false, false,
+      true, true, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, true, false, true, true, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 1, 2, 2, 2, 2, 1, 1, 2, 2, 2, 0, 2, 1, 2, 1, 1, 2, 2]
+    objective: 368
+    p: [17, 9, 13, 3, 3, 9, 9, 13, 13, 9, 9, 15, 13, 17, 13, 8, 13, 13, 17, 3]
+    root: 13
+  solveTime: 1.76091
+  status: SATISFIED
+  threads: '1'
+  time: 2.053
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 1380
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 364
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 3431535
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, true, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, true, false, true, false, false,
+      true, true, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, true, false, true, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 1, 2, 2, 2, 2, 1, 1, 2, 2, 2, 0, 2, 1, 2, 1, 2, 2, 2]
+    objective: 364
+    p: [17, 9, 13, 3, 3, 9, 9, 13, 13, 9, 9, 15, 13, 17, 13, 8, 13, 8, 17, 3]
+    root: 13
+  solveTime: 1.76706
+  status: SATISFIED
+  threads: '1'
+  time: 2.059
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 1595
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 357
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 3559453
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, true, false, true, false, false,
+      true, true, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, true, false, false, false, false, false,
+      false, false, true, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 1, 2, 2, 2, 2, 1, 1, 2, 2, 1, 1, 2, 0, 2, 1, 2, 2, 2]
+    objective: 357
+    p: [17, 9, 15, 3, 3, 9, 9, 15, 15, 9, 9, 15, 15, 17, 15, 8, 15, 8, 17, 3]
+    root: 15
+  solveTime: 1.82418
+  status: SATISFIED
+  threads: '1'
+  time: 2.117
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 2015
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 356
+  objectiveBound: 176
+  paths: 0
+  problem: diameterc-mst
+  propagations: 3786834
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, true, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, true, false, true, false, false,
+      true, true, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      true, false, false, false, false, true, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 1, 2, 2, 2, 2, 1, 1, 2, 2, 0, 2, 2, 1, 2, 1, 2, 2, 2]
+    objective: 356
+    p: [17, 9, 12, 3, 3, 9, 9, 12, 12, 9, 9, 12, 15, 17, 12, 8, 12, 8, 17, 3]
+    root: 12
+  solveTime: 1.9278
+  status: SATISFIED
+  threads: '1'
+  time: 2.221
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 2508
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 355
+  objectiveBound: 179
+  paths: 0
+  problem: diameterc-mst
+  propagations: 4089524
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, true, false, false, false, false, false, false,
+      true, false, false, false, true, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, true, true, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, true, true, false, false, false, true, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 1, 2, 2, 2, 2, 2, 1, 2, 2, 0, 2, 2, 1, 2, 1, 1, 2, 2]
+    objective: 355
+    p: [17, 9, 12, 3, 3, 9, 9, 18, 12, 9, 9, 12, 15, 17, 12, 3, 12, 12, 17, 3]
+    root: 12
+  solveTime: 2.05464
+  status: SATISFIED
+  threads: '1'
+  time: 2.347
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 2121
+  configuration: com-google-ortools-sat-noglobal_v9.9_dcmst_c_v20_a190_d4_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-12T09:47:02.589723'
+  evaluatedReifiedConstraints: 1571
+  failures: 2542
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.222273
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 349
+  objectiveBound: 179
+  paths: 0
+  problem: diameterc-mst
+  propagations: 4105944
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, true, false, false, false, true, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, true, true, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, true, true, false, false, false, true, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 1, 2, 1, 2, 2, 2, 1, 2, 2, 0, 2, 2, 1, 2, 1, 1, 2, 2]
+    objective: 349
+    p: [17, 9, 12, 3, 12, 9, 9, 18, 12, 9, 9, 12, 15, 17, 12, 5, 12, 12, 17, 5]
+    root: 12
+  solveTime: 2.06485
+  status: SATISFIED
+  threads: '1'
+  time: 2.358
+  timeout_ms: '300000'
+  version: v9.9

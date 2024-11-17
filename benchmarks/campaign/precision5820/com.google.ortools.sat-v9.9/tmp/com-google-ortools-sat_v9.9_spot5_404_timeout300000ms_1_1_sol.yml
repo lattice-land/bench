@@ -1,0 +1,96 @@
+- boolVariables: 112
+  configuration: com-google-ortools-sat_v9.9_spot5_404_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/spot5/404.dzn
+  datetime: '2024-09-12T08:39:59.247980'
+  evaluatedReifiedConstraints: 100
+  failures: 0
+  flatBoolVars: 100
+  flatIntConstraints: 811
+  flatIntVars: 201
+  flatTime: 0.0802307
+  method: minimize
+  model: ../data/mzn-challenge/2022/spot5/spot5.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 117
+  objectiveBound: 110
+  paths: 0
+  problem: spot5
+  propagations: 2584
+  solution:
+    objective: 117
+    p: [1, 1, 3, 2, 0, 0, 0, 13, 0, 0, 2, 0, 0, 0, 0, 0, 13, 0, 0, 2, 0, 0, 13, 0,
+      0, 13, 0, 0, 1, 2, 0, 3, 0, 2, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      2, 0, 13, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 13, 0, 13, 13, 0,
+      13, 0, 13, 0, 0, 0, 13, 13, 2, 3, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 3, 0, 0, 0,
+      1, 2, 0]
+  solveTime: 0.0363764
+  status: SATISFIED
+  threads: '1'
+  time: 0.148
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 112
+  configuration: com-google-ortools-sat_v9.9_spot5_404_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/spot5/404.dzn
+  datetime: '2024-09-12T08:39:59.247980'
+  evaluatedReifiedConstraints: 100
+  failures: 0
+  flatBoolVars: 100
+  flatIntConstraints: 811
+  flatIntVars: 201
+  flatTime: 0.0802307
+  method: minimize
+  model: ../data/mzn-challenge/2022/spot5/spot5.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 115
+  objectiveBound: 110
+  paths: 0
+  problem: spot5
+  propagations: 5587
+  solution:
+    objective: 115
+    p: [1, 1, 3, 2, 0, 0, 0, 13, 0, 0, 2, 0, 0, 0, 0, 0, 13, 0, 0, 2, 0, 0, 13, 0,
+      0, 13, 0, 0, 0, 2, 13, 0, 0, 2, 13, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 2, 0, 0, 13, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 13, 0, 13, 13,
+      0, 13, 0, 13, 0, 0, 0, 13, 13, 2, 3, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 3, 0, 0,
+      0, 1, 2, 0]
+  solveTime: 0.0383376
+  status: SATISFIED
+  threads: '1'
+  time: 0.15
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 112
+  configuration: com-google-ortools-sat_v9.9_spot5_404_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/spot5/404.dzn
+  datetime: '2024-09-12T08:39:59.247980'
+  evaluatedReifiedConstraints: 100
+  failures: 10
+  flatBoolVars: 100
+  flatIntConstraints: 811
+  flatIntVars: 201
+  flatTime: 0.0802307
+  method: minimize
+  model: ../data/mzn-challenge/2022/spot5/spot5.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 114
+  objectiveBound: 111
+  paths: 0
+  problem: spot5
+  propagations: 6477
+  solution:
+    objective: 114
+    p: [1, 1, 3, 2, 0, 0, 0, 13, 0, 0, 2, 0, 0, 0, 0, 0, 13, 0, 0, 2, 0, 0, 13, 0,
+      0, 13, 0, 0, 0, 2, 13, 0, 0, 2, 13, 13, 0, 0, 13, 0, 0, 0, 2, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 13, 0, 13, 13,
+      0, 13, 0, 13, 0, 0, 0, 13, 13, 2, 3, 2, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
+      0, 3, 2, 0]
+  solveTime: 0.0425267
+  status: SATISFIED
+  threads: '1'
+  time: 0.154
+  timeout_ms: '300000'
+  version: v9.9

@@ -1,0 +1,13 @@
+{and_nodes: 256, arch: HYBRID, configuration: turbo-gpu-release_v1.2.2_blocks_16-4-5_10cores_64threads_timeout300000ms_10_64,
+  cores: '10', cuda_version: 12060, cutnodes: 0, data_file: ../data/mzn-challenge/2022/blocks-world/16-4-5.dzn,
+  datetime: '2024-10-25T09:12:35.784306', eliminatedImplications: 249, eliminated_formulas: 44657,
+  eliminated_variables: 24481, eps_num_subproblems: 4096, eps_skipped_subproblems: 0,
+  eps_solved_subproblems: 512, evaluatedReifiedConstraints: 21436, failures: 89430,
+  fixpoint_iterations: 3901030, flatBoolConstraints: 5228, flatBoolVars: 23074, flatIntConstraints: 39757,
+  flatIntVars: 20179, flatTime: 0.698201, free_search: no, hardware: precision5820,
+  initTime: 2.837, memory_configuration: global, method: minimize, model: ../data/mzn-challenge/2022/blocks-world/blocks.mzn,
+  mzn_solver: turbo.gpu.release, nSolutions: 0, nodes: 186679, num_blocks_done: 0,
+  num_solutions: 0, or_nodes: 64, paths: 0, peakDepth: 89, problem: blocks-world,
+  problem_path: /tmp/mznfileT8IvLi.fzn, propagators: 28762, shared_mem: 100, solveTime: 300.073,
+  solver: Turbo, stack_size: 32000, status: UNKNOWN, threads: '64', timeout_ms: 300000,
+  variables: 24966, version: v1.2.2}

@@ -1,0 +1,8 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.15_blocks_16-4-5_10cores_10threads_timeout300000ms_10_10", "problem": "blocks-world", "model": "../data/mzn-challenge/2022/blocks-world/blocks.mzn", "data_file": "../data/mzn-challenge/2022/blocks-world/16-4-5.dzn", "mzn_solver": "org.choco.choco", "version": "v4.10.15", "timeout_ms": "300000", "datetime": "2024-09-11T21:25:29.254262", "status": "UNKNOWN", "cores": "10", "threads": "10"}}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 7932, "flatIntVars": 4211, "flatBoolConstraints": 4037, "flatIntConstraints": 7582, "evaluatedReifiedConstraints": 5090, "evaluatedHalfReifiedConstraints": 1260, "eliminatedImplications": 375, "method": "minimize", "flatTime": 0.332817}}
+{"type": "comment", "comment": "%% Choco 240909_14:08\n"}
+{"type": "status", "status": "UNKNOWN", "time": 301426}
+{"type": "statistics", "statistics": {"initTime": 2.229, "solveTime": 298.543, "solutions": 0, "variables": 14187, "intVariables": 1357, "boolVariables": 12830, "setVariables": 0, "constraints": 11684, "objective": 65, "nodes": 466815, "failures": 463636, "restarts": 158, "peakDepth": 144}}
+{"type": "comment", "comment": "%% Unexpected resolution interruption!\n"}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

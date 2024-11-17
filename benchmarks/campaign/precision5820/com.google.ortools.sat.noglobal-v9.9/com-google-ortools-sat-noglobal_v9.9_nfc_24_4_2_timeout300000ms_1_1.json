@@ -1,0 +1,14 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat-noglobal_v9.9_nfc_24_4_2_timeout300000ms_1_1", "problem": "nfc", "model": "../data/mzn-challenge/2022/nfc/nfc.mzn", "data_file": "../data/mzn-challenge/2022/nfc/24_4_2.dzn", "mzn_solver": "com.google.ortools.sat.noglobal", "version": "v9.9", "timeout_ms": "300000", "datetime": "2024-09-12T09:41:36.160999", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 49, "flatIntConstraints": 49, "method": "minimize", "flatTime": 0.0716117}}
+{"type": "comment", "comment": "%% File /tmp/mznfilejQQEb2.fzn parsed in 1 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfilejQQEb2\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 49\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "statistics", "statistics": {"objective": 1836, "objectiveBound": 1836, "boolVariables": 23, "failures": 0, "propagations": 174, "solveTime": 0.0144474}}
+{"type": "solution", "output": {"default": "w = array1d(0..23, [115, 114, 84, 53, 101, 106, 81, 120, 73, 73, 73, 19, 52, 47, 87, 120, 114, 114, 78, 32, 4, 5, 56, 115]);\nf = array1d(0..23, [0, 1, 55, 59, 0, 0, 25, 28, 48, 5, 0, 67, 1, 5, 0, 13, 34, 0, 40, 46, 28, 0, 4, 0]);\nobjective = 1836;\n", "raw": "w = array1d(0..23, [115, 114, 84, 53, 101, 106, 81, 120, 73, 73, 73, 19, 52, 47, 87, 120, 114, 114, 78, 32, 4, 5, 56, 115]);\nf = array1d(0..23, [0, 1, 55, 59, 0, 0, 25, 28, 48, 5, 0, 67, 1, 5, 0, 13, 34, 0, 40, 46, 28, 0, 4, 0]);\nobjective = 1836;\n", "json": {  "w" : [115, 114, 84, 53, 101, 106, 81, 120, 73, 73, 73, 19, 52, 47, 87, 120, 114, 114, 78, 32, 4, 5, 56, 115],  "f" : [0, 1, 55, 59, 0, 0, 25, 28, 48, 5, 0, 67, 1, 5, 0, 13, 34, 0, 40, 46, 28, 0, 4, 0],  "objective" : 1836,  "_objective" : 1836}}, "sections": ["default", "raw", "json"], "time": 116}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 117}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 1836, "objectiveBound": 1836, "boolVariables": 23, "failures": 0, "propagations": 175, "solveTime": 0.0151921}}

@@ -1,0 +1,7 @@
+{boolVariables: 55, configuration: com-google-ortools-sat-noglobal_v9.9_triangular_n10_timeout300000ms_1_1,
+  cores: '1', data_file: ../data/mzn-challenge/2022/triangular/n10.dzn, datetime: '2024-09-12T09:16:05.681961',
+  failures: 222192, flatIntConstraints: 496, flatIntVars: 56, flatTime: 0.0699936,
+  method: maximize, model: ../data/mzn-challenge/2022/triangular/triangular.mzn, mzn_solver: com.google.ortools.sat.noglobal,
+  nSolutions: 3, objective: 20, objectiveBound: 55, paths: 0, problem: triangular,
+  propagations: 6241368, solveTime: 3.14056, status: SATISFIED, threads: '1', timeout_ms: '300000',
+  version: v9.9}

@@ -1,0 +1,101 @@
+- configuration: turbo-gpu-release_v1.2.0_peaceable_queens_n8_q3_timeout300000ms_1_1_globalmem
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/generalized-peacable-queens/n8_q3.json
+  datetime: '2024-09-12T14:09:36.820658'
+  evaluatedReifiedConstraints: 1384
+  flatBoolConstraints: 1679
+  flatBoolVars: 1795
+  flatIntConstraints: 1792
+  flatIntVars: 835
+  flatTime: 0.246308
+  memory_configuration: global
+  method: maximize
+  model: ../data/mzn-challenge/2022/generalized-peacable-queens/peaceable_queens.mzn
+  mzn_solver: turbo.gpu.release
+  paths: 0
+  problem: generalized-peacable-queens
+  propagator_mem: 4709044
+  shared_mem: 100
+  solution:
+    counts: [3, 3, 3]
+    objective: 3
+    x:
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 1}
+      - {e: EMPTY}
+    - - c: Q
+        e: {c: Army, e: 1}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 1}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 2}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 2}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 2}
+    - - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 3}
+      - c: Q
+        e: {c: Army, e: 3}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 3}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+  status: SATISFIED
+  store_mem: 19696
+  threads: '1'
+  time: 300.77
+  timeout_ms: '300000'
+  version: v1.2.0

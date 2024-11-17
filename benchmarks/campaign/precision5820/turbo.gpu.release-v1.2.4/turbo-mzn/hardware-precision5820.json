@@ -1,0 +1,2911 @@
+{
+  "id" : "a5000",
+  "class" : "system",
+  "claimed" : true,
+  "description" : "Computer",
+  "width" : 64,
+  "capabilities" : {
+    "smp" : "Symmetric Multi-Processing",
+    "vsyscall32" : "32-bit processes"
+  },
+  "children" : [    {
+      "id" : "core",
+      "class" : "bus",
+      "claimed" : true,
+      "description" : "Motherboard",
+      "physid" : "0",
+      "children" : [        {
+          "id" : "memory",
+          "class" : "memory",
+          "claimed" : true,
+          "description" : "System memory",
+          "physid" : "1",
+          "units" : "bytes",
+          "size" : 70866960384
+        },
+        {
+          "id" : "cpu",
+          "class" : "processor",
+          "claimed" : true,
+          "product" : "Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz",
+          "vendor" : "Intel Corp.",
+          "physid" : "4",
+          "businfo" : "cpu@0",
+          "version" : "6.85.7",
+          "units" : "Hz",
+          "size" : 1200076000,
+          "capacity" : 4500000000,
+          "width" : 64,
+          "configuration" : {
+            "microcode" : "83900167"
+          },
+          "capabilities" : {
+            "fpu" : "mathematical co-processor",
+            "fpu_exception" : "FPU exceptions reporting",
+            "wp" : true,
+            "vme" : "virtual mode extensions",
+            "de" : "debugging extensions",
+            "pse" : "page size extensions",
+            "tsc" : "time stamp counter",
+            "msr" : "model-specific registers",
+            "pae" : "4GB+ memory addressing (Physical Address Extension)",
+            "mce" : "machine check exceptions",
+            "cx8" : "compare and exchange 8-byte",
+            "apic" : "on-chip advanced programmable interrupt controller (APIC)",
+            "sep" : "fast system calls",
+            "mtrr" : "memory type range registers",
+            "pge" : "page global enable",
+            "mca" : "machine check architecture",
+            "cmov" : "conditional move instruction",
+            "pat" : "page attribute table",
+            "pse36" : "36-bit page size extensions",
+            "clflush" : true,
+            "dts" : "debug trace and EMON store MSRs",
+            "acpi" : "thermal control (ACPI)",
+            "mmx" : "multimedia extensions (MMX)",
+            "fxsr" : "fast floating point save/restore",
+            "sse" : "streaming SIMD extensions (SSE)",
+            "sse2" : "streaming SIMD extensions (SSE2)",
+            "ss" : "self-snoop",
+            "ht" : "HyperThreading",
+            "tm" : "thermal interrupt and status",
+            "pbe" : "pending break event",
+            "syscall" : "fast system calls",
+            "nx" : "no-execute bit (NX)",
+            "pdpe1gb" : true,
+            "rdtscp" : true,
+            "x86-64" : "64bits extensions (x86-64)",
+            "constant_tsc" : true,
+            "art" : true,
+            "arch_perfmon" : true,
+            "pebs" : true,
+            "bts" : true,
+            "rep_good" : true,
+            "nopl" : true,
+            "xtopology" : true,
+            "nonstop_tsc" : true,
+            "cpuid" : true,
+            "aperfmperf" : true,
+            "pni" : true,
+            "pclmulqdq" : true,
+            "dtes64" : true,
+            "monitor" : true,
+            "ds_cpl" : true,
+            "vmx" : true,
+            "est" : true,
+            "tm2" : true,
+            "ssse3" : true,
+            "sdbg" : true,
+            "fma" : true,
+            "cx16" : true,
+            "xtpr" : true,
+            "pdcm" : true,
+            "pcid" : true,
+            "dca" : true,
+            "sse4_1" : true,
+            "sse4_2" : true,
+            "x2apic" : true,
+            "movbe" : true,
+            "popcnt" : true,
+            "tsc_deadline_timer" : true,
+            "aes" : true,
+            "xsave" : true,
+            "avx" : true,
+            "f16c" : true,
+            "rdrand" : true,
+            "lahf_lm" : true,
+            "abm" : true,
+            "3dnowprefetch" : true,
+            "cpuid_fault" : true,
+            "epb" : true,
+            "cat_l3" : true,
+            "cdp_l3" : true,
+            "ssbd" : true,
+            "mba" : true,
+            "ibrs" : true,
+            "ibpb" : true,
+            "stibp" : true,
+            "ibrs_enhanced" : true,
+            "tpr_shadow" : true,
+            "flexpriority" : true,
+            "ept" : true,
+            "vpid" : true,
+            "ept_ad" : true,
+            "fsgsbase" : true,
+            "tsc_adjust" : true,
+            "bmi1" : true,
+            "avx2" : true,
+            "smep" : true,
+            "bmi2" : true,
+            "erms" : true,
+            "invpcid" : true,
+            "cqm" : true,
+            "mpx" : true,
+            "rdt_a" : true,
+            "avx512f" : true,
+            "avx512dq" : true,
+            "rdseed" : true,
+            "adx" : true,
+            "smap" : true,
+            "clflushopt" : true,
+            "clwb" : true,
+            "intel_pt" : true,
+            "avx512cd" : true,
+            "avx512bw" : true,
+            "avx512vl" : true,
+            "xsaveopt" : true,
+            "xsavec" : true,
+            "xgetbv1" : true,
+            "xsaves" : true,
+            "cqm_llc" : true,
+            "cqm_occup_llc" : true,
+            "cqm_mbm_total" : true,
+            "cqm_mbm_local" : true,
+            "dtherm" : true,
+            "ida" : true,
+            "arat" : true,
+            "pln" : true,
+            "pts" : true,
+            "hwp" : true,
+            "hwp_act_window" : true,
+            "hwp_epp" : true,
+            "hwp_pkg_req" : true,
+            "vnmi" : true,
+            "avx512_vnni" : true,
+            "md_clear" : true,
+            "flush_l1d" : true,
+            "arch_capabilities" : true,
+            "cpufreq" : "CPU Frequency scaling"
+          }
+        },
+        {
+          "id" : "pci:0",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Sky Lake-E DMI3 Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "100",
+          "businfo" : "pci@0000:00:00.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "children" : [            {
+              "id" : "generic:0",
+              "class" : "generic",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:04.0",
+              "description" : "System peripheral",
+              "product" : "Sky Lake-E CBDMA Registers",
+              "vendor" : "Intel Corporation",
+              "physid" : "4",
+              "businfo" : "pci@0000:00:04.0",
+              "version" : "07",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "ioatdma",
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "generic:1",
+              "class" : "generic",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:04.1",
+              "description" : "System peripheral",
+              "product" : "Sky Lake-E CBDMA Registers",
+              "vendor" : "Intel Corporation",
+              "physid" : "4.1",
+              "businfo" : "pci@0000:00:04.1",
+              "version" : "07",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "ioatdma",
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "generic:2",
+              "class" : "generic",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:04.2",
+              "description" : "System peripheral",
+              "product" : "Sky Lake-E CBDMA Registers",
+              "vendor" : "Intel Corporation",
+              "physid" : "4.2",
+              "businfo" : "pci@0000:00:04.2",
+              "version" : "07",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "ioatdma",
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "generic:3",
+              "class" : "generic",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:04.3",
+              "description" : "System peripheral",
+              "product" : "Sky Lake-E CBDMA Registers",
+              "vendor" : "Intel Corporation",
+              "physid" : "4.3",
+              "businfo" : "pci@0000:00:04.3",
+              "version" : "07",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "ioatdma",
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "generic:4",
+              "class" : "generic",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:04.4",
+              "description" : "System peripheral",
+              "product" : "Sky Lake-E CBDMA Registers",
+              "vendor" : "Intel Corporation",
+              "physid" : "4.4",
+              "businfo" : "pci@0000:00:04.4",
+              "version" : "07",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "ioatdma",
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "generic:5",
+              "class" : "generic",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:04.5",
+              "description" : "System peripheral",
+              "product" : "Sky Lake-E CBDMA Registers",
+              "vendor" : "Intel Corporation",
+              "physid" : "4.5",
+              "businfo" : "pci@0000:00:04.5",
+              "version" : "07",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "ioatdma",
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "generic:6",
+              "class" : "generic",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:04.6",
+              "description" : "System peripheral",
+              "product" : "Sky Lake-E CBDMA Registers",
+              "vendor" : "Intel Corporation",
+              "physid" : "4.6",
+              "businfo" : "pci@0000:00:04.6",
+              "version" : "07",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "ioatdma",
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "generic:7",
+              "class" : "generic",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:04.7",
+              "description" : "System peripheral",
+              "product" : "Sky Lake-E CBDMA Registers",
+              "vendor" : "Intel Corporation",
+              "physid" : "4.7",
+              "businfo" : "pci@0000:00:04.7",
+              "version" : "07",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "ioatdma",
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "generic:8",
+              "class" : "generic",
+              "handle" : "PCI:0000:00:05.0",
+              "description" : "System peripheral",
+              "product" : "Sky Lake-E MM/Vt-d Configuration Registers",
+              "vendor" : "Intel Corporation",
+              "physid" : "5",
+              "businfo" : "pci@0000:00:05.0",
+              "version" : "07",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "generic:9",
+              "class" : "generic",
+              "handle" : "PCI:0000:00:05.2",
+              "description" : "System peripheral",
+              "product" : "Sky Lake-E RAS",
+              "vendor" : "Intel Corporation",
+              "physid" : "5.2",
+              "businfo" : "pci@0000:00:05.2",
+              "version" : "07",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "generic:10",
+              "class" : "generic",
+              "handle" : "PCI:0000:00:05.4",
+              "description" : "PIC",
+              "product" : "Sky Lake-E IOAPIC",
+              "vendor" : "Intel Corporation",
+              "physid" : "5.4",
+              "businfo" : "pci@0000:00:05.4",
+              "version" : "07",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "io_x_-apic" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "generic:11",
+              "class" : "generic",
+              "handle" : "PCI:0000:00:08.0",
+              "description" : "System peripheral",
+              "product" : "Sky Lake-E Ubox Registers",
+              "vendor" : "Intel Corporation",
+              "physid" : "8",
+              "businfo" : "pci@0000:00:08.0",
+              "version" : "07",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "generic:12",
+              "class" : "generic",
+              "handle" : "PCI:0000:00:08.1",
+              "description" : "Performance counters",
+              "product" : "Sky Lake-E Ubox Registers",
+              "vendor" : "Intel Corporation",
+              "physid" : "8.1",
+              "businfo" : "pci@0000:00:08.1",
+              "version" : "07",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              }
+            },
+            {
+              "id" : "generic:13",
+              "class" : "generic",
+              "handle" : "PCI:0000:00:08.2",
+              "description" : "System peripheral",
+              "product" : "Sky Lake-E Ubox Registers",
+              "vendor" : "Intel Corporation",
+              "physid" : "8.2",
+              "businfo" : "pci@0000:00:08.2",
+              "version" : "07",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "usb",
+              "class" : "bus",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:14.0",
+              "description" : "USB controller",
+              "product" : "200 Series/Z370 Chipset Family USB 3.0 xHCI Controller",
+              "vendor" : "Intel Corporation",
+              "physid" : "14",
+              "businfo" : "pci@0000:00:14.0",
+              "version" : "00",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "xhci_hcd",
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "xhci" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "generic:14",
+              "class" : "generic",
+              "handle" : "PCI:0000:00:14.2",
+              "description" : "Signal processing controller",
+              "product" : "200 Series PCH Thermal Subsystem",
+              "vendor" : "Intel Corporation",
+              "physid" : "14.2",
+              "businfo" : "pci@0000:00:14.2",
+              "version" : "00",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "communication",
+              "class" : "communication",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:16.0",
+              "description" : "Communication controller",
+              "product" : "200 Series PCH CSME HECI #1",
+              "vendor" : "Intel Corporation",
+              "physid" : "16",
+              "businfo" : "pci@0000:00:16.0",
+              "version" : "00",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "mei_me",
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "sata",
+              "class" : "storage",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:17.0",
+              "description" : "SATA controller",
+              "product" : "200 Series PCH SATA controller [AHCI mode]",
+              "vendor" : "Intel Corporation",
+              "physid" : "17",
+              "businfo" : "pci@0000:00:17.0",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 66000000,
+              "configuration" : {
+                "driver" : "ahci",
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "sata" : true,
+                "ahci_1.0" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "pci:0",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:01",
+              "description" : "PCI bridge",
+              "product" : "200 Series PCH PCI Express Root Port #1",
+              "vendor" : "Intel Corporation",
+              "physid" : "1c",
+              "businfo" : "pci@0000:00:1c.0",
+              "version" : "f0",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "pci:1",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:02",
+              "description" : "PCI bridge",
+              "product" : "200 Series PCH PCI Express Root Port #7",
+              "vendor" : "Intel Corporation",
+              "physid" : "1c.6",
+              "businfo" : "pci@0000:00:1c.6",
+              "version" : "f0",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [                {
+                  "id" : "pci",
+                  "class" : "bridge",
+                  "claimed" : true,
+                  "handle" : "PCIBUS:0000:03",
+                  "description" : "PCI bridge",
+                  "product" : "XIO2001 PCI Express-to-PCI Bridge",
+                  "vendor" : "Texas Instruments",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:02:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "capabilities" : {
+                    "pci" : true,
+                    "normal_decode" : true,
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }]
+            },
+            {
+              "id" : "isa",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:1f.0",
+              "description" : "ISA bridge",
+              "product" : "X299 Chipset LPC/eSPI Controller",
+              "vendor" : "Intel Corporation",
+              "physid" : "1f",
+              "businfo" : "pci@0000:00:1f.0",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "isa" : true,
+                "bus_master" : "bus mastering"
+              },
+              "children" : [                {
+                  "id" : "pnp00:00",
+                  "class" : "system",
+                  "claimed" : true,
+                  "product" : "Motherboard registers",
+                  "physid" : "0",
+                  "configuration" : {
+                    "driver" : "system"
+                  },
+                  "capabilities" : {
+                    "pnp" : true
+                  }
+                },
+                {
+                  "id" : "pnp00:01",
+                  "class" : "system",
+                  "claimed" : true,
+                  "product" : "Motherboard registers",
+                  "physid" : "1",
+                  "configuration" : {
+                    "driver" : "system"
+                  },
+                  "capabilities" : {
+                    "pnp" : true
+                  }
+                },
+                {
+                  "id" : "pnp00:02",
+                  "class" : "input",
+                  "claimed" : true,
+                  "product" : "IBM Enhanced keyboard controller (101/2-key)",
+                  "physid" : "2",
+                  "configuration" : {
+                    "driver" : "i8042 kbd"
+                  },
+                  "capabilities" : {
+                    "pnp" : true
+                  }
+                },
+                {
+                  "id" : "pnp00:03",
+                  "class" : "communication",
+                  "claimed" : true,
+                  "product" : "16550A-compatible COM port",
+                  "physid" : "3",
+                  "configuration" : {
+                    "driver" : "serial"
+                  },
+                  "capabilities" : {
+                    "pnp" : true
+                  }
+                },
+                {
+                  "id" : "pnp00:04",
+                  "class" : "system",
+                  "claimed" : true,
+                  "product" : "Motherboard registers",
+                  "physid" : "4",
+                  "configuration" : {
+                    "driver" : "system"
+                  },
+                  "capabilities" : {
+                    "pnp" : true
+                  }
+                },
+                {
+                  "id" : "pnp00:05",
+                  "class" : "system",
+                  "claimed" : true,
+                  "product" : "Motherboard registers",
+                  "physid" : "5",
+                  "configuration" : {
+                    "driver" : "system"
+                  },
+                  "capabilities" : {
+                    "pnp" : true
+                  }
+                },
+                {
+                  "id" : "pnp00:06",
+                  "class" : "system",
+                  "claimed" : true,
+                  "product" : "Motherboard registers",
+                  "physid" : "6",
+                  "configuration" : {
+                    "driver" : "system"
+                  },
+                  "capabilities" : {
+                    "pnp" : true
+                  }
+                }]
+            },
+            {
+              "id" : "memory",
+              "class" : "memory",
+              "handle" : "PCI:0000:00:1f.2",
+              "description" : "Memory controller",
+              "product" : "200 Series/Z370 Chipset Family Power Management Controller",
+              "vendor" : "Intel Corporation",
+              "physid" : "1f.2",
+              "businfo" : "pci@0000:00:1f.2",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              }
+            },
+            {
+              "id" : "multimedia",
+              "class" : "multimedia",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:1f.3",
+              "description" : "Audio device",
+              "product" : "200 Series PCH HD Audio",
+              "vendor" : "Intel Corporation",
+              "physid" : "1f.3",
+              "businfo" : "pci@0000:00:1f.3",
+              "logicalname" : ["card0", "/dev/snd/controlC0", "/dev/snd/hwC0D0", "/dev/snd/pcmC0D0c", "/dev/snd/pcmC0D0p"],
+              "version" : "00",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "snd_hda_intel",
+                "latency" : "32"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [                {
+                  "id" : "input:0",
+                  "class" : "input",
+                  "claimed" : true,
+                  "product" : "HDA Intel PCH Rear Mic",
+                  "physid" : "0",
+                  "logicalname" : ["input13", "/dev/input/event12"]
+                },
+                {
+                  "id" : "input:1",
+                  "class" : "input",
+                  "claimed" : true,
+                  "product" : "HDA Intel PCH Front Mic",
+                  "physid" : "1",
+                  "logicalname" : ["input14", "/dev/input/event13"]
+                },
+                {
+                  "id" : "input:2",
+                  "class" : "input",
+                  "claimed" : true,
+                  "product" : "HDA Intel PCH Line Out",
+                  "physid" : "2",
+                  "logicalname" : ["input15", "/dev/input/event14"]
+                },
+                {
+                  "id" : "input:3",
+                  "class" : "input",
+                  "claimed" : true,
+                  "product" : "HDA Intel PCH Front Headphone",
+                  "physid" : "3",
+                  "logicalname" : ["input16", "/dev/input/event15"]
+                }]
+            },
+            {
+              "id" : "serial",
+              "class" : "bus",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:1f.4",
+              "description" : "SMBus",
+              "product" : "200 Series/Z370 Chipset Family SMBus Controller",
+              "vendor" : "Intel Corporation",
+              "physid" : "1f.4",
+              "businfo" : "pci@0000:00:1f.4",
+              "version" : "00",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "i801_smbus",
+                "latency" : "0"
+              }
+            },
+            {
+              "id" : "network",
+              "class" : "network",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:1f.6",
+              "description" : "Ethernet interface",
+              "product" : "Ethernet Connection (5) I219-LM",
+              "vendor" : "Intel Corporation",
+              "physid" : "1f.6",
+              "businfo" : "pci@0000:00:1f.6",
+              "logicalname" : "eno1",
+              "version" : "00",
+              "serial" : "cc:96:e5:34:2c:c9",
+              "units" : "bit/s",
+              "size" : 1000000000,
+              "capacity" : 1000000000,
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "autonegotiation" : "on",
+                "broadcast" : "yes",
+                "driver" : "e1000e",
+                "driverversion" : "6.11.8-arch1-2",
+                "duplex" : "full",
+                "firmware" : "0.1-4",
+                "ip" : "10.186.24.10",
+                "latency" : "0",
+                "link" : "yes",
+                "multicast" : "yes",
+                "port" : "twisted pair",
+                "speed" : "1Gbit/s"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing",
+                "ethernet" : true,
+                "physical" : "Physical interface",
+                "tp" : "twisted pair",
+                "10bt" : "10Mbit/s",
+                "10bt-fd" : "10Mbit/s (full duplex)",
+                "100bt" : "100Mbit/s",
+                "100bt-fd" : "100Mbit/s (full duplex)",
+                "1000bt-fd" : "1Gbit/s (full duplex)",
+                "autonegotiation" : "Auto-negotiation"
+              }
+            }]
+        },
+        {
+          "id" : "generic:0",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:05.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E VT-d",
+          "vendor" : "Intel Corporation",
+          "physid" : "6",
+          "businfo" : "pci@0000:16:05.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:1",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:05.2",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E RAS Configuration Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "7",
+          "businfo" : "pci@0000:16:05.2",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:2",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:05.4",
+          "description" : "PIC",
+          "product" : "Sky Lake-E IOxAPIC Configuration Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "8",
+          "businfo" : "pci@0000:16:05.4",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "io_x_-apic" : true,
+            "bus_master" : "bus mastering",
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:3",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:08.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "9",
+          "businfo" : "pci@0000:16:08.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:4",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:08.1",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "8.1",
+          "businfo" : "pci@0000:16:08.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:5",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:08.2",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "8.2",
+          "businfo" : "pci@0000:16:08.2",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:6",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:08.3",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "8.3",
+          "businfo" : "pci@0000:16:08.3",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:7",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:08.4",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "8.4",
+          "businfo" : "pci@0000:16:08.4",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:8",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:08.5",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "8.5",
+          "businfo" : "pci@0000:16:08.5",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:9",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:08.6",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "8.6",
+          "businfo" : "pci@0000:16:08.6",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:10",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:08.7",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "8.7",
+          "businfo" : "pci@0000:16:08.7",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:11",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:09.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "a",
+          "businfo" : "pci@0000:16:09.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:12",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:09.1",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "9.1",
+          "businfo" : "pci@0000:16:09.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:13",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:09.2",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "9.2",
+          "businfo" : "pci@0000:16:09.2",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:14",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:09.3",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "9.3",
+          "businfo" : "pci@0000:16:09.3",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:15",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:09.4",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "9.4",
+          "businfo" : "pci@0000:16:09.4",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:16",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:09.5",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "9.5",
+          "businfo" : "pci@0000:16:09.5",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:17",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:09.6",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "9.6",
+          "businfo" : "pci@0000:16:09.6",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:18",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:09.7",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "9.7",
+          "businfo" : "pci@0000:16:09.7",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:19",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0a.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "11",
+          "businfo" : "pci@0000:16:0a.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:20",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0a.1",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "13",
+          "businfo" : "pci@0000:16:0a.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:21",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0e.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "e",
+          "businfo" : "pci@0000:16:0e.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:22",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0e.1",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "e.1",
+          "businfo" : "pci@0000:16:0e.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:23",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0e.2",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "e.2",
+          "businfo" : "pci@0000:16:0e.2",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:24",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0e.3",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "e.3",
+          "businfo" : "pci@0000:16:0e.3",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:25",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0e.4",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "e.4",
+          "businfo" : "pci@0000:16:0e.4",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:26",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0e.5",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "e.5",
+          "businfo" : "pci@0000:16:0e.5",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:27",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0e.6",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "e.6",
+          "businfo" : "pci@0000:16:0e.6",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:28",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0e.7",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "e.7",
+          "businfo" : "pci@0000:16:0e.7",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:29",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0f.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "f",
+          "businfo" : "pci@0000:16:0f.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:30",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0f.1",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "f.1",
+          "businfo" : "pci@0000:16:0f.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:31",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0f.2",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "f.2",
+          "businfo" : "pci@0000:16:0f.2",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:32",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0f.3",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "f.3",
+          "businfo" : "pci@0000:16:0f.3",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:33",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0f.4",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "f.4",
+          "businfo" : "pci@0000:16:0f.4",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:34",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0f.5",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "f.5",
+          "businfo" : "pci@0000:16:0f.5",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:35",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0f.6",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "f.6",
+          "businfo" : "pci@0000:16:0f.6",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:36",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:0f.7",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "f.7",
+          "businfo" : "pci@0000:16:0f.7",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:37",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:10.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "10",
+          "businfo" : "pci@0000:16:10.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:38",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:10.1",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "10.1",
+          "businfo" : "pci@0000:16:10.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:39",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:1d.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "1d",
+          "businfo" : "pci@0000:16:1d.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:40",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:1d.1",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "1d.1",
+          "businfo" : "pci@0000:16:1d.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:41",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:1d.2",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "1d.2",
+          "businfo" : "pci@0000:16:1d.2",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:42",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:1d.3",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E CHA Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "1d.3",
+          "businfo" : "pci@0000:16:1d.3",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:43",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:1e.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E PCU Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "1e",
+          "businfo" : "pci@0000:16:1e.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:44",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:1e.1",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E PCU Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "1e.1",
+          "businfo" : "pci@0000:16:1e.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:45",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:1e.2",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E PCU Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "1e.2",
+          "businfo" : "pci@0000:16:1e.2",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:46",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:1e.3",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E PCU Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "1e.3",
+          "businfo" : "pci@0000:16:1e.3",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:47",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:1e.4",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E PCU Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "1e.4",
+          "businfo" : "pci@0000:16:1e.4",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:48",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:1e.5",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E PCU Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "1e.5",
+          "businfo" : "pci@0000:16:1e.5",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:49",
+          "class" : "generic",
+          "handle" : "PCI:0000:16:1e.6",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E PCU Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "1e.6",
+          "businfo" : "pci@0000:16:1e.6",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "pci:1",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:65",
+          "description" : "PCI bridge",
+          "product" : "Sky Lake-E PCI Express Root Port A",
+          "vendor" : "Intel Corporation",
+          "physid" : "0",
+          "businfo" : "pci@0000:64:00.0",
+          "version" : "07",
+          "width" : 64,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "pcieport"
+          },
+          "capabilities" : {
+            "pci" : true,
+            "normal_decode" : true,
+            "bus_master" : "bus mastering",
+            "cap_list" : "PCI capabilities listing"
+          },
+          "children" : [            {
+              "id" : "display",
+              "class" : "display",
+              "claimed" : true,
+              "handle" : "PCI:0000:65:00.0",
+              "description" : "VGA compatible controller",
+              "product" : "GA102GL [RTX A5000]",
+              "vendor" : "NVIDIA Corporation",
+              "physid" : "0",
+              "businfo" : "pci@0000:65:00.0",
+              "logicalname" : "/dev/fb0",
+              "version" : "a1",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "depth" : "32",
+                "driver" : "nvidia",
+                "latency" : "0",
+                "resolution" : "3440,1440"
+              },
+              "capabilities" : {
+                "vga_controller" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing",
+                "rom" : "extension ROM",
+                "fb" : "framebuffer"
+              }
+            },
+            {
+              "id" : "multimedia",
+              "class" : "multimedia",
+              "claimed" : true,
+              "handle" : "PCI:0000:65:00.1",
+              "description" : "Audio device",
+              "product" : "GA102 High Definition Audio Controller",
+              "vendor" : "NVIDIA Corporation",
+              "physid" : "0.1",
+              "businfo" : "pci@0000:65:00.1",
+              "logicalname" : ["card1", "/dev/snd/controlC1", "/dev/snd/hwC1D0", "/dev/snd/pcmC1D3p", "/dev/snd/pcmC1D7p", "/dev/snd/pcmC1D8p", "/dev/snd/pcmC1D9p"],
+              "version" : "a1",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "snd_hda_intel",
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [                {
+                  "id" : "input:0",
+                  "class" : "input",
+                  "claimed" : true,
+                  "product" : "HDA NVidia HDMI/DP,pcm=9",
+                  "physid" : "0",
+                  "logicalname" : ["input10", "/dev/input/event9"]
+                },
+                {
+                  "id" : "input:1",
+                  "class" : "input",
+                  "claimed" : true,
+                  "product" : "HDA NVidia HDMI/DP,pcm=3",
+                  "physid" : "1",
+                  "logicalname" : ["input7", "/dev/input/event6"]
+                },
+                {
+                  "id" : "input:2",
+                  "class" : "input",
+                  "claimed" : true,
+                  "product" : "HDA NVidia HDMI/DP,pcm=7",
+                  "physid" : "2",
+                  "logicalname" : ["input8", "/dev/input/event7"]
+                },
+                {
+                  "id" : "input:3",
+                  "class" : "input",
+                  "claimed" : true,
+                  "product" : "HDA NVidia HDMI/DP,pcm=8",
+                  "physid" : "3",
+                  "logicalname" : ["input9", "/dev/input/event8"]
+                }]
+            }]
+        },
+        {
+          "id" : "generic:50",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:05.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E VT-d",
+          "vendor" : "Intel Corporation",
+          "physid" : "14",
+          "businfo" : "pci@0000:64:05.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:51",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:05.2",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E RAS Configuration Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "18",
+          "businfo" : "pci@0000:64:05.2",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:52",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:05.4",
+          "description" : "PIC",
+          "product" : "Sky Lake-E IOxAPIC Configuration Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "19",
+          "businfo" : "pci@0000:64:05.4",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "io_x_-apic" : true,
+            "bus_master" : "bus mastering",
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:53",
+          "class" : "generic",
+          "claimed" : true,
+          "handle" : "PCI:0000:64:08.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E Integrated Memory Controller",
+          "vendor" : "Intel Corporation",
+          "physid" : "1a",
+          "businfo" : "pci@0000:64:08.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "skx_uncore",
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:54",
+          "class" : "generic",
+          "claimed" : true,
+          "handle" : "PCI:0000:64:09.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E Integrated Memory Controller",
+          "vendor" : "Intel Corporation",
+          "physid" : "1b",
+          "businfo" : "pci@0000:64:09.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "skx_uncore",
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:55",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0a.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E Integrated Memory Controller",
+          "vendor" : "Intel Corporation",
+          "physid" : "1c",
+          "businfo" : "pci@0000:64:0a.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:56",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0a.1",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E Integrated Memory Controller",
+          "vendor" : "Intel Corporation",
+          "physid" : "1f",
+          "businfo" : "pci@0000:64:0a.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:57",
+          "class" : "generic",
+          "claimed" : true,
+          "handle" : "PCI:0000:64:0a.2",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E Integrated Memory Controller",
+          "vendor" : "Intel Corporation",
+          "physid" : "a.2",
+          "businfo" : "pci@0000:64:0a.2",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "skx_uncore",
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:58",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0a.3",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E Integrated Memory Controller",
+          "vendor" : "Intel Corporation",
+          "physid" : "a.3",
+          "businfo" : "pci@0000:64:0a.3",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:59",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0a.4",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E Integrated Memory Controller",
+          "vendor" : "Intel Corporation",
+          "physid" : "a.4",
+          "businfo" : "pci@0000:64:0a.4",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:60",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0a.5",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E LM Channel 1",
+          "vendor" : "Intel Corporation",
+          "physid" : "a.5",
+          "businfo" : "pci@0000:64:0a.5",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:61",
+          "class" : "generic",
+          "claimed" : true,
+          "handle" : "PCI:0000:64:0a.6",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E LMS Channel 1",
+          "vendor" : "Intel Corporation",
+          "physid" : "a.6",
+          "businfo" : "pci@0000:64:0a.6",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "skx_uncore",
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:62",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0a.7",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E LMDP Channel 1",
+          "vendor" : "Intel Corporation",
+          "physid" : "a.7",
+          "businfo" : "pci@0000:64:0a.7",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:63",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0b.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E DECS Channel 2",
+          "vendor" : "Intel Corporation",
+          "physid" : "b",
+          "businfo" : "pci@0000:64:0b.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:64",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0b.1",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E LM Channel 2",
+          "vendor" : "Intel Corporation",
+          "physid" : "b.1",
+          "businfo" : "pci@0000:64:0b.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:65",
+          "class" : "generic",
+          "claimed" : true,
+          "handle" : "PCI:0000:64:0b.2",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E LMS Channel 2",
+          "vendor" : "Intel Corporation",
+          "physid" : "b.2",
+          "businfo" : "pci@0000:64:0b.2",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "skx_uncore",
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:66",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0b.3",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E LMDP Channel 2",
+          "vendor" : "Intel Corporation",
+          "physid" : "b.3",
+          "businfo" : "pci@0000:64:0b.3",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:67",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0c.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E Integrated Memory Controller",
+          "vendor" : "Intel Corporation",
+          "physid" : "c",
+          "businfo" : "pci@0000:64:0c.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:68",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0c.1",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E Integrated Memory Controller",
+          "vendor" : "Intel Corporation",
+          "physid" : "c.1",
+          "businfo" : "pci@0000:64:0c.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:69",
+          "class" : "generic",
+          "claimed" : true,
+          "handle" : "PCI:0000:64:0c.2",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E Integrated Memory Controller",
+          "vendor" : "Intel Corporation",
+          "physid" : "c.2",
+          "businfo" : "pci@0000:64:0c.2",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "skx_uncore",
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:70",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0c.3",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E Integrated Memory Controller",
+          "vendor" : "Intel Corporation",
+          "physid" : "c.3",
+          "businfo" : "pci@0000:64:0c.3",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:71",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0c.4",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E Integrated Memory Controller",
+          "vendor" : "Intel Corporation",
+          "physid" : "c.4",
+          "businfo" : "pci@0000:64:0c.4",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:72",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0c.5",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E LM Channel 1",
+          "vendor" : "Intel Corporation",
+          "physid" : "c.5",
+          "businfo" : "pci@0000:64:0c.5",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:73",
+          "class" : "generic",
+          "claimed" : true,
+          "handle" : "PCI:0000:64:0c.6",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E LMS Channel 1",
+          "vendor" : "Intel Corporation",
+          "physid" : "c.6",
+          "businfo" : "pci@0000:64:0c.6",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "skx_uncore",
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:74",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0c.7",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E LMDP Channel 1",
+          "vendor" : "Intel Corporation",
+          "physid" : "c.7",
+          "businfo" : "pci@0000:64:0c.7",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:75",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0d.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E DECS Channel 2",
+          "vendor" : "Intel Corporation",
+          "physid" : "d",
+          "businfo" : "pci@0000:64:0d.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:76",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0d.1",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E LM Channel 2",
+          "vendor" : "Intel Corporation",
+          "physid" : "d.1",
+          "businfo" : "pci@0000:64:0d.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:77",
+          "class" : "generic",
+          "claimed" : true,
+          "handle" : "PCI:0000:64:0d.2",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E LMS Channel 2",
+          "vendor" : "Intel Corporation",
+          "physid" : "d.2",
+          "businfo" : "pci@0000:64:0d.2",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "skx_uncore",
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:78",
+          "class" : "generic",
+          "handle" : "PCI:0000:64:0d.3",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E LMDP Channel 2",
+          "vendor" : "Intel Corporation",
+          "physid" : "d.3",
+          "businfo" : "pci@0000:64:0d.3",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "pci:2",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:b3",
+          "description" : "PCI bridge",
+          "product" : "Sky Lake-E PCI Express Root Port C",
+          "vendor" : "Intel Corporation",
+          "physid" : "2",
+          "businfo" : "pci@0000:b2:02.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "pcieport"
+          },
+          "capabilities" : {
+            "pci" : true,
+            "normal_decode" : true,
+            "bus_master" : "bus mastering",
+            "cap_list" : "PCI capabilities listing"
+          },
+          "children" : [            {
+              "id" : "nvme",
+              "class" : "storage",
+              "claimed" : true,
+              "handle" : "PCI:0000:b3:00.0",
+              "description" : "NVMe device",
+              "product" : "PM9A1 NVMe Samsung 512GB",
+              "vendor" : "Samsung Electronics Co Ltd",
+              "physid" : "0",
+              "businfo" : "pci@0000:b3:00.0",
+              "logicalname" : "/dev/nvme1",
+              "version" : "36310229",
+              "serial" : "S6H3NF0W713109",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "nvme",
+                "latency" : "0",
+                "nqn" : "nqn.1994-11.com.samsung:nvme:PM9A1:M.2:      S6H3NF0W713109",
+                "state" : "live"
+              },
+              "capabilities" : {
+                "nvme" : true,
+                "nvm_express" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [                {
+                  "id" : "namespace:0",
+                  "class" : "disk",
+                  "claimed" : true,
+                  "description" : "NVMe disk",
+                  "physid" : "0",
+                  "logicalname" : "hwmon1"
+                },
+                {
+                  "id" : "namespace:1",
+                  "class" : "disk",
+                  "claimed" : true,
+                  "description" : "NVMe disk",
+                  "physid" : "2",
+                  "logicalname" : "/dev/ng1n1"
+                },
+                {
+                  "id" : "namespace:2",
+                  "class" : "disk",
+                  "claimed" : true,
+                  "description" : "NVMe disk",
+                  "physid" : "1",
+                  "businfo" : "nvme@1:1",
+                  "logicalname" : "/dev/nvme1n1",
+                  "configuration" : {
+                    "wwid" : "eui.36483330577131090025384600000001"
+                  }
+                }]
+            }]
+        },
+        {
+          "id" : "pci:3",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:b4",
+          "description" : "PCI bridge",
+          "product" : "Sky Lake-E PCI Express Root Port D",
+          "vendor" : "Intel Corporation",
+          "physid" : "3",
+          "businfo" : "pci@0000:b2:03.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "pcieport"
+          },
+          "capabilities" : {
+            "pci" : true,
+            "normal_decode" : true,
+            "bus_master" : "bus mastering",
+            "cap_list" : "PCI capabilities listing"
+          },
+          "children" : [            {
+              "id" : "nvme",
+              "class" : "storage",
+              "claimed" : true,
+              "handle" : "PCI:0000:b4:00.0",
+              "description" : "NVMe device",
+              "product" : "PM9A1 NVMe Samsung 1024GB",
+              "vendor" : "Samsung Electronics Co Ltd",
+              "physid" : "0",
+              "businfo" : "pci@0000:b4:00.0",
+              "logicalname" : "/dev/nvme0",
+              "version" : "36310229",
+              "serial" : "S6H2NX0W906569",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "nvme",
+                "latency" : "0",
+                "nqn" : "nqn.1994-11.com.samsung:nvme:PM9A1:M.2:      S6H2NX0W906569",
+                "state" : "live"
+              },
+              "capabilities" : {
+                "nvme" : true,
+                "nvm_express" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [                {
+                  "id" : "namespace:0",
+                  "class" : "disk",
+                  "claimed" : true,
+                  "description" : "NVMe disk",
+                  "physid" : "0",
+                  "logicalname" : "hwmon0"
+                },
+                {
+                  "id" : "namespace:1",
+                  "class" : "disk",
+                  "claimed" : true,
+                  "description" : "NVMe disk",
+                  "physid" : "2",
+                  "logicalname" : "/dev/ng0n1"
+                },
+                {
+                  "id" : "namespace:2",
+                  "class" : "disk",
+                  "claimed" : true,
+                  "description" : "NVMe disk",
+                  "physid" : "1",
+                  "businfo" : "nvme@0:1",
+                  "logicalname" : "/dev/nvme0n1",
+                  "configuration" : {
+                    "wwid" : "eui.36483230579065690025385800000001"
+                  }
+                }]
+            }]
+        },
+        {
+          "id" : "generic:79",
+          "class" : "generic",
+          "handle" : "PCI:0000:b2:05.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E VT-d",
+          "vendor" : "Intel Corporation",
+          "physid" : "5",
+          "businfo" : "pci@0000:b2:05.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:80",
+          "class" : "generic",
+          "handle" : "PCI:0000:b2:05.2",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E RAS Configuration Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "5.2",
+          "businfo" : "pci@0000:b2:05.2",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:81",
+          "class" : "generic",
+          "handle" : "PCI:0000:b2:05.4",
+          "description" : "PIC",
+          "product" : "Sky Lake-E IOxAPIC Configuration Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "5.4",
+          "businfo" : "pci@0000:b2:05.4",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "io_x_-apic" : true,
+            "bus_master" : "bus mastering",
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:82",
+          "class" : "generic",
+          "handle" : "PCI:0000:b2:12.0",
+          "description" : "Performance counters",
+          "product" : "Sky Lake-E M3KTI Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "12",
+          "businfo" : "pci@0000:b2:12.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          },
+          "capabilities" : {
+            "cap_list" : "PCI capabilities listing"
+          }
+        },
+        {
+          "id" : "generic:83",
+          "class" : "generic",
+          "claimed" : true,
+          "handle" : "PCI:0000:b2:12.1",
+          "description" : "Performance counters",
+          "product" : "Sky Lake-E M3KTI Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "12.1",
+          "businfo" : "pci@0000:b2:12.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "skx_uncore",
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:84",
+          "class" : "generic",
+          "claimed" : true,
+          "handle" : "PCI:0000:b2:12.2",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E M3KTI Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "12.2",
+          "businfo" : "pci@0000:b2:12.2",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "skx_uncore",
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:85",
+          "class" : "generic",
+          "handle" : "PCI:0000:b2:15.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E M2PCI Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "15",
+          "businfo" : "pci@0000:b2:15.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:86",
+          "class" : "generic",
+          "claimed" : true,
+          "handle" : "PCI:0000:b2:15.1",
+          "description" : "Performance counters",
+          "product" : "Sky Lake-E DDRIO Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "15.1",
+          "businfo" : "pci@0000:b2:15.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "skx_uncore",
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:87",
+          "class" : "generic",
+          "handle" : "PCI:0000:b2:16.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E M2PCI Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "16",
+          "businfo" : "pci@0000:b2:16.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:88",
+          "class" : "generic",
+          "claimed" : true,
+          "handle" : "PCI:0000:b2:16.1",
+          "description" : "Performance counters",
+          "product" : "Sky Lake-E DDRIO Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "16.1",
+          "businfo" : "pci@0000:b2:16.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "skx_uncore",
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:89",
+          "class" : "generic",
+          "handle" : "PCI:0000:b2:16.4",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E M2PCI Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "16.4",
+          "businfo" : "pci@0000:b2:16.4",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:90",
+          "class" : "generic",
+          "handle" : "PCI:0000:b2:16.5",
+          "description" : "Performance counters",
+          "product" : "Sky Lake-E DDRIO Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "16.5",
+          "businfo" : "pci@0000:b2:16.5",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:91",
+          "class" : "generic",
+          "handle" : "PCI:0000:b2:17.0",
+          "description" : "System peripheral",
+          "product" : "Sky Lake-E M2PCI Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "17",
+          "businfo" : "pci@0000:b2:17.0",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "latency" : "0"
+          }
+        },
+        {
+          "id" : "generic:92",
+          "class" : "generic",
+          "claimed" : true,
+          "handle" : "PCI:0000:b2:17.1",
+          "description" : "Performance counters",
+          "product" : "Sky Lake-E DDRIO Registers",
+          "vendor" : "Intel Corporation",
+          "physid" : "17.1",
+          "businfo" : "pci@0000:b2:17.1",
+          "version" : "07",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "skx_uncore",
+            "latency" : "0"
+          }
+        }]
+    },
+    {
+      "id" : "scsi",
+      "class" : "storage",
+      "claimed" : true,
+      "handle" : "SCSI:08",
+      "physid" : "1",
+      "businfo" : "scsi@8",
+      "logicalname" : "scsi8",
+      "configuration" : {
+        "driver" : "usb-storage"
+      },
+      "capabilities" : {
+        "scsi-host" : "SCSI host adapter"
+      }
+    },
+    {
+      "id" : "sound",
+      "class" : "multimedia",
+      "claimed" : true,
+      "description" : "Microphone",
+      "physid" : "2",
+      "logicalname" : ["card2", "/dev/snd/controlC2", "/dev/snd/pcmC2D0c", "/dev/snd/pcmC2D0p"]
+    },
+    {
+      "id" : "input:0",
+      "class" : "input",
+      "claimed" : true,
+      "product" : "Sleep Button",
+      "physid" : "3",
+      "logicalname" : ["input0", "/dev/input/event0"],
+      "capabilities" : {
+        "platform" : true
+      }
+    },
+    {
+      "id" : "input:1",
+      "class" : "input",
+      "claimed" : true,
+      "product" : "Power Button",
+      "physid" : "4",
+      "logicalname" : ["input1", "/dev/input/event1"],
+      "capabilities" : {
+        "platform" : true
+      }
+    },
+    {
+      "id" : "input:2",
+      "class" : "input",
+      "claimed" : true,
+      "product" : "PixArt Dell MS116 USB Optical Mouse",
+      "physid" : "5",
+      "logicalname" : ["input11", "/dev/input/event10", "/dev/input/mouse0"],
+      "capabilities" : {
+        "usb" : "USB"
+      }
+    },
+    {
+      "id" : "input:3",
+      "class" : "input",
+      "claimed" : true,
+      "product" : "Dell KB216 Wired Keyboard",
+      "physid" : "6",
+      "logicalname" : ["input12", "/dev/input/event11", "input12::capslock", "input12::compose", "input12::kana", "input12::numlock", "input12::scrolllock"],
+      "capabilities" : {
+        "usb" : "USB"
+      }
+    },
+    {
+      "id" : "input:4",
+      "class" : "input",
+      "claimed" : true,
+      "product" : "Dell KB216 Wired Keyboard System Control",
+      "physid" : "7",
+      "logicalname" : ["input17", "/dev/input/event16"],
+      "capabilities" : {
+        "usb" : "USB"
+      }
+    },
+    {
+      "id" : "input:5",
+      "class" : "input",
+      "claimed" : true,
+      "product" : "Dell KB216 Wired Keyboard Consumer Control",
+      "physid" : "8",
+      "logicalname" : ["input18", "/dev/input/event17"],
+      "capabilities" : {
+        "usb" : "USB"
+      }
+    },
+    {
+      "id" : "input:6",
+      "class" : "input",
+      "claimed" : true,
+      "product" : "AT Translated Set 2 keyboard",
+      "physid" : "9",
+      "logicalname" : ["input2", "/dev/input/event2", "input2::capslock", "input2::numlock", "input2::scrolllock"],
+      "capabilities" : {
+        "i8042" : "i8042 PC AT keyboard controller"
+      }
+    },
+    {
+      "id" : "input:7",
+      "class" : "input",
+      "claimed" : true,
+      "product" : "PC Speaker",
+      "physid" : "a",
+      "logicalname" : ["input3", "/dev/input/event3"],
+      "capabilities" : {
+        "isa" : "ISA bus"
+      }
+    },
+    {
+      "id" : "input:8",
+      "class" : "input",
+      "claimed" : true,
+      "product" : "Dell WMI hotkeys",
+      "physid" : "b",
+      "logicalname" : ["input4", "/dev/input/event4"],
+      "capabilities" : {
+        "platform" : true
+      }
+    },
+    {
+      "id" : "input:9",
+      "class" : "input",
+      "claimed" : true,
+      "product" : "Blue Microphones Yeti Stereo Microphone Consumer Control",
+      "physid" : "c",
+      "logicalname" : ["input5", "/dev/input/event5"],
+      "capabilities" : {
+        "usb" : "USB"
+      }
+    }]
+}

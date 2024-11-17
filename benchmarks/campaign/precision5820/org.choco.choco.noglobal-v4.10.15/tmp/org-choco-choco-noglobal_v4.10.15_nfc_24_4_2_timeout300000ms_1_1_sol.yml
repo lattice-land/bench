@@ -1,0 +1,72 @@
+- boolVariables: 1
+  configuration: org-choco-choco-noglobal_v4.10.15_nfc_24_4_2_timeout300000ms_1_1
+  constraints: 50
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/nfc/24_4_2.dzn
+  datetime: '2024-09-11T20:51:49.306095'
+  failures: 0
+  flatIntConstraints: 49
+  flatIntVars: 49
+  flatTime: 0.0694311
+  initTime: 0.137
+  intVariables: 51
+  method: minimize
+  model: ../data/mzn-challenge/2022/nfc/nfc.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 24
+  objective: 1868
+  paths: 0
+  peakDepth: 24
+  problem: nfc
+  restarts: 0
+  setVariables: 0
+  solution:
+    f: [0, 33, 11, 0, 71, 32, 4, 0, 65, 26, 0, 11, 36, 26, 0, 0, 26, 49, 12, 33, 20,
+      0, 0, 12]
+    objective: 1868
+    w: [115, 114, 107, 107, 101, 95, 91, 102, 73, 73, 73, 62, 52, 75, 87, 120, 114,
+      65, 53, 32, 12, 45, 56, 44]
+  solutions: 1
+  solveTime: 0.031
+  status: SATISFIED
+  threads: '1'
+  time: 0.425
+  timeout_ms: '300000'
+  variables: 52
+  version: v4.10.15
+- boolVariables: 1
+  configuration: org-choco-choco-noglobal_v4.10.15_nfc_24_4_2_timeout300000ms_1_1
+  constraints: 50
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/nfc/24_4_2.dzn
+  datetime: '2024-09-11T20:51:49.306095'
+  failures: 34488
+  flatIntConstraints: 49
+  flatIntVars: 49
+  flatTime: 0.0694311
+  initTime: 0.137
+  intVariables: 51
+  method: minimize
+  model: ../data/mzn-challenge/2022/nfc/nfc.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 35073
+  objective: 1836
+  paths: 0
+  peakDepth: 24
+  problem: nfc
+  restarts: 31
+  setVariables: 0
+  solution:
+    f: [0, 25, 31, 0, 59, 24, 4, 0, 73, 18, 0, 11, 44, 18, 0, 0, 34, 53, 0, 33, 28,
+      4, 0, 0]
+    objective: 1836
+    w: [115, 114, 87, 87, 101, 95, 91, 102, 73, 73, 73, 62, 52, 87, 87, 120, 114,
+      65, 65, 32, 4, 25, 56, 56]
+  solutions: 2
+  solveTime: 18.517
+  status: SATISFIED
+  threads: '1'
+  time: 18.911
+  timeout_ms: '300000'
+  variables: 52
+  version: v4.10.15

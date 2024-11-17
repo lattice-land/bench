@@ -1,0 +1,144 @@
+- boolVariables: 55
+  configuration: com-google-ortools-sat_v9.9_triangular_n10_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/triangular/n10.dzn
+  datetime: '2024-09-12T08:56:52.485522'
+  failures: 0
+  flatIntConstraints: 496
+  flatIntVars: 56
+  flatTime: 0.0782461
+  method: maximize
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 10
+  objectiveBound: 55
+  paths: 0
+  problem: triangular
+  propagations: 228
+  solution:
+    heart:
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    objective: 10
+  solveTime: 0.0130896
+  status: SATISFIED
+  threads: '20'
+  time: 0.129
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 55
+  configuration: com-google-ortools-sat_v9.9_triangular_n10_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/triangular/n10.dzn
+  datetime: '2024-09-12T08:56:52.485522'
+  failures: 0
+  flatIntConstraints: 496
+  flatIntVars: 56
+  flatTime: 0.0782461
+  method: maximize
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 18
+  objectiveBound: 55
+  paths: 0
+  problem: triangular
+  propagations: 228
+  solution:
+    heart:
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    objective: 18
+  solveTime: 0.0191234
+  status: SATISFIED
+  threads: '20'
+  time: 0.13
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 55
+  configuration: com-google-ortools-sat_v9.9_triangular_n10_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/triangular/n10.dzn
+  datetime: '2024-09-12T08:56:52.485522'
+  failures: 3
+  flatIntConstraints: 496
+  flatIntVars: 56
+  flatTime: 0.0782461
+  method: maximize
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 19
+  objectiveBound: 55
+  paths: 0
+  problem: triangular
+  propagations: 261
+  solution:
+    heart:
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 1, 1, 1, 1, 1, 1, 1, 1]
+    objective: 19
+  solveTime: 0.0234557
+  status: SATISFIED
+  threads: '20'
+  time: 0.131
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 0
+  configuration: com-google-ortools-sat_v9.9_triangular_n10_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/triangular/n10.dzn
+  datetime: '2024-09-12T08:56:52.485522'
+  failures: 0
+  flatIntConstraints: 496
+  flatIntVars: 56
+  flatTime: 0.0782461
+  method: maximize
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 20
+  objectiveBound: 30
+  paths: 0
+  problem: triangular
+  propagations: 0
+  solution:
+    heart:
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 1, 0, 0, 0, 0, 0]
+    - [1, 1, 0, 0, 0, 1, 1, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 1, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 1, 0, 0]
+    - [1, 1, 0, 0, 0, 0, 0, 0, 1, 1]
+    objective: 20
+  solveTime: 0.724917
+  status: SATISFIED
+  threads: '20'
+  time: 0.83
+  timeout_ms: '300000'
+  version: v9.9

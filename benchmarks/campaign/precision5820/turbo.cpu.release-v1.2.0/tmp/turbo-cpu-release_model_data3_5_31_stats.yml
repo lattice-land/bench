@@ -1,0 +1,10 @@
+{arch: cpu, configuration: turbo-cpu-release_model_data3_5_31, cutnodes: 0, data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn,
+  datetime: '2024-08-29T20:01:07.257796', eliminated_formulas: 15932, eliminated_variables: 7950,
+  eps_num_subproblems: 1, eps_skipped_subproblems: 0, eps_solved_subproblems: 0, evaluatedReifiedConstraints: 7764,
+  failures: 44810, fixpoint_iterations: 335653, flatBoolVars: 7764, flatIntConstraints: 17514,
+  flatIntVars: 7982, flatTime: 0.335972, free_search: no, hardware: precision5820,
+  initTime: 0.94, method: maximize, model: ../data/mzn-challenge/2022/team-assignment/model.mzn,
+  mzn_solver: turbo.cpu.release, nSolutions: 1, nodes: 89774, num_blocks_done: 0,
+  num_solutions: 18, objective: 2255, or_nodes: 0, paths: 0, peakDepth: 147, problem: team-assignment,
+  problem_path: /tmp/mznfileuUCckC.fzn, propagators: 9750, solveTime: 300.004, solver: Turbo,
+  status: SATISFIED, timeout_ms: 300000, variables: 7982, version: v1.2.0}

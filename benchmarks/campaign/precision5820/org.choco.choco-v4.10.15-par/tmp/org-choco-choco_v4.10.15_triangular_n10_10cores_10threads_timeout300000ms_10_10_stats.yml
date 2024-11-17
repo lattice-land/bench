@@ -1,0 +1,8 @@
+{boolVariables: 56, configuration: org-choco-choco_v4.10.15_triangular_n10_10cores_10threads_timeout300000ms_10_10,
+  constraints: 497, cores: '10', data_file: ../data/mzn-challenge/2022/triangular/n10.dzn,
+  datetime: '2024-09-11T21:35:33.062772', failures: 18073573, flatIntConstraints: 496,
+  flatIntVars: 56, flatTime: 0.0574569, initTime: 0.273, intVariables: 2, method: maximize,
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn, mzn_solver: org.choco.choco,
+  nSolutions: 10, nodes: 18080219, objective: 20, paths: 0, peakDepth: 48, problem: triangular,
+  restarts: 419, setVariables: 0, solutions: 6, solveTime: 99.373, status: OPTIMAL_SOLUTION,
+  threads: '10', timeout_ms: '300000', variables: 58, version: v4.10.15}

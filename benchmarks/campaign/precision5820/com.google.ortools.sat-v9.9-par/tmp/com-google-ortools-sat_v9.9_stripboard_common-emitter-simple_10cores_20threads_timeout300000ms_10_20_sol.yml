@@ -1,0 +1,395 @@
+- boolVariables: 1483
+  configuration: com-google-ortools-sat_v9.9_stripboard_common-emitter-simple_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/stripboard/common-emitter-simple.dzn
+  datetime: '2024-09-12T08:56:21.502414'
+  eliminatedImplications: 14
+  evaluatedHalfReifiedConstraints: 840
+  evaluatedReifiedConstraints: 31
+  failures: 964
+  flatBoolConstraints: 312
+  flatBoolVars: 851
+  flatIntConstraints: 1115
+  flatIntVars: 289
+  flatTime: 0.165169
+  method: minimize
+  model: ../data/mzn-challenge/2022/stripboard/stripboard.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 42
+  objectiveBound: 24
+  paths: 0
+  problem: stripboard
+  propagations: 1815942
+  solution:
+    board_h: 6
+    board_w: 7
+    component_orientation:
+    - {e: UpsideDown}
+    - {e: Upright}
+    - {e: UpsideDown}
+    - {e: Clockwise}
+    component_x: [2, 7, 1, 4]
+    component_y: [2, 1, 2, 2]
+    connection:
+    - {e: Unconnected}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: VCC}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: OUT2}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: N1}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - c: Net
+      e: {e: N1}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    distance: [0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 2, 1, 5, 4, 3, 2, 1, 0, 0, 0, 0,
+      0, 0]
+    link_length: [3, 1, 1, 1, 1, 1]
+    link_x: [3, 5, 4, 3, 2, 1]
+    link_y: [3, -1, -1, -1, -1, -1]
+    objective: 42
+    pad_x: [0, 2, 2, 2, 7, 7, 7, 7, 7, 1, 1, 6, 4, 3, 5, 4, 3, 2, 1, 3, 5, 4, 3, 2,
+      1]
+    pad_xy: [0, 107, 86, 65, 49, 70, 91, 112, 133, 148, 106, 90, 88, 87, 5, 4, 3,
+      2, 1, 150, 26, 25, 24, 23, 22]
+    pad_y: [-1, 4, 3, 2, 1, 2, 3, 4, 5, 6, 4, 3, 3, 3, -1, -1, -1, -1, -1, 6, 0, 0,
+      0, 0, 0]
+    parent:
+    - {e: Dummy}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_VCC}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_IN}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: J1_OUT2}
+    - {c: LinkEnd, e: 1}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: J1_IN}
+    - {c: LinkStart, e: 1}
+    - c: Pin
+      e: {e: Q1_B}
+    - {c: LinkStart, e: 3}
+    - {c: LinkStart, e: 4}
+    - {c: LinkStart, e: 5}
+    - {c: LinkStart, e: 6}
+    - {e: Dummy}
+    - {c: LinkEnd, e: 1}
+    - {c: LinkEnd, e: 2}
+    - {c: LinkEnd, e: 3}
+    - {c: LinkEnd, e: 4}
+    - {c: LinkEnd, e: 5}
+    - {c: LinkEnd, e: 6}
+  solveTime: 0.807736
+  status: SATISFIED
+  threads: '20'
+  time: 1.003
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 1363
+  configuration: com-google-ortools-sat_v9.9_stripboard_common-emitter-simple_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/stripboard/common-emitter-simple.dzn
+  datetime: '2024-09-12T08:56:21.502414'
+  eliminatedImplications: 14
+  evaluatedHalfReifiedConstraints: 840
+  evaluatedReifiedConstraints: 31
+  failures: 4216
+  flatBoolConstraints: 312
+  flatBoolVars: 851
+  flatIntConstraints: 1115
+  flatIntVars: 289
+  flatTime: 0.165169
+  method: minimize
+  model: ../data/mzn-challenge/2022/stripboard/stripboard.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 40
+  objectiveBound: 30
+  paths: 0
+  problem: stripboard
+  propagations: 2377195
+  solution:
+    board_h: 5
+    board_w: 8
+    component_orientation:
+    - {e: Upright}
+    - {e: UpsideDown}
+    - {e: Anticlockwise}
+    - {e: Clockwise}
+    component_x: [2, 7, 2, 4]
+    component_y: [2, 1, 5, 2]
+    connection:
+    - {e: Unconnected}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: VCC}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: OUT2}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: OUT2}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: OUT2}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    distance: [0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 0, 0, 0, 0,
+      0, 0]
+    link_length: [1, 2, 3, 1, 1, 1]
+    link_x: [3, 1, 8, 3, 2, 1]
+    link_y: [3, 3, 2, 1, -1, -1]
+    objective: 40
+    pad_x: [0, 2, 2, 2, 7, 7, 7, 7, 7, 2, 4, 6, 4, 3, 1, 8, 3, 2, 1, 3, 1, 8, 3, 2,
+      1]
+    pad_xy: [0, 65, 86, 107, 133, 112, 91, 70, 49, 128, 130, 90, 88, 87, 85, 71, 45,
+      2, 1, 108, 127, 134, 66, 23, 22]
+    pad_y: [-1, 2, 3, 4, 5, 4, 3, 2, 1, 5, 5, 3, 3, 3, 3, 2, 1, -1, -1, 4, 5, 5, 2,
+      0, 0]
+    parent:
+    - {e: Dummy}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_VCC}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_IN}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: J1_OUT2}
+    - {c: LinkEnd, e: 2}
+    - {c: LinkEnd, e: 3}
+    - c: Pin
+      e: {e: J1_IN}
+    - {c: LinkStart, e: 1}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: J1_OUT1}
+    - c: Pin
+      e: {e: J1_OUT2}
+    - {c: LinkStart, e: 6}
+    - {e: Dummy}
+    - {c: LinkEnd, e: 1}
+    - {c: LinkEnd, e: 2}
+    - {c: LinkEnd, e: 3}
+    - {c: LinkEnd, e: 4}
+    - {c: LinkEnd, e: 5}
+    - {c: LinkEnd, e: 6}
+  solveTime: 1.12113
+  status: SATISFIED
+  threads: '20'
+  time: 1.318
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 1363
+  configuration: com-google-ortools-sat_v9.9_stripboard_common-emitter-simple_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/stripboard/common-emitter-simple.dzn
+  datetime: '2024-09-12T08:56:21.502414'
+  eliminatedImplications: 14
+  evaluatedHalfReifiedConstraints: 840
+  evaluatedReifiedConstraints: 31
+  failures: 4216
+  flatBoolConstraints: 312
+  flatBoolVars: 851
+  flatIntConstraints: 1115
+  flatIntVars: 289
+  flatTime: 0.165169
+  method: minimize
+  model: ../data/mzn-challenge/2022/stripboard/stripboard.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 40
+  objectiveBound: 30
+  paths: 0
+  problem: stripboard
+  propagations: 2377195
+  solution:
+    board_h: 5
+    board_w: 8
+    component_orientation:
+    - {e: Upright}
+    - {e: UpsideDown}
+    - {e: UpsideDown}
+    - {e: Upright}
+    component_x: [2, 3, 8, 4]
+    component_y: [2, 1, 1, 3]
+    connection:
+    - {e: Unconnected}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: VCC}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: OUT2}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: OUT2}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: OUT2}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    distance: [0, 0, 0, 0, 0, 1, 0, 1, 0, 2, 1, 1, 1, 1, 2, 1, 3, 2, 1, 0, 0, 0, 0,
+      0, 0]
+    link_length: [2, 1, 1, 1, 1, 1]
+    link_x: [1, 7, 5, 3, 2, 1]
+    link_y: [3, 2, 1, -1, -1, -1]
+    objective: 40
+    pad_x: [0, 2, 2, 2, 3, 3, 3, 3, 3, 8, 8, 5, 5, 1, 7, 5, 3, 2, 1, 1, 7, 5, 3, 2,
+      1]
+    pad_xy: [0, 65, 86, 107, 129, 108, 87, 66, 45, 134, 92, 89, 131, 85, 70, 47, 3,
+      2, 1, 127, 91, 68, 24, 23, 22]
+    pad_y: [-1, 2, 3, 4, 5, 4, 3, 2, 1, 5, 3, 3, 5, 3, 2, 1, -1, -1, -1, 5, 3, 2,
+      0, 0, 0]
+    parent:
+    - {e: Dummy}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_VCC}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_IN}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: J1_OUT2}
+    - c: Pin
+      e: {e: C1_2}
+    - {c: LinkEnd, e: 2}
+    - c: Pin
+      e: {e: J1_IN}
+    - {c: LinkEnd, e: 1}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: J1_OUT1}
+    - c: Pin
+      e: {e: J1_OUT2}
+    - {c: LinkStart, e: 5}
+    - {c: LinkStart, e: 6}
+    - {e: Dummy}
+    - {c: LinkEnd, e: 1}
+    - {c: LinkEnd, e: 2}
+    - {c: LinkEnd, e: 3}
+    - {c: LinkEnd, e: 4}
+    - {c: LinkEnd, e: 5}
+    - {c: LinkEnd, e: 6}
+  solveTime: 1.12113
+  status: SATISFIED
+  threads: '20'
+  time: 4.859
+  timeout_ms: '300000'
+  version: v9.9

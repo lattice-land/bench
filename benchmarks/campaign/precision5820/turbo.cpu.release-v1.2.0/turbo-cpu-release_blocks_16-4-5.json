@@ -1,0 +1,7 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-cpu-release_blocks_16-4-5", "problem": "blocks-world", "model": "../data/mzn-challenge/2022/blocks-world/blocks.mzn", "data_file": "../data/mzn-challenge/2022/blocks-world/16-4-5.dzn", "mzn_solver": "turbo.cpu.release", "datetime": "2024-08-29T18:55:20.711856", "status": "UNKNOWN"}}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 23139, "flatIntVars": 20179, "flatBoolConstraints": 5228, "flatIntConstraints": 39757, "evaluatedReifiedConstraints": 21436, "eliminatedImplications": 249, "method": "minimize", "flatTime": 0.734276}}
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "status", "status": "UNKNOWN", "time": 300996}
+{"type": "statistics", "statistics": {"problem_path": "/tmp/mznfileYSXgWF.fzn", "solver": "Turbo", "version": "v1.2.0", "hardware": "precision5820", "arch": "cpu", "free_search": "no", "or_nodes": 0, "timeout_ms": 300000, "cutnodes": 0, "nodes": 3426, "failures": 1675, "variables": 24966, "propagators": 28762, "peakDepth": 94, "initTime": 2.648, "solveTime": 300.032, "num_solutions": 0, "eps_num_subproblems": 1, "eps_solved_subproblems": 0, "eps_skipped_subproblems": 0, "num_blocks_done": 0, "fixpoint_iterations": 124006, "eliminated_variables": 24563, "eliminated_formulas": 44740}}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

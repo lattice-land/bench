@@ -1,0 +1,7 @@
+{boolVariables: 1, configuration: org-choco-choco_v4.10.15_nfc_24_4_2_10cores_10threads_timeout300000sec_10_10,
+  constraints: 51, cores: '10', data_file: ../data/mzn-challenge/2022/nfc/24_4_2.dzn,
+  datetime: '2024-09-11T12:03:55.544790', failures: 10, flatIntConstraints: 25, flatIntVars: 49,
+  flatTime: 0.0523873, initTime: 0.178, intVariables: 51, method: minimize, model: ../data/mzn-challenge/2022/nfc/nfc.mzn,
+  mzn_solver: org.choco.choco, nSolutions: 7, nodes: 23, objective: 1836, paths: 0,
+  peakDepth: 23, problem: nfc, restarts: 1, setVariables: 0, solutions: 1, solveTime: 0.515,
+  status: OPTIMAL_SOLUTION, threads: '10', timeout_sec: '300000', variables: 52, version: v4.10.15}

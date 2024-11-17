@@ -1,0 +1,8 @@
+{boolVariables: 9720, configuration: com-google-ortools-sat-noglobal_v9.9_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1,
+  cores: '1', data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn,
+  datetime: '2024-09-12T09:15:57.944705', evaluatedReifiedConstraints: 11641, failures: 415,
+  flatBoolConstraints: 7659, flatBoolVars: 16973, flatIntConstraints: 25585, flatIntVars: 13350,
+  flatTime: 0.48731, method: minimize, model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn,
+  mzn_solver: com.google.ortools.sat.noglobal, nSolutions: 34, objective: 9, objectiveBound: 9,
+  paths: 0, problem: gfd-schedule, propagations: 8413772, solveTime: 6.15266, status: OPTIMAL_SOLUTION,
+  threads: '1', timeout_ms: '300000', version: v9.9}

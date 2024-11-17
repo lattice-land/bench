@@ -1,0 +1,20 @@
+- configuration: turbo-cpu-release_rcpsp_J30_33_10
+  data_file: ../data/minizinc-benchmarks/rcpsp/data_psplib/j30/J30_33_10.dzn
+  datetime: '2024-08-29T20:16:17.216506'
+  evaluatedReifiedConstraints: 10141
+  flatBoolConstraints: 4903
+  flatBoolVars: 15012
+  flatIntConstraints: 16119
+  flatIntVars: 5237
+  flatTime: 0.390625
+  method: minimize
+  model: ../data/minizinc-benchmarks/rcpsp/rcpsp.mzn
+  mzn_solver: turbo.cpu.release
+  paths: 0
+  problem: rcpsp
+  solution:
+    objective: 53
+    s: [0, 7, 0, 2, 3, 7, 2, 11, 13, 11, 3, 21, 21, 15, 15, 23, 13, 15, 23, 29, 30,
+      37, 30, 30, 32, 37, 36, 46, 38, 44]
+  status: SATISFIED
+  time: 1.876

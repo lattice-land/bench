@@ -1,0 +1,7 @@
+{boolVariables: 0, configuration: com-google-ortools-sat_v9.9_bool-model-sickness_large-2_10cores_20threads_timeout300000ms_10_20,
+  cores: '10', data_file: ../data/mzn-challenge/2022/roster-sickness/large-2.dzn,
+  datetime: '2024-09-12T09:09:55.761283', failures: 0, flatBoolVars: 7425, flatIntConstraints: 3338,
+  flatIntVars: 627, flatTime: 21.0841, method: maximize, model: ../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn,
+  mzn_solver: com.google.ortools.sat, nSolutions: 7, objective: 247896, objectiveBound: 247896,
+  paths: 0, problem: roster-sickness, propagations: 0, solveTime: 0.212041, status: OPTIMAL_SOLUTION,
+  threads: '20', timeout_ms: '300000', version: v9.9}

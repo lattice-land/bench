@@ -1,0 +1,10 @@
+{arch: cpu, configuration: turbo-cpu-release_rcpsp_J30_2_2, cutnodes: 0, data_file: ../data/minizinc-benchmarks/rcpsp/data_psplib/j30/J30_2_2.dzn,
+  datetime: '2024-08-29T20:31:29.464015', eliminated_formulas: 14061, eliminated_variables: 8351,
+  eps_num_subproblems: 1, eps_skipped_subproblems: 0, eps_solved_subproblems: 0, evaluatedReifiedConstraints: 10832,
+  failures: 32, fixpoint_iterations: 196, flatBoolConstraints: 5237, flatBoolVars: 16051,
+  flatIntConstraints: 17209, flatIntVars: 5608, flatTime: 0.412676, free_search: no,
+  hardware: precision5820, initTime: 1.49, method: minimize, model: ../data/minizinc-benchmarks/rcpsp/rcpsp.mzn,
+  mzn_solver: turbo.cpu.release, nSolutions: 1, nodes: 64, num_blocks_done: 0, num_solutions: 1,
+  objective: 51, or_nodes: 0, paths: 0, peakDepth: 31, problem: rcpsp, problem_path: /tmp/mznfileNjaird.fzn,
+  propagators: 14054, solveTime: 1.678, solver: Turbo, status: OPTIMAL_SOLUTION, timeout_ms: 300000,
+  variables: 13369, version: v1.2.0}

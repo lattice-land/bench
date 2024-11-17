@@ -1,0 +1,37 @@
+- configuration: turbo-gpu-release_gfd-schedule2_n55f2d50m30k3_10124
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-08-27T21:11:52.520414'
+  evaluatedReifiedConstraints: 11641
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.509474
+  memory_configuration: global
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: turbo.gpu.release
+  paths: 0
+  problem: gfd-schedule
+  propagator_mem: 16616481
+  shared_mem: 100
+  solution:
+    assignedGroup: [1, 1, 35, 36, 1, 20, 1, 1, 20, 35, 20, 35, 35, 1, 36, 36, 1, 20,
+      2, 1, 35, 35, 20, 35, 36, 36, 36, 1, 36, 35, 1, 2, 20, 20, 20, 20, 20, 35, 20,
+      20, 1, 1, 1, 20, 35, 20, 1, 1, 1, 1, 36, 20, 36, 35, 35]
+    deadLinePenalty: 52
+    groupFacility: [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [26, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [26, 26, 26, 27, 26, 27, 26, 26, 27, 26, 27, 26, 26, 26, 27, 27,
+      26, 27, 10, 26, 26, 26, 27, 26, 27, 27, 27, 26, 27, 26, 26, 10, 27, 27, 27,
+      27, 27, 26, 27, 27, 26, 26, 26, 27, 26, 27, 26, 26, 26, 26, 27, 27, 27, 26,
+      26]
+    nGroups: 5
+    objective: 5205
+  status: SATISFIED
+  store_mem: 175048
+  time: 302.602

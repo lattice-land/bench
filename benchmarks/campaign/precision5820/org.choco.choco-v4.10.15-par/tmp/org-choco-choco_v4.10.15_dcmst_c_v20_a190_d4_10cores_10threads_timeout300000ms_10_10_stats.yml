@@ -1,0 +1,9 @@
+{boolVariables: 2875, configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000ms_10_10,
+  constraints: 5638, cores: '10', data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn,
+  datetime: '2024-09-11T22:04:39.312964', evaluatedHalfReifiedConstraints: 1199, evaluatedReifiedConstraints: 372,
+  failures: 329784, flatBoolConstraints: 3852, flatBoolVars: 2141, flatIntConstraints: 1785,
+  flatIntVars: 252, flatTime: 0.242896, initTime: 0.96, intVariables: 82, method: minimize,
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn, mzn_solver: org.choco.choco,
+  nSolutions: 22, nodes: 339890, objective: 349, paths: 0, peakDepth: 210, problem: diameterc-mst,
+  restarts: 208, setVariables: 0, solutions: 14, solveTime: 154.338, status: OPTIMAL_SOLUTION,
+  threads: '10', timeout_ms: '300000', variables: 2957, version: v4.10.15}

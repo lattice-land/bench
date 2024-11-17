@@ -1,0 +1,9 @@
+{boolVariables: 1619, configuration: org-choco-choco_gfd-schedule2_n55f2d50m30k3_10124_10cores_20threads,
+  constraints: 3277, cores: '10', data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn,
+  datetime: '2024-09-10T18:46:37.195645', evaluatedHalfReifiedConstraints: 3, evaluatedReifiedConstraints: 1328,
+  failures: 1537495, flatBoolConstraints: 648, flatBoolVars: 1331, flatIntConstraints: 2562,
+  flatIntVars: 452, flatTime: 0.119072, initTime: 1.184, intVariables: 571, method: minimize,
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn, mzn_solver: org.choco.choco,
+  nSolutions: 22, nodes: 1551454, objective: 9, paths: 0, peakDepth: 174, problem: gfd-schedule,
+  restarts: 284, setVariables: 0, solutions: 17, solveTime: 299.764, status: SATISFIED,
+  threads: '20', variables: 2190}

@@ -1,0 +1,8 @@
+{boolVariables: 5200, configuration: com-google-ortools-sat_v9.9_model_data3_5_31_timeout300000ms_1_1,
+  cores: '1', data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn,
+  datetime: '2024-09-12T08:51:09.013472', evaluatedHalfReifiedConstraints: 3844, evaluatedReifiedConstraints: 3920,
+  failures: 3159, flatBoolVars: 7764, flatIntConstraints: 15601, flatIntVars: 7924,
+  flatTime: 0.314939, method: maximize, model: ../data/mzn-challenge/2022/team-assignment/model.mzn,
+  mzn_solver: com.google.ortools.sat, nSolutions: 139, objective: 66551, objectiveBound: 79665,
+  paths: 0, problem: team-assignment, propagations: 519207583, solveTime: 298.788,
+  status: SATISFIED, threads: '1', timeout_ms: '300000', version: v9.9}

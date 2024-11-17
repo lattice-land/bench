@@ -1,0 +1,2268 @@
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 6000
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 6588
+  objective: 58523
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 7
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 28, 12, 23, 7, 10, 3, 9,
+      21, 16, 24, 17, 1, 8, 29, 20, 27, 26, 14, 2, 31, 25, 13, 6, 15, 11, 30, 5, 19,
+      18, 30, 17, 18, 13, 14, 4, 15, 1, 16, 9, 2, 3, 11, 7, 22, 19, 26, 31, 25, 20,
+      5, 21, 29, 8, 28, 10, 12, 6, 23, 24, 27, 8, 19, 27, 9, 2, 24, 25, 15, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 31, 28, 6, 14, 4,
+      3, 31, 20, 2, 3, 6, 12, 21, 27, 17, 8, 14, 15, 13, 30, 26, 9, 22, 10, 4, 16,
+      25, 18, 5, 7, 24, 29, 28, 23, 1, 19, 11]
+    objective: 58523
+  solutions: 1
+  solveTime: 1.22
+  status: SATISFIED
+  threads: '1'
+  time: 1.661
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 6002
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 6590
+  objective: 58529
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 7
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 12, 28, 7, 10, 3, 9,
+      21, 16, 24, 17, 1, 8, 23, 20, 27, 26, 14, 2, 31, 25, 13, 6, 15, 11, 30, 5, 19,
+      18, 30, 17, 18, 13, 14, 4, 15, 1, 16, 9, 2, 3, 11, 7, 22, 19, 26, 31, 25, 20,
+      5, 21, 29, 8, 28, 10, 12, 6, 23, 24, 27, 8, 19, 27, 9, 2, 24, 25, 15, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 31, 28, 6, 14, 4,
+      3, 31, 20, 2, 3, 6, 12, 21, 27, 17, 8, 14, 15, 13, 30, 26, 9, 22, 10, 4, 16,
+      25, 18, 5, 7, 24, 29, 28, 23, 1, 19, 11]
+    objective: 58529
+  solutions: 2
+  solveTime: 1.223
+  status: SATISFIED
+  threads: '1'
+  time: 1.664
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 6006
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 6597
+  objective: 58567
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 7
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 12, 28, 7, 10, 3, 9,
+      23, 16, 24, 17, 1, 8, 21, 20, 27, 26, 14, 2, 31, 25, 13, 6, 15, 11, 30, 5, 19,
+      18, 30, 17, 18, 13, 14, 4, 15, 1, 16, 9, 2, 3, 11, 7, 22, 19, 26, 31, 25, 20,
+      5, 21, 29, 8, 28, 10, 12, 6, 23, 24, 27, 8, 19, 27, 9, 2, 24, 25, 15, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 31, 28, 6, 14, 4,
+      3, 31, 20, 2, 3, 6, 12, 21, 27, 17, 8, 14, 15, 13, 30, 26, 9, 22, 10, 4, 16,
+      25, 18, 5, 7, 24, 29, 28, 23, 1, 19, 11]
+    objective: 58567
+  solutions: 3
+  solveTime: 1.227
+  status: SATISFIED
+  threads: '1'
+  time: 1.667
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 6026
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 6619
+  objective: 58574
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 7
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 3, 9,
+      12, 16, 24, 17, 1, 8, 21, 20, 27, 26, 14, 2, 31, 25, 13, 6, 15, 11, 30, 5, 19,
+      18, 30, 17, 18, 13, 14, 4, 15, 1, 16, 9, 2, 3, 11, 7, 22, 19, 26, 31, 25, 20,
+      5, 21, 29, 8, 28, 10, 12, 6, 23, 24, 27, 8, 19, 27, 9, 2, 24, 25, 15, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 31, 28, 6, 14, 4,
+      3, 31, 20, 2, 3, 6, 12, 21, 27, 17, 8, 14, 15, 13, 30, 26, 9, 22, 10, 4, 16,
+      25, 18, 5, 7, 24, 29, 28, 23, 1, 19, 11]
+    objective: 58574
+  solutions: 4
+  solveTime: 1.237
+  status: SATISFIED
+  threads: '1'
+  time: 1.677
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 6030
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 6625
+  objective: 58576
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 7
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 3, 9,
+      31, 16, 24, 17, 1, 8, 21, 20, 27, 26, 14, 2, 12, 25, 13, 6, 15, 11, 30, 5, 19,
+      18, 30, 17, 18, 13, 14, 4, 15, 1, 16, 9, 2, 3, 11, 7, 22, 19, 26, 31, 25, 20,
+      5, 21, 29, 8, 28, 10, 12, 6, 23, 24, 27, 8, 19, 27, 9, 2, 24, 25, 15, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 31, 28, 6, 14, 4,
+      3, 31, 20, 2, 3, 6, 12, 21, 27, 17, 8, 14, 15, 13, 30, 26, 9, 22, 10, 4, 16,
+      25, 18, 5, 7, 24, 29, 28, 23, 1, 19, 11]
+    objective: 58576
+  solutions: 5
+  solveTime: 1.238
+  status: SATISFIED
+  threads: '1'
+  time: 1.678
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 6074
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 6667
+  objective: 59576
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 7
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 3, 9,
+      31, 16, 24, 17, 1, 8, 21, 20, 27, 26, 14, 2, 12, 25, 13, 6, 15, 11, 30, 5, 19,
+      18, 30, 17, 18, 13, 14, 4, 15, 1, 16, 9, 2, 3, 11, 7, 22, 19, 26, 31, 25, 20,
+      5, 21, 29, 8, 28, 10, 12, 6, 23, 24, 27, 8, 19, 27, 24, 2, 9, 25, 15, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 31, 28, 6, 14, 4,
+      3, 31, 20, 2, 3, 6, 12, 21, 27, 17, 8, 14, 15, 13, 30, 26, 9, 22, 10, 4, 16,
+      25, 18, 5, 7, 24, 29, 28, 23, 1, 19, 11]
+    objective: 59576
+  solutions: 6
+  solveTime: 1.251
+  status: SATISFIED
+  threads: '1'
+  time: 1.691
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 6132
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 6723
+  objective: 59601
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 7
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 3, 9,
+      31, 16, 24, 17, 1, 8, 21, 20, 27, 26, 14, 2, 12, 25, 13, 6, 15, 11, 30, 5, 19,
+      18, 30, 17, 18, 13, 14, 4, 15, 1, 16, 9, 2, 3, 11, 7, 22, 19, 26, 31, 25, 20,
+      5, 21, 29, 8, 28, 10, 12, 6, 23, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      26, 20, 2, 3, 6, 12, 21, 27, 17, 8, 14, 15, 13, 30, 7, 9, 22, 10, 4, 16, 25,
+      18, 5, 31, 24, 29, 28, 23, 1, 19, 11]
+    objective: 59601
+  solutions: 7
+  solveTime: 1.277
+  status: SATISFIED
+  threads: '1'
+  time: 1.716
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 6501
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 7199
+  objective: 59602
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 8
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 3, 9,
+      31, 16, 24, 17, 1, 8, 21, 20, 27, 26, 14, 2, 12, 25, 13, 6, 15, 11, 30, 5, 19,
+      18, 30, 17, 18, 13, 14, 4, 15, 1, 16, 9, 2, 3, 11, 7, 22, 19, 26, 31, 25, 20,
+      5, 21, 29, 8, 28, 10, 12, 6, 23, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      30, 26, 2, 13, 28, 12, 21, 27, 17, 8, 20, 15, 14, 6, 7, 9, 22, 10, 4, 16, 25,
+      18, 5, 31, 24, 29, 3, 23, 1, 19, 11]
+    objective: 59602
+  solutions: 8
+  solveTime: 1.337
+  status: SATISFIED
+  threads: '1'
+  time: 1.776
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 6512
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 7212
+  objective: 59619
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 8
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 3, 9,
+      31, 16, 24, 17, 1, 8, 21, 20, 27, 26, 14, 2, 12, 25, 13, 6, 15, 11, 30, 5, 19,
+      18, 30, 17, 18, 13, 14, 4, 15, 1, 16, 9, 2, 3, 11, 7, 22, 19, 26, 31, 25, 20,
+      5, 21, 29, 8, 28, 10, 12, 6, 23, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      30, 26, 2, 14, 28, 13, 25, 27, 17, 8, 20, 21, 15, 6, 7, 12, 22, 10, 4, 16, 9,
+      18, 5, 31, 24, 29, 3, 23, 1, 19, 11]
+    objective: 59619
+  solutions: 9
+  solveTime: 1.339
+  status: SATISFIED
+  threads: '1'
+  time: 1.778
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 6531
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 7233
+  objective: 59621
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 8
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 3, 9,
+      31, 16, 24, 17, 1, 8, 21, 20, 27, 26, 14, 2, 12, 25, 13, 6, 15, 11, 30, 5, 19,
+      18, 30, 17, 18, 13, 14, 4, 15, 1, 16, 9, 2, 3, 11, 7, 22, 19, 26, 31, 25, 20,
+      5, 21, 29, 8, 28, 10, 12, 6, 23, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      30, 26, 2, 14, 28, 29, 25, 27, 17, 8, 20, 21, 15, 7, 13, 12, 22, 10, 6, 16,
+      9, 18, 5, 31, 24, 4, 3, 23, 1, 19, 11]
+    objective: 59621
+  solutions: 10
+  solveTime: 1.341
+  status: SATISFIED
+  threads: '1'
+  time: 1.781
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 6546
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 7250
+  objective: 59623
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 8
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 3, 9,
+      31, 16, 24, 17, 1, 8, 21, 20, 27, 26, 14, 2, 12, 25, 13, 6, 15, 11, 30, 5, 19,
+      18, 30, 17, 18, 13, 14, 4, 15, 1, 16, 9, 2, 3, 11, 7, 22, 19, 26, 31, 25, 20,
+      5, 21, 29, 8, 28, 10, 12, 6, 23, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      30, 26, 2, 18, 28, 29, 25, 27, 17, 8, 20, 21, 15, 14, 13, 12, 22, 10, 6, 16,
+      9, 7, 5, 31, 24, 4, 3, 23, 1, 19, 11]
+    objective: 59623
+  solutions: 11
+  solveTime: 1.342
+  status: SATISFIED
+  threads: '1'
+  time: 1.782
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 6566
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 7272
+  objective: 59624
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 8
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 3, 9,
+      31, 16, 24, 17, 1, 8, 21, 20, 27, 26, 14, 2, 12, 25, 13, 6, 15, 11, 30, 5, 19,
+      18, 30, 17, 18, 13, 14, 4, 15, 1, 16, 9, 2, 3, 11, 7, 22, 19, 26, 31, 25, 20,
+      5, 21, 29, 8, 28, 10, 12, 6, 23, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      30, 26, 2, 23, 28, 29, 25, 27, 18, 8, 20, 21, 15, 17, 14, 12, 22, 10, 13, 16,
+      9, 7, 6, 31, 24, 5, 3, 4, 1, 19, 11]
+    objective: 59624
+  solutions: 12
+  solveTime: 1.345
+  status: SATISFIED
+  threads: '1'
+  time: 1.784
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 6636
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 7343
+  objective: 59677
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 8
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 3, 9,
+      31, 16, 24, 17, 1, 8, 21, 20, 27, 26, 14, 2, 12, 25, 13, 6, 15, 11, 30, 5, 19,
+      18, 30, 17, 18, 13, 14, 4, 15, 1, 16, 9, 5, 3, 11, 7, 22, 19, 26, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      30, 26, 2, 23, 28, 29, 25, 27, 18, 8, 20, 21, 15, 17, 14, 12, 22, 10, 13, 16,
+      9, 7, 6, 31, 24, 5, 3, 4, 1, 19, 11]
+    objective: 59677
+  solutions: 13
+  solveTime: 1.359
+  status: SATISFIED
+  threads: '1'
+  time: 1.798
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 7001
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 7836
+  objective: 59684
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 9
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 3, 9,
+      31, 16, 24, 17, 1, 8, 21, 20, 27, 26, 14, 2, 12, 25, 13, 6, 15, 11, 30, 5, 19,
+      18, 30, 26, 18, 13, 17, 4, 15, 14, 16, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      30, 26, 2, 23, 28, 29, 25, 27, 18, 8, 20, 21, 15, 17, 14, 12, 22, 10, 13, 16,
+      9, 7, 6, 31, 24, 5, 3, 4, 1, 19, 11]
+    objective: 59684
+  solutions: 14
+  solveTime: 1.466
+  status: SATISFIED
+  threads: '1'
+  time: 1.905
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 7022
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 7859
+  objective: 59685
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 9
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 3, 9,
+      31, 16, 24, 17, 1, 8, 21, 20, 27, 26, 14, 2, 12, 25, 13, 6, 15, 11, 30, 5, 19,
+      18, 30, 26, 18, 13, 17, 4, 15, 14, 16, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      30, 26, 2, 24, 28, 29, 25, 27, 21, 8, 20, 23, 18, 17, 15, 14, 22, 10, 13, 16,
+      9, 7, 12, 31, 6, 5, 3, 4, 1, 19, 11]
+    objective: 59685
+  solutions: 15
+  solveTime: 1.468
+  status: SATISFIED
+  threads: '1'
+  time: 1.907
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 7061
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 7900
+  objective: 59686
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 9
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 9, 11,
+      31, 16, 24, 17, 1, 8, 21, 20, 27, 26, 14, 2, 12, 25, 13, 6, 15, 3, 30, 5, 19,
+      18, 30, 26, 18, 13, 17, 4, 15, 14, 16, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      30, 26, 2, 24, 28, 29, 25, 27, 21, 8, 20, 23, 18, 17, 15, 14, 22, 10, 13, 16,
+      9, 7, 12, 31, 6, 5, 3, 4, 1, 19, 11]
+    objective: 59686
+  solutions: 16
+  solveTime: 1.471
+  status: SATISFIED
+  threads: '1'
+  time: 1.91
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 7103
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 7944
+  objective: 59695
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 9
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 19, 11,
+      31, 16, 24, 17, 1, 9, 21, 20, 27, 26, 14, 2, 12, 25, 13, 6, 15, 8, 30, 5, 3,
+      18, 30, 26, 18, 13, 17, 4, 15, 14, 16, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      30, 26, 2, 21, 28, 29, 25, 27, 31, 8, 24, 20, 18, 17, 15, 23, 22, 10, 12, 16,
+      13, 14, 9, 7, 6, 5, 3, 4, 1, 19, 11]
+    objective: 59695
+  solutions: 17
+  solveTime: 1.479
+  status: SATISFIED
+  threads: '1'
+  time: 1.918
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 7107
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 7950
+  objective: 59696
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 9
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 19, 11,
+      31, 16, 24, 17, 1, 9, 21, 20, 27, 26, 14, 2, 12, 25, 13, 6, 15, 8, 30, 5, 3,
+      18, 30, 26, 18, 13, 17, 4, 15, 14, 16, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      30, 26, 2, 21, 25, 29, 27, 28, 31, 8, 24, 20, 18, 17, 15, 23, 22, 10, 12, 16,
+      13, 14, 9, 7, 6, 5, 3, 4, 1, 19, 11]
+    objective: 59696
+  solutions: 18
+  solveTime: 1.48
+  status: SATISFIED
+  threads: '1'
+  time: 1.919
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 7150
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 7993
+  objective: 59697
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 9
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 19, 12,
+      31, 16, 24, 17, 1, 11, 21, 20, 30, 26, 14, 2, 27, 25, 13, 6, 15, 8, 9, 5, 3,
+      18, 30, 26, 18, 13, 17, 4, 15, 14, 16, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      17, 26, 2, 21, 25, 29, 27, 28, 31, 8, 24, 20, 18, 30, 15, 23, 22, 10, 12, 16,
+      13, 14, 9, 7, 6, 5, 3, 4, 1, 19, 11]
+    objective: 59697
+  solutions: 19
+  solveTime: 1.487
+  status: SATISFIED
+  threads: '1'
+  time: 1.926
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 7185
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 8032
+  objective: 59699
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 9
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 19, 12,
+      31, 16, 24, 17, 1, 11, 21, 20, 30, 26, 14, 2, 27, 25, 13, 6, 15, 8, 9, 5, 3,
+      18, 30, 26, 18, 13, 17, 4, 15, 14, 16, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      30, 26, 2, 21, 25, 29, 27, 28, 31, 8, 24, 20, 18, 17, 15, 23, 22, 10, 12, 16,
+      13, 14, 9, 7, 6, 5, 3, 4, 1, 19, 11]
+    objective: 59699
+  solutions: 20
+  solveTime: 1.489
+  status: SATISFIED
+  threads: '1'
+  time: 1.928
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 7202
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 8051
+  objective: 59703
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 9
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 19, 12,
+      31, 16, 24, 17, 1, 11, 21, 20, 30, 26, 14, 2, 27, 25, 13, 6, 15, 8, 9, 5, 3,
+      18, 30, 26, 18, 13, 17, 4, 15, 14, 16, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      30, 26, 2, 27, 25, 29, 21, 28, 31, 8, 24, 20, 18, 17, 15, 23, 22, 10, 9, 16,
+      13, 14, 12, 7, 6, 5, 3, 4, 1, 19, 11]
+    objective: 59703
+  solutions: 21
+  solveTime: 1.491
+  status: SATISFIED
+  threads: '1'
+  time: 1.93
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 7210
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 8061
+  objective: 59707
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 9
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 19, 12,
+      31, 16, 24, 17, 1, 11, 21, 20, 30, 26, 14, 2, 27, 25, 13, 6, 15, 8, 9, 5, 3,
+      18, 30, 26, 18, 13, 17, 4, 15, 14, 16, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      30, 26, 2, 27, 25, 18, 21, 28, 31, 8, 24, 29, 20, 17, 15, 23, 22, 10, 9, 16,
+      13, 14, 12, 7, 6, 5, 3, 4, 1, 19, 11]
+    objective: 59707
+  solutions: 22
+  solveTime: 1.492
+  status: SATISFIED
+  threads: '1'
+  time: 1.931
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 7319
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 8169
+  objective: 59708
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 9
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 19, 12,
+      31, 16, 24, 17, 1, 11, 21, 20, 30, 26, 14, 2, 27, 25, 13, 6, 15, 8, 9, 5, 3,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      26, 27, 2, 21, 25, 18, 30, 28, 31, 8, 24, 29, 20, 17, 15, 23, 22, 10, 9, 16,
+      13, 14, 12, 7, 6, 5, 3, 4, 1, 19, 11]
+    objective: 59708
+  solutions: 23
+  solveTime: 1.535
+  status: SATISFIED
+  threads: '1'
+  time: 1.975
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 7326
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 8178
+  objective: 59709
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 9
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 10, 19, 12,
+      31, 16, 24, 17, 1, 11, 21, 20, 30, 26, 14, 2, 27, 25, 13, 6, 15, 8, 9, 5, 3,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 1, 9, 28, 6, 14, 4, 3,
+      26, 27, 2, 21, 25, 18, 30, 28, 31, 8, 20, 29, 24, 17, 15, 23, 22, 10, 9, 16,
+      13, 14, 12, 7, 6, 5, 3, 4, 1, 19, 11]
+    objective: 59709
+  solutions: 24
+  solveTime: 1.536
+  status: SATISFIED
+  threads: '1'
+  time: 1.976
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 7581
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 8509
+  objective: 60678
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 10
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 1, 19, 13,
+      31, 16, 24, 17, 12, 11, 21, 20, 30, 26, 14, 2, 27, 25, 10, 6, 15, 8, 3, 9, 5,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 9,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 5, 1, 28, 6, 14, 4, 3,
+      26, 27, 2, 21, 25, 18, 30, 28, 31, 8, 20, 29, 24, 17, 15, 23, 22, 1, 9, 16,
+      13, 14, 12, 10, 6, 4, 3, 7, 5, 19, 11]
+    objective: 60678
+  solutions: 25
+  solveTime: 1.689
+  status: SATISFIED
+  threads: '1'
+  time: 2.129
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 7585
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 8514
+  objective: 60707
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 10
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 1, 19, 13,
+      31, 16, 24, 17, 12, 11, 21, 20, 30, 26, 14, 2, 27, 25, 10, 6, 15, 8, 3, 9, 5,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 9,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 5, 1, 28, 6, 14, 4, 3,
+      26, 27, 2, 21, 25, 18, 30, 28, 31, 8, 20, 29, 24, 17, 15, 23, 10, 1, 9, 16,
+      13, 14, 12, 7, 6, 4, 3, 22, 5, 19, 11]
+    objective: 60707
+  solutions: 26
+  solveTime: 1.69
+  status: SATISFIED
+  threads: '1'
+  time: 2.129
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 7590
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 8520
+  objective: 60709
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 10
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 1, 19, 13,
+      31, 16, 24, 17, 12, 11, 21, 20, 30, 26, 14, 2, 27, 25, 10, 6, 15, 8, 3, 9, 5,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 9,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 5, 1, 28, 6, 14, 4, 3,
+      26, 27, 2, 21, 25, 18, 30, 28, 10, 8, 20, 29, 24, 17, 15, 23, 31, 1, 9, 16,
+      13, 14, 12, 7, 6, 4, 3, 22, 5, 19, 11]
+    objective: 60709
+  solutions: 27
+  solveTime: 1.691
+  status: SATISFIED
+  threads: '1'
+  time: 2.13
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 10254
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 11443
+  objective: 61647
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 14
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 3, 19, 13,
+      31, 16, 24, 17, 25, 11, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 8, 5, 9, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 9,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 5, 1, 28, 6, 14, 4, 3,
+      26, 27, 2, 21, 25, 18, 30, 28, 10, 8, 20, 29, 24, 17, 15, 23, 31, 3, 9, 16,
+      13, 14, 12, 7, 6, 4, 1, 22, 5, 19, 11]
+    objective: 61647
+  solutions: 28
+  solveTime: 3.23
+  status: SATISFIED
+  threads: '1'
+  time: 3.67
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 10263
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 11454
+  objective: 61675
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 14
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 3, 19, 13,
+      31, 16, 24, 17, 25, 11, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 8, 5, 9, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 9,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 5, 1, 28, 6, 14, 4, 3,
+      26, 27, 2, 12, 25, 18, 30, 28, 10, 8, 20, 29, 23, 17, 15, 31, 21, 3, 9, 16,
+      13, 14, 24, 7, 6, 4, 1, 22, 5, 19, 11]
+    objective: 61675
+  solutions: 29
+  solveTime: 3.232
+  status: SATISFIED
+  threads: '1'
+  time: 3.671
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 10264
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 11456
+  objective: 61678
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 14
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 3, 19, 13,
+      31, 16, 24, 17, 25, 11, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 8, 5, 9, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 9,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 5, 1, 28, 6, 14, 4, 3,
+      26, 27, 2, 12, 25, 18, 21, 28, 10, 8, 20, 29, 23, 17, 15, 31, 30, 3, 9, 16,
+      13, 14, 24, 7, 6, 4, 1, 22, 5, 19, 11]
+    objective: 61678
+  solutions: 30
+  solveTime: 3.232
+  status: SATISFIED
+  threads: '1'
+  time: 3.672
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 10265
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 11458
+  objective: 61679
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 14
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 3, 19, 13,
+      31, 16, 24, 17, 25, 11, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 8, 5, 9, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 9,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 5, 1, 28, 6, 14, 4, 3,
+      26, 27, 2, 12, 25, 18, 21, 28, 10, 8, 20, 29, 23, 17, 15, 30, 31, 3, 9, 16,
+      13, 14, 24, 7, 6, 4, 1, 22, 5, 19, 11]
+    objective: 61679
+  solutions: 31
+  solveTime: 3.233
+  status: SATISFIED
+  threads: '1'
+  time: 3.673
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 10267
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 11463
+  objective: 61693
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 14
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 3, 19, 13,
+      31, 16, 24, 17, 25, 11, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 8, 5, 9, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 9,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 5, 1, 28, 6, 14, 4, 3,
+      26, 27, 2, 12, 25, 18, 21, 28, 10, 8, 20, 29, 30, 17, 15, 23, 31, 3, 9, 16,
+      13, 14, 24, 7, 6, 4, 1, 22, 5, 19, 11]
+    objective: 61693
+  solutions: 32
+  solveTime: 3.233
+  status: SATISFIED
+  threads: '1'
+  time: 3.673
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 10271
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 11469
+  objective: 61698
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 14
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 3, 19, 13,
+      31, 16, 24, 17, 25, 11, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 8, 5, 9, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 9,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 5, 1, 28, 6, 14, 4, 3,
+      26, 27, 2, 30, 12, 18, 21, 28, 10, 8, 20, 29, 25, 17, 15, 23, 31, 3, 9, 16,
+      13, 14, 24, 7, 6, 4, 1, 22, 5, 19, 11]
+    objective: 61698
+  solutions: 33
+  solveTime: 3.234
+  status: SATISFIED
+  threads: '1'
+  time: 3.674
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 10281
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 11481
+  objective: 61709
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 14
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 3, 19, 13,
+      31, 16, 24, 17, 25, 11, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 8, 5, 9, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 24, 2, 15, 31, 25, 17, 9,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 5, 1, 28, 6, 14, 4, 3,
+      26, 27, 2, 30, 12, 18, 21, 28, 10, 8, 20, 29, 25, 17, 24, 23, 31, 3, 9, 16,
+      13, 14, 1, 7, 6, 4, 15, 22, 5, 19, 11]
+    objective: 61709
+  solutions: 34
+  solveTime: 3.236
+  status: SATISFIED
+  threads: '1'
+  time: 3.675
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 11003
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 12332
+  objective: 62582
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 16
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 3, 19, 13,
+      31, 16, 24, 17, 25, 11, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 8, 5, 9, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 5, 2, 15, 31, 25, 17, 9,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 1, 28, 6, 14, 4,
+      3, 26, 27, 2, 30, 12, 18, 21, 28, 10, 8, 20, 29, 25, 17, 1, 23, 31, 3, 9, 16,
+      13, 14, 5, 7, 6, 4, 15, 22, 24, 19, 11]
+    objective: 62582
+  solutions: 35
+  solveTime: 3.467
+  status: SATISFIED
+  threads: '1'
+  time: 3.907
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 11094
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 12428
+  objective: 62626
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 16
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 3, 19, 13,
+      31, 16, 24, 17, 25, 11, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 8, 5, 9, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 5, 2, 15, 31, 25, 17, 9,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 1, 28, 6, 14, 4,
+      3, 26, 27, 7, 30, 12, 18, 21, 28, 10, 8, 20, 29, 25, 17, 2, 23, 31, 3, 9, 16,
+      13, 14, 5, 1, 6, 4, 15, 22, 24, 19, 11]
+    objective: 62626
+  solutions: 36
+  solveTime: 3.524
+  status: SATISFIED
+  threads: '1'
+  time: 3.963
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 11136
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 12470
+  objective: 63579
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 16
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 3, 19, 13,
+      31, 16, 24, 17, 25, 11, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 8, 5, 9, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 9, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 24, 27, 8, 19, 27, 5, 2, 15, 31, 25, 17, 9,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 1, 28, 6, 14, 4,
+      3, 26, 2, 7, 30, 12, 18, 21, 28, 10, 8, 27, 29, 25, 17, 1, 23, 31, 3, 9, 16,
+      20, 14, 13, 4, 6, 5, 15, 22, 24, 19, 11]
+    objective: 63579
+  solutions: 37
+  solveTime: 3.526
+  status: SATISFIED
+  threads: '1'
+  time: 3.966
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 11501
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 12901
+  objective: 63636
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 17
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 28, 23, 7, 3, 19, 13,
+      31, 16, 24, 17, 25, 11, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 8, 5, 9, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 9, 27, 8, 19, 27, 5, 2, 15, 31, 25, 17, 9,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 1, 28, 6, 14, 4,
+      3, 26, 2, 7, 30, 12, 18, 21, 28, 10, 8, 27, 29, 25, 17, 1, 23, 31, 3, 9, 16,
+      20, 14, 13, 4, 6, 5, 15, 22, 24, 19, 11]
+    objective: 63636
+  solutions: 38
+  solveTime: 4.963
+  status: SATISFIED
+  threads: '1'
+  time: 5.403
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 11590
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 12989
+  objective: 63673
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 17
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 24, 28, 7, 3, 23, 19,
+      31, 16, 9, 17, 25, 13, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 11, 8, 5, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 9, 27, 8, 19, 27, 1, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 9, 28, 6, 14, 4,
+      3, 26, 2, 7, 30, 12, 18, 21, 28, 10, 8, 27, 29, 25, 17, 1, 23, 31, 3, 9, 16,
+      20, 14, 13, 4, 6, 5, 15, 22, 24, 19, 11]
+    objective: 63673
+  solutions: 39
+  solveTime: 4.987
+  status: SATISFIED
+  threads: '1'
+  time: 5.426
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 11598
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 12999
+  objective: 63675
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 17
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 24, 28, 7, 3, 23, 19,
+      31, 16, 9, 17, 25, 13, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 11, 8, 5, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 9, 27, 8, 19, 27, 1, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 9, 28, 6, 14, 4,
+      3, 26, 2, 7, 30, 12, 18, 21, 28, 27, 8, 1, 29, 25, 17, 10, 23, 31, 3, 9, 16,
+      20, 14, 13, 4, 6, 5, 15, 22, 24, 19, 11]
+    objective: 63675
+  solutions: 40
+  solveTime: 4.988
+  status: SATISFIED
+  threads: '1'
+  time: 5.427
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 11613
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 13016
+  objective: 63677
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 17
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 24, 28, 7, 3, 23, 19,
+      31, 16, 9, 17, 25, 13, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 11, 8, 5, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 9, 27, 8, 19, 27, 1, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 9, 28, 6, 14, 4,
+      3, 26, 2, 7, 30, 18, 23, 21, 28, 27, 8, 12, 29, 25, 17, 10, 1, 31, 3, 9, 16,
+      20, 14, 13, 4, 6, 5, 15, 22, 24, 19, 11]
+    objective: 63677
+  solutions: 41
+  solveTime: 4.989
+  status: SATISFIED
+  threads: '1'
+  time: 5.428
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 11626
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 13031
+  objective: 63682
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 17
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 24, 28, 7, 3, 23, 19,
+      31, 16, 9, 17, 25, 13, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 11, 8, 5, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 9, 27, 8, 19, 27, 1, 2, 15, 31, 25, 17, 5,
+      7, 30, 11, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 9, 28, 6, 14, 4,
+      3, 26, 2, 7, 30, 27, 23, 21, 28, 12, 8, 20, 29, 25, 18, 17, 10, 31, 3, 9, 16,
+      1, 14, 13, 4, 6, 5, 15, 22, 24, 19, 11]
+    objective: 63682
+  solutions: 42
+  solveTime: 4.99
+  status: SATISFIED
+  threads: '1'
+  time: 5.429
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 11662
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 13069
+  objective: 63686
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 17
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 24, 28, 7, 3, 23, 19,
+      31, 16, 9, 17, 25, 13, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 11, 8, 5, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 9, 27, 8, 19, 27, 1, 2, 15, 31, 25, 11, 5,
+      7, 30, 3, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 9, 28, 6, 14, 4, 17,
+      26, 2, 7, 30, 27, 23, 21, 28, 12, 8, 20, 29, 25, 18, 17, 10, 31, 3, 9, 16, 1,
+      14, 13, 4, 6, 5, 15, 22, 24, 19, 11]
+    objective: 63686
+  solutions: 43
+  solveTime: 4.993
+  status: SATISFIED
+  threads: '1'
+  time: 5.433
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 11664
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 13073
+  objective: 63696
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 17
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 24, 28, 7, 3, 23, 19,
+      31, 16, 9, 17, 25, 13, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 11, 8, 5, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 9, 27, 8, 19, 27, 1, 2, 15, 31, 25, 11, 5,
+      7, 30, 3, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 9, 28, 6, 14, 4, 17,
+      26, 2, 7, 30, 27, 12, 21, 28, 23, 8, 20, 29, 25, 18, 17, 10, 31, 3, 9, 16, 1,
+      14, 13, 4, 6, 5, 15, 22, 24, 19, 11]
+    objective: 63696
+  solutions: 44
+  solveTime: 4.994
+  status: SATISFIED
+  threads: '1'
+  time: 5.433
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 11669
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 13079
+  objective: 63698
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 17
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 24, 28, 7, 3, 23, 19,
+      31, 16, 9, 17, 25, 13, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 11, 8, 5, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 9, 27, 8, 19, 27, 1, 2, 15, 31, 25, 11, 5,
+      7, 30, 3, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 9, 28, 6, 14, 4, 17,
+      26, 2, 7, 30, 27, 12, 21, 23, 28, 8, 18, 29, 25, 20, 17, 10, 31, 3, 9, 16, 1,
+      14, 13, 4, 6, 5, 15, 22, 24, 19, 11]
+    objective: 63698
+  solutions: 45
+  solveTime: 4.994
+  status: SATISFIED
+  threads: '1'
+  time: 5.434
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 11702
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 13113
+  objective: 63699
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 17
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 24, 28, 7, 3, 23, 19,
+      31, 16, 9, 17, 25, 13, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 11, 8, 5, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 9, 27, 8, 19, 27, 1, 2, 15, 31, 25, 11, 5,
+      7, 30, 3, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 9, 28, 6, 14, 4, 17,
+      26, 2, 7, 27, 12, 30, 21, 23, 28, 8, 18, 29, 25, 20, 17, 10, 31, 3, 9, 16, 1,
+      14, 13, 4, 6, 5, 15, 22, 24, 19, 11]
+    objective: 63699
+  solutions: 46
+  solveTime: 4.997
+  status: SATISFIED
+  threads: '1'
+  time: 5.436
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 12000
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 13525
+  objective: 63700
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 18
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 24, 28, 7, 3, 23, 19,
+      31, 16, 9, 17, 25, 13, 21, 20, 30, 26, 14, 2, 27, 1, 10, 6, 15, 11, 8, 5, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 9, 27, 8, 19, 27, 1, 2, 15, 31, 25, 11, 5,
+      7, 30, 3, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 9, 28, 6, 14, 4, 17,
+      26, 2, 7, 27, 12, 23, 21, 30, 28, 8, 18, 29, 25, 20, 17, 10, 31, 3, 9, 16, 1,
+      14, 13, 4, 6, 5, 15, 22, 24, 19, 11]
+    objective: 63700
+  solutions: 47
+  solveTime: 5.033
+  status: SATISFIED
+  threads: '1'
+  time: 5.472
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 12275
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 13803
+  objective: 63701
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 18
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 24, 28, 7, 3, 23, 19,
+      31, 16, 9, 27, 25, 13, 21, 20, 30, 26, 14, 2, 17, 1, 10, 6, 15, 11, 8, 5, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 9, 27, 8, 19, 27, 1, 2, 15, 31, 25, 11, 5,
+      7, 30, 3, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 9, 28, 6, 14, 4, 17,
+      26, 2, 7, 23, 12, 30, 21, 27, 28, 8, 18, 29, 17, 20, 10, 25, 31, 3, 9, 16, 1,
+      14, 13, 4, 6, 5, 15, 22, 24, 19, 11]
+    objective: 63701
+  solutions: 48
+  solveTime: 5.056
+  status: SATISFIED
+  threads: '1'
+  time: 5.495
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 12279
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 13809
+  objective: 63703
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 18
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 24, 28, 7, 3, 23, 19,
+      31, 16, 9, 27, 25, 13, 21, 20, 30, 26, 14, 2, 17, 1, 10, 6, 15, 11, 8, 5, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 9, 27, 8, 19, 27, 1, 2, 15, 31, 25, 11, 5,
+      7, 30, 3, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 9, 28, 6, 14, 4, 17,
+      26, 2, 7, 23, 12, 30, 21, 18, 28, 8, 20, 29, 17, 27, 10, 25, 31, 3, 9, 16, 1,
+      14, 13, 4, 6, 5, 15, 22, 24, 19, 11]
+    objective: 63703
+  solutions: 49
+  solveTime: 5.056
+  status: SATISFIED
+  threads: '1'
+  time: 5.496
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 12282
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 13813
+  objective: 63704
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 18
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 29, 24, 28, 7, 3, 23, 19,
+      31, 16, 9, 27, 25, 13, 21, 20, 30, 26, 14, 2, 17, 1, 10, 6, 15, 11, 8, 5, 12,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 9, 27, 8, 19, 27, 1, 2, 15, 31, 25, 11, 5,
+      7, 30, 3, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 29, 24, 9, 28, 6, 14, 4, 17,
+      26, 2, 7, 23, 12, 30, 21, 18, 28, 8, 17, 29, 20, 27, 10, 25, 31, 3, 9, 16, 1,
+      14, 13, 4, 6, 5, 15, 22, 24, 19, 11]
+    objective: 63704
+  solutions: 50
+  solveTime: 5.057
+  status: SATISFIED
+  threads: '1'
+  time: 5.496
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 12506
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 14149
+  objective: 63705
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 19
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 24, 12, 28, 7, 3, 23, 29,
+      31, 16, 9, 27, 25, 13, 21, 20, 19, 26, 14, 2, 17, 1, 10, 6, 15, 11, 8, 5, 30,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 7, 22, 19, 1, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 2, 9, 27, 8, 27, 19, 30, 2, 29, 31, 25, 11, 5,
+      7, 15, 3, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 1, 24, 9, 28, 6, 14, 4, 17,
+      26, 2, 7, 23, 12, 30, 21, 18, 28, 8, 17, 29, 20, 27, 10, 25, 31, 3, 9, 16, 1,
+      14, 13, 4, 6, 5, 15, 22, 24, 19, 11]
+    objective: 63705
+  solutions: 51
+  solveTime: 5.163
+  status: SATISFIED
+  threads: '1'
+  time: 5.603
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 16093
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 18012
+  objective: 64664
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 25
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 24, 12, 28, 7, 3, 23, 29,
+      31, 16, 9, 27, 25, 13, 21, 20, 19, 26, 14, 2, 17, 1, 10, 6, 15, 11, 8, 5, 30,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 2, 22, 19, 7, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 1, 9, 27, 8, 27, 19, 30, 2, 29, 31, 25, 11, 5,
+      7, 15, 3, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 1, 24, 9, 28, 6, 14, 4, 17,
+      26, 5, 2, 23, 12, 30, 21, 18, 28, 8, 17, 29, 20, 27, 10, 25, 31, 3, 9, 16, 1,
+      14, 13, 4, 6, 7, 15, 22, 24, 19, 11]
+    objective: 64664
+  solutions: 52
+  solveTime: 7.432
+  status: SATISFIED
+  threads: '1'
+  time: 7.872
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 17673
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 19673
+  objective: 65664
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 27
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 4, 22, 24, 12, 28, 7, 5, 23, 29,
+      31, 16, 9, 27, 25, 13, 21, 20, 19, 26, 14, 2, 17, 1, 10, 6, 15, 11, 8, 3, 30,
+      18, 26, 16, 18, 13, 30, 4, 15, 14, 17, 24, 5, 3, 11, 2, 22, 19, 7, 31, 25, 20,
+      6, 21, 29, 8, 28, 10, 12, 23, 1, 9, 27, 8, 27, 19, 30, 2, 29, 31, 25, 11, 3,
+      7, 15, 1, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 5, 24, 9, 28, 6, 14, 4, 17,
+      26, 4, 2, 23, 12, 30, 21, 18, 28, 8, 17, 29, 20, 27, 10, 25, 31, 5, 9, 16, 1,
+      14, 13, 7, 6, 11, 15, 22, 24, 19, 3]
+    objective: 65664
+  solutions: 53
+  solveTime: 7.967
+  status: SATISFIED
+  threads: '1'
+  time: 8.407
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15
+- boolVariables: 154
+  configuration: org-choco-choco_v4.10.15_model_data3_5_31_timeout300000ms_1_1
+  constraints: 165
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2024-09-12T10:54:32.017087'
+  evaluatedReifiedConstraints: 76
+  failures: 156555
+  flatBoolVars: 76
+  flatIntConstraints: 164
+  flatIntVars: 236
+  flatTime: 0.137137
+  initTime: 0.191
+  intVariables: 223
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: org.choco.choco
+  nodes: 162590
+  objective: 66664
+  paths: 0
+  peakDepth: 67
+  problem: team-assignment
+  restarts: 126
+  setVariables: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 27, 22, 24, 12, 28, 7, 5, 23, 29,
+      31, 16, 9, 4, 25, 13, 21, 20, 19, 26, 14, 2, 17, 1, 10, 6, 15, 11, 8, 3, 30,
+      18, 26, 16, 28, 18, 30, 27, 15, 14, 17, 24, 5, 3, 11, 2, 22, 19, 13, 31, 25,
+      20, 6, 21, 29, 8, 4, 10, 12, 23, 1, 9, 7, 8, 27, 19, 30, 2, 29, 31, 25, 11,
+      3, 7, 15, 1, 20, 10, 23, 12, 21, 18, 22, 26, 13, 16, 5, 24, 9, 28, 6, 14, 4,
+      17, 26, 4, 2, 23, 12, 30, 21, 18, 28, 8, 17, 29, 20, 27, 10, 25, 31, 5, 9, 16,
+      1, 14, 13, 7, 6, 11, 15, 22, 24, 19, 3]
+    objective: 66664
+  solutions: 54
+  solveTime: 197.453
+  status: SATISFIED
+  threads: '1'
+  time: 197.892
+  timeout_ms: '300000'
+  variables: 377
+  version: v4.10.15

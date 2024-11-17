@@ -1,0 +1,8 @@
+{boolVariables: 20157, configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a40_f800_t180_timeout300000ms_1_1,
+  cores: '1', data_file: ../data/mzn-challenge/2022/accap/accap_a40_f800_t180.json,
+  datetime: '2024-09-12T09:27:33.834305', evaluatedReifiedConstraints: 26770, failures: 5748,
+  flatBoolConstraints: 13385, flatBoolVars: 26770, flatIntConstraints: 43503, flatIntVars: 842,
+  flatTime: 6.82997, method: minimize, model: ../data/mzn-challenge/2022/accap/accap.mzn,
+  mzn_solver: com.google.ortools.sat.noglobal, nSolutions: 60, objective: 2578, objectiveBound: 323,
+  paths: 0, problem: accap, propagations: 46870619, solveTime: 230.342, status: SATISFIED,
+  threads: '1', timeout_ms: '300000', version: v9.9}

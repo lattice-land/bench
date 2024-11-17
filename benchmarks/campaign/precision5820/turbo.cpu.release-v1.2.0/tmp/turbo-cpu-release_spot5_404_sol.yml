@@ -1,0 +1,22 @@
+- configuration: turbo-cpu-release_spot5_404
+  data_file: ../data/mzn-challenge/2022/spot5/404.dzn
+  datetime: '2024-08-29T19:15:28.133126'
+  evaluatedReifiedConstraints: 100
+  flatBoolVars: 100
+  flatIntConstraints: 1439
+  flatIntVars: 811
+  flatTime: 0.152933
+  method: minimize
+  model: ../data/mzn-challenge/2022/spot5/spot5.mzn
+  mzn_solver: turbo.cpu.release
+  paths: 0
+  problem: spot5
+  solution:
+    objective: 141
+    p: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 13, 13, 0, 13,
+      0, 0, 13, 0, 0, 13, 13, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0,
+      0, 0]
+  status: SATISFIED
+  time: 300.171

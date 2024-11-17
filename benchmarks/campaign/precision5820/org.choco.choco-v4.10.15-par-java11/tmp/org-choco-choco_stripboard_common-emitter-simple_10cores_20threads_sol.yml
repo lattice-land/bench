@@ -1,0 +1,667 @@
+- boolVariables: 866
+  configuration: org-choco-choco_stripboard_common-emitter-simple_10cores_20threads
+  constraints: 1465
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/stripboard/common-emitter-simple.dzn
+  datetime: '2024-09-10T18:37:56.236188'
+  eliminatedImplications: 12
+  evaluatedHalfReifiedConstraints: 836
+  evaluatedReifiedConstraints: 32
+  failures: 792
+  flatBoolConstraints: 311
+  flatBoolVars: 850
+  flatIntConstraints: 1153
+  flatIntVars: 301
+  flatTime: 0.187081
+  initTime: 1.292
+  intVariables: 369
+  method: minimize
+  model: ../data/mzn-challenge/2022/stripboard/stripboard.mzn
+  mzn_solver: org.choco.choco
+  nodes: 2366
+  objective: 63
+  paths: 0
+  peakDepth: 106
+  problem: stripboard
+  restarts: 32
+  setVariables: 0
+  solution:
+    board_h: 7
+    board_w: 9
+    component_orientation:
+    - {e: UpsideDown}
+    - {e: Upright}
+    - {e: Upright}
+    - {e: Clockwise}
+    component_x: [3, 9, 1, 6]
+    component_y: [2, 1, 3, 2]
+    connection:
+    - {e: Unconnected}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: VCC}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: OUT2}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - c: Net
+      e: {e: OUT1}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    distance: [0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 5, 4, 3, 2, 1, 0, 0, 0, 0,
+      0, 0]
+    link_length: [1, 5, 7, 1, 1, 1]
+    link_x: [2, 5, 4, 3, 2, 1]
+    link_y: [4, -1, -1, -1, -1, -1]
+    objective: 63
+    pad_x: [0, 3, 3, 3, 9, 9, 9, 9, 9, 1, 1, 8, 6, 2, 5, 4, 3, 2, 1, 2, 5, 4, 3, 2,
+      1]
+    pad_xy: [0, 108, 87, 66, 51, 72, 93, 114, 135, 85, 127, 92, 90, 107, 5, 4, 3,
+      2, 1, 128, 110, 151, 24, 23, 22]
+    pad_y: [-1, 4, 3, 2, 1, 2, 3, 4, 5, 3, 5, 3, 3, 4, -1, -1, -1, -1, -1, 5, 4, 6,
+      0, 0, 0]
+    parent:
+    - {e: Dummy}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_VCC}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_IN}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: J1_OUT2}
+    - c: Pin
+      e: {e: Q1_B}
+    - {c: LinkEnd, e: 1}
+    - c: Pin
+      e: {e: J1_IN}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: Q1_C}
+    - {c: LinkStart, e: 3}
+    - {c: LinkStart, e: 4}
+    - {c: LinkStart, e: 5}
+    - {c: LinkStart, e: 6}
+    - {e: Dummy}
+    - {c: LinkEnd, e: 1}
+    - {c: LinkEnd, e: 2}
+    - {c: LinkEnd, e: 3}
+    - {c: LinkEnd, e: 4}
+    - {c: LinkEnd, e: 5}
+    - {c: LinkEnd, e: 6}
+  solutions: 1
+  solveTime: 3.312
+  status: SATISFIED
+  threads: '20'
+  time: 5.019
+  variables: 1235
+- boolVariables: 866
+  configuration: org-choco-choco_stripboard_common-emitter-simple_10cores_20threads
+  constraints: 1465
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/stripboard/common-emitter-simple.dzn
+  datetime: '2024-09-10T18:37:56.236188'
+  eliminatedImplications: 12
+  evaluatedHalfReifiedConstraints: 836
+  evaluatedReifiedConstraints: 32
+  failures: 817
+  flatBoolConstraints: 311
+  flatBoolVars: 850
+  flatIntConstraints: 1153
+  flatIntVars: 301
+  flatTime: 0.187081
+  initTime: 1.292
+  intVariables: 369
+  method: minimize
+  model: ../data/mzn-challenge/2022/stripboard/stripboard.mzn
+  mzn_solver: org.choco.choco
+  nodes: 2485
+  objective: 56
+  paths: 0
+  peakDepth: 106
+  problem: stripboard
+  restarts: 33
+  setVariables: 0
+  solution:
+    board_h: 7
+    board_w: 8
+    component_orientation:
+    - {e: UpsideDown}
+    - {e: Upright}
+    - {e: Upright}
+    - {e: Clockwise}
+    component_x: [3, 8, 1, 5]
+    component_y: [2, 1, 3, 2]
+    connection:
+    - {e: Unconnected}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: VCC}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: OUT2}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - c: Net
+      e: {e: OUT1}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    distance: [0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 5, 4, 3, 2, 1, 0, 0, 0, 0,
+      0, 0]
+    link_length: [1, 1, 7, 1, 1, 1]
+    link_x: [2, 5, 4, 3, 2, 1]
+    link_y: [4, -1, -1, -1, -1, -1]
+    objective: 56
+    pad_x: [0, 3, 3, 3, 8, 8, 8, 8, 8, 1, 1, 7, 5, 2, 5, 4, 3, 2, 1, 2, 5, 4, 3, 2,
+      1]
+    pad_xy: [0, 108, 87, 66, 50, 71, 92, 113, 134, 85, 127, 91, 89, 107, 5, 4, 3,
+      2, 1, 128, 26, 151, 24, 23, 22]
+    pad_y: [-1, 4, 3, 2, 1, 2, 3, 4, 5, 3, 5, 3, 3, 4, -1, -1, -1, -1, -1, 5, 0, 6,
+      0, 0, 0]
+    parent:
+    - {e: Dummy}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_VCC}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_IN}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: J1_OUT2}
+    - c: Pin
+      e: {e: Q1_B}
+    - {c: LinkEnd, e: 1}
+    - c: Pin
+      e: {e: J1_IN}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: Q1_C}
+    - {c: LinkStart, e: 3}
+    - {c: LinkStart, e: 4}
+    - {c: LinkStart, e: 5}
+    - {c: LinkStart, e: 6}
+    - {e: Dummy}
+    - {c: LinkEnd, e: 1}
+    - {c: LinkEnd, e: 2}
+    - {c: LinkEnd, e: 3}
+    - {c: LinkEnd, e: 4}
+    - {c: LinkEnd, e: 5}
+    - {c: LinkEnd, e: 6}
+  solutions: 2
+  solveTime: 3.393
+  status: SATISFIED
+  threads: '20'
+  time: 5.099
+  variables: 1235
+- boolVariables: 866
+  configuration: org-choco-choco_stripboard_common-emitter-simple_10cores_20threads
+  constraints: 1465
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/stripboard/common-emitter-simple.dzn
+  datetime: '2024-09-10T18:37:56.236188'
+  eliminatedImplications: 12
+  evaluatedHalfReifiedConstraints: 836
+  evaluatedReifiedConstraints: 32
+  failures: 829
+  flatBoolConstraints: 311
+  flatBoolVars: 850
+  flatIntConstraints: 1153
+  flatIntVars: 301
+  flatTime: 0.187081
+  initTime: 1.292
+  intVariables: 369
+  method: minimize
+  model: ../data/mzn-challenge/2022/stripboard/stripboard.mzn
+  mzn_solver: org.choco.choco
+  nodes: 2583
+  objective: 49
+  paths: 0
+  peakDepth: 106
+  problem: stripboard
+  restarts: 34
+  setVariables: 0
+  solution:
+    board_h: 7
+    board_w: 7
+    component_orientation:
+    - {e: UpsideDown}
+    - {e: Upright}
+    - {e: Upright}
+    - {e: Clockwise}
+    component_x: [3, 7, 1, 4]
+    component_y: [2, 1, 3, 2]
+    connection:
+    - {e: Unconnected}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: VCC}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: OUT2}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - c: Net
+      e: {e: OUT1}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    distance: [0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 5, 4, 3, 2, 1, 0, 0, 0, 0,
+      0, 0]
+    link_length: [1, 1, 1, 1, 1, 1]
+    link_x: [2, 5, 4, 3, 2, 1]
+    link_y: [4, -1, -1, -1, -1, -1]
+    objective: 49
+    pad_x: [0, 3, 3, 3, 7, 7, 7, 7, 7, 1, 1, 6, 4, 2, 5, 4, 3, 2, 1, 2, 5, 4, 3, 2,
+      1]
+    pad_xy: [0, 108, 87, 66, 49, 70, 91, 112, 133, 85, 127, 90, 88, 107, 5, 4, 3,
+      2, 1, 128, 26, 25, 24, 23, 22]
+    pad_y: [-1, 4, 3, 2, 1, 2, 3, 4, 5, 3, 5, 3, 3, 4, -1, -1, -1, -1, -1, 5, 0, 0,
+      0, 0, 0]
+    parent:
+    - {e: Dummy}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_VCC}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_IN}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: J1_OUT2}
+    - c: Pin
+      e: {e: Q1_B}
+    - {c: LinkEnd, e: 1}
+    - c: Pin
+      e: {e: J1_IN}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: Q1_C}
+    - {c: LinkStart, e: 3}
+    - {c: LinkStart, e: 4}
+    - {c: LinkStart, e: 5}
+    - {c: LinkStart, e: 6}
+    - {e: Dummy}
+    - {c: LinkEnd, e: 1}
+    - {c: LinkEnd, e: 2}
+    - {c: LinkEnd, e: 3}
+    - {c: LinkEnd, e: 4}
+    - {c: LinkEnd, e: 5}
+    - {c: LinkEnd, e: 6}
+  solutions: 3
+  solveTime: 3.427
+  status: SATISFIED
+  threads: '20'
+  time: 5.133
+  variables: 1235
+- boolVariables: 866
+  configuration: org-choco-choco_stripboard_common-emitter-simple_10cores_20threads
+  constraints: 1465
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/stripboard/common-emitter-simple.dzn
+  datetime: '2024-09-10T18:37:56.236188'
+  eliminatedImplications: 12
+  evaluatedHalfReifiedConstraints: 836
+  evaluatedReifiedConstraints: 32
+  failures: 1047
+  flatBoolConstraints: 311
+  flatBoolVars: 850
+  flatIntConstraints: 1153
+  flatIntVars: 301
+  flatTime: 0.187081
+  initTime: 1.292
+  intVariables: 369
+  method: minimize
+  model: ../data/mzn-challenge/2022/stripboard/stripboard.mzn
+  mzn_solver: org.choco.choco
+  nodes: 3069
+  objective: 42
+  paths: 0
+  peakDepth: 106
+  problem: stripboard
+  restarts: 49
+  setVariables: 0
+  solution:
+    board_h: 6
+    board_w: 7
+    component_orientation:
+    - {e: UpsideDown}
+    - {e: Upright}
+    - {e: UpsideDown}
+    - {e: Clockwise}
+    component_x: [3, 7, 1, 4]
+    component_y: [2, 1, 2, 2]
+    connection:
+    - {e: Unconnected}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: VCC}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: OUT2}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: N1}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - c: Net
+      e: {e: N1}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    distance: [0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 5, 4, 3, 2, 1, 0, 0, 0, 0,
+      0, 0]
+    link_length: [3, 1, 1, 1, 1, 1]
+    link_x: [2, 5, 4, 3, 2, 1]
+    link_y: [3, -1, -1, -1, -1, -1]
+    objective: 42
+    pad_x: [0, 3, 3, 3, 7, 7, 7, 7, 7, 1, 1, 6, 4, 2, 5, 4, 3, 2, 1, 2, 5, 4, 3, 2,
+      1]
+    pad_xy: [0, 108, 87, 66, 49, 70, 91, 112, 133, 148, 106, 90, 88, 86, 5, 4, 3,
+      2, 1, 149, 26, 25, 24, 23, 22]
+    pad_y: [-1, 4, 3, 2, 1, 2, 3, 4, 5, 6, 4, 3, 3, 3, -1, -1, -1, -1, -1, 6, 0, 0,
+      0, 0, 0]
+    parent:
+    - {e: Dummy}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_VCC}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_IN}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: J1_OUT2}
+    - {c: LinkEnd, e: 1}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: J1_IN}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: Q1_B}
+    - {c: LinkStart, e: 3}
+    - {c: LinkStart, e: 4}
+    - {c: LinkStart, e: 5}
+    - {c: LinkStart, e: 6}
+    - {e: Dummy}
+    - {c: LinkEnd, e: 1}
+    - {c: LinkEnd, e: 2}
+    - {c: LinkEnd, e: 3}
+    - {c: LinkEnd, e: 4}
+    - {c: LinkEnd, e: 5}
+    - {c: LinkEnd, e: 6}
+  solutions: 4
+  solveTime: 3.878
+  status: SATISFIED
+  threads: '20'
+  time: 5.584
+  variables: 1235
+- boolVariables: 866
+  configuration: org-choco-choco_stripboard_common-emitter-simple_10cores_20threads
+  constraints: 1465
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/stripboard/common-emitter-simple.dzn
+  datetime: '2024-09-10T18:37:56.236188'
+  eliminatedImplications: 12
+  evaluatedHalfReifiedConstraints: 836
+  evaluatedReifiedConstraints: 32
+  failures: 2760
+  flatBoolConstraints: 311
+  flatBoolVars: 850
+  flatIntConstraints: 1153
+  flatIntVars: 301
+  flatTime: 0.187081
+  initTime: 1.292
+  intVariables: 369
+  method: minimize
+  model: ../data/mzn-challenge/2022/stripboard/stripboard.mzn
+  mzn_solver: org.choco.choco
+  nodes: 5283
+  objective: 40
+  paths: 0
+  peakDepth: 106
+  problem: stripboard
+  restarts: 95
+  setVariables: 0
+  solution:
+    board_h: 5
+    board_w: 8
+    component_orientation:
+    - {e: Upright}
+    - {e: UpsideDown}
+    - {e: UpsideDown}
+    - {e: Clockwise}
+    component_x: [4, 8, 2, 5]
+    component_y: [2, 1, 1, 2]
+    connection:
+    - {e: Unconnected}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: VCC}
+    - c: Net
+      e: {e: GND}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: OUT2}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - c: Net
+      e: {e: IN}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - c: Net
+      e: {e: N1}
+    - c: Net
+      e: {e: OUT1}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    - {e: Unconnected}
+    distance: [0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 4, 3, 2, 1, 0, 0, 0, 0,
+      0, 0]
+    link_length: [2, 1, 1, 1, 1, 1]
+    link_x: [3, 1, 4, 3, 2, 1]
+    link_y: [3, 2, -1, -1, -1, -1]
+    objective: 40
+    pad_x: [0, 4, 4, 4, 8, 8, 8, 8, 8, 2, 2, 7, 5, 3, 1, 4, 3, 2, 1, 3, 1, 4, 3, 2,
+      1]
+    pad_xy: [0, 67, 88, 109, 134, 113, 92, 71, 50, 128, 86, 91, 89, 87, 64, 4, 3,
+      2, 1, 129, 85, 25, 24, 23, 22]
+    pad_y: [-1, 2, 3, 4, 5, 4, 3, 2, 1, 5, 3, 3, 3, 3, 2, -1, -1, -1, -1, 5, 3, 0,
+      0, 0, 0]
+    parent:
+    - {e: Dummy}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_VCC}
+    - c: Pin
+      e: {e: Q1_E}
+    - c: Pin
+      e: {e: J1_IN}
+    - c: Pin
+      e: {e: Q1_C}
+    - c: Pin
+      e: {e: J1_OUT2}
+    - {c: LinkEnd, e: 1}
+    - {c: LinkEnd, e: 2}
+    - c: Pin
+      e: {e: J1_IN}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: Q1_B}
+    - c: Pin
+      e: {e: Q1_C}
+    - {c: LinkStart, e: 4}
+    - {c: LinkStart, e: 5}
+    - {c: LinkStart, e: 6}
+    - {e: Dummy}
+    - {c: LinkEnd, e: 1}
+    - {c: LinkEnd, e: 2}
+    - {c: LinkEnd, e: 3}
+    - {c: LinkEnd, e: 4}
+    - {c: LinkEnd, e: 5}
+    - {c: LinkEnd, e: 6}
+  solutions: 5
+  solveTime: 6.088
+  status: SATISFIED
+  threads: '20'
+  time: 7.793
+  variables: 1235

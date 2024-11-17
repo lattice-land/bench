@@ -1,0 +1,931 @@
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 1000
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 1719
+  objective: 6924
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 2
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 3, 20, 1, 1, 20, 35, 20, 35, 35, 1, 36, 37, 1, 22,
+      1, 1, 41, 35, 20, 35, 40, 38, 41, 1, 42, 35, 1, 2, 20, 24, 21, 27, 23, 39, 25,
+      28, 1, 1, 1, 26, 35, 29, 4, 5, 1, 1, 36, 30, 41, 35, 35]
+    deadLinePenalty: 69
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1,
+      1, 1, 1, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 15, 14, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 31, 27, 5, 29, 27, 5, 30, 13, 29, 8, 0, 0, 0, 0, 28, 26, 11, 13, 12, 50,
+      38, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 15, 26, 30, 30, 26, 28, 26, 28, 28, 30, 26, 11,
+      30, 27, 30, 30, 38, 28, 26, 28, 50, 13, 38, 30, 44, 28, 30, 10, 26, 29, 31,
+      30, 5, 12, 27, 13, 30, 30, 30, 5, 28, 29, 14, 28, 30, 30, 26, 8, 38, 28, 28]
+    nGroups: 24
+    objective: 6924
+  solutions: 1
+  solveTime: 2.741
+  status: SATISFIED
+  threads: '1'
+  time: 4.359
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 1075
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 1754
+  objective: 6424
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 2
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 3, 20, 1, 1, 20, 35, 20, 35, 35, 1, 36, 37, 1, 22,
+      1, 1, 41, 35, 20, 35, 40, 38, 41, 1, 36, 35, 1, 2, 20, 24, 21, 27, 23, 39, 25,
+      28, 1, 1, 1, 26, 35, 29, 4, 5, 1, 1, 36, 30, 42, 35, 35]
+    deadLinePenalty: 64
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1,
+      1, 1, 1, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 15, 14, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 31, 27, 5, 29, 27, 5, 30, 13, 29, 8, 0, 0, 0, 0, 28, 26, 11, 13, 12, 50,
+      38, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 15, 26, 30, 30, 26, 28, 26, 28, 28, 30, 26, 11,
+      30, 27, 30, 30, 38, 28, 26, 28, 50, 13, 38, 30, 26, 28, 30, 10, 26, 29, 31,
+      30, 5, 12, 27, 13, 30, 30, 30, 5, 28, 29, 14, 28, 30, 30, 26, 8, 44, 28, 28]
+    nGroups: 24
+    objective: 6424
+  solutions: 2
+  solveTime: 2.758
+  status: SATISFIED
+  threads: '1'
+  time: 4.375
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 1436
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 2101
+  objective: 6124
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 2
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 3, 20, 1, 1, 20, 35, 20, 35, 35, 1, 36, 37, 1, 22,
+      1, 1, 41, 35, 20, 35, 40, 38, 40, 1, 36, 35, 1, 2, 20, 24, 21, 27, 23, 39, 25,
+      28, 1, 1, 1, 26, 35, 29, 4, 5, 1, 1, 36, 30, 42, 35, 35]
+    deadLinePenalty: 61
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1,
+      1, 1, 1, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 15, 14, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 31, 27, 5, 29, 27, 5, 30, 13, 29, 8, 0, 0, 0, 0, 28, 26, 11, 13, 12, 32,
+      38, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 15, 26, 30, 30, 26, 28, 26, 28, 28, 30, 26, 11,
+      30, 27, 30, 30, 38, 28, 26, 28, 32, 13, 32, 30, 26, 28, 30, 10, 26, 29, 31,
+      30, 5, 12, 27, 13, 30, 30, 30, 5, 28, 29, 14, 28, 30, 30, 26, 8, 44, 28, 28]
+    nGroups: 24
+    objective: 6124
+  solutions: 3
+  solveTime: 2.797
+  status: SATISFIED
+  threads: '1'
+  time: 4.415
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 2040
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 2902
+  objective: 5524
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 3
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 3, 20, 1, 1, 20, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      1, 1, 41, 35, 20, 35, 40, 38, 40, 1, 36, 35, 1, 2, 20, 24, 21, 27, 23, 39, 25,
+      28, 1, 1, 1, 26, 35, 29, 4, 5, 1, 1, 36, 30, 42, 35, 35]
+    deadLinePenalty: 55
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1,
+      1, 1, 1, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 15, 14, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 31, 27, 5, 29, 27, 5, 30, 13, 29, 8, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32,
+      38, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 15, 26, 30, 30, 26, 28, 26, 28, 28, 30, 16, 16,
+      30, 27, 30, 30, 38, 28, 26, 28, 32, 13, 32, 30, 26, 28, 30, 10, 26, 29, 31,
+      30, 5, 12, 27, 13, 30, 30, 30, 5, 28, 29, 14, 28, 30, 30, 26, 8, 44, 28, 28]
+    nGroups: 24
+    objective: 5524
+  solutions: 4
+  solveTime: 3.149
+  status: SATISFIED
+  threads: '1'
+  time: 4.766
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 3605
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 5074
+  objective: 4024
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 6
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 3, 20, 1, 1, 20, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      3, 1, 41, 35, 20, 35, 40, 38, 40, 1, 36, 35, 1, 2, 20, 24, 21, 27, 23, 39, 25,
+      28, 1, 1, 1, 26, 35, 29, 4, 5, 1, 5, 36, 30, 42, 35, 35]
+    deadLinePenalty: 40
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1,
+      1, 1, 1, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 15, 14, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 31, 27, 5, 29, 27, 5, 30, 13, 29, 8, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32,
+      38, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 15, 26, 30, 30, 26, 28, 26, 28, 28, 30, 16, 16,
+      30, 27, 15, 30, 38, 28, 26, 28, 32, 13, 32, 30, 26, 28, 30, 10, 26, 29, 31,
+      30, 5, 12, 27, 13, 30, 30, 30, 5, 28, 29, 14, 28, 30, 28, 26, 8, 44, 28, 28]
+    nGroups: 24
+    objective: 4024
+  solutions: 5
+  solveTime: 5.318
+  status: SATISFIED
+  threads: '1'
+  time: 6.935
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 3635
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 5109
+  objective: 3624
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 6
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 3, 20, 1, 1, 20, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      3, 1, 41, 35, 20, 35, 40, 38, 40, 1, 36, 35, 1, 2, 20, 24, 21, 27, 23, 39, 25,
+      28, 1, 1, 1, 26, 35, 29, 4, 5, 1, 5, 36, 30, 42, 35, 35]
+    deadLinePenalty: 36
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1,
+      1, 1, 1, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 11, 10, 14, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 31, 27, 5, 29, 27, 5, 30, 13, 29, 8, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32,
+      38, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 10, 26, 30, 30, 26, 28, 26, 28, 28, 30, 16, 16,
+      30, 27, 10, 30, 38, 28, 26, 28, 32, 13, 32, 30, 26, 28, 30, 11, 26, 29, 31,
+      30, 5, 12, 27, 13, 30, 30, 30, 5, 28, 29, 14, 28, 30, 28, 26, 8, 44, 28, 28]
+    nGroups: 24
+    objective: 3624
+  solutions: 6
+  solveTime: 5.342
+  status: SATISFIED
+  threads: '1'
+  time: 6.959
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 4501
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 6174
+  objective: 3424
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 7
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 3, 20, 1, 5, 20, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      3, 1, 41, 35, 20, 35, 40, 38, 40, 1, 36, 35, 1, 2, 20, 24, 21, 27, 23, 39, 25,
+      28, 1, 5, 1, 26, 35, 29, 4, 5, 1, 5, 36, 30, 42, 35, 35]
+    deadLinePenalty: 34
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1,
+      1, 1, 1, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 11, 10, 14, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 31, 27, 5, 29, 27, 5, 30, 13, 29, 8, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32,
+      38, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 10, 26, 30, 28, 26, 28, 26, 28, 28, 30, 16, 16,
+      30, 27, 10, 30, 38, 28, 26, 28, 32, 13, 32, 30, 26, 28, 30, 11, 26, 29, 31,
+      30, 5, 12, 27, 13, 30, 28, 30, 5, 28, 29, 14, 28, 30, 28, 26, 8, 44, 28, 28]
+    nGroups: 24
+    objective: 3424
+  solutions: 7
+  solveTime: 6.59
+  status: SATISFIED
+  threads: '1'
+  time: 8.206
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 4547
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 6225
+  objective: 3324
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 7
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 3, 20, 1, 5, 20, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      3, 1, 41, 35, 20, 35, 40, 38, 40, 1, 36, 35, 1, 2, 20, 24, 21, 27, 23, 39, 25,
+      28, 1, 5, 1, 26, 35, 29, 4, 5, 1, 5, 36, 30, 42, 35, 35]
+    deadLinePenalty: 33
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1,
+      1, 1, 1, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 11, 10, 14, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 31, 28, 5, 29, 27, 5, 30, 13, 29, 8, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32,
+      38, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 10, 26, 30, 27, 26, 28, 26, 28, 28, 30, 16, 16,
+      30, 28, 10, 30, 38, 28, 26, 28, 32, 13, 32, 30, 26, 28, 30, 11, 26, 29, 31,
+      30, 5, 12, 27, 13, 30, 27, 30, 5, 28, 29, 14, 27, 30, 27, 26, 8, 44, 28, 28]
+    nGroups: 24
+    objective: 3324
+  solutions: 8
+  solveTime: 6.616
+  status: SATISFIED
+  threads: '1'
+  time: 8.232
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 4601
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 6276
+  objective: 3024
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 7
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 3, 20, 1, 5, 20, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      3, 1, 41, 35, 20, 35, 40, 38, 40, 1, 36, 35, 1, 2, 20, 24, 21, 27, 23, 39, 25,
+      28, 1, 1, 1, 26, 35, 29, 4, 1, 1, 1, 36, 30, 42, 35, 35]
+    deadLinePenalty: 30
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1,
+      1, 1, 1, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 11, 10, 14, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 31, 28, 5, 29, 27, 5, 30, 13, 29, 8, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32,
+      38, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 10, 26, 30, 15, 26, 28, 26, 28, 28, 30, 16, 16,
+      30, 28, 10, 30, 38, 28, 26, 28, 32, 13, 32, 30, 26, 28, 30, 11, 26, 29, 31,
+      30, 5, 12, 27, 13, 30, 30, 30, 5, 28, 29, 14, 30, 30, 30, 26, 8, 44, 28, 28]
+    nGroups: 24
+    objective: 3024
+  solutions: 9
+  solveTime: 6.643
+  status: SATISFIED
+  threads: '1'
+  time: 8.26
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 5002
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 6837
+  objective: 2424
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 8
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 3, 20, 1, 5, 20, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      3, 1, 41, 35, 20, 35, 40, 38, 40, 5, 36, 35, 1, 2, 20, 24, 21, 27, 23, 39, 25,
+      28, 1, 1, 1, 26, 35, 29, 4, 1, 1, 1, 36, 30, 42, 35, 35]
+    deadLinePenalty: 24
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1,
+      1, 1, 1, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 11, 10, 14, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 31, 28, 5, 29, 27, 5, 30, 13, 29, 8, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32,
+      38, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 10, 26, 30, 15, 26, 28, 26, 28, 28, 30, 16, 16,
+      30, 28, 10, 30, 38, 28, 26, 28, 32, 13, 32, 15, 26, 28, 30, 11, 26, 29, 31,
+      30, 5, 12, 27, 13, 30, 30, 30, 5, 28, 29, 14, 30, 30, 30, 26, 8, 44, 28, 28]
+    nGroups: 24
+    objective: 2424
+  solutions: 10
+  solveTime: 7.153
+  status: SATISFIED
+  threads: '1'
+  time: 8.77
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 5081
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 6924
+  objective: 2324
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 8
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 1, 20, 1, 5, 20, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      3, 1, 41, 35, 20, 35, 40, 38, 40, 5, 36, 35, 1, 2, 20, 24, 21, 27, 23, 39, 25,
+      28, 1, 1, 1, 26, 35, 29, 4, 1, 1, 1, 36, 30, 42, 35, 35]
+    deadLinePenalty: 23
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1,
+      1, 1, 1, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 9, 14, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 31, 28, 5, 29, 27, 5, 30, 13, 29, 8, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32,
+      38, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 30, 26, 30, 15, 26, 28, 26, 28, 28, 30, 16, 16,
+      30, 28, 9, 30, 38, 28, 26, 28, 32, 13, 32, 15, 26, 28, 30, 10, 26, 29, 31, 30,
+      5, 12, 27, 13, 30, 30, 30, 5, 28, 29, 14, 30, 30, 30, 26, 8, 44, 28, 28]
+    nGroups: 24
+    objective: 2324
+  solutions: 11
+  solveTime: 7.216
+  status: SATISFIED
+  threads: '1'
+  time: 8.832
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 8006
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 10535
+  objective: 1324
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 13
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 1, 20, 1, 5, 21, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      3, 1, 41, 35, 20, 35, 40, 38, 40, 5, 36, 35, 1, 2, 20, 24, 20, 27, 23, 39, 25,
+      28, 1, 1, 1, 26, 35, 29, 4, 1, 1, 1, 36, 30, 42, 35, 35]
+    deadLinePenalty: 13
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      1, 1, 1, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 9, 14, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 4, 28, 5, 29, 27, 5, 30, 13, 29, 8, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32,
+      38, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 30, 26, 30, 15, 4, 28, 26, 28, 28, 30, 16, 16,
+      30, 28, 9, 30, 38, 28, 26, 28, 32, 13, 32, 15, 26, 28, 30, 10, 26, 29, 26, 30,
+      5, 12, 27, 13, 30, 30, 30, 5, 28, 29, 14, 30, 30, 30, 26, 8, 44, 28, 28]
+    nGroups: 24
+    objective: 1324
+  solutions: 12
+  solveTime: 11.453
+  status: SATISFIED
+  threads: '1'
+  time: 13.069
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 18759
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 23266
+  objective: 1323
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 27
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 1, 20, 1, 5, 21, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      3, 1, 41, 35, 20, 35, 40, 38, 40, 5, 36, 35, 1, 2, 20, 24, 20, 27, 23, 39, 25,
+      28, 1, 1, 1, 26, 35, 29, 4, 1, 1, 1, 36, 20, 42, 35, 35]
+    deadLinePenalty: 13
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      1, 1, 1, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 9, 14, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 4, 28, 5, 29, 27, 5, 30, 13, 29, 0, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32,
+      38, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 30, 26, 30, 15, 4, 28, 26, 28, 28, 30, 16, 16,
+      30, 28, 9, 30, 38, 28, 26, 28, 32, 13, 32, 15, 26, 28, 30, 10, 26, 29, 26, 30,
+      5, 12, 27, 13, 30, 30, 30, 5, 28, 29, 14, 30, 30, 30, 26, 26, 44, 28, 28]
+    nGroups: 23
+    objective: 1323
+  solutions: 13
+  solveTime: 25.563
+  status: SATISFIED
+  threads: '1'
+  time: 27.18
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 20503
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 25131
+  objective: 1322
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 28
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 1, 20, 1, 5, 21, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      3, 1, 41, 35, 20, 35, 40, 38, 40, 5, 36, 35, 1, 2, 20, 24, 20, 27, 23, 39, 25,
+      28, 1, 1, 1, 26, 35, 20, 4, 1, 1, 1, 36, 20, 42, 35, 35]
+    deadLinePenalty: 13
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      1, 1, 1, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 9, 14, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 4, 28, 5, 29, 27, 5, 30, 13, 0, 0, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32, 38,
+      44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 30, 26, 30, 15, 4, 28, 26, 28, 28, 30, 16, 16,
+      30, 28, 9, 30, 38, 28, 26, 28, 32, 13, 32, 15, 26, 28, 30, 10, 26, 29, 26, 30,
+      5, 12, 27, 13, 30, 30, 30, 5, 28, 26, 14, 30, 30, 30, 26, 26, 44, 28, 28]
+    nGroups: 22
+    objective: 1322
+  solutions: 14
+  solveTime: 27.409
+  status: SATISFIED
+  threads: '1'
+  time: 29.026
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 20586
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 25210
+  objective: 1321
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 28
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 1, 20, 1, 5, 21, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      3, 1, 41, 35, 20, 35, 40, 38, 40, 5, 36, 35, 1, 2, 20, 24, 20, 27, 23, 39, 25,
+      21, 1, 1, 1, 26, 35, 20, 4, 1, 1, 1, 36, 20, 42, 35, 35]
+    deadLinePenalty: 13
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      1, 1, 1, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 9, 14, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 13, 28, 5, 29, 27, 5, 30, 0, 0, 0, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32, 38,
+      44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 30, 26, 30, 15, 13, 28, 26, 28, 28, 30, 16, 16,
+      30, 28, 9, 30, 38, 28, 26, 28, 32, 13, 32, 15, 26, 28, 30, 10, 26, 29, 26, 30,
+      5, 12, 27, 13, 30, 30, 30, 5, 28, 26, 14, 30, 30, 30, 26, 26, 44, 28, 28]
+    nGroups: 21
+    objective: 1321
+  solutions: 15
+  solveTime: 27.472
+  status: SATISFIED
+  threads: '1'
+  time: 29.088
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 24000
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 29740
+  objective: 1320
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 34
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 1, 20, 1, 5, 21, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      3, 1, 41, 35, 20, 35, 40, 38, 40, 5, 36, 35, 1, 2, 20, 24, 20, 20, 23, 39, 25,
+      21, 1, 1, 1, 26, 35, 20, 4, 1, 1, 1, 36, 20, 42, 35, 35]
+    deadLinePenalty: 13
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      1, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 9, 14, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 13, 28, 5, 29, 27, 30, 0, 0, 0, 0, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32, 38,
+      44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 30, 26, 30, 15, 13, 28, 26, 28, 28, 30, 16, 16,
+      30, 28, 9, 30, 38, 28, 26, 28, 32, 13, 32, 15, 26, 28, 30, 10, 26, 29, 26, 26,
+      5, 12, 27, 13, 30, 30, 30, 30, 28, 26, 14, 30, 30, 30, 26, 26, 44, 28, 28]
+    nGroups: 20
+    objective: 1320
+  solutions: 16
+  solveTime: 30.637
+  status: SATISFIED
+  threads: '1'
+  time: 32.253
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 27591
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 34252
+  objective: 1319
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 39
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 1, 20, 1, 5, 21, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      3, 1, 41, 35, 20, 35, 40, 38, 40, 5, 36, 35, 1, 2, 20, 24, 20, 20, 23, 39, 25,
+      21, 1, 1, 1, 26, 35, 20, 4, 1, 1, 1, 36, 20, 36, 35, 35]
+    deadLinePenalty: 13
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      1, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 9, 14, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 13, 28, 5, 29, 27, 30, 0, 0, 0, 0, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32, 38,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 30, 26, 30, 15, 13, 28, 26, 28, 28, 30, 16, 16,
+      30, 28, 9, 30, 38, 28, 26, 28, 32, 13, 32, 15, 26, 28, 30, 10, 26, 29, 26, 26,
+      5, 12, 27, 13, 30, 30, 30, 30, 28, 26, 14, 30, 30, 30, 26, 26, 26, 28, 28]
+    nGroups: 19
+    objective: 1319
+  solutions: 17
+  solveTime: 33.582
+  status: SATISFIED
+  threads: '1'
+  time: 35.199
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 29173
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 36323
+  objective: 1318
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 42
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 1, 20, 1, 5, 21, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      3, 1, 35, 35, 20, 35, 40, 38, 40, 5, 36, 35, 1, 2, 20, 24, 20, 20, 23, 39, 25,
+      21, 1, 1, 1, 26, 35, 20, 4, 1, 1, 1, 36, 20, 36, 35, 35]
+    deadLinePenalty: 13
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      1, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 9, 14, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 13, 28, 5, 29, 27, 30, 0, 0, 0, 0, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 30, 26, 30, 15, 13, 28, 26, 28, 28, 30, 16, 16,
+      30, 28, 9, 30, 28, 28, 26, 28, 32, 13, 32, 15, 26, 28, 30, 10, 26, 29, 26, 26,
+      5, 12, 27, 13, 30, 30, 30, 30, 28, 26, 14, 30, 30, 30, 26, 26, 26, 28, 28]
+    nGroups: 18
+    objective: 1318
+  solutions: 18
+  solveTime: 35.749
+  status: SATISFIED
+  threads: '1'
+  time: 37.365
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15
+- boolVariables: 36840
+  configuration: org-choco-choco-noglobal_v4.10.15_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  constraints: 33326
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-11T20:16:28.187305'
+  evaluatedReifiedConstraints: 11641
+  failures: 29882
+  flatBoolConstraints: 7659
+  flatBoolVars: 16973
+  flatIntConstraints: 25585
+  flatIntVars: 13350
+  flatTime: 0.482767
+  initTime: 0.84
+  intVariables: 436
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: org.choco.choco.noglobal
+  nodes: 37017
+  objective: 1317
+  paths: 0
+  peakDepth: 553
+  problem: gfd-schedule
+  restarts: 42
+  setVariables: 0
+  solution:
+    assignedGroup: [1, 1, 35, 36, 1, 20, 1, 4, 21, 35, 20, 35, 35, 1, 37, 37, 1, 22,
+      3, 1, 35, 35, 20, 35, 40, 38, 40, 4, 36, 35, 1, 2, 20, 24, 20, 20, 23, 39, 25,
+      21, 1, 1, 1, 26, 35, 20, 4, 1, 1, 1, 36, 20, 36, 35, 35]
+    deadLinePenalty: 13
+    groupFacility: [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      1, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 9, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      26, 13, 28, 5, 29, 27, 30, 0, 0, 0, 0, 0, 0, 0, 0, 28, 26, 16, 13, 12, 32, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 28, 26, 30, 26, 30, 15, 13, 28, 26, 28, 28, 30, 16, 16,
+      30, 28, 9, 30, 28, 28, 26, 28, 32, 13, 32, 15, 26, 28, 30, 10, 26, 29, 26, 26,
+      5, 12, 27, 13, 30, 30, 30, 30, 28, 26, 15, 30, 30, 30, 26, 26, 26, 28, 28]
+    nGroups: 17
+    objective: 1317
+  solutions: 19
+  solveTime: 36.485
+  status: SATISFIED
+  threads: '1'
+  time: 38.102
+  timeout_ms: '300000'
+  variables: 37276
+  version: v4.10.15

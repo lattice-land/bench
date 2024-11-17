@@ -1,0 +1,31 @@
+- configuration: turbo-gpu-release_wordpress_Wordpress7_Offers500
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-08-27T20:41:37.696969'
+  evaluatedReifiedConstraints: 37
+  flatBoolConstraints: 19
+  flatBoolVars: 35
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.102767
+  memory_configuration: store_shared
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: turbo.gpu.release
+  paths: 0
+  problem: wordpress
+  propagator_mem: 18331560
+  shared_mem: 2084
+  solution:
+    AssignmentMatrix:
+    - [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+    - [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]
+    OccupancyVector: [0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [0, 0, 0, 210, 0, 8403, 6016, 582, 116, 9152, 9152, 9152, 9152, 9152, 9152]
+    VMType: [1, 1, 1, 341, 1, 1, 3, 174, 433, 2, 2, 2, 2, 2, 2]
+    objective: 70239
+  status: SATISFIED
+  store_mem: 1984
+  time: 301.142

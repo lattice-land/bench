@@ -1,0 +1,10 @@
+{boolVariables: 12830, configuration: org-choco-choco_v4.10.15_blocks_16-4-5_10cores_20threads_timeout300000ms_10_20,
+  constraints: 11684, cores: '10', data_file: ../data/mzn-challenge/2022/blocks-world/16-4-5.dzn,
+  datetime: '2024-09-11T22:50:11.216884', eliminatedImplications: 375, evaluatedHalfReifiedConstraints: 1260,
+  evaluatedReifiedConstraints: 5090, failures: 173042, flatBoolConstraints: 4037,
+  flatBoolVars: 7932, flatIntConstraints: 7582, flatIntVars: 4211, flatTime: 0.342593,
+  initTime: 4.136, intVariables: 1357, method: minimize, model: ../data/mzn-challenge/2022/blocks-world/blocks.mzn,
+  mzn_solver: org.choco.choco, nSolutions: 0, nodes: 175873, objective: 65, paths: 0,
+  peakDepth: 144, problem: blocks-world, restarts: 138, setVariables: 0, solutions: 0,
+  solveTime: 296.718, status: UNKNOWN, threads: '20', timeout_ms: '300000', variables: 14187,
+  version: v4.10.15}

@@ -1,0 +1,10 @@
+{arch: cpu, configuration: turbo-cpu-release_dcmst_c_v20_a190_d4, cutnodes: 0, data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn,
+  datetime: '2024-08-29T19:56:06.341575', eliminated_formulas: 1094, eliminated_variables: 842,
+  eps_num_subproblems: 1, eps_skipped_subproblems: 0, eps_solved_subproblems: 0, evaluatedReifiedConstraints: 1571,
+  failures: 57475, fixpoint_iterations: 1184968, flatBoolConstraints: 3852, flatBoolVars: 2141,
+  flatIntConstraints: 1785, flatIntVars: 252, flatTime: 0.25509, free_search: no,
+  hardware: precision5820, initTime: 0.266, method: minimize, model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn,
+  mzn_solver: turbo.cpu.release, nSolutions: 1, nodes: 115036, num_blocks_done: 0,
+  num_solutions: 39, objective: 497, or_nodes: 0, paths: 0, peakDepth: 32, problem: diameterc-mst,
+  problem_path: /tmp/mznfilequpqiM.fzn, propagators: 5865, solveTime: 300.002, solver: Turbo,
+  status: SATISFIED, timeout_ms: 300000, variables: 2203, version: v1.2.0}

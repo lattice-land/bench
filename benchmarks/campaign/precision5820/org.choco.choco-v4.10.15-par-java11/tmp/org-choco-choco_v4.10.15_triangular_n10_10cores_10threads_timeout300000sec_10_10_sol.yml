@@ -1,0 +1,430 @@
+- boolVariables: 56
+  configuration: org-choco-choco_v4.10.15_triangular_n10_10cores_10threads_timeout300000sec_10_10
+  constraints: 497
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/triangular/n10.dzn
+  datetime: '2024-09-11T11:39:03.381879'
+  failures: 0
+  flatIntConstraints: 496
+  flatIntVars: 56
+  flatTime: 0.0696082
+  initTime: 0.243
+  intVariables: 2
+  method: maximize
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn
+  mzn_solver: org.choco.choco
+  nodes: 56
+  objective: 1
+  paths: 0
+  peakDepth: 55
+  problem: triangular
+  restarts: 1
+  setVariables: 0
+  solution:
+    heart:
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    objective: 1
+  solutions: 1
+  solveTime: 0.033
+  status: SATISFIED
+  threads: '10'
+  time: 0.558
+  timeout_sec: '300000'
+  variables: 58
+  version: v4.10.15
+- boolVariables: 56
+  configuration: org-choco-choco_v4.10.15_triangular_n10_10cores_10threads_timeout300000sec_10_10
+  constraints: 497
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/triangular/n10.dzn
+  datetime: '2024-09-11T11:39:03.381879'
+  failures: 0
+  flatIntConstraints: 496
+  flatIntVars: 56
+  flatTime: 0.0696082
+  initTime: 0.243
+  intVariables: 2
+  method: maximize
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn
+  mzn_solver: org.choco.choco
+  nodes: 56
+  objective: 12
+  paths: 0
+  peakDepth: 56
+  problem: triangular
+  restarts: 0
+  setVariables: 0
+  solution:
+    heart:
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 1, 0, 0, 1, 0, 1, 0, 1]
+    objective: 12
+  solutions: 1
+  solveTime: 0.049
+  status: SATISFIED
+  threads: '10'
+  time: 0.573
+  timeout_sec: '300000'
+  variables: 58
+  version: v4.10.15
+- boolVariables: 56
+  configuration: org-choco-choco_v4.10.15_triangular_n10_10cores_10threads_timeout300000sec_10_10
+  constraints: 497
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/triangular/n10.dzn
+  datetime: '2024-09-11T11:39:03.381879'
+  failures: 5
+  flatIntConstraints: 496
+  flatIntVars: 56
+  flatTime: 0.0696082
+  initTime: 0.244
+  intVariables: 2
+  method: maximize
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn
+  mzn_solver: org.choco.choco
+  nodes: 53
+  objective: 13
+  paths: 0
+  peakDepth: 52
+  problem: triangular
+  restarts: 0
+  setVariables: 0
+  solution:
+    heart:
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 1, 1, 1, 1, 0, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 1, 0]
+    objective: 13
+  solutions: 1
+  solveTime: 0.06
+  status: SATISFIED
+  threads: '10'
+  time: 0.584
+  timeout_sec: '300000'
+  variables: 58
+  version: v4.10.15
+- boolVariables: 56
+  configuration: org-choco-choco_v4.10.15_triangular_n10_10cores_10threads_timeout300000sec_10_10
+  constraints: 497
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/triangular/n10.dzn
+  datetime: '2024-09-11T11:39:03.381879'
+  failures: 6
+  flatIntConstraints: 496
+  flatIntVars: 56
+  flatTime: 0.0696082
+  initTime: 0.244
+  intVariables: 2
+  method: maximize
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn
+  mzn_solver: org.choco.choco
+  nodes: 54
+  objective: 14
+  paths: 0
+  peakDepth: 52
+  problem: triangular
+  restarts: 0
+  setVariables: 0
+  solution:
+    heart:
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 1, 1, 1, 1, 0, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 1, 0]
+    objective: 14
+  solutions: 2
+  solveTime: 0.07
+  status: SATISFIED
+  threads: '10'
+  time: 0.595
+  timeout_sec: '300000'
+  variables: 58
+  version: v4.10.15
+- boolVariables: 56
+  configuration: org-choco-choco_v4.10.15_triangular_n10_10cores_10threads_timeout300000sec_10_10
+  constraints: 497
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/triangular/n10.dzn
+  datetime: '2024-09-11T11:39:03.381879'
+  failures: 9
+  flatIntConstraints: 496
+  flatIntVars: 56
+  flatTime: 0.0696082
+  initTime: 0.243
+  intVariables: 2
+  method: maximize
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn
+  mzn_solver: org.choco.choco
+  nodes: 56
+  objective: 15
+  paths: 0
+  peakDepth: 48
+  problem: triangular
+  restarts: 0
+  setVariables: 0
+  solution:
+    heart:
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 1, 0, 1, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 1, 0, 0, 1, 0, 1, 0, 1]
+    objective: 15
+  solutions: 1
+  solveTime: 0.08
+  status: SATISFIED
+  threads: '10'
+  time: 0.603
+  timeout_sec: '300000'
+  variables: 58
+  version: v4.10.15
+- boolVariables: 56
+  configuration: org-choco-choco_v4.10.15_triangular_n10_10cores_10threads_timeout300000sec_10_10
+  constraints: 497
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/triangular/n10.dzn
+  datetime: '2024-09-11T11:39:03.381879'
+  failures: 16
+  flatIntConstraints: 496
+  flatIntVars: 56
+  flatTime: 0.0696082
+  initTime: 0.244
+  intVariables: 2
+  method: maximize
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn
+  mzn_solver: org.choco.choco
+  nodes: 87
+  objective: 16
+  paths: 0
+  peakDepth: 52
+  problem: triangular
+  restarts: 1
+  setVariables: 0
+  solution:
+    heart:
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 1, 1, 1, 1, 0, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 0, 1, 0]
+    - [1, 1, 0, 0, 0, 0, 0, 0, 1, 0]
+    objective: 16
+  solutions: 3
+  solveTime: 0.089
+  status: SATISFIED
+  threads: '10'
+  time: 0.613
+  timeout_sec: '300000'
+  variables: 58
+  version: v4.10.15
+- boolVariables: 56
+  configuration: org-choco-choco_v4.10.15_triangular_n10_10cores_10threads_timeout300000sec_10_10
+  constraints: 497
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/triangular/n10.dzn
+  datetime: '2024-09-11T11:39:03.381879'
+  failures: 19
+  flatIntConstraints: 496
+  flatIntVars: 56
+  flatTime: 0.0696082
+  initTime: 0.244
+  intVariables: 2
+  method: maximize
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn
+  mzn_solver: org.choco.choco
+  nodes: 91
+  objective: 17
+  paths: 0
+  peakDepth: 52
+  problem: triangular
+  restarts: 1
+  setVariables: 0
+  solution:
+    heart:
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 1, 1, 1, 1, 0, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 0, 1, 0]
+    - [1, 1, 0, 0, 0, 1, 0, 0, 1, 0]
+    objective: 17
+  solutions: 4
+  solveTime: 0.097
+  status: SATISFIED
+  threads: '10'
+  time: 0.621
+  timeout_sec: '300000'
+  variables: 58
+  version: v4.10.15
+- boolVariables: 56
+  configuration: org-choco-choco_v4.10.15_triangular_n10_10cores_10threads_timeout300000sec_10_10
+  constraints: 497
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/triangular/n10.dzn
+  datetime: '2024-09-11T11:39:03.381879'
+  failures: 23
+  flatIntConstraints: 496
+  flatIntVars: 56
+  flatTime: 0.0696082
+  initTime: 0.244
+  intVariables: 2
+  method: maximize
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn
+  mzn_solver: org.choco.choco
+  nodes: 129
+  objective: 18
+  paths: 0
+  peakDepth: 52
+  problem: triangular
+  restarts: 2
+  setVariables: 0
+  solution:
+    heart:
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 1, 1, 1, 1, 0, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 0, 1, 0]
+    - [1, 1, 0, 0, 0, 1, 0, 0, 1, 0]
+    objective: 18
+  solutions: 5
+  solveTime: 0.107
+  status: SATISFIED
+  threads: '10'
+  time: 0.63
+  timeout_sec: '300000'
+  variables: 58
+  version: v4.10.15
+- boolVariables: 56
+  configuration: org-choco-choco_v4.10.15_triangular_n10_10cores_10threads_timeout300000sec_10_10
+  constraints: 497
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/triangular/n10.dzn
+  datetime: '2024-09-11T11:39:03.381879'
+  failures: 45
+  flatIntConstraints: 496
+  flatIntVars: 56
+  flatTime: 0.0696082
+  initTime: 0.243
+  intVariables: 2
+  method: maximize
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn
+  mzn_solver: org.choco.choco
+  nodes: 188
+  objective: 19
+  paths: 0
+  peakDepth: 48
+  problem: triangular
+  restarts: 4
+  setVariables: 0
+  solution:
+    heart:
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 1, 0, 1, 0, 0, 0]
+    - [1, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+    - [0, 1, 1, 0, 0, 1, 0, 1, 1, 1]
+    objective: 19
+  solutions: 2
+  solveTime: 0.121
+  status: SATISFIED
+  threads: '10'
+  time: 0.645
+  timeout_sec: '300000'
+  variables: 58
+  version: v4.10.15
+- boolVariables: 56
+  configuration: org-choco-choco_v4.10.15_triangular_n10_10cores_10threads_timeout300000sec_10_10
+  constraints: 497
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/triangular/n10.dzn
+  datetime: '2024-09-11T11:39:03.381879'
+  failures: 177537
+  flatIntConstraints: 496
+  flatIntVars: 56
+  flatTime: 0.0696082
+  initTime: 0.244
+  intVariables: 2
+  method: maximize
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn
+  mzn_solver: org.choco.choco
+  nodes: 180078
+  objective: 20
+  paths: 0
+  peakDepth: 52
+  problem: triangular
+  restarts: 142
+  setVariables: 0
+  solution:
+    heart:
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 1, 1, 0, 1, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 1, 0, 0]
+    - [0, 0, 0, 0, 0, 1, 0, 0, 1, 0]
+    - [1, 1, 1, 0, 0, 0, 0, 1, 1, 0]
+    objective: 20
+  solutions: 6
+  solveTime: 1.51
+  status: SATISFIED
+  threads: '10'
+  time: 2.033
+  timeout_sec: '300000'
+  variables: 58
+  version: v4.10.15

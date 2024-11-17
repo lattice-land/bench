@@ -1,0 +1,26 @@
+- configuration: turbo-gpu-release_spot5_404
+  data_file: ../data/mzn-challenge/2022/spot5/404.dzn
+  datetime: '2024-08-27T21:42:11.665039'
+  evaluatedReifiedConstraints: 100
+  flatBoolVars: 100
+  flatIntConstraints: 1439
+  flatIntVars: 811
+  flatTime: 0.178416
+  memory_configuration: store_shared
+  method: minimize
+  model: ../data/mzn-challenge/2022/spot5/spot5.mzn
+  mzn_solver: turbo.gpu.release
+  paths: 0
+  problem: spot5
+  propagator_mem: 4299460
+  shared_mem: 6836
+  solution:
+    objective: 131
+    p: [1, 1, 3, 2, 13, 0, 0, 0, 0, 2, 0, 0, 13, 0, 0, 0, 0, 0, 2, 0, 0, 13, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 13, 13, 0, 13,
+      0, 0, 13, 0, 0, 13, 13, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0,
+      0, 0]
+  status: SATISFIED
+  store_mem: 6736
+  time: 300.544

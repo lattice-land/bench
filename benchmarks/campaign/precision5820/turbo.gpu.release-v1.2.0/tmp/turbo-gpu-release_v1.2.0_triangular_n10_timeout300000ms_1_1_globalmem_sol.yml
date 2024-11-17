@@ -1,0 +1,34 @@
+- configuration: turbo-gpu-release_v1.2.0_triangular_n10_timeout300000ms_1_1_globalmem
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/triangular/n10.dzn
+  datetime: '2024-09-12T13:44:26.715327'
+  flatIntConstraints: 496
+  flatIntVars: 56
+  flatTime: 0.0677585
+  memory_configuration: global
+  method: maximize
+  model: ../data/mzn-challenge/2022/triangular/triangular.mzn
+  mzn_solver: turbo.gpu.release
+  paths: 0
+  problem: triangular
+  propagator_mem: 207384
+  shared_mem: 100
+  solution:
+    heart:
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 1, 0, 0, 0, 0, 0]
+    - [1, 1, 0, 0, 0, 1, 1, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 1, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 1, 0, 0]
+    - [1, 1, 0, 0, 0, 0, 0, 0, 1, 1]
+    objective: 20
+  status: SATISFIED
+  store_mem: 696
+  threads: '1'
+  time: 300.324
+  timeout_ms: '300000'
+  version: v1.2.0

@@ -1,0 +1,9 @@
+{boolVariables: 3157, configuration: org-choco-choco-noglobal_v4.10.15_peaceable_queens_n8_q3_timeout300000ms_1_1,
+  constraints: 3472, cores: '1', data_file: ../data/mzn-challenge/2022/generalized-peacable-queens/n8_q3.json,
+  datetime: '2024-09-11T20:56:50.347039', evaluatedReifiedConstraints: 1384, failures: 666851,
+  flatBoolConstraints: 1679, flatBoolVars: 1795, flatIntConstraints: 1792, flatIntVars: 835,
+  flatTime: 0.229398, initTime: 0.292, intVariables: 646, method: maximize, model: ../data/mzn-challenge/2022/generalized-peacable-queens/peaceable_queens.mzn,
+  mzn_solver: org.choco.choco.noglobal, nSolutions: 2, nodes: 684063, objective: 4,
+  paths: 0, peakDepth: 70, problem: generalized-peacable-queens, restarts: 369, setVariables: 0,
+  solutions: 2, solveTime: 300.0, status: SATISFIED, threads: '1', timeout_ms: '300000',
+  variables: 3803, version: v4.10.15}

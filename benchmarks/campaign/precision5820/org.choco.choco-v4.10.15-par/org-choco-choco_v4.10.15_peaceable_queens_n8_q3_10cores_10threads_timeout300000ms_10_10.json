@@ -1,0 +1,131 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.15_peaceable_queens_n8_q3_10cores_10threads_timeout300000ms_10_10", "problem": "generalized-peacable-queens", "model": "../data/mzn-challenge/2022/generalized-peacable-queens/peaceable_queens.mzn", "data_file": "../data/mzn-challenge/2022/generalized-peacable-queens/n8_q3.json", "mzn_solver": "org.choco.choco", "version": "v4.10.15", "timeout_ms": "300000", "datetime": "2024-09-11T21:59:42.553669", "status": "UNKNOWN", "cores": "10", "threads": "10"}}
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 67, "flatIntConstraints": 59, "method": "maximize", "flatTime": 0.173509}}
+{"type": "comment", "comment": "%% Choco 240909_14:08\n"}
+{"type": "statistics", "statistics": {"initTime": 0.386, "solveTime": 0.112, "solutions": 1, "variables": 1258, "intVariables": 1215, "boolVariables": 43, "setVariables": 0, "constraints": 270, "objective": 0, "nodes": 55, "failures": 0, "restarts": 1, "peakDepth": 54}}
+{"type": "solution", "output": {"default": "........\n........\n........\n........\n........\n........\n........\n........\nn = 8;\nq = 3;\ncounts = [0, 0, 0];\nobjective = 0;\n", "raw": "........\n........\n........\n........\n........\n........\n........\n........\nn = 8;\nq = 3;\ncounts = [0, 0, 0];\nobjective = 0;\n", "json": {  "x" : [[{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}]],  "counts" : [0, 0, 0],  "_objective" : 0}}, "sections": ["default", "raw", "json"], "time": 816}
+{"type": "statistics", "statistics": {"initTime": 0.385, "solveTime": 0.402, "solutions": 1, "variables": 1258, "intVariables": 1215, "boolVariables": 43, "setVariables": 0, "constraints": 270, "objective": 1, "nodes": 248, "failures": 52, "restarts": 4, "peakDepth": 61}}
+{"type": "solution", "output": {"default": "........\n........\n......A.\n..B.....\n........\n........\n........\n.......C\nn = 8;\nq = 3;\ncounts = [1, 1, 1];\nobjective = 1;\n", "raw": "........\n........\n......A.\n..B.....\n........\n........\n........\n.......C\nn = 8;\nq = 3;\ncounts = [1, 1, 1];\nobjective = 1;\n", "json": {  "x" : [[{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 1}}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 2}}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 3}}]],  "counts" : [1, 1, 1],  "_objective" : 1}}, "sections": ["default", "raw", "json"], "time": 1105}
+{"type": "statistics", "statistics": {"initTime": 0.385, "solveTime": 0.511, "solutions": 2, "variables": 1258, "intVariables": 1215, "boolVariables": 43, "setVariables": 0, "constraints": 270, "objective": 2, "nodes": 568, "failures": 142, "restarts": 11, "peakDepth": 61}}
+{"type": "solution", "output": {"default": "........\n........\n......A.\n...B....\nCC......\n........\n.....A..\n.......B\nn = 8;\nq = 3;\ncounts = [2, 2, 2];\nobjective = 2;\n", "raw": "........\n........\n......A.\n...B....\nCC......\n........\n.....A..\n.......B\nn = 8;\nq = 3;\ncounts = [2, 2, 2];\nobjective = 2;\n", "json": {  "x" : [[{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 1}}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 2}}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{ "c" : "Q", "e" : { "c" : "Army", "e" : 3}}, { "c" : "Q", "e" : { "c" : "Army", "e" : 3}}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 1}}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 2}}]],  "counts" : [2, 2, 2],  "_objective" : 2}}, "sections": ["default", "raw", "json"], "time": 1214}
+{"type": "statistics", "statistics": {"initTime": 0.385, "solveTime": 0.638, "solutions": 3, "variables": 1258, "intVariables": 1215, "boolVariables": 43, "setVariables": 0, "constraints": 270, "objective": 3, "nodes": 1374, "failures": 303, "restarts": 23, "peakDepth": 61}}
+{"type": "solution", "output": {"default": "........\n........\n......A.\n....B...\nCC......\n.C......\n....BB..\n..A....A\nn = 8;\nq = 3;\ncounts = [3, 3, 3];\nobjective = 3;\n", "raw": "........\n........\n......A.\n....B...\nCC......\n.C......\n....BB..\n..A....A\nn = 8;\nq = 3;\ncounts = [3, 3, 3];\nobjective = 3;\n", "json": {  "x" : [[{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 1}}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 2}}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{ "c" : "Q", "e" : { "c" : "Army", "e" : 3}}, { "c" : "Q", "e" : { "c" : "Army", "e" : 3}}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 3}}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 2}}, { "c" : "Q", "e" : { "c" : "Army", "e" : 2}}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 1}}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 1}}]],  "counts" : [3, 3, 3],  "_objective" : 3}}, "sections": ["default", "raw", "json"], "time": 1341}
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Equal objects must have equal hashcodes. During rehashing, Trove discovered that the following two objects claim to be equal (as in java.lang.Object.equals()) but their hashCodes (or those calculated by your TObjectHashingStrategy) are not equal.This violates the general contract of java.lang.Object.hashCode().  See bullet point two in that method's documentation. object #1 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1654248691 hashCode= 1596 toString= 1.(X_INTRODUCED_117_) + 0[1,1]; object #2 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1818113744 hashCode= 1531 toString= 1.(X_INTRODUCED_117_) + 0[1,1]
+
+	at java.base/java.util.concurrent.ForkJoinTask.getException(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.reportException(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.get(Unknown Source)
+	at org.chocosolver.solver.ParallelPortfolio.solve(ParallelPortfolio.java:276)
+	at org.chocosolver.parser.flatzinc.Flatzinc.manyThread(Flatzinc.java:321)
+	at org.chocosolver.parser.RegParser.solve(RegParser.java:361)
+	at org.chocosolver.parser.flatzinc.ChocoFZN.main(ChocoFZN.java:29)
+Caused by: java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Equal objects must have equal hashcodes. During rehashing, Trove discovered that the following two objects claim to be equal (as in java.lang.Object.equals()) but their hashCodes (or those calculated by your TObjectHashingStrategy) are not equal.This violates the general contract of java.lang.Object.hashCode().  See bullet point two in that method's documentation. object #1 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1654248691 hashCode= 1596 toString= 1.(X_INTRODUCED_117_) + 0[1,1]; object #2 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1818113744 hashCode= 1531 toString= 1.(X_INTRODUCED_117_) + 0[1,1]
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Equal objects must have equal hashcodes. During rehashing, Trove discovered that the following two objects claim to be equal (as in java.lang.Object.equals()) but their hashCodes (or those calculated by your TObjectHashingStrategy) are not equal.This violates the general contract of java.lang.Object.hashCode().  See bullet point two in that method's documentation. object #1 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1654248691 hashCode= 1596 toString= 1.(X_INTRODUCED_117_) + 0[1,1]; object #2 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1818113744 hashCode= 1531 toString= 1.(X_INTRODUCED_117_) + 0[1,1]
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.getException(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.reportException(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.join(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.invoke(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateParallel(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateParallel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at org.chocosolver.solver.ParallelPortfolio.lambda$solve$1(ParallelPortfolio.java:269)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedInterruptibleRunnable.compute(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: Equal objects must have equal hashcodes. During rehashing, Trove discovered that the following two objects claim to be equal (as in java.lang.Object.equals()) but their hashCodes (or those calculated by your TObjectHashingStrategy) are not equal.This violates the general contract of java.lang.Object.hashCode().  See bullet point two in that method's documentation. object #1 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1654248691 hashCode= 1596 toString= 1.(X_INTRODUCED_117_) + 0[1,1]; object #2 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1818113744 hashCode= 1531 toString= 1.(X_INTRODUCED_117_) + 0[1,1]
+
+	at gnu.trove.impl.hash.TObjectHash.buildObjectContractViolation(TObjectHash.java:464)
+	at gnu.trove.impl.hash.TObjectHash.throwObjectContractViolation(TObjectHash.java:426)
+	at gnu.trove.map.hash.TObjectDoubleHashMap.rehash(TObjectDoubleHashMap.java:191)
+	at gnu.trove.impl.hash.THash.postInsertHook(THash.java:388)
+	at gnu.trove.map.hash.TObjectDoubleHashMap.adjustOrPutValue(TObjectDoubleHashMap.java:456)
+	at org.chocosolver.solver.search.strategy.selectors.variables.DomOverWDegRef.increase(DomOverWDegRef.java:64)
+	at org.chocosolver.solver.search.strategy.selectors.variables.AbstractCriterionBasedVariableSelector.onContradiction(AbstractCriterionBasedVariableSelector.java:225)
+	at org.chocosolver.solver.search.loop.monitors.SearchMonitorList.onContradiction(SearchMonitorList.java:134)
+	at org.chocosolver.solver.Solver.propagate(Solver.java:562)
+	at org.chocosolver.solver.Solver.searchLoop(Solver.java:343)
+	at org.chocosolver.solver.Solver.solve(Solver.java:311)
+	at org.chocosolver.solver.ParallelPortfolio.lambda$solve$0(ParallelPortfolio.java:271)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source)
+	at java.base/java.util.concurrent.CountedCompleter.exec(Unknown Source)
+	... 5 more
+{"type": "statistics", "statistics": {"initTime": 0.385, "solveTime": 2.236, "solutions": 2, "variables": 1258, "intVariables": 1215, "boolVariables": 43, "setVariables": 0, "constraints": 270, "objective": 4, "nodes": 19471, "failures": 16540, "restarts": 99, "peakDepth": 61}}
+{"type": "solution", "output": {"default": "......AA\nBB..B...\n........\n.B......\n........\n......AA\n..CC....\n..CC....\nn = 8;\nq = 3;\ncounts = [4, 4, 4];\nobjective = 4;\n", "raw": "......AA\nBB..B...\n........\n.B......\n........\n......AA\n..CC....\n..CC....\nn = 8;\nq = 3;\ncounts = [4, 4, 4];\nobjective = 4;\n", "json": {  "x" : [[{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 1}}, { "c" : "Q", "e" : { "c" : "Army", "e" : 1}}], [{ "c" : "Q", "e" : { "c" : "Army", "e" : 2}}, { "c" : "Q", "e" : { "c" : "Army", "e" : 2}}, {"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 2}}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 2}}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 1}}, { "c" : "Q", "e" : { "c" : "Army", "e" : 1}}], [{"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 3}}, { "c" : "Q", "e" : { "c" : "Army", "e" : 3}}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, { "c" : "Q", "e" : { "c" : "Army", "e" : 3}}, { "c" : "Q", "e" : { "c" : "Army", "e" : 3}}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}]],  "counts" : [4, 4, 4],  "_objective" : 4}}, "sections": ["default", "raw", "json"], "time": 2942}
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Equal objects must have equal hashcodes. During rehashing, Trove discovered that the following two objects claim to be equal (as in java.lang.Object.equals()) but their hashCodes (or those calculated by your TObjectHashingStrategy) are not equal.This violates the general contract of java.lang.Object.hashCode().  See bullet point two in that method's documentation. object #1 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1726994892 hashCode= 1529 toString= 1.(X_INTRODUCED_115_) + 0[1,1]; object #2 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1747467105 hashCode= 1659 toString= 1.(X_INTRODUCED_115_) + 0[1,1]
+
+	at java.base/java.util.concurrent.ForkJoinTask.getException(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.reportException(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.get(Unknown Source)
+	at org.chocosolver.solver.ParallelPortfolio.solve(ParallelPortfolio.java:276)
+	at org.chocosolver.parser.flatzinc.Flatzinc.manyThread(Flatzinc.java:321)
+	at org.chocosolver.parser.RegParser.solve(RegParser.java:361)
+	at org.chocosolver.parser.flatzinc.ChocoFZN.main(ChocoFZN.java:29)
+Caused by: java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Equal objects must have equal hashcodes. During rehashing, Trove discovered that the following two objects claim to be equal (as in java.lang.Object.equals()) but their hashCodes (or those calculated by your TObjectHashingStrategy) are not equal.This violates the general contract of java.lang.Object.hashCode().  See bullet point two in that method's documentation. object #1 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1726994892 hashCode= 1529 toString= 1.(X_INTRODUCED_115_) + 0[1,1]; object #2 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1747467105 hashCode= 1659 toString= 1.(X_INTRODUCED_115_) + 0[1,1]
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Equal objects must have equal hashcodes. During rehashing, Trove discovered that the following two objects claim to be equal (as in java.lang.Object.equals()) but their hashCodes (or those calculated by your TObjectHashingStrategy) are not equal.This violates the general contract of java.lang.Object.hashCode().  See bullet point two in that method's documentation. object #1 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1726994892 hashCode= 1529 toString= 1.(X_INTRODUCED_115_) + 0[1,1]; object #2 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1747467105 hashCode= 1659 toString= 1.(X_INTRODUCED_115_) + 0[1,1]
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.getException(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.reportException(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.join(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.invoke(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateParallel(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateParallel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at org.chocosolver.solver.ParallelPortfolio.lambda$solve$1(ParallelPortfolio.java:269)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedInterruptibleRunnable.compute(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: Equal objects must have equal hashcodes. During rehashing, Trove discovered that the following two objects claim to be equal (as in java.lang.Object.equals()) but their hashCodes (or those calculated by your TObjectHashingStrategy) are not equal.This violates the general contract of java.lang.Object.hashCode().  See bullet point two in that method's documentation. object #1 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1726994892 hashCode= 1529 toString= 1.(X_INTRODUCED_115_) + 0[1,1]; object #2 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1747467105 hashCode= 1659 toString= 1.(X_INTRODUCED_115_) + 0[1,1]
+
+	at gnu.trove.impl.hash.TObjectHash.buildObjectContractViolation(TObjectHash.java:464)
+	at gnu.trove.impl.hash.TObjectHash.throwObjectContractViolation(TObjectHash.java:426)
+	at gnu.trove.map.hash.TObjectDoubleHashMap.rehash(TObjectDoubleHashMap.java:191)
+	at gnu.trove.impl.hash.THash.postInsertHook(THash.java:388)
+	at gnu.trove.map.hash.TObjectDoubleHashMap.adjustOrPutValue(TObjectDoubleHashMap.java:456)
+	at org.chocosolver.solver.search.strategy.selectors.variables.DomOverWDeg.increase(DomOverWDeg.java:89)
+	at org.chocosolver.solver.search.strategy.selectors.variables.AbstractCriterionBasedVariableSelector.onContradiction(AbstractCriterionBasedVariableSelector.java:225)
+	at org.chocosolver.solver.search.loop.monitors.SearchMonitorList.onContradiction(SearchMonitorList.java:134)
+	at org.chocosolver.solver.Solver.propagate(Solver.java:562)
+	at org.chocosolver.solver.Solver.searchLoop(Solver.java:343)
+	at org.chocosolver.solver.Solver.solve(Solver.java:311)
+	at org.chocosolver.solver.ParallelPortfolio.lambda$solve$0(ParallelPortfolio.java:271)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source)
+	at java.base/java.util.concurrent.CountedCompleter.exec(Unknown Source)
+	... 5 more
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 4467}
+{"type": "statistics", "statistics": {"initTime": 0.385, "solveTime": 3.767, "solutions": 2, "variables": 1258, "intVariables": 1215, "boolVariables": 43, "setVariables": 0, "constraints": 270, "objective": 4, "nodes": 38129, "failures": 33632, "restarts": 190, "peakDepth": 61}}
+{"type": "statistics", "statistics": {"nSolutions": 5}}

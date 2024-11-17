@@ -1,0 +1,8 @@
+{boolVariables: 620, configuration: org-choco-choco_bool-model-sickness_small-4_10cores_20threads,
+  constraints: 1410, cores: '10', data_file: ../data/mzn-challenge/2022/roster-sickness/small-4.dzn,
+  datetime: '2024-09-10T19:27:21.226865', failures: 5472527, flatBoolVars: 1444, flatIntConstraints: 1391,
+  flatIntVars: 344, flatTime: 1.06622, initTime: 0.744, intVariables: 69, method: maximize,
+  model: ../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn, mzn_solver: org.choco.choco,
+  nSolutions: 10, nodes: 5480593, objective: 14457, paths: 0, peakDepth: 77, problem: roster-sickness,
+  restarts: 240, setVariables: 0, solutions: 6, solveTime: 299.996, status: SATISFIED,
+  threads: '20', variables: 689}

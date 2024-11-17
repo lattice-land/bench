@@ -1,0 +1,8 @@
+{boolVariables: 154, configuration: org-choco-choco_model_data3_5_31, constraints: 165,
+  cores: '1', data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn,
+  datetime: '2024-09-10T20:45:47.432894', evaluatedReifiedConstraints: 76, failures: 165572,
+  flatBoolVars: 76, flatIntConstraints: 164, flatIntVars: 236, flatTime: 0.10793,
+  initTime: 0.268, intVariables: 223, method: maximize, model: ../data/mzn-challenge/2022/team-assignment/model.mzn,
+  mzn_solver: org.choco.choco, nSolutions: 54, nodes: 172052, objective: 66664, paths: 0,
+  peakDepth: 67, problem: team-assignment, restarts: 138, setVariables: 0, solutions: 54,
+  solveTime: 300.0, status: SATISFIED, threads: '1', variables: 377}

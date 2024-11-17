@@ -1,0 +1,12 @@
+{and_nodes: 256, arch: HYBRID, configuration: turbo-gpu-release_v1.2.2_bool-model-sickness_large-2_10cores_64threads_timeout300000ms_10_64,
+  cores: '10', cuda_version: 12060, cutnodes: 0, data_file: ../data/mzn-challenge/2022/roster-sickness/large-2.dzn,
+  datetime: '2024-10-25T10:03:12.693676', eliminated_formulas: 25321, eliminated_variables: 22864,
+  eps_num_subproblems: 4096, eps_skipped_subproblems: 704, eps_solved_subproblems: 3366,
+  failures: 3324071, fixpoint_iterations: 14459556, flatBoolVars: 7425, flatIntConstraints: 3317,
+  flatIntVars: 627, flatTime: 22.0523, free_search: no, hardware: precision5820, initTime: 0.43,
+  memory_configuration: store_shared, method: maximize, model: ../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn,
+  mzn_solver: turbo.gpu.release, nSolutions: 1, nodes: 6689438, num_blocks_done: 38,
+  num_solutions: 1135, objective: 247890, or_nodes: 64, paths: 0, peakDepth: 43, problem: roster-sickness,
+  problem_path: /tmp/mznfileVB9OtD.fzn, propagators: 370, shared_mem: 1004, solveTime: 300.034,
+  solver: Turbo, stack_size: 32000, status: SATISFIED, threads: '64', timeout_ms: 300000,
+  variables: 88, version: v1.2.2}

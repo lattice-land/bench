@@ -1,0 +1,12 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.2_accap_accap_a4_f30_t15_10cores_64threads_timeout300000ms_10_64", "problem": "accap", "model": "../data/mzn-challenge/2022/accap/accap.mzn", "data_file": "../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json", "mzn_solver": "turbo.gpu.release", "version": "v1.2.2", "timeout_ms": "300000", "datetime": "2024-10-25T09:42:58.624126", "status": "UNKNOWN", "cores": "10", "threads": "64"}}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 460, "flatIntVars": 36, "flatBoolConstraints": 230, "flatIntConstraints": 689, "evaluatedReifiedConstraints": 460, "method": "minimize", "flatTime": 0.0691611}}
+{"type": "comment", "comment": "% stack_memory=3145728000 [3.15GB]\n"}
+{"type": "comment", "comment": "% heap_memory=19931273626 [19.93GB]\n"}
+{"type": "comment", "comment": "% and_nodes=256\n"}
+{"type": "comment", "comment": "% or_nodes=64\n"}
+{"type": "comment", "comment": "% max_blocks_per_sm=4\n"}
+{"type": "statistics", "statistics": {"memory_configuration": "store_shared", "shared_mem": 4268}}
+{"type": "solution", "output": {"default": "yCoor = [24, 6, 28, 1, 22, 1, 1, 10, 10, 27, 24, 18, 33, 35, 4, 23, 14, 46, 24, 7, 14, 32, 10, 12, 20, 36, 36, 23, 41, 11];\nS = [9, 25, 24, 21];\nD = 48;\nobjective = 127;\n", "raw": "yCoor = [24, 6, 28, 1, 22, 1, 1, 10, 10, 27, 24, 18, 33, 35, 4, 23, 14, 46, 24, 7, 14, 32, 10, 12, 20, 36, 36, 23, 41, 11];\nS = [9, 25, 24, 21];\nD = 48;\nobjective = 127;\n", "json": {  "yCoor" : [24, 6, 28, 1, 22, 1, 1, 10, 10, 27, 24, 18, 33, 35, 4, 23, 14, 46, 24, 7, 14, 32, 10, 12, 20, 36, 36, 23, 41, 11],  "objective" : 127,  "S" : [9, 25, 24, 21],  "D" : 48,  "_objective" : 127}}, "sections": ["default", "raw", "json"], "time": 300137}
+{"type": "statistics", "statistics": {"problem_path": "/tmp/mznfile5537a2.fzn", "solver": "Turbo", "version": "v1.2.2", "hardware": "precision5820", "arch": "HYBRID", "free_search": "no", "or_nodes": 64, "timeout_ms": 300000, "and_nodes": 256, "stack_size": 32000, "cuda_version": 12060, "cutnodes": 0, "nodes": 6866708, "failures": 3431998, "variables": 496, "propagators": 919, "peakDepth": 105, "initTime": 0.097, "solveTime": 300.012, "num_solutions": 40, "eps_num_subproblems": 4096, "eps_solved_subproblems": 33, "eps_skipped_subproblems": 176, "num_blocks_done": 0, "fixpoint_iterations": 58043700, "eliminated_variables": 34, "eliminated_formulas": 70, "objective": 127}}
+{"type": "statistics", "statistics": {"nSolutions": 1}}

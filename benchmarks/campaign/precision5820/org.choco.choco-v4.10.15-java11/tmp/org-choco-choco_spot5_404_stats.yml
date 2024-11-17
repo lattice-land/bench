@@ -1,0 +1,8 @@
+{boolVariables: 201, configuration: org-choco-choco_spot5_404, constraints: 812, cores: '1',
+  data_file: ../data/mzn-challenge/2022/spot5/404.dzn, datetime: '2024-09-10T20:13:27.650265',
+  evaluatedReifiedConstraints: 100, failures: 8824949, flatBoolVars: 100, flatIntConstraints: 811,
+  flatIntVars: 201, flatTime: 0.0975391, initTime: 0.25, intVariables: 101, method: minimize,
+  model: ../data/mzn-challenge/2022/spot5/spot5.mzn, mzn_solver: org.choco.choco,
+  nSolutions: 7, nodes: 8997356, objective: 116, paths: 0, peakDepth: 103, problem: spot5,
+  restarts: 3422, setVariables: 0, solutions: 7, solveTime: 300.0, status: SATISFIED,
+  threads: '1', variables: 302}

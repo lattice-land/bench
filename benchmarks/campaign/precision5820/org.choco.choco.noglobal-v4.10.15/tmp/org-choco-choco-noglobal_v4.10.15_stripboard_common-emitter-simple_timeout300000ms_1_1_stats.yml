@@ -1,0 +1,9 @@
+{boolVariables: 2852, configuration: org-choco-choco-noglobal_v4.10.15_stripboard_common-emitter-simple_timeout300000ms_1_1,
+  constraints: 2820, cores: '1', data_file: ../data/mzn-challenge/2022/stripboard/common-emitter-simple.dzn,
+  datetime: '2024-09-11T20:06:24.239755', eliminatedImplications: 6, evaluatedReifiedConstraints: 1627,
+  failures: 446119, flatBoolConstraints: 641, flatBoolVars: 1615, flatIntConstraints: 2178,
+  flatIntVars: 298, flatTime: 0.192552, initTime: 0.303, intVariables: 315, method: minimize,
+  model: ../data/mzn-challenge/2022/stripboard/stripboard.mzn, mzn_solver: org.choco.choco.noglobal,
+  nSolutions: 6, nodes: 450041, objective: 42, paths: 0, peakDepth: 191, problem: stripboard,
+  restarts: 288, setVariables: 0, solutions: 6, solveTime: 300.0, status: SATISFIED,
+  threads: '1', timeout_ms: '300000', variables: 3167, version: v4.10.15}

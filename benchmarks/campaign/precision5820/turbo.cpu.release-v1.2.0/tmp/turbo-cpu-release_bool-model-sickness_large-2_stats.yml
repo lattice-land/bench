@@ -1,0 +1,10 @@
+{arch: cpu, configuration: turbo-cpu-release_bool-model-sickness_large-2, cutnodes: 0,
+  data_file: ../data/mzn-challenge/2022/roster-sickness/large-2.dzn, datetime: '2024-08-29T19:45:40.853036',
+  eliminated_formulas: 25327, eliminated_variables: 22864, eps_num_subproblems: 1,
+  eps_skipped_subproblems: 0, eps_solved_subproblems: 0, failures: 1801169, fixpoint_iterations: 7339341,
+  flatBoolVars: 7425, flatIntConstraints: 3324, flatIntVars: 627, flatTime: 21.8612,
+  free_search: no, hardware: precision5820, initTime: 0.343, method: maximize, model: ../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn,
+  mzn_solver: turbo.cpu.release, nSolutions: 1, nodes: 3602353, num_blocks_done: 0,
+  num_solutions: 4, objective: 247896, or_nodes: 0, paths: 0, peakDepth: 59, problem: roster-sickness,
+  problem_path: /tmp/mznfileQdYhrK.fzn, propagators: 371, solveTime: 300.0, solver: Turbo,
+  status: SATISFIED, timeout_ms: 300000, variables: 88, version: v1.2.0}

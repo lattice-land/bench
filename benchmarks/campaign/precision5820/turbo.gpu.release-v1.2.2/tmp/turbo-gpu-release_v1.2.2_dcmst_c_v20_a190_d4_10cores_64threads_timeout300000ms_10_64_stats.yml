@@ -1,0 +1,12 @@
+{and_nodes: 256, arch: HYBRID, configuration: turbo-gpu-release_v1.2.2_dcmst_c_v20_a190_d4_10cores_64threads_timeout300000ms_10_64,
+  cores: '10', cuda_version: 12060, cutnodes: 0, data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn,
+  datetime: '2024-10-25T10:13:39.142986', eliminated_formulas: 1094, eliminated_variables: 842,
+  eps_num_subproblems: 4096, eps_skipped_subproblems: 0, eps_solved_subproblems: 4077,
+  evaluatedReifiedConstraints: 1571, failures: 240074, fixpoint_iterations: 4901129,
+  flatBoolConstraints: 3852, flatBoolVars: 2141, flatIntConstraints: 1785, flatIntVars: 252,
+  flatTime: 0.238286, free_search: no, hardware: precision5820, initTime: 0.325, memory_configuration: store_shared,
+  method: minimize, model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn, mzn_solver: turbo.gpu.release,
+  nSolutions: 1, nodes: 521398, num_blocks_done: 45, num_solutions: 59, objective: 394,
+  or_nodes: 64, paths: 0, peakDepth: 36, problem: diameterc-mst, problem_path: /tmp/mznfile7JujyZ.fzn,
+  propagators: 5865, shared_mem: 17924, solveTime: 300.088, solver: Turbo, stack_size: 32000,
+  status: SATISFIED, threads: '64', timeout_ms: 300000, variables: 2203, version: v1.2.2}

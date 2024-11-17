@@ -1,0 +1,7 @@
+{boolVariables: 2599, configuration: com-google-ortools-sat-noglobal_v9.9_tower_100_100_20_100-04_timeout300000ms_1_1,
+  cores: '1', data_file: ../data/mzn-challenge/2022/tower/100_100_20_100-04.dzn, datetime: '2024-09-12T09:36:35.103025',
+  evaluatedReifiedConstraints: 8060, failures: 1332, flatBoolConstraints: 100, flatBoolVars: 4260,
+  flatIntConstraints: 10887, flatIntVars: 4747, flatTime: 0.365476, method: maximize,
+  model: ../data/mzn-challenge/2022/tower/tower.mzn, mzn_solver: com.google.ortools.sat.noglobal,
+  nSolutions: 13, objective: 90, objectiveBound: 100, paths: 0, problem: tower, propagations: 21158659,
+  solveTime: 73.2323, status: SATISFIED, threads: '1', timeout_ms: '300000', version: v9.9}

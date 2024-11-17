@@ -1,0 +1,42 @@
+- configuration: turbo-gpu-release_dcmst_c_v20_a190_d4
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-08-27T23:03:41.508310'
+  evaluatedReifiedConstraints: 1571
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.242789
+  memory_configuration: store_shared
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: turbo.gpu.release
+  paths: 0
+  problem: diameterc-mst
+  propagator_mem: 3982881
+  shared_mem: 17972
+  solution:
+    es: [false, false, false, false, false, true, false, false, false, false, false,
+      true, true, false, false, true, false, true, false, false, false, false, false,
+      false, false, false, false, true, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, true, false, false, false, true, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      true, false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, true, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    h: [1, 1, 2, 2, 1, 2, 2, 2, 1, 2, 2, 1, 0, 2, 2, 2, 2, 1, 2, 2]
+    objective: 394
+    p: [13, 13, 12, 5, 13, 9, 1, 18, 13, 9, 2, 13, 13, 1, 12, 5, 1, 13, 1, 5]
+    root: 13
+  status: SATISFIED
+  store_mem: 17872
+  time: 300.66

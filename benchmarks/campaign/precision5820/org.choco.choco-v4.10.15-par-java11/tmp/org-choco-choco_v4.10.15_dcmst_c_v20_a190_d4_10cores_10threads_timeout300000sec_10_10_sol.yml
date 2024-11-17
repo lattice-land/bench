@@ -1,0 +1,1404 @@
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 0
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 24
+  objective: 1145
+  paths: 0
+  peakDepth: 23
+  problem: diameterc-mst
+  restarts: 1
+  setVariables: 0
+  solution:
+    es: [true, true, true, true, true, true, true, true, true, true, true, true, true,
+      true, true, true, true, true, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false]
+    h: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    objective: 1145
+    p: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    root: 1
+  solutions: 1
+  solveTime: 0.107
+  status: SATISFIED
+  threads: '10'
+  time: 1.614
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 0
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 82
+  objective: 1069
+  paths: 0
+  peakDepth: 58
+  problem: diameterc-mst
+  restarts: 2
+  setVariables: 0
+  solution:
+    es: [true, true, true, true, true, true, false, true, true, true, true, true,
+      true, true, true, true, true, true, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false]
+    h: [0, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    objective: 1069
+    p: [1, 1, 1, 1, 1, 1, 1, 18, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    root: 1
+  solutions: 2
+  solveTime: 0.175
+  status: SATISFIED
+  threads: '10'
+  time: 1.681
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 0
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 171
+  objective: 1016
+  paths: 0
+  peakDepth: 89
+  problem: diameterc-mst
+  restarts: 3
+  setVariables: 0
+  solution:
+    es: [true, true, true, true, true, true, false, true, true, true, true, false,
+      true, true, true, true, true, true, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false]
+    h: [0, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1]
+    objective: 1016
+    p: [1, 1, 1, 1, 1, 1, 1, 18, 1, 1, 1, 1, 15, 1, 1, 1, 1, 1, 1, 1]
+    root: 1
+  solutions: 3
+  solveTime: 0.227
+  status: SATISFIED
+  threads: '10'
+  time: 1.732
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 0
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 280
+  objective: 958
+  paths: 0
+  peakDepth: 109
+  problem: diameterc-mst
+  restarts: 4
+  setVariables: 0
+  solution:
+    es: [false, true, true, true, true, true, false, true, true, true, true, false,
+      true, true, true, true, true, true, true, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false]
+    h: [0, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1]
+    objective: 958
+    p: [1, 6, 1, 1, 1, 1, 1, 18, 1, 1, 1, 1, 15, 1, 1, 1, 1, 1, 1, 1]
+    root: 1
+  solutions: 4
+  solveTime: 0.275
+  status: SATISFIED
+  threads: '10'
+  time: 1.781
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 22
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 335
+  objective: 570
+  paths: 0
+  peakDepth: 157
+  problem: diameterc-mst
+  restarts: 2
+  setVariables: 0
+  solution:
+    es: [false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, true, false, false,
+      false, false, true, false, true, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, true, false, false, true, true, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, true, false, false, false, false, false, false]
+    h: [1, 1, 1, 0, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 1, 1, 2, 1]
+    objective: 570
+    p: [4, 4, 4, 4, 20, 7, 4, 18, 2, 18, 2, 3, 18, 4, 18, 20, 4, 4, 1, 4]
+    root: 4
+  solutions: 1
+  solveTime: 0.381
+  status: SATISFIED
+  threads: '10'
+  time: 1.886
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 40
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 525
+  objective: 540
+  paths: 0
+  peakDepth: 157
+  problem: diameterc-mst
+  restarts: 3
+  setVariables: 0
+  solution:
+    es: [false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, true, false, false, true, false, false,
+      false, false, true, false, true, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, true, false, false, false, true, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, true, false, false, false, false, false, false]
+    h: [1, 1, 1, 0, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 1]
+    objective: 540
+    p: [4, 4, 4, 4, 20, 7, 4, 18, 2, 18, 2, 3, 18, 4, 18, 20, 1, 4, 1, 4]
+    root: 4
+  solutions: 2
+  solveTime: 0.428
+  status: SATISFIED
+  threads: '10'
+  time: 1.934
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 50
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 439
+  objective: 509
+  paths: 0
+  peakDepth: 137
+  problem: diameterc-mst
+  restarts: 4
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, true, true, false, false, true, false, false, false, true, true,
+      false, false, false, false, true, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, true, false, false, false, false]
+    h: [1, 2, 2, 2, 2, 2, 1, 2, 1, 2, 2, 1, 1, 1, 1, 2, 0, 2, 1, 2]
+    objective: 509
+    p: [17, 9, 12, 12, 12, 9, 17, 12, 17, 9, 13, 17, 17, 17, 17, 12, 17, 13, 17, 12]
+    root: 17
+  solutions: 1
+  solveTime: 0.464
+  status: SATISFIED
+  threads: '10'
+  time: 1.969
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 59
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 622
+  objective: 489
+  paths: 0
+  peakDepth: 137
+  problem: diameterc-mst
+  restarts: 5
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, true, true, false, false, true, false, false, false, true, true, false,
+      false, false, false, true, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, true, false, false, false, false]
+    h: [1, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 1, 1, 1, 1, 2, 0, 2, 1, 2]
+    objective: 489
+    p: [17, 9, 12, 12, 12, 9, 19, 12, 17, 9, 13, 17, 17, 17, 17, 12, 17, 13, 17, 12]
+    root: 17
+  solutions: 2
+  solveTime: 0.497
+  status: SATISFIED
+  threads: '10'
+  time: 2.001
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 70
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 857
+  objective: 456
+  paths: 0
+  peakDepth: 164
+  problem: diameterc-mst
+  restarts: 6
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      true, true, true, false, false, true, false, false, false, true, true, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false]
+    h: [1, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 1, 1, 1, 2, 2, 0, 2, 1, 2]
+    objective: 456
+    p: [17, 9, 12, 12, 12, 9, 19, 12, 17, 9, 13, 17, 17, 17, 12, 12, 17, 13, 17, 12]
+    root: 17
+  solutions: 3
+  solveTime: 0.557
+  status: SATISFIED
+  threads: '10'
+  time: 2.062
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 89
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 1172
+  objective: 441
+  paths: 0
+  peakDepth: 164
+  problem: diameterc-mst
+  restarts: 8
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, true, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, true, true, false, false, true, false, false, false, true, true, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false]
+    h: [1, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 1, 1, 1, 2, 2, 0, 2, 1, 2]
+    objective: 441
+    p: [17, 9, 12, 12, 12, 9, 19, 12, 17, 9, 9, 17, 17, 17, 12, 12, 17, 13, 17, 12]
+    root: 17
+  solutions: 4
+  solveTime: 0.612
+  status: SATISFIED
+  threads: '10'
+  time: 2.117
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 108
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 1357
+  objective: 407
+  paths: 0
+  peakDepth: 164
+  problem: diameterc-mst
+  restarts: 9
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, true, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      true, true, true, true, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false]
+    h: [1, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 1, 2, 1, 2, 2, 0, 2, 1, 2]
+    objective: 407
+    p: [17, 9, 12, 12, 12, 9, 19, 12, 17, 9, 9, 17, 12, 17, 12, 12, 17, 12, 17, 12]
+    root: 17
+  solutions: 5
+  solveTime: 0.659
+  status: SATISFIED
+  threads: '10'
+  time: 2.164
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 195
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 2025
+  objective: 395
+  paths: 0
+  peakDepth: 164
+  problem: diameterc-mst
+  restarts: 17
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, true, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, true, false, true, false, false,
+      false, false, false, false, false, false, false, false, true, false, true, true,
+      false, true, false, true, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    h: [2, 2, 2, 2, 2, 2, 2, 2, 1, 0, 2, 1, 2, 2, 2, 2, 1, 2, 1, 2]
+    objective: 395
+    p: [17, 9, 12, 12, 12, 9, 19, 12, 10, 10, 9, 10, 12, 17, 12, 12, 10, 12, 10, 12]
+    root: 10
+  solutions: 6
+  solveTime: 0.822
+  status: SATISFIED
+  threads: '10'
+  time: 2.327
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 221
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 2446
+  objective: 394
+  paths: 0
+  peakDepth: 164
+  problem: diameterc-mst
+  restarts: 19
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, true, true, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      true, true, false, true, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 2, 2, 2, 2, 1, 2, 1, 0, 2, 1, 2, 2, 2, 2, 1, 2, 2, 2]
+    objective: 394
+    p: [17, 9, 12, 12, 12, 9, 10, 12, 10, 10, 9, 10, 12, 17, 12, 12, 10, 12, 17, 12]
+    root: 10
+  solutions: 7
+  solveTime: 0.893
+  status: SATISFIED
+  threads: '10'
+  time: 2.398
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 257
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 794
+  objective: 393
+  paths: 0
+  peakDepth: 261
+  problem: diameterc-mst
+  restarts: 16
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, true, false, false, true, false,
+      false, false, false, false, false, true, false, false, false, false, true, true,
+      false, false, false, true, false, true, false, false, false, false]
+    h: [2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 1, 2, 0, 2, 2, 2, 1, 1]
+    objective: 393
+    p: [19, 10, 12, 20, 20, 10, 19, 12, 10, 15, 10, 15, 15, 19, 15, 20, 19, 13, 15,
+      15]
+    root: 15
+  solutions: 1
+  solveTime: 0.905
+  status: SATISFIED
+  threads: '10'
+  time: 2.411
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 261
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 2846
+  objective: 391
+  paths: 0
+  peakDepth: 164
+  problem: diameterc-mst
+  restarts: 22
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, true, false, false, false, false, false, true, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, true, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, true, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 2, 1, 2, 2, 1, 2, 1, 0, 2, 1, 2, 2, 2, 2, 1, 2, 2, 2]
+    objective: 391
+    p: [17, 9, 4, 10, 4, 9, 10, 12, 10, 10, 9, 10, 12, 17, 12, 4, 10, 12, 17, 4]
+    root: 10
+  solutions: 8
+  solveTime: 0.97
+  status: SATISFIED
+  threads: '10'
+  time: 2.475
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 265
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 3063
+  objective: 388
+  paths: 0
+  peakDepth: 164
+  problem: diameterc-mst
+  restarts: 23
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, true, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, true, false, false, false, false, false, true, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, true, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false]
+    h: [2, 1, 2, 1, 2, 2, 1, 2, 1, 0, 2, 1, 2, 2, 2, 2, 1, 2, 2, 2]
+    objective: 388
+    p: [17, 10, 4, 10, 4, 9, 10, 12, 10, 10, 2, 10, 12, 17, 12, 4, 10, 12, 17, 4]
+    root: 10
+  solutions: 9
+  solveTime: 1.006
+  status: SATISFIED
+  threads: '10'
+  time: 2.51
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 391
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 4449
+  objective: 385
+  paths: 0
+  peakDepth: 164
+  problem: diameterc-mst
+  restarts: 33
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, true, false, false, false, false, false, true, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      true, false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 2, 1, 2, 1, 1, 2, 1, 0, 2, 1, 2, 2, 2, 2, 1, 2, 2, 2]
+    objective: 385
+    p: [17, 6, 4, 10, 4, 10, 10, 12, 10, 10, 6, 10, 12, 17, 12, 4, 10, 12, 17, 4]
+    root: 10
+  solutions: 10
+  solveTime: 1.206
+  status: SATISFIED
+  threads: '10'
+  time: 2.71
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 416
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 2015
+  objective: 374
+  paths: 0
+  peakDepth: 261
+  problem: diameterc-mst
+  restarts: 28
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, true, true, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, true, false, false, true, false,
+      false, false, false, false, false, true, false, false, false, false, true, true,
+      false, false, false, true, false, true, false, false, false, false]
+    h: [2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 1, 1, 2, 0, 2, 2, 2, 1, 1]
+    objective: 374
+    p: [19, 9, 12, 20, 20, 9, 19, 12, 15, 9, 9, 15, 15, 19, 15, 20, 19, 13, 15, 15]
+    root: 15
+  solutions: 2
+  solveTime: 1.228
+  status: SATISFIED
+  threads: '10'
+  time: 2.733
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 436
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 2180
+  objective: 373
+  paths: 0
+  peakDepth: 261
+  problem: diameterc-mst
+  restarts: 29
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, true, false, false,
+      false, false, true, true, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, true, false, false, true, false,
+      false, false, false, false, false, true, false, true, false, false, true, true,
+      false, false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 1, 1, 2, 0, 1, 2, 2, 1, 1]
+    objective: 373
+    p: [19, 9, 12, 20, 16, 9, 19, 16, 15, 9, 9, 15, 15, 19, 15, 15, 19, 13, 15, 15]
+    root: 15
+  solutions: 3
+  solveTime: 1.262
+  status: SATISFIED
+  threads: '10'
+  time: 2.767
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 477
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 2444
+  objective: 366
+  paths: 0
+  peakDepth: 261
+  problem: diameterc-mst
+  restarts: 33
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, true, true, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, true, false, false, true, false, false,
+      false, false, false, false, true, false, true, false, false, true, false, false,
+      false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 1, 2, 2, 2, 2, 2, 1, 2, 2, 1, 1, 2, 0, 1, 2, 2, 1, 2]
+    objective: 366
+    p: [19, 9, 15, 3, 16, 9, 19, 16, 15, 9, 9, 15, 15, 19, 15, 15, 19, 13, 15, 3]
+    root: 15
+  solutions: 4
+  solveTime: 1.301
+  status: SATISFIED
+  threads: '10'
+  time: 2.807
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 494
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 2602
+  objective: 365
+  paths: 0
+  peakDepth: 261
+  problem: diameterc-mst
+  restarts: 34
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false, false,
+      false, true, true, false, false, false, true, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, true, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, true, false, false, true, false, false,
+      false, false, false, false, true, false, false, false, false, true, false, false,
+      false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 1, 1, 2, 0, 2, 2, 2, 1, 2]
+    objective: 365
+    p: [19, 9, 12, 5, 15, 9, 19, 5, 15, 9, 9, 15, 15, 19, 15, 5, 19, 13, 15, 5]
+    root: 15
+  solutions: 5
+  solveTime: 1.315
+  status: SATISFIED
+  threads: '10'
+  time: 2.82
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 612
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 3213
+  objective: 362
+  paths: 0
+  peakDepth: 261
+  problem: diameterc-mst
+  restarts: 44
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, true, false, false, false, true, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, true, true, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, true, true, false,
+      false, false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 1, 1, 2, 0, 2, 2, 1, 1, 2]
+    objective: 362
+    p: [19, 9, 12, 5, 15, 9, 19, 18, 15, 9, 9, 15, 15, 19, 15, 5, 19, 15, 15, 5]
+    root: 15
+  solutions: 6
+  solveTime: 1.462
+  status: SATISFIED
+  threads: '10'
+  time: 2.967
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 1265
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 4707
+  objective: 354
+  paths: 0
+  peakDepth: 261
+  problem: diameterc-mst
+  restarts: 74
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, true, false, false, false, true, false, false, true, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, true, true, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, true, false, false, false, false, true, true, false, false,
+      false, false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 1, 1, 2, 0, 2, 1, 1, 2, 2]
+    objective: 354
+    p: [17, 9, 12, 5, 15, 9, 9, 18, 15, 9, 9, 15, 15, 17, 15, 5, 15, 15, 17, 5]
+    root: 15
+  solutions: 7
+  solveTime: 1.874
+  status: SATISFIED
+  threads: '10'
+  time: 3.379
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 3880
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 8398
+  objective: 351
+  paths: 0
+  peakDepth: 261
+  problem: diameterc-mst
+  restarts: 128
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, true, false, false, false, true, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, true, true, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      true, false, true, true, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 1, 2, 1, 2, 2, 2, 1, 2, 2, 0, 1, 2, 1, 2, 1, 1, 2, 2]
+    objective: 351
+    p: [17, 9, 12, 3, 12, 9, 9, 18, 12, 9, 9, 12, 12, 17, 12, 5, 12, 12, 17, 5]
+    root: 12
+  solutions: 8
+  solveTime: 2.675
+  status: SATISFIED
+  threads: '10'
+  time: 4.18
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15
+- boolVariables: 2875
+  configuration: org-choco-choco_v4.10.15_dcmst_c_v20_a190_d4_10cores_10threads_timeout300000sec_10_10
+  constraints: 5638
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-09-11T12:13:48.693876'
+  evaluatedHalfReifiedConstraints: 1199
+  evaluatedReifiedConstraints: 372
+  failures: 3928
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.229873
+  initTime: 1.071
+  intVariables: 82
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: org.choco.choco
+  nodes: 8572
+  objective: 349
+  paths: 0
+  peakDepth: 261
+  problem: diameterc-mst
+  restarts: 129
+  setVariables: 0
+  solution:
+    es: [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, true, false, false, false, true, false, false, true, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, true, true, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, true, true, false, false, false, true, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false]
+    h: [2, 2, 1, 2, 1, 2, 2, 2, 1, 2, 2, 0, 2, 2, 1, 2, 1, 1, 2, 2]
+    objective: 349
+    p: [17, 9, 12, 3, 12, 9, 9, 18, 12, 9, 9, 12, 15, 17, 12, 5, 12, 12, 17, 5]
+    root: 12
+  solutions: 9
+  solveTime: 2.697
+  status: SATISFIED
+  threads: '10'
+  time: 4.202
+  timeout_sec: '300000'
+  variables: 2957
+  version: v4.10.15

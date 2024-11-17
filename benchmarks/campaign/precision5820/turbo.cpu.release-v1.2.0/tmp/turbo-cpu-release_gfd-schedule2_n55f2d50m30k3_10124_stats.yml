@@ -1,0 +1,11 @@
+{arch: cpu, configuration: turbo-cpu-release_gfd-schedule2_n55f2d50m30k3_10124, cutnodes: 0,
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn, datetime: '2024-08-29T19:00:22.358616',
+  eliminated_formulas: 30288, eliminated_variables: 10754, eps_num_subproblems: 1,
+  eps_skipped_subproblems: 0, eps_solved_subproblems: 0, evaluatedReifiedConstraints: 11641,
+  failures: 6330, fixpoint_iterations: 189663, flatBoolConstraints: 7659, flatBoolVars: 16973,
+  flatIntConstraints: 25585, flatIntVars: 13350, flatTime: 0.536418, free_search: no,
+  hardware: precision5820, initTime: 2.176, method: minimize, model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn,
+  mzn_solver: turbo.cpu.release, nSolutions: 1, nodes: 12677, num_blocks_done: 0,
+  num_solutions: 2, objective: 8904, or_nodes: 0, paths: 0, peakDepth: 51, problem: gfd-schedule,
+  problem_path: /tmp/mznfileFRHq5s.fzn, propagators: 24284, solveTime: 300.024, solver: Turbo,
+  status: SATISFIED, timeout_ms: 300000, variables: 21850, version: v1.2.0}

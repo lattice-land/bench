@@ -1,0 +1,7 @@
+{boolVariables: 0, configuration: com-google-ortools-sat_v9.9_spot5_404_10cores_20threads_timeout300000ms_10_20,
+  cores: '10', data_file: ../data/mzn-challenge/2022/spot5/404.dzn, datetime: '2024-09-12T09:02:07.541423',
+  evaluatedReifiedConstraints: 100, failures: 0, flatBoolVars: 100, flatIntConstraints: 811,
+  flatIntVars: 201, flatTime: 0.0737642, method: minimize, model: ../data/mzn-challenge/2022/spot5/spot5.mzn,
+  mzn_solver: com.google.ortools.sat, nSolutions: 5, objective: 114, objectiveBound: 114,
+  paths: 0, problem: spot5, propagations: 0, solveTime: 0.0502963, status: OPTIMAL_SOLUTION,
+  threads: '20', timeout_ms: '300000', version: v9.9}

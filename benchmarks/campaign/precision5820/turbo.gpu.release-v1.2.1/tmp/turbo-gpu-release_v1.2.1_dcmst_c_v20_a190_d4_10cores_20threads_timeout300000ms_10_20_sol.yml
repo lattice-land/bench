@@ -1,0 +1,42 @@
+- configuration: turbo-gpu-release_v1.2.1_dcmst_c_v20_a190_d4_10cores_20threads_timeout300000ms_10_20
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn
+  datetime: '2024-10-21T20:29:39.664556'
+  evaluatedReifiedConstraints: 1571
+  flatBoolConstraints: 3852
+  flatBoolVars: 2141
+  flatIntConstraints: 1785
+  flatIntVars: 252
+  flatTime: 0.26696
+  method: minimize
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn
+  mzn_solver: turbo.gpu.release
+  paths: 0
+  problem: diameterc-mst
+  solution:
+    es: [false, false, false, false, false, true, false, false, false, false, false,
+      true, true, false, false, true, false, true, false, false, false, false, false,
+      false, false, false, false, true, false, true, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, true, false, false, false, true, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, false,
+      true, false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      false, false, false, false, false, true, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false]
+    h: [1, 1, 1, 2, 1, 2, 2, 2, 1, 2, 2, 2, 0, 2, 1, 2, 2, 1, 2, 2]
+    objective: 401
+    p: [13, 13, 13, 3, 13, 9, 1, 18, 13, 9, 2, 15, 13, 1, 13, 5, 1, 13, 1, 5]
+    root: 13
+  status: SATISFIED
+  threads: '20'
+  time: 300.487
+  timeout_ms: '300000'
+  version: v1.2.1

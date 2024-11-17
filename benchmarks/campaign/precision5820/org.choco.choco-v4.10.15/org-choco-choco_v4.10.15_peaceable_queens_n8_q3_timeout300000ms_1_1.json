@@ -1,0 +1,26 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.15_peaceable_queens_n8_q3_timeout300000ms_1_1", "problem": "generalized-peacable-queens", "model": "../data/mzn-challenge/2022/generalized-peacable-queens/peaceable_queens.mzn", "data_file": "../data/mzn-challenge/2022/generalized-peacable-queens/n8_q3.json", "mzn_solver": "org.choco.choco", "version": "v4.10.15", "timeout_ms": "300000", "datetime": "2024-09-12T10:42:30.242442", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 67, "flatIntConstraints": 59, "method": "maximize", "flatTime": 0.180465}}
+{"type": "comment", "comment": "%% Choco 240909_14:08\n"}
+{"type": "statistics", "statistics": {"initTime": 0.272, "solveTime": 0.06, "solutions": 1, "variables": 1258, "intVariables": 1215, "boolVariables": 43, "setVariables": 0, "constraints": 270, "objective": 0, "nodes": 63, "failures": 0, "restarts": 0, "peakDepth": 63}}
+{"type": "solution", "output": {"default": "........\n........\n........\n........\n........\n........\n........\n........\nn = 8;\nq = 3;\ncounts = [0, 0, 0];\nobjective = 0;\n", "raw": "........\n........\n........\n........\n........\n........\n........\n........\nn = 8;\nq = 3;\ncounts = [0, 0, 0];\nobjective = 0;\n", "json": {  "x" : [[{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}]],  "counts" : [0, 0, 0],  "_objective" : 0}}, "sections": ["default", "raw", "json"], "time": 658}
+Exception in thread "main" java.lang.IllegalArgumentException: Equal objects must have equal hashcodes. During rehashing, Trove discovered that the following two objects claim to be equal (as in java.lang.Object.equals()) but their hashCodes (or those calculated by your TObjectHashingStrategy) are not equal.This violates the general contract of java.lang.Object.hashCode().  See bullet point two in that method's documentation. object #1 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 370370379 hashCode= 1639 toString= 1.(X_INTRODUCED_95_) + 0[1,1]; object #2 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 671046933 hashCode= 1184 toString= 1.(X_INTRODUCED_95_) + 0[1,1]
+
+	at gnu.trove.impl.hash.TObjectHash.buildObjectContractViolation(TObjectHash.java:464)
+	at gnu.trove.impl.hash.TObjectHash.throwObjectContractViolation(TObjectHash.java:426)
+	at gnu.trove.map.hash.TObjectDoubleHashMap.rehash(TObjectDoubleHashMap.java:191)
+	at gnu.trove.impl.hash.THash.postInsertHook(THash.java:388)
+	at gnu.trove.map.hash.TObjectDoubleHashMap.adjustOrPutValue(TObjectDoubleHashMap.java:456)
+	at org.chocosolver.solver.search.strategy.selectors.variables.DomOverWDeg.increase(DomOverWDeg.java:89)
+	at org.chocosolver.solver.search.strategy.selectors.variables.AbstractCriterionBasedVariableSelector.onContradiction(AbstractCriterionBasedVariableSelector.java:225)
+	at org.chocosolver.solver.search.loop.monitors.SearchMonitorList.onContradiction(SearchMonitorList.java:134)
+	at org.chocosolver.solver.Solver.propagate(Solver.java:562)
+	at org.chocosolver.solver.Solver.searchLoop(Solver.java:343)
+	at org.chocosolver.solver.Solver.solve(Solver.java:311)
+	at org.chocosolver.parser.flatzinc.Flatzinc.singleThread(Flatzinc.java:305)
+	at org.chocosolver.parser.RegParser.solve(RegParser.java:352)
+	at org.chocosolver.parser.flatzinc.ChocoFZN.main(ChocoFZN.java:29)
+{"type": "statistics", "statistics": {"initTime": 0.272, "solveTime": 0.08, "solutions": 1, "variables": 1258, "intVariables": 1215, "boolVariables": 43, "setVariables": 0, "constraints": 270, "objective": 0, "nodes": 94, "failures": 38, "restarts": 0, "peakDepth": 63}}
+{"type": "comment", "comment": "%% Unexpected resolution interruption!\n"}
+{"type": "status", "status": "ERROR", "time": 705}
+{"type": "statistics", "statistics": {"nSolutions": 1}}

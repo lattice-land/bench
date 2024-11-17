@@ -1,0 +1,7 @@
+{boolVariables: 23, configuration: com-google-ortools-sat-noglobal_v9.9_nfc_24_4_2_timeout300000ms_1_1,
+  cores: '1', data_file: ../data/mzn-challenge/2022/nfc/24_4_2.dzn, datetime: '2024-09-12T09:41:36.160999',
+  failures: 0, flatIntConstraints: 49, flatIntVars: 49, flatTime: 0.0716117, method: minimize,
+  model: ../data/mzn-challenge/2022/nfc/nfc.mzn, mzn_solver: com.google.ortools.sat.noglobal,
+  nSolutions: 1, objective: 1836, objectiveBound: 1836, paths: 0, problem: nfc, propagations: 175,
+  solveTime: 0.0151921, status: OPTIMAL_SOLUTION, threads: '1', timeout_ms: '300000',
+  version: v9.9}

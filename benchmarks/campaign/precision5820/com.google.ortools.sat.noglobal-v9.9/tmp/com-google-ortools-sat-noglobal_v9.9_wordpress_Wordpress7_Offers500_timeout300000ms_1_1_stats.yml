@@ -1,0 +1,8 @@
+{boolVariables: 15363, configuration: com-google-ortools-sat-noglobal_v9.9_wordpress_Wordpress7_Offers500_timeout300000ms_1_1,
+  cores: '1', data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn,
+  datetime: '2024-09-12T09:10:31.386386', evaluatedReifiedConstraints: 37, failures: 1889,
+  flatBoolConstraints: 19, flatBoolVars: 35, flatIntConstraints: 300, flatIntVars: 182,
+  flatTime: 0.100173, method: minimize, model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn,
+  mzn_solver: com.google.ortools.sat.noglobal, nSolutions: 21, objective: 2022, objectiveBound: 2022,
+  paths: 0, problem: wordpress, propagations: 24392031, solveTime: 9.22311, status: OPTIMAL_SOLUTION,
+  threads: '1', timeout_ms: '300000', version: v9.9}

@@ -1,0 +1,531 @@
+- boolVariables: 3375
+  configuration: com-google-ortools-sat_v9.9_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-12T08:29:53.876039'
+  eliminatedImplications: 138
+  evaluatedHalfReifiedConstraints: 279
+  evaluatedReifiedConstraints: 3118
+  failures: 134
+  flatBoolConstraints: 2186
+  flatBoolVars: 3256
+  flatIntConstraints: 6192
+  flatIntVars: 2256
+  flatTime: 0.208827
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 4826
+  objectiveBound: 4
+  paths: 0
+  problem: gfd-schedule
+  propagations: 1235691
+  solution:
+    assignedGroup: [1, 1, 35, 36, 2, 20, 4, 4, 21, 35, 21, 35, 35, 4, 37, 41, 4, 23,
+      3, 1, 35, 43, 22, 44, 42, 40, 38, 5, 42, 35, 4, 2, 21, 24, 23, 21, 25, 39, 22,
+      22, 9, 8, 7, 25, 35, 23, 6, 1, 1, 4, 45, 20, 45, 35, 35]
+    deadLinePenalty: 48
+    groupFacility: [1, 1, 1, 1, 2, 1, 2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      2, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 8, 31, 12, 2, 29, 31, 33, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 8, 34, 28, 29, 28, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 32, 15, 16, 12, 7, 11,
+      27, 26, 30, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 27, 32, 10, 8, 31, 31, 34, 27, 34, 27, 27, 31, 15, 11,
+      31, 29, 8, 30, 27, 26, 28, 30, 27, 7, 16, 12, 27, 27, 31, 10, 34, 28, 29, 34,
+      5, 12, 28, 28, 33, 31, 29, 5, 27, 29, 2, 30, 30, 31, 26, 8, 26, 27, 27]
+    nGroups: 26
+    objective: 4826
+  solveTime: 0.641031
+  status: SATISFIED
+  threads: '1'
+  time: 0.951
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 3375
+  configuration: com-google-ortools-sat_v9.9_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-12T08:29:53.876039'
+  eliminatedImplications: 138
+  evaluatedHalfReifiedConstraints: 279
+  evaluatedReifiedConstraints: 3118
+  failures: 153
+  flatBoolConstraints: 2186
+  flatBoolVars: 3256
+  flatIntConstraints: 6192
+  flatIntVars: 2256
+  flatTime: 0.208827
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 4626
+  objectiveBound: 4
+  paths: 0
+  problem: gfd-schedule
+  propagations: 1241492
+  solution:
+    assignedGroup: [1, 1, 35, 36, 2, 20, 4, 1, 21, 35, 21, 35, 35, 4, 37, 41, 4, 23,
+      3, 1, 35, 43, 22, 44, 42, 40, 38, 5, 42, 35, 4, 2, 21, 24, 23, 21, 25, 39, 22,
+      22, 9, 8, 7, 25, 35, 23, 6, 1, 1, 4, 45, 20, 45, 35, 35]
+    deadLinePenalty: 46
+    groupFacility: [1, 1, 1, 1, 2, 1, 2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      2, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 10, 8, 31, 12, 2, 29, 31, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 8, 34, 28, 29, 28, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 32, 15, 16, 12, 7, 11,
+      27, 27, 33, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 26, 32, 10, 8, 31, 30, 34, 26, 34, 26, 26, 31, 15, 11,
+      31, 29, 8, 30, 26, 27, 28, 33, 27, 7, 16, 12, 27, 26, 31, 10, 34, 28, 29, 34,
+      5, 12, 28, 28, 34, 31, 29, 5, 26, 29, 2, 30, 30, 31, 26, 8, 26, 26, 26]
+    nGroups: 26
+    objective: 4626
+  solveTime: 0.651285
+  status: SATISFIED
+  threads: '1'
+  time: 0.961
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 3376
+  configuration: com-google-ortools-sat_v9.9_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-12T08:29:53.876039'
+  eliminatedImplications: 138
+  evaluatedHalfReifiedConstraints: 279
+  evaluatedReifiedConstraints: 3118
+  failures: 155
+  flatBoolConstraints: 2186
+  flatBoolVars: 3256
+  flatIntConstraints: 6192
+  flatIntVars: 2256
+  flatTime: 0.208827
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 3421
+  objectiveBound: 4
+  paths: 0
+  problem: gfd-schedule
+  propagations: 1247614
+  solution:
+    assignedGroup: [1, 1, 35, 36, 2, 20, 1, 2, 21, 37, 21, 37, 37, 1, 38, 41, 1, 23,
+      3, 1, 37, 43, 22, 44, 42, 40, 38, 2, 42, 37, 1, 4, 21, 24, 23, 21, 25, 39, 22,
+      22, 1, 1, 1, 25, 35, 23, 3, 1, 1, 1, 45, 20, 45, 37, 35]
+    deadLinePenalty: 34
+    groupFacility: [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      2, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 15, 8, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      8, 34, 28, 29, 28, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 32, 27, 16, 12, 7, 11,
+      27, 26, 33, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 23, 32, 15, 8, 30, 15, 34, 27, 34, 27, 27, 30, 16, 11,
+      30, 29, 8, 30, 27, 26, 28, 33, 27, 7, 16, 15, 27, 27, 30, 10, 34, 28, 29, 34,
+      5, 12, 28, 28, 30, 30, 30, 5, 23, 29, 8, 30, 30, 30, 26, 8, 26, 27, 23]
+    nGroups: 21
+    objective: 3421
+  solveTime: 0.658552
+  status: SATISFIED
+  threads: '1'
+  time: 0.968
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 3376
+  configuration: com-google-ortools-sat_v9.9_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-12T08:29:53.876039'
+  eliminatedImplications: 138
+  evaluatedHalfReifiedConstraints: 279
+  evaluatedReifiedConstraints: 3118
+  failures: 156
+  flatBoolConstraints: 2186
+  flatBoolVars: 3256
+  flatIntConstraints: 6192
+  flatIntVars: 2256
+  flatTime: 0.208827
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 2120
+  objectiveBound: 4
+  paths: 0
+  problem: gfd-schedule
+  propagations: 1253016
+  solution:
+    assignedGroup: [1, 1, 35, 36, 2, 20, 1, 2, 20, 37, 21, 37, 37, 1, 38, 41, 1, 23,
+      3, 1, 37, 43, 22, 44, 42, 40, 38, 2, 42, 37, 1, 2, 21, 24, 23, 21, 25, 39, 22,
+      22, 1, 1, 1, 25, 35, 23, 3, 1, 1, 1, 45, 20, 45, 37, 35]
+    deadLinePenalty: 21
+    groupFacility: [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      2, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 15, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8,
+      34, 28, 29, 28, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 32, 27, 16, 12, 7, 11, 27,
+      26, 33, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 23, 32, 15, 8, 30, 15, 8, 27, 34, 27, 27, 30, 16, 11,
+      30, 29, 8, 30, 27, 26, 28, 33, 27, 7, 16, 15, 27, 27, 30, 15, 34, 28, 29, 34,
+      5, 12, 28, 28, 30, 30, 30, 5, 23, 29, 8, 30, 30, 30, 26, 8, 26, 27, 23]
+    nGroups: 20
+    objective: 2120
+  solveTime: 0.665301
+  status: SATISFIED
+  threads: '1'
+  time: 0.975
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 3377
+  configuration: com-google-ortools-sat_v9.9_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-12T08:29:53.876039'
+  eliminatedImplications: 138
+  evaluatedHalfReifiedConstraints: 279
+  evaluatedReifiedConstraints: 3118
+  failures: 159
+  flatBoolConstraints: 2186
+  flatBoolVars: 3256
+  flatIntConstraints: 6192
+  flatIntVars: 2256
+  flatTime: 0.208827
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 1025
+  objectiveBound: 4
+  paths: 0
+  problem: gfd-schedule
+  propagations: 1259366
+  solution:
+    assignedGroup: [1, 1, 35, 36, 3, 20, 1, 2, 21, 37, 22, 37, 37, 1, 38, 41, 1, 23,
+      4, 1, 37, 43, 22, 44, 42, 40, 38, 2, 42, 37, 1, 3, 22, 24, 23, 28, 25, 39, 22,
+      27, 5, 1, 1, 25, 35, 26, 3, 1, 1, 1, 45, 20, 45, 37, 35]
+    deadLinePenalty: 10
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      2, 1, 1, 2, 1, 1, 2, 0, 0, 0, 0, 0, 0, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 15, 10, 8, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      8, 4, 28, 29, 28, 5, 31, 13, 34, 0, 0, 0, 0, 0, 0, 23, 32, 26, 16, 12, 7, 11,
+      27, 27, 33, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 23, 32, 10, 8, 30, 15, 4, 26, 28, 26, 26, 30, 16, 11,
+      30, 29, 8, 30, 26, 27, 28, 33, 27, 7, 16, 15, 27, 26, 30, 10, 28, 28, 29, 34,
+      5, 12, 28, 13, 34, 30, 30, 5, 23, 31, 10, 30, 30, 30, 26, 8, 26, 26, 23]
+    nGroups: 25
+    objective: 1025
+  solveTime: 0.674688
+  status: SATISFIED
+  threads: '1'
+  time: 0.984
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 3377
+  configuration: com-google-ortools-sat_v9.9_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-12T08:29:53.876039'
+  eliminatedImplications: 138
+  evaluatedHalfReifiedConstraints: 279
+  evaluatedReifiedConstraints: 3118
+  failures: 163
+  flatBoolConstraints: 2186
+  flatBoolVars: 3256
+  flatIntConstraints: 6192
+  flatIntVars: 2256
+  flatTime: 0.208827
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 1011
+  objectiveBound: 4
+  paths: 0
+  problem: gfd-schedule
+  propagations: 1267986
+  solution:
+    assignedGroup: [1, 1, 35, 36, 3, 20, 1, 2, 20, 37, 21, 37, 37, 1, 38, 38, 1, 21,
+      4, 1, 37, 37, 21, 36, 36, 36, 38, 2, 36, 37, 1, 3, 21, 21, 21, 21, 20, 38, 21,
+      20, 5, 1, 1, 21, 35, 21, 3, 1, 1, 1, 36, 20, 36, 37, 35]
+    deadLinePenalty: 10
+    groupFacility: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 15, 10, 8, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      13, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 26, 26, 16, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 23, 26, 10, 13, 30, 15, 13, 26, 28, 26, 26, 30, 16, 16,
+      30, 28, 8, 30, 26, 26, 28, 26, 26, 26, 16, 15, 26, 26, 30, 10, 28, 28, 28, 28,
+      13, 16, 28, 13, 34, 30, 30, 28, 23, 28, 10, 30, 30, 30, 26, 13, 26, 26, 23]
+    nGroups: 11
+    objective: 1011
+  solveTime: 0.686125
+  status: SATISFIED
+  threads: '1'
+  time: 0.996
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 3380
+  configuration: com-google-ortools-sat_v9.9_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-12T08:29:53.876039'
+  eliminatedImplications: 138
+  evaluatedHalfReifiedConstraints: 279
+  evaluatedReifiedConstraints: 3118
+  failures: 165
+  flatBoolConstraints: 2186
+  flatBoolVars: 3256
+  flatIntConstraints: 6192
+  flatIntVars: 2256
+  flatTime: 0.208827
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 417
+  objectiveBound: 4
+  paths: 0
+  problem: gfd-schedule
+  propagations: 1274300
+  solution:
+    assignedGroup: [1, 1, 35, 36, 3, 20, 1, 2, 20, 37, 21, 37, 37, 1, 38, 38, 7, 21,
+      4, 1, 37, 37, 21, 36, 36, 36, 36, 3, 36, 37, 6, 9, 23, 23, 21, 21, 20, 38, 23,
+      22, 5, 8, 1, 21, 35, 21, 3, 1, 1, 7, 36, 20, 36, 37, 35]
+    deadLinePenalty: 4
+    groupFacility: [1, 2, 1, 1, 1, 2, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 15, 12, 8, 27, 32, 31, 31, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 8, 26, 13, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 29, 27, 15, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 23, 29, 12, 8, 30, 15, 8, 27, 26, 27, 27, 30, 15, 15,
+      31, 26, 8, 30, 27, 27, 26, 29, 29, 29, 29, 12, 29, 27, 32, 10, 28, 28, 26, 26,
+      8, 15, 28, 13, 27, 31, 30, 26, 23, 26, 12, 30, 30, 31, 29, 8, 29, 27, 23]
+    nGroups: 17
+    objective: 417
+  solveTime: 0.694762
+  status: SATISFIED
+  threads: '1'
+  time: 1.004
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 3380
+  configuration: com-google-ortools-sat_v9.9_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-12T08:29:53.876039'
+  eliminatedImplications: 138
+  evaluatedHalfReifiedConstraints: 279
+  evaluatedReifiedConstraints: 3118
+  failures: 173
+  flatBoolConstraints: 2186
+  flatBoolVars: 3256
+  flatIntConstraints: 6192
+  flatIntVars: 2256
+  flatTime: 0.208827
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 318
+  objectiveBound: 5
+  paths: 0
+  problem: gfd-schedule
+  propagations: 1285789
+  solution:
+    assignedGroup: [1, 1, 35, 36, 3, 20, 1, 2, 20, 37, 21, 37, 37, 1, 38, 38, 7, 21,
+      4, 1, 41, 41, 21, 36, 36, 36, 36, 3, 39, 41, 6, 9, 21, 21, 21, 21, 20, 40, 21,
+      20, 5, 8, 1, 21, 35, 21, 3, 1, 1, 5, 36, 20, 36, 37, 35]
+    deadLinePenalty: 3
+    groupFacility: [1, 2, 1, 1, 1, 2, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [30, 15, 12, 8, 27, 32, 31, 31, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 13, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 29, 26, 15, 28, 12, 27,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [30, 30, 23, 29, 12, 13, 30, 15, 13, 26, 28, 26, 26, 30, 15, 15,
+      31, 28, 8, 30, 27, 27, 28, 29, 29, 29, 29, 12, 28, 27, 32, 10, 28, 28, 28, 28,
+      13, 12, 28, 13, 27, 31, 30, 28, 23, 28, 12, 30, 30, 27, 29, 13, 29, 26, 23]
+    nGroups: 18
+    objective: 318
+  solveTime: 0.706981
+  status: SATISFIED
+  threads: '1'
+  time: 1.017
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 3380
+  configuration: com-google-ortools-sat_v9.9_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-12T08:29:53.876039'
+  eliminatedImplications: 138
+  evaluatedHalfReifiedConstraints: 279
+  evaluatedReifiedConstraints: 3118
+  failures: 176
+  flatBoolConstraints: 2186
+  flatBoolVars: 3256
+  flatIntConstraints: 6192
+  flatIntVars: 2256
+  flatTime: 0.208827
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 313
+  objectiveBound: 5
+  paths: 0
+  problem: gfd-schedule
+  propagations: 1291706
+  solution:
+    assignedGroup: [1, 1, 35, 36, 1, 20, 1, 2, 20, 37, 21, 37, 37, 3, 38, 38, 1, 21,
+      4, 1, 41, 41, 21, 36, 36, 36, 36, 2, 39, 41, 3, 4, 21, 21, 21, 21, 20, 40, 21,
+      20, 1, 1, 3, 21, 35, 21, 3, 1, 3, 1, 36, 20, 36, 37, 35]
+    deadLinePenalty: 3
+    groupFacility: [1, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [26, 15, 30, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      13, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 29, 26, 15, 28, 12, 27, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [26, 26, 23, 29, 26, 13, 26, 15, 13, 26, 28, 26, 26, 30, 15, 15,
+      26, 28, 10, 26, 27, 27, 28, 29, 29, 29, 29, 15, 28, 27, 30, 10, 28, 28, 28,
+      28, 13, 12, 28, 13, 26, 26, 30, 28, 23, 28, 30, 26, 30, 26, 29, 13, 29, 26,
+      23]
+    nGroups: 13
+    objective: 313
+  solveTime: 0.714414
+  status: SATISFIED
+  threads: '1'
+  time: 1.024
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 3380
+  configuration: com-google-ortools-sat_v9.9_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-12T08:29:53.876039'
+  eliminatedImplications: 138
+  evaluatedHalfReifiedConstraints: 279
+  evaluatedReifiedConstraints: 3118
+  failures: 181
+  flatBoolConstraints: 2186
+  flatBoolVars: 3256
+  flatIntConstraints: 6192
+  flatIntVars: 2256
+  flatTime: 0.208827
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 310
+  objectiveBound: 5
+  paths: 0
+  problem: gfd-schedule
+  propagations: 1301317
+  solution:
+    assignedGroup: [1, 1, 35, 36, 1, 20, 1, 2, 20, 37, 21, 37, 37, 3, 38, 38, 1, 21,
+      4, 1, 37, 37, 21, 36, 36, 36, 36, 2, 36, 37, 3, 4, 21, 21, 21, 21, 20, 38, 21,
+      20, 1, 1, 3, 21, 35, 21, 3, 1, 3, 1, 36, 20, 36, 37, 35]
+    deadLinePenalty: 3
+    groupFacility: [1, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [26, 15, 30, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      13, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 29, 26, 15, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [26, 26, 23, 29, 26, 13, 26, 15, 13, 26, 28, 26, 26, 30, 15, 15,
+      26, 28, 10, 26, 26, 26, 28, 29, 29, 29, 29, 15, 29, 26, 30, 10, 28, 28, 28,
+      28, 13, 15, 28, 13, 26, 26, 30, 28, 23, 28, 30, 26, 30, 26, 29, 13, 29, 26,
+      23]
+    nGroups: 10
+    objective: 310
+  solveTime: 0.722715
+  status: SATISFIED
+  threads: '1'
+  time: 1.032
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 3380
+  configuration: com-google-ortools-sat_v9.9_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-12T08:29:53.876039'
+  eliminatedImplications: 138
+  evaluatedHalfReifiedConstraints: 279
+  evaluatedReifiedConstraints: 3118
+  failures: 191
+  flatBoolConstraints: 2186
+  flatBoolVars: 3256
+  flatIntConstraints: 6192
+  flatIntVars: 2256
+  flatTime: 0.208827
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 11
+  objectiveBound: 7
+  paths: 0
+  problem: gfd-schedule
+  propagations: 1315130
+  solution:
+    assignedGroup: [1, 1, 35, 36, 1, 20, 1, 3, 20, 37, 21, 37, 37, 1, 38, 38, 1, 21,
+      5, 1, 36, 37, 21, 36, 36, 36, 36, 2, 36, 37, 1, 4, 21, 21, 21, 21, 20, 38, 21,
+      20, 1, 1, 1, 21, 35, 21, 1, 1, 1, 1, 36, 20, 36, 37, 35]
+    deadLinePenalty: 0
+    groupFacility: [1, 2, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [27, 12, 15, 10, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      13, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 29, 26, 15, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [27, 27, 23, 29, 27, 13, 27, 15, 13, 26, 28, 26, 26, 27, 15, 15,
+      27, 28, 8, 27, 29, 26, 28, 29, 29, 29, 29, 12, 29, 26, 27, 10, 28, 28, 28, 28,
+      13, 15, 28, 13, 27, 27, 27, 28, 23, 28, 27, 27, 27, 27, 29, 13, 29, 26, 23]
+    nGroups: 11
+    objective: 11
+  solveTime: 0.73135
+  status: SATISFIED
+  threads: '1'
+  time: 1.041
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 3380
+  configuration: com-google-ortools-sat_v9.9_gfd-schedule2_n55f2d50m30k3_10124_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn
+  datetime: '2024-09-12T08:29:53.876039'
+  eliminatedImplications: 138
+  evaluatedHalfReifiedConstraints: 279
+  evaluatedReifiedConstraints: 3118
+  failures: 191
+  flatBoolConstraints: 2186
+  flatBoolVars: 3256
+  flatIntConstraints: 6192
+  flatIntVars: 2256
+  flatTime: 0.208827
+  method: minimize
+  model: ../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn
+  mzn_solver: com.google.ortools.sat
+  objective: 9
+  objectiveBound: 9
+  paths: 0
+  problem: gfd-schedule
+  propagations: 1320387
+  solution:
+    assignedGroup: [1, 1, 35, 36, 3, 20, 1, 2, 20, 37, 21, 37, 37, 1, 38, 38, 1, 21,
+      3, 1, 36, 37, 21, 36, 36, 36, 36, 2, 36, 37, 1, 3, 21, 21, 21, 21, 20, 38, 21,
+      20, 1, 1, 1, 21, 35, 21, 1, 1, 1, 1, 36, 20, 36, 37, 35]
+    deadLinePenalty: 0
+    groupFacility: [1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0]
+    groupProcessDay: [27, 15, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      13, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 29, 26, 15, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    itemProcessDay: [27, 27, 23, 29, 10, 13, 27, 15, 13, 26, 28, 26, 26, 27, 15, 15,
+      27, 28, 10, 27, 29, 26, 28, 29, 29, 29, 29, 15, 29, 26, 27, 10, 28, 28, 28,
+      28, 13, 15, 28, 13, 27, 27, 27, 28, 23, 28, 27, 27, 27, 27, 29, 13, 29, 26,
+      23]
+    nGroups: 9
+    objective: 9
+  solveTime: 0.736106
+  status: SATISFIED
+  threads: '1'
+  time: 1.046
+  timeout_ms: '300000'
+  version: v9.9

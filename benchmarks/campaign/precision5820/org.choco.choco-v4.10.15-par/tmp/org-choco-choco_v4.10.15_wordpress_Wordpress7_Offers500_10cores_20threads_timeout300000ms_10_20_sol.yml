@@ -1,0 +1,1670 @@
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 10
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.596
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 105
+  objective: 4845
+  paths: 0
+  peakDepth: 57
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1]
+    - [0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1]
+    Price: [333, 0, 690, 0, 420, 0, 690, 420, 116, 0, 333, 130, 690, 333, 690]
+    VMType: [343, 479, 324, 478, 278, 478, 324, 278, 433, 478, 343, 457, 324, 343,
+      324]
+    objective: 4845
+  solutions: 1
+  solveTime: 0.393
+  status: SATISFIED
+  threads: '20'
+  time: 1.231
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 10
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.593
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 103
+  objective: 4844
+  paths: 0
+  peakDepth: 55
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1]
+    - [0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1]
+    Price: [354, 0, 690, 0, 505, 0, 690, 420, 116, 0, 210, 146, 690, 333, 690]
+    VMType: [307, 479, 324, 478, 192, 478, 324, 278, 433, 478, 341, 409, 324, 343,
+      324]
+    objective: 4844
+  solutions: 1
+  solveTime: 0.449
+  status: SATISFIED
+  threads: '20'
+  time: 1.283
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 14
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.593
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 110
+  objective: 4828
+  paths: 0
+  peakDepth: 55
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1]
+    - [0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1]
+    Price: [354, 0, 690, 0, 505, 0, 690, 420, 116, 0, 210, 130, 690, 333, 690]
+    VMType: [307, 479, 324, 478, 192, 478, 324, 278, 433, 478, 341, 457, 324, 343,
+      324]
+    objective: 4828
+  solutions: 2
+  solveTime: 0.472
+  status: SATISFIED
+  threads: '20'
+  time: 1.306
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 21
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.596
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 188
+  objective: 4827
+  paths: 0
+  peakDepth: 62
+  problem: wordpress
+  restarts: 2
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1]
+    - [0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1]
+    Price: [315, 0, 690, 0, 420, 0, 690, 420, 116, 0, 333, 130, 690, 333, 690]
+    VMType: [322, 479, 324, 478, 278, 478, 324, 278, 433, 478, 343, 457, 324, 343,
+      324]
+    objective: 4827
+  solutions: 2
+  solveTime: 0.491
+  status: SATISFIED
+  threads: '20'
+  time: 1.328
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 20
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.593
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 118
+  objective: 4807
+  paths: 0
+  peakDepth: 55
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1]
+    - [0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1]
+    Price: [333, 0, 690, 0, 505, 0, 690, 420, 116, 0, 210, 130, 690, 333, 690]
+    VMType: [343, 479, 324, 478, 192, 478, 324, 278, 433, 478, 341, 457, 324, 343,
+      324]
+    objective: 4807
+  solutions: 3
+  solveTime: 0.5
+  status: SATISFIED
+  threads: '20'
+  time: 1.334
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 10
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.595
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 113
+  objective: 3821
+  paths: 0
+  peakDepth: 64
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1]
+    - [0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1]
+    Price: [130, 333, 690, 130, 116, 130, 0, 690, 116, 690, 0, 0, 333, 333, 130]
+    VMType: [457, 343, 324, 457, 433, 457, 478, 324, 433, 324, 478, 479, 343, 343,
+      457]
+    objective: 3821
+  solutions: 1
+  solveTime: 0.509
+  status: SATISFIED
+  threads: '20'
+  time: 1.344
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 10
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.593
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 111
+  objective: 3809
+  paths: 0
+  peakDepth: 62
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1]
+    - [0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1]
+    Price: [130, 354, 690, 130, 116, 130, 0, 690, 116, 759, 0, 0, 354, 210, 130]
+    VMType: [457, 307, 324, 457, 433, 457, 478, 324, 433, 306, 479, 478, 307, 341,
+      457]
+    objective: 3809
+  solutions: 1
+  solveTime: 0.517
+  status: SATISFIED
+  threads: '20'
+  time: 1.351
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 14
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.555
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 97
+  objective: 3804
+  paths: 0
+  peakDepth: 43
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0]
+    - [1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1]
+    - [0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1]
+    Price: [690, 210, 759, 350, 333, 420, 116, 130, 116, 130, 130, 0, 210, 0, 210]
+    VMType: [324, 341, 306, 316, 343, 278, 433, 457, 433, 457, 457, 479, 341, 478,
+      341]
+    objective: 3804
+  solutions: 2
+  solveTime: 0.523
+  status: SATISFIED
+  threads: '20'
+  time: 1.357
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 13
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.593
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 120
+  objective: 3799
+  paths: 0
+  peakDepth: 64
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1]
+    - [0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1]
+    Price: [130, 344, 690, 130, 116, 130, 0, 690, 116, 759, 0, 0, 354, 210, 130]
+    VMType: [457, 332, 324, 457, 433, 457, 478, 324, 433, 306, 479, 478, 307, 341,
+      457]
+    objective: 3799
+  solutions: 2
+  solveTime: 0.528
+  status: SATISFIED
+  threads: '20'
+  time: 1.362
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 21
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.559
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 161
+  objective: 3789
+  paths: 0
+  peakDepth: 56
+  problem: wordpress
+  restarts: 2
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1]
+    - [0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1]
+    - [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1]
+    Price: [420, 690, 333, 0, 0, 690, 0, 130, 0, 344, 130, 130, 116, 116, 690]
+    VMType: [278, 324, 343, 479, 478, 324, 479, 457, 479, 332, 457, 457, 433, 433,
+      324]
+    objective: 3789
+  solutions: 1
+  solveTime: 0.566
+  status: SATISFIED
+  threads: '20'
+  time: 1.365
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 14
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.593
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 122
+  objective: 3788
+  paths: 0
+  peakDepth: 64
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1]
+    - [0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1]
+    Price: [130, 333, 690, 130, 116, 130, 0, 690, 116, 759, 0, 0, 354, 210, 130]
+    VMType: [457, 343, 324, 457, 433, 457, 478, 324, 433, 306, 479, 478, 307, 341,
+      457]
+    objective: 3788
+  solutions: 3
+  solveTime: 0.534
+  status: SATISFIED
+  threads: '20'
+  time: 1.368
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 27
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.559
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 169
+  objective: 3778
+  paths: 0
+  peakDepth: 56
+  problem: wordpress
+  restarts: 2
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1]
+    - [0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1]
+    - [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1]
+    Price: [420, 690, 333, 0, 0, 690, 0, 130, 0, 333, 130, 130, 116, 116, 690]
+    VMType: [278, 324, 343, 479, 478, 324, 479, 457, 479, 343, 457, 457, 433, 433,
+      324]
+    objective: 3778
+  solutions: 2
+  solveTime: 0.572
+  status: SATISFIED
+  threads: '20'
+  time: 1.371
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 21
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.595
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 192
+  objective: 3698
+  paths: 0
+  peakDepth: 64
+  problem: wordpress
+  restarts: 2
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1]
+    - [0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1]
+    Price: [130, 333, 690, 130, 116, 130, 0, 690, 116, 690, 0, 0, 333, 210, 130]
+    VMType: [457, 343, 324, 457, 433, 457, 478, 324, 433, 324, 478, 479, 343, 341,
+      457]
+    objective: 3698
+  solutions: 2
+  solveTime: 0.547
+  status: SATISFIED
+  threads: '20'
+  time: 1.382
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 21
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.593
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 199
+  objective: 3644
+  paths: 0
+  peakDepth: 64
+  problem: wordpress
+  restarts: 2
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1]
+    - [0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1]
+    Price: [130, 333, 690, 130, 116, 130, 0, 690, 116, 759, 0, 0, 210, 210, 130]
+    VMType: [457, 343, 324, 457, 433, 457, 478, 324, 433, 306, 479, 478, 341, 341,
+      457]
+    objective: 3644
+  solutions: 4
+  solveTime: 0.553
+  status: SATISFIED
+  threads: '20'
+  time: 1.387
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 36
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.559
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 250
+  objective: 3532
+  paths: 0
+  peakDepth: 56
+  problem: wordpress
+  restarts: 3
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1]
+    - [0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1]
+    - [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1]
+    Price: [420, 690, 210, 0, 0, 690, 0, 130, 0, 210, 130, 130, 116, 116, 690]
+    VMType: [278, 324, 341, 479, 478, 324, 479, 457, 479, 341, 457, 457, 433, 433,
+      324]
+    objective: 3532
+  solutions: 3
+  solveTime: 0.591
+  status: SATISFIED
+  threads: '20'
+  time: 1.39
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 21
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.593
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 186
+  objective: 3456
+  paths: 0
+  peakDepth: 55
+  problem: wordpress
+  restarts: 2
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1]
+    - [0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0]
+    - [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1]
+    Price: [210, 0, 350, 0, 420, 0, 350, 420, 116, 0, 210, 130, 350, 210, 690]
+    VMType: [341, 479, 316, 478, 278, 478, 316, 278, 433, 478, 341, 457, 316, 341,
+      324]
+    objective: 3456
+  solutions: 4
+  solveTime: 0.563
+  status: SATISFIED
+  threads: '20'
+  time: 1.397
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 10
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.558
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 121
+  objective: 2403
+  paths: 0
+  peakDepth: 63
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [130, 0, 130, 0, 130, 420, 116, 130, 130, 116, 420, 333, 116, 116, 116]
+    VMType: [457, 479, 457, 479, 457, 278, 433, 457, 457, 433, 278, 343, 433, 433,
+      433]
+    objective: 2403
+  solutions: 1
+  solveTime: 0.605
+  status: SATISFIED
+  threads: '20'
+  time: 1.403
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 31
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.595
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 254
+  objective: 2390
+  paths: 0
+  peakDepth: 64
+  problem: wordpress
+  restarts: 3
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1]
+    - [0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1]
+    Price: [130, 210, 350, 116, 116, 116, 0, 350, 116, 350, 0, 0, 210, 210, 116]
+    VMType: [457, 341, 316, 433, 433, 433, 478, 316, 433, 316, 478, 479, 341, 341,
+      433]
+    objective: 2390
+  solutions: 3
+  solveTime: 0.618
+  status: SATISFIED
+  threads: '20'
+  time: 1.453
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 33
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.593
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 261
+  objective: 2376
+  paths: 0
+  peakDepth: 64
+  problem: wordpress
+  restarts: 3
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1]
+    - [0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1]
+    Price: [116, 210, 350, 116, 116, 116, 0, 350, 116, 350, 0, 0, 210, 210, 116]
+    VMType: [433, 341, 316, 433, 433, 433, 478, 316, 433, 316, 479, 478, 341, 341,
+      433]
+    objective: 2376
+  solutions: 5
+  solveTime: 0.623
+  status: SATISFIED
+  threads: '20'
+  time: 1.456
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 21
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.558
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 191
+  objective: 2280
+  paths: 0
+  peakDepth: 63
+  problem: wordpress
+  restarts: 2
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [130, 0, 130, 0, 130, 420, 116, 130, 130, 116, 420, 210, 116, 116, 116]
+    VMType: [457, 479, 457, 479, 457, 278, 433, 457, 457, 433, 278, 341, 433, 433,
+      433]
+    objective: 2280
+  solutions: 2
+  solveTime: 0.673
+  status: SATISFIED
+  threads: '20'
+  time: 1.472
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 10
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.596
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 95
+  objective: 2266
+  paths: 0
+  peakDepth: 44
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [130, 0, 116, 0, 130, 420, 116, 130, 130, 116, 420, 210, 116, 116, 116]
+    VMType: [457, 479, 433, 479, 457, 278, 433, 457, 457, 433, 278, 341, 433, 433,
+      433]
+    objective: 2266
+  solutions: 1
+  solveTime: 0.685
+  status: SATISFIED
+  threads: '20'
+  time: 1.521
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 31
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.558
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 245
+  objective: 2252
+  paths: 0
+  peakDepth: 63
+  problem: wordpress
+  restarts: 3
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [116, 0, 116, 0, 130, 420, 116, 130, 130, 116, 420, 210, 116, 116, 116]
+    VMType: [433, 479, 433, 479, 457, 278, 433, 457, 457, 433, 278, 341, 433, 433,
+      433]
+    objective: 2252
+  solutions: 3
+  solveTime: 0.726
+  status: SATISFIED
+  threads: '20'
+  time: 1.525
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 10
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.559
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 93
+  objective: 2238
+  paths: 0
+  peakDepth: 44
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [130, 0, 116, 0, 130, 420, 116, 116, 116, 116, 420, 210, 116, 116, 116]
+    VMType: [457, 479, 433, 479, 457, 278, 433, 433, 433, 433, 278, 341, 433, 433,
+      433]
+    objective: 2238
+  solutions: 1
+  solveTime: 0.73
+  status: SATISFIED
+  threads: '20'
+  time: 1.529
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 10
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.559
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 90
+  objective: 2224
+  paths: 0
+  peakDepth: 44
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [116, 0, 116, 0, 130, 420, 116, 116, 116, 116, 420, 210, 116, 116, 116]
+    VMType: [433, 479, 433, 479, 457, 278, 433, 433, 433, 433, 278, 341, 433, 433,
+      433]
+    objective: 2224
+  solutions: 1
+  solveTime: 0.734
+  status: SATISFIED
+  threads: '20'
+  time: 1.533
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 10
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.56
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 91
+  objective: 2210
+  paths: 0
+  peakDepth: 44
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [116, 0, 116, 0, 116, 420, 116, 116, 116, 116, 420, 210, 116, 116, 116]
+    VMType: [433, 479, 433, 479, 433, 278, 433, 433, 433, 433, 278, 341, 433, 433,
+      433]
+    objective: 2210
+  solutions: 1
+  solveTime: 0.737
+  status: SATISFIED
+  threads: '20'
+  time: 1.537
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 12
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.56
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 84
+  objective: 2200
+  paths: 0
+  peakDepth: 44
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [130, 0, 130, 210, 130, 420, 116, 130, 130, 116, 130, 210, 116, 116, 116]
+    VMType: [457, 479, 457, 341, 457, 278, 433, 457, 457, 433, 457, 341, 433, 433,
+      433]
+    objective: 2200
+  solutions: 1
+  solveTime: 0.741
+  status: SATISFIED
+  threads: '20'
+  time: 1.542
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 14
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.56
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 99
+  objective: 2186
+  paths: 0
+  peakDepth: 44
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [130, 0, 116, 210, 130, 420, 116, 130, 130, 116, 130, 210, 116, 116, 116]
+    VMType: [457, 479, 433, 341, 457, 278, 433, 457, 457, 433, 457, 341, 433, 433,
+      433]
+    objective: 2186
+  solutions: 2
+  solveTime: 0.747
+  status: SATISFIED
+  threads: '20'
+  time: 1.547
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 12
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.56
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 93
+  objective: 2172
+  paths: 0
+  peakDepth: 44
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [130, 0, 116, 210, 130, 420, 116, 130, 116, 116, 130, 210, 116, 116, 116]
+    VMType: [457, 479, 433, 341, 457, 278, 433, 457, 433, 433, 457, 341, 433, 433,
+      433]
+    objective: 2172
+  solutions: 1
+  solveTime: 0.751
+  status: SATISFIED
+  threads: '20'
+  time: 1.551
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 49
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.558
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 307
+  objective: 2158
+  paths: 0
+  peakDepth: 63
+  problem: wordpress
+  restarts: 4
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [116, 0, 116, 210, 130, 420, 116, 130, 130, 116, 116, 210, 116, 116, 116]
+    VMType: [433, 479, 433, 341, 457, 278, 433, 457, 457, 433, 433, 341, 433, 433,
+      433]
+    objective: 2158
+  solutions: 4
+  solveTime: 0.756
+  status: SATISFIED
+  threads: '20'
+  time: 1.554
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 13
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.56
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 93
+  objective: 2144
+  paths: 0
+  peakDepth: 44
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [116, 0, 116, 210, 116, 420, 116, 130, 116, 116, 130, 210, 116, 116, 116]
+    VMType: [433, 479, 433, 341, 433, 278, 433, 457, 433, 433, 457, 341, 433, 433,
+      433]
+    objective: 2144
+  solutions: 1
+  solveTime: 0.757
+  status: SATISFIED
+  threads: '20'
+  time: 1.558
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 12
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.56
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 91
+  objective: 2130
+  paths: 0
+  peakDepth: 44
+  problem: wordpress
+  restarts: 1
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [116, 0, 116, 210, 116, 420, 116, 130, 116, 116, 116, 210, 116, 116, 116]
+    VMType: [433, 479, 433, 341, 433, 278, 433, 457, 433, 433, 433, 341, 433, 433,
+      433]
+    objective: 2130
+  solutions: 1
+  solveTime: 0.761
+  status: SATISFIED
+  threads: '20'
+  time: 1.562
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 25
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.559
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 149
+  objective: 2116
+  paths: 0
+  peakDepth: 44
+  problem: wordpress
+  restarts: 2
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [116, 0, 116, 210, 116, 420, 116, 116, 116, 116, 116, 210, 116, 116, 116]
+    VMType: [433, 479, 433, 341, 433, 278, 433, 433, 433, 433, 433, 341, 433, 433,
+      433]
+    objective: 2116
+  solutions: 2
+  solveTime: 0.769
+  status: SATISFIED
+  threads: '20'
+  time: 1.568
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 21
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.56
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 150
+  objective: 2078
+  paths: 0
+  peakDepth: 44
+  problem: wordpress
+  restarts: 2
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [130, 210, 116, 210, 130, 116, 116, 130, 116, 116, 130, 210, 116, 116,
+      116]
+    VMType: [457, 341, 433, 341, 457, 433, 433, 457, 433, 433, 457, 341, 433, 433,
+      433]
+    objective: 2078
+  solutions: 2
+  solveTime: 0.814
+  status: SATISFIED
+  threads: '20'
+  time: 1.614
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 21
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.56
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 148
+  objective: 2064
+  paths: 0
+  peakDepth: 44
+  problem: wordpress
+  restarts: 2
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [130, 210, 116, 210, 130, 116, 116, 116, 116, 116, 130, 210, 116, 116,
+      116]
+    VMType: [457, 341, 433, 341, 457, 433, 433, 433, 433, 433, 457, 341, 433, 433,
+      433]
+    objective: 2064
+  solutions: 3
+  solveTime: 0.817
+  status: SATISFIED
+  threads: '20'
+  time: 1.617
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 23
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.56
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 147
+  objective: 2050
+  paths: 0
+  peakDepth: 44
+  problem: wordpress
+  restarts: 2
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [116, 210, 116, 210, 116, 116, 116, 130, 116, 116, 130, 210, 116, 116,
+      116]
+    VMType: [433, 341, 433, 341, 433, 433, 433, 457, 433, 433, 457, 341, 433, 433,
+      433]
+    objective: 2050
+  solutions: 2
+  solveTime: 0.822
+  status: SATISFIED
+  threads: '20'
+  time: 1.622
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 27
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.56
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 139
+  objective: 2036
+  paths: 0
+  peakDepth: 44
+  problem: wordpress
+  restarts: 2
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [116, 210, 116, 210, 116, 116, 116, 130, 116, 116, 116, 210, 116, 116,
+      116]
+    VMType: [433, 341, 433, 341, 433, 433, 433, 457, 433, 433, 433, 341, 433, 433,
+      433]
+    objective: 2036
+  solutions: 2
+  solveTime: 0.825
+  status: SATISFIED
+  threads: '20'
+  time: 1.626
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15
+- boolVariables: 145
+  configuration: org-choco-choco_v4.10.15_wordpress_Wordpress7_Offers500_10cores_20threads_timeout300000ms_10_20
+  constraints: 333
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn
+  datetime: '2024-09-11T22:41:59.576770'
+  evaluatedReifiedConstraints: 36
+  failures: 69
+  flatBoolConstraints: 16
+  flatBoolVars: 34
+  flatIntConstraints: 300
+  flatIntVars: 182
+  flatTime: 0.0774504
+  initTime: 0.558
+  intVariables: 599
+  method: minimize
+  model: ../data/mzn-challenge/2022/wordpress/wordpress.mzn
+  mzn_solver: org.choco.choco
+  nodes: 391
+  objective: 2022
+  paths: 0
+  peakDepth: 63
+  problem: wordpress
+  restarts: 6
+  setVariables: 0
+  solution:
+    AssignmentMatrix:
+    - [1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    OccupancyVector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    Price: [116, 210, 116, 210, 116, 116, 116, 116, 116, 116, 116, 210, 116, 116,
+      116]
+    VMType: [433, 341, 433, 341, 433, 433, 433, 433, 433, 433, 433, 341, 433, 433,
+      433]
+    objective: 2022
+  solutions: 5
+  solveTime: 0.831
+  status: SATISFIED
+  threads: '20'
+  time: 1.629
+  timeout_ms: '300000'
+  variables: 744
+  version: v4.10.15

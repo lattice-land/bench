@@ -1,0 +1,9 @@
+{boolVariables: 8422, configuration: org-choco-choco-noglobal_v4.10.15_tower_100_100_20_100-04_timeout300000ms_1_1,
+  constraints: 10988, cores: '1', data_file: ../data/mzn-challenge/2022/tower/100_100_20_100-04.dzn,
+  datetime: '2024-09-11T20:46:47.245796', evaluatedReifiedConstraints: 8060, failures: 94299,
+  flatBoolConstraints: 100, flatBoolVars: 4260, flatIntConstraints: 10887, flatIntVars: 4747,
+  flatTime: 0.356917, initTime: 12.41, intVariables: 2687, method: maximize, model: ../data/mzn-challenge/2022/tower/tower.mzn,
+  mzn_solver: org.choco.choco.noglobal, nSolutions: 20, nodes: 109152, objective: 62,
+  paths: 0, peakDepth: 99, problem: tower, restarts: 67, setVariables: 0, solutions: 20,
+  solveTime: 288.512, status: SATISFIED, threads: '1', timeout_ms: '300000', variables: 11109,
+  version: v4.10.15}

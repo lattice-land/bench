@@ -1,0 +1,13 @@
+{and_nodes: 256, arch: hybrid, configuration: turbo-gpu-release_v1.2.4_tower_100_100_20_100-04_10cores_64threads_timeout300000ms_10_64,
+  cores: '10', cuda_version: 12060, cutnodes: 0, data_file: ../data/mzn-challenge/2022/tower/100_100_20_100-04.dzn,
+  datetime: '2024-11-17T18:15:59.022328', eliminated_formulas: 4967, eliminated_variables: 220,
+  eps_num_subproblems: 4096, eps_skipped_subproblems: 2216, eps_solved_subproblems: 68,
+  evaluatedReifiedConstraints: 8060, failures: 245328, fixpoint_iterations: 37878569,
+  flatBoolConstraints: 100, flatBoolVars: 4260, flatIntConstraints: 10887, flatIntVars: 4747,
+  flatTime: 0.400757, free_search: yes, hardware: precision5820, initTime: 1.98, memory_configuration: global,
+  method: maximize, model: ../data/mzn-challenge/2022/tower/tower.mzn, mzn_solver: turbo.gpu.release,
+  nSolutions: 1, nodes: 496307, num_blocks_done: 0, num_solutions: 49, objective: 60,
+  or_nodes: 64, paths: 0, peakDepth: 335, problem: tower, problem_path: /tmp/mznfilePWfOiQ.fzn,
+  propagator_mem: 749348, propagators: 46826, shared_mem: 0, solveTime: 300.076, solver: Turbo,
+  stack_size: 32000, status: SATISFIED, store_mem: 328740, threads: '64', timeout_ms: 300000,
+  variables: 41085, version: v1.2.4}

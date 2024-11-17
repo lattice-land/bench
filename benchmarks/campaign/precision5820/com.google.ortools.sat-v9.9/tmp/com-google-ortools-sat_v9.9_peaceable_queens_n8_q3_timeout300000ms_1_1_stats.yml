@@ -1,0 +1,8 @@
+{boolVariables: 2495, configuration: com-google-ortools-sat_v9.9_peaceable_queens_n8_q3_timeout300000ms_1_1,
+  cores: '1', data_file: ../data/mzn-challenge/2022/generalized-peacable-queens/n8_q3.json,
+  datetime: '2024-09-12T08:45:39.603886', evaluatedReifiedConstraints: 1384, failures: 200,
+  flatBoolConstraints: 1679, flatBoolVars: 1795, flatIntConstraints: 1384, flatIntVars: 385,
+  flatTime: 0.213919, method: maximize, model: ../data/mzn-challenge/2022/generalized-peacable-queens/peaceable_queens.mzn,
+  mzn_solver: com.google.ortools.sat, nSolutions: 2, objective: 4, objectiveBound: 19,
+  paths: 0, problem: generalized-peacable-queens, propagations: 10587135, solveTime: 2.03241,
+  status: SATISFIED, threads: '1', timeout_ms: '300000', version: v9.9}

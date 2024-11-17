@@ -1,0 +1,864 @@
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 0
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.341
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 36
+  objective: 153
+  paths: 0
+  peakDepth: 36
+  problem: accap
+  restarts: 0
+  setVariables: 0
+  solution:
+    D: 48
+    S: [9, 23, 43, 30]
+    objective: 153
+    yCoor: [33, 29, 45, 7, 36, 7, 6, 17, 25, 11, 1, 40, 34, 33, 10, 42, 43, 42, 1,
+      3, 21, 37, 6, 18, 38, 16, 16, 11, 1, 28]
+  solutions: 1
+  solveTime: 0.232
+  status: SATISFIED
+  threads: '20'
+  time: 0.865
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 11
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.341
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 76
+  objective: 151
+  paths: 0
+  peakDepth: 36
+  problem: accap
+  restarts: 1
+  setVariables: 0
+  solution:
+    D: 48
+    S: [9, 23, 43, 28]
+    objective: 151
+    yCoor: [41, 29, 45, 7, 37, 7, 6, 17, 25, 11, 1, 33, 35, 41, 10, 35, 43, 42, 1,
+      3, 21, 40, 6, 18, 38, 16, 16, 11, 1, 28]
+  solutions: 2
+  solveTime: 0.308
+  status: SATISFIED
+  threads: '20'
+  time: 0.94
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 10
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.362
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 69
+  objective: 150
+  paths: 0
+  peakDepth: 33
+  problem: accap
+  restarts: 1
+  setVariables: 0
+  solution:
+    D: 50
+    S: [9, 32, 34, 25]
+    objective: 150
+    yCoor: [33, 25, 47, 4, 40, 1, 6, 30, 29, 1, 1, 38, 33, 35, 7, 42, 18, 1, 11, 1,
+      21, 41, 10, 21, 36, 4, 11, 42, 16, 29]
+  solutions: 1
+  solveTime: 0.329
+  status: SATISFIED
+  threads: '20'
+  time: 0.963
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 13
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.362
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 74
+  objective: 149
+  paths: 0
+  peakDepth: 33
+  problem: accap
+  restarts: 1
+  setVariables: 0
+  solution:
+    D: 50
+    S: [9, 31, 34, 25]
+    objective: 149
+    yCoor: [33, 25, 47, 4, 40, 1, 6, 30, 29, 1, 1, 38, 33, 35, 7, 42, 19, 1, 11, 1,
+      21, 41, 10, 21, 36, 4, 11, 42, 16, 29]
+  solutions: 2
+  solveTime: 0.335
+  status: SATISFIED
+  threads: '20'
+  time: 0.97
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 16
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.362
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 79
+  objective: 148
+  paths: 0
+  peakDepth: 33
+  problem: accap
+  restarts: 1
+  setVariables: 0
+  solution:
+    D: 50
+    S: [9, 30, 34, 25]
+    objective: 148
+    yCoor: [33, 25, 47, 4, 40, 1, 6, 30, 29, 1, 1, 38, 33, 35, 7, 42, 20, 1, 11, 1,
+      21, 41, 10, 22, 36, 4, 11, 42, 16, 29]
+  solutions: 3
+  solveTime: 0.348
+  status: SATISFIED
+  threads: '20'
+  time: 0.982
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 19
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.362
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 84
+  objective: 147
+  paths: 0
+  peakDepth: 33
+  problem: accap
+  restarts: 1
+  setVariables: 0
+  solution:
+    D: 50
+    S: [9, 29, 34, 25]
+    objective: 147
+    yCoor: [33, 25, 47, 4, 40, 1, 6, 30, 29, 1, 1, 38, 33, 35, 7, 42, 21, 1, 11, 1,
+      21, 41, 10, 23, 36, 4, 11, 42, 16, 29]
+  solutions: 4
+  solveTime: 0.368
+  status: SATISFIED
+  threads: '20'
+  time: 1.002
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 43
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.341
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 173
+  objective: 146
+  paths: 0
+  peakDepth: 36
+  problem: accap
+  restarts: 4
+  setVariables: 0
+  solution:
+    D: 48
+    S: [9, 23, 34, 32]
+    objective: 146
+    yCoor: [33, 29, 45, 7, 43, 7, 6, 17, 25, 11, 1, 36, 41, 44, 10, 41, 43, 33, 1,
+      3, 21, 40, 6, 18, 38, 16, 16, 11, 1, 28]
+  solutions: 3
+  solveTime: 0.376
+  status: SATISFIED
+  threads: '20'
+  time: 1.007
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 2
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.34
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 36
+  objective: 141
+  paths: 0
+  peakDepth: 33
+  problem: accap
+  restarts: 0
+  setVariables: 0
+  solution:
+    D: 48
+    S: [9, 19, 22, 43]
+    objective: 141
+    yCoor: [26, 41, 29, 9, 5, 12, 11, 11, 33, 6, 6, 3, 45, 47, 15, 29, 34, 26, 6,
+      12, 37, 48, 18, 3, 1, 21, 21, 6, 16, 33]
+  solutions: 1
+  solveTime: 0.393
+  status: SATISFIED
+  threads: '20'
+  time: 1.025
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 63
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.341
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 236
+  objective: 135
+  paths: 0
+  peakDepth: 36
+  problem: accap
+  restarts: 6
+  setVariables: 0
+  solution:
+    D: 48
+    S: [9, 12, 34, 32]
+    objective: 135
+    yCoor: [33, 29, 45, 7, 43, 7, 6, 17, 36, 11, 1, 27, 41, 44, 10, 41, 43, 33, 1,
+      3, 21, 40, 6, 18, 25, 16, 16, 11, 1, 36]
+  solutions: 4
+  solveTime: 0.408
+  status: SATISFIED
+  threads: '20'
+  time: 1.039
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 38
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.362
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 155
+  objective: 126
+  paths: 0
+  peakDepth: 33
+  problem: accap
+  restarts: 3
+  setVariables: 0
+  solution:
+    D: 50
+    S: [9, 20, 22, 25]
+    objective: 126
+    yCoor: [21, 25, 21, 4, 40, 1, 6, 30, 29, 1, 1, 38, 33, 35, 7, 24, 25, 1, 11, 1,
+      47, 41, 10, 31, 36, 4, 11, 42, 16, 29]
+  solutions: 5
+  solveTime: 0.416
+  status: SATISFIED
+  threads: '20'
+  time: 1.05
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 42
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.362
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 187
+  objective: 121
+  paths: 0
+  peakDepth: 33
+  problem: accap
+  restarts: 4
+  setVariables: 0
+  solution:
+    D: 50
+    S: [9, 15, 22, 25]
+    objective: 121
+    yCoor: [21, 25, 21, 4, 37, 1, 6, 30, 29, 1, 1, 38, 33, 36, 7, 24, 25, 1, 11, 1,
+      47, 35, 10, 31, 40, 4, 11, 42, 16, 29]
+  solutions: 6
+  solveTime: 0.424
+  status: SATISFIED
+  threads: '20'
+  time: 1.058
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 85
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.342
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 177
+  objective: 120
+  paths: 0
+  peakDepth: 19
+  problem: accap
+  restarts: 7
+  setVariables: 0
+  solution:
+    D: 48
+    S: [9, 19, 17, 27]
+    objective: 120
+    yCoor: [6, 28, 36, 5, 46, 1, 1, 33, 32, 19, 8, 40, 44, 47, 1, 36, 29, 6, 11, 8,
+      24, 48, 4, 24, 42, 14, 14, 19, 9, 32]
+  solutions: 1
+  solveTime: 0.495
+  status: SATISFIED
+  threads: '20'
+  time: 1.128
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 87
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.342
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 181
+  objective: 119
+  paths: 0
+  peakDepth: 19
+  problem: accap
+  restarts: 7
+  setVariables: 0
+  solution:
+    D: 48
+    S: [9, 18, 17, 27]
+    objective: 119
+    yCoor: [6, 28, 36, 5, 46, 1, 1, 33, 32, 19, 8, 40, 44, 47, 1, 36, 30, 6, 11, 8,
+      24, 48, 4, 24, 42, 14, 14, 19, 9, 32]
+  solutions: 2
+  solveTime: 0.499
+  status: SATISFIED
+  threads: '20'
+  time: 1.132
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 89
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.342
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 185
+  objective: 118
+  paths: 0
+  peakDepth: 19
+  problem: accap
+  restarts: 7
+  setVariables: 0
+  solution:
+    D: 48
+    S: [9, 16, 17, 28]
+    objective: 118
+    yCoor: [6, 28, 36, 5, 46, 1, 1, 18, 32, 19, 8, 40, 44, 47, 1, 36, 33, 6, 11, 8,
+      24, 48, 4, 24, 42, 14, 14, 19, 9, 32]
+  solutions: 3
+  solveTime: 0.502
+  status: SATISFIED
+  threads: '20'
+  time: 1.135
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 90
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.342
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 187
+  objective: 117
+  paths: 0
+  peakDepth: 19
+  problem: accap
+  restarts: 7
+  setVariables: 0
+  solution:
+    D: 48
+    S: [9, 16, 17, 27]
+    objective: 117
+    yCoor: [6, 28, 36, 5, 46, 1, 1, 35, 32, 19, 8, 40, 44, 47, 1, 36, 33, 6, 11, 8,
+      24, 48, 4, 24, 42, 14, 14, 19, 9, 32]
+  solutions: 4
+  solveTime: 0.507
+  status: SATISFIED
+  threads: '20'
+  time: 1.14
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 104
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.342
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 222
+  objective: 116
+  paths: 0
+  peakDepth: 19
+  problem: accap
+  restarts: 8
+  setVariables: 0
+  solution:
+    D: 48
+    S: [9, 13, 17, 29]
+    objective: 116
+    yCoor: [6, 28, 36, 5, 48, 1, 1, 35, 32, 19, 8, 40, 44, 43, 1, 36, 33, 6, 11, 8,
+      24, 42, 4, 24, 46, 14, 14, 19, 9, 32]
+  solutions: 5
+  solveTime: 0.522
+  status: SATISFIED
+  threads: '20'
+  time: 1.155
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 187
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.342
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 436
+  objective: 114
+  paths: 0
+  peakDepth: 19
+  problem: accap
+  restarts: 15
+  setVariables: 0
+  solution:
+    D: 48
+    S: [9, 11, 17, 29]
+    objective: 114
+    yCoor: [6, 28, 36, 5, 48, 1, 1, 35, 32, 19, 8, 44, 40, 43, 1, 36, 33, 6, 11, 8,
+      24, 42, 4, 24, 46, 14, 14, 19, 9, 32]
+  solutions: 6
+  solveTime: 0.594
+  status: SATISFIED
+  threads: '20'
+  time: 1.227
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 674
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.342
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 1356
+  objective: 113
+  paths: 0
+  peakDepth: 19
+  problem: accap
+  restarts: 40
+  setVariables: 0
+  solution:
+    D: 48
+    S: [9, 16, 17, 23]
+    objective: 113
+    yCoor: [6, 28, 44, 5, 42, 1, 1, 35, 32, 19, 8, 36, 40, 43, 1, 40, 33, 6, 11, 8,
+      24, 48, 4, 24, 38, 14, 14, 19, 9, 32]
+  solutions: 7
+  solveTime: 0.998
+  status: SATISFIED
+  threads: '20'
+  time: 1.631
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 691
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.342
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 1398
+  objective: 111
+  paths: 0
+  peakDepth: 19
+  problem: accap
+  restarts: 41
+  setVariables: 0
+  solution:
+    D: 48
+    S: [9, 16, 17, 21]
+    objective: 111
+    yCoor: [6, 28, 44, 5, 40, 1, 1, 35, 32, 19, 8, 36, 41, 43, 1, 41, 33, 6, 11, 8,
+      24, 48, 4, 24, 38, 14, 14, 19, 9, 32]
+  solutions: 8
+  solveTime: 1.015
+  status: SATISFIED
+  threads: '20'
+  time: 1.648
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 1112
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.344
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 1533
+  objective: 109
+  paths: 0
+  peakDepth: 29
+  problem: accap
+  restarts: 38
+  setVariables: 0
+  solution:
+    D: 50
+    S: [13, 11, 17, 18]
+    objective: 109
+    yCoor: [21, 30, 43, 9, 38, 1, 1, 39, 39, 11, 6, 34, 47, 50, 12, 43, 41, 11, 6,
+      1, 26, 49, 4, 26, 36, 6, 6, 21, 16, 40]
+  solutions: 1
+  solveTime: 1.067
+  status: SATISFIED
+  threads: '20'
+  time: 1.701
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 1622
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.344
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 2491
+  objective: 106
+  paths: 0
+  peakDepth: 29
+  problem: accap
+  restarts: 63
+  setVariables: 0
+  solution:
+    D: 50
+    S: [10, 11, 17, 18]
+    objective: 106
+    yCoor: [21, 30, 43, 9, 38, 1, 1, 39, 39, 11, 12, 34, 47, 50, 4, 43, 41, 11, 12,
+      1, 26, 49, 7, 26, 36, 6, 6, 21, 16, 40]
+  solutions: 2
+  solveTime: 1.293
+  status: SATISFIED
+  threads: '20'
+  time: 1.927
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 1640
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.344
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 2508
+  objective: 105
+  paths: 0
+  peakDepth: 29
+  problem: accap
+  restarts: 63
+  setVariables: 0
+  solution:
+    D: 50
+    S: [9, 11, 17, 18]
+    objective: 105
+    yCoor: [21, 30, 43, 8, 38, 1, 1, 39, 39, 11, 12, 34, 47, 50, 4, 43, 41, 11, 11,
+      1, 26, 49, 7, 26, 36, 6, 6, 21, 16, 40]
+  solutions: 3
+  solveTime: 1.298
+  status: SATISFIED
+  threads: '20'
+  time: 1.933
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 1060
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.342
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 2101
+  objective: 104
+  paths: 0
+  peakDepth: 19
+  problem: accap
+  restarts: 62
+  setVariables: 0
+  solution:
+    D: 48
+    S: [9, 11, 17, 19]
+    objective: 104
+    yCoor: [6, 28, 44, 5, 36, 1, 1, 17, 37, 19, 8, 34, 41, 43, 1, 41, 38, 6, 11, 8,
+      24, 48, 4, 24, 32, 14, 14, 19, 9, 37]
+  solutions: 9
+  solveTime: 1.322
+  status: SATISFIED
+  threads: '20'
+  time: 1.955
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15
+- boolVariables: 2
+  configuration: org-choco-choco_v4.10.15_accap_accap_a4_f30_t15_10cores_20threads_timeout300000ms_10_20
+  constraints: 231
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-11T23:18:42.062524'
+  failures: 1106
+  flatIntConstraints: 230
+  flatIntVars: 36
+  flatTime: 0.0561681
+  initTime: 0.342
+  intVariables: 117
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: org.choco.choco
+  nodes: 2206
+  objective: 103
+  paths: 0
+  peakDepth: 19
+  problem: accap
+  restarts: 67
+  setVariables: 0
+  solution:
+    D: 48
+    S: [9, 11, 17, 18]
+    objective: 103
+    yCoor: [6, 28, 44, 5, 36, 1, 1, 18, 37, 19, 8, 34, 41, 43, 1, 41, 38, 6, 11, 8,
+      24, 48, 4, 24, 32, 14, 14, 19, 9, 37]
+  solutions: 10
+  solveTime: 1.359
+  status: SATISFIED
+  threads: '20'
+  time: 1.992
+  timeout_ms: '300000'
+  variables: 119
+  version: v4.10.15

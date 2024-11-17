@@ -1,0 +1,12 @@
+{and_nodes: 1024, arch: HYBRID, configuration: turbo-gpu-release_v1.2.1_dcmst_c_v20_a190_d4_10cores_20threads_timeout300000ms_10_20,
+  cores: '10', cuda_version: 12060, cutnodes: 0, data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn,
+  datetime: '2024-10-21T20:29:39.664556', eliminated_formulas: 1094, eliminated_variables: 842,
+  eps_num_subproblems: 4096, eps_skipped_subproblems: 0, eps_solved_subproblems: 3109,
+  evaluatedReifiedConstraints: 1571, failures: 170334, fixpoint_iterations: 3535058,
+  flatBoolConstraints: 3852, flatBoolVars: 2141, flatIntConstraints: 1785, flatIntVars: 252,
+  flatTime: 0.26696, free_search: no, hardware: precision5820, initTime: 0.279, method: minimize,
+  model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn, mzn_solver: turbo.gpu.release,
+  nSolutions: 1, nodes: 372825, num_blocks_done: 0, num_solutions: 45, objective: 401,
+  or_nodes: 64, paths: 0, peakDepth: 33, problem: diameterc-mst, problem_path: /tmp/mznfiledHaAPM.fzn,
+  propagators: 5865, solveTime: 300.045, solver: Turbo, stack_size: 32000, status: SATISFIED,
+  threads: '20', timeout_ms: 300000, variables: 2203, version: v1.2.1}

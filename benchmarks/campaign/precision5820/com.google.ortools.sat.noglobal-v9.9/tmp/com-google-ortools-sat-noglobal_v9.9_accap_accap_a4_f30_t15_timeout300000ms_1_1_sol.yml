@@ -1,0 +1,2432 @@
+- boolVariables: 246
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 0
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 232
+  objectiveBound: 24
+  paths: 0
+  problem: accap
+  propagations: 1873
+  solution:
+    D: 57
+    S: [24, 49, 55, 47]
+    objective: 232
+    yCoor: [55, 51, 47, 43, 46, 43, 41, 32, 37, 32, 24, 30, 28, 27, 27, 24, 22, 24,
+      25, 22, 20, 19, 21, 19, 17, 12, 12, 7, 2, 1]
+  solveTime: 0.0367217
+  status: SATISFIED
+  threads: '1'
+  time: 0.145
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 328
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 509
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 228
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 72389
+  solution:
+    D: 53
+    S: [47, 43, 42, 43]
+    objective: 228
+    yCoor: [44, 40, 36, 11, 35, 6, 49, 5, 31, 11, 4, 47, 45, 44, 6, 5, 17, 28, 4,
+      17, 24, 23, 16, 9, 21, 4, 16, 11, 6, 3]
+  solveTime: 0.0967788
+  status: SATISFIED
+  threads: '1'
+  time: 0.205
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 354
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 526
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 227
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 76414
+  solution:
+    D: 55
+    S: [52, 49, 38, 33]
+    objective: 227
+    yCoor: [41, 37, 46, 26, 36, 3, 51, 19, 32, 10, 5, 44, 41, 50, 3, 1, 30, 29, 24,
+      30, 25, 24, 29, 24, 22, 21, 17, 12, 5, 1]
+  solveTime: 0.102375
+  status: SATISFIED
+  threads: '1'
+  time: 0.21
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 380
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 548
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 214
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 81259
+  solution:
+    D: 55
+    S: [54, 27, 37, 41]
+    objective: 214
+    yCoor: [41, 37, 46, 26, 36, 1, 51, 4, 32, 11, 6, 44, 41, 50, 1, 23, 30, 29, 42,
+      30, 25, 24, 29, 24, 21, 17, 16, 11, 6, 23]
+  solveTime: 0.109851
+  status: SATISFIED
+  threads: '1'
+  time: 0.218
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 397
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 557
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 207
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 82731
+  solution:
+    D: 68
+    S: [9, 46, 36, 48]
+    objective: 207
+    yCoor: [59, 55, 64, 4, 54, 1, 1, 15, 50, 30, 25, 62, 59, 68, 1, 22, 22, 47, 60,
+      8, 43, 42, 7, 51, 40, 39, 35, 30, 25, 50]
+  solveTime: 0.11227
+  status: SATISFIED
+  threads: '1'
+  time: 0.22
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 425
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 571
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 205
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 85038
+  solution:
+    D: 55
+    S: [39, 29, 54, 28]
+    objective: 205
+    yCoor: [26, 22, 31, 4, 21, 9, 36, 17, 17, 46, 7, 29, 26, 35, 1, 6, 21, 14, 54,
+      38, 10, 9, 12, 19, 7, 1, 51, 2, 41, 18]
+  solveTime: 0.114948
+  status: SATISFIED
+  threads: '1'
+  time: 0.223
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 428
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 576
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 195
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 86054
+  solution:
+    D: 50
+    S: [39, 29, 49, 28]
+    objective: 195
+    yCoor: [26, 22, 31, 4, 21, 9, 36, 17, 17, 1, 7, 29, 26, 35, 1, 6, 21, 14, 49,
+      38, 10, 9, 12, 19, 7, 1, 46, 2, 41, 18]
+  solveTime: 0.117625
+  status: SATISFIED
+  threads: '1'
+  time: 0.226
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 440
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 580
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 188
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 87216
+  solution:
+    D: 50
+    S: [35, 29, 41, 33]
+    objective: 188
+    yCoor: [21, 17, 26, 35, 16, 9, 36, 12, 12, 31, 38, 24, 21, 30, 32, 1, 13, 9, 49,
+      42, 5, 4, 41, 23, 2, 13, 46, 31, 41, 15]
+  solveTime: 0.119589
+  status: SATISFIED
+  threads: '1'
+  time: 0.228
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 444
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 581
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 185
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 88058
+  solution:
+    D: 50
+    S: [32, 29, 41, 33]
+    objective: 185
+    yCoor: [21, 17, 26, 35, 16, 9, 36, 12, 12, 31, 39, 24, 21, 30, 32, 1, 13, 9, 9,
+      39, 5, 4, 38, 23, 2, 13, 46, 31, 41, 15]
+  solveTime: 0.121372
+  status: SATISFIED
+  threads: '1'
+  time: 0.229
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 447
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 581
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 184
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 88868
+  solution:
+    D: 50
+    S: [31, 29, 41, 33]
+    objective: 184
+    yCoor: [21, 17, 26, 25, 16, 9, 36, 12, 12, 31, 28, 24, 21, 30, 11, 1, 13, 9, 9,
+      37, 5, 4, 36, 23, 2, 13, 46, 31, 41, 15]
+  solveTime: 0.123071
+  status: SATISFIED
+  threads: '1'
+  time: 0.231
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 452
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 581
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 183
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 89682
+  solution:
+    D: 50
+    S: [30, 29, 41, 33]
+    objective: 183
+    yCoor: [21, 17, 26, 25, 16, 10, 36, 13, 12, 31, 28, 24, 21, 30, 10, 1, 16, 9,
+      13, 37, 5, 4, 36, 23, 2, 14, 46, 31, 41, 15]
+  solveTime: 0.124629
+  status: SATISFIED
+  threads: '1'
+  time: 0.233
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 455
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 582
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 182
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 90528
+  solution:
+    D: 50
+    S: [29, 29, 41, 33]
+    objective: 182
+    yCoor: [21, 17, 26, 26, 16, 11, 36, 14, 12, 31, 29, 24, 22, 30, 11, 1, 15, 9,
+      9, 37, 5, 4, 36, 24, 2, 15, 46, 31, 41, 21]
+  solveTime: 0.126224
+  status: SATISFIED
+  threads: '1'
+  time: 0.234
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 462
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 582
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 171
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 91354
+  solution:
+    D: 50
+    S: [14, 29, 41, 37]
+    objective: 171
+    yCoor: [21, 17, 26, 26, 16, 36, 36, 39, 12, 31, 29, 24, 21, 30, 29, 1, 2, 9, 9,
+      32, 5, 4, 39, 4, 2, 12, 46, 31, 41, 1]
+  solveTime: 0.127794
+  status: SATISFIED
+  threads: '1'
+  time: 0.236
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 465
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 583
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 170
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 94802
+  solution:
+    D: 50
+    S: [16, 29, 41, 34]
+    objective: 170
+    yCoor: [21, 17, 26, 24, 16, 37, 36, 36, 12, 31, 27, 24, 21, 30, 27, 1, 2, 9, 9,
+      30, 5, 4, 36, 4, 2, 12, 46, 31, 41, 1]
+  solveTime: 0.132719
+  status: SATISFIED
+  threads: '1'
+  time: 0.241
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 469
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 584
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 164
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 95739
+  solution:
+    D: 50
+    S: [10, 29, 41, 34]
+    objective: 164
+    yCoor: [21, 17, 26, 37, 16, 37, 36, 36, 12, 31, 40, 24, 21, 30, 40, 1, 2, 9, 9,
+      43, 5, 4, 46, 4, 2, 12, 46, 31, 41, 1]
+  solveTime: 0.1342
+  status: SATISFIED
+  threads: '1'
+  time: 0.242
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 469
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 584
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 163
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 96621
+  solution:
+    D: 50
+    S: [9, 29, 41, 34]
+    objective: 163
+    yCoor: [21, 17, 26, 37, 16, 37, 36, 36, 12, 31, 40, 24, 21, 30, 34, 1, 2, 9, 9,
+      40, 5, 4, 43, 4, 2, 12, 46, 31, 41, 1]
+  solveTime: 0.135398
+  status: SATISFIED
+  threads: '1'
+  time: 0.243
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 473
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 608
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 162
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 98340
+  solution:
+    D: 50
+    S: [9, 29, 41, 33]
+    objective: 162
+    yCoor: [21, 17, 26, 35, 16, 36, 36, 4, 12, 31, 38, 24, 21, 30, 32, 1, 2, 9, 9,
+      38, 5, 4, 41, 5, 2, 12, 46, 31, 41, 1]
+  solveTime: 0.137698
+  status: SATISFIED
+  threads: '1'
+  time: 0.246
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 486
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 687
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 161
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 104788
+  solution:
+    D: 50
+    S: [9, 34, 41, 27]
+    objective: 161
+    yCoor: [21, 17, 30, 34, 16, 36, 36, 12, 12, 30, 37, 28, 21, 35, 31, 1, 2, 9, 9,
+      37, 5, 4, 40, 4, 2, 13, 46, 23, 41, 1]
+  solveTime: 0.142784
+  status: SATISFIED
+  threads: '1'
+  time: 0.251
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 496
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 694
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 160
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 106891
+  solution:
+    D: 49
+    S: [11, 33, 40, 27]
+    objective: 160
+    yCoor: [9, 17, 30, 31, 16, 35, 35, 12, 12, 21, 34, 28, 21, 34, 28, 1, 2, 9, 9,
+      34, 5, 4, 38, 4, 2, 13, 45, 23, 40, 1]
+  solveTime: 0.144545
+  status: SATISFIED
+  threads: '1'
+  time: 0.252
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 499
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 694
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 159
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 107871
+  solution:
+    D: 49
+    S: [10, 33, 40, 27]
+    objective: 159
+    yCoor: [9, 17, 30, 32, 16, 35, 35, 12, 12, 21, 35, 28, 21, 34, 29, 1, 2, 9, 9,
+      35, 5, 4, 38, 4, 2, 13, 45, 23, 40, 1]
+  solveTime: 0.146005
+  status: SATISFIED
+  threads: '1'
+  time: 0.254
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 500
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 694
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 158
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 108845
+  solution:
+    D: 49
+    S: [9, 33, 40, 27]
+    objective: 158
+    yCoor: [9, 17, 30, 33, 16, 35, 35, 12, 12, 21, 36, 28, 21, 34, 30, 1, 2, 9, 9,
+      36, 5, 4, 39, 4, 2, 13, 45, 23, 40, 1]
+  solveTime: 0.147324
+  status: SATISFIED
+  threads: '1'
+  time: 0.255
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 519
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 842
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 157
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 121859
+  solution:
+    D: 49
+    S: [13, 33, 31, 31]
+    objective: 157
+    yCoor: [13, 21, 5, 39, 20, 36, 45, 4, 16, 25, 42, 32, 25, 34, 36, 1, 2, 13, 13,
+      42, 9, 4, 45, 9, 2, 16, 40, 27, 35, 1]
+  solveTime: 0.155437
+  status: SATISFIED
+  threads: '1'
+  time: 0.263
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 523
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 844
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 156
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 123147
+  solution:
+    D: 49
+    S: [12, 33, 31, 31]
+    objective: 156
+    yCoor: [13, 21, 5, 40, 20, 37, 45, 4, 16, 25, 13, 32, 25, 34, 37, 1, 2, 13, 13,
+      43, 9, 4, 46, 9, 2, 16, 40, 27, 35, 1]
+  solveTime: 0.15706
+  status: SATISFIED
+  threads: '1'
+  time: 0.265
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 527
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 844
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 155
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 124189
+  solution:
+    D: 49
+    S: [11, 33, 31, 31]
+    objective: 155
+    yCoor: [13, 21, 5, 41, 20, 38, 45, 4, 16, 25, 13, 32, 25, 34, 38, 1, 2, 13, 13,
+      44, 9, 4, 47, 9, 2, 16, 40, 27, 35, 1]
+  solveTime: 0.158183
+  status: SATISFIED
+  threads: '1'
+  time: 0.266
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 530
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 844
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 154
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 125232
+  solution:
+    D: 49
+    S: [10, 33, 31, 31]
+    objective: 154
+    yCoor: [13, 21, 5, 42, 20, 39, 45, 4, 16, 25, 13, 32, 25, 34, 39, 1, 2, 13, 13,
+      45, 9, 4, 48, 9, 2, 16, 40, 27, 35, 1]
+  solveTime: 0.159344
+  status: SATISFIED
+  threads: '1'
+  time: 0.267
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 533
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 847
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 153
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 130885
+  solution:
+    D: 49
+    S: [9, 33, 31, 31]
+    objective: 153
+    yCoor: [13, 21, 5, 43, 20, 40, 45, 4, 16, 25, 13, 32, 25, 34, 40, 1, 2, 13, 13,
+      46, 9, 4, 49, 9, 2, 16, 40, 27, 35, 1]
+  solveTime: 0.165277
+  status: SATISFIED
+  threads: '1'
+  time: 0.273
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 550
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1059
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 152
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 158168
+  solution:
+    D: 49
+    S: [14, 26, 31, 32]
+    objective: 152
+    yCoor: [13, 21, 5, 38, 20, 35, 45, 4, 16, 28, 13, 33, 25, 27, 35, 1, 2, 13, 13,
+      41, 9, 4, 44, 9, 2, 16, 40, 28, 35, 1]
+  solveTime: 0.180315
+  status: SATISFIED
+  threads: '1'
+  time: 0.288
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 550
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1059
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 151
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 159189
+  solution:
+    D: 49
+    S: [13, 26, 31, 32]
+    objective: 151
+    yCoor: [13, 21, 5, 39, 20, 36, 45, 4, 16, 28, 13, 33, 25, 27, 36, 1, 2, 13, 13,
+      42, 9, 4, 45, 9, 2, 16, 40, 28, 35, 1]
+  solveTime: 0.181636
+  status: SATISFIED
+  threads: '1'
+  time: 0.29
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 550
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1059
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 150
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 160209
+  solution:
+    D: 49
+    S: [12, 26, 31, 32]
+    objective: 150
+    yCoor: [13, 21, 5, 40, 20, 37, 45, 4, 16, 28, 13, 33, 25, 27, 37, 1, 2, 13, 13,
+      43, 9, 4, 46, 9, 2, 16, 40, 28, 35, 1]
+  solveTime: 0.182661
+  status: SATISFIED
+  threads: '1'
+  time: 0.291
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 550
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1059
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 149
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 161226
+  solution:
+    D: 49
+    S: [11, 26, 31, 32]
+    objective: 149
+    yCoor: [13, 21, 5, 41, 20, 38, 45, 4, 16, 28, 13, 33, 25, 27, 38, 1, 2, 13, 13,
+      44, 9, 4, 47, 9, 2, 16, 40, 28, 35, 1]
+  solveTime: 0.183618
+  status: SATISFIED
+  threads: '1'
+  time: 0.292
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 551
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1059
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 148
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 162244
+  solution:
+    D: 49
+    S: [10, 26, 31, 32]
+    objective: 148
+    yCoor: [13, 21, 5, 43, 20, 39, 45, 4, 16, 28, 13, 33, 25, 27, 39, 1, 2, 13, 13,
+      46, 9, 4, 42, 9, 2, 16, 40, 28, 35, 1]
+  solveTime: 0.184543
+  status: SATISFIED
+  threads: '1'
+  time: 0.293
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 552
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1059
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 147
+  objectiveBound: 28
+  paths: 0
+  problem: accap
+  propagations: 163260
+  solution:
+    D: 49
+    S: [9, 26, 31, 32]
+    objective: 147
+    yCoor: [13, 21, 5, 44, 20, 40, 45, 4, 16, 28, 13, 33, 25, 27, 40, 1, 2, 13, 13,
+      47, 9, 4, 43, 9, 2, 16, 40, 28, 35, 1]
+  solveTime: 0.185556
+  status: SATISFIED
+  threads: '1'
+  time: 0.294
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 582
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1495
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 146
+  objectiveBound: 29
+  paths: 0
+  problem: accap
+  propagations: 241630
+  solution:
+    D: 48
+    S: [16, 18, 32, 32]
+    objective: 146
+    yCoor: [11, 23, 3, 36, 1, 32, 44, 2, 14, 27, 11, 32, 18, 20, 32, 3, 18, 11, 11,
+      39, 7, 2, 35, 16, 21, 15, 39, 27, 34, 14]
+  solveTime: 0.235346
+  status: SATISFIED
+  threads: '1'
+  time: 0.344
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 583
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1498
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 145
+  objectiveBound: 29
+  paths: 0
+  problem: accap
+  propagations: 242823
+  solution:
+    D: 48
+    S: [19, 18, 33, 27]
+    objective: 145
+    yCoor: [10, 23, 2, 33, 20, 40, 44, 13, 13, 27, 10, 32, 17, 19, 29, 2, 17, 10,
+      10, 36, 6, 1, 32, 15, 21, 39, 39, 27, 34, 14]
+  solveTime: 0.237928
+  status: SATISFIED
+  threads: '1'
+  time: 0.346
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 589
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1503
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 144
+  objectiveBound: 29
+  paths: 0
+  problem: accap
+  propagations: 244457
+  solution:
+    D: 49
+    S: [18, 11, 42, 24]
+    objective: 144
+    yCoor: [2, 21, 1, 35, 13, 31, 45, 7, 6, 25, 2, 30, 10, 12, 31, 1, 10, 32, 2, 38,
+      15, 5, 34, 8, 19, 14, 40, 25, 35, 6]
+  solveTime: 0.24056
+  status: SATISFIED
+  threads: '1'
+  time: 0.349
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 593
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1505
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 143
+  objectiveBound: 29
+  paths: 0
+  problem: accap
+  propagations: 246038
+  solution:
+    D: 49
+    S: [17, 11, 43, 23]
+    objective: 143
+    yCoor: [3, 21, 2, 36, 14, 32, 45, 8, 7, 25, 1, 30, 11, 13, 32, 2, 11, 32, 1, 39,
+      15, 6, 35, 9, 19, 1, 40, 25, 35, 7]
+  solveTime: 0.243272
+  status: SATISFIED
+  threads: '1'
+  time: 0.351
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 602
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1526
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 142
+  objectiveBound: 29
+  paths: 0
+  problem: accap
+  propagations: 249096
+  solution:
+    D: 49
+    S: [15, 12, 41, 25]
+    objective: 142
+    yCoor: [3, 21, 1, 37, 14, 34, 45, 6, 7, 25, 3, 30, 11, 13, 34, 1, 10, 32, 3, 40,
+      15, 6, 43, 8, 19, 5, 40, 25, 35, 7]
+  solveTime: 0.246179
+  status: SATISFIED
+  threads: '1'
+  time: 0.354
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 605
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1526
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 141
+  objectiveBound: 29
+  paths: 0
+  problem: accap
+  propagations: 250225
+  solution:
+    D: 49
+    S: [16, 12, 39, 25]
+    objective: 141
+    yCoor: [11, 21, 1, 36, 14, 33, 45, 6, 7, 25, 12, 30, 11, 13, 33, 1, 10, 32, 5,
+      39, 15, 6, 42, 8, 19, 5, 40, 25, 35, 7]
+  solveTime: 0.247465
+  status: SATISFIED
+  threads: '1'
+  time: 0.356
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 605
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1526
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 140
+  objectiveBound: 29
+  paths: 0
+  problem: accap
+  propagations: 251350
+  solution:
+    D: 49
+    S: [15, 12, 39, 25]
+    objective: 140
+    yCoor: [11, 21, 1, 37, 14, 34, 45, 6, 7, 25, 12, 30, 11, 13, 34, 1, 10, 32, 5,
+      40, 15, 6, 43, 8, 19, 5, 40, 25, 35, 7]
+  solveTime: 0.248718
+  status: SATISFIED
+  threads: '1'
+  time: 0.357
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 605
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1526
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 139
+  objectiveBound: 29
+  paths: 0
+  problem: accap
+  propagations: 252465
+  solution:
+    D: 49
+    S: [14, 12, 39, 25]
+    objective: 139
+    yCoor: [11, 21, 1, 38, 14, 35, 45, 6, 7, 25, 12, 30, 11, 13, 35, 1, 10, 32, 5,
+      41, 15, 6, 44, 8, 19, 5, 40, 25, 35, 7]
+  solveTime: 0.250014
+  status: SATISFIED
+  threads: '1'
+  time: 0.358
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 605
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1526
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 138
+  objectiveBound: 29
+  paths: 0
+  problem: accap
+  propagations: 253600
+  solution:
+    D: 49
+    S: [13, 12, 39, 25]
+    objective: 138
+    yCoor: [11, 21, 1, 39, 14, 36, 45, 6, 7, 25, 12, 30, 11, 13, 36, 1, 10, 32, 5,
+      42, 15, 6, 45, 8, 19, 5, 40, 25, 35, 7]
+  solveTime: 0.251203
+  status: SATISFIED
+  threads: '1'
+  time: 0.359
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 605
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1526
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 137
+  objectiveBound: 29
+  paths: 0
+  problem: accap
+  propagations: 254747
+  solution:
+    D: 49
+    S: [12, 12, 39, 25]
+    objective: 137
+    yCoor: [11, 21, 1, 40, 14, 37, 45, 6, 7, 25, 12, 30, 11, 13, 37, 1, 10, 32, 5,
+      43, 15, 6, 46, 8, 19, 5, 40, 25, 35, 7]
+  solveTime: 0.252354
+  status: SATISFIED
+  threads: '1'
+  time: 0.361
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 605
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1526
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 136
+  objectiveBound: 29
+  paths: 0
+  problem: accap
+  propagations: 255908
+  solution:
+    D: 49
+    S: [11, 12, 39, 25]
+    objective: 136
+    yCoor: [11, 21, 1, 41, 14, 38, 45, 6, 7, 25, 12, 30, 11, 13, 38, 1, 10, 32, 5,
+      44, 15, 6, 47, 8, 19, 5, 40, 25, 35, 7]
+  solveTime: 0.253396
+  status: SATISFIED
+  threads: '1'
+  time: 0.361
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 605
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1526
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 135
+  objectiveBound: 29
+  paths: 0
+  problem: accap
+  propagations: 257076
+  solution:
+    D: 49
+    S: [10, 12, 39, 25]
+    objective: 135
+    yCoor: [11, 21, 1, 42, 14, 39, 45, 6, 7, 25, 12, 30, 11, 13, 39, 1, 10, 32, 5,
+      45, 15, 6, 48, 8, 19, 5, 40, 25, 35, 7]
+  solveTime: 0.254353
+  status: SATISFIED
+  threads: '1'
+  time: 0.362
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 605
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1526
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 134
+  objectiveBound: 29
+  paths: 0
+  problem: accap
+  propagations: 258227
+  solution:
+    D: 49
+    S: [9, 12, 39, 25]
+    objective: 134
+    yCoor: [11, 21, 1, 43, 14, 40, 45, 6, 7, 25, 12, 30, 11, 13, 40, 1, 10, 32, 5,
+      46, 15, 6, 49, 8, 19, 5, 40, 25, 35, 7]
+  solveTime: 0.255262
+  status: SATISFIED
+  threads: '1'
+  time: 0.363
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 605
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1541
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 133
+  objectiveBound: 29
+  paths: 0
+  problem: accap
+  propagations: 260420
+  solution:
+    D: 49
+    S: [9, 12, 39, 24]
+    objective: 133
+    yCoor: [11, 21, 1, 43, 14, 40, 45, 7, 7, 25, 5, 30, 11, 13, 40, 1, 11, 32, 5,
+      46, 15, 6, 49, 8, 19, 5, 40, 25, 35, 10]
+  solveTime: 0.25715
+  status: SATISFIED
+  threads: '1'
+  time: 0.365
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 615
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1575
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 132
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 266237
+  solution:
+    D: 48
+    S: [17, 11, 35, 21]
+    objective: 132
+    yCoor: [10, 20, 1, 34, 13, 31, 44, 9, 6, 24, 8, 29, 10, 12, 31, 1, 11, 31, 8,
+      37, 14, 5, 40, 14, 18, 8, 39, 24, 34, 6]
+  solveTime: 0.260504
+  status: SATISFIED
+  threads: '1'
+  time: 0.369
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 615
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1575
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 131
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 267196
+  solution:
+    D: 48
+    S: [16, 11, 35, 21]
+    objective: 131
+    yCoor: [10, 20, 1, 35, 13, 32, 44, 9, 6, 24, 8, 29, 10, 12, 32, 1, 11, 31, 8,
+      39, 14, 5, 38, 14, 18, 8, 39, 24, 34, 6]
+  solveTime: 0.261825
+  status: SATISFIED
+  threads: '1'
+  time: 0.37
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 615
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1575
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 130
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 268158
+  solution:
+    D: 48
+    S: [15, 11, 35, 21]
+    objective: 130
+    yCoor: [10, 20, 1, 36, 13, 33, 44, 9, 6, 24, 8, 29, 10, 12, 33, 1, 11, 31, 8,
+      40, 14, 5, 39, 14, 18, 8, 39, 24, 34, 6]
+  solveTime: 0.262821
+  status: SATISFIED
+  threads: '1'
+  time: 0.371
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 615
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1575
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 129
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 269111
+  solution:
+    D: 48
+    S: [14, 11, 35, 21]
+    objective: 129
+    yCoor: [10, 20, 1, 37, 13, 34, 44, 9, 6, 24, 8, 29, 10, 12, 34, 1, 11, 31, 8,
+      41, 14, 5, 40, 14, 18, 8, 39, 24, 34, 6]
+  solveTime: 0.263902
+  status: SATISFIED
+  threads: '1'
+  time: 0.372
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 616
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1575
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 128
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 270072
+  solution:
+    D: 48
+    S: [13, 11, 35, 21]
+    objective: 128
+    yCoor: [10, 20, 1, 38, 13, 35, 44, 9, 6, 24, 8, 29, 10, 12, 35, 1, 11, 31, 8,
+      42, 14, 5, 41, 14, 18, 8, 39, 24, 34, 6]
+  solveTime: 0.264846
+  status: SATISFIED
+  threads: '1'
+  time: 0.373
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 616
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1575
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 127
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 271038
+  solution:
+    D: 48
+    S: [12, 11, 35, 21]
+    objective: 127
+    yCoor: [10, 20, 1, 39, 13, 36, 44, 9, 6, 24, 8, 29, 10, 12, 36, 1, 11, 31, 8,
+      43, 14, 5, 42, 14, 18, 8, 39, 24, 34, 6]
+  solveTime: 0.265705
+  status: SATISFIED
+  threads: '1'
+  time: 0.374
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 616
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1575
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 126
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 272007
+  solution:
+    D: 48
+    S: [11, 11, 35, 21]
+    objective: 126
+    yCoor: [10, 20, 1, 40, 13, 37, 44, 9, 6, 24, 8, 29, 10, 12, 37, 1, 11, 31, 8,
+      44, 14, 5, 43, 14, 18, 8, 39, 24, 34, 6]
+  solveTime: 0.26652
+  status: SATISFIED
+  threads: '1'
+  time: 0.375
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 616
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1575
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 125
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 272980
+  solution:
+    D: 48
+    S: [10, 11, 35, 21]
+    objective: 125
+    yCoor: [10, 20, 1, 41, 13, 38, 44, 9, 6, 24, 8, 29, 10, 12, 38, 1, 11, 31, 8,
+      45, 14, 5, 44, 14, 18, 8, 39, 24, 34, 6]
+  solveTime: 0.267336
+  status: SATISFIED
+  threads: '1'
+  time: 0.375
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 616
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1575
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 124
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 273959
+  solution:
+    D: 48
+    S: [9, 11, 35, 21]
+    objective: 124
+    yCoor: [10, 20, 1, 42, 13, 39, 44, 9, 6, 24, 8, 29, 10, 12, 39, 1, 11, 31, 8,
+      46, 14, 5, 45, 14, 18, 8, 39, 24, 34, 6]
+  solveTime: 0.268156
+  status: SATISFIED
+  threads: '1'
+  time: 0.376
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 619
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1576
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 123
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 275098
+  solution:
+    D: 48
+    S: [24, 11, 19, 21]
+    objective: 123
+    yCoor: [31, 20, 1, 27, 13, 40, 44, 9, 6, 24, 24, 29, 10, 12, 24, 1, 10, 31, 34,
+      31, 14, 5, 30, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.269074
+  status: SATISFIED
+  threads: '1'
+  time: 0.377
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 622
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1577
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 122
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 276452
+  solution:
+    D: 48
+    S: [23, 11, 19, 21]
+    objective: 122
+    yCoor: [31, 20, 1, 28, 13, 40, 44, 9, 6, 24, 24, 29, 10, 12, 25, 1, 10, 31, 35,
+      32, 14, 5, 31, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.2701
+  status: SATISFIED
+  threads: '1'
+  time: 0.378
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 625
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1577
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 121
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 277502
+  solution:
+    D: 48
+    S: [22, 11, 19, 21]
+    objective: 121
+    yCoor: [31, 20, 1, 29, 13, 40, 44, 9, 6, 24, 24, 29, 10, 12, 26, 1, 10, 31, 36,
+      33, 14, 5, 32, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.270995
+  status: SATISFIED
+  threads: '1'
+  time: 0.379
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 627
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1577
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 120
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 278549
+  solution:
+    D: 48
+    S: [21, 11, 19, 21]
+    objective: 120
+    yCoor: [31, 20, 1, 30, 13, 40, 44, 9, 6, 24, 24, 29, 10, 12, 27, 1, 10, 31, 24,
+      34, 14, 5, 33, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.271878
+  status: SATISFIED
+  threads: '1'
+  time: 0.38
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 628
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1577
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 119
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 279604
+  solution:
+    D: 48
+    S: [20, 11, 19, 21]
+    objective: 119
+    yCoor: [31, 20, 1, 31, 13, 40, 44, 9, 6, 24, 24, 29, 10, 12, 28, 1, 10, 31, 24,
+      35, 14, 5, 34, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.272752
+  status: SATISFIED
+  threads: '1'
+  time: 0.381
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 628
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1577
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 118
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 280659
+  solution:
+    D: 48
+    S: [19, 11, 19, 21]
+    objective: 118
+    yCoor: [31, 20, 1, 32, 13, 40, 44, 9, 6, 24, 24, 29, 10, 12, 29, 1, 10, 31, 24,
+      36, 14, 5, 35, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.273638
+  status: SATISFIED
+  threads: '1'
+  time: 0.382
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 628
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1577
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 117
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 281719
+  solution:
+    D: 48
+    S: [18, 11, 19, 21]
+    objective: 117
+    yCoor: [31, 20, 1, 33, 13, 40, 44, 9, 6, 24, 24, 29, 10, 12, 30, 1, 10, 31, 24,
+      37, 14, 5, 36, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.274498
+  status: SATISFIED
+  threads: '1'
+  time: 0.383
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 629
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1577
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 116
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 282776
+  solution:
+    D: 48
+    S: [17, 11, 19, 21]
+    objective: 116
+    yCoor: [31, 20, 1, 34, 13, 40, 44, 9, 6, 24, 24, 29, 10, 12, 31, 1, 10, 31, 24,
+      38, 14, 5, 37, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.275382
+  status: SATISFIED
+  threads: '1'
+  time: 0.383
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 629
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1577
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 115
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 283847
+  solution:
+    D: 48
+    S: [16, 11, 19, 21]
+    objective: 115
+    yCoor: [31, 20, 1, 35, 13, 40, 44, 9, 6, 24, 24, 29, 10, 12, 32, 1, 10, 31, 24,
+      39, 14, 5, 38, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.276228
+  status: SATISFIED
+  threads: '1'
+  time: 0.384
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 629
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1577
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 114
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 284928
+  solution:
+    D: 48
+    S: [15, 11, 19, 21]
+    objective: 114
+    yCoor: [31, 20, 1, 36, 13, 40, 44, 9, 6, 24, 24, 29, 10, 12, 33, 1, 10, 31, 24,
+      40, 14, 5, 39, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.27705
+  status: SATISFIED
+  threads: '1'
+  time: 0.385
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 630
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1577
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 113
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 285996
+  solution:
+    D: 48
+    S: [14, 11, 19, 21]
+    objective: 113
+    yCoor: [31, 20, 1, 37, 13, 44, 44, 9, 6, 24, 24, 29, 10, 12, 34, 1, 10, 31, 24,
+      40, 14, 5, 43, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.277869
+  status: SATISFIED
+  threads: '1'
+  time: 0.386
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 630
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1577
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 112
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 287071
+  solution:
+    D: 48
+    S: [13, 11, 19, 21]
+    objective: 112
+    yCoor: [31, 20, 1, 38, 13, 40, 44, 9, 6, 24, 24, 29, 10, 12, 35, 1, 10, 31, 24,
+      41, 14, 5, 44, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.278701
+  status: SATISFIED
+  threads: '1'
+  time: 0.387
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 630
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1577
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 111
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 288175
+  solution:
+    D: 48
+    S: [12, 11, 19, 21]
+    objective: 111
+    yCoor: [31, 20, 1, 39, 13, 40, 44, 9, 6, 24, 24, 29, 10, 12, 36, 1, 10, 31, 24,
+      42, 14, 5, 45, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.279505
+  status: SATISFIED
+  threads: '1'
+  time: 0.388
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 630
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1577
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 110
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 289303
+  solution:
+    D: 48
+    S: [11, 11, 19, 21]
+    objective: 110
+    yCoor: [31, 20, 1, 40, 13, 40, 44, 9, 6, 24, 24, 29, 10, 12, 37, 1, 10, 31, 24,
+      43, 14, 5, 46, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.280315
+  status: SATISFIED
+  threads: '1'
+  time: 0.388
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 630
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1577
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 109
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 290432
+  solution:
+    D: 48
+    S: [10, 11, 19, 21]
+    objective: 109
+    yCoor: [31, 20, 1, 41, 13, 40, 44, 9, 6, 24, 24, 29, 10, 12, 38, 1, 10, 31, 24,
+      44, 14, 5, 47, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.281138
+  status: SATISFIED
+  threads: '1'
+  time: 0.389
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 630
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1577
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 108
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 291597
+  solution:
+    D: 48
+    S: [9, 11, 19, 21]
+    objective: 108
+    yCoor: [31, 20, 1, 42, 13, 40, 44, 9, 6, 24, 24, 29, 10, 12, 39, 1, 10, 31, 24,
+      45, 14, 5, 48, 14, 18, 39, 39, 24, 34, 6]
+  solveTime: 0.281983
+  status: SATISFIED
+  threads: '1'
+  time: 0.39
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 640
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1610
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 107
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 299354
+  solution:
+    D: 49
+    S: [10, 11, 19, 18]
+    objective: 107
+    yCoor: [32, 21, 1, 42, 14, 41, 45, 13, 6, 25, 25, 30, 10, 12, 39, 1, 7, 32, 25,
+      45, 15, 5, 48, 15, 19, 40, 40, 25, 35, 6]
+  solveTime: 0.284862
+  status: SATISFIED
+  threads: '1'
+  time: 0.393
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 643
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 1617
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 106
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 301602
+  solution:
+    D: 49
+    S: [9, 11, 19, 18]
+    objective: 106
+    yCoor: [32, 21, 1, 43, 14, 41, 45, 13, 6, 25, 25, 30, 10, 12, 40, 1, 5, 32, 25,
+      46, 15, 5, 49, 15, 19, 40, 40, 25, 35, 7]
+  solveTime: 0.286132
+  status: SATISFIED
+  threads: '1'
+  time: 0.394
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 679
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 2160
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 105
+  objectiveBound: 34
+  paths: 0
+  problem: accap
+  propagations: 374941
+  solution:
+    D: 48
+    S: [9, 11, 19, 18]
+    objective: 105
+    yCoor: [36, 25, 1, 16, 18, 19, 13, 17, 6, 29, 29, 34, 10, 12, 13, 1, 5, 36, 29,
+      19, 19, 5, 22, 34, 23, 44, 44, 29, 39, 7]
+  solveTime: 0.314718
+  status: SATISFIED
+  threads: '1'
+  time: 0.423
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 858
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 24188
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 104
+  objectiveBound: 62
+  paths: 0
+  problem: accap
+  propagations: 8201532
+  solution:
+    D: 49
+    S: [9, 11, 17, 18]
+    objective: 104
+    yCoor: [37, 13, 32, 1, 6, 7, 1, 5, 25, 32, 32, 22, 29, 31, 4, 29, 24, 36, 32,
+      7, 7, 24, 10, 22, 11, 45, 45, 17, 40, 26]
+  solveTime: 2.63509
+  status: SATISFIED
+  threads: '1'
+  time: 2.743
+  timeout_ms: '300000'
+  version: v9.9
+- boolVariables: 860
+  configuration: com-google-ortools-sat-noglobal_v9.9_accap_accap_a4_f30_t15_timeout300000ms_1_1
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json
+  datetime: '2024-09-12T09:32:41.830695'
+  evaluatedReifiedConstraints: 460
+  failures: 24199
+  flatBoolConstraints: 230
+  flatBoolVars: 460
+  flatIntConstraints: 689
+  flatIntVars: 36
+  flatTime: 0.0855644
+  method: minimize
+  model: ../data/mzn-challenge/2022/accap/accap.mzn
+  mzn_solver: com.google.ortools.sat.noglobal
+  objective: 103
+  objectiveBound: 62
+  paths: 0
+  problem: accap
+  propagations: 8205320
+  solution:
+    D: 48
+    S: [9, 11, 17, 18]
+    objective: 103
+    yCoor: [36, 13, 32, 1, 6, 1, 1, 5, 25, 31, 31, 22, 30, 29, 4, 30, 24, 36, 31,
+      7, 7, 24, 10, 22, 11, 44, 44, 17, 39, 26]
+  solveTime: 2.63725
+  status: SATISFIED
+  threads: '1'
+  time: 2.745
+  timeout_ms: '300000'
+  version: v9.9

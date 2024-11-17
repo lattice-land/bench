@@ -1,0 +1,8 @@
+{boolVariables: 414, configuration: org-choco-choco_rcpsp_J30_41_10, constraints: 688,
+  cores: '1', data_file: ../data/minizinc-benchmarks/rcpsp/data_psplib/j30/J30_41_10.dzn,
+  datetime: '2024-09-10T20:53:27.542695', evaluatedHalfReifiedConstraints: 412, failures: 837852,
+  flatBoolConstraints: 206, flatBoolVars: 412, flatIntConstraints: 481, flatIntVars: 31,
+  flatTime: 0.15223, initTime: 0.231, intVariables: 144, method: minimize, model: ../data/minizinc-benchmarks/rcpsp/rcpsp.mzn,
+  mzn_solver: org.choco.choco, nSolutions: 13, nodes: 841387, objective: 100, paths: 0,
+  peakDepth: 288, problem: rcpsp, restarts: 465, setVariables: 0, solutions: 13, solveTime: 300.001,
+  status: SATISFIED, threads: '1', variables: 558}

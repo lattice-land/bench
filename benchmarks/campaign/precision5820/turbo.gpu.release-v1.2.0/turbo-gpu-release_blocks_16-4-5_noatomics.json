@@ -1,0 +1,8 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_blocks_16-4-5_noatomics", "problem": "blocks-world", "model": "../data/mzn-challenge/2022/blocks-world/blocks.mzn", "data_file": "../data/mzn-challenge/2022/blocks-world/16-4-5.dzn", "mzn_solver": "turbo.gpu.release", "datetime": "2024-08-27T21:06:48.286437", "status": "UNKNOWN"}}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 23139, "flatIntVars": 20179, "flatBoolConstraints": 5228, "flatIntConstraints": 39757, "evaluatedReifiedConstraints": 21436, "eliminatedImplications": 249, "method": "minimize", "flatTime": 0.683574}}
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "statistics", "statistics": {"memory_configuration": "global", "shared_mem": 100, "store_mem": 199976, "propagator_mem": 22770926}}
+{"type": "status", "status": "UNKNOWN", "time": 303447}
+{"type": "statistics", "statistics": {"problem_path": "/tmp/mznfilej4JRhW.fzn", "solver": "Turbo", "version": "v1.2.0", "hardware": "precision5820", "arch": "gpu", "free_search": "no", "or_nodes": 64, "timeout_ms": 300000, "and_nodes": 256, "stack_size": 32000, "cuda_version": 12050, "cutnodes": 0, "nodes": 200941, "failures": 96411, "variables": 24966, "propagators": 28762, "peakDepth": 90, "initTime": 2.873, "solveTime": 300.013, "num_solutions": 0, "eps_num_subproblems": 4096, "eps_solved_subproblems": 544, "eps_skipped_subproblems": 0, "num_blocks_done": 0, "fixpoint_iterations": 4406035, "eliminated_variables": 24563, "eliminated_formulas": 44740}}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

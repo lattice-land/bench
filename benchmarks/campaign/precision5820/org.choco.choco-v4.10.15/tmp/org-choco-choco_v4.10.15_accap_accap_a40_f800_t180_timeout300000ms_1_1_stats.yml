@@ -1,0 +1,8 @@
+{boolVariables: 2, configuration: org-choco-choco_v4.10.15_accap_accap_a40_f800_t180_timeout300000ms_1_1,
+  constraints: 16735, cores: '1', data_file: ../data/mzn-challenge/2022/accap/accap_a40_f800_t180.json,
+  datetime: '2024-09-12T10:27:25.273166', failures: 102727, flatIntConstraints: 16734,
+  flatIntVars: 842, flatTime: 0.353167, initTime: 0.482, intVariables: 2622, method: minimize,
+  model: ../data/mzn-challenge/2022/accap/accap.mzn, mzn_solver: org.choco.choco,
+  nSolutions: 415, nodes: 219762, objective: 644, paths: 0, peakDepth: 842, problem: accap,
+  restarts: 149, setVariables: 0, solutions: 415, solveTime: 300.002, status: SATISFIED,
+  threads: '1', timeout_ms: '300000', variables: 2624, version: v4.10.15}
