@@ -33,7 +33,7 @@
           "businfo" : "cpu@0",
           "version" : "6.85.7",
           "units" : "Hz",
-          "size" : 1200076000,
+          "size" : 1200000000,
           "capacity" : 4500000000,
           "width" : 64,
           "configuration" : {
@@ -772,7 +772,7 @@
               "vendor" : "Intel Corporation",
               "physid" : "1f.3",
               "businfo" : "pci@0000:00:1f.3",
-              "logicalname" : ["card0", "/dev/snd/controlC0", "/dev/snd/hwC0D0", "/dev/snd/pcmC0D0c", "/dev/snd/pcmC0D0p"],
+              "logicalname" : ["card1", "/dev/snd/controlC1", "/dev/snd/hwC1D0", "/dev/snd/pcmC1D0c", "/dev/snd/pcmC1D0p"],
               "version" : "00",
               "width" : 64,
               "clock" : 33000000,
@@ -790,7 +790,7 @@
                   "claimed" : true,
                   "product" : "HDA Intel PCH Rear Mic",
                   "physid" : "0",
-                  "logicalname" : ["input13", "/dev/input/event12"]
+                  "logicalname" : ["input15", "/dev/input/event14"]
                 },
                 {
                   "id" : "input:1",
@@ -798,7 +798,7 @@
                   "claimed" : true,
                   "product" : "HDA Intel PCH Front Mic",
                   "physid" : "1",
-                  "logicalname" : ["input14", "/dev/input/event13"]
+                  "logicalname" : ["input16", "/dev/input/event15"]
                 },
                 {
                   "id" : "input:2",
@@ -806,7 +806,7 @@
                   "claimed" : true,
                   "product" : "HDA Intel PCH Line Out",
                   "physid" : "2",
-                  "logicalname" : ["input15", "/dev/input/event14"]
+                  "logicalname" : ["input17", "/dev/input/event16"]
                 },
                 {
                   "id" : "input:3",
@@ -814,7 +814,7 @@
                   "claimed" : true,
                   "product" : "HDA Intel PCH Front Headphone",
                   "physid" : "3",
-                  "logicalname" : ["input16", "/dev/input/event15"]
+                  "logicalname" : ["input18", "/dev/input/event17"]
                 }]
             },
             {
@@ -857,10 +857,10 @@
                 "autonegotiation" : "on",
                 "broadcast" : "yes",
                 "driver" : "e1000e",
-                "driverversion" : "6.11.8-arch1-2",
+                "driverversion" : "6.12.4-arch1-1",
                 "duplex" : "full",
                 "firmware" : "0.1-4",
-                "ip" : "10.186.24.10",
+                "ip" : "10.186.24.12",
                 "latency" : "0",
                 "link" : "yes",
                 "multicast" : "yes",
@@ -1753,7 +1753,7 @@
               "vendor" : "NVIDIA Corporation",
               "physid" : "0.1",
               "businfo" : "pci@0000:65:00.1",
-              "logicalname" : ["card1", "/dev/snd/controlC1", "/dev/snd/hwC1D0", "/dev/snd/pcmC1D3p", "/dev/snd/pcmC1D7p", "/dev/snd/pcmC1D8p", "/dev/snd/pcmC1D9p"],
+              "logicalname" : ["card2", "/dev/snd/controlC2", "/dev/snd/hwC2D0", "/dev/snd/pcmC2D3p", "/dev/snd/pcmC2D7p", "/dev/snd/pcmC2D8p", "/dev/snd/pcmC2D9p"],
               "version" : "a1",
               "width" : 32,
               "clock" : 33000000,
@@ -1769,33 +1769,33 @@
                   "id" : "input:0",
                   "class" : "input",
                   "claimed" : true,
-                  "product" : "HDA NVidia HDMI/DP,pcm=9",
+                  "product" : "HDA NVidia HDMI/DP,pcm=3",
                   "physid" : "0",
-                  "logicalname" : ["input10", "/dev/input/event9"]
+                  "logicalname" : ["input11", "/dev/input/event10"]
                 },
                 {
                   "id" : "input:1",
                   "class" : "input",
                   "claimed" : true,
-                  "product" : "HDA NVidia HDMI/DP,pcm=3",
+                  "product" : "HDA NVidia HDMI/DP,pcm=7",
                   "physid" : "1",
-                  "logicalname" : ["input7", "/dev/input/event6"]
+                  "logicalname" : ["input12", "/dev/input/event11"]
                 },
                 {
                   "id" : "input:2",
                   "class" : "input",
                   "claimed" : true,
-                  "product" : "HDA NVidia HDMI/DP,pcm=7",
+                  "product" : "HDA NVidia HDMI/DP,pcm=8",
                   "physid" : "2",
-                  "logicalname" : ["input8", "/dev/input/event7"]
+                  "logicalname" : ["input13", "/dev/input/event12"]
                 },
                 {
                   "id" : "input:3",
                   "class" : "input",
                   "claimed" : true,
-                  "product" : "HDA NVidia HDMI/DP,pcm=8",
+                  "product" : "HDA NVidia HDMI/DP,pcm=9",
                   "physid" : "3",
-                  "logicalname" : ["input9", "/dev/input/event8"]
+                  "logicalname" : ["input14", "/dev/input/event13"]
                 }]
             }]
         },
@@ -2400,7 +2400,7 @@
               "vendor" : "Samsung Electronics Co Ltd",
               "physid" : "0",
               "businfo" : "pci@0000:b3:00.0",
-              "logicalname" : "/dev/nvme1",
+              "logicalname" : "/dev/nvme0",
               "version" : "36310229",
               "serial" : "S6H3NF0W713109",
               "width" : 64,
@@ -2423,7 +2423,7 @@
                   "claimed" : true,
                   "description" : "NVMe disk",
                   "physid" : "0",
-                  "logicalname" : "hwmon1"
+                  "logicalname" : "hwmon0"
                 },
                 {
                   "id" : "namespace:1",
@@ -2431,7 +2431,7 @@
                   "claimed" : true,
                   "description" : "NVMe disk",
                   "physid" : "2",
-                  "logicalname" : "/dev/ng1n1"
+                  "logicalname" : "/dev/ng0n1"
                 },
                 {
                   "id" : "namespace:2",
@@ -2439,8 +2439,8 @@
                   "claimed" : true,
                   "description" : "NVMe disk",
                   "physid" : "1",
-                  "businfo" : "nvme@1:1",
-                  "logicalname" : "/dev/nvme1n1",
+                  "businfo" : "nvme@0:1",
+                  "logicalname" : "/dev/nvme0n1",
                   "configuration" : {
                     "wwid" : "eui.36483330577131090025384600000001"
                   }
@@ -2479,7 +2479,7 @@
               "vendor" : "Samsung Electronics Co Ltd",
               "physid" : "0",
               "businfo" : "pci@0000:b4:00.0",
-              "logicalname" : "/dev/nvme0",
+              "logicalname" : "/dev/nvme1",
               "version" : "36310229",
               "serial" : "S6H2NX0W906569",
               "width" : 64,
@@ -2502,7 +2502,7 @@
                   "claimed" : true,
                   "description" : "NVMe disk",
                   "physid" : "0",
-                  "logicalname" : "hwmon0"
+                  "logicalname" : "hwmon1"
                 },
                 {
                   "id" : "namespace:1",
@@ -2510,7 +2510,7 @@
                   "claimed" : true,
                   "description" : "NVMe disk",
                   "physid" : "2",
-                  "logicalname" : "/dev/ng0n1"
+                  "logicalname" : "/dev/ng1n1"
                 },
                 {
                   "id" : "namespace:2",
@@ -2518,8 +2518,8 @@
                   "claimed" : true,
                   "description" : "NVMe disk",
                   "physid" : "1",
-                  "businfo" : "nvme@0:1",
-                  "logicalname" : "/dev/nvme0n1",
+                  "businfo" : "nvme@1:1",
+                  "logicalname" : "/dev/nvme1n1",
                   "configuration" : {
                     "wwid" : "eui.36483230579065690025385800000001"
                   }
@@ -2796,7 +2796,7 @@
       "claimed" : true,
       "description" : "Microphone",
       "physid" : "2",
-      "logicalname" : ["card2", "/dev/snd/controlC2", "/dev/snd/pcmC2D0c", "/dev/snd/pcmC2D0p"]
+      "logicalname" : ["card0", "/dev/snd/controlC0", "/dev/snd/pcmC0D0c", "/dev/snd/pcmC0D0p"]
     },
     {
       "id" : "input:0",
@@ -2824,31 +2824,31 @@
       "id" : "input:2",
       "class" : "input",
       "claimed" : true,
-      "product" : "PixArt Dell MS116 USB Optical Mouse",
+      "product" : "Dell WMI hotkeys",
       "physid" : "5",
-      "logicalname" : ["input11", "/dev/input/event10", "/dev/input/mouse0"],
+      "logicalname" : ["input10", "/dev/input/event9"],
       "capabilities" : {
-        "usb" : "USB"
+        "platform" : true
       }
     },
     {
       "id" : "input:3",
       "class" : "input",
       "claimed" : true,
-      "product" : "Dell KB216 Wired Keyboard",
+      "product" : "AT Translated Set 2 keyboard",
       "physid" : "6",
-      "logicalname" : ["input12", "/dev/input/event11", "input12::capslock", "input12::compose", "input12::kana", "input12::numlock", "input12::scrolllock"],
+      "logicalname" : ["input2", "/dev/input/event2", "input2::capslock", "input2::numlock", "input2::scrolllock"],
       "capabilities" : {
-        "usb" : "USB"
+        "i8042" : "i8042 PC AT keyboard controller"
       }
     },
     {
       "id" : "input:4",
       "class" : "input",
       "claimed" : true,
-      "product" : "Dell KB216 Wired Keyboard System Control",
+      "product" : "Blue Microphones Yeti Stereo Microphone Consumer Control",
       "physid" : "7",
-      "logicalname" : ["input17", "/dev/input/event16"],
+      "logicalname" : ["input3", "/dev/input/event3"],
       "capabilities" : {
         "usb" : "USB"
       }
@@ -2857,9 +2857,9 @@
       "id" : "input:5",
       "class" : "input",
       "claimed" : true,
-      "product" : "Dell KB216 Wired Keyboard Consumer Control",
+      "product" : "PixArt Dell MS116 USB Optical Mouse",
       "physid" : "8",
-      "logicalname" : ["input18", "/dev/input/event17"],
+      "logicalname" : ["input5", "/dev/input/event4", "/dev/input/mouse0"],
       "capabilities" : {
         "usb" : "USB"
       }
@@ -2868,44 +2868,44 @@
       "id" : "input:6",
       "class" : "input",
       "claimed" : true,
-      "product" : "AT Translated Set 2 keyboard",
+      "product" : "Dell KB216 Wired Keyboard",
       "physid" : "9",
-      "logicalname" : ["input2", "/dev/input/event2", "input2::capslock", "input2::numlock", "input2::scrolllock"],
+      "logicalname" : ["input6", "/dev/input/event5", "input6::capslock", "input6::numlock", "input6::scrolllock"],
       "capabilities" : {
-        "i8042" : "i8042 PC AT keyboard controller"
+        "usb" : "USB"
       }
     },
     {
       "id" : "input:7",
       "class" : "input",
       "claimed" : true,
-      "product" : "PC Speaker",
+      "product" : "Dell KB216 Wired Keyboard System Control",
       "physid" : "a",
-      "logicalname" : ["input3", "/dev/input/event3"],
+      "logicalname" : ["input7", "/dev/input/event6"],
       "capabilities" : {
-        "isa" : "ISA bus"
+        "usb" : "USB"
       }
     },
     {
       "id" : "input:8",
       "class" : "input",
       "claimed" : true,
-      "product" : "Dell WMI hotkeys",
+      "product" : "Dell KB216 Wired Keyboard Consumer Control",
       "physid" : "b",
-      "logicalname" : ["input4", "/dev/input/event4"],
+      "logicalname" : ["input8", "/dev/input/event7"],
       "capabilities" : {
-        "platform" : true
+        "usb" : "USB"
       }
     },
     {
       "id" : "input:9",
       "class" : "input",
       "claimed" : true,
-      "product" : "Blue Microphones Yeti Stereo Microphone Consumer Control",
+      "product" : "PC Speaker",
       "physid" : "c",
-      "logicalname" : ["input5", "/dev/input/event5"],
+      "logicalname" : ["input9", "/dev/input/event8"],
       "capabilities" : {
-        "usb" : "USB"
+        "isa" : "ISA bus"
       }
     }]
 }

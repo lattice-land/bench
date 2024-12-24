@@ -6,16 +6,20 @@ from pathlib import Path
 from packaging import version
 
 # A tentative to have unique experiment names.
-def make_uid(config, mzn_solver, version, machine, timeout_ms, eps_num_subproblems, or_nodes, and_nodes):
-  uid = mzn_solver + '_' + str(version) + '_' + machine
+def make_uid(config, arch, mzn_solver, version, machine, timeout_ms, eps_num_subproblems, or_nodes, threads_per_block):
+  uid = mzn_solver + "_" + str(version) + '_' + machine
   if (int(timeout_ms) % 1000) == 0:
     uid += "_" + str(int(int(timeout_ms)/1000)) + "s"
   else:
     uid += "_" + str(int(timeout_ms)) + "ms"
+  if arch != "":
+    uid += "_" + arch.lower()
   if 'java11' in config:
     uid += '_java11'
   if mzn_solver == 'turbo.gpu.release':
-    uid += '_' + str(int(eps_num_subproblems)) + '_' + str(int(or_nodes)) + '_' + str(int(and_nodes))
+    uid += '_' + str(int(eps_num_subproblems)) + '_' + str(int(or_nodes))
+    if int(threads_per_block) != 256:
+      uid += '_' + str(int(threads_per_block)) + "TPB"
     if 'noatomics' in config:
       uid += '_noatomics'
     if 'globalmem' in config:
@@ -59,6 +63,11 @@ def read_experiments(experiments):
         df['or_nodes'] = df['threads']
       else:
         df['or_nodes'] = df['configuration'].apply(lambda x: 1) # We suppose it is only 1 thread if the column is missing.
+    if 'threads_per_block' not in df:
+      if 'and_nodes' in df:
+        df['threads_per_block'] = df['and_nodes']
+      else:
+        df['threads_per_block'] = 1
     if 'version' not in df:
       df['version'] = df['configuration'].apply(determine_version)
     else:
@@ -82,22 +91,22 @@ def read_experiments(experiments):
       failed_xps[['problem', 'model', 'data_file']].to_csv(failed_xps_path, index=False)
       df = df[(df['mzn_solver'] != "turbo.gpu.release") | (~df['or_nodes'].isna())]
       print(f"{e}: {len(failed_xps)} failed experiments using turbo.gpu.release have been removed (the faulty experiments have been stored in {failed_xps_path}).")
-    # print(df[(df['mzn_solver'] == "turbo.gpu.release") & df['and_nodes'].isna()])
-    # df = df[(df['mzn_solver'] != "turbo.gpu.release") | (~df['and_nodes'].isna())]
+    # print(df[(df['mzn_solver'] == "turbo.gpu.release") & df['threads_per_block'].isna()])
+    # df = df[(df['mzn_solver'] != "turbo.gpu.release") | (~df['threads_per_block'].isna())]
     all_xp = pd.concat([df, all_xp], ignore_index=True)
   all_xp['version'] = all_xp['version'].apply(version.parse)
   all_xp['nodes'] = all_xp['nodes'].fillna(0).astype(int)
   if 'memory_configuration' not in all_xp:
     all_xp['memory_configuration'] = 'RAM'
-  all_xp['and_nodes'] = all_xp['and_nodes'].fillna(1).astype(int) if 'and_nodes' in all_xp else 1
+  all_xp['arch'] = all_xp['arch'].fillna("").astype(str) if 'arch' in all_xp else ""
   all_xp['propagator_mem'] = all_xp['propagator_mem'].fillna(0).astype(int) if 'propagator_mem' in all_xp else 0
   all_xp['store_mem'] = all_xp['store_mem'].fillna(0).astype(int) if 'store_mem' in all_xp else 0
   all_xp['fixpoint_iterations'] = pd.to_numeric(all_xp['fixpoint_iterations'], errors='coerce').fillna(0).astype(int) if 'fixpoint_iterations' in all_xp else 0
   all_xp['eps_num_subproblems'] = pd.to_numeric(all_xp['eps_num_subproblems'], errors='coerce').fillna(1).astype(int) if 'eps_num_subproblems' in all_xp else 1
   all_xp['num_blocks_done'] = pd.to_numeric(all_xp['num_blocks_done'], errors='coerce').fillna(0).astype(int) if 'num_blocks_done' in all_xp else 0
   all_xp['hardware'] = all_xp['machine'].apply(determine_hardware)
-  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['mzn_solver'], row['version'], row['machine'], row['timeout_ms'],
-                                                    row['eps_num_subproblems'], row['or_nodes'], row['and_nodes']), axis=1)
+  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['mzn_solver'], row['version'], row['machine'], row['timeout_ms'],
+                                                    row['eps_num_subproblems'], row['or_nodes'], row['threads_per_block']), axis=1)
   all_xp['short_uid'] = all_xp['uid'].apply(make_short_uid)
   all_xp['nodes_per_second'] = all_xp['nodes'] / all_xp['solveTime']
   all_xp['fp_iterations_per_node'] = all_xp['fixpoint_iterations'] / all_xp['nodes']
@@ -353,3 +362,48 @@ def list_problem_where_leq(df, key, uid1, uid2):
   comparison_df = pd.merge(df1[['data_file', key]], df2[['data_file', key]], on='data_file', suffixes=('_1', '_2'))
   # Find where key is greater on df2
   return comparison_df[comparison_df[key+"_1"] > comparison_df[key+"_2"]]
+
+def plot_time_distribution(arch, df):
+  hybrid_time_cols = [
+    "preprocessing_time",
+    "fixpoint_time",
+    "search_time",
+    "wait_cpu_time",
+    "select_fp_functions_time",
+    "transfer_cpu2gpu_time",
+    "transfer_gpu2cpu_time"
+  ]
+  gpu_time_cols = [
+    "preprocessing_time",
+    "fixpoint_time",
+    "search_time",
+    "select_fp_functions_time"
+  ]
+  cpu_time_cols = [
+    "preprocessing_time",
+    "fixpoint_time",
+    "search_time",
+    "select_fp_functions_time"
+  ]
+  time_columns = hybrid_time_cols
+  if arch == "cpu":
+    time_columns = cpu_time_cols
+  elif arch == "gpu":
+    time_columns = gpu_time_cols
+
+  # Set the problem names as index
+  df.set_index("problem", inplace=True)
+
+  # Plot
+  colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2"]
+  df[time_columns].plot(kind='barh', stacked=True, figsize=(10, 6), color=colors)
+
+  # Add labels and title
+  plt.xlabel("Time (seconds)")
+  plt.ylabel("Problem")
+  plt.title("Time Distribution in Solver Components for Each Problem (arch = " + arch + ")")
+  plt.legend(title="Time Component", bbox_to_anchor=(1.05, 1), loc='upper left')
+  plt.tight_layout()
+
+  # Show plot
+  plt.show()
