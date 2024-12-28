@@ -20,8 +20,9 @@ if __name__ == "__main__":
   timeout_ms = sys.argv[7]
   cores = sys.argv[8]
   threads = sys.argv[9]
+  arch = sys.argv[10]
   extras = []
-  for i in range(8, len(sys.argv)):
+  for i in range(10, len(sys.argv)):
     arg = sys.argv[i].strip().replace(' ', '-')
     if arg != "" and arg != "-s": # we use "-s" when there are "no special options to be used".
       extras.append(arg)
@@ -29,7 +30,7 @@ if __name__ == "__main__":
       if extras[-1].startswith("-"):
         extras[-1] = extras[-1][1:]
 
-  uid = solver.replace('.', '-') + "_" + solver_version + "_" + model.stem + "_" + data.stem
+  uid = solver.replace('.', '-') + "_" + solver_version + "_" + arch + "_" + model.stem + "_" + data.stem
   if cores != "1" or threads != "1":
     uid += f"_{cores}cores_{threads}threads"
   uid += f"_timeout{timeout_ms}ms"
@@ -54,7 +55,8 @@ if __name__ == "__main__":
     "datetime": datetime.datetime.now().isoformat(),
     "status": str(minizinc.result.Status.UNKNOWN),
     "cores": cores,
-    "threads": threads
+    "threads": threads,
+    "arch": arch
   }
 
   # If the file exists, we do not delete what is already inside but append new content.

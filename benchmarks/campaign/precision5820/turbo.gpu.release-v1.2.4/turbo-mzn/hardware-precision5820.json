@@ -33,7 +33,7 @@
           "businfo" : "cpu@0",
           "version" : "6.85.7",
           "units" : "Hz",
-          "size" : 1200000000,
+          "size" : 1200598000,
           "capacity" : 4500000000,
           "width" : 64,
           "configuration" : {
@@ -860,7 +860,7 @@
                 "driverversion" : "6.12.4-arch1-1",
                 "duplex" : "full",
                 "firmware" : "0.1-4",
-                "ip" : "10.186.24.12",
+                "ip" : "10.186.24.10",
                 "latency" : "0",
                 "link" : "yes",
                 "multicast" : "yes",
@@ -2400,7 +2400,7 @@
               "vendor" : "Samsung Electronics Co Ltd",
               "physid" : "0",
               "businfo" : "pci@0000:b3:00.0",
-              "logicalname" : "/dev/nvme0",
+              "logicalname" : "/dev/nvme1",
               "version" : "36310229",
               "serial" : "S6H3NF0W713109",
               "width" : 64,
@@ -2423,7 +2423,7 @@
                   "claimed" : true,
                   "description" : "NVMe disk",
                   "physid" : "0",
-                  "logicalname" : "hwmon0"
+                  "logicalname" : "hwmon1"
                 },
                 {
                   "id" : "namespace:1",
@@ -2431,7 +2431,7 @@
                   "claimed" : true,
                   "description" : "NVMe disk",
                   "physid" : "2",
-                  "logicalname" : "/dev/ng0n1"
+                  "logicalname" : "/dev/ng1n1"
                 },
                 {
                   "id" : "namespace:2",
@@ -2439,8 +2439,8 @@
                   "claimed" : true,
                   "description" : "NVMe disk",
                   "physid" : "1",
-                  "businfo" : "nvme@0:1",
-                  "logicalname" : "/dev/nvme0n1",
+                  "businfo" : "nvme@1:1",
+                  "logicalname" : "/dev/nvme1n1",
                   "configuration" : {
                     "wwid" : "eui.36483330577131090025384600000001"
                   }
@@ -2479,7 +2479,7 @@
               "vendor" : "Samsung Electronics Co Ltd",
               "physid" : "0",
               "businfo" : "pci@0000:b4:00.0",
-              "logicalname" : "/dev/nvme1",
+              "logicalname" : "/dev/nvme0",
               "version" : "36310229",
               "serial" : "S6H2NX0W906569",
               "width" : 64,
@@ -2502,7 +2502,7 @@
                   "claimed" : true,
                   "description" : "NVMe disk",
                   "physid" : "0",
-                  "logicalname" : "hwmon1"
+                  "logicalname" : "hwmon0"
                 },
                 {
                   "id" : "namespace:1",
@@ -2510,7 +2510,7 @@
                   "claimed" : true,
                   "description" : "NVMe disk",
                   "physid" : "2",
-                  "logicalname" : "/dev/ng1n1"
+                  "logicalname" : "/dev/ng0n1"
                 },
                 {
                   "id" : "namespace:2",
@@ -2518,8 +2518,8 @@
                   "claimed" : true,
                   "description" : "NVMe disk",
                   "physid" : "1",
-                  "businfo" : "nvme@1:1",
-                  "logicalname" : "/dev/nvme1n1",
+                  "businfo" : "nvme@0:1",
+                  "logicalname" : "/dev/nvme0n1",
                   "configuration" : {
                     "wwid" : "eui.36483230579065690025385800000001"
                   }
