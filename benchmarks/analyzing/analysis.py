@@ -116,6 +116,7 @@ def read_experiments(experiments):
   all_xp['normalized_fp_iterations_per_node'] = 0
   all_xp['normalized_propagator_mem'] = 0
   all_xp['normalized_store_mem'] = 0
+  all_xp['problem_uid'] = all_xp.apply(lambda row: f"{row['problem']}_{Path(row['data_file']).stem}", axis=1)
   return all_xp
 
 def intersect(df):
@@ -391,8 +392,9 @@ def plot_time_distribution(arch, df):
   elif arch == "gpu":
     time_columns = gpu_time_cols
 
+  df.sort_values(by="problem_uid", ascending=False, inplace=True)
   # Set the problem names as index
-  df.set_index("problem", inplace=True)
+  df.set_index("problem_uid", inplace=True)
 
   # Plot
   colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2"]
@@ -407,3 +409,12 @@ def plot_time_distribution(arch, df):
 
   # Show plot
   plt.show()
+
+def show_problem_table(df):
+  print(f"| Problem | Data | #Vars | #Vars (TNF) | #Constraints | #Constraints (TNF) |")
+  print("|----------|------|-------|-------------|--------------|--------------------|")
+  for index, row in df.iterrows():
+    vars_increase = row['tnf_variables'] / row['parsed_variables']
+    cons_increase = row['tnf_constraints'] / row['parsed_constraints']
+    print(f"| {row['problem']} | {Path(row['data_file']).stem} | {row['parsed_variables']} | {row['tnf_variables']} (x{vars_increase:.2f}) | {row['parsed_constraints']} | {row['tnf_constraints']} (x{cons_increase:.2f}) |")
+
