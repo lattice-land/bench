@@ -1,5 +1,5 @@
 {
-  "id" : "iris-196",
+  "id" : "iris-195",
   "class" : "system",
   "claimed" : true,
   "description" : "Computer",
@@ -35,7 +35,7 @@
           "businfo" : "cpu@0",
           "version" : "6.85.4",
           "units" : "Hz",
-          "size" : 2314663000,
+          "size" : 1883933000,
           "capacity" : 3700000000,
           "width" : 64,
           "configuration" : {
@@ -192,7 +192,7 @@
           "businfo" : "cpu@1",
           "version" : "6.85.4",
           "units" : "Hz",
-          "size" : 1000136000,
+          "size" : 2192562000,
           "capacity" : 3700000000,
           "width" : 64,
           "configuration" : {
@@ -649,7 +649,7 @@
                   "businfo" : "pci@0000:01:00.0",
                   "logicalname" : "eno3",
                   "version" : "01",
-                  "serial" : "e4:43:4b:69:c9:fc",
+                  "serial" : "e4:43:4b:6c:00:64",
                   "units" : "bit/s",
                   "capacity" : 1000000000,
                   "width" : 32,
@@ -693,7 +693,7 @@
                   "businfo" : "pci@0000:01:00.1",
                   "logicalname" : "eno4",
                   "version" : "01",
-                  "serial" : "e4:43:4b:69:c9:fd",
+                  "serial" : "e4:43:4b:6c:00:65",
                   "units" : "bit/s",
                   "capacity" : 1000000000,
                   "width" : 32,
@@ -887,7 +887,7 @@
                   "businfo" : "pci@0000:05:00.0",
                   "logicalname" : "eno1",
                   "version" : "02",
-                  "serial" : "e4:43:4b:69:c9:dc",
+                  "serial" : "e4:43:4b:6c:00:44",
                   "units" : "bit/s",
                   "size" : 10000000000,
                   "width" : 64,
@@ -899,7 +899,7 @@
                     "driverversion" : "4.18.0-372.75.1.el8_6.x86_64",
                     "duplex" : "full",
                     "firmware" : "7.10 0x800075da 19.5.12",
-                    "ip" : "172.17.6.196",
+                    "ip" : "172.17.6.195",
                     "latency" : "0",
                     "link" : "yes",
                     "multicast" : "yes",
@@ -927,7 +927,7 @@
                   "businfo" : "pci@0000:05:00.1",
                   "logicalname" : "eno2",
                   "version" : "02",
-                  "serial" : "e4:43:4b:69:c9:de",
+                  "serial" : "e4:43:4b:6c:00:46",
                   "units" : "bit/s",
                   "capacity" : 10000000000,
                   "width" : 64,
@@ -3109,13 +3109,13 @@
               "businfo" : "pci@0000:5e:00.0",
               "logicalname" : "/dev/nvme0",
               "version" : "1.2.2",
-              "serial" : "S47ANE0M400129",
+              "serial" : "S47ANE0M400150",
               "width" : 64,
               "clock" : 33000000,
               "configuration" : {
                 "driver" : "nvme",
                 "latency" : "0",
-                "nqn" : "nqn.2014.08.org.nvmexpress:144d1028S47ANE0M400129      Dell Express Flash PM1725b 1.6TB AIC",
+                "nqn" : "nqn.2014.08.org.nvmexpress:144d1028S47ANE0M400150      Dell Express Flash PM1725b 1.6TB AIC",
                 "state" : "live"
               },
               "capabilities" : {
@@ -3142,7 +3142,7 @@
                   "businfo" : "nvme@0:1",
                   "logicalname" : "/dev/nvme0n1",
                   "configuration" : {
-                    "wwid" : "eui.343741304d4001290025384500000004"
+                    "wwid" : "eui.343741304d4001500025384500000004"
                   }
                 }
               ]
@@ -5342,7 +5342,7 @@
                 "driverversion" : "5.6-2.0.9",
                 "duplex" : "full",
                 "firmware" : "12.27.6008 (DEL2190110032)",
-                "ip" : "172.19.6.196",
+                "ip" : "172.19.6.195",
                 "latency" : "0",
                 "link" : "yes",
                 "multicast" : "yes"

@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --time=06:00:00
+#SBATCH --time=00:30:00
 #SBATCH --partition=gpu
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:1
@@ -46,10 +46,10 @@ ARCH="hybrid"
 CORES=28 # The number of core used on the node.
 THREADS=160 # The number of core used on the node.
 MACHINE=$(basename "$1" ".sh")
-INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/short.csv"
+INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/fix.csv"
 
 # II. Prepare the command lines and output directory.
-MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream -t $MZN_TIMEOUT --output-mode json --output-time --output-objective -p $THREADS -arch $ARCH -hardware $MACHINE -version $VERSION -timeout $REAL_TIMEOUT"
+MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream -t $MZN_TIMEOUT --output-mode json --output-time --output-objective -p $THREADS -globalmem -arch $ARCH -hardware $MACHINE -version $VERSION -timeout $REAL_TIMEOUT"
 OUTPUT_DIR="$BENCHMARKS_DIR_PATH/campaign/$MACHINE/$MZN_SOLVER-$VERSION"
 mkdir -p $OUTPUT_DIR
 
