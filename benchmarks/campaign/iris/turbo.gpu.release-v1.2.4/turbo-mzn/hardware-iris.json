@@ -1,5 +1,5 @@
 {
-  "id" : "iris-173",
+  "id" : "iris-196",
   "class" : "system",
   "claimed" : true,
   "description" : "Computer",
@@ -35,7 +35,7 @@
           "businfo" : "cpu@0",
           "version" : "6.85.4",
           "units" : "Hz",
-          "size" : 1000114000,
+          "size" : 2314663000,
           "capacity" : 3700000000,
           "width" : 64,
           "configuration" : {
@@ -192,7 +192,7 @@
           "businfo" : "cpu@1",
           "version" : "6.85.4",
           "units" : "Hz",
-          "size" : 1000332000,
+          "size" : 1000136000,
           "capacity" : 3700000000,
           "width" : 64,
           "configuration" : {
@@ -649,7 +649,7 @@
                   "businfo" : "pci@0000:01:00.0",
                   "logicalname" : "eno3",
                   "version" : "01",
-                  "serial" : "e4:43:4b:31:54:20",
+                  "serial" : "e4:43:4b:69:c9:fc",
                   "units" : "bit/s",
                   "capacity" : 1000000000,
                   "width" : 32,
@@ -693,7 +693,7 @@
                   "businfo" : "pci@0000:01:00.1",
                   "logicalname" : "eno4",
                   "version" : "01",
-                  "serial" : "e4:43:4b:31:54:21",
+                  "serial" : "e4:43:4b:69:c9:fd",
                   "units" : "bit/s",
                   "capacity" : 1000000000,
                   "width" : 32,
@@ -886,8 +886,8 @@
                   "physid" : "0",
                   "businfo" : "pci@0000:05:00.0",
                   "logicalname" : "eno1",
-                  "version" : "01",
-                  "serial" : "e4:43:4b:31:54:00",
+                  "version" : "02",
+                  "serial" : "e4:43:4b:69:c9:dc",
                   "units" : "bit/s",
                   "size" : 10000000000,
                   "width" : 64,
@@ -899,7 +899,7 @@
                     "driverversion" : "4.18.0-372.75.1.el8_6.x86_64",
                     "duplex" : "full",
                     "firmware" : "7.10 0x800075da 19.5.12",
-                    "ip" : "172.17.6.173",
+                    "ip" : "172.17.6.196",
                     "latency" : "0",
                     "link" : "yes",
                     "multicast" : "yes",
@@ -926,8 +926,8 @@
                   "physid" : "0.1",
                   "businfo" : "pci@0000:05:00.1",
                   "logicalname" : "eno2",
-                  "version" : "01",
-                  "serial" : "e4:43:4b:31:54:02",
+                  "version" : "02",
+                  "serial" : "e4:43:4b:69:c9:de",
                   "units" : "bit/s",
                   "capacity" : 10000000000,
                   "width" : 64,
@@ -1188,7 +1188,7 @@
                       "claimed" : true,
                       "handle" : "PCI:0000:1a:00.0",
                       "description" : "3D controller",
-                      "product" : "GV100GL [Tesla V100 SXM2 16GB]",
+                      "product" : "GV100GL [Tesla V100 SXM2 32GB]",
                       "vendor" : "NVIDIA Corporation",
                       "physid" : "0",
                       "businfo" : "pci@0000:1a:00.0",
@@ -1258,7 +1258,7 @@
                       "claimed" : true,
                       "handle" : "PCI:0000:1c:00.0",
                       "description" : "3D controller",
-                      "product" : "GV100GL [Tesla V100 SXM2 16GB]",
+                      "product" : "GV100GL [Tesla V100 SXM2 32GB]",
                       "vendor" : "NVIDIA Corporation",
                       "physid" : "0",
                       "businfo" : "pci@0000:1c:00.0",
@@ -1305,7 +1305,7 @@
                       "claimed" : true,
                       "handle" : "PCI:0000:1d:00.0",
                       "description" : "3D controller",
-                      "product" : "GV100GL [Tesla V100 SXM2 16GB]",
+                      "product" : "GV100GL [Tesla V100 SXM2 32GB]",
                       "vendor" : "NVIDIA Corporation",
                       "physid" : "0",
                       "businfo" : "pci@0000:1d:00.0",
@@ -1352,7 +1352,7 @@
                       "claimed" : true,
                       "handle" : "PCI:0000:1e:00.0",
                       "description" : "3D controller",
-                      "product" : "GV100GL [Tesla V100 SXM2 16GB]",
+                      "product" : "GV100GL [Tesla V100 SXM2 32GB]",
                       "vendor" : "NVIDIA Corporation",
                       "physid" : "0",
                       "businfo" : "pci@0000:1e:00.0",
@@ -3098,70 +3098,54 @@
           },
           "children" : [
             {
-              "id" : "network:0",
-              "class" : "network",
+              "id" : "nvme",
+              "class" : "storage",
               "claimed" : true,
               "handle" : "PCI:0000:5e:00.0",
-              "description" : "interface",
-              "product" : "MT27700 Family [ConnectX-4]",
-              "vendor" : "Mellanox Technologies",
+              "description" : "NVMe device",
+              "product" : "Dell Express Flash PM1725b 1.6TB AIC",
+              "vendor" : "Samsung Electronics Co Ltd",
               "physid" : "0",
               "businfo" : "pci@0000:5e:00.0",
-              "logicalname" : "ib0",
-              "version" : "00",
-              "serial" : "00:00:11:0e:fe:80:00:00:00:00:00:00:50:6b:00:00:00:00:00:00",
+              "logicalname" : "/dev/nvme0",
+              "version" : "1.2.2",
+              "serial" : "S47ANE0M400129",
               "width" : 64,
               "clock" : 33000000,
               "configuration" : {
-                "autonegotiation" : "off",
-                "broadcast" : "yes",
-                "driver" : "mlx5_core[ib_ipoib]",
-                "driverversion" : "5.6-2.0.9",
-                "duplex" : "full",
-                "firmware" : "12.27.6008 (DEL2190110032)",
-                "ip" : "172.19.6.173",
+                "driver" : "nvme",
                 "latency" : "0",
-                "link" : "yes",
-                "multicast" : "yes"
+                "nqn" : "nqn.2014.08.org.nvmexpress:144d1028S47ANE0M400129      Dell Express Flash PM1725b 1.6TB AIC",
+                "state" : "live"
               },
               "capabilities" : {
+                "nvme" : true,
+                "nvm_express" : true,
                 "bus_master" : "bus mastering",
-                "cap_list" : "PCI capabilities listing",
-                "rom" : "extension ROM",
-                "physical" : "Physical interface"
-              }
-            },
-            {
-              "id" : "network:1",
-              "class" : "network",
-              "disabled" : true,
-              "claimed" : true,
-              "handle" : "PCI:0000:5e:00.1",
-              "description" : "interface",
-              "product" : "MT27700 Family [ConnectX-4]",
-              "vendor" : "Mellanox Technologies",
-              "physid" : "0.1",
-              "businfo" : "pci@0000:5e:00.1",
-              "logicalname" : "ib1",
-              "version" : "00",
-              "serial" : "00:00:19:0e:fe:80:00:00:00:00:00:00:50:6b:00:00:00:00:00:00",
-              "width" : 64,
-              "clock" : 33000000,
-              "configuration" : {
-                "broadcast" : "yes",
-                "driver" : "mlx5_core[ib_ipoib]",
-                "driverversion" : "5.6-2.0.9",
-                "firmware" : "12.27.6008 (DEL2190110032)",
-                "latency" : "0",
-                "link" : "no",
-                "multicast" : "yes"
+                "cap_list" : "PCI capabilities listing"
               },
-              "capabilities" : {
-                "bus_master" : "bus mastering",
-                "cap_list" : "PCI capabilities listing",
-                "rom" : "extension ROM",
-                "physical" : "Physical interface"
-              }
+              "children" : [
+                {
+                  "id" : "namespace:0",
+                  "class" : "disk",
+                  "claimed" : true,
+                  "description" : "NVMe disk",
+                  "physid" : "0",
+                  "logicalname" : "/dev/ng0n1"
+                },
+                {
+                  "id" : "namespace:1",
+                  "class" : "disk",
+                  "claimed" : true,
+                  "description" : "NVMe disk",
+                  "physid" : "1",
+                  "businfo" : "nvme@0:1",
+                  "logicalname" : "/dev/nvme0n1",
+                  "configuration" : {
+                    "wwid" : "eui.343741304d4001290025384500000004"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -5337,54 +5321,70 @@
           },
           "children" : [
             {
-              "id" : "nvme",
-              "class" : "storage",
+              "id" : "network:0",
+              "class" : "network",
               "claimed" : true,
               "handle" : "PCI:0000:d8:00.0",
-              "description" : "NVMe device",
-              "product" : "Dell Express Flash PM1725a 1.6TB AIC",
-              "vendor" : "Samsung Electronics Co Ltd",
+              "description" : "interface",
+              "product" : "MT27700 Family [ConnectX-4]",
+              "vendor" : "Mellanox Technologies",
               "physid" : "0",
               "businfo" : "pci@0000:d8:00.0",
-              "logicalname" : "/dev/nvme0",
-              "version" : "1.2.1",
-              "serial" : "S39WNA0KB00822",
+              "logicalname" : "ib0",
+              "version" : "00",
+              "serial" : "00:00:11:0e:fe:80:00:00:00:00:00:00:50:6b:00:00:00:00:00:00",
               "width" : 64,
               "clock" : 33000000,
               "configuration" : {
-                "driver" : "nvme",
+                "autonegotiation" : "off",
+                "broadcast" : "yes",
+                "driver" : "mlx5_core[ib_ipoib]",
+                "driverversion" : "5.6-2.0.9",
+                "duplex" : "full",
+                "firmware" : "12.27.6008 (DEL2190110032)",
+                "ip" : "172.19.6.196",
                 "latency" : "0",
-                "nqn" : "nqn.2014.08.org.nvmexpress:144d1028      S39WNA0KB00822Dell Express Flash PM1725a 1.6TB AIC",
-                "state" : "live"
+                "link" : "yes",
+                "multicast" : "yes"
               },
               "capabilities" : {
-                "nvme" : true,
-                "nvm_express" : true,
                 "bus_master" : "bus mastering",
-                "cap_list" : "PCI capabilities listing"
+                "cap_list" : "PCI capabilities listing",
+                "rom" : "extension ROM",
+                "physical" : "Physical interface"
+              }
+            },
+            {
+              "id" : "network:1",
+              "class" : "network",
+              "disabled" : true,
+              "claimed" : true,
+              "handle" : "PCI:0000:d8:00.1",
+              "description" : "interface",
+              "product" : "MT27700 Family [ConnectX-4]",
+              "vendor" : "Mellanox Technologies",
+              "physid" : "0.1",
+              "businfo" : "pci@0000:d8:00.1",
+              "logicalname" : "ib1",
+              "version" : "00",
+              "serial" : "00:00:19:0e:fe:80:00:00:00:00:00:00:50:6b:00:00:00:00:00:00",
+              "width" : 64,
+              "clock" : 33000000,
+              "configuration" : {
+                "broadcast" : "yes",
+                "driver" : "mlx5_core[ib_ipoib]",
+                "driverversion" : "5.6-2.0.9",
+                "firmware" : "12.27.6008 (DEL2190110032)",
+                "latency" : "0",
+                "link" : "no",
+                "multicast" : "yes"
               },
-              "children" : [
-                {
-                  "id" : "namespace:0",
-                  "class" : "disk",
-                  "claimed" : true,
-                  "description" : "NVMe disk",
-                  "physid" : "0",
-                  "logicalname" : "/dev/ng0n1"
-                },
-                {
-                  "id" : "namespace:1",
-                  "class" : "disk",
-                  "claimed" : true,
-                  "description" : "NVMe disk",
-                  "physid" : "1",
-                  "businfo" : "nvme@0:1",
-                  "logicalname" : "/dev/nvme0n1",
-                  "configuration" : {
-                    "wwid" : "eui.333957304bb008220025384100000002"
-                  }
-                }
-              ]
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing",
+                "rom" : "extension ROM",
+                "physical" : "Physical interface"
+              }
             }
           ]
         },

@@ -2,9 +2,9 @@
 #SBATCH --time=06:00:00
 #SBATCH --partition=gpu
 #SBATCH --nodes=1
-#SBATCH --gres=gpu:2
+#SBATCH --gres=gpu:1
 #SBATCH --exclusive
-#SBATCH --ntasks-per-node=2 # 
+#SBATCH --ntasks-per-node=1 # 
 #SBATCH --mem=0
 #SBATCH --qos=normal
 #SBATCH --export=ALL
@@ -43,7 +43,7 @@ VERSION="v1.2.4" # Note that this is only for the naming of the output directory
 MZN_TIMEOUT=360000
 REAL_TIMEOUT=300000
 ARCH="hybrid"
-CORES=14 # The number of core used on the node.
+CORES=28 # The number of core used on the node.
 THREADS=80 # The number of core used on the node.
 MACHINE=$(basename "$1" ".sh")
 INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/short.csv"
@@ -56,7 +56,7 @@ mkdir -p $OUTPUT_DIR
 # If we are on the HPC, we encapsulate the command in a srun command to reserve the resources needed.
 if [ -n "${SLURM_JOB_NODELIST}" ]; then
   SRUN_COMMAND="srun --exclusive --cpus-per-task=$CORES --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose"
-  NUM_PARALLEL_EXPERIMENTS=$((SLURM_JOB_NUM_NODES * 2)) # How many experiments are we running in parallel? One per GPU per default.
+  NUM_PARALLEL_EXPERIMENTS=$((SLURM_JOB_NUM_NODES * 1)) # How many experiments are we running in parallel? One per GPU per default.
 else
   NUM_PARALLEL_EXPERIMENTS=1
 fi

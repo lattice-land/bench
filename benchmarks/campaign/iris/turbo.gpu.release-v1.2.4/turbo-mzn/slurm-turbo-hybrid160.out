@@ -545,7 +545,7 @@
 + MZN_TIMEOUT=360000
 + REAL_TIMEOUT=300000
 + ARCH=hybrid
-+ CORES=14
++ CORES=28
 + THREADS=160
 ++ basename iris.sh .sh
 + MACHINE=iris
@@ -553,8 +553,8 @@
 + MZN_COMMAND='minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 160 -arch hybrid -hardware iris -version v1.2.4 -timeout 300000'
 + OUTPUT_DIR=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/iris/turbo.gpu.release-v1.2.4
 + mkdir -p /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/iris/turbo.gpu.release-v1.2.4
-+ '[' -n iris-173 ']'
-+ SRUN_COMMAND='srun --exclusive --cpus-per-task=14 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose'
-+ NUM_PARALLEL_EXPERIMENTS=2
++ '[' -n iris-196 ']'
++ SRUN_COMMAND='srun --exclusive --cpus-per-task=28 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose'
++ NUM_PARALLEL_EXPERIMENTS=1
 + DUMP_PY_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py
 + cp -r /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/iris/turbo.gpu.release-v1.2.4/

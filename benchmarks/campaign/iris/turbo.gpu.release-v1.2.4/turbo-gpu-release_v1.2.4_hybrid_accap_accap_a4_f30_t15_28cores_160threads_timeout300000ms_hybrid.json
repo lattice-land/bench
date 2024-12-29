@@ -1,0 +1,6 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.4_hybrid_accap_accap_a4_f30_t15_28cores_160threads_timeout300000ms_hybrid", "problem": "accap", "model": "../data/mzn-challenge/2022/accap/accap.mzn", "data_file": "../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json", "mzn_solver": "turbo.gpu.release", "version": "v1.2.4", "timeout_ms": "300000", "datetime": "2024-12-29T15:52:44.292837", "status": "UNKNOWN", "cores": "28", "threads": "160", "arch": "hybrid"}}
+cpu-bind=MASK - iris-196, task  0  0 [1080732]: mask 0xfffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 460, "flatIntVars": 36, "flatBoolConstraints": 230, "flatIntConstraints": 689, "evaluatedReifiedConstraints": 460, "method": "minimize", "flatTime": 0.134449}}
+{"type": "status", "status": "UNKNOWN", "time": 361317}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

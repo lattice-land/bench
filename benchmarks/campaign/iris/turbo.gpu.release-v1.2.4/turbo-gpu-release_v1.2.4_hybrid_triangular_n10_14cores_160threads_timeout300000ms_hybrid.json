@@ -1,0 +1,6 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.4_hybrid_triangular_n10_14cores_160threads_timeout300000ms_hybrid", "problem": "triangular", "model": "../data/mzn-challenge/2022/triangular/triangular.mzn", "data_file": "../data/mzn-challenge/2022/triangular/n10.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.4", "timeout_ms": "300000", "datetime": "2024-12-28T11:27:07.331152", "status": "UNKNOWN", "cores": "14", "threads": "160", "arch": "hybrid"}}
+cpu-bind=MASK - iris-173, task  0  0 [2693041]: mask 0xaaaaaaa set
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 56, "flatIntConstraints": 496, "method": "maximize", "flatTime": 0.0963176}}
+{"type": "status", "status": "UNKNOWN", "time": 361278}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
