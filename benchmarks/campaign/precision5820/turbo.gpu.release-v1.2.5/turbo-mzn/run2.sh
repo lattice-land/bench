@@ -44,7 +44,7 @@ MZN_TIMEOUT=360000
 REAL_TIMEOUT=300000
 ARCH="hybrid"
 CORES=10 # The number of core used on the node.
-THREADS=64 # The number of core used on the node.
+THREADS=128 # The number of core used on the node.
 MACHINE=$(basename "$1" ".sh")
 INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/short.csv"
 

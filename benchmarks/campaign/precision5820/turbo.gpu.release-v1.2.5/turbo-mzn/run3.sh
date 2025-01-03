@@ -42,7 +42,7 @@ VERSION="v1.2.5" # Note that this is only for the naming of the output directory
 # This is to avoid MiniZinc to kill Turbo before it can print the statistics.
 MZN_TIMEOUT=360000
 REAL_TIMEOUT=300000
-ARCH="hybrid"
+ARCH="gpu"
 CORES=10 # The number of core used on the node.
 THREADS=64 # The number of core used on the node.
 MACHINE=$(basename "$1" ".sh")

@@ -6,7 +6,7 @@ from pathlib import Path
 from packaging import version
 
 # A tentative to have unique experiment names.
-def make_uid(config, arch, mzn_solver, version, machine, timeout_ms, eps_num_subproblems, or_nodes, threads_per_block):
+def make_uid(config, arch, mzn_solver, version, machine, cores, timeout_ms, eps_num_subproblems, or_nodes, threads_per_block):
   uid = mzn_solver + "_" + str(version) + '_' + machine
   if (int(timeout_ms) % 1000) == 0:
     uid += "_" + str(int(int(timeout_ms)/1000)) + "s"
@@ -17,18 +17,21 @@ def make_uid(config, arch, mzn_solver, version, machine, timeout_ms, eps_num_sub
   if 'java11' in config:
     uid += '_java11'
   if mzn_solver == 'turbo.gpu.release':
-    uid += '_' + str(int(eps_num_subproblems)) + '_' + str(int(or_nodes))
+    uid += '_' + str(int(eps_num_subproblems))+ '_' + str(int(or_nodes))
+    if cores > 1 and arch.lower() == 'hybrid':
+      uid += "_" + str(int(cores))
     if int(threads_per_block) != 256:
       uid += '_' + str(int(threads_per_block)) + "TPB"
     if 'noatomics' in config:
       uid += '_noatomics'
     if 'globalmem' in config:
       uid += '_globalmem'
-    return uid
   else:
-    if(or_nodes > 1):
+    if or_nodes > 1:
       uid += '_' + str(int(or_nodes)) + "threads"
-    return uid
+    if cores > 1:
+      uid += "_" + str(int(cores)) + "cores"
+  return uid
 
 def make_short_uid(uid):
   components = uid.split('_')
@@ -45,7 +48,7 @@ def make_short_uid(uid):
     mzn_solver = 'choco'
   elif mzn_solver == 'org.choco.choco.noglobal':
     mzn_solver = 'choco.noglobal'
-  extra = '_'.join(components[4:]) # We remove the machine name and timeout info.
+  extra = '_'.join(components[4:]) # We remove the timeout info.
   if extra != '':
     extra = "_" + extra
   return mzn_solver + '_' + components[1] + extra
@@ -105,7 +108,8 @@ def read_experiments(experiments):
   all_xp['eps_num_subproblems'] = pd.to_numeric(all_xp['eps_num_subproblems'], errors='coerce').fillna(1).astype(int) if 'eps_num_subproblems' in all_xp else 1
   all_xp['num_blocks_done'] = pd.to_numeric(all_xp['num_blocks_done'], errors='coerce').fillna(0).astype(int) if 'num_blocks_done' in all_xp else 0
   all_xp['hardware'] = all_xp['machine'].apply(determine_hardware)
-  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['mzn_solver'], row['version'], row['machine'], row['timeout_ms'],
+  all_xp['cores'] = all_xp['cores'].fillna(1).astype(int)
+  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'],
                                                     row['eps_num_subproblems'], row['or_nodes'], row['threads_per_block']), axis=1)
   all_xp['short_uid'] = all_xp['uid'].apply(make_short_uid)
   all_xp['nodes_per_second'] = all_xp['nodes'] / all_xp['solveTime']
