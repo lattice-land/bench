@@ -38,13 +38,13 @@ fi
 # I. Define the campaign to run.
 
 MZN_SOLVER="turbo.gpu.release"
-VERSION="v1.2.5" # Note that this is only for the naming of the output directory, we do not verify the actual version of the solver.
+VERSION="v1.2.10" # Note that this is only for the naming of the output directory, we do not verify the actual version of the solver.
 # This is to avoid MiniZinc to kill Turbo before it can print the statistics.
 MZN_TIMEOUT=360000
 REAL_TIMEOUT=300000
 ARCH="hybrid"
 CORES=10 # The number of core used on the node.
-THREADS=64 # The number of core used on the node.
+THREADS=128 # The number of core used on the node.
 MACHINE=$(basename "$1" ".sh")
 INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/short.csv"
 
