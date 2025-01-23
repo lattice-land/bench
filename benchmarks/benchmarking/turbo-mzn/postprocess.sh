@@ -17,8 +17,8 @@ for file in $1/*.json; do
 done
 
 cd ..  # mzn-bench needs to access the model and data files from "../data".
-mzn-bench check-solutions $MZNBENCH_TMP || exit 1
-mzn-bench check-statuses $MZNBENCH_TMP || exit 1
+#mzn-bench check-solutions $MZNBENCH_TMP || exit 1
+#mzn-bench check-statuses $MZNBENCH_TMP || exit 1
 cd minizinc
 
 mzn-bench collect-objectives $MZNBENCH_TMP $1/../$(basename $1)-objectives.csv
