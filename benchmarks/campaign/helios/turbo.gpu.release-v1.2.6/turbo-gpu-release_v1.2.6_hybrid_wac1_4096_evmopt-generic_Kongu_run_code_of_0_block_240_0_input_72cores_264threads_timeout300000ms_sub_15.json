@@ -1,0 +1,34 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.6_hybrid_wac1_4096_evmopt-generic_Kongu_run_code_of_0_block_240_0_input_72cores_264threads_timeout300000ms_sub_15", "problem": "evm-super-compilation", "model": "../data/mzn-challenge/2023/evm-super-compilation/evmopt-generic.mzn", "data_file": "../data/mzn-challenge/2023/evm-super-compilation/Kongu_run_code_of_0_block_240_0_input.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.6", "timeout_ms": "300000", "datetime": "2025-01-23T16:54:24.128606", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c0s3b1n0, task  0  0 [786954]: mask 0xffffffffffffffffff000000000000000000000000000000000000000000000000000000 set
+{Z(TIMESTAMP_0), U(SLOAD_0), B(EQ_0), B(SHL_1), B(SHL_0), B(OR_1), B(OR_0), B(KECCAK256_1), B(MUL_0), B(ADD_1), B(KECCAK256_0), B(ADD_0), B(AND_0), P(PUSH_0), P(PUSH_1), P(PUSH_2), P(PUSH_3), P(PUSH_4), P(PUSH_5), P(PUSH_6), P(PUSH_7), P(PUSH_8), P(PUSH_9), P(PUSH_10), S(MSTORE_3), S(MSTORE_2), S(MSTORE_1), S(MSTORE_0), S(SSTORE_1), S(SSTORE_0), DUP(1), DUP(2), DUP(3), DUP(4), DUP(5), DUP(6), DUP(7), DUP(8), DUP(9), DUP(10), DUP(11), DUP(12), DUP(13), DUP(14), DUP(15), DUP(16), SWAP(1), SWAP(2), SWAP(3), SWAP(4), SWAP(5), SWAP(6), SWAP(7), SWAP(8), SWAP(9), SWAP(10), SWAP(11), SWAP(12), SWAP(13), SWAP(14), SWAP(15), POP, NOP}
+uses: [0, 4, 4, 4, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 7, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1]
+creates: [s33, s25, s35, s34, s32, s31, s27, s26, s23, s22, s21, s14, s11, s37, s38, s39, s40, s41, s42, s43, s44, s45, s46, s47, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .]
+creator: [Z(TIMESTAMP_0), U(SLOAD_0), B(EQ_0), B(SHL_1), B(SHL_0), B(OR_1), B(OR_0), B(KECCAK256_1), B(MUL_0), B(ADD_1), B(KECCAK256_0), B(ADD_0), B(AND_0), P(PUSH_0), P(PUSH_1), P(PUSH_2), P(PUSH_3), P(PUSH_4), P(PUSH_5), P(PUSH_6), P(PUSH_7), P(PUSH_8), P(PUSH_9), P(PUSH_10)]
+maxdups = 19 maxpops = 0 uses: 46 null = 0 unused: {} creates something: 24 startlength: 3
+lcount: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+ucount: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 7, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 0, 27]
+OR_1 -> {B(SHL_0),B(SHL_1)}
+ADD_1 -> {B(MUL_0),U(SLOAD_0)}
+EQ_0 -> s42:2Z -> P(PUSH_5)
+SHL_1 -> s43:1Z -> P(PUSH_6)
+SHL_1 -> s35:12 -> B(EQ_0)
+SHL_0 -> s44:1Z -> P(PUSH_7)
+SHL_0 -> s33:12 -> Z(TIMESTAMP_0)
+KECCAK256_1 -> s37:1Z -> P(PUSH_0)
+KECCAK256_1 -> s45:12 -> P(PUSH_8)
+KECCAK256_0 -> s37:1Z -> P(PUSH_0)
+KECCAK256_0 -> s45:12 -> P(PUSH_8)
+MSTORE_3 -> s39:1Z -> P(PUSH_2)
+MSTORE_3 -> s40:12 -> P(PUSH_3)
+MSTORE_2 -> s37:1Z -> P(PUSH_0)
+MSTORE_1 -> s39:1Z -> P(PUSH_2)
+MSTORE_1 -> s41:12 -> P(PUSH_4)
+MSTORE_0 -> s37:1Z -> P(PUSH_0)
+SSTORE_1 -> s26:1N -> B(KECCAK256_1)
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 18399, "flatIntVars": 7220, "flatBoolConstraints": 10426, "flatIntConstraints": 22436, "evaluatedReifiedConstraints": 17610, "eliminatedImplications": 57, "method": "minimize", "flatTime": 0.724824}}
+% WARNING: Annotation domain_change_constraint is unknown and was ignored.
+{"type": "status", "status": "ERROR", "time": 2744}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"parsed_variables": 31679, "parsed_constraints": 68153, "tnf_variables": 122633, "tnf_constraints": 159107}}
+srun: error: x1002c0s3b1n0: task 0: Exited with exit code 1

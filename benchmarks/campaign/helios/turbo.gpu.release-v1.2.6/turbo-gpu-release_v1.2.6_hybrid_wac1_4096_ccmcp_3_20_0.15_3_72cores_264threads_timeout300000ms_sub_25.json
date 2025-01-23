@@ -1,0 +1,6 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.6_hybrid_wac1_4096_ccmcp_3_20_0.15_3_72cores_264threads_timeout300000ms_sub_25", "problem": "kidney-exchange", "model": "../data/mzn-challenge/2023/kidney-exchange/ccmcp.mzn", "data_file": "../data/mzn-challenge/2023/kidney-exchange/3_20_0.15_3.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.6", "timeout_ms": "300000", "datetime": "2025-01-23T16:43:06.618833", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c1s5b0n0, task  0  0 [604130]: mask 0xffffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 400, "flatIntVars": 480, "flatIntConstraints": 1089, "evaluatedReifiedConstraints": 400, "method": "maximize", "flatTime": 0.340708}}
+{"type": "status", "status": "UNKNOWN", "time": 361481}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

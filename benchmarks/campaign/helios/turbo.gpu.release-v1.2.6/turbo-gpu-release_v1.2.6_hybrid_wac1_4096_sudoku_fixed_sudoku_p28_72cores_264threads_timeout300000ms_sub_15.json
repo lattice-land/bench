@@ -1,0 +1,6 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.6_hybrid_wac1_4096_sudoku_fixed_sudoku_p28_72cores_264threads_timeout300000ms_sub_15", "problem": "sudoku_fixed", "model": "../data/mzn-challenge/2023/sudoku_fixed/sudoku_fixed.mzn", "data_file": "../data/mzn-challenge/2023/sudoku_fixed/sudoku_p28.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.6", "timeout_ms": "300000", "datetime": "2025-01-23T16:36:48.299634", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c7s5b1n0, task  0  0 [363542]: mask 0xffffffffffffffffff000000000000000000000000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 357, "flatIntConstraints": 6900, "method": "satisfy", "flatTime": 0.435256}}
+{"type": "status", "status": "UNKNOWN", "time": 361683}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

@@ -1,0 +1,18 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.6_hybrid_wac1_4096_evmopt-generic_isolated_block_6_0_input_72cores_264threads_timeout300000ms_sub_25", "problem": "evm-super-compilation", "model": "../data/mzn-challenge/2023/evm-super-compilation/evmopt-generic.mzn", "data_file": "../data/mzn-challenge/2023/evm-super-compilation/isolated_block_6_0_input.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.6", "timeout_ms": "300000", "datetime": "2025-01-23T16:54:25.844094", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c7s4b0n0, task  0  0 [253984]: mask 0xffffffffffffffffff000000000000000000000000000000000000 set
+{U(MLOAD_0), B(SHL_0), P(PUSH_0), P(PUSH_1), P(PUSH_2), DUP(1), DUP(2), DUP(3), DUP(4), DUP(5), DUP(6), DUP(7), DUP(8), DUP(9), DUP(10), DUP(11), DUP(12), DUP(13), SWAP(1), SWAP(2), SWAP(3), SWAP(4), SWAP(5), SWAP(6), SWAP(7), SWAP(8), SWAP(9), SWAP(10), SWAP(11), SWAP(12), POP, NOP}
+uses: [2, 1, 1, 5, 1, 2, 1, 2, 1, 1, 1]
+creates: [., s13, s14, s19, s20, s21, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .]
+creator: [U(MLOAD_0), B(SHL_0), P(PUSH_0), P(PUSH_1), P(PUSH_2)]
+maxdups = 6 maxpops = 0 uses: 18 null = 2 unused: {} creates something: 5 startlength: 5
+lcount: [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+ucount: [0, 1, 1, 1, 1, 1, 0, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 0, 10]
+SHL_0 -> s20:1Z -> P(PUSH_1)
+SHL_0 -> s21:12 -> P(PUSH_2)
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 2576, "flatIntVars": 1203, "flatBoolConstraints": 1504, "flatIntConstraints": 3150, "evaluatedReifiedConstraints": 2409, "eliminatedImplications": 16, "method": "minimize", "flatTime": 0.452449}}
+% WARNING: Annotation domain_change_constraint is unknown and was ignored.
+{"type": "status", "status": "ERROR", "time": 720}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"parsed_variables": 4950, "parsed_constraints": 9529, "tnf_variables": 16360, "tnf_constraints": 20939}}
+srun: error: x1002c7s4b0n0: task 0: Exited with exit code 1

@@ -1,0 +1,27 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.6_hybrid_wac1_4096_evmopt-generic_PlaylinkAirdrop_run_code_of_0_block_216_0_input_72cores_264threads_timeout300000ms_sub_20", "problem": "evm-super-compilation", "model": "../data/mzn-challenge/2023/evm-super-compilation/evmopt-generic.mzn", "data_file": "../data/mzn-challenge/2023/evm-super-compilation/PlaylinkAirdrop_run_code_of_0_block_216_0_input.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.6", "timeout_ms": "300000", "datetime": "2025-01-23T16:54:22.620569", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c0s3b1n0, task  0  0 [786935]: mask 0xffffffffffffffffff set
+{U(MLOAD_0), B(ADD_5), B(ADD_4), B(ADD_3), B(ADD_2), B(ADD_1), B(ADD_0), P(PUSH [tag]_0), P(PUSH_0), P(PUSH_1), P(PUSH_2), P(PUSH_3), P(PUSH_4), P(PUSH_5), S(MSTORE_5), S(MSTORE_4), S(MSTORE_3), S(MSTORE_2), S(MSTORE_1), S(MSTORE_0), DUP(1), DUP(2), DUP(3), DUP(4), DUP(5), DUP(6), DUP(7), DUP(8), DUP(9), DUP(10), SWAP(1), SWAP(2), SWAP(3), SWAP(4), SWAP(5), SWAP(6), SWAP(7), SWAP(8), SWAP(9), POP, NOP}
+uses: [0, 2, 1, 1, 1, 1, 1, 2, 1, 1, 6, 4, 3, 1, 2, 1, 1]
+creates: [., s9, s8, s6, s5, s15, s13, s11, s4, s18, s19, s20, s21, s22, s23, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .]
+creator: [U(MLOAD_0), B(ADD_5), B(ADD_4), B(ADD_3), B(ADD_2), B(ADD_1), B(ADD_0), P(PUSH [tag]_0), P(PUSH_0), P(PUSH_1), P(PUSH_2), P(PUSH_3), P(PUSH_4), P(PUSH_5)]
+maxdups = 13 maxpops = 0 uses: 29 null = 0 unused: {} creates something: 14 startlength: 2
+lcount: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+ucount: [0, 1, 1, 1, 1, 1, 1, 1, 1, 4, 3, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 19, 19, 19, 19, 19, 19, 19, 19, 19, 0, 19]
+MLOAD_0 -> s19:U -> P(PUSH_1)
+ADD_5 -> s20:2Z -> P(PUSH_2)
+ADD_4 -> s21:1Z -> P(PUSH_3)
+ADD_2 -> s23:2Z -> P(PUSH_5)
+ADD_1 -> s19:2Z -> P(PUSH_1)
+ADD_0 -> s21:2Z -> P(PUSH_3)
+MSTORE_4 -> s15:1N -> B(ADD_2)
+MSTORE_3 -> s13:1N -> B(ADD_1)
+MSTORE_2 -> s11:1N -> B(ADD_0)
+MSTORE_0 -> s19:1Z -> P(PUSH_1)
+MSTORE_0 -> s8:12 -> B(ADD_5)
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 8969, "flatIntVars": 3612, "flatBoolConstraints": 5213, "flatIntConstraints": 10905, "evaluatedReifiedConstraints": 8466, "eliminatedImplications": 39, "method": "minimize", "flatTime": 0.4983}}
+% WARNING: Annotation domain_change_constraint is unknown and was ignored.
+{"type": "status", "status": "ERROR", "time": 1392}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"parsed_variables": 15408, "parsed_constraints": 32276, "tnf_variables": 56995, "tnf_constraints": 73863}}
+srun: error: x1002c0s3b1n0: task 0: Exited with exit code 1

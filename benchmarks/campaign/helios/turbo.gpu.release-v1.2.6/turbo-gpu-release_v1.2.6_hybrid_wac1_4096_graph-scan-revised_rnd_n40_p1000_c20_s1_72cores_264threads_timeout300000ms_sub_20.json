@@ -1,0 +1,13 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.6_hybrid_wac1_4096_graph-scan-revised_rnd_n40_p1000_c20_s1_72cores_264threads_timeout300000ms_sub_20", "problem": "multi-agent-graph-coverage", "model": "../data/mzn-challenge/2023/multi-agent-graph-coverage/graph-scan-revised.mzn", "data_file": "../data/mzn-challenge/2023/multi-agent-graph-coverage/rnd_n40_p1000_c20_s1.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.6", "timeout_ms": "300000", "datetime": "2025-01-23T16:42:51.759011", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c7s4b0n0, task  0  0 [248401]: mask 0xffffffffffffffffff set
+makespan = 4080;
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 1632, "flatIntVars": 1093, "flatBoolConstraints": 1292, "flatIntConstraints": 20811, "evaluatedReifiedConstraints": 1360, "method": "minimize", "flatTime": 0.760043}}
+{"type": "comment", "comment": "% stack_memory=8650752000 [8.65GB]\n"}
+{"type": "comment", "comment": "% heap_memory=83536065332 [83.54GB]\n"}
+{"type": "comment", "comment": "% or_nodes=264\n"}
+{"type": "comment", "comment": "% max_blocks_per_sm=3\n"}
+{"type": "statistics", "statistics": {"parsed_variables": 4776, "parsed_constraints": 62514, "tnf_variables": 121222, "tnf_constraints": 178960, "preprocessing_time": 8.412000000000001, "memory_configuration": "global", "shared_mem": 0, "store_mem": 993100, "propagator_mem": 2889924}}
+{"type": "status", "status": "UNKNOWN", "time": 304931}
+{"type": "statistics", "statistics": {"problem_path": "/tmp/76301/x1002c7s4b0n0/mznfileTzkqA9.fzn", "solver": "Turbo", "version": "v1.2.6", "hardware": "helios", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": 4096, "free_search": "yes", "or_nodes": 264, "timeout_ms": 300000, "threads_per_block": 256, "stack_size": 32000, "cuda_version": 12040, "cutnodes": 0, "nodes": 5525400, "failures": 2724114, "variables": 124130, "propagators": 180612, "peakDepth": 1299, "initTime": 8.444000000000001, "solveTime": 300.077, "num_solutions": 0, "eps_num_subproblems": 1048576, "eps_solved_subproblems": 0, "eps_skipped_subproblems": 0, "num_blocks_done": 0, "fixpoint_iterations": 49422396, "eliminated_variables": 0, "eliminated_formulas": 0, "solve_time": 280.265, "search_time": 2.103, "fixpoint_time": 216.461, "transfer_cpu2gpu_time": 8.298, "transfer_gpu2cpu_time": 2.467, "select_fp_functions_time": 30.755, "wait_cpu_time": 7.839, "dive_time": 0.192}}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

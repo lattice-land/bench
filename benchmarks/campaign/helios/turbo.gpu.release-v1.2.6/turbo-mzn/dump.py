@@ -24,7 +24,7 @@ if __name__ == "__main__":
   fp = sys.argv[11]
   wac1_threshold = sys.argv[12]
   extras = []
-  for i in range(12, len(sys.argv)):
+  for i in range(13, len(sys.argv)):
     arg = sys.argv[i].strip().replace(' ', '-')
     if arg != "" and arg != "-s": # we use "-s" when there are "no special options to be used".
       extras.append(arg)

@@ -1,0 +1,6 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.6_hybrid_wac1_4096_test-scheduling_t500m50r10-8_72cores_264threads_timeout300000ms_sub_15", "problem": "test-scheduling", "model": "../data/mzn-challenge/2023/test-scheduling/test-scheduling.mzn", "data_file": "../data/mzn-challenge/2023/test-scheduling/t500m50r10-8.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.6", "timeout_ms": "300000", "datetime": "2025-01-23T16:38:20.519714", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c1s5b0n0, task  0  0 [602940]: mask 0xffffffffffffffffff000000000000000000000000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 6120729, "flatIntVars": 13679182, "flatBoolConstraints": 2035458, "flatIntConstraints": 17797333, "evaluatedReifiedConstraints": 4095029, "method": "minimize", "flatTime": 460.405}}
+{"type": "status", "status": "UNKNOWN", "time": 912703}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

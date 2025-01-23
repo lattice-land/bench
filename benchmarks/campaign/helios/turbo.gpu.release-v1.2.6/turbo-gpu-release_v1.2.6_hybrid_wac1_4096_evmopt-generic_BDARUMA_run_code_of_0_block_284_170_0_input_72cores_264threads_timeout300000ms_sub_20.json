@@ -1,0 +1,17 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.6_hybrid_wac1_4096_evmopt-generic_BDARUMA_run_code_of_0_block_284_170_0_input_72cores_264threads_timeout300000ms_sub_20", "problem": "evm-super-compilation", "model": "../data/mzn-challenge/2023/evm-super-compilation/evmopt-generic.mzn", "data_file": "../data/mzn-challenge/2023/evm-super-compilation/BDARUMA_run_code_of_0_block_284_170_0_input.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.6", "timeout_ms": "300000", "datetime": "2025-01-23T16:54:24.970312", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c1s5b0n0, task  0  0 [606790]: mask 0xffffffffffffffffff set
+{B(SUB_0), P(PUSH [tag]_1), P(PUSH [tag]_0), P(PUSH_0), DUP(1), DUP(2), DUP(3), DUP(4), DUP(5), DUP(6), DUP(7), DUP(8), DUP(9), SWAP(1), SWAP(2), SWAP(3), SWAP(4), SWAP(5), SWAP(6), SWAP(7), SWAP(8), POP, NOP}
+uses: [3, 2, 0, 1, 1, 3, 1, 3]
+creates: [., ., s10, s9, s11, s12, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .]
+creator: [B(SUB_0), P(PUSH [tag]_1), P(PUSH [tag]_0), P(PUSH_0)]
+maxdups = 5 maxpops = 1 uses: 14 null = 3 unused: {s1} creates something: 4 startlength: 3
+lcount: [0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+ucount: [0, 0, 1, 1, 1, 3, 0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 1, 6]
+SUB_0 -> s12:1Z -> P(PUSH_0)
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 1429, "flatIntVars": 687, "flatBoolConstraints": 845, "flatIntConstraints": 1755, "evaluatedReifiedConstraints": 1319, "eliminatedImplications": 12, "method": "minimize", "flatTime": 0.370816}}
+% WARNING: Annotation domain_change_constraint is unknown and was ignored.
+{"type": "status", "status": "ERROR", "time": 523}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"parsed_variables": 2799, "parsed_constraints": 5338, "tnf_variables": 9052, "tnf_constraints": 11591}}
+srun: error: x1002c1s5b0n0: task 0: Exited with exit code 1
