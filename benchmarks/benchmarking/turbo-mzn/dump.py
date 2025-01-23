@@ -21,16 +21,20 @@ if __name__ == "__main__":
   cores = sys.argv[8]
   threads = sys.argv[9]
   arch = sys.argv[10]
+  fp = sys.argv[11]
+  wac1_threshold = sys.argv[12]
   extras = []
-  for i in range(10, len(sys.argv)):
+  for i in range(12, len(sys.argv)):
     arg = sys.argv[i].strip().replace(' ', '-')
     if arg != "" and arg != "-s": # we use "-s" when there are "no special options to be used".
       extras.append(arg)
       # Remove leading "-" from extras (these are used for specifying options)
       if extras[-1].startswith("-"):
         extras[-1] = extras[-1][1:]
-
-  uid = solver.replace('.', '-') + "_" + solver_version + "_" + arch + "_" + model.stem + "_" + data.stem
+  fp2 = fp
+  if fp == "wac1":
+    fp2 += f"_{wac1_threshold}"
+  uid = solver.replace('.', '-') + "_" + solver_version + "_" + arch + "_" + fp2 + "_" + model.stem + "_" + data.stem
   if cores != "1" or threads != "1":
     uid += f"_{cores}cores_{threads}threads"
   uid += f"_timeout{timeout_ms}ms"
@@ -56,7 +60,9 @@ if __name__ == "__main__":
     "status": str(minizinc.result.Status.UNKNOWN),
     "cores": cores,
     "threads": threads,
-    "arch": arch
+    "arch": arch,
+    "fixpoint": fp,
+    "wac1_threshold": wac1_threshold
   }
 
   # If the file exists, we do not delete what is already inside but append new content.

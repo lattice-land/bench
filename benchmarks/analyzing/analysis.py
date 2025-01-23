@@ -6,7 +6,7 @@ from pathlib import Path
 from packaging import version
 
 # A tentative to have unique experiment names.
-def make_uid(config, arch, mzn_solver, version, machine, cores, timeout_ms, eps_num_subproblems, or_nodes, threads_per_block):
+def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, eps_num_subproblems, or_nodes, threads_per_block):
   uid = mzn_solver + "_" + str(version) + '_' + machine
   if (int(timeout_ms) % 1000) == 0:
     uid += "_" + str(int(int(timeout_ms)/1000)) + "s"
@@ -14,6 +14,10 @@ def make_uid(config, arch, mzn_solver, version, machine, cores, timeout_ms, eps_
     uid += "_" + str(int(timeout_ms)) + "ms"
   if arch != "":
     uid += "_" + arch.lower()
+  if fixpoint != "":
+    uid += "_" + fixpoint.lower()
+    if fixpoint == "wac1":
+      uid += "_" + str(int(wac1_threshold))
   if 'java11' in config:
     uid += '_java11'
   if mzn_solver == 'turbo.gpu.release':
@@ -109,7 +113,12 @@ def read_experiments(experiments):
   all_xp['num_blocks_done'] = pd.to_numeric(all_xp['num_blocks_done'], errors='coerce').fillna(0).astype(int) if 'num_blocks_done' in all_xp else 0
   all_xp['hardware'] = all_xp['machine'].apply(determine_hardware)
   all_xp['cores'] = all_xp['cores'].fillna(1).astype(int)
-  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'],
+  # For the fixpoint, we default it to "" or "ac1" if it is a Turbo solver.
+  all_xp['fixpoint'] = all_xp['fixpoint'].fillna("").astype(str) if 'fixpoint' in all_xp else ""
+  all_xp['fixpoint'] = all_xp.apply(lambda row: "ac1" if row['fixpoint'] == "" and (row['mzn_solver'] == 'turbo.gpu.release' or row['mzn_solver'] == "turbo.cpu.release") else row['fixpoint'], axis=1)
+  all_xp['wac1_threshold'] = all_xp['wac1_threshold'].fillna(0).astype(int)
+  all_xp['cores'] = all_xp['cores'].fillna(1).astype(int)
+  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'],
                                                     row['eps_num_subproblems'], row['or_nodes'], row['threads_per_block']), axis=1)
   all_xp['short_uid'] = all_xp['uid'].apply(make_short_uid)
   all_xp['nodes_per_second'] = all_xp['nodes'] / all_xp['solveTime']
