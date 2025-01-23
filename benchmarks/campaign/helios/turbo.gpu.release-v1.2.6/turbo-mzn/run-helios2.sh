@@ -45,7 +45,7 @@ ARCH="hybrid"
 CORES=72 # The number of core used on the node.
 THREADS=264 # The number of core used on the node.
 FP="wac1"
-WAC1_THRESHOLD=4096
+WAC1_THRESHOLD=0
 MACHINE=$(basename "$1" ".sh")
 INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/short.csv"
 

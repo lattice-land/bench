@@ -1,0 +1,168 @@
++++ realpath run-helios.sh
+++ dirname /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/run-helios.sh
++ MZN_WORKFLOW_PATH=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn
++ BENCHMARKING_DIR_PATH=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/..
++ BENCHMARKS_DIR_PATH=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../..
++ '[' -z helios.sh ']'
++ source /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/helios.sh
+++ module add GCCcore/13.2.0 parallel
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+ GCCcore/13.2.0 loaded.
+ zlib/1.2.13 loaded.
+ Perl/5.38.0 loaded.
+ parallel/20240322 loaded.
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load CUDA/12.4.0
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+ CUDA/12.4.0 loaded.
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load CMake/3.27.6
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+ ncurses/6.4 loaded.
+ bzip2/1.0.8 loaded.
+ OpenSSL/1.1 loaded.
+ cURL/8.3.0 loaded.
+ XZ/5.4.4 loaded.
+ libarchive/3.7.2 loaded.
+ CMake/3.27.6 loaded.
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load Doxygen/1.9.8
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+ libiconv/1.17 loaded.
+ Doxygen/1.9.8 loaded.
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load libxml2/2.11.5
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+ libxml2/2.11.5 loaded.
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load Python/3.11.5
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+ binutils/2.40 loaded.
+ libreadline/8.2 loaded.
+ Tcl/8.6.13 loaded.
+ SQLite/3.43.1 loaded.
+ libffi/3.4.4 loaded.
+ Python/3.11.5 loaded.
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
++ source /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../../pybench/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n /bin/bash -o -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ VIRTUAL_ENV=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/pybench
+++ export VIRTUAL_ENV
+++ _OLD_VIRTUAL_PATH=/net/software/aarch64/el8/Python/3.11.5-GCCcore-13.2.0/bin:/net/software/aarch64/el8/SQLite/3.43.1-GCCcore-13.2.0/bin:/net/software/aarch64/el8/Tcl/8.6.13-GCCcore-13.2.0/bin:/net/software/aarch64/el8/binutils/2.40-GCCcore-13.2.0/bin:/net/software/aarch64/el8/libxml2/2.11.5-GCCcore-13.2.0/bin:/net/software/aarch64/el8/Doxygen/1.9.8-GCCcore-13.2.0/bin:/net/software/aarch64/el8/libiconv/1.17-GCCcore-13.2.0/bin:/net/software/aarch64/el8/CMake/3.27.6-GCCcore-13.2.0/bin:/net/software/aarch64/el8/libarchive/3.7.2-GCCcore-13.2.0/bin:/net/software/aarch64/el8/XZ/5.4.4-GCCcore-13.2.0/bin:/net/software/aarch64/el8/cURL/8.3.0-GCCcore-13.2.0/bin:/net/software/aarch64/el8/OpenSSL/1.1/bin:/net/software/aarch64/el8/bzip2/1.0.8-GCCcore-13.2.0/bin:/net/software/aarch64/el8/ncurses/6.4-GCCcore-13.2.0/bin:/net/software/aarch64/el8/CUDA/12.4.0/nvvm/bin:/net/software/aarch64/el8/CUDA/12.4.0/bin:/net/software/aarch64/el8/parallel/20240322-GCCcore-13.2.0/bin:/net/software/aarch64/el8/Perl/5.38.0-GCCcore-13.2.0/bin:/net/software/aarch64/el8/GCCcore/13.2.0/bin:/net/home/plgrid/plgptalbot/.local/bin:/net/home/plgrid/plgptalbot/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/net/home/plgrid/plgptalbot/deps/libminizinc/build
+++ PATH=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/pybench/bin:/net/software/aarch64/el8/Python/3.11.5-GCCcore-13.2.0/bin:/net/software/aarch64/el8/SQLite/3.43.1-GCCcore-13.2.0/bin:/net/software/aarch64/el8/Tcl/8.6.13-GCCcore-13.2.0/bin:/net/software/aarch64/el8/binutils/2.40-GCCcore-13.2.0/bin:/net/software/aarch64/el8/libxml2/2.11.5-GCCcore-13.2.0/bin:/net/software/aarch64/el8/Doxygen/1.9.8-GCCcore-13.2.0/bin:/net/software/aarch64/el8/libiconv/1.17-GCCcore-13.2.0/bin:/net/software/aarch64/el8/CMake/3.27.6-GCCcore-13.2.0/bin:/net/software/aarch64/el8/libarchive/3.7.2-GCCcore-13.2.0/bin:/net/software/aarch64/el8/XZ/5.4.4-GCCcore-13.2.0/bin:/net/software/aarch64/el8/cURL/8.3.0-GCCcore-13.2.0/bin:/net/software/aarch64/el8/OpenSSL/1.1/bin:/net/software/aarch64/el8/bzip2/1.0.8-GCCcore-13.2.0/bin:/net/software/aarch64/el8/ncurses/6.4-GCCcore-13.2.0/bin:/net/software/aarch64/el8/CUDA/12.4.0/nvvm/bin:/net/software/aarch64/el8/CUDA/12.4.0/bin:/net/software/aarch64/el8/parallel/20240322-GCCcore-13.2.0/bin:/net/software/aarch64/el8/Perl/5.38.0-GCCcore-13.2.0/bin:/net/software/aarch64/el8/GCCcore/13.2.0/bin:/net/home/plgrid/plgptalbot/.local/bin:/net/home/plgrid/plgptalbot/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/net/home/plgrid/plgptalbot/deps/libminizinc/build
+++ export PATH
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='(pybench) '
+++ export PS1
+++ VIRTUAL_ENV_PROMPT='(pybench) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n /bin/bash -o -n '' ']'
+++ hash -r
++ '[' -n '' ']'
++ MZN_SOLVER=turbo.gpu.release
++ VERSION=v1.2.5
++ MZN_TIMEOUT=360000
++ REAL_TIMEOUT=300000
++ ARCH=hybrid
++ CORES=72
++ THREADS=264
+++ basename helios.sh .sh
++ MACHINE=helios
++ INSTANCES_PATH=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../benchmarking/short.csv
++ MZN_COMMAND='minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000'
++ OUTPUT_DIR=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5
++ mkdir -p /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5
++ '[' -n x1002c1s1b0n0 ']'
++ SRUN_COMMAND='srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose'
++ NUM_PARALLEL_EXPERIMENTS=4
++ DUMP_PY_PATH=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py
++ cp -r /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/
+++ basename /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn
++ cp /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../benchmarking/short.csv /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-mzn/
+++ basename /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn
++ COMMANDS_LOG=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-mzn/jobs.log
++ parallel --verbose --no-run-if-empty --rpl '{} uq()' -k --colsep , --skip-first-line -j 4 --joblog /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-mzn/jobs.log srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 '/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../{2}' '/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../{3}' '2>&1' '|' python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 '{1}' '{2}' '{3}' turbo.gpu.release v1.2.5 300000 72 264 hybrid :::: /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../benchmarking/short.csv
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/wordpress/wordpress.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "wordpress" "../data/mzn-challenge/2022/wordpress/wordpress.mzn" "../data/mzn-challenge/2022/wordpress/Wordpress7_Offers500.dzn" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/stripboard/stripboard.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/stripboard/common-emitter-simple.dzn" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "stripboard" "../data/mzn-challenge/2022/stripboard/stripboard.mzn" "../data/mzn-challenge/2022/stripboard/common-emitter-simple.dzn" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/blocks-world/blocks.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/blocks-world/16-4-5.dzn" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "blocks-world" "../data/mzn-challenge/2022/blocks-world/blocks.mzn" "../data/mzn-challenge/2022/blocks-world/16-4-5.dzn" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "gfd-schedule" "../data/mzn-challenge/2022/gfd-schedule/gfd-schedule2.mzn" "../data/mzn-challenge/2022/gfd-schedule/n55f2d50m30k3_10124.dzn" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/triangular/triangular.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/triangular/n10.dzn" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "triangular" "../data/mzn-challenge/2022/triangular/triangular.mzn" "../data/mzn-challenge/2022/triangular/n10.dzn" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/triangular/triangular.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/triangular/n39.dzn" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "triangular" "../data/mzn-challenge/2022/triangular/triangular.mzn" "../data/mzn-challenge/2022/triangular/n39.dzn" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_wordpress_Wordpress7_Offers500_72cores_264threads_timeout300000ms_hybrid.json
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_stripboard_common-emitter-simple_72cores_264threads_timeout300000ms_hybrid.json
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/spot5/spot5.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/spot5/404.dzn" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "spot5" "../data/mzn-challenge/2022/spot5/spot5.mzn" "../data/mzn-challenge/2022/spot5/404.dzn" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_blocks_16-4-5_72cores_264threads_timeout300000ms_hybrid.json
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_gfd-schedule2_n55f2d50m30k3_10124_72cores_264threads_timeout300000ms_hybrid.json
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/accap/accap.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/accap/accap_a40_f800_t180.json" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "accap" "../data/mzn-challenge/2022/accap/accap.mzn" "../data/mzn-challenge/2022/accap/accap_a40_f800_t180.json" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_triangular_n10_72cores_264threads_timeout300000ms_hybrid.json
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/accap/accap.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "accap" "../data/mzn-challenge/2022/accap/accap.mzn" "../data/mzn-challenge/2022/accap/accap_a4_f30_t15.json" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/tower/tower.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/tower/100_100_20_100-04.dzn" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "tower" "../data/mzn-challenge/2022/tower/tower.mzn" "../data/mzn-challenge/2022/tower/100_100_20_100-04.dzn" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_triangular_n39_72cores_264threads_timeout300000ms_hybrid.json
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_spot5_404_72cores_264threads_timeout300000ms_hybrid.json
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/nfc/nfc.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/nfc/24_4_2.dzn" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "nfc" "../data/mzn-challenge/2022/nfc/nfc.mzn" "../data/mzn-challenge/2022/nfc/24_4_2.dzn" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_accap_accap_a40_f800_t180_72cores_264threads_timeout300000ms_hybrid.json
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/generalized-peacable-queens/peaceable_queens.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/generalized-peacable-queens/n8_q3.json" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "generalized-peacable-queens" "../data/mzn-challenge/2022/generalized-peacable-queens/peaceable_queens.mzn" "../data/mzn-challenge/2022/generalized-peacable-queens/n8_q3.json" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_accap_accap_a4_f30_t15_72cores_264threads_timeout300000ms_hybrid.json
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/roster-sickness/large-2.dzn" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "roster-sickness" "../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn" "../data/mzn-challenge/2022/roster-sickness/large-2.dzn" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_tower_100_100_20_100-04_72cores_264threads_timeout300000ms_hybrid.json
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/roster-sickness/small-4.dzn" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "roster-sickness" "../data/mzn-challenge/2022/roster-sickness/bool-model-sickness.mzn" "../data/mzn-challenge/2022/roster-sickness/small-4.dzn" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_nfc_24_4_2_72cores_264threads_timeout300000ms_hybrid.json
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "diameterc-mst" "../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn" "../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_peaceable_queens_n8_q3_72cores_264threads_timeout300000ms_hybrid.json
+srun --exclusive --cpus-per-task=72 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose minizinc --solver turbo.gpu.release -s --json-stream -t 360000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -hardware helios -version v1.2.5 -timeout 300000 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/team-assignment/model.mzn" /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../"../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn" 2>&1 | python3 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5 "team-assignment" "../data/mzn-challenge/2022/team-assignment/model.mzn" "../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn" turbo.gpu.release v1.2.5 300000 72 264 hybrid
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_bool-model-sickness_large-2_72cores_264threads_timeout300000ms_hybrid.json
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_bool-model-sickness_small-4_72cores_264threads_timeout300000ms_hybrid.json
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_dcmst_c_v20_a190_d4_72cores_264threads_timeout300000ms_hybrid.json
+Writing to file:  /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.5/turbo-gpu-release_v1.2.5_hybrid_model_data3_5_31_72cores_264threads_timeout300000ms_hybrid.json

@@ -1,0 +1,12 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.5_hybrid_tower_100_100_20_100-04_72cores_132threads_timeout300000ms_hybrid", "problem": "tower", "model": "../data/mzn-challenge/2022/tower/tower.mzn", "data_file": "../data/mzn-challenge/2022/tower/100_100_20_100-04.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.5", "timeout_ms": "300000", "datetime": "2025-01-22T07:29:25.417393", "status": "UNKNOWN", "cores": "72", "threads": "132", "arch": "hybrid"}}
+cpu-bind=MASK - x1002c1s1b0n0, task  0  0 [327634]: mask 0xffffffffffffffffff000000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 4260, "flatIntVars": 4747, "flatBoolConstraints": 100, "flatIntConstraints": 10887, "evaluatedReifiedConstraints": 8060, "method": "maximize", "flatTime": 0.582795}}
+{"type": "comment", "comment": "% stack_memory=8650752000 [8.65GB]\n"}
+{"type": "comment", "comment": "% heap_memory=83536065332 [83.54GB]\n"}
+{"type": "comment", "comment": "% or_nodes=132\n"}
+{"type": "comment", "comment": "% max_blocks_per_sm=3\n"}
+{"type": "statistics", "statistics": {"parsed_variables": 12547, "parsed_constraints": 23257, "tnf_variables": 38559, "tnf_constraints": 49269, "preprocessing_time": 0.762, "memory_configuration": "global", "shared_mem": 0, "store_mem": 308532, "propagator_mem": 708916}}
+{"type": "solution", "output": {"json": {  "power" : [10, 3, 7, 3, 2, 4, 2, 3, 4, 4, 4, 4, 1, 3, 4, 3, 6, 3, 1, 3],  "_objective" : 60}}, "sections": ["json"], "time": 301792}
+{"type": "statistics", "statistics": {"problem_path": "/tmp/75505/x1002c1s1b0n0/mznfileORWe2j.fzn", "solver": "Turbo", "version": "v1.2.5", "hardware": "helios", "arch": "hybrid", "free_search": "yes", "or_nodes": 132, "timeout_ms": 300000, "threads_per_block": 256, "stack_size": 32000, "cuda_version": 12040, "cutnodes": 0, "nodes": 1410360, "failures": 698347, "variables": 38559, "propagators": 44299, "peakDepth": 376, "initTime": 0.768, "solveTime": 300.034, "num_solutions": 52, "eps_num_subproblems": 4096, "eps_solved_subproblems": 118, "eps_skipped_subproblems": 2556, "num_blocks_done": 0, "fixpoint_iterations": 128651310, "eliminated_variables": 0, "eliminated_formulas": 0, "solve_time": 296.773, "search_time": 0.556, "fixpoint_time": 284.269, "transfer_cpu2gpu_time": 1.276, "transfer_gpu2cpu_time": 0.26, "select_fp_functions_time": 3.916, "wait_cpu_time": 4.756, "dive_time": 0.796, "objective": 60}}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
