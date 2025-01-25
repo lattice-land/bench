@@ -1,0 +1,33 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.6_hybrid_wac1_4096_evmopt-generic_BDARUMA_run_code_of_0_block_108_233_1_extended_input_72cores_264threads_timeout1200000ms_sub_15", "problem": "evm-super-compilation", "model": "../data/mzn-challenge/2023/evm-super-compilation/evmopt-generic.mzn", "data_file": "../data/mzn-challenge/2023/evm-super-compilation/BDARUMA_run_code_of_0_block_108_233_1_extended_input.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.6", "timeout_ms": "1200000", "datetime": "2025-01-24T13:14:08.164273", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c1s2b1n0, task  0  0 [698530]: mask 0xffffffffffffffffff000000000000000000000000000000000000000000000000000000 set
+{Z(CALLER_0), U(SLOAD_0), U(ISZERO_0), B(GT_0), B(KECCAK256_0), B(AND_0), B(SUB_0), B(SHL_0), B(KECCAK256_1), P(PUSH [tag]_0), P(PUSH_0), P(PUSH_1), P(PUSH_2), P(PUSH_3), P(PUSH_4), P(PUSH_5), S(MSTORE_0), S(MSTORE_1), S(MSTORE_2), S(MSTORE_3), DUP(1), DUP(2), DUP(3), DUP(4), DUP(5), DUP(6), DUP(7), DUP(8), DUP(9), DUP(10), DUP(11), DUP(12), DUP(13), DUP(14), DUP(15), DUP(16), SWAP(1), SWAP(2), SWAP(3), SWAP(4), SWAP(5), SWAP(6), SWAP(7), SWAP(8), SWAP(9), SWAP(10), SWAP(11), SWAP(12), SWAP(13), SWAP(14), SWAP(15), SWAP(16), POP, NOP}
+uses: [0, 2, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 5, 2, 2, 1, 2, 1]
+creates: [s25, s18, s19, s16, s17, s22, s23, s24, s26, s15, s28, s29, s30, s31, s32, s33, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .]
+creator: [Z(CALLER_0), U(SLOAD_0), U(ISZERO_0), B(GT_0), B(KECCAK256_0), B(AND_0), B(SUB_0), B(SHL_0), B(KECCAK256_1), P(PUSH [tag]_0), P(PUSH_0), P(PUSH_1), P(PUSH_2), P(PUSH_3), P(PUSH_4), P(PUSH_5)]
+maxdups = 11 maxpops = 0 uses: 37 null = 0 unused: {} creates something: 16 startlength: 10
+lcount: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+ucount: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 2, 2, 1, 2, 1, 1, 1, 1, 1, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 0, 20]
+SLOAD_0 -> s17:U -> B(KECCAK256_0)
+ISZERO_0 -> s16:U -> B(GT_0)
+KECCAK256_0 -> s28:1Z -> P(PUSH_0)
+KECCAK256_0 -> s29:12 -> P(PUSH_1)
+SUB_0 -> s24:1N -> B(SHL_0)
+SHL_0 -> s31:1Z -> P(PUSH_3)
+SHL_0 -> s30:12 -> P(PUSH_2)
+KECCAK256_1 -> s28:1Z -> P(PUSH_0)
+KECCAK256_1 -> s29:12 -> P(PUSH_1)
+MSTORE_0 -> s28:1Z -> P(PUSH_0)
+MSTORE_0 -> s22:12 -> B(AND_0)
+MSTORE_1 -> s32:1Z -> P(PUSH_4)
+MSTORE_1 -> s33:12 -> P(PUSH_5)
+MSTORE_2 -> s28:1Z -> P(PUSH_0)
+MSTORE_2 -> s25:12 -> Z(CALLER_0)
+MSTORE_3 -> s32:1Z -> P(PUSH_4)
+MSTORE_3 -> s26:12 -> B(KECCAK256_1)
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 12466, "flatIntVars": 5170, "flatBoolConstraints": 7058, "flatIntConstraints": 15059, "evaluatedReifiedConstraints": 11915, "eliminatedImplications": 40, "method": "minimize", "flatTime": 0.620104}}
+% WARNING: Annotation domain_change_constraint is unknown and was ignored.
+{"type": "status", "status": "ERROR", "time": 1940}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"parsed_variables": 22208, "parsed_constraints": 44701, "tnf_variables": 79747, "tnf_constraints": 102240}}
+srun: error: x1002c1s2b1n0: task 0: Exited with exit code 1

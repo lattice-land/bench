@@ -1,0 +1,8 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.6_hybrid_wac1_4096_valve-network_horizon6_72cores_264threads_timeout1200000ms_sub_17", "problem": "valve-network", "model": "../data/mzn-challenge/2023/valve-network/valve-network.mzn", "data_file": "../data/mzn-challenge/2023/valve-network/horizon6.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.6", "timeout_ms": "1200000", "datetime": "2025-01-24T11:51:46.779538", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c1s2b1n0, task  0  0 [678190]: mask 0xffffffffffffffffff000000000000000000000000000000000000000000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 2890, "flatIntVars": 96, "flatSetVars": 9, "flatBoolConstraints": 5782, "flatIntConstraints": 684, "flatSetConstraints": 19, "evaluatedReifiedConstraints": 2000, "eliminatedImplications": 10, "method": "maximize", "flatTime": 0.384593}}
+{"type": "status", "status": "ERROR", "time": 638}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"parsed_variables": 3675, "parsed_constraints": 8298, "tnf_variables": 15215, "tnf_constraints": 19838}}
+srun: error: x1002c1s2b1n0: task 0: Exited with exit code 1

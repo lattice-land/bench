@@ -1,0 +1,7 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.6_hybrid_wac1_4096_TableLayout_p2000_m16_r1000_c200_72cores_264threads_timeout1200000ms_sub_17", "problem": "table-layout", "model": "../data/mzn-challenge/2023/table-layout/TableLayout.mzn", "data_file": "../data/mzn-challenge/2023/table-layout/p2000_m16_r1000_c200.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.6", "timeout_ms": "1200000", "datetime": "2025-01-24T11:48:22.544051", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c4s6b0n0, task  0  0 [1351731]: mask 0xffffffffffffffffff000000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 601163, "flatIntConstraints": 799889, "method": "minimize", "flatTime": 27.4918}}
+{"type": "status", "status": "ERROR", "time": 939658}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+srun: error: x1002c4s6b0n0: task 0: Exited with exit code 1

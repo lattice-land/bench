@@ -1,0 +1,7 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.6_hybrid_wac1_4096_ttp_n20_k20_c1000_l1000_u2000_r46_72cores_264threads_timeout1200000ms_sub_17", "problem": "travelling-thief", "model": "../data/mzn-challenge/2023/travelling-thief/ttp.mzn", "data_file": "../data/mzn-challenge/2023/travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.6", "timeout_ms": "1200000", "datetime": "2025-01-24T12:44:26.602447", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c4s6b0n0, task  0  0 [1361240]: mask 0xffffffffffffffffff000000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 1574, "flatIntVars": 2836, "flatBoolConstraints": 36379, "flatIntConstraints": 4201, "evaluatedReifiedConstraints": 414, "method": "maximize", "flatTime": 1.22032}}
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "status", "status": "UNKNOWN", "time": 1262858}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

@@ -1,0 +1,7 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.6_hybrid_wac1_4096_graph-scan-revised_rnd_n75_p1000_c50_s1_72cores_264threads_timeout1200000ms_sub_15", "problem": "multi-agent-graph-coverage", "model": "../data/mzn-challenge/2023/multi-agent-graph-coverage/graph-scan-revised.mzn", "data_file": "../data/mzn-challenge/2023/multi-agent-graph-coverage/rnd_n75_p1000_c50_s1.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.6", "timeout_ms": "1200000", "datetime": "2025-01-24T10:48:38.204499", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c1s2b1n0, task  0  0 [667323]: mask 0xffffffffffffffffff000000000000000000000000000000000000 set
+makespan = 40650;
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 6504, "flatIntVars": 4341, "flatBoolConstraints": 5149, "flatIntConstraints": 302981, "evaluatedReifiedConstraints": 5420, "method": "minimize", "flatTime": 2.71736}}
+{"type": "status", "status": "UNKNOWN", "time": 1264301}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
