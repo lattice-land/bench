@@ -8,7 +8,9 @@ from packaging import version
 # A tentative to have unique experiment names.
 def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, eps_num_subproblems, or_nodes, threads_per_block):
   uid = mzn_solver + "_" + str(version) + '_' + machine
-  if (int(timeout_ms) % 1000) == 0:
+  if str(timeout_ms) == "inf":
+    uid += "_notimeout"
+  elif (int(timeout_ms) % 1000) == 0:
     uid += "_" + str(int(int(timeout_ms)/1000)) + "s"
   else:
     uid += "_" + str(int(timeout_ms)) + "ms"
@@ -83,8 +85,8 @@ def read_experiments(experiments):
       df['machine'] = os.path.basename(os.path.dirname(e))
     if 'timeout_ms' not in df:
       df['timeout_ms'] = "300000"
-    else:
-      df['timeout_ms'] = df.apply(lambda row: "300000" if not isinstance(row['version'], int) else row['version'], axis=1)
+    # else:
+      # df['timeout_ms'] = df.apply(lambda row: "300000" if not isinstance(row['version'], int) else row['version'], axis=1)
      # estimating the number of nodes (lower bound).
     if 'nodes' not in df:
       df['nodes'] = (df['failures'] + df['nSolutions']) * 2 - 1
@@ -103,6 +105,7 @@ def read_experiments(experiments):
     all_xp = pd.concat([df, all_xp], ignore_index=True)
   all_xp['version'] = all_xp['version'].apply(version.parse)
   all_xp['nodes'] = all_xp['nodes'].fillna(0).astype(int)
+  all_xp['status'] = all_xp['status'].fillna("UNKNOWN").astype(str)
   if 'memory_configuration' not in all_xp:
     all_xp['memory_configuration'] = 'RAM'
   all_xp['arch'] = all_xp['arch'].fillna("").astype(str) if 'arch' in all_xp else ""
@@ -127,6 +130,7 @@ def read_experiments(experiments):
   all_xp['normalized_nodes_per_second'] = 0
   all_xp['normalized_fp_iterations_per_second'] = 0
   all_xp['normalized_fp_iterations_per_node'] = 0
+  all_xp = all_xp.copy() # to avoid a warning about fragmented frame.
   all_xp['normalized_propagator_mem'] = 0
   all_xp['normalized_store_mem'] = 0
   all_xp['problem_uid'] = all_xp.apply(lambda row: f"{row['problem']}_{Path(row['data_file']).stem}", axis=1)
@@ -341,9 +345,9 @@ def compare_solvers_pie_chart(df, uid1, uid2):
     pivot_df['Comparison'] = np.select(conditions, choices, default='Unknown')
 
     # Get problems with "Unknown" comparison (should not happen, this is for debugging).
-    # unknown_problems = pivot_df[pivot_df['Comparison'] == 'Unknown'].index.tolist()
-    # if unknown_problems:
-    #     print(f"The comparison is 'Unknown' for the following problems: {', '.join(unknown_problems)}")
+    unknown_problems = pivot_df[pivot_df['Comparison'] == 'Unknown'].index.tolist()
+    if unknown_problems:
+        print(f"The comparison is 'Unknown' for the following problems: {', '.join(unknown_problems)}")
     # else:
     #     print("There are no problems with 'Unknown' comparison.")
 
@@ -409,9 +413,11 @@ def plot_time_distribution(arch, df):
   # Set the problem names as index
   df.set_index("problem_uid", inplace=True)
 
+  num_row = df.shape[0]
+
   # Plot
   colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2"]
-  df[time_columns].plot(kind='barh', stacked=True, figsize=(10, 6), color=colors)
+  df[time_columns].plot(kind='barh', stacked=True, figsize=(10, num_row / 5), color=colors)
 
   # Add labels and title
   plt.xlabel("Time (seconds)")
@@ -424,10 +430,52 @@ def plot_time_distribution(arch, df):
   plt.show()
 
 def show_problem_table(df):
-  print(f"| Problem | Data | #Vars | #Vars (TNF) | #Constraints | #Constraints (TNF) |")
-  print("|----------|------|-------|-------------|--------------|--------------------|")
+  print(f"| Problem | Data | #Vars | #Vars (TNF) | #Constraints | #Constraints (TNF) | Preprocessing (sec) |")
+  print("|----------|------|-------|-------------|--------------|--------------------|---------------------|")
+  all_vars_increase = []
+  all_cons_increase = []
+  preprocessing_times = []
   for index, row in df.iterrows():
     vars_increase = row['tnf_variables'] / row['parsed_variables']
     cons_increase = row['tnf_constraints'] / row['parsed_constraints']
-    print(f"| {row['problem']} | {Path(row['data_file']).stem} | {row['parsed_variables']} | {row['tnf_variables']} (x{vars_increase:.2f}) | {row['parsed_constraints']} | {row['tnf_constraints']} (x{cons_increase:.2f}) |")
+    all_vars_increase.append(vars_increase)
+    all_cons_increase.append(cons_increase)
+    preprocessing_times.append(row['preprocessing_time'])
+    data_name = Path(row['data_file']).stem
+    if data_name == "empty":
+      data_name = Path(row['model']).stem
+    print(f"| {row['problem']} | {data_name} | {row['parsed_variables']} | {row['tnf_variables']} (x{vars_increase:.2f}) | {row['parsed_constraints']} | {row['tnf_constraints']} (x{cons_increase:.2f}) | {row['preprocessing_time']} |")
+  num_problems = df.shape[0]
+  print(f"average_vars_increase={sum(all_vars_increase)/num_problems:.2f}")
+  print(f"average_cons_increase={sum(all_cons_increase)/num_problems:.2f}")
+  print(f"median_vars_increase={sorted(all_vars_increase)[num_problems//2]:.2f}")
+  print(f"median_cons_increase={sorted(all_cons_increase)[num_problems//2]:.2f}")
 
+  # Plotting the increase of variables and constraints.
+  plt.figure(figsize=(8, 6))
+  plt.scatter(all_vars_increase, all_cons_increase, color='b', marker='x', label="MiniZinc instances")
+  plt.xscale('log')
+  plt.xlabel("Variables (log scale)")
+  plt.ylabel("Constraints")
+  plt.title("Increase in Constraints and Variables after TNF Transformation")
+  plt.grid(True, which="both", linestyle="--", linewidth=0.5)
+  plt.legend()
+  plt.show()
+
+  # Plotting the distribution of preprocessing time
+  bins = [0.01,0.1,1,10,100,1000,10000]
+  if min(preprocessing_times) < bins[0] or max(preprocessing_times) > bins[-1]:
+    print("WARNING: Data points outside of the histogram bins!!")
+  plt.figure(figsize=(8, 6))
+  counts, bin_edges, patches = plt.hist(preprocessing_times, bins=bins, color='blue', edgecolor='black', alpha=0.7)
+  # Annotate each bar with its frequency
+  for count, left_edge, right_edge in zip(counts, bin_edges[:-1], bin_edges[1:]):
+    bin_center = np.sqrt(left_edge * right_edge)  # Log-space centering
+    plt.text(bin_center, count + 0.4, str(int(count)), ha='center', fontsize=10)
+  plt.xscale('log')
+  plt.xlabel("Preprocessing Time (seconds) [log scale]")
+  plt.ylabel("Instances")
+  plt.title("Log-Spaced Histogram of Preprocessing Times")
+  # plt.xticks(bins, labels=[str(b) for b in bins])  # Ensure tick labels match bin edges
+  plt.grid(axis='y', linestyle='--', alpha=0.7)
+  plt.show()

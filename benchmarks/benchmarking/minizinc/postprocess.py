@@ -75,6 +75,12 @@ if __name__ == "__main__":
     if errors != [] or "Exception" in unknowns:
       print(sys.argv[2], file=sys.stderr)
 
+  if "objective" not in statistics:
+    if solutions != []:
+      statistics["objective"] = solutions[-1]["solution"]["objective"]
+    else:
+      statistics["objective"] = None
+
   if solutions != []:
     with open(sol_filename, "w") as file:
       yaml.dump(solutions, file)
