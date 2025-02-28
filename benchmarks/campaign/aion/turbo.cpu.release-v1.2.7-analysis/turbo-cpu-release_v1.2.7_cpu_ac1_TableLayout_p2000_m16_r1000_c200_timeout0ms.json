@@ -1,0 +1,7 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-cpu-release_v1.2.7_cpu_ac1_TableLayout_p2000_m16_r1000_c200_timeout0ms", "problem": "table-layout", "model": "../data/mzn-challenge/2023/table-layout/TableLayout.mzn", "data_file": "../data/mzn-challenge/2023/table-layout/p2000_m16_r1000_c200.dzn", "mzn_solver": "turbo.cpu.release", "version": "v1.2.7", "timeout_ms": "0", "datetime": "2025-02-28T05:25:22.315634", "status": "UNKNOWN", "cores": "1", "threads": "1", "arch": "cpu", "fixpoint": "ac1", "wac1_threshold": "0"}}
+cpu-bind=MASK - aion-0094, task  0  0 [1179921]: mask 0x2 set
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 601163, "flatIntConstraints": 799889, "method": "minimize", "flatTime": 50.0109}}
+{"type": "status", "status": "ERROR", "time": 397285}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+srun: error: aion-0094: task 0: Exited with exit code 1

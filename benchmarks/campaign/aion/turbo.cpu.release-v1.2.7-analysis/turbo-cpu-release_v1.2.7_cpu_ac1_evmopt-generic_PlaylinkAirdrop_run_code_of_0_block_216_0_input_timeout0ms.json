@@ -1,0 +1,27 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-cpu-release_v1.2.7_cpu_ac1_evmopt-generic_PlaylinkAirdrop_run_code_of_0_block_216_0_input_timeout0ms", "problem": "evm-super-compilation", "model": "../data/mzn-challenge/2023/evm-super-compilation/evmopt-generic.mzn", "data_file": "../data/mzn-challenge/2023/evm-super-compilation/PlaylinkAirdrop_run_code_of_0_block_216_0_input.dzn", "mzn_solver": "turbo.cpu.release", "version": "v1.2.7", "timeout_ms": "0", "datetime": "2025-02-28T05:35:55.398682", "status": "UNKNOWN", "cores": "1", "threads": "1", "arch": "cpu", "fixpoint": "ac1", "wac1_threshold": "0"}}
+cpu-bind=MASK - aion-0094, task  0  0 [1183133]: mask 0x2 set
+{U(MLOAD_0), B(ADD_5), B(ADD_4), B(ADD_3), B(ADD_2), B(ADD_1), B(ADD_0), P(PUSH [tag]_0), P(PUSH_0), P(PUSH_1), P(PUSH_2), P(PUSH_3), P(PUSH_4), P(PUSH_5), S(MSTORE_5), S(MSTORE_4), S(MSTORE_3), S(MSTORE_2), S(MSTORE_1), S(MSTORE_0), DUP(1), DUP(2), DUP(3), DUP(4), DUP(5), DUP(6), DUP(7), DUP(8), DUP(9), DUP(10), SWAP(1), SWAP(2), SWAP(3), SWAP(4), SWAP(5), SWAP(6), SWAP(7), SWAP(8), SWAP(9), POP, NOP}
+uses: [0, 2, 1, 1, 1, 1, 1, 2, 1, 1, 6, 4, 3, 1, 2, 1, 1]
+creates: [., s9, s8, s6, s5, s15, s13, s11, s4, s18, s19, s20, s21, s22, s23, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .]
+creator: [U(MLOAD_0), B(ADD_5), B(ADD_4), B(ADD_3), B(ADD_2), B(ADD_1), B(ADD_0), P(PUSH [tag]_0), P(PUSH_0), P(PUSH_1), P(PUSH_2), P(PUSH_3), P(PUSH_4), P(PUSH_5)]
+maxdups = 13 maxpops = 0 uses: 29 null = 0 unused: {} creates something: 14 startlength: 2
+lcount: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+ucount: [0, 1, 1, 1, 1, 1, 1, 1, 1, 4, 3, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 19, 19, 19, 19, 19, 19, 19, 19, 19, 0, 19]
+MLOAD_0 -> s19:U -> P(PUSH_1)
+ADD_5 -> s20:2Z -> P(PUSH_2)
+ADD_4 -> s21:1Z -> P(PUSH_3)
+ADD_2 -> s23:2Z -> P(PUSH_5)
+ADD_1 -> s19:2Z -> P(PUSH_1)
+ADD_0 -> s21:2Z -> P(PUSH_3)
+MSTORE_4 -> s15:1N -> B(ADD_2)
+MSTORE_3 -> s13:1N -> B(ADD_1)
+MSTORE_2 -> s11:1N -> B(ADD_0)
+MSTORE_0 -> s19:1Z -> P(PUSH_1)
+MSTORE_0 -> s8:12 -> B(ADD_5)
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 8969, "flatIntVars": 3612, "flatBoolConstraints": 5213, "flatIntConstraints": 10905, "evaluatedReifiedConstraints": 8466, "eliminatedImplications": 39, "method": "minimize", "flatTime": 0.624211}}
+% WARNING: Annotation domain_change_constraint is unknown and was ignored.
+{"type": "statistics", "statistics": {"command_line": "/mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/cpu-release/turbo -t 0 -n 1 -s -arch cpu -p 1 -network_analysis -fp ac1 -version v1.2.7 -hardware 'aion' -cutnodes 1 /tmp/mznfileI15cE1.fzn", "parsed_variables": 15398, "parsed_constraints": 32268, "abstract_domain": pir_itv64_z, "tnf_variables": 58121, "tnf_constraints": 71054, "eliminated_entailed_constraints": 3216, "eliminated_equality_constraints": 4501, "eliminated_constraints_by_icse": 21455, "icse_fixpoint_iterations": 3, "eliminated_variables": 28186, "variables_after_simplification": 29935, "constraints_after_simplification": 41882, "num_constants": 436, "num_infinite_domains": 0, "sum_props_of_vars": 92989, "sum_props_of_vars": 371956, "avg_constraints_per_unassigned_var": 3.152276, "max_constraints_per_unassigned_var": 115, "num_vars_in_2_constraints": 20685, "num_vars_in_3_constraints": 2871, "num_vars_in_4_to_10_constraints": 5001, "num_vars_in_more_than_10_constraints": 836, "sum_domain_size": 158757, "sum_domain_size": 19844, "largest_domain": 1288, "num_2bits_vars": 25312, "num_64bits_vars": 29413, "num_128bits_vars": 29467, "num_256bits_vars": 29481, "num_512bits_vars": 29487, "num_65536bits_vars": 29499, "num_op_add": 4117, "num_op_mul": 0, "num_op_min": 3086, "num_op_max": 15097, "num_op_ediv": 0, "num_op_emod": 0, "num_op_eq": 1, "num_op_neq": 19, "num_op_leq": 0, "num_op_gt": 0, "num_op_reified_eq": 17707, "num_op_reified_leq": 1855, "preprocessing_time": 1.819}}
+{"type": "status", "status": "UNKNOWN", "time": 2541}
+{"type": "statistics", "statistics": {"problem_path": "/tmp/mznfileI15cE1.fzn", "solver": "Turbo", "version": "v1.2.7", "hardware": "aion", "arch": "cpu", "fixpoint": "ac1", "free_search": "yes", "or_nodes": 1, "timeout_ms": 0, "cutnodes": 1, "nodes": 1, "failures": 0, "variables": 29935, "propagators": 41882, "peakDepth": 0, "initTime": 1.819, "solveTime": 1.819, "num_solutions": 0, "eps_num_subproblems": 4096, "eps_solved_subproblems": 0, "eps_skipped_subproblems": 0, "num_blocks_done": 0, "fixpoint_iterations": 2, "solve_time": 0.0, "search_time": 0.0, "fixpoint_time": 0.001, "transfer_cpu2gpu_time": 0.0, "transfer_gpu2cpu_time": 0.0, "select_fp_functions_time": 0.0, "wait_cpu_time": 0.0, "dive_time": 0.0}}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
