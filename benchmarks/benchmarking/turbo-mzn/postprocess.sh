@@ -21,5 +21,5 @@ done
 #mzn-bench check-statuses $MZNBENCH_TMP || exit 1
 #cd minizinc
 
-#mzn-bench collect-objectives $MZNBENCH_TMP $1/../$(basename $1)-objectives.csv
+mzn-bench collect-objectives $MZNBENCH_TMP $1/../$(basename $1)-objectives.csv
 mzn-bench collect-statistics $MZNBENCH_TMP $1/../$(basename $1).csv

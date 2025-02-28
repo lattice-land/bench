@@ -119,7 +119,7 @@ def read_experiments(experiments):
   # For the fixpoint, we default it to "" or "ac1" if it is a Turbo solver.
   all_xp['fixpoint'] = all_xp['fixpoint'].fillna("").astype(str) if 'fixpoint' in all_xp else ""
   all_xp['fixpoint'] = all_xp.apply(lambda row: "ac1" if row['fixpoint'] == "" and (row['mzn_solver'] == 'turbo.gpu.release' or row['mzn_solver'] == "turbo.cpu.release") else row['fixpoint'], axis=1)
-  all_xp['wac1_threshold'] = all_xp['wac1_threshold'].fillna(0).astype(int)
+  all_xp['wac1_threshold'] = all_xp['wac1_threshold'].fillna(0).astype(int) if "wac1_threshold" in all_xp else ""
   all_xp['cores'] = all_xp['cores'].fillna(1).astype(int)
   all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'],
                                                     row['eps_num_subproblems'], row['or_nodes'], row['threads_per_block']), axis=1)
