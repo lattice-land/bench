@@ -87,12 +87,12 @@ Shell debugging restarted
 + THREADS=1
 ++ basename aion.sh .sh
 + MACHINE=aion
-+ INSTANCES_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../benchmarking/mzn2023_noset.csv
++ INSTANCES_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../benchmarking/mzn2024.csv
 + MZN_COMMAND='minizinc --solver turbo.cpu.release -s --json-stream --output-mode json --output-time --output-objective -p 1 -arch cpu -network_analysis -cutnodes 1 -hardware aion -version v1.2.7'
 + OUTPUT_DIR=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/aion/turbo.cpu.release-v1.2.7-analysis
 + mkdir -p /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/aion/turbo.cpu.release-v1.2.7-analysis
-+ '[' -n aion-0094 ']'
++ '[' -n 'aion-[0088-0090,0095-0098,0100-0101,0103]' ']'
 + SRUN_COMMAND='srun --exclusive --cpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose'
-+ NUM_PARALLEL_EXPERIMENTS=2
++ NUM_PARALLEL_EXPERIMENTS=20
 + DUMP_PY_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py
 + cp -r /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/aion/turbo.cpu.release-v1.2.7-analysis/

@@ -1,5 +1,5 @@
 {
-  "id" : "aion-0094",
+  "id" : "aion-0088",
   "class" : "system",
   "claimed" : true,
   "description" : "Computer",
@@ -35,7 +35,7 @@
           "businfo" : "cpu@0",
           "version" : "23.49.0",
           "units" : "Hz",
-          "size" : 1797541000,
+          "size" : 1797717000,
           "capacity" : 2600000000,
           "width" : 64,
           "configuration" : {
@@ -187,7 +187,7 @@
           "businfo" : "cpu@1",
           "version" : "23.49.0",
           "units" : "Hz",
-          "size" : 1799331000,
+          "size" : 1797601000,
           "capacity" : 2600000000,
           "width" : 64,
           "configuration" : {
@@ -1629,7 +1629,7 @@
                     "driverversion" : "24.07-0.6.1",
                     "duplex" : "full",
                     "firmware" : "20.33.1048 (BL_12001644)",
-                    "ip" : "172.19.12.10",
+                    "ip" : "172.19.12.4",
                     "latency" : "0",
                     "link" : "yes",
                     "multicast" : "yes"
@@ -2894,7 +2894,7 @@
                   "businfo" : "pci@0000:e1:00.0",
                   "logicalname" : "enp225s0f0",
                   "version" : "01",
-                  "serial" : "08:00:38:b9:8c:4b",
+                  "serial" : "08:00:38:b9:8b:7b",
                   "units" : "bit/s",
                   "size" : 1000000000,
                   "width" : 32,
@@ -2906,7 +2906,7 @@
                     "driverversion" : "4.18.0-553.34.1.el8_10.x86_64",
                     "duplex" : "full",
                     "firmware" : "1.63.0",
-                    "ip" : "172.21.12.10",
+                    "ip" : "172.21.12.4",
                     "latency" : "0",
                     "link" : "yes",
                     "multicast" : "yes",
