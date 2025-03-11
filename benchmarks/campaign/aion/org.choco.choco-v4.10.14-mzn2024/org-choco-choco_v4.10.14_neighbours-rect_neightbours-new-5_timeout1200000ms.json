@@ -1,0 +1,9 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.14_neighbours-rect_neightbours-new-5_timeout1200000ms", "problem": "neighbours", "model": "../data/mzn-challenge/2024/neighbours/neighbours-rect.mzn", "data_file": "../data/mzn-challenge/2024/neighbours/neightbours-new-5.dzn", "mzn_solver": "org.choco.choco", "version": "v4.10.14", "timeout_ms": "1200000", "datetime": "2025-03-11T09:05:04.854530", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0155, task  0  0 [2483872]: mask 0x20 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 7318, "flatIntVars": 931, "flatBoolConstraints": 3602, "flatIntConstraints": 7322, "evaluatedHalfReifiedConstraints": 7318, "method": "maximize", "flatTime": 2.58451}}
+{"type": "comment", "comment": "%% Choco 231102\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1203782}
+{"type": "statistics", "statistics": {"initTime": 1.903, "solveTime": 1199.042, "solutions": 0, "variables": 11074, "constraints": 10954, "nodes": 107102670, "failures": 107102248, "restarts": 0}}
+{"type": "comment", "comment": "%% Unexpected resolution interruption!\n"}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

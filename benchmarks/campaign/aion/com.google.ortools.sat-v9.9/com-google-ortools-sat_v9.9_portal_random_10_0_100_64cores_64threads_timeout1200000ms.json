@@ -1,0 +1,5 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_portal_random_10_0_100_64cores_64threads_timeout1200000ms", "problem": "portal", "model": "../data/mzn-challenge/2024/portal/portal.mzn", "data_file": "../data/mzn-challenge/2024/portal/random_10_0_100.json", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:25:18.262777", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0229, task  0  0 [1863392]: mask 0xffffffffffffffff0000000000000000 set
+{"type": "error", "what": "type error", "location": {"filename": "/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/data/mzn-challenge/2024/portal/portal.mzn", "firstLine": 65, "firstColumn": 17, "lastLine": 65, "lastColumn": 47}, "message": "no function or predicate with name `string_split' found"}
+srun: error: aion-0229: task 0: Exited with exit code 1

@@ -1,0 +1,23 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_ctw_R193_timeout1200000ms", "problem": "cable-tree-wiring", "model": "../data/mzn-challenge/2024/cable-tree-wiring/ctw.mzn", "data_file": "../data/mzn-challenge/2024/cable-tree-wiring/R193.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:38:51.887076", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [116382]: mask 0x400 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 21507, "flatIntVars": 11289, "flatBoolConstraints": 10685, "flatIntConstraints": 23115, "evaluatedReifiedConstraints": 10746, "evaluatedHalfReifiedConstraints": 153, "method": "minimize", "flatTime": 0.737782}}
+{"type": "comment", "comment": "%% File /tmp/mznfile5E7Klh.fzn parsed in 307 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 10746 times\n"}
+{"type": "comment", "comment": "%%   - done in 18 ms\n"}
+{"type": "comment", "comment": "%% Model mznfile5E7Klh\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 10608\n"}
+{"type": "comment", "comment": "%%   - array_int_maximum: 2\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 77\n"}
+{"type": "comment", "comment": "%%   - fzn_all_different_int: 2\n"}
+{"type": "comment", "comment": "%%   - int_abs: 52\n"}
+{"type": "comment", "comment": "%%   - int_le_reif: 52\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 209\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 1133\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_imp: 153\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 10694\n"}
+{"type": "comment", "comment": "%%   - int_max: 72\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1201049}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

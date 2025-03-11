@@ -1,0 +1,10 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.14_monitor_1id_igp_weight_based_defo_rf6461_real_hard_64cores_64threads_timeout1200000ms", "problem": "monitor-placement-1id", "model": "../data/mzn-challenge/2024/monitor-placement-1id/monitor_1id.mzn", "data_file": "../data/mzn-challenge/2024/monitor-placement-1id/igp_weight_based_defo_rf6461_real_hard.dzn", "mzn_solver": "org.choco.choco", "version": "v4.10.14", "timeout_ms": "1200000", "datetime": "2025-03-11T08:24:55.529069", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0100, task  0  0 [3440873]: mask 0xffffffffffffffff0000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 4911, "flatIntVars": 79, "flatBoolConstraints": 3141, "flatIntConstraints": 79, "method": "minimize", "flatTime": 791.718}}
+{"type": "comment", "comment": "%% Choco 231102\n"}
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "main"
+{"type": "status", "status": "ERROR", "time": 860585}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+srun: error: aion-0100: task 0: Exited with exit code 1

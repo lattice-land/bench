@@ -1,0 +1,15 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_triangular_n9_timeout1200000ms", "problem": "triangular", "model": "../data/mzn-challenge/2024/triangular/triangular.mzn", "data_file": "../data/mzn-challenge/2024/triangular/n9.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:25:08.000990", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [113743]: mask 0x40 set
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 46, "flatIntConstraints": 331, "method": "maximize", "flatTime": 0.0841257}}
+{"type": "comment", "comment": "%% File /tmp/mznfileKXeiyW.fzn parsed in 1 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileKXeiyW\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 1\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 330\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "solution", "output": {"default": "objective = 17;\nheart = array2d(1..9, 1..9, [\n1, 0, 0, 0, 0, 0, 0, 0, 0, \n1, 0, 0, 0, 0, 0, 0, 0, 0, \n1, 0, 0, 0, 0, 0, 0, 0, 0, \n1, 0, 0, 0, 0, 0, 0, 0, 0, \n1, 0, 0, 0, 0, 0, 0, 0, 0, \n1, 0, 0, 0, 0, 0, 0, 0, 0, \n1, 0, 0, 0, 0, 0, 0, 0, 0, \n0, 1, 0, 1, 1, 0, 1, 1, 0, \n0, 0, 1, 1, 0, 1, 1, 0, 1\n]);\n%%   1 \n%%   1 0 \n%%   1 0 0 \n%%   1 0 0 0 \n%%   1 0 0 0 0 \n%%   1 0 0 0 0 0 \n%%   1 0 0 0 0 0 0 \n%%   0 1 0 1 1 0 1 1 \n%%   0 0 1 1 0 1 1 0 1 \n", "raw": "objective = 17;\nheart = array2d(1..9, 1..9, [\n1, 0, 0, 0, 0, 0, 0, 0, 0, \n1, 0, 0, 0, 0, 0, 0, 0, 0, \n1, 0, 0, 0, 0, 0, 0, 0, 0, \n1, 0, 0, 0, 0, 0, 0, 0, 0, \n1, 0, 0, 0, 0, 0, 0, 0, 0, \n1, 0, 0, 0, 0, 0, 0, 0, 0, \n1, 0, 0, 0, 0, 0, 0, 0, 0, \n0, 1, 0, 1, 1, 0, 1, 1, 0, \n0, 0, 1, 1, 0, 1, 1, 0, 1\n]);\n%%   1 \n%%   1 0 \n%%   1 0 0 \n%%   1 0 0 0 \n%%   1 0 0 0 0 \n%%   1 0 0 0 0 0 \n%%   1 0 0 0 0 0 0 \n%%   0 1 0 1 1 0 1 1 \n%%   0 0 1 1 0 1 1 0 1 \n", "json": {  "heart" : [[1, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 1, 1, 0, 1, 1, 0], [0, 0, 1, 1, 0, 1, 1, 0, 1]],  "objective" : 17,  "_objective" : 17}}, "sections": ["default", "raw", "json"], "time": 27719}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 27719}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 17, "objectiveBound": 17, "boolVariables": 45, "failures": 1509436, "propagations": 32845652, "solveTime": 27.613}}

@@ -1,0 +1,42 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_trains_trains12_64cores_64threads_timeout1200000ms", "problem": "train-scheduling", "model": "../data/mzn-challenge/2024/train-scheduling/trains.mzn", "data_file": "../data/mzn-challenge/2024/train-scheduling/trains12.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:25:20.675250", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0228, task  0  0 [1751355]: mask 0xffffffffffffffff0000000000000000 set
+Double track L A-B:
+Double track L B-G:
+Double track R B-G:
+Double track L C-D:
+Double track L C-H:
+Double track R C-H:
+Double track L D-E:
+Double track L E-F:
+Double track L H-I:
+Double track R H-I:
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 148, "flatIntVars": 286, "flatBoolConstraints": 74, "flatIntConstraints": 380, "evaluatedReifiedConstraints": 86, "evaluatedHalfReifiedConstraints": 94, "eliminatedImplications": 74, "method": "minimize", "flatTime": 1.41181}}
+{"type": "comment", "comment": "%% File /tmp/mznfile8DjypG.fzn parsed in 4 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'array_int_element: rewrite as a 2d element' was applied 8 times\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 12 times\n"}
+{"type": "comment", "comment": "%%   - rule 'int_lin_eq: store 2d flattening mapping' was applied 16 times\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfile8DjypG\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 6\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 33\n"}
+{"type": "comment", "comment": "%%   - array_var_int_element: 16\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 68\n"}
+{"type": "comment", "comment": "%%   - fzn_all_different_int: 1\n"}
+{"type": "comment", "comment": "%%   - fzn_cumulative: 4\n"}
+{"type": "comment", "comment": "%%   - fzn_disjunctive: 5\n"}
+{"type": "comment", "comment": "%%   - fzn_disjunctive_strict: 10\n"}
+{"type": "comment", "comment": "%%   - int_abs: 8\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 80\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 6\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 71\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq_imp: 14\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 50\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 42\n"}
+{"type": "comment", "comment": "%%   - set_in_reif: 20\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "solution", "output": {"json": {  "arrive" : [[0, 37, 49, 67, 83, 102], [0, 17, 29, 47, 63, 82], [10, 57, 69, 87, 103, 122], [0, 22, 37, 49, 63, 73], [136, 158, 170, 182, 188, 198], [92, 117, 129, 147, 164, 180], [73, 89, 93, 110, 126, 136], [198, 214, 218, 235, 251, 261]],  "depart" : [[30, 41, 57, 75, 87, 112], [10, 21, 37, 55, 67, 92], [50, 61, 77, 95, 107, 132], [10, 26, 45, 57, 73, 73], [146, 162, 178, 182, 198, 198], [102, 121, 137, 155, 168, 190], [83, 89, 101, 114, 136, 136], [208, 214, 226, 239, 261, 261]],  "wait" : [[30, 4, 8, 8, 4, 10], [10, 4, 8, 8, 4, 10], [40, 4, 8, 8, 4, 10], [10, 4, 8, 8, 10, 0], [10, 4, 8, 0, 10, 0], [10, 4, 8, 8, 4, 10], [10, 0, 8, 4, 10, 0], [10, 0, 8, 4, 10, 0]],  "stopped" : [[true, true, true, true, true, true], [true, true, true, true, true, true], [true, true, true, true, true, true], [true, true, true, true, true, false], [true, true, true, false, true, false], [true, true, true, true, true, true], [true, false, true, true, true, false], [true, false, true, true, true, false]],  "delay_obj" : 276,  "skip_obj" : 15,  "engine" : [{"e":"E3"}, {"e":"E2"}, {"e":"E1"}, {"e":"E4"}, {"e":"E4"}, {"e":"E2"}, {"e":"E4"}, {"e":"E4"}],  "prev" : [{ "c" : "e", "e" : {"e":"E3"}}, { "c" : "e", "e" : {"e":"E2"}}, { "c" : "e", "e" : {"e":"E1"}}, { "c" : "e", "e" : {"e":"E4"}}, { "c" : "s", "e" : {"e":"R4a"}}, { "c" : "s", "e" : {"e":"R1b"}}, { "c" : "s", "e" : {"e":"R2a"}}, { "c" : "s", "e" : {"e":"R2b"}}],  "_objective" : 291}}, "sections": ["json"], "time": 1668}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 1668}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 291, "objectiveBound": 291, "boolVariables": 0, "failures": 0, "propagations": 0, "solveTime": 0.232355}}

@@ -1,0 +1,18 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.14_trains_trains12_timeout1200000ms", "problem": "train-scheduling", "model": "../data/mzn-challenge/2024/train-scheduling/trains.mzn", "data_file": "../data/mzn-challenge/2024/train-scheduling/trains12.dzn", "mzn_solver": "org.choco.choco", "version": "v4.10.14", "timeout_ms": "1200000", "datetime": "2025-03-11T08:44:52.772979", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0155, task  0  0 [2479971]: mask 0x2 set
+Double track L A-B:
+Double track L B-G:
+Double track R B-G:
+Double track L C-D:
+Double track L C-H:
+Double track R C-H:
+Double track L D-E:
+Double track L E-F:
+Double track L H-I:
+Double track R H-I:
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 160, "flatIntVars": 273, "flatBoolConstraints": 84, "flatIntConstraints": 363, "evaluatedReifiedConstraints": 90, "evaluatedHalfReifiedConstraints": 82, "eliminatedImplications": 56, "method": "minimize", "flatTime": 0.191861}}
+{"type": "comment", "comment": "%% Choco 231102\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1201170}
+{"type": "statistics", "statistics": {"initTime": 0.759, "solveTime": 1200.023, "solutions": 0, "variables": 636, "constraints": 591, "nodes": 48419692, "failures": 48419602, "restarts": 0}}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

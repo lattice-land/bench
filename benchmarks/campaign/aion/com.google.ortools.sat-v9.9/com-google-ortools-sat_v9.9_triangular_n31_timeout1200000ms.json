@@ -1,0 +1,13 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_triangular_n31_timeout1200000ms", "problem": "triangular", "model": "../data/mzn-challenge/2024/triangular/triangular.mzn", "data_file": "../data/mzn-challenge/2024/triangular/n31.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:25:08.003241", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [113692]: mask 0x10 set
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 497, "flatIntConstraints": 40921, "method": "maximize", "flatTime": 1.38322}}
+{"type": "comment", "comment": "%% File /tmp/mznfileqzGYO7.fzn parsed in 194 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 4 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileqzGYO7\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 1\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 40920\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1201616}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

@@ -1,0 +1,5 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-cpu-release_v1.2.7_cpu_ac1_word_equations_01_track_140-int_empty_timeout0ms", "problem": "word-equations", "model": "../data/mzn-challenge/2024/word-equations/word_equations_01_track_140-int.mzn", "data_file": "../data/mzn-challenge/2024/word-equations/empty.dzn", "mzn_solver": "turbo.cpu.release", "version": "v1.2.7", "timeout_ms": "0", "datetime": "2025-03-11T08:55:27.432167", "status": "UNKNOWN", "cores": "1", "threads": "1", "arch": "cpu", "fixpoint": "ac1", "wac1_threshold": "0"}}
+cpu-bind=MASK - aion-0052, task  0  0 [1081760]: mask 0x80 set
+{"type": "error", "what": "error", "message": "Cannot open data file '/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../data/mzn-challenge/2024/word-equations/empty.dzn'."}
+srun: error: aion-0052: task 0: Exited with exit code 1

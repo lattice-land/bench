@@ -1,0 +1,22 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_peaceable_queens_mznc2021_pq_n35_64cores_64threads_timeout1200000ms", "problem": "peacable_queens", "model": "../data/mzn-challenge/2024/peacable_queens/peaceable_queens_mznc2021.mzn", "data_file": "../data/mzn-challenge/2024/peacable_queens/pq_n35.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:28:39.105168", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0225, task  0  0 [1856700]: mask 0xffffffffffffffff0000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 114560, "flatIntVars": 3676, "flatBoolConstraints": 115714, "flatIntConstraints": 59364, "evaluatedReifiedConstraints": 84436, "evaluatedHalfReifiedConstraints": 1224, "method": "maximize", "flatTime": 38.7266}}
+{"type": "comment", "comment": "%% File /tmp/mznfile3vvtbB.fzn parsed in 1324 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 2450 times\n"}
+{"type": "comment", "comment": "%%   - done in 51 ms\n"}
+{"type": "comment", "comment": "%% Model mznfile3vvtbB\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 27698\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 86791\n"}
+{"type": "comment", "comment": "%%   - bool_eq_reif: 1225\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 2450\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 2\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 16\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 53017\n"}
+{"type": "comment", "comment": "%%   - int_ne: 1\n"}
+{"type": "comment", "comment": "%%   - int_ne_imp: 1224\n"}
+{"type": "comment", "comment": "%%   - ortools_regular: 204\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1240189}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

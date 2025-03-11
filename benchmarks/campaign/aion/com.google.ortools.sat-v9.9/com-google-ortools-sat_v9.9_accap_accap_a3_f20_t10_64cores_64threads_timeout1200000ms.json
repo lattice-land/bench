@@ -1,0 +1,16 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_accap_accap_a3_f20_t10_64cores_64threads_timeout1200000ms", "problem": "accap", "model": "../data/mzn-challenge/2024/accap/accap.mzn", "data_file": "../data/mzn-challenge/2024/accap/accap_a3_f20_t10.json", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:25:17.620900", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0228, task  0  0 [1751195]: mask 0xffffffffffffffff0000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 25, "flatIntConstraints": 140, "method": "minimize", "flatTime": 0.238134}}
+{"type": "comment", "comment": "%% File /tmp/mznfilenXr8hP.fzn parsed in 0 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfilenXr8hP\n"}
+{"type": "comment", "comment": "%%   - fzn_diffn: 1\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 1\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 138\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "solution", "output": {"default": "yCoor = [1, 18, 43, 23, 44, 15, 37, 24, 51, 34, 11, 20, 46, 41, 6, 37, 20, 29, 41, 45];\nS = [18, 14, 22];\nD = 51;\nobjective = 105;\n", "raw": "yCoor = [1, 18, 43, 23, 44, 15, 37, 24, 51, 34, 11, 20, 46, 41, 6, 37, 20, 29, 41, 45];\nS = [18, 14, 22];\nD = 51;\nobjective = 105;\n", "json": {  "yCoor" : [1, 18, 43, 23, 44, 15, 37, 24, 51, 34, 11, 20, 46, 41, 6, 37, 20, 29, 41, 45],  "objective" : 105,  "S" : [18, 14, 22],  "D" : 51,  "_objective" : 105}}, "sections": ["default", "raw", "json"], "time": 2606}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 2606}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 105, "objectiveBound": 105, "boolVariables": 0, "failures": 0, "propagations": 0, "solveTime": 2.35211}}

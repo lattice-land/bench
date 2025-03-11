@@ -1,0 +1,24 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_ctw_A022_timeout1200000ms", "problem": "cable-tree-wiring", "model": "../data/mzn-challenge/2024/cable-tree-wiring/ctw.mzn", "data_file": "../data/mzn-challenge/2024/cable-tree-wiring/A022.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:45:08.026109", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [117182]: mask 0x20 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 12900, "flatIntVars": 6819, "flatBoolConstraints": 6393, "flatIntConstraints": 13853, "evaluatedReifiedConstraints": 6354, "evaluatedHalfReifiedConstraints": 306, "method": "minimize", "flatTime": 0.572069}}
+{"type": "comment", "comment": "%% File /tmp/mznfile10hwG7.fzn parsed in 186 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 6354 times\n"}
+{"type": "comment", "comment": "%%   - done in 9 ms\n"}
+{"type": "comment", "comment": "%% Model mznfile10hwG7\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 6240\n"}
+{"type": "comment", "comment": "%%   - array_int_maximum: 2\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 153\n"}
+{"type": "comment", "comment": "%%   - fzn_all_different_int: 2\n"}
+{"type": "comment", "comment": "%%   - int_abs: 40\n"}
+{"type": "comment", "comment": "%%   - int_le_reif: 40\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 161\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq_imp: 40\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 532\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_imp: 266\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 6314\n"}
+{"type": "comment", "comment": "%%   - int_max: 102\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1200804}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

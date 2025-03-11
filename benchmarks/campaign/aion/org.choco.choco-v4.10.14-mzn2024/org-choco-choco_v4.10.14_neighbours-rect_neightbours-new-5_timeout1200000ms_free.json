@@ -1,0 +1,26 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.14_neighbours-rect_neightbours-new-5_timeout1200000ms_free", "problem": "neighbours", "model": "../data/mzn-challenge/2024/neighbours/neighbours-rect.mzn", "data_file": "../data/mzn-challenge/2024/neighbours/neightbours-new-5.dzn", "mzn_solver": "org.choco.choco", "version": "v4.10.14", "timeout_ms": "1200000", "datetime": "2025-03-11T09:07:16.647268", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0158, task  0  0 [2608601]: mask 0x4 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 7318, "flatIntVars": 931, "flatBoolConstraints": 3602, "flatIntConstraints": 7322, "evaluatedHalfReifiedConstraints": 7318, "method": "maximize", "flatTime": 2.59758}}
+{"type": "comment", "comment": "%% Choco 231102\n"}
+Exception in thread "main" java.lang.IllegalArgumentException: Equal objects must have equal hashcodes. During rehashing, Trove discovered that the following two objects claim to be equal (as in java.lang.Object.equals()) but their hashCodes (or those calculated by your TObjectHashingStrategy) are not equal.This violates the general contract of java.lang.Object.hashCode().  See bullet point two in that method's documentation. object #1 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 197964393 hashCode= 13196 toString= 1.(X_INTRODUCED_352_) + 0[1,5]; object #2 =class org.chocosolver.solver.variables.view.integer.IntAffineView id= 1620890840 hashCode= 14127 toString= 1.(X_INTRODUCED_352_) + 0[1,5]
+
+	at gnu.trove.impl.hash.TObjectHash.buildObjectContractViolation(TObjectHash.java:464)
+	at gnu.trove.impl.hash.TObjectHash.throwObjectContractViolation(TObjectHash.java:426)
+	at gnu.trove.map.hash.TObjectDoubleHashMap.rehash(TObjectDoubleHashMap.java:191)
+	at gnu.trove.impl.hash.THash.postInsertHook(THash.java:388)
+	at gnu.trove.map.hash.TObjectDoubleHashMap.adjustOrPutValue(TObjectDoubleHashMap.java:456)
+	at org.chocosolver.solver.search.strategy.selectors.variables.DomOverWDeg.increase(DomOverWDeg.java:89)
+	at org.chocosolver.solver.search.strategy.selectors.variables.AbstractCriterionBasedVariableSelector.onContradiction(AbstractCriterionBasedVariableSelector.java:225)
+	at org.chocosolver.solver.search.loop.monitors.SearchMonitorList.onContradiction(SearchMonitorList.java:134)
+	at org.chocosolver.solver.Solver.propagate(Solver.java:502)
+	at org.chocosolver.solver.Solver.searchLoop(Solver.java:341)
+	at org.chocosolver.solver.Solver.solve(Solver.java:309)
+	at org.chocosolver.parser.flatzinc.Flatzinc.singleThread(Flatzinc.java:305)
+	at org.chocosolver.parser.RegParser.solve(RegParser.java:342)
+	at org.chocosolver.parser.flatzinc.ChocoFZN.main(ChocoFZN.java:29)
+{"type": "status", "status": "UNKNOWN", "time": 650088}
+{"type": "statistics", "statistics": {"initTime": 1.711, "solveTime": 645.468, "solutions": 0, "variables": 11074, "constraints": 10955, "nodes": 1831392, "failures": 1710607, "restarts": 805}}
+{"type": "comment", "comment": "%% Unexpected resolution interruption!\n"}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+srun: error: aion-0158: task 0: Exited with exit code 1

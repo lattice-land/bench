@@ -1,0 +1,8 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-cpu-release_v1.2.7_cpu_ac1_harmony_minuet_timeout0ms", "problem": "harmony", "model": "../data/mzn-challenge/2024/harmony/harmony.mzn", "data_file": "../data/mzn-challenge/2024/harmony/minuet.dzn", "mzn_solver": "turbo.cpu.release", "version": "v1.2.7", "timeout_ms": "0", "datetime": "2025-03-11T08:55:27.430824", "status": "UNKNOWN", "cores": "1", "threads": "1", "arch": "cpu", "fixpoint": "ac1", "wac1_threshold": "0"}}
+cpu-bind=MASK - aion-0054, task  0  0 [2021517]: mask 0x1 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 1435, "flatIntVars": 2937, "flatSetVars": 224, "flatBoolConstraints": 629, "flatIntConstraints": 3842, "flatSetConstraints": 768, "evaluatedReifiedConstraints": 1397, "method": "minimize", "flatTime": 1.17136}}
+{"type": "status", "status": "ERROR", "time": 1684}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"command_line": "/mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/cpu-release/turbo -t 0 -n 1 -s -arch cpu -p 1 -network_analysis -fp ac1 -version v1.2.7 -hardware 'aion' -cutnodes 1 /tmp/mznfileaJVbdF.fzn", "parsed_variables": 4948, "parsed_constraints": 8946, "abstract_domain": "pir_itv64_z"}}
+srun: error: aion-0054: task 0: Exited with exit code 1

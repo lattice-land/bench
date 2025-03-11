@@ -1,0 +1,5 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.14_portal_random_20_9_100_timeout1200000ms", "problem": "portal", "model": "../data/mzn-challenge/2024/portal/portal.mzn", "data_file": "../data/mzn-challenge/2024/portal/random_20_9_100.json", "mzn_solver": "org.choco.choco", "version": "v4.10.14", "timeout_ms": "1200000", "datetime": "2025-03-11T08:44:37.273563", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0155, task  0  0 [2479131]: mask 0x100 set
+{"type": "error", "what": "type error", "location": {"filename": "/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/data/mzn-challenge/2024/portal/portal.mzn", "firstLine": 65, "firstColumn": 17, "lastLine": 65, "lastColumn": 47}, "message": "no function or predicate with name `string_split' found"}
+srun: error: aion-0155: task 0: Exited with exit code 1

@@ -1,0 +1,19 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_aircraft_B737NG-600-01-Anon.json_timeout1200000ms", "problem": "aircraft-disassembly", "model": "../data/mzn-challenge/2024/aircraft-disassembly/aircraft.mzn", "data_file": "../data/mzn-challenge/2024/aircraft-disassembly/B737NG-600-01-Anon.json.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:48:35.018310", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0105, task  0  0 [903796]: mask 0x1 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 2032, "flatIntVars": 709, "flatBoolConstraints": 3141, "flatIntConstraints": 2131, "evaluatedReifiedConstraints": 600, "evaluatedHalfReifiedConstraints": 544, "method": "minimize", "flatTime": 0.610045}}
+{"type": "comment", "comment": "%% File /tmp/mznfilePyXG1x.fzn parsed in 32 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 691 times\n"}
+{"type": "comment", "comment": "%%   - done in 1 ms\n"}
+{"type": "comment", "comment": "%% Model mznfilePyXG1x\n"}
+{"type": "comment", "comment": "%%   - array_int_maximum: 1\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 3141\n"}
+{"type": "comment", "comment": "%%   - fzn_cumulative: 7\n"}
+{"type": "comment", "comment": "%%   - int_le_imp: 544\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 21\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 387\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 480\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1200734}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

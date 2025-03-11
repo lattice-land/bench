@@ -1,0 +1,25 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_ctw_A046_64cores_64threads_timeout1200000ms", "problem": "cable-tree-wiring", "model": "../data/mzn-challenge/2024/cable-tree-wiring/ctw.mzn", "data_file": "../data/mzn-challenge/2024/cable-tree-wiring/A046.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:25:18.482613", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0229, task  0  0 [1863407]: mask 0xffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 12721, "flatIntVars": 6758, "flatBoolConstraints": 6315, "flatIntConstraints": 14610, "evaluatedReifiedConstraints": 6331, "evaluatedHalfReifiedConstraints": 150, "method": "minimize", "flatTime": 1.40597}}
+{"type": "comment", "comment": "%% File /tmp/mznfile1nN5A2.fzn parsed in 177 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 6331 times\n"}
+{"type": "comment", "comment": "%%   - done in 5 ms\n"}
+{"type": "comment", "comment": "%% Model mznfile1nN5A2\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 6240\n"}
+{"type": "comment", "comment": "%%   - array_int_maximum: 2\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 75\n"}
+{"type": "comment", "comment": "%%   - fzn_all_different_int: 2\n"}
+{"type": "comment", "comment": "%%   - int_abs: 40\n"}
+{"type": "comment", "comment": "%%   - int_le_reif: 40\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 161\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 1529\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_imp: 150\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 6291\n"}
+{"type": "comment", "comment": "%%   - int_max: 64\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "solution", "output": {"default": "objective = 13413296;\npfc = array1d(1..80, [8, 41, 49, 50, 53, 58, 59, 65, 67, 69, 11, 12, 15, 17, 20, 22, 36, 42, 44, 13, 52, 55, 64, 68, 72, 73, 14, 16, 18, 21, 28, 3, 1, 2, 74, 61, 62, 34, 39, 40, 9, 46, 48, 51, 32, 35, 38, 7, 66, 70, 10, 5, 76, 75, 19, 23, 37, 43, 45, 77, 47, 31, 33, 80, 71, 6, 78, 79, 30, 29, 27, 4, 63, 60, 54, 56, 57, 24, 26, 25]);\n", "raw": "objective = 13413296;\npfc = array1d(1..80, [8, 41, 49, 50, 53, 58, 59, 65, 67, 69, 11, 12, 15, 17, 20, 22, 36, 42, 44, 13, 52, 55, 64, 68, 72, 73, 14, 16, 18, 21, 28, 3, 1, 2, 74, 61, 62, 34, 39, 40, 9, 46, 48, 51, 32, 35, 38, 7, 66, 70, 10, 5, 76, 75, 19, 23, 37, 43, 45, 77, 47, 31, 33, 80, 71, 6, 78, 79, 30, 29, 27, 4, 63, 60, 54, 56, 57, 24, 26, 25]);\n", "json": {  "pfc" : [8, 41, 49, 50, 53, 58, 59, 65, 67, 69, 11, 12, 15, 17, 20, 22, 36, 42, 44, 13, 52, 55, 64, 68, 72, 73, 14, 16, 18, 21, 28, 3, 1, 2, 74, 61, 62, 34, 39, 40, 9, 46, 48, 51, 32, 35, 38, 7, 66, 70, 10, 5, 76, 75, 19, 23, 37, 43, 45, 77, 47, 31, 33, 80, 71, 6, 78, 79, 30, 29, 27, 4, 63, 60, 54, 56, 57, 24, 26, 25],  "cfp" : [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 1],  "_objective" : 13413296}}, "sections": ["default", "raw", "json"], "time": 18630}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 18630}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 13413300.0, "objectiveBound": 13413300.0, "boolVariables": 13829, "failures": 0, "propagations": 3360635, "solveTime": 16.8591}}

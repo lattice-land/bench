@@ -1,0 +1,29 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_compression_bin_8_64cores_64threads_timeout1200000ms", "problem": "compression", "model": "../data/mzn-challenge/2024/compression/compression.mzn", "data_file": "../data/mzn-challenge/2024/compression/bin_8.json", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:27:32.797437", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0233, task  0  0 [1735932]: mask 0xffffffffffffffff0000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 380, "flatIntVars": 345, "flatBoolConstraints": 231, "flatIntConstraints": 619, "evaluatedReifiedConstraints": 248, "evaluatedHalfReifiedConstraints": 140, "eliminatedImplications": 112, "method": "minimize", "flatTime": 0.201643}}
+{"type": "comment", "comment": "%% File /tmp/mznfilelne52R.fzn parsed in 6 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 162 times\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfilelne52R\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 63\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 8\n"}
+{"type": "comment", "comment": "%%   - array_var_int_element: 30\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 168\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 112\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 183\n"}
+{"type": "comment", "comment": "%%   - int_le_reif: 8\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 30\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq_imp: 14\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq_reif: 7\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 1\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_imp: 14\n"}
+{"type": "comment", "comment": "%%   - int_ne_reif: 28\n"}
+{"type": "comment", "comment": "%%   - int_times: 8\n"}
+{"type": "comment", "comment": "%%   - set_in_reif: 14\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "solution", "output": {"json": {  "slice" : [{"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 1, "start": 1}, {"len": 1, "start": 2}],  "cover" : [{"index": 1, "pat": { "c" : "P", "e" : 7}}, {"index": 1, "pat": { "c" : "P", "e" : 8}}, {"index": 1, "pat": { "c" : "P", "e" : 7}}, {"index": 1, "pat": { "c" : "P", "e" : 8}}, {"index": 1, "pat": { "c" : "P", "e" : 8}}, {"index": 1, "pat": { "c" : "P", "e" : 8}}, {"index": 1, "pat": { "c" : "P", "e" : 8}}, {"index": 1, "pat": { "c" : "P", "e" : 7}}],  "parent" : [null, null, null, null, null, null, null, null, null, null, null, null, { "c" : "Internal", "e" : 1}, { "c" : "Internal", "e" : 1}],  "used_nodes" : { "c" : "Internal", "e" : 7},  "parent_count" : [2, 0, 0, 0, 0, 0, 0],  "cost" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],  "_objective" : 26}}, "sections": ["json"], "time": 374}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 374}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 26, "objectiveBound": 26, "boolVariables": 0, "failures": 0, "propagations": 0, "solveTime": 0.144179}}

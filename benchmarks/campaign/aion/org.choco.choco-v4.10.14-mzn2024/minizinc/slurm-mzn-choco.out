@@ -1,0 +1,78 @@
++++ realpath run.sh
+++ dirname /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc/run.sh
++ MZN_WORKFLOW_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc
++ BENCHMARKING_DIR_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc/..
++ BENCHMARKS_DIR_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc/../..
++ '[' -z aion.sh ']'
++ source aion.sh
+++ module load compiler/GCCcore/13.2.0
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load lang/Python/3.11.5-GCCcore-13.2.0
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load lang/Java/21.0.2
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
++ source /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc/../../../pybench-aion/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n /bin/bash -o -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ VIRTUAL_ENV=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/pybench-aion
+++ export VIRTUAL_ENV
+++ _OLD_VIRTUAL_PATH=/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Java/21.0.2:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Java/21.0.2/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Python/3.11.5-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/OpenSSL/1.1/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/XZ/5.4.4-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/SQLite/3.43.1-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Tcl/8.6.13-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/ncurses/6.4-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/bzip2/1.0.8-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/binutils/2.40-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/GCCcore/13.2.0/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/users/ptalbot/deps/libminizinc/build:/usr/share/lmod/lmod/libexec
+++ PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/pybench-aion/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Java/21.0.2:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Java/21.0.2/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Python/3.11.5-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/OpenSSL/1.1/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/XZ/5.4.4-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/SQLite/3.43.1-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Tcl/8.6.13-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/ncurses/6.4-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/bzip2/1.0.8-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/binutils/2.40-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/GCCcore/13.2.0/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/users/ptalbot/deps/libminizinc/build:/usr/share/lmod/lmod/libexec
+++ export PATH
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='(pybench-aion) '
+++ export PS1
+++ VIRTUAL_ENV_PROMPT='(pybench-aion) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n /bin/bash -o -n '' ']'
+++ hash -r
++ '[' -n '' ']'
++ MZN_SOLVER=org.choco.choco
++ VERSION=v4.10.14
++ MZN_TIMEOUT=1200000
++ CORES=1
++ THREADS=1
+++ basename aion.sh .sh
++ MACHINE=aion
++ INSTANCES_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc/../../benchmarking/mzn2024.csv
++ MZN_COMMAND='minizinc --solver org.choco.choco -s --json-stream -t 1200000 -f --output-mode json --output-time --output-objective -p 1'
++ OUTPUT_DIR=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc/../../campaign/aion/org.choco.choco-v4.10.14-mzn2024
++ mkdir -p /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc/../../campaign/aion/org.choco.choco-v4.10.14-mzn2024
++ '[' -n 'aion-[0158,0160]' ']'
++ SRUN_COMMAND='srun --exclusive --cpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose'
++ NUM_PARALLEL_EXPERIMENTS=16
++ DUMP_PY_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc/dump.py
++ cp -r /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc/../../campaign/aion/org.choco.choco-v4.10.14-mzn2024/

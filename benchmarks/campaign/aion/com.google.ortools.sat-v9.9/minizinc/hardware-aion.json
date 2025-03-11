@@ -1,0 +1,3221 @@
+{
+  "id" : "aion-0225",
+  "class" : "system",
+  "claimed" : true,
+  "description" : "Computer",
+  "width" : 64,
+  "capabilities" : {
+    "smp" : "Symmetric Multi-Processing",
+    "vsyscall32" : "32-bit processes"
+  },
+  "children" : [
+    {
+      "id" : "core",
+      "class" : "bus",
+      "claimed" : true,
+      "description" : "Motherboard",
+      "physid" : "0",
+      "children" : [
+        {
+          "id" : "memory",
+          "class" : "memory",
+          "claimed" : true,
+          "description" : "System memory",
+          "physid" : "0",
+          "units" : "bytes",
+          "size" : 277025390592
+        },
+        {
+          "id" : "cpu:0",
+          "class" : "processor",
+          "claimed" : true,
+          "product" : "AMD EPYC 7H12 64-Core Processor",
+          "vendor" : "Advanced Micro Devices [AMD]",
+          "physid" : "1",
+          "businfo" : "cpu@0",
+          "version" : "23.49.0",
+          "units" : "Hz",
+          "size" : 1797400000,
+          "capacity" : 2600000000,
+          "width" : 64,
+          "configuration" : {
+            "microcode" : "137367676"
+          },
+          "capabilities" : {
+            "fpu" : "mathematical co-processor",
+            "fpu_exception" : "FPU exceptions reporting",
+            "wp" : true,
+            "vme" : "virtual mode extensions",
+            "de" : "debugging extensions",
+            "pse" : "page size extensions",
+            "tsc" : "time stamp counter",
+            "msr" : "model-specific registers",
+            "pae" : "4GB+ memory addressing (Physical Address Extension)",
+            "mce" : "machine check exceptions",
+            "cx8" : "compare and exchange 8-byte",
+            "apic" : "on-chip advanced programmable interrupt controller (APIC)",
+            "sep" : "fast system calls",
+            "mtrr" : "memory type range registers",
+            "pge" : "page global enable",
+            "mca" : "machine check architecture",
+            "cmov" : "conditional move instruction",
+            "pat" : "page attribute table",
+            "pse36" : "36-bit page size extensions",
+            "clflush" : true,
+            "mmx" : "multimedia extensions (MMX)",
+            "fxsr" : "fast floating point save/restore",
+            "sse" : "streaming SIMD extensions (SSE)",
+            "sse2" : "streaming SIMD extensions (SSE2)",
+            "ht" : "HyperThreading",
+            "syscall" : "fast system calls",
+            "nx" : "no-execute bit (NX)",
+            "mmxext" : "multimedia extensions (MMXExt)",
+            "fxsr_opt" : true,
+            "pdpe1gb" : true,
+            "rdtscp" : true,
+            "x86-64" : "64bits extensions (x86-64)",
+            "constant_tsc" : true,
+            "rep_good" : true,
+            "nopl" : true,
+            "nonstop_tsc" : true,
+            "cpuid" : true,
+            "extd_apicid" : true,
+            "aperfmperf" : true,
+            "pni" : true,
+            "pclmulqdq" : true,
+            "monitor" : true,
+            "ssse3" : true,
+            "fma" : true,
+            "cx16" : true,
+            "sse4_1" : true,
+            "sse4_2" : true,
+            "x2apic" : true,
+            "movbe" : true,
+            "popcnt" : true,
+            "aes" : true,
+            "xsave" : true,
+            "avx" : true,
+            "f16c" : true,
+            "rdrand" : true,
+            "lahf_lm" : true,
+            "cmp_legacy" : true,
+            "svm" : true,
+            "extapic" : true,
+            "cr8_legacy" : true,
+            "abm" : true,
+            "sse4a" : true,
+            "misalignsse" : true,
+            "3dnowprefetch" : true,
+            "osvw" : true,
+            "ibs" : true,
+            "skinit" : true,
+            "wdt" : true,
+            "tce" : true,
+            "topoext" : true,
+            "perfctr_core" : true,
+            "perfctr_nb" : true,
+            "bpext" : true,
+            "perfctr_llc" : true,
+            "mwaitx" : true,
+            "cpb" : true,
+            "cat_l3" : true,
+            "cdp_l3" : true,
+            "hw_pstate" : true,
+            "ssbd" : true,
+            "mba" : true,
+            "ibrs" : true,
+            "ibpb" : true,
+            "stibp" : true,
+            "vmmcall" : true,
+            "fsgsbase" : true,
+            "bmi1" : true,
+            "avx2" : true,
+            "smep" : true,
+            "bmi2" : true,
+            "cqm" : true,
+            "rdt_a" : true,
+            "rdseed" : true,
+            "adx" : true,
+            "clflushopt" : true,
+            "clwb" : true,
+            "sha_ni" : true,
+            "xsaveopt" : true,
+            "xsavec" : true,
+            "xgetbv1" : true,
+            "xsaves" : true,
+            "cqm_llc" : true,
+            "cqm_occup_llc" : true,
+            "cqm_mbm_total" : true,
+            "cqm_mbm_local" : true,
+            "clzero" : true,
+            "irperf" : true,
+            "xsaveerptr" : true,
+            "wbnoinvd" : true,
+            "arat" : true,
+            "npt" : true,
+            "lbrv" : true,
+            "svm_lock" : true,
+            "nrip_save" : true,
+            "tsc_scale" : true,
+            "vmcb_clean" : true,
+            "flushbyasid" : true,
+            "decodeassists" : true,
+            "pausefilter" : true,
+            "pfthreshold" : true,
+            "avic" : true,
+            "v_vmsave_vmload" : true,
+            "vgif" : true,
+            "v_spec_ctrl" : true,
+            "umip" : true,
+            "rdpid" : true,
+            "overflow_recov" : true,
+            "succor" : true,
+            "smca" : true,
+            "sme" : true,
+            "sev" : true,
+            "sev_es" : true,
+            "cpufreq" : "CPU Frequency scaling"
+          }
+        },
+        {
+          "id" : "cpu:1",
+          "class" : "processor",
+          "claimed" : true,
+          "product" : "AMD EPYC 7H12 64-Core Processor",
+          "vendor" : "Advanced Micro Devices [AMD]",
+          "physid" : "2",
+          "businfo" : "cpu@1",
+          "version" : "23.49.0",
+          "units" : "Hz",
+          "size" : 1775610000,
+          "capacity" : 2600000000,
+          "width" : 64,
+          "configuration" : {
+            "microcode" : "137367676"
+          },
+          "capabilities" : {
+            "fpu" : "mathematical co-processor",
+            "fpu_exception" : "FPU exceptions reporting",
+            "wp" : true,
+            "vme" : "virtual mode extensions",
+            "de" : "debugging extensions",
+            "pse" : "page size extensions",
+            "tsc" : "time stamp counter",
+            "msr" : "model-specific registers",
+            "pae" : "4GB+ memory addressing (Physical Address Extension)",
+            "mce" : "machine check exceptions",
+            "cx8" : "compare and exchange 8-byte",
+            "apic" : "on-chip advanced programmable interrupt controller (APIC)",
+            "sep" : "fast system calls",
+            "mtrr" : "memory type range registers",
+            "pge" : "page global enable",
+            "mca" : "machine check architecture",
+            "cmov" : "conditional move instruction",
+            "pat" : "page attribute table",
+            "pse36" : "36-bit page size extensions",
+            "clflush" : true,
+            "mmx" : "multimedia extensions (MMX)",
+            "fxsr" : "fast floating point save/restore",
+            "sse" : "streaming SIMD extensions (SSE)",
+            "sse2" : "streaming SIMD extensions (SSE2)",
+            "ht" : "HyperThreading",
+            "syscall" : "fast system calls",
+            "nx" : "no-execute bit (NX)",
+            "mmxext" : "multimedia extensions (MMXExt)",
+            "fxsr_opt" : true,
+            "pdpe1gb" : true,
+            "rdtscp" : true,
+            "x86-64" : "64bits extensions (x86-64)",
+            "constant_tsc" : true,
+            "rep_good" : true,
+            "nopl" : true,
+            "nonstop_tsc" : true,
+            "cpuid" : true,
+            "extd_apicid" : true,
+            "aperfmperf" : true,
+            "pni" : true,
+            "pclmulqdq" : true,
+            "monitor" : true,
+            "ssse3" : true,
+            "fma" : true,
+            "cx16" : true,
+            "sse4_1" : true,
+            "sse4_2" : true,
+            "x2apic" : true,
+            "movbe" : true,
+            "popcnt" : true,
+            "aes" : true,
+            "xsave" : true,
+            "avx" : true,
+            "f16c" : true,
+            "rdrand" : true,
+            "lahf_lm" : true,
+            "cmp_legacy" : true,
+            "svm" : true,
+            "extapic" : true,
+            "cr8_legacy" : true,
+            "abm" : true,
+            "sse4a" : true,
+            "misalignsse" : true,
+            "3dnowprefetch" : true,
+            "osvw" : true,
+            "ibs" : true,
+            "skinit" : true,
+            "wdt" : true,
+            "tce" : true,
+            "topoext" : true,
+            "perfctr_core" : true,
+            "perfctr_nb" : true,
+            "bpext" : true,
+            "perfctr_llc" : true,
+            "mwaitx" : true,
+            "cpb" : true,
+            "cat_l3" : true,
+            "cdp_l3" : true,
+            "hw_pstate" : true,
+            "ssbd" : true,
+            "mba" : true,
+            "ibrs" : true,
+            "ibpb" : true,
+            "stibp" : true,
+            "vmmcall" : true,
+            "fsgsbase" : true,
+            "bmi1" : true,
+            "avx2" : true,
+            "smep" : true,
+            "bmi2" : true,
+            "cqm" : true,
+            "rdt_a" : true,
+            "rdseed" : true,
+            "adx" : true,
+            "clflushopt" : true,
+            "clwb" : true,
+            "sha_ni" : true,
+            "xsaveopt" : true,
+            "xsavec" : true,
+            "xgetbv1" : true,
+            "xsaves" : true,
+            "cqm_llc" : true,
+            "cqm_occup_llc" : true,
+            "cqm_mbm_total" : true,
+            "cqm_mbm_local" : true,
+            "clzero" : true,
+            "irperf" : true,
+            "xsaveerptr" : true,
+            "wbnoinvd" : true,
+            "arat" : true,
+            "npt" : true,
+            "lbrv" : true,
+            "svm_lock" : true,
+            "nrip_save" : true,
+            "tsc_scale" : true,
+            "vmcb_clean" : true,
+            "flushbyasid" : true,
+            "decodeassists" : true,
+            "pausefilter" : true,
+            "pfthreshold" : true,
+            "avic" : true,
+            "v_vmsave_vmload" : true,
+            "vgif" : true,
+            "v_spec_ctrl" : true,
+            "umip" : true,
+            "rdpid" : true,
+            "overflow_recov" : true,
+            "succor" : true,
+            "smca" : true,
+            "sme" : true,
+            "sev" : true,
+            "sev_es" : true,
+            "cpufreq" : "CPU Frequency scaling"
+          }
+        },
+        {
+          "id" : "pci:0",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse Root Complex",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "100",
+          "businfo" : "pci@0000:00:00.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000,
+          "children" : [
+            {
+              "id" : "generic",
+              "class" : "generic",
+              "handle" : "PCI:0000:00:00.2",
+              "description" : "IOMMU",
+              "product" : "Starship/Matisse IOMMU",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "0.2",
+              "businfo" : "pci@0000:00:00.2",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "pci:0",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:01",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "7.1",
+              "businfo" : "pci@0000:00:07.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:01:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse PCIe Dummy Function",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:01:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:01:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:01:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            },
+            {
+              "id" : "pci:1",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:02",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "8.1",
+              "businfo" : "pci@0000:00:08.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:02:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse Reserved SPP",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:02:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:02:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:02:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "usb",
+                  "class" : "bus",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:02:00.3",
+                  "description" : "USB controller",
+                  "product" : "Starship USB 3.0 Host Controller",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.3",
+                  "businfo" : "pci@0000:02:00.3",
+                  "version" : "00",
+                  "width" : 64,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "xhci_hcd",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "xhci" : true,
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            },
+            {
+              "id" : "serial",
+              "class" : "bus",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:14.0",
+              "description" : "SMBus",
+              "product" : "FCH SMBus Controller",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "14",
+              "businfo" : "pci@0000:00:14.0",
+              "version" : "61",
+              "width" : 32,
+              "clock" : 66000000,
+              "configuration" : {
+                "driver" : "piix4_smbus",
+                "latency" : "0"
+              }
+            },
+            {
+              "id" : "isa",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCI:0000:00:14.3",
+              "description" : "ISA bridge",
+              "product" : "FCH LPC Bridge",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "14.3",
+              "businfo" : "pci@0000:00:14.3",
+              "version" : "51",
+              "width" : 32,
+              "clock" : 66000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "isa" : true,
+                "bus_master" : "bus mastering"
+              },
+              "children" : [
+                {
+                  "id" : "pnp00:00",
+                  "class" : "system",
+                  "claimed" : true,
+                  "product" : "PnP device PNP0c01",
+                  "physid" : "0",
+                  "configuration" : {
+                    "driver" : "system"
+                  },
+                  "capabilities" : {
+                    "pnp" : true
+                  }
+                },
+                {
+                  "id" : "pnp00:01",
+                  "class" : "system",
+                  "claimed" : true,
+                  "product" : "PnP device PNP0b00",
+                  "physid" : "1",
+                  "configuration" : {
+                    "driver" : "rtc_cmos"
+                  },
+                  "capabilities" : {
+                    "pnp" : true
+                  }
+                },
+                {
+                  "id" : "pnp00:02",
+                  "class" : "system",
+                  "claimed" : true,
+                  "product" : "PnP device PNP0c02",
+                  "physid" : "2",
+                  "configuration" : {
+                    "driver" : "system"
+                  },
+                  "capabilities" : {
+                    "pnp" : true
+                  }
+                },
+                {
+                  "id" : "pnp00:03",
+                  "class" : "communication",
+                  "claimed" : true,
+                  "product" : "PnP device PNP0501",
+                  "physid" : "3",
+                  "configuration" : {
+                    "driver" : "serial"
+                  },
+                  "capabilities" : {
+                    "pnp" : true
+                  }
+                },
+                {
+                  "id" : "pnp00:04",
+                  "class" : "communication",
+                  "claimed" : true,
+                  "product" : "PnP device PNP0501",
+                  "physid" : "4",
+                  "configuration" : {
+                    "driver" : "serial"
+                  },
+                  "capabilities" : {
+                    "pnp" : true
+                  }
+                },
+                {
+                  "id" : "pnp00:05",
+                  "class" : "system",
+                  "claimed" : true,
+                  "product" : "PnP device PNP0c02",
+                  "physid" : "5",
+                  "configuration" : {
+                    "driver" : "system"
+                  },
+                  "capabilities" : {
+                    "pnp" : true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id" : "pci:1",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "101",
+          "businfo" : "pci@0000:00:01.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:2",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "102",
+          "businfo" : "pci@0000:00:02.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:3",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "103",
+          "businfo" : "pci@0000:00:03.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:4",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "104",
+          "businfo" : "pci@0000:00:04.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:5",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "105",
+          "businfo" : "pci@0000:00:05.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:6",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "106",
+          "businfo" : "pci@0000:00:07.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:7",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "107",
+          "businfo" : "pci@0000:00:08.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:8",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 0",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "108",
+          "businfo" : "pci@0000:00:18.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:9",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 1",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "109",
+          "businfo" : "pci@0000:00:18.1",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:10",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 2",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "10a",
+          "businfo" : "pci@0000:00:18.2",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:11",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 3",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "10b",
+          "businfo" : "pci@0000:00:18.3",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "k10temp"
+          }
+        },
+        {
+          "id" : "pci:12",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 4",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "10c",
+          "businfo" : "pci@0000:00:18.4",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:13",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 5",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "10d",
+          "businfo" : "pci@0000:00:18.5",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:14",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 6",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "10e",
+          "businfo" : "pci@0000:00:18.6",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:15",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 7",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "10f",
+          "businfo" : "pci@0000:00:18.7",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:16",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 0",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "110",
+          "businfo" : "pci@0000:00:19.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:17",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 1",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "111",
+          "businfo" : "pci@0000:00:19.1",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:18",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 2",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "112",
+          "businfo" : "pci@0000:00:19.2",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:19",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 3",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "113",
+          "businfo" : "pci@0000:00:19.3",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000,
+          "configuration" : {
+            "driver" : "k10temp"
+          }
+        },
+        {
+          "id" : "pci:20",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 4",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "114",
+          "businfo" : "pci@0000:00:19.4",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:21",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 5",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "115",
+          "businfo" : "pci@0000:00:19.5",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:22",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 6",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "116",
+          "businfo" : "pci@0000:00:19.6",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:23",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:00",
+          "description" : "Host bridge",
+          "product" : "Starship Device 24; Function 7",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "117",
+          "businfo" : "pci@0000:00:19.7",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:24",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:20",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse Root Complex",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "118",
+          "businfo" : "pci@0000:20:00.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000,
+          "children" : [
+            {
+              "id" : "generic",
+              "class" : "generic",
+              "handle" : "PCI:0000:20:00.2",
+              "description" : "IOMMU",
+              "product" : "Starship/Matisse IOMMU",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "0.2",
+              "businfo" : "pci@0000:20:00.2",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "pci:0",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:21",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "7.1",
+              "businfo" : "pci@0000:20:07.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:21:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse PCIe Dummy Function",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:21:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:21:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:21:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            },
+            {
+              "id" : "pci:1",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:22",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "8.1",
+              "businfo" : "pci@0000:20:08.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:22:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse Reserved SPP",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:22:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:22:00.1",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse Cryptographic Coprocessor PSPCPP",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.1",
+                  "businfo" : "pci@0000:22:00.1",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ccp",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:2",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:22:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:22:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "usb",
+                  "class" : "bus",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:22:00.3",
+                  "description" : "USB controller",
+                  "product" : "Starship USB 3.0 Host Controller",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.3",
+                  "businfo" : "pci@0000:22:00.3",
+                  "version" : "00",
+                  "width" : 64,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "xhci_hcd",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "xhci" : true,
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id" : "pci:25",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:20",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "119",
+          "businfo" : "pci@0000:20:01.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:26",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:20",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "11a",
+          "businfo" : "pci@0000:20:02.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:27",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:20",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "11b",
+          "businfo" : "pci@0000:20:03.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:28",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:20",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "11c",
+          "businfo" : "pci@0000:20:04.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:29",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:20",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "11d",
+          "businfo" : "pci@0000:20:05.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:30",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:20",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "11e",
+          "businfo" : "pci@0000:20:07.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:31",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:20",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "11f",
+          "businfo" : "pci@0000:20:08.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:32",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:40",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse Root Complex",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "120",
+          "businfo" : "pci@0000:40:00.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000,
+          "children" : [
+            {
+              "id" : "generic",
+              "class" : "generic",
+              "handle" : "PCI:0000:40:00.2",
+              "description" : "IOMMU",
+              "product" : "Starship/Matisse IOMMU",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "0.2",
+              "businfo" : "pci@0000:40:00.2",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "pci:0",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:41",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "7.1",
+              "businfo" : "pci@0000:40:07.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:41:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse PCIe Dummy Function",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:41:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:41:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:41:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            },
+            {
+              "id" : "pci:1",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:42",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "8.1",
+              "businfo" : "pci@0000:40:08.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:42:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse Reserved SPP",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:42:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:42:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:42:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id" : "pci:33",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:40",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "121",
+          "businfo" : "pci@0000:40:01.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:34",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:40",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "122",
+          "businfo" : "pci@0000:40:02.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:35",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:40",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "123",
+          "businfo" : "pci@0000:40:03.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:36",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:40",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "124",
+          "businfo" : "pci@0000:40:04.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:37",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:40",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "125",
+          "businfo" : "pci@0000:40:05.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:38",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:40",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "126",
+          "businfo" : "pci@0000:40:07.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:39",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:40",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "127",
+          "businfo" : "pci@0000:40:08.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:40",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:60",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse Root Complex",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "128",
+          "businfo" : "pci@0000:60:00.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000,
+          "children" : [
+            {
+              "id" : "generic",
+              "class" : "generic",
+              "handle" : "PCI:0000:60:00.2",
+              "description" : "IOMMU",
+              "product" : "Starship/Matisse IOMMU",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "0.2",
+              "businfo" : "pci@0000:60:00.2",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "pci:0",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:61",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse GPP Bridge",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "3.1",
+              "businfo" : "pci@0000:60:03.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "network",
+                  "class" : "network",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:61:00.0",
+                  "description" : "interface",
+                  "product" : "MT28908 Family [ConnectX-6]",
+                  "vendor" : "Mellanox Technologies",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:61:00.0",
+                  "logicalname" : "ib0",
+                  "version" : "00",
+                  "serial" : "00:00:10:27:fe:80:00:00:00:00:00:00:08:00:00:00:00:00:00:00",
+                  "width" : 64,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "autonegotiation" : "off",
+                    "broadcast" : "yes",
+                    "driver" : "mlx5_core[ib_ipoib]",
+                    "driverversion" : "24.07-0.6.1",
+                    "duplex" : "full",
+                    "firmware" : "20.33.1048 (BL_12001644)",
+                    "ip" : "172.19.13.63",
+                    "latency" : "0",
+                    "link" : "yes",
+                    "multicast" : "yes"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing",
+                    "rom" : "extension ROM",
+                    "physical" : "Physical interface"
+                  }
+                }
+              ]
+            },
+            {
+              "id" : "pci:1",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:62",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse GPP Bridge",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "5.2",
+              "businfo" : "pci@0000:60:05.2",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "pci",
+                  "class" : "bridge",
+                  "claimed" : true,
+                  "handle" : "PCIBUS:0000:63",
+                  "description" : "PCI bridge",
+                  "product" : "AST1150 PCI-to-PCI Bridge",
+                  "vendor" : "ASPEED Technology, Inc.",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:62:00.0",
+                  "version" : "04",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "capabilities" : {
+                    "pci" : true,
+                    "normal_decode" : true,
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  },
+                  "children" : [
+                    {
+                      "id" : "display",
+                      "class" : "display",
+                      "claimed" : true,
+                      "handle" : "PCI:0000:63:00.0",
+                      "description" : "VGA compatible controller",
+                      "product" : "ASPEED Graphics Family",
+                      "vendor" : "ASPEED Technology, Inc.",
+                      "physid" : "0",
+                      "businfo" : "pci@0000:63:00.0",
+                      "logicalname" : "/dev/fb0",
+                      "version" : "41",
+                      "width" : 32,
+                      "clock" : 33000000,
+                      "configuration" : {
+                        "depth" : "32",
+                        "driver" : "ast",
+                        "latency" : "0",
+                        "resolution" : "1024,768"
+                      },
+                      "capabilities" : {
+                        "vga_controller" : true,
+                        "cap_list" : "PCI capabilities listing",
+                        "fb" : "framebuffer"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id" : "pci:2",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:64",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "7.1",
+              "businfo" : "pci@0000:60:07.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:64:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse PCIe Dummy Function",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:64:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:64:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:64:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            },
+            {
+              "id" : "pci:3",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:65",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "8.1",
+              "businfo" : "pci@0000:60:08.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:65:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse Reserved SPP",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:65:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:65:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:65:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id" : "pci:41",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:60",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "129",
+          "businfo" : "pci@0000:60:01.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:42",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:60",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "12a",
+          "businfo" : "pci@0000:60:02.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:43",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:60",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "12b",
+          "businfo" : "pci@0000:60:03.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:44",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:60",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "12c",
+          "businfo" : "pci@0000:60:04.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:45",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:60",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "12d",
+          "businfo" : "pci@0000:60:05.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:46",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:60",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "12e",
+          "businfo" : "pci@0000:60:07.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:47",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:60",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "12f",
+          "businfo" : "pci@0000:60:08.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:48",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:80",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse Root Complex",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "130",
+          "businfo" : "pci@0000:80:00.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000,
+          "children" : [
+            {
+              "id" : "generic",
+              "class" : "generic",
+              "handle" : "PCI:0000:80:00.2",
+              "description" : "IOMMU",
+              "product" : "Starship/Matisse IOMMU",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "0.2",
+              "businfo" : "pci@0000:80:00.2",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "pci:0",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:81",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "7.1",
+              "businfo" : "pci@0000:80:07.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:81:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse PCIe Dummy Function",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:81:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:81:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:81:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            },
+            {
+              "id" : "pci:1",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:82",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "8.1",
+              "businfo" : "pci@0000:80:08.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:82:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse Reserved SPP",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:82:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:82:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:82:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id" : "pci:49",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:80",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "131",
+          "businfo" : "pci@0000:80:01.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:50",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:80",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "132",
+          "businfo" : "pci@0000:80:02.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:51",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:80",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "133",
+          "businfo" : "pci@0000:80:03.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:52",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:80",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "134",
+          "businfo" : "pci@0000:80:04.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:53",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:80",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "135",
+          "businfo" : "pci@0000:80:05.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:54",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:80",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "136",
+          "businfo" : "pci@0000:80:07.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:55",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:80",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "137",
+          "businfo" : "pci@0000:80:08.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:56",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:a0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse Root Complex",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "138",
+          "businfo" : "pci@0000:a0:00.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000,
+          "children" : [
+            {
+              "id" : "generic",
+              "class" : "generic",
+              "handle" : "PCI:0000:a0:00.2",
+              "description" : "IOMMU",
+              "product" : "Starship/Matisse IOMMU",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "0.2",
+              "businfo" : "pci@0000:a0:00.2",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "pci:0",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:a1",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "7.1",
+              "businfo" : "pci@0000:a0:07.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:a1:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse PCIe Dummy Function",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:a1:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:a1:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:a1:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            },
+            {
+              "id" : "pci:1",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:a2",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "8.1",
+              "businfo" : "pci@0000:a0:08.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:a2:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse Reserved SPP",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:a2:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:a2:00.1",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse Cryptographic Coprocessor PSPCPP",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.1",
+                  "businfo" : "pci@0000:a2:00.1",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ccp",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:2",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:a2:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:a2:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id" : "pci:57",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:a0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "139",
+          "businfo" : "pci@0000:a0:01.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:58",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:a0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "13a",
+          "businfo" : "pci@0000:a0:02.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:59",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:a0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "13b",
+          "businfo" : "pci@0000:a0:03.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:60",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:a0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "13c",
+          "businfo" : "pci@0000:a0:04.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:61",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:a0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "13d",
+          "businfo" : "pci@0000:a0:05.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:62",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:a0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "13e",
+          "businfo" : "pci@0000:a0:07.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:63",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:a0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "13f",
+          "businfo" : "pci@0000:a0:08.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:64",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:c0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse Root Complex",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "140",
+          "businfo" : "pci@0000:c0:00.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000,
+          "children" : [
+            {
+              "id" : "generic",
+              "class" : "generic",
+              "handle" : "PCI:0000:c0:00.2",
+              "description" : "IOMMU",
+              "product" : "Starship/Matisse IOMMU",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "0.2",
+              "businfo" : "pci@0000:c0:00.2",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "pci:0",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:c1",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "7.1",
+              "businfo" : "pci@0000:c0:07.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:c1:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse PCIe Dummy Function",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:c1:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:c1:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:c1:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            },
+            {
+              "id" : "pci:1",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:c2",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "8.1",
+              "businfo" : "pci@0000:c0:08.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:c2:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse Reserved SPP",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:c2:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:c2:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:c2:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            },
+            {
+              "id" : "pci:2",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:c3",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "8.2",
+              "businfo" : "pci@0000:c0:08.2",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "sata",
+                  "class" : "storage",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:c3:00.0",
+                  "description" : "SATA controller",
+                  "product" : "FCH SATA Controller [AHCI mode]",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:c3:00.0",
+                  "version" : "51",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ahci",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "sata" : true,
+                    "ahci_1.0" : true,
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id" : "pci:65",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:c0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "141",
+          "businfo" : "pci@0000:c0:01.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:66",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:c0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "142",
+          "businfo" : "pci@0000:c0:02.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:67",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:c0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "143",
+          "businfo" : "pci@0000:c0:03.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:68",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:c0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "144",
+          "businfo" : "pci@0000:c0:04.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:69",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:c0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "145",
+          "businfo" : "pci@0000:c0:05.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:70",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:c0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "146",
+          "businfo" : "pci@0000:c0:07.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:71",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:c0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "147",
+          "businfo" : "pci@0000:c0:08.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:72",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:e0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse Root Complex",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "148",
+          "businfo" : "pci@0000:e0:00.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000,
+          "children" : [
+            {
+              "id" : "generic",
+              "class" : "generic",
+              "handle" : "PCI:0000:e0:00.2",
+              "description" : "IOMMU",
+              "product" : "Starship/Matisse IOMMU",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "0.2",
+              "businfo" : "pci@0000:e0:00.2",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "latency" : "0"
+              },
+              "capabilities" : {
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              }
+            },
+            {
+              "id" : "pci:0",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:e1",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse GPP Bridge",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "5.1",
+              "businfo" : "pci@0000:e0:05.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "network:0",
+                  "class" : "network",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:e1:00.0",
+                  "description" : "Ethernet interface",
+                  "product" : "I350 Gigabit Backplane Connection",
+                  "vendor" : "Intel Corporation",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:e1:00.0",
+                  "logicalname" : "enp225s0f0",
+                  "version" : "01",
+                  "serial" : "08:00:38:b9:85:a9",
+                  "units" : "bit/s",
+                  "size" : 1000000000,
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "autonegotiation" : "on",
+                    "broadcast" : "yes",
+                    "driver" : "igb",
+                    "driverversion" : "4.18.0-553.34.1.el8_10.x86_64",
+                    "duplex" : "full",
+                    "firmware" : "1.63.0",
+                    "ip" : "172.21.13.63",
+                    "latency" : "0",
+                    "link" : "yes",
+                    "multicast" : "yes",
+                    "port" : "fibre",
+                    "speed" : "1Gbit/s"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing",
+                    "ethernet" : true,
+                    "physical" : "Physical interface",
+                    "fibre" : "optical fibre",
+                    "autonegotiation" : "Auto-negotiation"
+                  }
+                },
+                {
+                  "id" : "network:1",
+                  "class" : "network",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:e1:00.1",
+                  "description" : "Ethernet interface",
+                  "product" : "I350 Gigabit Backplane Connection",
+                  "vendor" : "Intel Corporation",
+                  "physid" : "0.1",
+                  "businfo" : "pci@0000:e1:00.1",
+                  "logicalname" : "enp225s0f1",
+                  "version" : "01",
+                  "serial" : "00:a0:c9:00:00:01",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "autonegotiation" : "on",
+                    "broadcast" : "yes",
+                    "driver" : "igb",
+                    "driverversion" : "4.18.0-553.34.1.el8_10.x86_64",
+                    "firmware" : "1.63.0",
+                    "latency" : "0",
+                    "link" : "no",
+                    "multicast" : "yes",
+                    "port" : "fibre"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing",
+                    "ethernet" : true,
+                    "physical" : "Physical interface",
+                    "fibre" : "optical fibre",
+                    "autonegotiation" : "Auto-negotiation"
+                  }
+                }
+              ]
+            },
+            {
+              "id" : "pci:1",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:e2",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "7.1",
+              "businfo" : "pci@0000:e0:07.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:e2:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse PCIe Dummy Function",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:e2:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:e2:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:e2:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            },
+            {
+              "id" : "pci:2",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:e3",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "8.1",
+              "businfo" : "pci@0000:e0:08.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:e3:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse Reserved SPP",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:e3:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:e3:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:e3:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id" : "pci:73",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:e0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "149",
+          "businfo" : "pci@0000:e0:01.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:74",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:e0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "14a",
+          "businfo" : "pci@0000:e0:02.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:75",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:e0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "14b",
+          "businfo" : "pci@0000:e0:03.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:76",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:e0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "14c",
+          "businfo" : "pci@0000:e0:04.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:77",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:e0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "14d",
+          "businfo" : "pci@0000:e0:05.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:78",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:e0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "14e",
+          "businfo" : "pci@0000:e0:07.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        },
+        {
+          "id" : "pci:79",
+          "class" : "bridge",
+          "claimed" : true,
+          "handle" : "PCIBUS:0000:e0",
+          "description" : "Host bridge",
+          "product" : "Starship/Matisse PCIe Dummy Host Bridge",
+          "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+          "physid" : "14f",
+          "businfo" : "pci@0000:e0:08.0",
+          "version" : "00",
+          "width" : 32,
+          "clock" : 33000000
+        }
+      ]
+    },
+    {
+      "id" : "input:0",
+      "class" : "input",
+      "claimed" : true,
+      "product" : "Power Button",
+      "physid" : "1",
+      "logicalname" : ["input0", "/dev/input/event0"],
+      "capabilities" : {
+        "platform" : true
+      }
+    },
+    {
+      "id" : "input:1",
+      "class" : "input",
+      "claimed" : true,
+      "product" : "PC Speaker",
+      "physid" : "2",
+      "logicalname" : ["input1", "/dev/input/event1"],
+      "capabilities" : {
+        "isa" : "ISA bus"
+      }
+    }
+  ]
+}

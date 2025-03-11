@@ -1,0 +1,20 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_community-detection_mexican.s26.k4_64cores_64threads_timeout1200000ms", "problem": "community-detection", "model": "../data/mzn-challenge/2024/community-detection/community-detection.mzn", "data_file": "../data/mzn-challenge/2024/community-detection/mexican.s26.k4.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:25:46.209853", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0229, task  0  0 [1863709]: mask 0xffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 400, "flatIntVars": 465, "flatIntConstraints": 887, "evaluatedReifiedConstraints": 400, "method": "maximize", "flatTime": 1.45233}}
+{"type": "comment", "comment": "%% File /tmp/mznfileswkM8H.fzn parsed in 7 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 400 times\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileswkM8H\n"}
+{"type": "comment", "comment": "%%   - array_int_maximum: 1\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 400\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 5\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 33\n"}
+{"type": "comment", "comment": "%%   - int_lin_ne: 13\n"}
+{"type": "comment", "comment": "%%   - int_max: 35\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "solution", "output": {"default": "x = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 2, 3, 1, 3, 3, 2, 2, 3, 2, 2, 3, 2, 2, 2, 2, 2];\nobjective = 715070;\n", "raw": "x = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 2, 3, 1, 3, 3, 2, 2, 3, 2, 2, 3, 2, 2, 2, 2, 2];\nobjective = 715070;\n", "json": {  "x" : [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 2, 3, 1, 3, 3, 2, 2, 3, 2, 2, 3, 2, 2, 2, 2, 2],  "objective" : 715070,  "_objective" : 715070}}, "sections": ["default", "raw", "json"], "time": 3968}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 3968}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 715070, "objectiveBound": 715070, "boolVariables": 0, "failures": 0, "propagations": 0, "solveTime": 2.48851}}

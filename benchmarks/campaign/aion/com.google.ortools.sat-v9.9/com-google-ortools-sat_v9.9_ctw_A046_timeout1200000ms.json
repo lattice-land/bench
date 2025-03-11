@@ -1,0 +1,23 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_ctw_A046_timeout1200000ms", "problem": "cable-tree-wiring", "model": "../data/mzn-challenge/2024/cable-tree-wiring/ctw.mzn", "data_file": "../data/mzn-challenge/2024/cable-tree-wiring/A046.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:38:49.764704", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [116289]: mask 0x100 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 12721, "flatIntVars": 6758, "flatBoolConstraints": 6315, "flatIntConstraints": 14610, "evaluatedReifiedConstraints": 6331, "evaluatedHalfReifiedConstraints": 150, "method": "minimize", "flatTime": 1.08747}}
+{"type": "comment", "comment": "%% File /tmp/mznfileP4q6am.fzn parsed in 182 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 6331 times\n"}
+{"type": "comment", "comment": "%%   - done in 9 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileP4q6am\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 6240\n"}
+{"type": "comment", "comment": "%%   - array_int_maximum: 2\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 75\n"}
+{"type": "comment", "comment": "%%   - fzn_all_different_int: 2\n"}
+{"type": "comment", "comment": "%%   - int_abs: 40\n"}
+{"type": "comment", "comment": "%%   - int_le_reif: 40\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 161\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 1529\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_imp: 150\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 6291\n"}
+{"type": "comment", "comment": "%%   - int_max: 64\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1201316}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

@@ -1,0 +1,32 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_harmony_canon_timeout1200000ms", "problem": "harmony", "model": "../data/mzn-challenge/2024/harmony/harmony.mzn", "data_file": "../data/mzn-challenge/2024/harmony/canon.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:25:08.002380", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [113682]: mask 0x1 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 4655, "flatIntVars": 2961, "flatBoolConstraints": 7193, "flatIntConstraints": 4853, "evaluatedReifiedConstraints": 3378, "evaluatedHalfReifiedConstraints": 455, "method": "minimize", "flatTime": 1.15828}}
+{"type": "comment", "comment": "%% File /tmp/mznfileA06jug.fzn parsed in 85 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 672 times\n"}
+{"type": "comment", "comment": "%%   - rule 'int_lin_eq: store affine mapping' was applied 192 times\n"}
+{"type": "comment", "comment": "%%   - done in 3 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileA06jug\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 204\n"}
+{"type": "comment", "comment": "%%   - array_bool_element: 336\n"}
+{"type": "comment", "comment": "%%   - array_int_maximum: 26\n"}
+{"type": "comment", "comment": "%%   - array_int_minimum: 70\n"}
+{"type": "comment", "comment": "%%   - array_var_bool_element: 192\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 6797\n"}
+{"type": "comment", "comment": "%%   - bool_lin_eq: 192\n"}
+{"type": "comment", "comment": "%%   - int_abs: 370\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 108\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 240\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 1151\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 166\n"}
+{"type": "comment", "comment": "%%   - int_lin_ne: 47\n"}
+{"type": "comment", "comment": "%%   - int_lin_ne_imp: 323\n"}
+{"type": "comment", "comment": "%%   - int_lin_ne_reif: 48\n"}
+{"type": "comment", "comment": "%%   - int_mod: 480\n"}
+{"type": "comment", "comment": "%%   - int_ne_imp: 24\n"}
+{"type": "comment", "comment": "%%   - int_ne_reif: 552\n"}
+{"type": "comment", "comment": "%%   - set_in_reif: 48\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1201342}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

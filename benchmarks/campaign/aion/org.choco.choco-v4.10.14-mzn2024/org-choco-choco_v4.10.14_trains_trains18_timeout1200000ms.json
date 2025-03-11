@@ -1,0 +1,8 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.14_trains_trains18_timeout1200000ms", "problem": "train-scheduling", "model": "../data/mzn-challenge/2024/train-scheduling/trains.mzn", "data_file": "../data/mzn-challenge/2024/train-scheduling/trains18.dzn", "mzn_solver": "org.choco.choco", "version": "v4.10.14", "timeout_ms": "1200000", "datetime": "2025-03-11T08:44:52.797209", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0155, task  0  0 [2479978]: mask 0x4 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 216, "flatIntVars": 416, "flatBoolConstraints": 110, "flatIntConstraints": 477, "evaluatedReifiedConstraints": 60, "evaluatedHalfReifiedConstraints": 102, "eliminatedImplications": 66, "method": "minimize", "flatTime": 0.26546}}
+{"type": "comment", "comment": "%% Choco 231102\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1201198}
+{"type": "statistics", "statistics": {"initTime": 0.72, "solveTime": 1200.029, "solutions": 0, "variables": 1120, "constraints": 1019, "nodes": 69833100, "failures": 69832964, "restarts": 0}}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

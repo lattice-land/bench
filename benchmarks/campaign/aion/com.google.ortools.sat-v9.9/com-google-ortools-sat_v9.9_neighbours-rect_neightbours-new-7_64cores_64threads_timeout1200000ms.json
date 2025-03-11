@@ -1,0 +1,18 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_neighbours-rect_neightbours-new-7_64cores_64threads_timeout1200000ms", "problem": "neighbours", "model": "../data/mzn-challenge/2024/neighbours/neighbours-rect.mzn", "data_file": "../data/mzn-challenge/2024/neighbours/neightbours-new-7.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:25:52.622974", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0226, task  0  0 [1909468]: mask 0xffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 9775, "flatIntVars": 501, "flatBoolConstraints": 7813, "flatIntConstraints": 6828, "evaluatedReifiedConstraints": 4394, "evaluatedHalfReifiedConstraints": 3910, "method": "maximize", "flatTime": 1.05027}}
+{"type": "comment", "comment": "%% File /tmp/mznfiletijyqq.fzn parsed in 107 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 1 ms\n"}
+{"type": "comment", "comment": "%% Model mznfiletijyqq\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 1474\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 6339\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 1996\n"}
+{"type": "comment", "comment": "%%   - int_le_imp: 1914\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 1\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 3\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 2914\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1201350}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

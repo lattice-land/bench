@@ -1,0 +1,22 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_peaceable_queens_mznc2021_pq_n12_64cores_64threads_timeout1200000ms", "problem": "peacable_queens", "model": "../data/mzn-challenge/2024/peacable_queens/peaceable_queens_mznc2021.mzn", "data_file": "../data/mzn-challenge/2024/peacable_queens/pq_n12.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:28:28.386622", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0233, task  0  0 [1736206]: mask 0xffffffffffffffff0000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 4482, "flatIntVars": 433, "flatBoolConstraints": 4462, "flatIntConstraints": 2608, "evaluatedReifiedConstraints": 3232, "evaluatedHalfReifiedConstraints": 143, "method": "maximize", "flatTime": 0.787321}}
+{"type": "comment", "comment": "%% File /tmp/mznfileF1JZfk.fzn parsed in 52 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 288 times\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileF1JZfk\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 970\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 3348\n"}
+{"type": "comment", "comment": "%%   - bool_eq_reif: 144\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 288\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 2\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 4\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 1816\n"}
+{"type": "comment", "comment": "%%   - int_ne: 1\n"}
+{"type": "comment", "comment": "%%   - int_ne_imp: 143\n"}
+{"type": "comment", "comment": "%%   - ortools_regular: 66\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1201011}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

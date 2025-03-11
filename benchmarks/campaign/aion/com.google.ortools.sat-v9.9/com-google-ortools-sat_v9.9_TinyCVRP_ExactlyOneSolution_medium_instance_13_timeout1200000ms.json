@@ -1,0 +1,24 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_TinyCVRP_ExactlyOneSolution_medium_instance_13_timeout1200000ms", "problem": "tiny-cvrp", "model": "../data/mzn-challenge/2024/tiny-cvrp/TinyCVRP_ExactlyOneSolution.mzn", "data_file": "../data/mzn-challenge/2024/tiny-cvrp/medium_instance_13.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T09:05:09.836219", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [121247]: mask 0x1 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 2000, "flatIntVars": 1157, "flatBoolConstraints": 2308, "flatIntConstraints": 2225, "evaluatedReifiedConstraints": 200, "evaluatedHalfReifiedConstraints": 1944, "eliminatedImplications": 1088, "method": "minimize", "flatTime": 0.315107}}
+{"type": "comment", "comment": "%% File /tmp/mznfilemp1fzU.fzn parsed in 28 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfilemp1fzU\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 268\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 4\n"}
+{"type": "comment", "comment": "%%   - array_int_maximum: 48\n"}
+{"type": "comment", "comment": "%%   - array_var_int_element: 4\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 2040\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 1944\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 100\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 17\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 4\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 48\n"}
+{"type": "comment", "comment": "%%   - int_max: 4\n"}
+{"type": "comment", "comment": "%%   - int_ne_reif: 48\n"}
+{"type": "comment", "comment": "%%   - set_in_reif: 4\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1200440}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

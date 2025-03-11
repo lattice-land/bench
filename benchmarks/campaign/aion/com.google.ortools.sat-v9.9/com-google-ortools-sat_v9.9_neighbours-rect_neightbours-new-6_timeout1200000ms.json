@@ -1,0 +1,20 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_neighbours-rect_neightbours-new-6_timeout1200000ms", "problem": "neighbours", "model": "../data/mzn-challenge/2024/neighbours/neighbours-rect.mzn", "data_file": "../data/mzn-challenge/2024/neighbours/neightbours-new-6.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T09:05:08.963537", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [120735]: mask 0x200 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 687, "flatIntVars": 31, "flatBoolConstraints": 619, "flatIntConstraints": 431, "evaluatedReifiedConstraints": 346, "evaluatedHalfReifiedConstraints": 218, "method": "maximize", "flatTime": 0.43203}}
+{"type": "comment", "comment": "%% File /tmp/mznfileSl7zLU.fzn parsed in 7 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileSl7zLU\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 128\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 491\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 116\n"}
+{"type": "comment", "comment": "%%   - int_le_imp: 102\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 1\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 4\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 208\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "solution", "output": {"default": "% 2 3 1 3 2\n% 1 5 2 5 1\n% 2 4 1 4 2\n% 1 3 2 3 4\n% 2 5 4 1 1\n% 3 1 3 2 3\nx = array2d(1..6,1..5,[2, 3, 1, 3, 2, 1, 5, 2, 5, 1, 2, 4, 1, 4, 2, 1, 3, 2, 3, 4, 2, 5, 4, 1, 1, 3, 1, 3, 2, 3]);\nobjective = 76;\n", "raw": "% 2 3 1 3 2\n% 1 5 2 5 1\n% 2 4 1 4 2\n% 1 3 2 3 4\n% 2 5 4 1 1\n% 3 1 3 2 3\nx = array2d(1..6,1..5,[2, 3, 1, 3, 2, 1, 5, 2, 5, 1, 2, 4, 1, 4, 2, 1, 3, 2, 3, 4, 2, 5, 4, 1, 1, 3, 1, 3, 2, 3]);\nobjective = 76;\n", "json": {  "x" : [[2, 3, 1, 3, 2], [1, 5, 2, 5, 1], [2, 4, 1, 4, 2], [1, 3, 2, 3, 4], [2, 5, 4, 1, 1], [3, 1, 3, 2, 3]],  "objective" : 76,  "_objective" : 76}}, "sections": ["default", "raw", "json"], "time": 1120390}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 1120390}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 76, "objectiveBound": 76, "boolVariables": 718, "failures": 12892762, "propagations": 2179918107, "solveTime": 1119.93}}

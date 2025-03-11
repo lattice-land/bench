@@ -1,0 +1,27 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_foxgeesecorn_fgc_20_20_22_00_64cores_64threads_timeout1200000ms", "problem": "fox-geese-corn", "model": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn.mzn", "data_file": "../data/mzn-challenge/2024/fox-geese-corn/fgc_20_20_22_00.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:26:17.241915", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0227, task  0  0 [1808660]: mask 0xffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 514, "flatIntVars": 465, "flatBoolConstraints": 246, "flatIntConstraints": 813, "evaluatedReifiedConstraints": 118, "evaluatedHalfReifiedConstraints": 426, "eliminatedImplications": 144, "method": "maximize", "flatTime": 0.188817}}
+{"type": "comment", "comment": "%% File /tmp/mznfile86NwBH.fzn parsed in 9 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 45 times\n"}
+{"type": "comment", "comment": "%%   - rule 'int_lin_eq: store affine mapping' was applied 43 times\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfile86NwBH\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 30\n"}
+{"type": "comment", "comment": "%%   - array_bool_element: 42\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 15\n"}
+{"type": "comment", "comment": "%%   - array_var_int_element: 48\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 216\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 195\n"}
+{"type": "comment", "comment": "%%   - int_le_imp: 30\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 101\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq_imp: 159\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 60\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 76\n"}
+{"type": "comment", "comment": "%%   - set_in_reif: 42\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "solution", "output": {"default": "fox = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 6];\ngeese = [6, 0, 6, 0, 6, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0];\ncorn = [0, 0, 0, 0, 0, 0, 5, 0, 6, 0, 6, 0, 4, 0, 0];\ntrips = 15;\nobjective = 206;\n", "raw": "fox = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 6];\ngeese = [6, 0, 6, 0, 6, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0];\ncorn = [0, 0, 0, 0, 0, 0, 5, 0, 6, 0, 6, 0, 4, 0, 0];\ntrips = 15;\nobjective = 206;\n", "json": {  "fox" : [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 6],  "geese" : [6, 0, 6, 0, 6, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0],  "corn" : [0, 0, 0, 0, 0, 0, 5, 0, 6, 0, 6, 0, 4, 0, 0],  "trips" : 15,  "efox" : [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 7],  "egeese" : [0, 6, 6, 12, 12, 18, 18, 18, 17, 17, 16, 16, 15, 17, 16, 16],  "ecorn" : [0, 0, 0, 0, 0, 0, 0, 5, 5, 11, 11, 17, 17, 21, 21, 21],  "wfox" : [20, 19, 19, 18, 18, 17, 17, 15, 15, 14, 14, 13, 13, 12, 12, 6],  "wgeese" : [20, 14, 14, 8, 8, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0],  "wcorn" : [22, 22, 22, 22, 22, 22, 22, 17, 17, 11, 11, 5, 5, 0, 0, 0],  "objective" : 206,  "_objective" : 206}}, "sections": ["default", "raw", "json"], "time": 11705}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 11705}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 206, "objectiveBound": 206, "boolVariables": 577, "failures": 0, "propagations": 157, "solveTime": 11.4844}}

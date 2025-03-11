@@ -1,0 +1,10 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.14_yumi-dynamic_p_9_GSGS_GSGSG_yumi_grid_setup_7_7_zones_64cores_64threads_timeout1200000ms", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_9_GSGS_GSGSG_yumi_grid_setup_7_7_zones.dzn", "mzn_solver": "org.choco.choco", "version": "v4.10.14", "timeout_ms": "1200000", "datetime": "2025-03-11T09:09:45.527316", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0089, task  0  0 [3171876]: mask 0xffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 198, "flatIntVars": 5915, "flatBoolConstraints": 41, "flatIntConstraints": 6313, "evaluatedReifiedConstraints": 190, "evaluatedHalfReifiedConstraints": 6, "method": "minimize", "flatTime": 34.9512}}
+{"type": "comment", "comment": "%% Choco 231102\n"}
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "main"
+{"type": "status", "status": "ERROR", "time": 424542}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+srun: error: aion-0089: task 0: Exited with exit code 1

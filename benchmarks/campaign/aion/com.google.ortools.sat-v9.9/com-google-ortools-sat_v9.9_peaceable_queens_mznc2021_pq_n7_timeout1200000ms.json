@@ -1,0 +1,24 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_peaceable_queens_mznc2021_pq_n7_timeout1200000ms", "problem": "peacable_queens", "model": "../data/mzn-challenge/2024/peacable_queens/peaceable_queens_mznc2021.mzn", "data_file": "../data/mzn-challenge/2024/peacable_queens/pq_n7.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T09:25:19.041517", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [124915]: mask 0x1 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 1693, "flatIntVars": 148, "flatBoolConstraints": 1764, "flatIntConstraints": 949, "evaluatedReifiedConstraints": 1215, "evaluatedHalfReifiedConstraints": 48, "method": "maximize", "flatTime": 0.190884}}
+{"type": "comment", "comment": "%% File /tmp/mznfiletqgayO.fzn parsed in 20 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 98 times\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfiletqgayO\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 390\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 1325\n"}
+{"type": "comment", "comment": "%%   - bool_eq_reif: 49\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 98\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 2\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 6\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 660\n"}
+{"type": "comment", "comment": "%%   - int_ne: 1\n"}
+{"type": "comment", "comment": "%%   - int_ne_imp: 48\n"}
+{"type": "comment", "comment": "%%   - ortools_regular: 36\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "solution", "output": {"default": "......B\n.....BB\n....BB.\nWWW....\nWW.....\n.....BB\n..WW...\nn = 7;\nobjective = 7;\noptimal = 7;", "raw": "......B\n.....BB\n....BB.\nWWW....\nWW.....\n.....BB\n..WW...\nn = 7;\nobjective = 7;\noptimal = 7;", "json": {  "x" : [[{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"BLACK"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"BLACK"}, {"e":"BLACK"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"BLACK"}, {"e":"BLACK"}, {"e":"EMPTY"}], [{"e":"WHITE"}, {"e":"WHITE"}, {"e":"WHITE"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"WHITE"}, {"e":"WHITE"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"BLACK"}, {"e":"BLACK"}], [{"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"WHITE"}, {"e":"WHITE"}, {"e":"EMPTY"}, {"e":"EMPTY"}, {"e":"EMPTY"}]],  "_objective" : 7}}, "sections": ["default", "raw", "json"], "time": 62029}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 62029}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 7, "objectiveBound": 7, "boolVariables": 2588, "failures": 87859, "propagations": 59777099, "solveTime": 61.7835}}

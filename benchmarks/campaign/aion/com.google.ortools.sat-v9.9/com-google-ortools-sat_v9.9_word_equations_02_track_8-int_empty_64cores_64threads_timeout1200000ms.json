@@ -1,0 +1,5 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_word_equations_02_track_8-int_empty_64cores_64threads_timeout1200000ms", "problem": "word-equations", "model": "../data/mzn-challenge/2024/word-equations/word_equations_02_track_8-int.mzn", "data_file": "../data/mzn-challenge/2024/word-equations/empty.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:25:15.838716", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0229, task  0  0 [1863284]: mask 0xffffffffffffffff0000000000000000 set
+{"type": "error", "what": "error", "message": "Cannot open data file '/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc/../../data/mzn-challenge/2024/word-equations/empty.dzn'."}
+srun: error: aion-0229: task 0: Exited with exit code 1

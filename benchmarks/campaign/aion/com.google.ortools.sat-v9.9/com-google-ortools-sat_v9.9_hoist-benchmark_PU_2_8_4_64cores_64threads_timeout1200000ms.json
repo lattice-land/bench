@@ -1,0 +1,19 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_hoist-benchmark_PU_2_8_4_64cores_64threads_timeout1200000ms", "problem": "hoist-benchmark", "model": "../data/mzn-challenge/2024/hoist-benchmark/hoist-benchmark.mzn", "data_file": "../data/mzn-challenge/2024/hoist-benchmark/PU_2_8_4.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:25:37.685489", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0229, task  0  0 [1863611]: mask 0xffffffffffffffff set
+{"type": "warning", "location": {"filename": "/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/data/mzn-challenge/2024/hoist-benchmark/hoist-benchmark.mzn", "firstLine": 102, "firstColumn": 50, "lastLine": 102, "lastColumn": 53}, "message": "variable `k` shadows variable with the same name in line 102.66"}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 2086, "flatIntVars": 97, "flatBoolConstraints": 900, "flatIntConstraints": 1908, "evaluatedHalfReifiedConstraints": 1786, "method": "minimize", "flatTime": 0.829482}}
+{"type": "comment", "comment": "%% File /tmp/mznfileJATX3V.fzn parsed in 23 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileJATX3V\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 300\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 600\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 98\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_imp: 1786\n"}
+{"type": "comment", "comment": "%%   - int_times: 24\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "solution", "output": {"default": "r = array1d(0..24, [0, 181, 24, 166, 9, 64, 147, 229, 27, 179, 77, 194, 246, 157, 269, 142, 254, 40, 123, 205, 17, 169, 67, 184, 236]);\nobjective = 269;\nhoist = array1d(0..24, [1, 1, 2, 2, 3, 1, 3, 2, 4, 3, 4, 4, 4, 4, 5, 6, 7, 6, 7, 6, 7, 7, 8, 8, 8]);\n", "raw": "r = array1d(0..24, [0, 181, 24, 166, 9, 64, 147, 229, 27, 179, 77, 194, 246, 157, 269, 142, 254, 40, 123, 205, 17, 169, 67, 184, 236]);\nobjective = 269;\nhoist = array1d(0..24, [1, 1, 2, 2, 3, 1, 3, 2, 4, 3, 4, 4, 4, 4, 5, 6, 7, 6, 7, 6, 7, 7, 8, 8, 8]);\n", "json": {  "r" : [0, 181, 24, 166, 9, 64, 147, 229, 27, 179, 77, 194, 246, 157, 269, 142, 254, 40, 123, 205, 17, 169, 67, 184, 236],  "objective" : 269,  "hoist" : [1, 1, 2, 2, 3, 1, 3, 2, 4, 3, 4, 4, 4, 4, 5, 6, 7, 6, 7, 6, 7, 7, 8, 8, 8],  "B" : [0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0],  "_objective" : 269}}, "sections": ["default", "raw", "json"], "time": 1311}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 1311}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 269, "objectiveBound": 269, "boolVariables": 860, "failures": 0, "propagations": 5024, "solveTime": 0.424254}}

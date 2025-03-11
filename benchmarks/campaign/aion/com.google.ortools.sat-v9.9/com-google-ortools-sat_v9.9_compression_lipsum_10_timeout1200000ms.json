@@ -1,0 +1,27 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_compression_lipsum_10_timeout1200000ms", "problem": "compression", "model": "../data/mzn-challenge/2024/compression/compression.mzn", "data_file": "../data/mzn-challenge/2024/compression/lipsum_10.json", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T09:25:12.104562", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [124556]: mask 0x4 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 9272, "flatIntVars": 7299, "flatBoolConstraints": 3195, "flatIntConstraints": 14185, "evaluatedReifiedConstraints": 6708, "evaluatedHalfReifiedConstraints": 900, "eliminatedImplications": 720, "method": "minimize", "flatTime": 0.43095}}
+{"type": "comment", "comment": "%% File /tmp/mznfile4OkcJv.fzn parsed in 144 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 6166 times\n"}
+{"type": "comment", "comment": "%%   - done in 8 ms\n"}
+{"type": "comment", "comment": "%% Model mznfile4OkcJv\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 2115\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 46\n"}
+{"type": "comment", "comment": "%%   - array_var_int_element: 182\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 1080\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 720\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 6301\n"}
+{"type": "comment", "comment": "%%   - int_le_reif: 46\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 182\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq_imp: 90\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq_reif: 45\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 1\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_imp: 90\n"}
+{"type": "comment", "comment": "%%   - int_ne_reif: 180\n"}
+{"type": "comment", "comment": "%%   - int_times: 46\n"}
+{"type": "comment", "comment": "%%   - set_in_reif: 90\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1200640}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

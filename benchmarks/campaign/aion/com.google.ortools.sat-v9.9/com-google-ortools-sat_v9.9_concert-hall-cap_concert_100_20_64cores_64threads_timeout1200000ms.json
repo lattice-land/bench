@@ -1,0 +1,21 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_concert-hall-cap_concert_100_20_64cores_64threads_timeout1200000ms", "problem": "concert-hall-cap", "model": "../data/mzn-challenge/2024/concert-hall-cap/concert-hall-cap.mzn", "data_file": "../data/mzn-challenge/2024/concert-hall-cap/concert_100_20.json", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:26:43.076885", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0229, task  0  0 [1864327]: mask 0xffffffffffffffff0000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 2098, "flatIntVars": 6561, "flatIntConstraints": 10539, "evaluatedReifiedConstraints": 2098, "method": "maximize", "flatTime": 0.884353}}
+{"type": "comment", "comment": "%% File /tmp/mznfilewh5X8N.fzn parsed in 96 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'array_int_element: reduce array' was applied 740 times\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 2098 times\n"}
+{"type": "comment", "comment": "%%   - done in 2 ms\n"}
+{"type": "comment", "comment": "%% Model mznfilewh5X8N\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 1980\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 1980\n"}
+{"type": "comment", "comment": "%%   - int_le_reif: 118\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 383\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 1980\n"}
+{"type": "comment", "comment": "%%   - int_max: 2000\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "solution", "output": {"default": "assign = [0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 12, 0, 18, 7, 0, 0, 0, 0, 0, 0, 2, 7, 0, 0, 1, 0, 0, 0, 15, 16, 12, 13, 0, 17, 0, 0, 0, 0, 0, 19, 20, 0, 9, 0, 0, 0, 6, 0, 0, 0, 3, 0, 5, 0, 0, 0, 0, 4, 0, 0, 8, 14, 0, 0, 14, 6, 0, 8, 0, 0, 0, 0, 10, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 9, 0, 0, 2, 5, 0, 0, 0, 11];\nobjective = 2340181;\n", "raw": "assign = [0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 12, 0, 18, 7, 0, 0, 0, 0, 0, 0, 2, 7, 0, 0, 1, 0, 0, 0, 15, 16, 12, 13, 0, 17, 0, 0, 0, 0, 0, 19, 20, 0, 9, 0, 0, 0, 6, 0, 0, 0, 3, 0, 5, 0, 0, 0, 0, 4, 0, 0, 8, 14, 0, 0, 14, 6, 0, 8, 0, 0, 0, 0, 10, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 9, 0, 0, 2, 5, 0, 0, 0, 11];\nobjective = 2340181;\n", "json": {  "assign" : [0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 12, 0, 18, 7, 0, 0, 0, 0, 0, 0, 2, 7, 0, 0, 1, 0, 0, 0, 15, 16, 12, 13, 0, 17, 0, 0, 0, 0, 0, 19, 20, 0, 9, 0, 0, 0, 6, 0, 0, 0, 3, 0, 5, 0, 0, 0, 0, 4, 0, 0, 8, 14, 0, 0, 14, 6, 0, 8, 0, 0, 0, 0, 10, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 9, 0, 0, 2, 5, 0, 0, 0, 11],  "objective" : 2340181,  "_objective" : 2340181}}, "sections": ["default", "raw", "json"], "time": 1532}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 1532}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 2340180.0, "objectiveBound": 2340180.0, "boolVariables": 1143, "failures": 0, "propagations": 110777, "solveTime": 0.454557}}

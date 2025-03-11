@@ -1,0 +1,26 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_TinyCVRP_ExactlyOneSolution_medium_instance_06_64cores_64threads_timeout1200000ms", "problem": "tiny-cvrp", "model": "../data/mzn-challenge/2024/tiny-cvrp/TinyCVRP_ExactlyOneSolution.mzn", "data_file": "../data/mzn-challenge/2024/tiny-cvrp/medium_instance_06.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:25:59.802189", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0229, task  0  0 [1864026]: mask 0xffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 2664, "flatIntVars": 1513, "flatBoolConstraints": 3080, "flatIntConstraints": 2923, "evaluatedReifiedConstraints": 232, "evaluatedHalfReifiedConstraints": 2600, "eliminatedImplications": 1436, "method": "minimize", "flatTime": 0.352151}}
+{"type": "comment", "comment": "%% File /tmp/mznfileGDaD6m.fzn parsed in 38 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileGDaD6m\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 368\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 4\n"}
+{"type": "comment", "comment": "%%   - array_int_maximum: 56\n"}
+{"type": "comment", "comment": "%%   - array_var_int_element: 4\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 2712\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 2600\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 116\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 19\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 4\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 56\n"}
+{"type": "comment", "comment": "%%   - int_max: 4\n"}
+{"type": "comment", "comment": "%%   - int_ne_reif: 56\n"}
+{"type": "comment", "comment": "%%   - set_in_reif: 4\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "solution", "output": {"json": {  "visit" : [[1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0], [1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0], [1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0]],  "order" : [[1, 0, 2, 3, 0, 4, 0, 0, 0, 0, 0, 0, 5, 0, 0, 6], [1, 0, 0, 0, 0, 0, 0, 2, 3, 0, 0, 4, 0, 0, 5, 6], [1, 0, 0, 0, 2, 0, 0, 0, 0, 3, 4, 0, 0, 0, 0, 5], [1, 2, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 4, 0, 5]],  "_objective" : 1585}}, "sections": ["json"], "time": 188926}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 188926}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 1585, "objectiveBound": 1585, "boolVariables": 1061, "failures": 0, "propagations": 21670, "solveTime": 188.487}}

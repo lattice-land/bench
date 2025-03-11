@@ -1,0 +1,27 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_trains_trains18_timeout1200000ms", "problem": "train-scheduling", "model": "../data/mzn-challenge/2024/train-scheduling/trains.mzn", "data_file": "../data/mzn-challenge/2024/train-scheduling/trains18.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:45:08.801540", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [117621]: mask 0x2 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 178, "flatIntVars": 421, "flatBoolConstraints": 82, "flatIntConstraints": 476, "evaluatedReifiedConstraints": 40, "evaluatedHalfReifiedConstraints": 110, "eliminatedImplications": 82, "method": "minimize", "flatTime": 0.208463}}
+{"type": "comment", "comment": "%% File /tmp/mznfilei8ZILw.fzn parsed in 5 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'array_int_element: rewrite as a 2d element' was applied 16 times\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 24 times\n"}
+{"type": "comment", "comment": "%%   - rule 'int_lin_eq: store 2d flattening mapping' was applied 32 times\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfilei8ZILw\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 6\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 64\n"}
+{"type": "comment", "comment": "%%   - array_var_int_element: 32\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 76\n"}
+{"type": "comment", "comment": "%%   - fzn_all_different_int: 1\n"}
+{"type": "comment", "comment": "%%   - fzn_disjunctive: 8\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 88\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 6\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 99\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq_imp: 22\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 82\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 6\n"}
+{"type": "comment", "comment": "%%   - set_in_reif: 28\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1200317}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

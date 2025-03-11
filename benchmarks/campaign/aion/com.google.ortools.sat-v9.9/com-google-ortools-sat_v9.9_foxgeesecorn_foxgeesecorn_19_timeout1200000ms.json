@@ -1,0 +1,25 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_foxgeesecorn_foxgeesecorn_19_timeout1200000ms", "problem": "fox-geese-corn", "model": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn.mzn", "data_file": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn_19.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T09:05:43.786866", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [121771]: mask 0x40 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 1213, "flatIntVars": 1085, "flatBoolConstraints": 586, "flatIntConstraints": 1912, "evaluatedReifiedConstraints": 277, "evaluatedHalfReifiedConstraints": 1006, "eliminatedImplications": 344, "method": "maximize", "flatTime": 0.147867}}
+{"type": "comment", "comment": "%% File /tmp/mznfileZ3GiOs.fzn parsed in 21 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 105 times\n"}
+{"type": "comment", "comment": "%%   - rule 'int_lin_eq: store affine mapping' was applied 103 times\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileZ3GiOs\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 70\n"}
+{"type": "comment", "comment": "%%   - array_bool_element: 102\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 35\n"}
+{"type": "comment", "comment": "%%   - array_var_int_element: 108\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 516\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 455\n"}
+{"type": "comment", "comment": "%%   - int_le_imp: 70\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 241\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq_imp: 379\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 140\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 175\n"}
+{"type": "comment", "comment": "%%   - set_in_reif: 102\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1200267}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

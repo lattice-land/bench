@@ -1,0 +1,19 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_concert-hall-cap_concert_100_20_timeout1200000ms", "problem": "concert-hall-cap", "model": "../data/mzn-challenge/2024/concert-hall-cap/concert-hall-cap.mzn", "data_file": "../data/mzn-challenge/2024/concert-hall-cap/concert_100_20.json", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T09:22:27.296558", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [123687]: mask 0x2000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 2098, "flatIntVars": 6561, "flatIntConstraints": 10539, "evaluatedReifiedConstraints": 2098, "method": "maximize", "flatTime": 0.975448}}
+{"type": "comment", "comment": "%% File /tmp/mznfilebyuHIi.fzn parsed in 98 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'array_int_element: reduce array' was applied 740 times\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 2098 times\n"}
+{"type": "comment", "comment": "%%   - done in 3 ms\n"}
+{"type": "comment", "comment": "%% Model mznfilebyuHIi\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 1980\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 1980\n"}
+{"type": "comment", "comment": "%%   - int_le_reif: 118\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 383\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 1980\n"}
+{"type": "comment", "comment": "%%   - int_max: 2000\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1201144}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

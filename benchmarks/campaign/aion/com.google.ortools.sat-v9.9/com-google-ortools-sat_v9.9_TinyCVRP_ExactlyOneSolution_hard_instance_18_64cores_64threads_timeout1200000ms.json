@@ -1,0 +1,24 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_TinyCVRP_ExactlyOneSolution_hard_instance_18_64cores_64threads_timeout1200000ms", "problem": "tiny-cvrp", "model": "../data/mzn-challenge/2024/tiny-cvrp/TinyCVRP_ExactlyOneSolution.mzn", "data_file": "../data/mzn-challenge/2024/tiny-cvrp/hard_instance_18.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:25:52.615739", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0228, task  0  0 [1751644]: mask 0xffffffffffffffff0000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 8664, "flatIntVars": 4657, "flatBoolConstraints": 10064, "flatIntConstraints": 9127, "evaluatedReifiedConstraints": 424, "evaluatedHalfReifiedConstraints": 8552, "eliminatedImplications": 4532, "method": "minimize", "flatTime": 1.09202}}
+{"type": "comment", "comment": "%% File /tmp/mznfileiddd50.fzn parsed in 119 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 1 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileiddd50\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 1304\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 4\n"}
+{"type": "comment", "comment": "%%   - array_int_maximum: 104\n"}
+{"type": "comment", "comment": "%%   - array_var_int_element: 4\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 8760\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 8552\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 212\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 31\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 4\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 104\n"}
+{"type": "comment", "comment": "%%   - int_max: 4\n"}
+{"type": "comment", "comment": "%%   - int_ne_reif: 104\n"}
+{"type": "comment", "comment": "%%   - set_in_reif: 4\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1201456}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

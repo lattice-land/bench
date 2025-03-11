@@ -1,0 +1,18 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_community-detection_Zakhary.s12.k3_timeout1200000ms", "problem": "community-detection", "model": "../data/mzn-challenge/2024/community-detection/community-detection.mzn", "data_file": "../data/mzn-challenge/2024/community-detection/Zakhary.s12.k3.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:59:25.809911", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [119878]: mask 0x400 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 493, "flatIntVars": 560, "flatIntConstraints": 1063, "evaluatedReifiedConstraints": 493, "method": "maximize", "flatTime": 0.174119}}
+{"type": "comment", "comment": "%% File /tmp/mznfileI13zZf.fzn parsed in 8 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 493 times\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileI13zZf\n"}
+{"type": "comment", "comment": "%%   - array_int_maximum: 1\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 493\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 4\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 32\n"}
+{"type": "comment", "comment": "%%   - int_lin_ne: 6\n"}
+{"type": "comment", "comment": "%%   - int_max: 34\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1200285}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

@@ -1,0 +1,21 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_concert-hall-cap_concert-cap.mznc2018.04_64cores_64threads_timeout1200000ms", "problem": "concert-hall-cap", "model": "../data/mzn-challenge/2024/concert-hall-cap/concert-hall-cap.mzn", "data_file": "../data/mzn-challenge/2024/concert-hall-cap/concert-cap.mznc2018.04.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:26:36.925717", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0232, task  0  0 [1741889]: mask 0xffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 340, "flatIntVars": 731, "flatIntConstraints": 1186, "evaluatedReifiedConstraints": 340, "method": "maximize", "flatTime": 0.592949}}
+{"type": "comment", "comment": "%% File /tmp/mznfile0W0Rqk.fzn parsed in 9 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'array_int_element: reduce array' was applied 75 times\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 340 times\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfile0W0Rqk\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 150\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 300\n"}
+{"type": "comment", "comment": "%%   - int_le_reif: 40\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 61\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 145\n"}
+{"type": "comment", "comment": "%%   - int_max: 150\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "solution", "output": {"default": "assign = [0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 5, 7, 8, 6, 0, 0, 0, 9, 0, 0, 0, 10, 6, 7, 8, 4, 3, 2, 1, 0];\nobjective = 36778;\n", "raw": "assign = [0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 5, 7, 8, 6, 0, 0, 0, 9, 0, 0, 0, 10, 6, 7, 8, 4, 3, 2, 1, 0];\nobjective = 36778;\n", "json": {  "assign" : [0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 5, 7, 8, 6, 0, 0, 0, 9, 0, 0, 0, 10, 6, 7, 8, 4, 3, 2, 1, 0],  "objective" : 36778,  "_objective" : 36778}}, "sections": ["default", "raw", "json"], "time": 699}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 699}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 36778, "objectiveBound": 36778, "boolVariables": 0, "failures": 0, "propagations": 0, "solveTime": 0.0748717}}

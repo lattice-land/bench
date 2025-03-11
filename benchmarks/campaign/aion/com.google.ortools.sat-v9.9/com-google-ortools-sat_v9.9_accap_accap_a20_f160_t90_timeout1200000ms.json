@@ -1,0 +1,14 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_accap_accap_a20_f160_t90_timeout1200000ms", "problem": "accap", "model": "../data/mzn-challenge/2024/accap/accap.mzn", "data_file": "../data/mzn-challenge/2024/accap/accap_a20_f160_t90.json", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:27:30.752774", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [114810]: mask 0x800 set
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 182, "flatIntConstraints": 1408, "method": "minimize", "flatTime": 0.160239}}
+{"type": "comment", "comment": "%% File /tmp/mznfilen0BqEr.fzn parsed in 7 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfilen0BqEr\n"}
+{"type": "comment", "comment": "%%   - fzn_diffn: 1\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 1\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 1406\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1200270}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

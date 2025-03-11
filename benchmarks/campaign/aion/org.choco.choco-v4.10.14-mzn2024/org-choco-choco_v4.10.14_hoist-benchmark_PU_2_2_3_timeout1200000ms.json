@@ -1,0 +1,9 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.14_hoist-benchmark_PU_2_2_3_timeout1200000ms", "problem": "hoist-benchmark", "model": "../data/mzn-challenge/2024/hoist-benchmark/hoist-benchmark.mzn", "data_file": "../data/mzn-challenge/2024/hoist-benchmark/PU_2_2_3.dzn", "mzn_solver": "org.choco.choco", "version": "v4.10.14", "timeout_ms": "1200000", "datetime": "2025-03-11T08:45:25.340769", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0155, task  0  0 [2480466]: mask 0x4000 set
+{"type": "warning", "location": {"filename": "/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/data/mzn-challenge/2024/hoist-benchmark/hoist-benchmark.mzn", "firstLine": 102, "firstColumn": 50, "lastLine": 102, "lastColumn": 53}, "message": "variable `k` shadows variable with the same name in line 102.66"}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 1983, "flatIntVars": 97, "flatBoolConstraints": 900, "flatIntConstraints": 1805, "evaluatedHalfReifiedConstraints": 1683, "method": "minimize", "flatTime": 0.235589}}
+{"type": "comment", "comment": "%% Choco 231102\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1201340}
+{"type": "statistics", "statistics": {"initTime": 0.849, "solveTime": 1200.029, "solutions": 0, "variables": 2159, "constraints": 2705, "nodes": 11637609, "failures": 11637597, "restarts": 0}}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

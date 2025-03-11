@@ -1,0 +1,19 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_aircraft_B737NG-600-04-Anon.json_timeout1200000ms", "problem": "aircraft-disassembly", "model": "../data/mzn-challenge/2024/aircraft-disassembly/aircraft.mzn", "data_file": "../data/mzn-challenge/2024/aircraft-disassembly/B737NG-600-04-Anon.json.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:46:12.507730", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [118211]: mask 0x8 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 11289, "flatIntVars": 2576, "flatBoolConstraints": 31965, "flatIntConstraints": 11301, "evaluatedReifiedConstraints": 6537, "evaluatedHalfReifiedConstraints": 1836, "method": "minimize", "flatTime": 1.25815}}
+{"type": "comment", "comment": "%% File /tmp/mznfile6cpnCq.fzn parsed in 234 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 2520 times\n"}
+{"type": "comment", "comment": "%%   - done in 10 ms\n"}
+{"type": "comment", "comment": "%% Model mznfile6cpnCq\n"}
+{"type": "comment", "comment": "%%   - array_int_maximum: 1\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 31965\n"}
+{"type": "comment", "comment": "%%   - fzn_cumulative: 7\n"}
+{"type": "comment", "comment": "%%   - int_le_imp: 1836\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 67\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 1558\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 5312\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1201519}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

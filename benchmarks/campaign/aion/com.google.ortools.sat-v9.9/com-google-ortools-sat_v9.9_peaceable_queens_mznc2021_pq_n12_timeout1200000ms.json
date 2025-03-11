@@ -1,0 +1,22 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_peaceable_queens_mznc2021_pq_n12_timeout1200000ms", "problem": "peacable_queens", "model": "../data/mzn-challenge/2024/peacable_queens/peaceable_queens_mznc2021.mzn", "data_file": "../data/mzn-challenge/2024/peacable_queens/pq_n12.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T09:25:19.676235", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [125004]: mask 0x80 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 4482, "flatIntVars": 433, "flatBoolConstraints": 4462, "flatIntConstraints": 2608, "evaluatedReifiedConstraints": 3232, "evaluatedHalfReifiedConstraints": 143, "method": "maximize", "flatTime": 0.729316}}
+{"type": "comment", "comment": "%% File /tmp/mznfile3dvf1U.fzn parsed in 53 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 288 times\n"}
+{"type": "comment", "comment": "%%   - done in 1 ms\n"}
+{"type": "comment", "comment": "%% Model mznfile3dvf1U\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 970\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 3348\n"}
+{"type": "comment", "comment": "%%   - bool_eq_reif: 144\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 288\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 2\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 4\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 1816\n"}
+{"type": "comment", "comment": "%%   - int_ne: 1\n"}
+{"type": "comment", "comment": "%%   - int_ne_imp: 143\n"}
+{"type": "comment", "comment": "%%   - ortools_regular: 66\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1200873}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

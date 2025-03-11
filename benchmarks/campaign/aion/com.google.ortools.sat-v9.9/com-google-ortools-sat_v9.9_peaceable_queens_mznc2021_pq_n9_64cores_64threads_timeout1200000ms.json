@@ -1,0 +1,22 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_peaceable_queens_mznc2021_pq_n9_64cores_64threads_timeout1200000ms", "problem": "peacable_queens", "model": "../data/mzn-challenge/2024/peacable_queens/peaceable_queens_mznc2021.mzn", "data_file": "../data/mzn-challenge/2024/peacable_queens/pq_n9.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:29:09.330064", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0229, task  0  0 [1864657]: mask 0xffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 2610, "flatIntVars": 244, "flatBoolConstraints": 2699, "flatIntConstraints": 1474, "evaluatedReifiedConstraints": 1865, "evaluatedHalfReifiedConstraints": 80, "method": "maximize", "flatTime": 0.425201}}
+{"type": "comment", "comment": "%% File /tmp/mznfilerdt1s0.fzn parsed in 30 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 162 times\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfilerdt1s0\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 592\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 2026\n"}
+{"type": "comment", "comment": "%%   - bool_eq_reif: 81\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 162\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 2\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 5\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 1014\n"}
+{"type": "comment", "comment": "%%   - int_ne: 1\n"}
+{"type": "comment", "comment": "%%   - int_ne_imp: 80\n"}
+{"type": "comment", "comment": "%%   - ortools_regular: 48\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1200603}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

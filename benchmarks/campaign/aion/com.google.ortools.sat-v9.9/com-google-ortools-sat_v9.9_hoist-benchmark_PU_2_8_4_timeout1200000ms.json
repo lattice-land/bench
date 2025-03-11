@@ -1,0 +1,17 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_hoist-benchmark_PU_2_8_4_timeout1200000ms", "problem": "hoist-benchmark", "model": "../data/mzn-challenge/2024/hoist-benchmark/hoist-benchmark.mzn", "data_file": "../data/mzn-challenge/2024/hoist-benchmark/PU_2_8_4.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:45:43.065260", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0104, task  0  0 [118018]: mask 0x40 set
+{"type": "warning", "location": {"filename": "/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/data/mzn-challenge/2024/hoist-benchmark/hoist-benchmark.mzn", "firstLine": 102, "firstColumn": 50, "lastLine": 102, "lastColumn": 53}, "message": "variable `k` shadows variable with the same name in line 102.66"}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 2086, "flatIntVars": 97, "flatBoolConstraints": 900, "flatIntConstraints": 1908, "evaluatedHalfReifiedConstraints": 1786, "method": "minimize", "flatTime": 0.235435}}
+{"type": "comment", "comment": "%% File /tmp/mznfileGvaEmF.fzn parsed in 23 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileGvaEmF\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 300\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 600\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 98\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_imp: 1786\n"}
+{"type": "comment", "comment": "%%   - int_times: 24\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1200356}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

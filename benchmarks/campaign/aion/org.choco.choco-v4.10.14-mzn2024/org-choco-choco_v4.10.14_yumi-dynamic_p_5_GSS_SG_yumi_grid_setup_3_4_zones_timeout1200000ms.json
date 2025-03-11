@@ -1,0 +1,9 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.14_yumi-dynamic_p_5_GSS_SG_yumi_grid_setup_3_4_zones_timeout1200000ms", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_5_GSS_SG_yumi_grid_setup_3_4_zones.dzn", "mzn_solver": "org.choco.choco", "version": "v4.10.14", "timeout_ms": "1200000", "datetime": "2025-03-11T09:45:34.174483", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0155, task  0  0 [2491285]: mask 0x800 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 100, "flatIntVars": 1588, "flatBoolConstraints": 28, "flatIntConstraints": 1776, "evaluatedReifiedConstraints": 92, "evaluatedHalfReifiedConstraints": 6, "method": "minimize", "flatTime": 1.19045}}
+{"type": "comment", "comment": "%% Choco 231102\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1202394}
+{"type": "statistics", "statistics": {"initTime": 1.463, "solveTime": 1199.51, "solutions": 0, "variables": 3838, "constraints": 1830, "nodes": 100276, "failures": 100238, "restarts": 0}}
+{"type": "comment", "comment": "%% Unexpected resolution interruption!\n"}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

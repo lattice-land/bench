@@ -1,0 +1,16 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_accap_accap_a10_f80_t50_64cores_64threads_timeout1200000ms", "problem": "accap", "model": "../data/mzn-challenge/2024/accap/accap.mzn", "data_file": "../data/mzn-challenge/2024/accap/accap_a10_f80_t50.json", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T08:25:17.296604", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0226, task  0  0 [1908937]: mask 0xffffffffffffffff0000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 92, "flatIntConstraints": 732, "method": "minimize", "flatTime": 0.353728}}
+{"type": "comment", "comment": "%% File /tmp/mznfileeQ84Cv.fzn parsed in 3 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileeQ84Cv\n"}
+{"type": "comment", "comment": "%%   - fzn_diffn: 1\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 1\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 730\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "solution", "output": {"default": "yCoor = [3, 4, 4, 10, 10, 16, 22, 1, 7, 32, 20, 20, 14, 34, 33, 20, 7, 18, 21, 24, 20, 35, 1, 26, 24, 16, 37, 26, 17, 20, 16, 24, 8, 7, 5, 10, 27, 21, 26, 4, 17, 28, 33, 35, 37, 1, 16, 36, 37, 11, 15, 29, 17, 10, 1, 20, 10, 10, 1, 31, 1, 7, 23, 4, 37, 1, 24, 17, 14, 10, 31, 15, 39, 38, 28, 34, 16, 24, 10, 26];\nS = [6, 10, 7, 7, 4, 7, 6, 14, 2, 4];\nD = 41;\nobjective = 108;\n", "raw": "yCoor = [3, 4, 4, 10, 10, 16, 22, 1, 7, 32, 20, 20, 14, 34, 33, 20, 7, 18, 21, 24, 20, 35, 1, 26, 24, 16, 37, 26, 17, 20, 16, 24, 8, 7, 5, 10, 27, 21, 26, 4, 17, 28, 33, 35, 37, 1, 16, 36, 37, 11, 15, 29, 17, 10, 1, 20, 10, 10, 1, 31, 1, 7, 23, 4, 37, 1, 24, 17, 14, 10, 31, 15, 39, 38, 28, 34, 16, 24, 10, 26];\nS = [6, 10, 7, 7, 4, 7, 6, 14, 2, 4];\nD = 41;\nobjective = 108;\n", "json": {  "yCoor" : [3, 4, 4, 10, 10, 16, 22, 1, 7, 32, 20, 20, 14, 34, 33, 20, 7, 18, 21, 24, 20, 35, 1, 26, 24, 16, 37, 26, 17, 20, 16, 24, 8, 7, 5, 10, 27, 21, 26, 4, 17, 28, 33, 35, 37, 1, 16, 36, 37, 11, 15, 29, 17, 10, 1, 20, 10, 10, 1, 31, 1, 7, 23, 4, 37, 1, 24, 17, 14, 10, 31, 15, 39, 38, 28, 34, 16, 24, 10, 26],  "objective" : 108,  "S" : [6, 10, 7, 7, 4, 7, 6, 14, 2, 4],  "D" : 41,  "_objective" : 108}}, "sections": ["default", "raw", "json"], "time": 27714}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 27714}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 108, "objectiveBound": 108, "boolVariables": 0, "failures": 0, "propagations": 0, "solveTime": 27.3207}}
