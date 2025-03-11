@@ -1,7 +1,0 @@
-{"type": "lattice-land", "lattice-land": "start"}
-{"type": "statistics", "statistics": {"configuration": "turbo-cpu-release_v1.2.7_cpu_ac1_test-scheduling_t500m50r10-8_timeout0ms", "problem": "test-scheduling", "model": "../data/mzn-challenge/2023/test-scheduling/test-scheduling.mzn", "data_file": "../data/mzn-challenge/2023/test-scheduling/t500m50r10-8.dzn", "mzn_solver": "turbo.cpu.release", "version": "v1.2.7", "timeout_ms": "0", "datetime": "2025-02-28T05:14:29.424786", "status": "UNKNOWN", "cores": "1", "threads": "1", "arch": "cpu", "fixpoint": "ac1", "wac1_threshold": "0"}}
-cpu-bind=MASK - aion-0094, task  0  0 [1177557]: mask 0x1 set
-{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 6373957, "flatIntVars": 13763590, "flatBoolConstraints": 2119866, "flatIntConstraints": 18050561, "evaluatedReifiedConstraints": 4263849, "method": "minimize", "flatTime": 729.229}}
-{"type": "status", "status": "ERROR", "time": 2776811}
-{"type": "statistics", "statistics": {"nSolutions": 0}}
-srun: error: aion-0094: task 0: Exited with exit code 1
