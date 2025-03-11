@@ -71,8 +71,8 @@ Shell debugging restarted
 + MZN_COMMAND='minizinc --solver com.google.ortools.sat -s --json-stream -t 1200000 -f --output-mode json --output-time --output-objective -p 64'
 + OUTPUT_DIR=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc/../../campaign/aion/com.google.ortools.sat-v9.9
 + mkdir -p /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc/../../campaign/aion/com.google.ortools.sat-v9.9
-+ '[' -n 'aion-[0225-0230,0232-0235]' ']'
++ '[' -n 'aion-[0123,0128]' ']'
 + SRUN_COMMAND='srun --exclusive --cpus-per-task=64 --nodes=1 --ntasks=1 --cpu-bind=verbose'
-+ NUM_PARALLEL_EXPERIMENTS=20
++ NUM_PARALLEL_EXPERIMENTS=4
 + DUMP_PY_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc/dump.py
 + cp -r /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/minizinc/../../campaign/aion/com.google.ortools.sat-v9.9/

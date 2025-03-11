@@ -1,6 +1,6 @@
 #!/bin/bash -l
 #SBATCH --time=02:00:00
-#SBATCH --nodes=10
+#SBATCH --nodes=2
 #SBATCH --partition=batch
 #SBATCH --ntasks-per-node=2 # when benchmarking sequential solver, we still book the whole node to avoid possible interference.
 #SBATCH -c 64

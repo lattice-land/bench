@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH --time=02:00:00
 #SBATCH --partition=batch
-#SBATCH --nodes=10
+#SBATCH --nodes=2
 #SBATCH --exclusive
 #SBATCH --ntasks-per-node=2
 #SBATCH --mem=0

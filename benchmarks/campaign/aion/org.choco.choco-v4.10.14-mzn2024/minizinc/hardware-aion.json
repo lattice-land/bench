@@ -1,5 +1,5 @@
 {
-  "id" : "aion-0158",
+  "id" : "aion-0033",
   "class" : "system",
   "claimed" : true,
   "description" : "Computer",
@@ -35,7 +35,7 @@
           "businfo" : "cpu@0",
           "version" : "23.49.0",
           "units" : "Hz",
-          "size" : 1799811000,
+          "size" : 2431887000,
           "capacity" : 2600000000,
           "width" : 64,
           "configuration" : {
@@ -187,7 +187,7 @@
           "businfo" : "cpu@1",
           "version" : "23.49.0",
           "units" : "Hz",
-          "size" : 1794913000,
+          "size" : 1647647000,
           "capacity" : 2600000000,
           "width" : 64,
           "configuration" : {
@@ -1629,7 +1629,7 @@
                     "driverversion" : "24.07-0.6.1",
                     "duplex" : "full",
                     "firmware" : "20.33.1048 (BL_12001644)",
-                    "ip" : "172.19.12.74",
+                    "ip" : "172.19.11.33",
                     "latency" : "0",
                     "link" : "yes",
                     "multicast" : "yes"
@@ -1664,63 +1664,13 @@
                 "normal_decode" : true,
                 "bus_master" : "bus mastering",
                 "cap_list" : "PCI capabilities listing"
-              },
-              "children" : [
-                {
-                  "id" : "pci",
-                  "class" : "bridge",
-                  "claimed" : true,
-                  "handle" : "PCIBUS:0000:63",
-                  "description" : "PCI bridge",
-                  "product" : "AST1150 PCI-to-PCI Bridge",
-                  "vendor" : "ASPEED Technology, Inc.",
-                  "physid" : "0",
-                  "businfo" : "pci@0000:62:00.0",
-                  "version" : "04",
-                  "width" : 32,
-                  "clock" : 33000000,
-                  "capabilities" : {
-                    "pci" : true,
-                    "normal_decode" : true,
-                    "bus_master" : "bus mastering",
-                    "cap_list" : "PCI capabilities listing"
-                  },
-                  "children" : [
-                    {
-                      "id" : "display",
-                      "class" : "display",
-                      "claimed" : true,
-                      "handle" : "PCI:0000:63:00.0",
-                      "description" : "VGA compatible controller",
-                      "product" : "ASPEED Graphics Family",
-                      "vendor" : "ASPEED Technology, Inc.",
-                      "physid" : "0",
-                      "businfo" : "pci@0000:63:00.0",
-                      "logicalname" : "/dev/fb0",
-                      "version" : "41",
-                      "width" : 32,
-                      "clock" : 33000000,
-                      "configuration" : {
-                        "depth" : "32",
-                        "driver" : "ast",
-                        "latency" : "0",
-                        "resolution" : "1024,768"
-                      },
-                      "capabilities" : {
-                        "vga_controller" : true,
-                        "cap_list" : "PCI capabilities listing",
-                        "fb" : "framebuffer"
-                      }
-                    }
-                  ]
-                }
-              ]
+              }
             },
             {
               "id" : "pci:2",
               "class" : "bridge",
               "claimed" : true,
-              "handle" : "PCIBUS:0000:64",
+              "handle" : "PCIBUS:0000:63",
               "description" : "PCI bridge",
               "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
               "vendor" : "Advanced Micro Devices, Inc. [AMD]",
@@ -1742,9 +1692,76 @@
                 {
                   "id" : "generic:0",
                   "class" : "generic",
-                  "handle" : "PCI:0000:64:00.0",
+                  "handle" : "PCI:0000:63:00.0",
                   "description" : "Non-Essential Instrumentation",
                   "product" : "Starship/Matisse PCIe Dummy Function",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0",
+                  "businfo" : "pci@0000:63:00.0",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                },
+                {
+                  "id" : "generic:1",
+                  "class" : "generic",
+                  "claimed" : true,
+                  "handle" : "PCI:0000:63:00.2",
+                  "description" : "Encryption controller",
+                  "product" : "Starship/Matisse PTDMA",
+                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+                  "physid" : "0.2",
+                  "businfo" : "pci@0000:63:00.2",
+                  "version" : "00",
+                  "width" : 32,
+                  "clock" : 33000000,
+                  "configuration" : {
+                    "driver" : "ptdma",
+                    "latency" : "0"
+                  },
+                  "capabilities" : {
+                    "bus_master" : "bus mastering",
+                    "cap_list" : "PCI capabilities listing"
+                  }
+                }
+              ]
+            },
+            {
+              "id" : "pci:3",
+              "class" : "bridge",
+              "claimed" : true,
+              "handle" : "PCIBUS:0000:64",
+              "description" : "PCI bridge",
+              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
+              "physid" : "8.1",
+              "businfo" : "pci@0000:60:08.1",
+              "version" : "00",
+              "width" : 32,
+              "clock" : 33000000,
+              "configuration" : {
+                "driver" : "pcieport"
+              },
+              "capabilities" : {
+                "pci" : true,
+                "normal_decode" : true,
+                "bus_master" : "bus mastering",
+                "cap_list" : "PCI capabilities listing"
+              },
+              "children" : [
+                {
+                  "id" : "generic:0",
+                  "class" : "generic",
+                  "handle" : "PCI:0000:64:00.0",
+                  "description" : "Non-Essential Instrumentation",
+                  "product" : "Starship/Matisse Reserved SPP",
                   "vendor" : "Advanced Micro Devices, Inc. [AMD]",
                   "physid" : "0",
                   "businfo" : "pci@0000:64:00.0",
@@ -1769,73 +1786,6 @@
                   "vendor" : "Advanced Micro Devices, Inc. [AMD]",
                   "physid" : "0.2",
                   "businfo" : "pci@0000:64:00.2",
-                  "version" : "00",
-                  "width" : 32,
-                  "clock" : 33000000,
-                  "configuration" : {
-                    "driver" : "ptdma",
-                    "latency" : "0"
-                  },
-                  "capabilities" : {
-                    "bus_master" : "bus mastering",
-                    "cap_list" : "PCI capabilities listing"
-                  }
-                }
-              ]
-            },
-            {
-              "id" : "pci:3",
-              "class" : "bridge",
-              "claimed" : true,
-              "handle" : "PCIBUS:0000:65",
-              "description" : "PCI bridge",
-              "product" : "Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
-              "vendor" : "Advanced Micro Devices, Inc. [AMD]",
-              "physid" : "8.1",
-              "businfo" : "pci@0000:60:08.1",
-              "version" : "00",
-              "width" : 32,
-              "clock" : 33000000,
-              "configuration" : {
-                "driver" : "pcieport"
-              },
-              "capabilities" : {
-                "pci" : true,
-                "normal_decode" : true,
-                "bus_master" : "bus mastering",
-                "cap_list" : "PCI capabilities listing"
-              },
-              "children" : [
-                {
-                  "id" : "generic:0",
-                  "class" : "generic",
-                  "handle" : "PCI:0000:65:00.0",
-                  "description" : "Non-Essential Instrumentation",
-                  "product" : "Starship/Matisse Reserved SPP",
-                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
-                  "physid" : "0",
-                  "businfo" : "pci@0000:65:00.0",
-                  "version" : "00",
-                  "width" : 32,
-                  "clock" : 33000000,
-                  "configuration" : {
-                    "latency" : "0"
-                  },
-                  "capabilities" : {
-                    "bus_master" : "bus mastering",
-                    "cap_list" : "PCI capabilities listing"
-                  }
-                },
-                {
-                  "id" : "generic:1",
-                  "class" : "generic",
-                  "claimed" : true,
-                  "handle" : "PCI:0000:65:00.2",
-                  "description" : "Encryption controller",
-                  "product" : "Starship/Matisse PTDMA",
-                  "vendor" : "Advanced Micro Devices, Inc. [AMD]",
-                  "physid" : "0.2",
-                  "businfo" : "pci@0000:65:00.2",
                   "version" : "00",
                   "width" : 32,
                   "clock" : 33000000,
@@ -2894,7 +2844,7 @@
                   "businfo" : "pci@0000:e1:00.0",
                   "logicalname" : "enp225s0f0",
                   "version" : "01",
-                  "serial" : "08:00:38:b9:85:b3",
+                  "serial" : "08:00:38:b9:89:87",
                   "units" : "bit/s",
                   "size" : 1000000000,
                   "width" : 32,
@@ -2906,7 +2856,7 @@
                     "driverversion" : "4.18.0-553.34.1.el8_10.x86_64",
                     "duplex" : "full",
                     "firmware" : "1.63.0",
-                    "ip" : "172.21.12.74",
+                    "ip" : "172.21.11.33",
                     "latency" : "0",
                     "link" : "yes",
                     "multicast" : "yes",

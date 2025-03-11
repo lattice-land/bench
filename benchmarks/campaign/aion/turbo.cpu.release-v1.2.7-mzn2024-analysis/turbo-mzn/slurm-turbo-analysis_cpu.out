@@ -91,8 +91,8 @@ Shell debugging restarted
 + MZN_COMMAND='minizinc --solver turbo.cpu.release -s --json-stream --output-mode json --output-time --output-objective -p 1 -arch cpu -network_analysis -cutnodes 1 -hardware aion -version v1.2.7'
 + OUTPUT_DIR=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/aion/turbo.cpu.release-v1.2.7-mzn2024-analysis
 + mkdir -p /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/aion/turbo.cpu.release-v1.2.7-mzn2024-analysis
-+ '[' -n 'aion-[0052-0054,0073,0078-0083]' ']'
++ '[' -n 'aion-[0001-0002]' ']'
 + SRUN_COMMAND='srun --exclusive --cpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose'
-+ NUM_PARALLEL_EXPERIMENTS=20
++ NUM_PARALLEL_EXPERIMENTS=4
 + DUMP_PY_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py
 + cp -r /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/aion/turbo.cpu.release-v1.2.7-mzn2024-analysis/

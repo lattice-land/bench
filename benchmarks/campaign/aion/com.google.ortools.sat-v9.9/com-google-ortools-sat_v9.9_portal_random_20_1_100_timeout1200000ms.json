@@ -3,3 +3,38 @@
 cpu-bind=MASK - aion-0105, task  0  0 [902040]: mask 0x1 set
 {"type": "error", "what": "type error", "location": {"filename": "/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/data/mzn-challenge/2024/portal/portal.mzn", "firstLine": 65, "firstColumn": 17, "lastLine": 65, "lastColumn": 47}, "message": "no function or predicate with name `string_split' found"}
 srun: error: aion-0105: task 0: Exited with exit code 1
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_portal_random_20_1_100_timeout1200000ms", "problem": "portal", "model": "../data/mzn-challenge/2024/portal/portal.mzn", "data_file": "../data/mzn-challenge/2024/portal/random_20_1_100.json", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-11T12:47:14.760992", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0122, task  0  0 [399845]: mask 0x20 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 9920, "flatIntVars": 2561, "flatBoolConstraints": 9136, "flatIntConstraints": 6289, "evaluatedReifiedConstraints": 4527, "evaluatedHalfReifiedConstraints": 1668, "eliminatedImplications": 690, "method": "minimize", "flatTime": 2.4212}}
+{"type": "comment", "comment": "%% File /tmp/mznfilePu7UFd.fzn parsed in 124 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'array_int_element: rewrite as a 2d element' was applied 293 times\n"}
+{"type": "comment", "comment": "%%   - rule 'array_int_element: simplify using affine mapping.' was applied 4 times\n"}
+{"type": "comment", "comment": "%%   - rule 'array_var_int_element: reduce array' was applied 1 time\n"}
+{"type": "comment", "comment": "%%   - rule 'int_lin_eq: store 2d flattening mapping' was applied 293 times\n"}
+{"type": "comment", "comment": "%%   - rule 'int_lin_eq: store affine mapping' was applied 2 times\n"}
+{"type": "comment", "comment": "%%   - done in 2 ms\n"}
+{"type": "comment", "comment": "%% Model mznfilePu7UFd\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 3040\n"}
+{"type": "comment", "comment": "%%   - array_bool_element: 99\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 688\n"}
+{"type": "comment", "comment": "%%   - array_int_minimum: 1\n"}
+{"type": "comment", "comment": "%%   - array_var_int_element: 1\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 5010\n"}
+{"type": "comment", "comment": "%%   - bool_eq_reif: 294\n"}
+{"type": "comment", "comment": "%%   - bool_not: 592\n"}
+{"type": "comment", "comment": "%%   - bool_xor: 200\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 978\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 1862\n"}
+{"type": "comment", "comment": "%%   - int_le_imp: 197\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 294\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq_imp: 196\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq_reif: 588\n"}
+{"type": "comment", "comment": "%%   - int_lin_ne_imp: 198\n"}
+{"type": "comment", "comment": "%%   - int_ne_imp: 99\n"}
+{"type": "comment", "comment": "%%   - int_ne_reif: 597\n"}
+{"type": "comment", "comment": "%%   - set_in_reif: 196\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1202765}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
