@@ -15,3 +15,20 @@ cpu-bind=MASK - aion-0104, task  0  0 [117926]: mask 0x8000 set
 {"type": "comment", "comment": "%%   - Minimization problem\n"}
 {"type": "status", "status": "UNKNOWN", "time": 1200481}
 {"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_hoist-benchmark_PU_3_2_1_timeout1200000ms", "problem": "hoist-benchmark", "model": "../data/mzn-challenge/2024/hoist-benchmark/hoist-benchmark.mzn", "data_file": "../data/mzn-challenge/2024/hoist-benchmark/PU_3_2_1.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-12T06:04:58.010937", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0212, task  0  0 [2635341]: mask 0x10 set
+{"type": "warning", "location": {"filename": "/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/data/mzn-challenge/2024/hoist-benchmark/hoist-benchmark.mzn", "firstLine": 102, "firstColumn": 50, "lastLine": 102, "lastColumn": 53}, "message": "variable `k` shadows variable with the same name in line 102.66"}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 4034, "flatIntVars": 145, "flatBoolConstraints": 1998, "flatIntConstraints": 3550, "evaluatedHalfReifiedConstraints": 3368, "method": "minimize", "flatTime": 0.346803}}
+{"type": "comment", "comment": "%% File /tmp/mznfileV8E3iE.fzn parsed in 46 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileV8E3iE\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 666\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 1332\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 146\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_imp: 3368\n"}
+{"type": "comment", "comment": "%%   - int_times: 36\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1200484}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

@@ -3,7 +3,7 @@
 #SBATCH --partition=batch
 #SBATCH --nodes=2
 #SBATCH --exclusive
-#SBATCH --ntasks-per-node=2
+#SBATCH --ntasks-per-node=1
 #SBATCH --mem=0
 #SBATCH --qos=normal
 #SBATCH --export=ALL
@@ -42,7 +42,7 @@ ARCH="cpu"
 CORES=1 # The number of core used on the node.
 THREADS=1 # The number of core used on the node.
 MACHINE=$(basename "$1" ".sh")
-INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024.csv"
+INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024_bigmem.csv"
 
 # II. Prepare the command lines and output directory.
 MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream --output-mode json --output-time --output-objective -p $THREADS -arch $ARCH -network_analysis -cutnodes 1 -hardware $MACHINE -version $VERSION"

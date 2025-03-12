@@ -18,3 +18,24 @@ cpu-bind=MASK - aion-0229, task  0  0 [1863787]: mask 0xffffffffffffffff set
 {"type": "status", "status": "OPTIMAL_SOLUTION", "time": 109}
 {"type": "statistics", "statistics": {"nSolutions": 1}}
 {"type": "statistics", "statistics": {"objective": 17, "objectiveBound": 17, "boolVariables": 0, "failures": 0, "propagations": 0, "solveTime": 0.0156612}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_neighbours-rect_neightbours-new-2_64cores_64threads_timeout1200000ms", "problem": "neighbours", "model": "../data/mzn-challenge/2024/neighbours/neighbours-rect.mzn", "data_file": "../data/mzn-challenge/2024/neighbours/neightbours-new-2.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-12T05:17:42.545970", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0193, task  0  0 [2591703]: mask 0xffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 134, "flatIntVars": 9, "flatBoolConstraints": 99, "flatIntConstraints": 102, "evaluatedReifiedConstraints": 66, "evaluatedHalfReifiedConstraints": 56, "method": "maximize", "flatTime": 0.211337}}
+{"type": "comment", "comment": "%% File /tmp/mznfilePZBfIZ.fzn parsed in 1 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfilePZBfIZ\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 18\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 81\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 32\n"}
+{"type": "comment", "comment": "%%   - int_le_imp: 24\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 1\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 3\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 42\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "statistics", "statistics": {"objective": 17, "objectiveBound": 27, "boolVariables": 55, "failures": 4, "propagations": 609, "solveTime": 0.0117377}}
+{"type": "solution", "output": {"default": "% 1 2\n% 4 3\n% 2 1\n% 3 1\nx = array2d(1..4,1..2,[1, 2, 4, 3, 2, 1, 3, 1]);\nobjective = 17;\n", "raw": "% 1 2\n% 4 3\n% 2 1\n% 3 1\nx = array2d(1..4,1..2,[1, 2, 4, 3, 2, 1, 3, 1]);\nobjective = 17;\n", "json": {  "x" : [[1, 2], [4, 3], [2, 1], [3, 1]],  "objective" : 17,  "_objective" : 17}}, "sections": ["default", "raw", "json"], "time": 240}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 246}
+{"type": "statistics", "statistics": {"nSolutions": 1}}
+{"type": "statistics", "statistics": {"objective": 17, "objectiveBound": 17, "boolVariables": 0, "failures": 0, "propagations": 0, "solveTime": 0.0177785}}

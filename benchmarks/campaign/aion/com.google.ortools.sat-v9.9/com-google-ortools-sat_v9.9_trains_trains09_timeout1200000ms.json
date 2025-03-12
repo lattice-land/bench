@@ -41,3 +41,8 @@ Single track F-G:
 {"type": "comment", "comment": "%%   - Minimization problem\n"}
 {"type": "status", "status": "UNKNOWN", "time": 1200339}
 {"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_trains_trains09_timeout1200000ms", "problem": "train-scheduling", "model": "../data/mzn-challenge/2024/train-scheduling/trains.mzn", "data_file": "../data/mzn-challenge/2024/train-scheduling/trains09.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-12T05:58:33.891488", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0212, task  0  0 [2634379]: mask 0x20 set
+{"type": "error", "what": "syntax error", "location": {"filename": "/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/data/mzn-challenge/2024/train-scheduling/trains.mzn", "firstLine": 47, "firstColumn": 74, "lastLine": 47, "lastColumn": 74}, "message": "syntax error, unexpected ','"}
+srun: error: aion-0212: task 0: Exited with exit code 1

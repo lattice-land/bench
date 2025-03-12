@@ -24,3 +24,52 @@ cpu-bind=MASK - aion-0229, task  0  0 [1863944]: mask 0xffffffffffffffff set
 {"type": "status", "status": "OPTIMAL_SOLUTION", "time": 5359}
 {"type": "statistics", "statistics": {"nSolutions": 1}}
 {"type": "statistics", "statistics": {"objective": 1299, "objectiveBound": 1299, "boolVariables": 763, "failures": 0, "propagations": 42184, "solveTime": 4.9863}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_TinyCVRP_ExactlyOneSolution_medium_instance_13_64cores_64threads_timeout1200000ms", "problem": "tiny-cvrp", "model": "../data/mzn-challenge/2024/tiny-cvrp/TinyCVRP_ExactlyOneSolution.mzn", "data_file": "../data/mzn-challenge/2024/tiny-cvrp/medium_instance_13.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-12T05:23:38.997780", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0187, task  0  0 [310178]: mask 0xffffffffffffffff0000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 1996, "flatIntVars": 1157, "flatBoolConstraints": 2308, "flatIntConstraints": 2225, "evaluatedReifiedConstraints": 200, "evaluatedHalfReifiedConstraints": 1944, "eliminatedImplications": 1088, "method": "minimize", "flatTime": 0.386438}}
+{"type": "comment", "comment": "%% File /tmp/mznfileA571eP.fzn parsed in 28 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileA571eP\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 268\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 4\n"}
+{"type": "comment", "comment": "%%   - array_int_maximum: 48\n"}
+{"type": "comment", "comment": "%%   - array_var_int_element: 4\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 2040\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 1944\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 100\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 17\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 4\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_reif: 48\n"}
+{"type": "comment", "comment": "%%   - int_max: 4\n"}
+{"type": "comment", "comment": "%%   - int_ne_reif: 48\n"}
+{"type": "comment", "comment": "%%   - set_in_reif: 4\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "statistics", "statistics": {"objective": 1811, "objectiveBound": 894, "boolVariables": 0, "failures": 0, "propagations": 0, "solveTime": 0.417995}}
+{"type": "solution", "output": {"json": {  "visit" : [[1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0], [1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1], [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]],  "order" : [[1, 0, 2, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 4], [1, 0, 0, 0, 0, 0, 0, 2, 0, 3, 0, 0, 0, 4], [1, 0, 0, 0, 0, 2, 3, 0, 4, 0, 5, 6, 7, 8], [1, 2, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]],  "_objective" : 1811}}, "sections": ["json"], "time": 871}
+{"type": "statistics", "statistics": {"objective": 1689, "objectiveBound": 894, "boolVariables": 0, "failures": 0, "propagations": 0, "solveTime": 0.444697}}
+{"type": "solution", "output": {"json": {  "visit" : [[1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0], [1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0], [1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1], [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],  "order" : [[1, 0, 2, 0, 0, 0, 3, 4, 0, 0, 0, 0, 0, 5], [1, 0, 0, 2, 0, 3, 0, 0, 4, 0, 0, 0, 0, 5], [1, 0, 0, 0, 2, 0, 0, 0, 0, 3, 4, 5, 6, 7], [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]],  "_objective" : 1689}}, "sections": ["json"], "time": 897}
+{"type": "statistics", "statistics": {"objective": 1658, "objectiveBound": 894, "boolVariables": 763, "failures": 0, "propagations": 42184, "solveTime": 0.484411}}
+{"type": "solution", "output": {"json": {  "visit" : [[1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0], [1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]],  "order" : [[1, 0, 2, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 4], [1, 0, 0, 2, 3, 0, 0, 0, 4, 0, 0, 0, 5, 6], [1, 0, 0, 0, 0, 0, 0, 2, 0, 3, 4, 5, 0, 6], [1, 2, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 4]],  "_objective" : 1658}}, "sections": ["json"], "time": 937}
+{"type": "statistics", "statistics": {"objective": 1619, "objectiveBound": 894, "boolVariables": 763, "failures": 0, "propagations": 42184, "solveTime": 0.488473}}
+{"type": "solution", "output": {"json": {  "visit" : [[1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0], [1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1], [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],  "order" : [[1, 0, 2, 0, 0, 0, 0, 3, 4, 0, 5, 0, 0, 6], [1, 0, 0, 2, 0, 3, 4, 0, 0, 0, 0, 0, 0, 5], [1, 0, 0, 0, 2, 0, 0, 0, 0, 3, 0, 4, 5, 6], [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]],  "_objective" : 1619}}, "sections": ["json"], "time": 941}
+{"type": "statistics", "statistics": {"objective": 1540, "objectiveBound": 894, "boolVariables": 763, "failures": 0, "propagations": 42184, "solveTime": 0.495246}}
+{"type": "solution", "output": {"json": {  "visit" : [[1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0], [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1], [1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0]],  "order" : [[1, 0, 2, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 4], [1, 0, 0, 2, 0, 0, 3, 0, 4, 0, 5, 0, 0, 6], [1, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 3, 4, 5], [1, 2, 0, 0, 0, 3, 0, 0, 0, 4, 0, 0, 0, 5]],  "_objective" : 1540}}, "sections": ["json"], "time": 947}
+{"type": "statistics", "statistics": {"objective": 1506, "objectiveBound": 894, "boolVariables": 763, "failures": 0, "propagations": 42184, "solveTime": 0.498858}}
+{"type": "solution", "output": {"json": {  "visit" : [[1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0], [1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]],  "order" : [[1, 0, 2, 0, 0, 0, 3, 0, 0, 4, 0, 0, 0, 5], [1, 0, 0, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 5], [1, 0, 0, 0, 0, 0, 0, 2, 0, 0, 3, 4, 5, 6], [1, 2, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 4]],  "_objective" : 1506}}, "sections": ["json"], "time": 951}
+{"type": "statistics", "statistics": {"objective": 1470, "objectiveBound": 894, "boolVariables": 763, "failures": 0, "propagations": 42184, "solveTime": 0.51271}}
+{"type": "solution", "output": {"json": {  "visit" : [[1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0], [1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0], [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]],  "order" : [[1, 0, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 5], [1, 0, 0, 0, 0, 2, 3, 0, 0, 4, 0, 5, 0, 6], [1, 0, 0, 0, 0, 0, 0, 2, 3, 0, 4, 0, 0, 5], [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 4]],  "_objective" : 1470}}, "sections": ["json"], "time": 967}
+{"type": "statistics", "statistics": {"objective": 1362, "objectiveBound": 900, "boolVariables": 775, "failures": 6, "propagations": 218146, "solveTime": 0.525052}}
+{"type": "solution", "output": {"json": {  "visit" : [[1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0], [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]],  "order" : [[1, 0, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 5], [1, 0, 0, 0, 0, 2, 3, 0, 0, 4, 0, 0, 0, 5], [1, 0, 0, 0, 0, 0, 0, 2, 3, 0, 4, 0, 0, 5], [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 5]],  "_objective" : 1362}}, "sections": ["json"], "time": 977}
+{"type": "statistics", "statistics": {"objective": 1340, "objectiveBound": 1028, "boolVariables": 804, "failures": 127, "propagations": 675819, "solveTime": 0.57421}}
+{"type": "solution", "output": {"json": {  "visit" : [[1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0], [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]],  "order" : [[1, 0, 2, 0, 4, 5, 0, 0, 0, 0, 0, 0, 0, 6], [1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 0, 5], [1, 0, 0, 0, 0, 0, 0, 2, 3, 0, 4, 0, 0, 5], [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 5]],  "_objective" : 1340}}, "sections": ["json"], "time": 1026}
+{"type": "statistics", "statistics": {"objective": 1332, "objectiveBound": 1030, "boolVariables": 832, "failures": 407, "propagations": 819633, "solveTime": 0.596293}}
+{"type": "solution", "output": {"json": {  "visit" : [[1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0], [1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0], [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]],  "order" : [[1, 0, 3, 0, 4, 5, 0, 0, 6, 0, 0, 0, 0, 7], [1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 0, 5], [1, 0, 0, 0, 0, 0, 0, 2, 0, 0, 4, 0, 0, 5], [1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 5, 6]],  "_objective" : 1332}}, "sections": ["json"], "time": 1048}
+{"type": "statistics", "statistics": {"objective": 1304, "objectiveBound": 1045, "boolVariables": 763, "failures": 0, "propagations": 42184, "solveTime": 0.6796180000000001}}
+{"type": "solution", "output": {"json": {  "visit" : [[1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0], [1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0], [1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0], [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]],  "order" : [[1, 0, 2, 0, 3, 0, 0, 0, 4, 0, 0, 0, 0, 5], [1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 0, 5], [1, 0, 0, 0, 0, 2, 0, 3, 0, 0, 4, 0, 0, 5], [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 5]],  "_objective" : 1304}}, "sections": ["json"], "time": 1132}
+{"type": "statistics", "statistics": {"objective": 1299, "objectiveBound": 1054, "boolVariables": 763, "failures": 0, "propagations": 42184, "solveTime": 0.794108}}
+{"type": "solution", "output": {"json": {  "visit" : [[1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0], [1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0], [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]],  "order" : [[1, 0, 2, 3, 0, 0, 4, 0, 0, 5, 0, 0, 0, 6], [1, 0, 0, 0, 0, 0, 0, 2, 0, 0, 3, 0, 0, 4], [1, 0, 0, 0, 2, 3, 0, 0, 4, 0, 0, 0, 0, 5], [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 5]],  "_objective" : 1299}}, "sections": ["json"], "time": 1246}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 5199}
+{"type": "statistics", "statistics": {"nSolutions": 12}}
+{"type": "statistics", "statistics": {"objective": 1299, "objectiveBound": 1299, "boolVariables": 763, "failures": 0, "propagations": 42184, "solveTime": 4.74355}}
