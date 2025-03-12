@@ -1,6 +1,6 @@
 #!/bin/bash -l
-#SBATCH --time=01:00:00
-#SBATCH --nodes=1
+#SBATCH --time=05:00:00
+#SBATCH --nodes=5
 #SBATCH --partition=batch
 #SBATCH --ntasks-per-node=8 # when benchmarking sequential solver, we still book the whole node to avoid possible interference.
 #SBATCH --exclusive
@@ -38,7 +38,7 @@ fi
 # I. Define the campaign to run.
 
 MZN_SOLVER="org.choco.choco"
-VERSION="v4.10.14" # Note that this is only for the naming of the output directory, we do not verify the actual version of the solver.
+VERSION="v4.10.18" # Note that this is only for the naming of the output directory, we do not verify the actual version of the solver.
 MZN_TIMEOUT=1200000
 CORES=1 # The number of core used on the node.
 THREADS=1 # The number of threads used by the solver.
