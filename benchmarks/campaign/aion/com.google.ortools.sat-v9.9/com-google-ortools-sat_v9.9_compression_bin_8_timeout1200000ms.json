@@ -27,3 +27,35 @@ cpu-bind=MASK - aion-0104, task  0  0 [124646]: mask 0x20 set
 {"type": "status", "status": "OPTIMAL_SOLUTION", "time": 251}
 {"type": "statistics", "statistics": {"nSolutions": 1}}
 {"type": "statistics", "statistics": {"objective": 26, "objectiveBound": 26, "boolVariables": 612, "failures": 772, "propagations": 260790, "solveTime": 0.127633}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_compression_bin_8_timeout1200000ms", "problem": "compression", "model": "../data/mzn-challenge/2024/compression/compression.mzn", "data_file": "../data/mzn-challenge/2024/compression/bin_8.json", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-12T07:18:30.868805", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0212, task  0  0 [2644927]: mask 0x1 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 379, "flatIntVars": 338, "flatBoolConstraints": 231, "flatIntConstraints": 612, "evaluatedReifiedConstraints": 248, "evaluatedHalfReifiedConstraints": 140, "eliminatedImplications": 112, "method": "minimize", "flatTime": 0.133197}}
+{"type": "comment", "comment": "%% File /tmp/mznfile82MiGC.fzn parsed in 6 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 162 times\n"}
+{"type": "comment", "comment": "%%   - done in 0 ms\n"}
+{"type": "comment", "comment": "%% Model mznfile82MiGC\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 63\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 8\n"}
+{"type": "comment", "comment": "%%   - array_var_int_element: 30\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 168\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 112\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 183\n"}
+{"type": "comment", "comment": "%%   - int_le_reif: 8\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 23\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq_imp: 14\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq_reif: 7\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 1\n"}
+{"type": "comment", "comment": "%%   - int_lin_le_imp: 14\n"}
+{"type": "comment", "comment": "%%   - int_ne_reif: 28\n"}
+{"type": "comment", "comment": "%%   - int_times: 8\n"}
+{"type": "comment", "comment": "%%   - set_in_reif: 14\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "statistics", "statistics": {"objective": 66, "objectiveBound": 0, "boolVariables": 535, "failures": 7, "propagations": 21765, "solveTime": 0.0616174}}
+{"type": "solution", "output": {"json": {  "slice" : [{"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 8, "start": 1}],  "cover" : [{"index": 1, "pat": { "c" : "P", "e" : 8}}, {"index": 2, "pat": { "c" : "P", "e" : 8}}, {"index": 3, "pat": { "c" : "P", "e" : 8}}, {"index": 4, "pat": { "c" : "P", "e" : 8}}, {"index": 5, "pat": { "c" : "P", "e" : 8}}, {"index": 6, "pat": { "c" : "P", "e" : 8}}, {"index": 7, "pat": { "c" : "P", "e" : 8}}, {"index": 8, "pat": { "c" : "P", "e" : 8}}],  "parent" : [null, null, null, null, { "c" : "Internal", "e" : 1}, null, null, null, null, null, null, null, null, { "c" : "Internal", "e" : 1}],  "used_nodes" : { "c" : "Internal", "e" : 1},  "parent_count" : [2, 0, 0, 0, 0, 0, 0],  "cost" : [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1],  "_objective" : 66}}, "sections": ["json"], "time": 223}
+{"type": "statistics", "statistics": {"objective": 26, "objectiveBound": 0, "boolVariables": 567, "failures": 69, "propagations": 153560, "solveTime": 0.0939885}}
+{"type": "solution", "output": {"json": {  "slice" : [{"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 0, "start": 1}, {"len": 1, "start": 1}, {"len": 1, "start": 2}],  "cover" : [{"index": 1, "pat": { "c" : "P", "e" : 7}}, {"index": 1, "pat": { "c" : "P", "e" : 8}}, {"index": 1, "pat": { "c" : "P", "e" : 7}}, {"index": 1, "pat": { "c" : "P", "e" : 8}}, {"index": 1, "pat": { "c" : "P", "e" : 8}}, {"index": 1, "pat": { "c" : "P", "e" : 8}}, {"index": 1, "pat": { "c" : "P", "e" : 8}}, {"index": 1, "pat": { "c" : "P", "e" : 7}}],  "parent" : [null, null, null, null, null, null, null, null, null, null, null, null, { "c" : "Internal", "e" : 1}, { "c" : "Internal", "e" : 1}],  "used_nodes" : { "c" : "Internal", "e" : 1},  "parent_count" : [2, 0, 0, 0, 0, 0, 0],  "cost" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],  "_objective" : 26}}, "sections": ["json"], "time": 255}
+{"type": "status", "status": "OPTIMAL_SOLUTION", "time": 296}
+{"type": "statistics", "statistics": {"nSolutions": 2}}
+{"type": "statistics", "statistics": {"objective": 26, "objectiveBound": 26, "boolVariables": 612, "failures": 772, "propagations": 260790, "solveTime": 0.134204}}

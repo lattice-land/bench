@@ -17,3 +17,22 @@ cpu-bind=MASK - aion-0104, task  0  0 [123316]: mask 0x1000 set
 {"type": "comment", "comment": "%%   - Maximization problem\n"}
 {"type": "status", "status": "UNKNOWN", "time": 1201225}
 {"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_concert-hall-cap_concert_60_50_timeout1200000ms", "problem": "concert-hall-cap", "model": "../data/mzn-challenge/2024/concert-hall-cap/concert-hall-cap.mzn", "data_file": "../data/mzn-challenge/2024/concert-hall-cap/concert_60_50.json", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-12T07:01:43.966222", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0212, task  0  0 [2642621]: mask 0x8 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 3058, "flatIntVars": 7873, "flatIntConstraints": 12995, "evaluatedReifiedConstraints": 3058, "method": "maximize", "flatTime": 0.912066}}
+{"type": "comment", "comment": "%% File /tmp/mznfileqcTkI3.fzn parsed in 117 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'array_int_element: reduce array' was applied 216 times\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 3058 times\n"}
+{"type": "comment", "comment": "%%   - done in 4 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileqcTkI3\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 2124\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 2950\n"}
+{"type": "comment", "comment": "%%   - int_le_reif: 108\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 471\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 2124\n"}
+{"type": "comment", "comment": "%%   - int_max: 2160\n"}
+{"type": "comment", "comment": "%%   - Maximization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1201096}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

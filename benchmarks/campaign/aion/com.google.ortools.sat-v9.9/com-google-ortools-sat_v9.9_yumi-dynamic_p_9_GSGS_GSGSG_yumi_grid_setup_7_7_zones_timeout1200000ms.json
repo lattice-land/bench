@@ -32,3 +32,36 @@ cpu-bind=MASK - aion-0104, task  0  0 [126200]: mask 0x8 set
 {"type": "comment", "comment": "%%   - Minimization problem\n"}
 {"type": "status", "status": "UNKNOWN", "time": 1238290}
 {"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_yumi-dynamic_p_9_GSGS_GSGSG_yumi_grid_setup_7_7_zones_timeout1200000ms", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_9_GSGS_GSGSG_yumi_grid_setup_7_7_zones.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-12T07:28:09.752741", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0212, task  0  0 [2647043]: mask 0x2 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 10724, "flatIntVars": 6609, "flatBoolConstraints": 17711, "flatIntConstraints": 9072, "evaluatedReifiedConstraints": 5512, "evaluatedHalfReifiedConstraints": 764, "method": "minimize", "flatTime": 30.0341}}
+{"type": "comment", "comment": "%% File /tmp/mznfileEBeLSk.fzn parsed in 6750 ms\n"}
+{"type": "comment", "comment": "%% Presolve model\n"}
+{"type": "comment", "comment": "%%   - rule 'bool2int: merge boolean and integer variables.' was applied 114 times\n"}
+{"type": "comment", "comment": "%%   - done in 10 ms\n"}
+{"type": "comment", "comment": "%% Model mznfileEBeLSk\n"}
+{"type": "comment", "comment": "%%   - array_bool_and: 2\n"}
+{"type": "comment", "comment": "%%   - array_int_element: 494\n"}
+{"type": "comment", "comment": "%%   - array_int_maximum: 1\n"}
+{"type": "comment", "comment": "%%   - array_var_int_element: 154\n"}
+{"type": "comment", "comment": "%%   - bool_clause: 13263\n"}
+{"type": "comment", "comment": "%%   - bool_eq_reif: 4446\n"}
+{"type": "comment", "comment": "%%   - fzn_all_different_int: 3\n"}
+{"type": "comment", "comment": "%%   - fzn_cumulative: 46\n"}
+{"type": "comment", "comment": "%%   - int_eq_imp: 4\n"}
+{"type": "comment", "comment": "%%   - int_eq_reif: 798\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq: 333\n"}
+{"type": "comment", "comment": "%%   - int_lin_eq_reif: 114\n"}
+{"type": "comment", "comment": "%%   - int_lin_le: 450\n"}
+{"type": "comment", "comment": "%%   - int_lin_ne: 114\n"}
+{"type": "comment", "comment": "%%   - int_lin_ne_reif: 114\n"}
+{"type": "comment", "comment": "%%   - int_max: 450\n"}
+{"type": "comment", "comment": "%%   - int_min: 2\n"}
+{"type": "comment", "comment": "%%   - int_ne_imp: 760\n"}
+{"type": "comment", "comment": "%%   - ortools_circuit: 1\n"}
+{"type": "comment", "comment": "%%   - ortools_table_int: 5080\n"}
+{"type": "comment", "comment": "%%   - set_in_reif: 40\n"}
+{"type": "comment", "comment": "%%   - Minimization problem\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1232121}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

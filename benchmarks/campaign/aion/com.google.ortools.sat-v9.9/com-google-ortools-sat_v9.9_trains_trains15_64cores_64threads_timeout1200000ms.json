@@ -40,3 +40,8 @@ Single track J-K:
 {"type": "status", "status": "OPTIMAL_SOLUTION", "time": 280}
 {"type": "statistics", "statistics": {"nSolutions": 1}}
 {"type": "statistics", "statistics": {"objective": 10, "objectiveBound": 10, "boolVariables": 0, "failures": 0, "propagations": 0, "solveTime": 0.0503173}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "com-google-ortools-sat_v9.9_trains_trains15_64cores_64threads_timeout1200000ms", "problem": "train-scheduling", "model": "../data/mzn-challenge/2024/train-scheduling/trains.mzn", "data_file": "../data/mzn-challenge/2024/train-scheduling/trains15.dzn", "mzn_solver": "com.google.ortools.sat", "version": "v9.9", "timeout_ms": "1200000", "datetime": "2025-03-12T05:11:11.125216", "status": "UNKNOWN", "cores": "64", "threads": "64"}}
+cpu-bind=MASK - aion-0183, task  0  0 [3835606]: mask 0xffffffffffffffff0000000000000000 set
+{"type": "error", "what": "syntax error", "location": {"filename": "/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/data/mzn-challenge/2024/train-scheduling/trains.mzn", "firstLine": 47, "firstColumn": 74, "lastLine": 47, "lastColumn": 74}, "message": "syntax error, unexpected ','"}
+srun: error: aion-0183: task 0: Exited with exit code 1
