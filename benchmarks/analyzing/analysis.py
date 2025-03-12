@@ -6,7 +6,7 @@ from pathlib import Path
 from packaging import version
 
 # A tentative to have unique experiment names.
-def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, eps_num_subproblems, or_nodes, threads_per_block):
+def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, eps_num_subproblems, or_nodes, threads_per_block, search):
   uid = mzn_solver + "_" + str(version) + '_' + machine
   if str(timeout_ms) == "inf":
     uid += "_notimeout"
@@ -37,6 +37,8 @@ def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machin
       uid += '_' + str(int(or_nodes)) + "threads"
     if cores > 1:
       uid += "_" + str(int(cores)) + "cores"
+  if search == "free":
+    uid += "_free"
   return uid
 
 def make_short_uid(uid):
@@ -100,6 +102,8 @@ def read_experiments(experiments):
       failed_xps[['problem', 'model', 'data_file']].to_csv(failed_xps_path, index=False)
       df = df[(df['mzn_solver'] != "turbo.gpu.release") | (~df['or_nodes'].isna())]
       print(f"{e}: {len(failed_xps)} failed experiments using turbo.gpu.release have been removed (the faulty experiments have been stored in {failed_xps_path}).")
+    if 'search' not in df:
+      df['search'] = 'user_defined'
     # print(df[(df['mzn_solver'] == "turbo.gpu.release") & df['threads_per_block'].isna()])
     # df = df[(df['mzn_solver'] != "turbo.gpu.release") | (~df['threads_per_block'].isna())]
     all_xp = pd.concat([df, all_xp], ignore_index=True)
@@ -122,7 +126,7 @@ def read_experiments(experiments):
   all_xp['wac1_threshold'] = all_xp['wac1_threshold'].fillna(0).astype(int) if "wac1_threshold" in all_xp else ""
   all_xp['cores'] = all_xp['cores'].fillna(1).astype(int)
   all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'],
-                                                    row['eps_num_subproblems'], row['or_nodes'], row['threads_per_block']), axis=1)
+                                                    row['eps_num_subproblems'], row['or_nodes'], row['threads_per_block'], row['search']), axis=1)
   all_xp['short_uid'] = all_xp['uid'].apply(make_short_uid)
   all_xp['nodes_per_second'] = all_xp['nodes'] / all_xp['solveTime']
   all_xp['fp_iterations_per_node'] = all_xp['fixpoint_iterations'] / all_xp['nodes']

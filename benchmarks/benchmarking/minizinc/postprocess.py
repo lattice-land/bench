@@ -27,8 +27,12 @@ if __name__ == "__main__":
 
   statistics = {
     "configuration": uid,
-    "status": str(minizinc.result.Status.UNKNOWN)
+    "status": str(minizinc.result.Status.UNKNOWN),
+    "search": "user_defined"
   }
+  if sys.argv[2].endswith("free.json"):
+    statistics["search"] = "free"
+  statistics_base = statistics.copy()
   solutions = []
   unknowns = ""
   errors = ""
@@ -44,7 +48,7 @@ if __name__ == "__main__":
       # For the statistics, we are only interested by the latest experiment, starting with {"type": "lattice-land", "lattice-land": "start"}.
       if(output["type"] == "lattice-land"):
         if(output["lattice-land"] == "start"):
-          statistics = {}
+          statistics = statistics_base.copy()
           unknowns = []
           errors = []
       elif(output["type"] == "comment"):
