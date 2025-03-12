@@ -1,0 +1,19 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_accap_accap_a10_f80_t50_72cores_264threads_timeout1200000ms_sub_15", "problem": "accap", "model": "../data/mzn-challenge/2024/accap/accap.mzn", "data_file": "../data/mzn-challenge/2024/accap/accap_a10_f80_t50.json", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-12T11:50:46.672335", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c1s3b1n0, task  0  0 [286471]: mask 0xffffffffffffffffff set
+{"type": "error", "what": "error", "message": "Cannot open file '/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../data/mzn-challenge/2024/accap/accap.mzn'."}
+srun: error: x1002c1s3b1n0: task 0: Exited with exit code 1
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_accap_accap_a10_f80_t50_72cores_264threads_timeout1200000ms_sub_15", "problem": "accap", "model": "../data/mzn-challenge/2024/accap/accap.mzn", "data_file": "../data/mzn-challenge/2024/accap/accap_a10_f80_t50.json", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-12T11:54:15.787934", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+srun: error: Unable to create step for job 106738: Invalid generic resource (gres) specification
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_accap_accap_a10_f80_t50_72cores_264threads_timeout1200000ms_sub_15", "problem": "accap", "model": "../data/mzn-challenge/2024/accap/accap.mzn", "data_file": "../data/mzn-challenge/2024/accap/accap_a10_f80_t50.json", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-12T11:56:16.185169", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c1s3b0n0, task  0  0 [304372]: mask 0xffffffffffffffffff set
+{"type": "error", "what": "error", "message": "Cannot open file '/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../data/mzn-challenge/2024/accap/accap.mzn'."}
+srun: error: x1002c1s3b0n0: task 0: Exited with exit code 1
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_accap_accap_a10_f80_t50_72cores_264threads_timeout1200000ms_sub_15", "problem": "accap", "model": "../data/mzn-challenge/2024/accap/accap.mzn", "data_file": "../data/mzn-challenge/2024/accap/accap_a10_f80_t50.json", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-12T11:59:01.339343", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c1s2b0n0, task  0  0 [331209]: mask 0xffffffffffffffffff000000000000000000000000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 832, "flatIntVars": 92, "flatBoolConstraints": 416, "flatIntConstraints": 1563, "evaluatedReifiedConstraints": 832, "method": "minimize", "flatTime": 0.172069}}
+{"type": "status", "status": "UNKNOWN", "time": 1262396}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

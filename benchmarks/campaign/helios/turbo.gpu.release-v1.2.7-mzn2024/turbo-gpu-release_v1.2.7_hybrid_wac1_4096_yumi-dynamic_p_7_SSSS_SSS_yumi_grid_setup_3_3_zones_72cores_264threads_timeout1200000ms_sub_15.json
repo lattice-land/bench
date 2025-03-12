@@ -1,0 +1,22 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_yumi-dynamic_p_7_SSSS_SSS_yumi_grid_setup_3_3_zones_72cores_264threads_timeout1200000ms_sub_15", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_7_SSSS_SSS_yumi_grid_setup_3_3_zones.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-12T11:50:49.693096", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c1s2b1n0, task  0  0 [290482]: mask 0xffffffffffffffffff000000000000000000000000000000000000000000000000000000 set
+{"type": "error", "what": "error", "message": "Cannot open file '/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn'."}
+srun: error: x1002c1s2b1n0: task 0: Exited with exit code 1
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_yumi-dynamic_p_7_SSSS_SSS_yumi_grid_setup_3_3_zones_72cores_264threads_timeout1200000ms_sub_15", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_7_SSSS_SSS_yumi_grid_setup_3_3_zones.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-12T11:54:17.182462", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+srun: error: Unable to create step for job 106738: Invalid generic resource (gres) specification
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_yumi-dynamic_p_7_SSSS_SSS_yumi_grid_setup_3_3_zones_72cores_264threads_timeout1200000ms_sub_15", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_7_SSSS_SSS_yumi_grid_setup_3_3_zones.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-12T11:56:18.609632", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c1s3b1n0, task  0  0 [287518]: mask 0xffffffffffffffffff000000000000000000000000000000000000 set
+{"type": "error", "what": "error", "message": "Cannot open file '/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn'."}
+srun: error: x1002c1s3b1n0: task 0: Exited with exit code 1
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_yumi-dynamic_p_7_SSSS_SSS_yumi_grid_setup_3_3_zones_72cores_264threads_timeout1200000ms_sub_15", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_7_SSSS_SSS_yumi_grid_setup_3_3_zones.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-12T13:22:40.845757", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c1s2b1n0, task  0  0 [306334]: mask 0xffffffffffffffffff000000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 474458, "flatIntVars": 407199, "flatBoolConstraints": 166186, "flatIntConstraints": 726509, "evaluatedReifiedConstraints": 316083, "method": "minimize", "flatTime": 17.4789}}
+% WARNING: Annotation add_to_output is unknown and was ignored.
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "status", "status": "UNKNOWN", "time": 1285397}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"command_line": "/net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/build/gpu-release/turbo -t 1200000 -n 1 -s -arch hybrid -or 264 -fp wac1 -wac1_threshold 4096 -version v1.2.7 -hardware 'helios' -cutnodes 0 /tmp/106748/x1002c1s2b1n0/mznfilehAVSfL.fzn"}}
