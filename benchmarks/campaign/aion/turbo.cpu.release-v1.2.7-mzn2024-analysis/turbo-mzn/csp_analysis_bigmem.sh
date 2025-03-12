@@ -25,7 +25,7 @@ if [ -z "$1" ]; then
   exit 1
 fi
 source $1
-source ${BENCHMARKS_DIR_PATH}/../pybench-aion/bin/activate
+source ${BENCHMARKS_DIR_PATH}/../pybench/bin/activate
 
 # If it has an argument, we retry the jobs that failed on a previous run.
 # If the experiments were not complete, you can simply rerun the script, parallel will ignore the jobs that are already done.

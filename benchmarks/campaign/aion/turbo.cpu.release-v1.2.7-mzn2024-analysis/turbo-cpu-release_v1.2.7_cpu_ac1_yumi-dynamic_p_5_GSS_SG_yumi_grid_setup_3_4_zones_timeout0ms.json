@@ -8,3 +8,9 @@ cpu-bind=MASK - aion-0073, task  0  0 [1868232]: mask 0x1 set
 {"type": "status", "status": "UNKNOWN", "time": 138764}
 {"type": "statistics", "statistics": {"problem_path": "/tmp/mznfilezhT1qw.fzn", "solver": "Turbo", "version": "v1.2.7", "hardware": "aion", "arch": "cpu", "fixpoint": "ac1", "free_search": "yes", "or_nodes": 1, "timeout_ms": 0, "cutnodes": 1, "nodes": 1, "failures": 0, "variables": 1460593, "propagators": 1952254, "peakDepth": 0, "initTime": 118.4, "solveTime": 118.4, "num_solutions": 0, "eps_num_subproblems": 4096, "eps_solved_subproblems": 0, "eps_skipped_subproblems": 0, "num_blocks_done": 0, "fixpoint_iterations": 2, "solve_time": 0.0, "search_time": 0.025, "fixpoint_time": 0.108, "transfer_cpu2gpu_time": 0.0, "transfer_gpu2cpu_time": 0.0, "select_fp_functions_time": 0.023, "wait_cpu_time": 0.0, "dive_time": 0.0}}
 {"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-cpu-release_v1.2.7_cpu_ac1_yumi-dynamic_p_5_GSS_SG_yumi_grid_setup_3_4_zones_timeout0ms", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_5_GSS_SG_yumi_grid_setup_3_4_zones.dzn", "mzn_solver": "turbo.cpu.release", "version": "v1.2.7", "timeout_ms": "0", "datetime": "2025-03-12T14:28:42.143618", "status": "UNKNOWN", "cores": "1", "threads": "1", "arch": "cpu", "fixpoint": "ac1", "wac1_threshold": "0"}}
+cpu-bind=MASK - aion-0041, task  0  0 [3881297]: mask 0x1 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 229352, "flatIntVars": 255082, "flatBoolConstraints": 79745, "flatIntConstraints": 411444, "evaluatedReifiedConstraints": 152918, "method": "minimize", "flatTime": 17.6604}}
+% WARNING: Annotation add_to_output is unknown and was ignored.
+% WARNING: Annotation domain is unknown and was ignored.

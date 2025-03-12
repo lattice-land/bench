@@ -1,0 +1,9 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.18_ctw_A022_timeout1200000ms_free", "problem": "cable-tree-wiring", "model": "../data/mzn-challenge/2024/cable-tree-wiring/ctw.mzn", "data_file": "../data/mzn-challenge/2024/cable-tree-wiring/A022.dzn", "mzn_solver": "org.choco.choco", "version": "v4.10.18", "timeout_ms": "1200000", "datetime": "2025-03-12T11:46:41.993569", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0192, task  0  0 [2842393]: mask 0x800000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 12900, "flatIntVars": 6819, "flatBoolConstraints": 6393, "flatIntConstraints": 13853, "evaluatedReifiedConstraints": 6354, "evaluatedHalfReifiedConstraints": 306, "method": "minimize", "flatTime": 4.20572}}
+{"type": "comment", "comment": "%% Choco 250127_16:13\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1205485}
+{"type": "statistics", "statistics": {"initTime": 1.859, "solveTime": 1199.063, "solutions": 0, "variables": 19837, "intVariables": 467, "boolVariables": 19370, "setVariables": 0, "constraints": 20247, "objective": 20985515, "nodes": 99691, "failures": 98023, "restarts": 66, "peakDepth": 829}}
+{"type": "comment", "comment": "%% Unexpected resolution interruption!\n"}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

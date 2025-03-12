@@ -1,0 +1,16 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.18_hoist-benchmark_PU_3_2_1_timeout1200000ms", "problem": "hoist-benchmark", "model": "../data/mzn-challenge/2024/hoist-benchmark/hoist-benchmark.mzn", "data_file": "../data/mzn-challenge/2024/hoist-benchmark/PU_3_2_1.dzn", "mzn_solver": "org.choco.choco", "version": "v4.10.18", "timeout_ms": "1200000", "datetime": "2025-03-12T08:33:38.828102", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0170, task  0  0 [2738685]: mask 0x400 set
+{"type": "warning", "location": {"filename": "/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/data/mzn-challenge/2024/hoist-benchmark/hoist-benchmark.mzn", "firstLine": 102, "firstColumn": 50, "lastLine": 102, "lastColumn": 53}, "message": "variable `k` shadows variable with the same name in line 102.66"}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 4173, "flatIntVars": 145, "flatBoolConstraints": 1998, "flatIntConstraints": 3689, "evaluatedHalfReifiedConstraints": 3507, "method": "minimize", "flatTime": 0.33085}}
+{"type": "comment", "comment": "%% Choco 250127_16:13\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1201508}
+Exception in thread "main" java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:83)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:281)
+	at org.chocosolver.parser.flatzinc.Flatzinc.singleThread(Flatzinc.java:314)
+	at org.chocosolver.parser.RegParser.solve(RegParser.java:352)
+	at org.chocosolver.parser.flatzinc.ChocoFZN.main(ChocoFZN.java:29)
+{"type": "statistics", "statistics": {"initTime": 1.023, "solveTime": 1200.019, "solutions": 0, "variables": 4402, "intVariables": 191, "boolVariables": 4211, "setVariables": 0, "constraints": 5687, "objective": 2596, "nodes": 3710637, "failures": 3710626, "restarts": 0, "peakDepth": 10}}
+{"type": "comment", "comment": "%% Unexpected resolution interruption!\n"}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

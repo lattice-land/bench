@@ -1,0 +1,8 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.18_aircraft_B737NG-600-09-Anon.json_timeout1200000ms_free", "problem": "aircraft-disassembly", "model": "../data/mzn-challenge/2024/aircraft-disassembly/aircraft.mzn", "data_file": "../data/mzn-challenge/2024/aircraft-disassembly/B737NG-600-09-Anon.json.dzn", "mzn_solver": "org.choco.choco", "version": "v4.10.18", "timeout_ms": "1200000", "datetime": "2025-03-12T11:47:14.092049", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0192, task  0  0 [2846590]: mask 0x800 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 73256, "flatIntVars": 7643, "flatBoolConstraints": 231026, "flatIntConstraints": 57148, "evaluatedReifiedConstraints": 60372, "evaluatedHalfReifiedConstraints": 4930, "method": "minimize", "flatTime": 9.25446}}
+{"type": "comment", "comment": "%% Choco 250127_16:13\n"}
+{"type": "status", "status": "UNSATISFIABLE", "time": 18190}
+{"type": "statistics", "statistics": {"initTime": 7.122, "solveTime": 0.263, "solutions": 0, "variables": 125809, "intVariables": 1422, "boolVariables": 124387, "setVariables": 0, "constraints": 288230, "objective": 202175001, "nodes": 0, "failures": 1, "restarts": 0, "peakDepth": 0}}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
