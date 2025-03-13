@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --time=05:00:00
+#SBATCH --time=01:00:00
 #SBATCH --nodes=1
 #SBATCH --partition=batch
 #SBATCH --ntasks-per-node=8 # when benchmarking sequential solver, we still book the whole node to avoid possible interference.
@@ -43,7 +43,7 @@ MZN_TIMEOUT=1200000
 CORES=1 # The number of core used on the node.
 THREADS=1 # The number of threads used by the solver.
 MACHINE=$(basename "$1" ".sh")
-INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024.csv"
+INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024_patch.csv"
 
 # II. Prepare the command lines and output directory.
 MZN_COMMAND="minizinc --solver $MZN_SOLVER -s -i --json-stream -t $MZN_TIMEOUT --output-mode json --output-time --output-objective -p $THREADS"

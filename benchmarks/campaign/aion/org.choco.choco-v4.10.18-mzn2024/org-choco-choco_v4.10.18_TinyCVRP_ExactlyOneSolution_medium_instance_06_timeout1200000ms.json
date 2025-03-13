@@ -1,0 +1,9 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "org-choco-choco_v4.10.18_TinyCVRP_ExactlyOneSolution_medium_instance_06_timeout1200000ms", "problem": "tiny-cvrp", "model": "../data/mzn-challenge/2024/tiny-cvrp/TinyCVRP_ExactlyOneSolution.mzn", "data_file": "../data/mzn-challenge/2024/tiny-cvrp/medium_instance_06.dzn", "mzn_solver": "org.choco.choco", "version": "v4.10.18", "timeout_ms": "1200000", "datetime": "2025-03-12T08:53:33.064089", "status": "UNKNOWN", "cores": "1", "threads": "1"}}
+cpu-bind=MASK - aion-0170, task  0  0 [2742803]: mask 0x8 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 1448, "flatIntVars": 1513, "flatBoolConstraints": 1812, "flatIntConstraints": 2079, "evaluatedReifiedConstraints": 232, "evaluatedHalfReifiedConstraints": 912, "eliminatedImplications": 960, "method": "minimize", "flatTime": 0.315928}}
+{"type": "comment", "comment": "%% Choco 250127_16:13\n"}
+{"type": "status", "status": "UNKNOWN", "time": 1201486}
+{"type": "statistics", "statistics": {"initTime": 0.979, "solveTime": 1199.932, "solutions": 0, "variables": 4079, "intVariables": 1981, "boolVariables": 2098, "setVariables": 0, "constraints": 4391, "objective": 20761, "nodes": 13367123, "failures": 13367082, "restarts": 0, "peakDepth": 17}}
+{"type": "comment", "comment": "%% Unexpected resolution interruption!\n"}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
