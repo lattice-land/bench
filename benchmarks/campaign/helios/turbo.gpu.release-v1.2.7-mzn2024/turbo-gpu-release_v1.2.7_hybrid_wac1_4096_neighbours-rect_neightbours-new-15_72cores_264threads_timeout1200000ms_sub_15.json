@@ -17,3 +17,14 @@ cpu-bind=MASK - x1002c1s3b1n0, task  0  0 [296482]: mask 0xffffffffffffffffff000
 {"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 1552, "flatIntVars": 85, "flatBoolConstraints": 1241, "flatIntConstraints": 1088, "evaluatedReifiedConstraints": 1324, "method": "maximize", "flatTime": 0.12942}}
 {"type": "status", "status": "UNKNOWN", "time": 1262349}
 {"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_neighbours-rect_neightbours-new-15_72cores_264threads_timeout1200000ms_sub_15", "problem": "neighbours", "model": "../data/mzn-challenge/2024/neighbours/neighbours-rect.mzn", "data_file": "../data/mzn-challenge/2024/neighbours/neightbours-new-15.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-13T02:37:56.680368", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c6s2b0n0, task  0  0 [701627]: mask 0xffffffffffffffffff set
+srun: Job step aborted: Waiting up to 182 seconds for job step to finish.
+slurmstepd: error: *** STEP 108795.3 ON x1002c6s2b0n0 CANCELLED AT 2025-03-13T02:38:15 ***
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_neighbours-rect_neightbours-new-15_72cores_264threads_timeout1200000ms_sub_15", "problem": "neighbours", "model": "../data/mzn-challenge/2024/neighbours/neighbours-rect.mzn", "data_file": "../data/mzn-challenge/2024/neighbours/neightbours-new-15.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-13T02:38:45.868182", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c7s1b0n0, task  0  0 [703448]: mask 0xffffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 1552, "flatIntVars": 85, "flatBoolConstraints": 1241, "flatIntConstraints": 1088, "evaluatedReifiedConstraints": 1324, "method": "maximize", "flatTime": 0.215106}}
+{"type": "status", "status": "UNKNOWN", "time": 1502420}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

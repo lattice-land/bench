@@ -19,3 +19,18 @@ cpu-bind=MASK - x1002c1s2b1n0, task  0  0 [300123]: mask 0xffffffffffffffffff000
 {"type": "status", "status": "UNKNOWN", "time": 1262531}
 {"type": "statistics", "statistics": {"nSolutions": 0}}
 {"type": "statistics", "statistics": {"command_line": "/net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/build/gpu-release/turbo -t 1200000 -n 1 -s -arch hybrid -or 264 -fp wac1 -wac1_threshold 4096 -version v1.2.7 -hardware 'helios' -cutnodes 0 /tmp/106748/x1002c1s2b1n0/mznfileKGM9W4.fzn"}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_foxgeesecorn_foxgeesecorn_61_72cores_264threads_timeout1200000ms_sub_15", "problem": "fox-geese-corn", "model": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn.mzn", "data_file": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn_61.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-13T02:37:56.659362", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c6s0b1n0, task  0  0 [714447]: mask 0xffffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 657, "flatIntVars": 551, "flatBoolConstraints": 264, "flatIntConstraints": 942, "evaluatedReifiedConstraints": 613, "method": "maximize", "flatTime": 0.19639}}
+% WARNING: Annotation domain is unknown and was ignored.
+srun: Job step aborted: Waiting up to 182 seconds for job step to finish.
+slurmstepd: error: *** STEP 108795.0 ON x1002c6s0b1n0 CANCELLED AT 2025-03-13T02:38:15 ***
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_foxgeesecorn_foxgeesecorn_61_72cores_264threads_timeout1200000ms_sub_15", "problem": "fox-geese-corn", "model": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn.mzn", "data_file": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn_61.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-13T02:38:45.887198", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c7s3b1n0, task  0  0 [688278]: mask 0xffffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 657, "flatIntVars": 551, "flatBoolConstraints": 264, "flatIntConstraints": 942, "evaluatedReifiedConstraints": 613, "method": "maximize", "flatTime": 0.162566}}
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "status", "status": "UNKNOWN", "time": 1502475}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"command_line": "/net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/build/gpu-release/turbo -t 1200000 -n 1 -s -arch hybrid -or 264 -fp wac1 -wac1_threshold 4096 -version v1.2.7 -hardware 'helios' -cutnodes 0 /tmp/108796/x1002c7s3b1n0/mznfileT3Apsz.fzn"}}

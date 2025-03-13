@@ -17,3 +17,14 @@ cpu-bind=MASK - x1002c1s2b0n0, task  0  0 [331209]: mask 0xffffffffffffffffff000
 {"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 832, "flatIntVars": 92, "flatBoolConstraints": 416, "flatIntConstraints": 1563, "evaluatedReifiedConstraints": 832, "method": "minimize", "flatTime": 0.172069}}
 {"type": "status", "status": "UNKNOWN", "time": 1262396}
 {"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_accap_accap_a10_f80_t50_72cores_264threads_timeout1200000ms_sub_15", "problem": "accap", "model": "../data/mzn-challenge/2024/accap/accap.mzn", "data_file": "../data/mzn-challenge/2024/accap/accap_a10_f80_t50.json", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-13T02:37:56.662294", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c6s1b1n0, task  0  0 [726225]: mask 0xffffffffffffffffff set
+srun: Job step aborted: Waiting up to 182 seconds for job step to finish.
+slurmstepd: error: *** STEP 108795.2 ON x1002c6s1b1n0 CANCELLED AT 2025-03-13T02:38:15 ***
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_accap_accap_a10_f80_t50_72cores_264threads_timeout1200000ms_sub_15", "problem": "accap", "model": "../data/mzn-challenge/2024/accap/accap.mzn", "data_file": "../data/mzn-challenge/2024/accap/accap_a10_f80_t50.json", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-13T02:38:45.866427", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c7s1b1n0, task  0  0 [689173]: mask 0xffffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 832, "flatIntVars": 92, "flatBoolConstraints": 416, "flatIntConstraints": 1563, "evaluatedReifiedConstraints": 832, "method": "minimize", "flatTime": 0.219358}}
+{"type": "status", "status": "UNKNOWN", "time": 1502520}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

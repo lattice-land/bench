@@ -16,3 +16,13 @@ srun: error: x1002c1s2b1n0: task 0: Exited with exit code 1
 cpu-bind=MASK - x1002c1s2b1n0, task  0  0 [298639]: mask 0xffffffffffffffffff000000000000000000000000000000000000 set
 slurmstepd: error: Detected 1 oom_kill event in StepId=106748.44. Some of the step tasks have been OOM Killed.
 srun: error: x1002c1s2b1n0: task 0: Out Of Memory
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_aircraft_B737NG-600-09-Anon.json_72cores_264threads_timeout1200000ms_sub_15", "problem": "aircraft-disassembly", "model": "../data/mzn-challenge/2024/aircraft-disassembly/aircraft.mzn", "data_file": "../data/mzn-challenge/2024/aircraft-disassembly/B737NG-600-09-Anon.json.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-13T02:37:56.664380", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c6s3b0n0, task  0  0 [673335]: mask 0xffffffffffffffffff set
+srun: Job step aborted: Waiting up to 182 seconds for job step to finish.
+slurmstepd: error: *** STEP 108795.5 ON x1002c6s3b0n0 CANCELLED AT 2025-03-13T02:38:15 ***
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_aircraft_B737NG-600-09-Anon.json_72cores_264threads_timeout1200000ms_sub_15", "problem": "aircraft-disassembly", "model": "../data/mzn-challenge/2024/aircraft-disassembly/aircraft.mzn", "data_file": "../data/mzn-challenge/2024/aircraft-disassembly/B737NG-600-09-Anon.json.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-13T02:38:45.886254", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c7s2b1n0, task  0  0 [688576]: mask 0xffffffffffffffffff set
+slurmstepd: error: Detected 1 oom_kill event in StepId=108796.3. Some of the step tasks have been OOM Killed.
+srun: error: x1002c7s2b1n0: task 0: Out Of Memory
