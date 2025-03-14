@@ -2,6 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import os
+import seaborn as sns
+import scipy.cluster.hierarchy as sch
 from pathlib import Path
 from packaging import version
 
@@ -138,11 +140,13 @@ def read_experiments(experiments):
   all_xp['normalized_propagator_mem'] = 0
   all_xp['normalized_store_mem'] = 0
   all_xp['problem_uid'] = all_xp.apply(lambda row: f"{row['problem']}_{Path(row['data_file']).stem}", axis=1)
+  # Some models don't have a data file...
+  all_xp['model_data_file'] = all_xp['model'] + ' - ' + all_xp['data_file']
   return all_xp
 
 def intersect(df):
-  # Group by 'mzn_solver' and convert the 'data_file' column to a set
-  solver_instance = df.groupby('uid')['data_file'].apply(set)
+  # Group by 'mzn_solver' and convert the 'model_data_file' column to a set
+  solver_instance = df.groupby('uid')['model_data_file'].apply(set)
 
   # Intersection of the solvers' instances.
   target_set = solver_instance.iloc[0]
@@ -150,7 +154,7 @@ def intersect(df):
     # print(f"{i} has {len(solver_instance.iloc[i])} instances.")
     target_set = target_set.intersection(solver_instance.iloc[i])
 
-  return df[df['data_file'].isin(target_set)]
+  return df[df['model_data_file'].isin(target_set)]
 
 def determine_hardware(machine_name):
   if machine_name == 'precision5820':
@@ -321,7 +325,7 @@ def compare_solvers_pie_chart(df, uid1, uid2):
     solvers_df = df[(df['uid'] == uid1) | (df['uid'] == uid2)]
 
     # Pivoting for 'objective', 'method', and 'status' columns
-    pivot_df = solvers_df.pivot_table(index='data_file', columns='uid', values=['objective', 'method', 'status'], aggfunc='first')
+    pivot_df = solvers_df.pivot_table(index='model_data_file', columns='uid', values=['objective', 'method', 'status'], aggfunc='first')
 
     # Compare objective values based on method and optimality status
     conditions = [
@@ -332,13 +336,15 @@ def compare_solvers_pie_chart(df, uid1, uid2):
         ((pivot_df['status', uid1] != "UNKNOWN") & (pivot_df['status', uid2] == "UNKNOWN")) |
         ((pivot_df['method', uid1] == "minimize") & (pivot_df['objective', uid1] < pivot_df['objective', uid2])) |
         ((pivot_df['method', uid1] == "maximize") & (pivot_df['objective', uid1] > pivot_df['objective', uid2])) |
-        ((pivot_df['objective', uid1] == pivot_df['objective', uid2]) & (pivot_df['status', uid1] == "OPTIMAL_SOLUTION") & (pivot_df['status', uid2] != "OPTIMAL_SOLUTION")),
+        ((pivot_df['method', uid1] == "satisfy") & (pivot_df['status', uid1] == "UNSATISFIABLE") & (pivot_df['status', uid2] != "UNSATISFIABLE")) |
+        ((pivot_df['method', uid1] != "satisfy") & (pivot_df['objective', uid1] == pivot_df['objective', uid2]) & (pivot_df['status', uid1] == "OPTIMAL_SOLUTION") & (pivot_df['status', uid2] != "OPTIMAL_SOLUTION")),
 
         # Solver 2 better
         ((pivot_df['status', uid1] == "UNKNOWN") & (pivot_df['status', uid2] != "UNKNOWN")) |
         ((pivot_df['method', uid1] == "minimize") & (pivot_df['objective', uid1] > pivot_df['objective', uid2])) |
         ((pivot_df['method', uid1] == "maximize") & (pivot_df['objective', uid1] < pivot_df['objective', uid2])) |
-        ((pivot_df['objective', uid1] == pivot_df['objective', uid2]) & (pivot_df['status', uid1] != "OPTIMAL_SOLUTION") & (pivot_df['status', uid2] == "OPTIMAL_SOLUTION")),
+        ((pivot_df['method', uid1] == "satisfy") & (pivot_df['status', uid1] != "UNSATISFIABLE") & (pivot_df['status', uid2] == "UNSATISFIABLE")) |
+        ((pivot_df['method', uid1] != "satisfy") & (pivot_df['objective', uid1] == pivot_df['objective', uid2]) & (pivot_df['status', uid1] != "OPTIMAL_SOLUTION") & (pivot_df['status', uid2] == "OPTIMAL_SOLUTION")),
 
         # Equal
         (pivot_df['status', uid1] == pivot_df['status', uid2])
@@ -352,8 +358,10 @@ def compare_solvers_pie_chart(df, uid1, uid2):
     unknown_problems = pivot_df[pivot_df['Comparison'] == 'Unknown'].index.tolist()
     if unknown_problems:
         print(f"The comparison is 'Unknown' for the following problems: {', '.join(unknown_problems)}")
-    # else:
-    #     print("There are no problems with 'Unknown' comparison.")
+
+    error_problems = pivot_df[pivot_df['Comparison'] == 'Error'].index.tolist()
+    if error_problems:
+        print(f"The comparison is 'Error' for the following problems: {', '.join(error_problems)}")
 
     # Get counts for each category
     category_counts = pivot_df['Comparison'].value_counts()
@@ -433,22 +441,22 @@ def plot_time_distribution(arch, df):
   # Show plot
   plt.show()
 
-def show_problem_table(df):
+def analyse_tnf_per_problem(df, logy = False, source_vars='parsed_variables', source_cons='parsed_constraints', target_vars='tnf_variables', target_cons='tnf_constraints'):
   print(f"| Problem | Data | #Vars | #Vars (TNF) | #Constraints | #Constraints (TNF) | Preprocessing (sec) |")
   print("|----------|------|-------|-------------|--------------|--------------------|---------------------|")
   all_vars_increase = []
   all_cons_increase = []
   preprocessing_times = []
   for index, row in df.iterrows():
-    vars_increase = row['tnf_variables'] / row['parsed_variables']
-    cons_increase = row['tnf_constraints'] / row['parsed_constraints']
+    vars_increase = row[target_vars] / row[source_vars]
+    cons_increase = row[target_cons] / row[source_cons]
     all_vars_increase.append(vars_increase)
     all_cons_increase.append(cons_increase)
     preprocessing_times.append(row['preprocessing_time'])
     data_name = Path(row['data_file']).stem
     if data_name == "empty":
       data_name = Path(row['model']).stem
-    print(f"| {row['problem']} | {data_name} | {row['parsed_variables']} | {row['tnf_variables']} (x{vars_increase:.2f}) | {row['parsed_constraints']} | {row['tnf_constraints']} (x{cons_increase:.2f}) | {row['preprocessing_time']} |")
+    print(f"| {row['problem']} | {data_name} | {row[source_vars]} | {row[target_vars]} (x{vars_increase:.2f}) | {row[source_cons]} | {row[target_cons]} (x{cons_increase:.2f}) | {row['preprocessing_time']} |")
   num_problems = df.shape[0]
   print(f"average_vars_increase={sum(all_vars_increase)/num_problems:.2f}")
   print(f"average_cons_increase={sum(all_cons_increase)/num_problems:.2f}")
@@ -456,21 +464,24 @@ def show_problem_table(df):
   print(f"median_cons_increase={sorted(all_cons_increase)[num_problems//2]:.2f}")
 
   # Plotting the increase of variables and constraints.
-  plt.figure(figsize=(8, 6))
+  fig = plt.figure(figsize=(8, 6))
   plt.scatter(all_vars_increase, all_cons_increase, color='b', marker='x', label="MiniZinc instances")
   plt.xscale('log')
+  if logy:
+    plt.yscale('log')
   plt.xlabel("Variables (log scale)")
   plt.ylabel("Constraints")
   plt.title("Increase in Constraints and Variables after TNF Transformation")
   plt.grid(True, which="both", linestyle="--", linewidth=0.5)
   plt.legend()
+  fig.savefig("tnf-increase.pgf")
   plt.show()
 
   # Plotting the distribution of preprocessing time
   bins = [0.01,0.1,1,10,100,1000,10000]
   if min(preprocessing_times) < bins[0] or max(preprocessing_times) > bins[-1]:
     print("WARNING: Data points outside of the histogram bins!!")
-  plt.figure(figsize=(8, 6))
+  fig = plt.figure(figsize=(8, 6))
   counts, bin_edges, patches = plt.hist(preprocessing_times, bins=bins, color='blue', edgecolor='black', alpha=0.7)
   # Annotate each bar with its frequency
   for count, left_edge, right_edge in zip(counts, bin_edges[:-1], bin_edges[1:]):
@@ -482,4 +493,71 @@ def show_problem_table(df):
   plt.title("Log-Spaced Histogram of Preprocessing Times")
   # plt.xticks(bins, labels=[str(b) for b in bins])  # Ensure tick labels match bin edges
   plt.grid(axis='y', linestyle='--', alpha=0.7)
+  fig.savefig("preprocessing-time.pgf")
+  plt.show()
+
+
+def heatmap_operators(df):
+  problems = df["problem"]
+
+  ops = df[["num_op_max","num_op_eq", "num_op_reified_eq", "num_op_mul", "num_op_leq", "num_op_neq", "num_op_emod", "num_op_add", "num_op_reified_leq", "num_op_ediv", "num_op_gt", "num_op_min"]]
+
+  tnf = [r"$x = \mathit{max}(y,z)$", r"$1 = (y=z)$", r"$x = (y=z)$", r"$x = y*z$", r"$1 = (y \leq z)$", r"$0 = (y=z)$", r"$x = y~\mathit{emod}~z$", r"$x = y + z$", r"$x = y \leq z$", r"$x = y / z$", r"$0 = (y \leq z)$", r"$x = \mathit{min}(y,z)$"]
+
+  ops.columns = tnf
+
+  ops = ops.div(ops.sum(axis=1), axis=0) * 100
+  ops = ops.fillna(0)
+
+  # Remove operators that never appear (columns where sum = 0)
+  ops = ops.loc[:, ops.sum(axis=0) > 0]
+
+  ops["problem"] = problems
+
+  ops = ops.sort_values(by="problem")  # Group instances by problem
+  ops = ops.drop(columns=["problem"])  # Remove problem column after sorting
+
+  # ops = ops.iloc[ops.max(axis=1).argsort()]
+  # linkage = sch.linkage(ops, method='ward')
+
+  # Sort the DataFrame based on clustering
+  # ops = ops.iloc[sch.leaves_list(linkage)]
+
+  # Column sorting: order by total usage across all instances
+  column_order = ops.sum(axis=0).sort_values(ascending=False).index
+  ops = ops[column_order]  # Reorder columns
+
+  fig, ax = plt.subplots(figsize=(8, 8))
+  sns.heatmap(ops, cmap="coolwarm", xticklabels=True, yticklabels=False, ax=ax)
+  # Identify problem group positions for labeling
+  prev_problem = None
+  start_idx = 0
+  for i, problem in enumerate(problems[ops.index]):
+    if problem != prev_problem and prev_problem is not None:
+      mid_idx = (start_idx + i - 1) / 2  # Midpoint of the group
+      ax.text(-0.1, mid_idx+0.2, prev_problem, ha="right", va="center", rotation=0)
+      start_idx = i  # Update start index for new problem
+    prev_problem = problem
+
+  # Label the last problem group
+  if prev_problem is not None:
+    mid_idx = (start_idx + len(ops) - 1) / 2
+    ax.text(-0.1, mid_idx, prev_problem, ha="right", va="center", rotation=0)
+
+  yticks = []
+  ylabels = []
+  prev_problem = None
+  for i, problem in enumerate(problems[ops.index]):  # Iterate in sorted order
+    if problem != prev_problem:
+      yticks.append(i)  # Place label in the middle of the group
+      # ylabels.append(problem)
+    prev_problem = problem
+
+  plt.yticks(yticks)
+
+  # plt.ylabel("Problem Groups")
+  plt.xlabel("Operators")
+
+  plt.title("Normalized Operator Usage Across Instances")
+  fig.savefig("operators-heatmap.pgf", bbox_inches='tight')
   plt.show()
