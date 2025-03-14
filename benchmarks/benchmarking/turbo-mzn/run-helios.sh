@@ -1,9 +1,9 @@
 #!/bin/bash -l
-#SBATCH --time=00:40:00
+#SBATCH --time=01:00:00
 #SBATCH -p plgrid-gpu-gh200
 #SBATCH -A plgturbo-gpu-gh200
 #SBATCH --gres=gpu:4
-#SBATCH --nodes=6
+#SBATCH --nodes=5
 #SBATCH -c 288
 #SBATCH --mem=0
 #SBATCH --qos=normal
@@ -40,15 +40,15 @@ fi
 MZN_SOLVER="turbo.gpu.release"
 VERSION="v1.2.7" # Note that this is only for the naming of the output directory, we do not verify the actual version of the solver.
 # This is to avoid MiniZinc to kill Turbo before it can print the statistics.
-MZN_TIMEOUT=1500000
+MZN_TIMEOUT=1260000
 REAL_TIMEOUT=1200000
 ARCH="hybrid"
 CORES=72 # The number of core used on the node.
-THREADS=264 # The number of core used on the node.
-FP="wac1"
+THREADS=132 # The number of core used on the node.
+FP="ac1"
 WAC1_THRESHOLD=4096
 MACHINE=$(basename "$1" ".sh")
-INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024_patch.csv"
+INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024_short.csv"
 
 # II. Prepare the command lines and output directory.
 MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream -t $MZN_TIMEOUT --output-mode json --output-time --output-objective -p $THREADS -arch $ARCH -fp $FP -wac1_threshold $WAC1_THRESHOLD -hardware $MACHINE -version $VERSION -timeout $REAL_TIMEOUT"
@@ -57,8 +57,8 @@ mkdir -p $OUTPUT_DIR
 
 # If we are on the HPC, we encapsulate the command in a srun command to reserve the resources needed.
 if [ -n "${SLURM_JOB_NODELIST}" ]; then
-  SRUN_COMMAND="srun --exclusive --cpus-per-task=$CORES --gpus-per-task=4 --nodes=1 --ntasks=1 --cpu-bind=verbose"
-  NUM_PARALLEL_EXPERIMENTS=$((SLURM_JOB_NUM_NODES * 1)) # How many experiments are we running in parallel? One per GPU per default.
+  SRUN_COMMAND="srun --exclusive --cpus-per-task=$CORES --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose"
+  NUM_PARALLEL_EXPERIMENTS=$((SLURM_JOB_NUM_NODES * 4)) # How many experiments are we running in parallel? One per GPU per default.
 else
   NUM_PARALLEL_EXPERIMENTS=1
 fi
@@ -76,5 +76,4 @@ cp $INSTANCES_PATH $OUTPUT_DIR/$(basename "$MZN_WORKFLOW_PATH")/
 # The `parallel` command spawns one `srun` command per experiment, which executes the minizinc solver with the right resources.
 
 COMMANDS_LOG="$OUTPUT_DIR/$(basename "$MZN_WORKFLOW_PATH")/jobs.log"
-parallel --verbose --no-run-if-empty --rpl '{} uq()' -k --colsep ',' --skip-first-line -j $NUM_PARALLEL_EXPERIMENTS --joblog $COMMANDS_LOG $SRUN_COMMAND $MZN_COMMAND {4} $BENCHMARKING_DIR_PATH/{2} $BENCHMARKING_DIR_PATH/{3} '2>&1' '|' python3 $DUMP_PY_PATH $OUTPUT_DIR {1} {2} {3} $MZN_SOLVER $VERSION $REAL_TIMEOUT $CORES $THREADS $ARCH $FP $WAC1_THRESHOLD {4} :::: $INSTANCES_PATH ::: "-sub 15 " 
-
+parallel --verbose --no-run-if-empty --rpl '{} uq()' -k --colsep ',' --skip-first-line -j $NUM_PARALLEL_EXPERIMENTS --joblog $COMMANDS_LOG $SRUN_COMMAND $MZN_COMMAND {4} {5} $BENCHMARKING_DIR_PATH/{2} $BENCHMARKING_DIR_PATH/{3} '2>&1' '|' python3 $DUMP_PY_PATH $OUTPUT_DIR {1} {2} {3} $MZN_SOLVER $VERSION $REAL_TIMEOUT $CORES $THREADS $ARCH $FP $WAC1_THRESHOLD {4} {5} :::: $INSTANCES_PATH ::: "-sub 15 " ::: "-disable_simplify " 

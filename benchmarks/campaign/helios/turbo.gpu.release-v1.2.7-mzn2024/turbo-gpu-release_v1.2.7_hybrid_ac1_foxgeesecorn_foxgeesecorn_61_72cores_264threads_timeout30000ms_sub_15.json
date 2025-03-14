@@ -1,0 +1,37 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_ac1_foxgeesecorn_foxgeesecorn_61_72cores_264threads_timeout30000ms_sub_15", "problem": "fox-geese-corn", "model": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn.mzn", "data_file": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn_61.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "30000", "datetime": "2025-03-13T03:26:28.038943", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "ac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c2s1b1n0, task  0  0 [760049]: mask 0xffffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 657, "flatIntVars": 551, "flatBoolConstraints": 264, "flatIntConstraints": 942, "evaluatedReifiedConstraints": 613, "method": "maximize", "flatTime": 0.163021}}
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "status", "status": "UNKNOWN", "time": 62333}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"command_line": "/net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/build/gpu-release/turbo -t 30000 -n 1 -s -arch hybrid -or 264 -fp ac1 -version v1.2.7 -hardware 'helios' -cutnodes 0 /tmp/108837/x1002c2s1b1n0/mznfileWU5alv.fzn"}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_ac1_foxgeesecorn_foxgeesecorn_61_72cores_264threads_timeout30000ms_sub_15", "problem": "fox-geese-corn", "model": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn.mzn", "data_file": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn_61.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "30000", "datetime": "2025-03-13T03:30:43.514455", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "ac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c2s1b1n0, task  0  0 [760954]: mask 0xffffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 657, "flatIntVars": 551, "flatBoolConstraints": 264, "flatIntConstraints": 942, "evaluatedReifiedConstraints": 613, "method": "maximize", "flatTime": 0.160978}}
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "status", "status": "UNKNOWN", "time": 62336}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"command_line": "/net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/build/gpu-release/turbo -t 30000 -n 1 -s -arch hybrid -or 264 -fp ac1 -version v1.2.7 -hardware 'helios' -cutnodes 0 /tmp/108844/x1002c2s1b1n0/mznfileaHJQlY.fzn"}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_ac1_foxgeesecorn_foxgeesecorn_61_72cores_264threads_timeout30000ms_sub_15", "problem": "fox-geese-corn", "model": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn.mzn", "data_file": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn_61.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "30000", "datetime": "2025-03-13T03:32:21.599344", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "ac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c2s1b1n0, task  0  0 [761569]: mask 0xffffffffffffffffff set
+slurmstepd: error: execve(): /net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/gpu-release-local-turbo: No such file or directory
+srun: error: x1002c2s1b1n0: task 0: Exited with exit code 2
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_ac1_foxgeesecorn_foxgeesecorn_61_72cores_264threads_timeout30000ms_sub_15", "problem": "fox-geese-corn", "model": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn.mzn", "data_file": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn_61.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "30000", "datetime": "2025-03-13T03:34:00.919312", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "ac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c2s1b1n0, task  0  0 [761906]: mask 0xffffffffffffffffff set
+slurmstepd: error: execve(): /net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/gpu-release-local/turbo: No such file or directory
+srun: error: x1002c2s1b1n0: task 0: Exited with exit code 2
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_ac1_foxgeesecorn_foxgeesecorn_61_72cores_264threads_timeout30000ms_sub_15", "problem": "fox-geese-corn", "model": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn.mzn", "data_file": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn_61.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "30000", "datetime": "2025-03-13T03:36:08.784023", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "ac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c0s1b0n0, task  0  0 [276268]: mask 0xffffffffffffffffff set
+slurmstepd: error: execve(): /net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/gpu-release-local/turbo: No such file or directory
+srun: error: x1002c0s1b0n0: task 0: Exited with exit code 2
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_ac1_foxgeesecorn_foxgeesecorn_61_72cores_264threads_timeout30000ms_sub_15", "problem": "fox-geese-corn", "model": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn.mzn", "data_file": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn_61.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "30000", "datetime": "2025-03-13T03:37:12.255493", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "ac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c0s1b0n0, task  0  0 [276892]: mask 0xffffffffffffffffff set
+%%%mzn-stat: command_line="/net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/build/gpu-release-local/turbo -t 30000 -n 1 -s -v -arch hybrid -or 264 -fp ac1 -version v1.2.7 -hardware 'helios' -cutnodes 0 /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn_61.dzn"
+ERROR: Unknown input format for the file /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn_61.dzn [supported extension: .xml and .fzn].
+srun: error: x1002c0s1b0n0: task 0: Exited with exit code 1
