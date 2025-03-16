@@ -1,7 +1,0 @@
-{"type": "lattice-land", "lattice-land": "start"}
-{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_foxgeesecorn_foxgeesecorn_61_72cores_264threads_timeout60000ms_sub_15", "problem": "fox-geese-corn", "model": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn.mzn", "data_file": "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn_61.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "60000", "datetime": "2025-03-13T03:20:08.332128", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
-cpu-bind=MASK - x1002c2s1b1n0, task  0  0 [758501]: mask 0xffffffffffffffffff set
-{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 657, "flatIntVars": 551, "flatBoolConstraints": 264, "flatIntConstraints": 942, "evaluatedReifiedConstraints": 613, "method": "maximize", "flatTime": 0.160063}}
-% WARNING: Annotation domain is unknown and was ignored.
-srun: Job step aborted: Waiting up to 182 seconds for job step to finish.
-slurmstepd: error: *** STEP 108832.0 ON x1002c2s1b1n0 CANCELLED AT 2025-03-13T03:23:06 ***

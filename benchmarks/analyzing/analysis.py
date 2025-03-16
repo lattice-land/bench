@@ -34,6 +34,12 @@ def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machin
       uid += '_noatomics'
     if 'globalmem' in config:
       uid += '_globalmem'
+    if '_disable_simplify' in config:
+      uid += '_disable_simplify'
+    if '_force_ternarize' in config:
+      uid += '_force_ternarize'
+    if '_ipc' in config:
+      uid += '_ipc'
   else:
     if or_nodes > 1:
       uid += '_' + str(int(or_nodes)) + "threads"
@@ -101,7 +107,7 @@ def read_experiments(experiments):
     failed_xps = df[(df['mzn_solver'] == "turbo.gpu.release") & df['or_nodes'].isna()]
     if len(failed_xps) > 0:
       failed_xps_path = f"failed_{Path(e).name}"
-      failed_xps[['problem', 'model', 'data_file']].to_csv(failed_xps_path, index=False)
+      failed_xps[['configuration','problem', 'model', 'data_file']].to_csv(failed_xps_path, index=False)
       df = df[(df['mzn_solver'] != "turbo.gpu.release") | (~df['or_nodes'].isna())]
       print(f"{e}: {len(failed_xps)} failed experiments using turbo.gpu.release have been removed (the faulty experiments have been stored in {failed_xps_path}).")
     if 'search' not in df:
@@ -309,7 +315,7 @@ def metrics_table(df):
 
   return overall_metrics
 
-def compare_solvers_pie_chart(df, uid1, uid2):
+def compare_solvers_pie_chart(df, uid1, uid2, uid1_label = None, uid2_label = None):
     """
     Compares the performance of two solvers based on objective value and optimality.
 
@@ -321,6 +327,10 @@ def compare_solvers_pie_chart(df, uid1, uid2):
     Returns:
     - Displays a pie chart comparing the performance of the two solvers.
     """
+    if uid1_label == None:
+      uid1_label = uid1
+    if uid2_label == None:
+      uid2_label = uid2
 
     solvers_df = df[(df['uid'] == uid1) | (df['uid'] == uid2)]
 
@@ -350,7 +360,7 @@ def compare_solvers_pie_chart(df, uid1, uid2):
         (pivot_df['status', uid1] == pivot_df['status', uid2])
     ]
 
-    choices = ['Error', f'{uid1} better', f'{uid2} better', 'Equal']
+    choices = ['Error', f'{uid1_label} better', f'{uid2_label} better', 'Equal']
 
     pivot_df['Comparison'] = np.select(conditions, choices, default='Unknown')
 
@@ -367,19 +377,20 @@ def compare_solvers_pie_chart(df, uid1, uid2):
     category_counts = pivot_df['Comparison'].value_counts()
 
     color_mapping = {
-        f'{uid1} better': 'green' if category_counts.get(f'{uid1} better', 0) >= category_counts.get(f'{uid2} better', 0) else 'orange',
-        f'{uid2} better': 'green' if category_counts.get(f'{uid2} better', 0) > category_counts.get(f'{uid1} better', 0) else 'orange',
+        f'{uid1_label} better': 'green' if category_counts.get(f'{uid1_label} better', 0) >= category_counts.get(f'{uid2_label} better', 0) else 'orange',
+        f'{uid2_label} better': 'green' if category_counts.get(f'{uid2_label} better', 0) > category_counts.get(f'{uid1_label} better', 0) else 'orange',
         'Equal': (0.678, 0.847, 0.902), # light blue
         'Unknown': 'red',
         'Error': 'red'
     }
     colors = [color_mapping[cat] for cat in category_counts.index]
-
+    plt.rcParams.update({'font.size': 20})
     # Plot pie chart
-    plt.figure(figsize=(10, 6))
+    fig = plt.figure(figsize=(10, 6))
     category_counts.plot(kind='pie', autopct='%1.1f%%', startangle=140, colors=colors)
-    plt.title(f'Objective Value and Optimality Comparison between {uid1} and {uid2}')
+    # plt.title(f'Objective Value and Optimality Comparison between {uid1} and {uid2}')
     plt.ylabel('')
+    fig.savefig(f"cmp-{uid1_label}-{uid2_label}.pdf")
     plt.show()
 
     return pivot_df
@@ -447,9 +458,12 @@ def analyse_tnf_per_problem(df, logy = False, source_vars='parsed_variables', so
   all_vars_increase = []
   all_cons_increase = []
   preprocessing_times = []
+  leq_10x_increase = 0
   for index, row in df.iterrows():
     vars_increase = row[target_vars] / row[source_vars]
     cons_increase = row[target_cons] / row[source_cons]
+    if vars_increase <= 10. and cons_increase <= 10.:
+      leq_10x_increase += 1
     all_vars_increase.append(vars_increase)
     all_cons_increase.append(cons_increase)
     preprocessing_times.append(row['preprocessing_time'])
@@ -462,6 +476,7 @@ def analyse_tnf_per_problem(df, logy = False, source_vars='parsed_variables', so
   print(f"average_cons_increase={sum(all_cons_increase)/num_problems:.2f}")
   print(f"median_vars_increase={sorted(all_vars_increase)[num_problems//2]:.2f}")
   print(f"median_cons_increase={sorted(all_cons_increase)[num_problems//2]:.2f}")
+  print(f"leq_10x_increase={leq_10x_increase}")
 
   # Plotting the increase of variables and constraints.
   fig = plt.figure(figsize=(8, 6))
@@ -469,12 +484,14 @@ def analyse_tnf_per_problem(df, logy = False, source_vars='parsed_variables', so
   plt.xscale('log')
   if logy:
     plt.yscale('log')
+    plt.ylabel("Constraints (log scale)")
+  else:
+    plt.ylabel("Constraints")
   plt.xlabel("Variables (log scale)")
-  plt.ylabel("Constraints")
-  plt.title("Increase in Constraints and Variables after TNF Transformation")
+  # plt.title("Increase in Constraints and Variables after Preprocessing")
   plt.grid(True, which="both", linestyle="--", linewidth=0.5)
   plt.legend()
-  fig.savefig("tnf-increase.pgf")
+  fig.savefig("tnf-increase.pdf")
   plt.show()
 
   # Plotting the distribution of preprocessing time
@@ -493,7 +510,7 @@ def analyse_tnf_per_problem(df, logy = False, source_vars='parsed_variables', so
   plt.title("Log-Spaced Histogram of Preprocessing Times")
   # plt.xticks(bins, labels=[str(b) for b in bins])  # Ensure tick labels match bin edges
   plt.grid(axis='y', linestyle='--', alpha=0.7)
-  fig.savefig("preprocessing-time.pgf")
+  fig.savefig("preprocessing-time.pdf")
   plt.show()
 
 
@@ -559,5 +576,5 @@ def heatmap_operators(df):
   plt.xlabel("Operators")
 
   plt.title("Normalized Operator Usage Across Instances")
-  fig.savefig("operators-heatmap.pgf", bbox_inches='tight')
+  fig.savefig("operators-heatmap.pdf", bbox_inches='tight')
   plt.show()
