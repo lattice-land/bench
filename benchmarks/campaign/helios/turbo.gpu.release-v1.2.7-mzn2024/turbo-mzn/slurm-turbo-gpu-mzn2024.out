@@ -118,12 +118,12 @@ Shell debugging restarted
 + ARCH=hybrid
 + CORES=72
 + THREADS=264
-+ FP=ac1
++ FP=wac1
 + WAC1_THRESHOLD=4096
 ++ basename helios.sh .sh
 + MACHINE=helios
 + INSTANCES_PATH=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../benchmarking/mzn2024_patch.csv
-+ MZN_COMMAND='minizinc --solver turbo.gpu.release -s --json-stream -t 1260000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -fp ac1 -wac1_threshold 4096 -hardware helios -version v1.2.7 -timeout 1200000 -globalmem '
++ MZN_COMMAND='minizinc --solver turbo.gpu.release -s --json-stream -t 1260000 --output-mode json --output-time --output-objective -p 264 -arch hybrid -fp wac1 -wac1_threshold 4096 -hardware helios -version v1.2.7 -timeout 1200000 -globalmem '
 + OUTPUT_DIR=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.7-mzn2024
 + mkdir -p /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.7-mzn2024
 + '[' -n x1002c6s6b0n0,x1002c6s6b1n0 ']'
