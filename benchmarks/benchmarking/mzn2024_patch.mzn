@@ -1,0 +1,7 @@
+"problem","model","data_file"
+"accap","../data/mzn-challenge/2024/accap/accap.mzn","../data/mzn-challenge/2024/accap/accap_a10_f80_t50.json"
+"aircraft-disassembly","../data/mzn-challenge/2024/aircraft-disassembly/aircraft.mzn","../data/mzn-challenge/2024/aircraft-disassembly/B737NG-600-09-Anon.json.dzn"
+"neighbours","../data/mzn-challenge/2024/neighbours/neighbours-rect.mzn","../data/mzn-challenge/2024/neighbours/neightbours-new-15.dzn"
+"tiny-cvrp","../data/mzn-challenge/2024/tiny-cvrp/TinyCVRP_ExactlyOneSolution.mzn","../data/mzn-challenge/2024/tiny-cvrp/medium_instance_13.dzn"
+"fox-geese-corn","../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn.mzn","../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn_61.dzn"
+"fox-geese-corn","../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn.mzn","../data/mzn-challenge/2024/fox-geese-corn/fgc_06_26_08_00.dzn"
