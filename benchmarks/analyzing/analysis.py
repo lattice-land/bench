@@ -452,9 +452,20 @@ def plot_time_distribution(arch, df):
   # Show plot
   plt.show()
 
-def analyse_tnf_per_problem(df, logy = False, source_vars='parsed_variables', source_cons='parsed_constraints', target_vars='tnf_variables', target_cons='tnf_constraints'):
-  print(f"| Problem | Data | #Vars | #Vars (TNF) | #Constraints | #Constraints (TNF) | Preprocessing (sec) |")
-  print("|----------|------|-------|-------------|--------------|--------------------|---------------------|")
+def boxplot_preprocessing_components(df, components):
+  pass
+
+def boxplot_tcn_increase(df, ref_vars, ref_cons):
+  parsed_variables
+  tnf_variables
+  variables_after_simplification
+
+  pass
+
+def analyse_tnf_per_problem(df, logy, source_vars, source_cons, target_vars, target_cons, list_problems=False):
+  if list_problems:
+    print(f"| Problem | Data | #Vars | #Vars (TNF) | #Constraints | #Constraints (TNF) | Preprocessing (sec) |")
+    print("|----------|------|-------|-------------|--------------|--------------------|---------------------|")
   all_vars_increase = []
   all_cons_increase = []
   preprocessing_times = []
@@ -470,12 +481,15 @@ def analyse_tnf_per_problem(df, logy = False, source_vars='parsed_variables', so
     data_name = Path(row['data_file']).stem
     if data_name == "empty":
       data_name = Path(row['model']).stem
-    print(f"| {row['problem']} | {data_name} | {row[source_vars]} | {row[target_vars]} (x{vars_increase:.2f}) | {row[source_cons]} | {row[target_cons]} (x{cons_increase:.2f}) | {row['preprocessing_time']} |")
+    if list_problems:
+      print(f"| {row['problem']} | {data_name} | {row[source_vars]} | {row[target_vars]} (x{vars_increase:.2f}) | {row[source_cons]} | {row[target_cons]} (x{cons_increase:.2f}) | {row['preprocessing_time']} |")
   num_problems = df.shape[0]
   print(f"average_vars_increase={sum(all_vars_increase)/num_problems:.2f}")
   print(f"average_cons_increase={sum(all_cons_increase)/num_problems:.2f}")
   print(f"median_vars_increase={sorted(all_vars_increase)[num_problems//2]:.2f}")
   print(f"median_cons_increase={sorted(all_cons_increase)[num_problems//2]:.2f}")
+  print(f"stddev_vars_increase={np.std(all_vars_increase, ddof=0):.2f}")
+  print(f"stddev_cons_increase={np.std(all_cons_increase, ddof=0):.2f}")
   print(f"leq_10x_increase={leq_10x_increase}")
 
   # Plotting the increase of variables and constraints.
@@ -493,6 +507,15 @@ def analyse_tnf_per_problem(df, logy = False, source_vars='parsed_variables', so
   plt.legend()
   fig.savefig("tnf-increase.pdf")
   plt.show()
+
+def preprocessing_time_distribution(df):
+  preprocessing_times = []
+  for _, row in df.iterrows():
+    preprocessing_times.append(row['preprocessing_time'])
+  num_problems = df.shape[0]
+  print(f"average_preprocessing_time={sum(preprocessing_times)/num_problems:.2f}")
+  print(f"median_preprocessing_time={sorted(preprocessing_times)[num_problems//2]:.2f}")
+  print(f"stddev_preprocessing_time={np.std(preprocessing_times, ddof=0):.2f}")
 
   # Plotting the distribution of preprocessing time
   bins = [0.01,0.1,1,10,100,1000,10000]
@@ -513,6 +536,7 @@ def analyse_tnf_per_problem(df, logy = False, source_vars='parsed_variables', so
   fig.savefig("preprocessing-time.pdf")
   plt.show()
 
+# def preprocessing_contribution(df):
 
 def heatmap_operators(df):
   problems = df["problem"]
