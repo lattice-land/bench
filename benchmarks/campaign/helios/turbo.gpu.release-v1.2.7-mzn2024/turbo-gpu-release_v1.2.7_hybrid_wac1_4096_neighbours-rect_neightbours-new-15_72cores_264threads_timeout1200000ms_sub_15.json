@@ -1,0 +1,6 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_wac1_4096_neighbours-rect_neightbours-new-15_72cores_264threads_timeout1200000ms_sub_15", "problem": "neighbours", "model": "../data/mzn-challenge/2024/neighbours/neighbours-rect.mzn", "data_file": "../data/mzn-challenge/2024/neighbours/neightbours-new-15.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-20T15:12:10.324386", "status": "UNKNOWN", "cores": "72", "threads": "264", "arch": "hybrid", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c0s6b1n0, task  0  0 [1179263]: mask 0xffffffffffffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 1552, "flatIntVars": 85, "flatBoolConstraints": 1241, "flatIntConstraints": 1088, "evaluatedReifiedConstraints": 1324, "method": "maximize", "flatTime": 0.12628}}
+{"type": "status", "status": "UNKNOWN", "time": 1262348}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
