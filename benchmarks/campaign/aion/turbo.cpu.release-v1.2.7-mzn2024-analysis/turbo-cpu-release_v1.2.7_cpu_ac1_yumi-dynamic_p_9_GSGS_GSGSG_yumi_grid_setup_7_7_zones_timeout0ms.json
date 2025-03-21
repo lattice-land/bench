@@ -1,0 +1,11 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-cpu-release_v1.2.7_cpu_ac1_yumi-dynamic_p_9_GSGS_GSGSG_yumi_grid_setup_7_7_zones_timeout0ms", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_9_GSGS_GSGSG_yumi_grid_setup_7_7_zones.dzn", "mzn_solver": "turbo.cpu.release", "version": "v1.2.7", "timeout_ms": "0", "datetime": "2025-03-21T05:02:42.966179", "status": "UNKNOWN", "cores": "1", "threads": "1", "arch": "cpu", "fixpoint": "ac1", "wac1_threshold": "0"}}
+cpu-bind=MASK - aion-0008, task  0  0 [1474028]: mask 0x400000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 516660, "flatIntVars": 1633311, "flatBoolConstraints": 186219, "flatIntConstraints": 1991662, "evaluatedReifiedConstraints": 343781, "method": "minimize", "flatTime": 168.062}}
+% WARNING: Annotation add_to_output is unknown and was ignored.
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "status", "status": "ERROR", "time": 1164985}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"command_line": "/mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/cpu-release/turbo -t 0 -n 1 -s -arch cpu -p 1 -network_analysis -fp ac1 -version v1.2.7 -hardware 'aion' -cutnodes 1 /tmp/mznfileyTXkSk.fzn"}}
+slurmstepd: error: Detected 1 oom_kill event in StepId=6865562.92. Some of the step tasks have been OOM Killed.
+srun: error: aion-0008: task 0: Out Of Memory

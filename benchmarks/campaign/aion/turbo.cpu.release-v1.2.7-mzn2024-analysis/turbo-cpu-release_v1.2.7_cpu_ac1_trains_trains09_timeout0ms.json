@@ -1,0 +1,21 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-cpu-release_v1.2.7_cpu_ac1_trains_trains09_timeout0ms", "problem": "train-scheduling", "model": "../data/mzn-challenge/2024/train-scheduling/trains.mzn", "data_file": "../data/mzn-challenge/2024/train-scheduling/trains09.dzn", "mzn_solver": "turbo.cpu.release", "version": "v1.2.7", "timeout_ms": "0", "datetime": "2025-03-21T05:02:19.810108", "status": "UNKNOWN", "cores": "1", "threads": "1", "arch": "cpu", "fixpoint": "ac1", "wac1_threshold": "0"}}
+cpu-bind=MASK - aion-0008, task  0  0 [1469112]: mask 0x4 set
+Double track L C-D:
+Double track R C-D:
+Double track L C-H:
+Double track R C-H:
+Double track L D-E:
+Double track R D-E:
+Double track L H-I:
+Double track R H-I:
+Single track A-B:
+Single track B-C:
+Single track C-G:
+Single track F-G:
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 23268, "flatIntVars": 11873, "flatBoolConstraints": 6044, "flatIntConstraints": 30256, "evaluatedReifiedConstraints": 17738, "eliminatedImplications": 56, "method": "minimize", "flatTime": 1.20894}}
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "statistics", "statistics": {"command_line": "/mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/cpu-release/turbo -t 0 -n 1 -s -arch cpu -p 1 -network_analysis -fp ac1 -version v1.2.7 -hardware 'aion' -cutnodes 1 /tmp/mznfileLAan6A.fzn", "parsed_variables": 47231, "parsed_constraints": 64323, "abstract_domain": "pir_itv32_z", "tnf_variables": 107205, "tnf_constraints": 110252, "eliminated_entailed_constraints_fp_iter_1": 9668, "eliminated_equality_constraints_fp_iter_1": 24040, "eliminated_constraints_by_icse_fp_iter_1": 1895, "eliminated_constraints_by_as_fp_iter_1": 4003, "icse_fixpoint_iterations_fp_iter_1": 3, "eliminated_entailed_constraints_fp_iter_2": 30, "eliminated_equality_constraints_fp_iter_2": 1, "eliminated_constraints_by_icse_fp_iter_2": 0, "eliminated_constraints_by_as_fp_iter_2": 0, "icse_fixpoint_iterations_fp_iter_2": 1, "eliminated_entailed_constraints": 9698, "eliminated_equality_constraints": 24041, "eliminated_constraints_by_icse": 1895, "eliminated_constraints_by_as": 4003, "icse_fixpoint_iterations": 5, "eliminated_variables": 38017, "preprocessing_fixpoint_iterations": 3, "variables_after_simplification": 69247, "constraints_after_simplification": 70615, "num_constants": 2180, "num_infinite_domains": 0, "sum_props_of_vars": 165511, "sum_props_of_vars": 662044, "avg_constraints_per_unassigned_var": 2.467846, "max_constraints_per_unassigned_var": 1038, "num_vars_in_2_constraints": 60287, "num_vars_in_3_constraints": 360, "num_vars_in_4_to_10_constraints": 945, "num_vars_in_more_than_10_constraints": 865, "sum_domain_size": 10468681, "sum_domain_size": 1308585, "largest_domain": 3296, "num_2bits_vars": 24418, "num_64bits_vars": 31488, "num_128bits_vars": 34544, "num_256bits_vars": 47569, "num_512bits_vars": 62428, "num_65536bits_vars": 67067, "num_op_add": 42163, "num_op_mul": 94, "num_op_min": 4202, "num_op_max": 3880, "num_op_ediv": 0, "num_op_emod": 0, "num_op_eq": 0, "num_op_neq": 266, "num_op_leq": 0, "num_op_gt": 0, "num_op_reified_eq": 9064, "num_op_reified_leq": 10946, "preprocessing_time": 4.324}}
+{"type": "status", "status": "UNKNOWN", "time": 5827}
+{"type": "statistics", "statistics": {"problem_path": "/tmp/mznfileLAan6A.fzn", "solver": "Turbo", "version": "v1.2.7", "hardware": "aion", "arch": "cpu", "fixpoint": "ac1", "free_search": "yes", "or_nodes": 1, "timeout_ms": 0, "cutnodes": 1, "nodes": 1, "failures": 0, "variables": 69247, "propagators": 70615, "peakDepth": 0, "initTime": 4.324, "solveTime": 4.324, "num_solutions": 0, "eps_num_subproblems": 4096, "eps_solved_subproblems": 0, "eps_skipped_subproblems": 0, "num_blocks_done": 0, "fixpoint_iterations": 1, "solve_time": 0.0, "search_time": 0.001, "fixpoint_time": 0.001, "transfer_cpu2gpu_time": 0.0, "transfer_gpu2cpu_time": 0.0, "select_fp_functions_time": 0.0, "wait_cpu_time": 0.0, "dive_time": 0.0}}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
