@@ -40,8 +40,8 @@ fi
 MZN_SOLVER="turbo.gpu.release"
 VERSION="v1.2.7" # Note that this is only for the naming of the output directory, we do not verify the actual version of the solver.
 # This is to avoid MiniZinc to kill Turbo before it can print the statistics.
-MZN_TIMEOUT=300000
-REAL_TIMEOUT=360000
+MZN_TIMEOUT=360000
+REAL_TIMEOUT=300000
 ARCH="hybrid"
 FP="ac1"
 WAC1_THRESHOLD=4096

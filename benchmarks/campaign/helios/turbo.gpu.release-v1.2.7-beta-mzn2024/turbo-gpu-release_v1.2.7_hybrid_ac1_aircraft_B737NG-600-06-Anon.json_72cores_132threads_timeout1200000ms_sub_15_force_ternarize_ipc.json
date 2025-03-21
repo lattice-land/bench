@@ -1,0 +1,6 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.7_hybrid_ac1_aircraft_B737NG-600-06-Anon.json_72cores_132threads_timeout1200000ms_sub_15_force_ternarize_ipc", "problem": "aircraft-disassembly", "model": "../data/mzn-challenge/2024/aircraft-disassembly/aircraft.mzn", "data_file": "../data/mzn-challenge/2024/aircraft-disassembly/B737NG-600-06-Anon.json.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.7", "timeout_ms": "1200000", "datetime": "2025-03-14T12:59:39.162238", "status": "UNKNOWN", "cores": "72", "threads": "132", "arch": "hybrid", "fixpoint": "ac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c0s2b0n0, task  0  0 [524168]: mask 0xffffffffffffffffff000000000000000000000000000000000000000000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 635627, "flatIntVars": 207273, "flatBoolConstraints": 320319, "flatIntConstraints": 647862, "evaluatedReifiedConstraints": 428739, "method": "minimize", "flatTime": 41.3355}}
+{"type": "status", "status": "UNKNOWN", "time": 1306157}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
