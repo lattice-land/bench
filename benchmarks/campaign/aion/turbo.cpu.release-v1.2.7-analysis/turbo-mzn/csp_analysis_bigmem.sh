@@ -1,13 +1,13 @@
 #!/bin/bash -l
 #SBATCH --time=05:00:00
-#SBATCH --partition=batch
-#SBATCH --nodes=3
+#SBATCH --partition=bigmem
+#SBATCH --nodes=1
 #SBATCH --exclusive
-#SBATCH --ntasks-per-node=8
+#SBATCH --ntasks-per-node=1
 #SBATCH --mem=0
 #SBATCH --qos=normal
 #SBATCH --export=ALL
-#SBATCH --output=slurm-turbo-analysis_cpu.out
+#SBATCH --output=slurm-turbo-analysis_cpu_bigmem.out
 
 # Exits when an error occurs.
 set -e
@@ -25,7 +25,7 @@ if [ -z "$1" ]; then
   exit 1
 fi
 source $1
-source ${BENCHMARKS_DIR_PATH}/../pybench-aion/bin/activate
+source ${BENCHMARKS_DIR_PATH}/../pybench/bin/activate
 
 # If it has an argument, we retry the jobs that failed on a previous run.
 # If the experiments were not complete, you can simply rerun the script, parallel will ignore the jobs that are already done.
@@ -42,17 +42,17 @@ ARCH="cpu"
 CORES=1 # The number of core used on the node.
 THREADS=1 # The number of core used on the node.
 MACHINE=$(basename "$1" ".sh")
-INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024_noset.csv"
+INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2023_bigmem.csv"
 
 # II. Prepare the command lines and output directory.
 MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream --output-mode json --output-time --output-objective -p $THREADS -arch $ARCH -network_analysis -cutnodes 1 -hardware $MACHINE -version $VERSION"
-OUTPUT_DIR="$BENCHMARKS_DIR_PATH/campaign/$MACHINE/$MZN_SOLVER-$VERSION-mzn2024-analysis"
+OUTPUT_DIR="$BENCHMARKS_DIR_PATH/campaign/$MACHINE/$MZN_SOLVER-$VERSION-analysis"
 mkdir -p $OUTPUT_DIR
 
 # If we are on the HPC, we encapsulate the command in a srun command to reserve the resources needed.
 if [ -n "${SLURM_JOB_NODELIST}" ]; then
   SRUN_COMMAND="srun --exclusive --cpus-per-task=$CORES --nodes=1 --ntasks=1 --cpu-bind=verbose"
-  NUM_PARALLEL_EXPERIMENTS=$((SLURM_JOB_NUM_NODES * 8)) # How many experiments are we running in parallel? One per GPU per default.
+  NUM_PARALLEL_EXPERIMENTS=$((SLURM_JOB_NUM_NODES * 1)) # How many experiments are we running in parallel? One per GPU per default.
 else
   NUM_PARALLEL_EXPERIMENTS=1
 fi
