@@ -19,3 +19,14 @@ cpu-bind=MASK - x1002c7s5b0n0, task  0  0 [3329858]: mask 0x1 set
 {"type": "statistics", "statistics": {"nSolutions": 0}}
 {"type": "statistics", "statistics": {"heap_memory": 501501616}}
 srun: error: x1002c7s5b0n0: task 0: Exited with exit code 1
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_wac1_4096_neighbours-rect_neightbours-new-15_1cores_132threads_timeout1200000ms_sub_15", "problem": "neighbours", "model": "../data/mzn-challenge/2024/neighbours/neighbours-rect.mzn", "data_file": "../data/mzn-challenge/2024/neighbours/neightbours-new-15.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2025-03-29T11:38:19.659264", "status": "UNKNOWN", "cores": "1", "threads": "132", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c7s3b0n0, task  0  0 [534813]: mask 0x1 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 1552, "flatIntVars": 85, "flatBoolConstraints": 1241, "flatIntConstraints": 1088, "evaluatedReifiedConstraints": 1324, "method": "maximize", "flatTime": 0.188197}}
+{"type": "statistics", "statistics": {"command_line": "/net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/build/gpu-release/turbo -t 1200000 -n 1 -s -arch barebones -or 132 -sub 15 -stack 0 -fp wac1 -wac1_threshold 4096 -version v1.2.8 -hardware 'helios' -cutnodes 0 /tmp/133168/x1002c7s3b0n0/mznfile1GUWAg.fzn", "parsed_variables": 1890, "parsed_constraints": 2669, "abstract_domain": "pir_itv32_z", "tnf_variables": 5162, "tnf_constraints": 5844, "eliminated_entailed_constraints_fp_iter_1": 11, "eliminated_equality_constraints_fp_iter_1": 254, "eliminated_constraints_by_icse_fp_iter_1": 259, "eliminated_constraints_by_as_fp_iter_1": 0, "icse_fixpoint_iterations_fp_iter_1": 2, "eliminated_entailed_constraints": 11, "eliminated_equality_constraints": 254, "eliminated_constraints_by_icse": 259, "eliminated_constraints_by_as": 0, "icse_fixpoint_iterations": 3, "eliminated_variables": 542, "preprocessing_fixpoint_iterations": 2, "variables_after_simplification": 4642, "constraints_after_simplification": 5320, "preprocessing_time": 0.198}}
+{"type": "statistics", "statistics": {"memory_configuration": "tcn_shared", "shared_mem": 122584, "store_mem": 37208, "propagator_mem": 85248}}
+{"type": "comment", "comment": "% ERROR: CUDA kernel failed due to an illegal memory access. This might be due to a stack overflow because it is too small. Try increasing the stack size with the options -stack. If it does not work, please report it as a bug.\n"}
+{"type": "status", "status": "ERROR", "time": 105034}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"heap_memory": 501501616}}
+srun: error: x1002c7s3b0n0: task 0: Exited with exit code 1
