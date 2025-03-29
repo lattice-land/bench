@@ -1,3 +1,49 @@
+
+Inactive Modules:
+  1) system/OpenSSL/1.1
+
+The following have been reloaded with a version change:
+  1) compiler/GCCcore/13.2.0 => compiler/GCCcore/10.2.0
+  2) devel/CMake/3.27.6-GCCcore-13.2.0 => devel/CMake/3.20.1-GCCcore-10.2.0
+  3) devel/Doxygen/1.9.8-GCCcore-13.2.0 => devel/Doxygen/1.8.20-GCCcore-10.2.0
+  4) devel/SQLite/3.43.1-GCCcore-13.2.0 => devel/SQLite/3.33.0-GCCcore-10.2.0
+  5) devel/ncurses/6.4-GCCcore-13.2.0 => devel/ncurses/6.2-GCCcore-10.2.0
+  6) lang/Python/3.11.5-GCCcore-13.2.0 => lang/Python/3.8.6-GCCcore-10.2.0
+  7) lang/Tcl/8.6.13-GCCcore-13.2.0 => lang/Tcl/8.6.10-GCCcore-10.2.0
+  8) lib/libffi/3.4.4-GCCcore-13.2.0 => lib/libffi/3.3-GCCcore-10.2.0
+  9) lib/libiconv/1.17-GCCcore-13.2.0 => lib/libiconv/1.16-GCCcore-10.2.0
+ 10) lib/libreadline/8.2-GCCcore-13.2.0 => lib/libreadline/8.0-GCCcore-10.2.0
+ 11) lib/libxml2/2.11.5-GCCcore-13.2.0 => lib/libxml2/2.9.10-GCCcore-10.2.0
+ 12) lib/zlib/1.2.13-GCCcore-13.2.0 => lib/zlib/1.2.11-GCCcore-10.2.0
+ 13) tools/XZ/5.4.4-GCCcore-13.2.0 => tools/XZ/5.2.5-GCCcore-10.2.0
+ 14) tools/binutils/2.40-GCCcore-13.2.0 => tools/binutils/2.35-GCCcore-10.2.0
+ 15) tools/bzip2/1.0.8-GCCcore-13.2.0 => tools/bzip2/1.0.8-GCCcore-10.2.0
+ 16) tools/cURL/8.3.0-GCCcore-13.2.0 => tools/cURL/7.72.0-GCCcore-10.2.0
+ 17) tools/libarchive/3.7.2-GCCcore-13.2.0 => tools/libarchive/3.4.3-GCCcore-10.2.0
+
+
+Activating Modules:
+  1) system/OpenSSL/1.1
+
+The following have been reloaded with a version change:
+  1) compiler/GCCcore/10.2.0 => compiler/GCCcore/13.2.0
+  2) devel/CMake/3.20.1-GCCcore-10.2.0 => devel/CMake/3.27.6-GCCcore-13.2.0
+  3) devel/Doxygen/1.8.20-GCCcore-10.2.0 => devel/Doxygen/1.9.8-GCCcore-13.2.0
+  4) devel/SQLite/3.33.0-GCCcore-10.2.0 => devel/SQLite/3.43.1-GCCcore-13.2.0
+  5) devel/ncurses/6.2-GCCcore-10.2.0 => devel/ncurses/6.4-GCCcore-13.2.0
+  6) lang/Python/3.8.6-GCCcore-10.2.0 => lang/Python/3.11.5-GCCcore-13.2.0
+  7) lang/Tcl/8.6.10-GCCcore-10.2.0 => lang/Tcl/8.6.13-GCCcore-13.2.0
+  8) lib/libffi/3.3-GCCcore-10.2.0 => lib/libffi/3.4.4-GCCcore-13.2.0
+  9) lib/libiconv/1.16-GCCcore-10.2.0 => lib/libiconv/1.17-GCCcore-13.2.0
+ 10) lib/libreadline/8.0-GCCcore-10.2.0 => lib/libreadline/8.2-GCCcore-13.2.0
+ 11) lib/libxml2/2.9.10-GCCcore-10.2.0 => lib/libxml2/2.11.5-GCCcore-13.2.0
+ 12) lib/zlib/1.2.11-GCCcore-10.2.0 => lib/zlib/1.2.13-GCCcore-13.2.0
+ 13) tools/XZ/5.2.5-GCCcore-10.2.0 => tools/XZ/5.4.4-GCCcore-13.2.0
+ 14) tools/binutils/2.35-GCCcore-10.2.0 => tools/binutils/2.40-GCCcore-13.2.0
+ 15) tools/bzip2/1.0.8-GCCcore-10.2.0 => tools/bzip2/1.0.8-GCCcore-13.2.0
+ 16) tools/cURL/7.72.0-GCCcore-10.2.0 => tools/cURL/8.3.0-GCCcore-13.2.0
+ 17) tools/libarchive/3.4.3-GCCcore-10.2.0 => tools/libarchive/3.7.2-GCCcore-13.2.0
+
 +++ realpath run.sh
 ++ dirname /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/run.sh
 + MZN_WORKFLOW_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn
@@ -67,8 +113,8 @@ Shell debugging restarted
 ++ '[' '!' nondestructive = nondestructive ']'
 ++ VIRTUAL_ENV=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/pybench-aion
 ++ export VIRTUAL_ENV
-++ _OLD_VIRTUAL_PATH=/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Python/3.11.5-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/SQLite/3.43.1-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Tcl/8.6.13-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/binutils/2.40-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/libxml2/2.11.5-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Doxygen/1.9.8-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/libiconv/1.17-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/CMake/3.27.6-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/libarchive/3.7.2-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/XZ/5.4.4-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/cURL/8.3.0-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/OpenSSL/1.1/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/bzip2/1.0.8-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/ncurses/6.4-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/GCCcore/13.2.0/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/users/ptalbot/deps/libminizinc/build:/usr/share/lmod/lmod/libexec
-++ PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/pybench-aion/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Python/3.11.5-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/SQLite/3.43.1-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Tcl/8.6.13-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/binutils/2.40-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/libxml2/2.11.5-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Doxygen/1.9.8-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/libiconv/1.17-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/CMake/3.27.6-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/libarchive/3.7.2-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/XZ/5.4.4-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/cURL/8.3.0-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/OpenSSL/1.1/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/bzip2/1.0.8-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/ncurses/6.4-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/GCCcore/13.2.0/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/users/ptalbot/deps/libminizinc/build:/usr/share/lmod/lmod/libexec
+++ _OLD_VIRTUAL_PATH=/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Python/3.11.5-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/libxml2/2.11.5-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Doxygen/1.9.8-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/CMake/3.27.6-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/SQLite/3.43.1-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Tcl/8.6.13-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/binutils/2.40-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/libiconv/1.17-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/libarchive/3.7.2-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/XZ/5.4.4-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/cURL/8.3.0-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/OpenSSL/1.1/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/bzip2/1.0.8-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/ncurses/6.4-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/GCCcore/13.2.0/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/users/ptalbot/deps/libminizinc/build:/usr/share/lmod/lmod/libexec
+++ PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/pybench-aion/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Python/3.11.5-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/libxml2/2.11.5-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Doxygen/1.9.8-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/CMake/3.27.6-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/SQLite/3.43.1-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/Tcl/8.6.13-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/binutils/2.40-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/libiconv/1.17-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/libarchive/3.7.2-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/XZ/5.4.4-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/cURL/8.3.0-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/OpenSSL/1.1/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/bzip2/1.0.8-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/ncurses/6.4-GCCcore-13.2.0/bin:/work/projects/software_set/backup/easybuild/aion/2023b/epyc/software/GCCcore/13.2.0/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/users/ptalbot/deps/libminizinc/build:/usr/share/lmod/lmod/libexec
 ++ export PATH
 ++ '[' -n '' ']'
 ++ '[' -z '' ']'
@@ -87,12 +133,12 @@ Shell debugging restarted
 + THREADS=1
 ++ basename aion.sh .sh
 + MACHINE=aion
-+ INSTANCES_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../benchmarking/mzn2024_patch.csv
++ INSTANCES_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../benchmarking/mzn2024_noset.csv
 + MZN_COMMAND='minizinc --solver turbo.cpu.release -s --json-stream --output-mode json --output-time --output-objective -p 1 -arch cpu -network_analysis -cutnodes 1 -hardware aion -version v1.2.7'
 + OUTPUT_DIR=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/aion/turbo.cpu.release-v1.2.7-mzn2024-analysis
 + mkdir -p /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/aion/turbo.cpu.release-v1.2.7-mzn2024-analysis
-+ '[' -n aion-0041 ']'
++ '[' -n 'aion-[0008-0009,0011]' ']'
 + SRUN_COMMAND='srun --exclusive --cpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose'
-+ NUM_PARALLEL_EXPERIMENTS=1
++ NUM_PARALLEL_EXPERIMENTS=24
 + DUMP_PY_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py
 + cp -r /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/aion/turbo.cpu.release-v1.2.7-mzn2024-analysis/
