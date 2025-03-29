@@ -1,9 +1,9 @@
 #!/bin/bash -l
 #SBATCH --time=05:00:00
 #SBATCH --partition=batch
-#SBATCH --nodes=5
+#SBATCH --nodes=3
 #SBATCH --exclusive
-#SBATCH --ntasks-per-node=1
+#SBATCH --ntasks-per-node=8
 #SBATCH --mem=0
 #SBATCH --qos=normal
 #SBATCH --export=ALL
@@ -46,13 +46,13 @@ INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024_noset.csv"
 
 # II. Prepare the command lines and output directory.
 MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream --output-mode json --output-time --output-objective -p $THREADS -arch $ARCH -network_analysis -cutnodes 1 -hardware $MACHINE -version $VERSION"
-OUTPUT_DIR="$BENCHMARKS_DIR_PATH/campaign/$MACHINE/$MZN_SOLVER-$VERSION-mzn2024-analysis-no-binarize"
+OUTPUT_DIR="$BENCHMARKS_DIR_PATH/campaign/$MACHINE/$MZN_SOLVER-$VERSION-mzn2024-analysis"
 mkdir -p $OUTPUT_DIR
 
 # If we are on the HPC, we encapsulate the command in a srun command to reserve the resources needed.
 if [ -n "${SLURM_JOB_NODELIST}" ]; then
   SRUN_COMMAND="srun --exclusive --cpus-per-task=$CORES --nodes=1 --ntasks=1 --cpu-bind=verbose"
-  NUM_PARALLEL_EXPERIMENTS=$((SLURM_JOB_NUM_NODES * 1)) # How many experiments are we running in parallel? One per GPU per default.
+  NUM_PARALLEL_EXPERIMENTS=$((SLURM_JOB_NUM_NODES * 8)) # How many experiments are we running in parallel? One per GPU per default.
 else
   NUM_PARALLEL_EXPERIMENTS=1
 fi

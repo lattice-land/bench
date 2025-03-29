@@ -10,3 +10,15 @@ cpu-bind=MASK - x1002c3s5b1n0, task  0  0 [894394]: mask 0x1 set
 {"type": "statistics", "statistics": {"nSolutions": 0}}
 {"type": "statistics", "statistics": {"heap_memory": 4331427968}}
 srun: error: x1002c3s5b1n0: task 0: Exited with exit code 1
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_wac1_4096_portal_random_20_1_100_1cores_132threads_timeout1200000ms_sub_15", "problem": "portal", "model": "../data/mzn-challenge/2024/portal/portal.mzn", "data_file": "../data/mzn-challenge/2024/portal/random_20_1_100.json", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2025-03-29T08:28:21.901130", "status": "UNKNOWN", "cores": "1", "threads": "132", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c7s2b1n0, task  0  0 [494163]: mask 0x1000000000000000000000000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 10213, "flatIntVars": 2659, "flatBoolConstraints": 9429, "flatIntConstraints": 6387, "evaluatedReifiedConstraints": 6195, "eliminatedImplications": 397, "method": "minimize", "flatTime": 1.96574}}
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "statistics", "statistics": {"command_line": "/net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/build/gpu-release/turbo -t 1200000 -n 1 -s -arch barebones -or 132 -sub 15 -stack 0 -fp wac1 -wac1_threshold 4096 -version v1.2.8 -hardware 'helios' -cutnodes 0 /tmp/133141/x1002c7s2b1n0/mznfileHkBtTt.fzn", "parsed_variables": 13072, "parsed_constraints": 571159, "abstract_domain": "pir_itv32_z", "tnf_variables": 1695511, "tnf_constraints": 2248031, "eliminated_entailed_constraints_fp_iter_1": 13454, "eliminated_equality_constraints_fp_iter_1": 8594, "eliminated_constraints_by_icse_fp_iter_1": 1174242, "eliminated_constraints_by_as_fp_iter_1": 0, "icse_fixpoint_iterations_fp_iter_1": 2, "eliminated_entailed_constraints": 13454, "eliminated_equality_constraints": 8594, "eliminated_constraints_by_icse": 1174242, "eliminated_constraints_by_as": 0, "icse_fixpoint_iterations": 3, "eliminated_variables": 1191177, "preprocessing_fixpoint_iterations": 2, "variables_after_simplification": 504375, "constraints_after_simplification": 1051741, "preprocessing_time": 614.85}}
+{"type": "statistics", "statistics": {"memory_configuration": "global", "shared_mem": 0, "store_mem": 4035072, "propagator_mem": 16827984}}
+{"type": "comment", "comment": "% ERROR: CUDA kernel failed due to an illegal memory access. This might be due to a stack overflow because it is too small. Try increasing the stack size with the options -stack. If it does not work, please report it as a bug.\n"}
+{"type": "status", "status": "ERROR", "time": 618611}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"heap_memory": 4331428968}}
+srun: error: x1002c7s2b1n0: task 0: Exited with exit code 1
