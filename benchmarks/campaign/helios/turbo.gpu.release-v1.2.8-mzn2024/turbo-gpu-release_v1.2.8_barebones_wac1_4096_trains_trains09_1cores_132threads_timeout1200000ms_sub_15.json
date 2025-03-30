@@ -70,3 +70,27 @@ Single track F-G:
 {"type": "statistics", "statistics": {"nSolutions": 0}}
 {"type": "statistics", "statistics": {"heap_memory": 848523960}}
 srun: error: x1002c7s4b1n0: task 0: Exited with exit code 1
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_wac1_4096_trains_trains09_1cores_132threads_timeout1200000ms_sub_15", "problem": "train-scheduling", "model": "../data/mzn-challenge/2024/train-scheduling/trains.mzn", "data_file": "../data/mzn-challenge/2024/train-scheduling/trains09.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2025-03-29T20:33:04.513940", "status": "UNKNOWN", "cores": "1", "threads": "132", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c4s1b1n0, task  0  0 [1186150]: mask 0x1 set
+Double track L C-D:
+Double track R C-D:
+Double track L C-H:
+Double track R C-H:
+Double track L D-E:
+Double track R D-E:
+Double track L H-I:
+Double track R H-I:
+Single track A-B:
+Single track B-C:
+Single track C-G:
+Single track F-G:
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 23268, "flatIntVars": 11873, "flatBoolConstraints": 6044, "flatIntConstraints": 30256, "evaluatedReifiedConstraints": 17738, "eliminatedImplications": 56, "method": "minimize", "flatTime": 0.916817}}
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "statistics", "statistics": {"command_line": "/net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/build/gpu-release/turbo -t 1200000 -n 1 -s -arch barebones -or 132 -sub 15 -stack 0 -network_analysis -fp wac1 -wac1_threshold 4096 -version v1.2.8 -hardware 'helios' -cutnodes 0 /tmp/133338/x1002c4s1b1n0/mznfileWOMNQh.fzn", "parsed_variables": 47231, "parsed_constraints": 64323, "abstract_domain": "pir_itv32_z", "tnf_variables": 107205, "tnf_constraints": 110252, "eliminated_entailed_constraints_fp_iter_1": 9738, "eliminated_equality_constraints_fp_iter_1": 24040, "eliminated_constraints_by_icse_fp_iter_1": 1671, "eliminated_constraints_by_as_fp_iter_1": 4003, "icse_fixpoint_iterations_fp_iter_1": 3, "eliminated_entailed_constraints_fp_iter_2": 30, "eliminated_equality_constraints_fp_iter_2": 1, "eliminated_constraints_by_icse_fp_iter_2": 0, "eliminated_constraints_by_as_fp_iter_2": 0, "icse_fixpoint_iterations_fp_iter_2": 1, "eliminated_entailed_constraints": 9768, "eliminated_equality_constraints": 24041, "eliminated_constraints_by_icse": 1671, "eliminated_constraints_by_as": 4003, "icse_fixpoint_iterations": 5, "eliminated_variables": 37863, "preprocessing_fixpoint_iterations": 3, "variables_after_simplification": 69401, "constraints_after_simplification": 70769, "num_constants": 2180, "num_infinite_domains": 0, "sum_props_of_vars": 166043, "sum_props_of_vars": 664172, "avg_constraints_per_unassigned_var": 2.470106, "max_constraints_per_unassigned_var": 1038, "num_vars_in_2_constraints": 60465, "num_vars_in_3_constraints": 360, "num_vars_in_4_to_10_constraints": 913, "num_vars_in_more_than_10_constraints": 873, "sum_domain_size": 10555754, "sum_domain_size": 1319469, "largest_domain": 3296, "num_2bits_vars": 24358, "num_64bits_vars": 31444, "num_128bits_vars": 34481, "num_256bits_vars": 47494, "num_512bits_vars": 62566, "num_65536bits_vars": 67221, "num_op_add": 42385, "num_op_mul": 94, "num_op_min": 4202, "num_op_max": 3812, "num_op_ediv": 0, "num_op_emod": 0, "num_op_eq": 0, "num_op_neq": 266, "num_op_leq": 0, "num_op_gt": 0, "num_op_reified_eq": 9064, "num_op_reified_leq": 10946, "preprocessing_time": 3.837}}
+{"type": "statistics", "statistics": {"memory_configuration": "global", "shared_mem": 0, "store_mem": 555280, "propagator_mem": 1132432}}
+{"type": "comment", "comment": "% ERROR: CUDA kernel failed due to an illegal memory access. This might be due to a stack overflow because it is too small. Try increasing the stack size with the options -stack. If it does not work, please report it as a bug.\n"}
+{"type": "status", "status": "ERROR", "time": 231974}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"heap_memory": 848523960}}
+srun: error: x1002c4s1b1n0: task 0: Exited with exit code 1

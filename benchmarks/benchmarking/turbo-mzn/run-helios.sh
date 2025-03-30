@@ -1,9 +1,9 @@
 #!/bin/bash -l
-#SBATCH --time=01:00:00
+#SBATCH --time=10:00:00
 #SBATCH -p plgrid-gpu-gh200
 #SBATCH -A plgturbo-gpu-gh200
 #SBATCH --gres=gpu:4
-#SBATCH --nodes=10
+#SBATCH --nodes=1
 #SBATCH -c 288
 #SBATCH --mem=0
 #SBATCH --qos=normal
@@ -52,7 +52,7 @@ INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024_noset.csv"
 EXTRA_ARGS_TURBO="" # " -globalmem "
 
 # II. Prepare the command lines and output directory.
-MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream -t $MZN_TIMEOUT --output-mode json --output-time --output-objective -p $THREADS -arch $ARCH -fp $FP -wac1_threshold $WAC1_THRESHOLD -hardware $MACHINE -version $VERSION -timeout $REAL_TIMEOUT $EXTRA_ARGS_TURBO "
+MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream -t $MZN_TIMEOUT --output-mode json --output-time --output-objective -p $THREADS -network_analysis -arch $ARCH -fp $FP -wac1_threshold $WAC1_THRESHOLD -hardware $MACHINE -version $VERSION -timeout $REAL_TIMEOUT $EXTRA_ARGS_TURBO "
 OUTPUT_DIR="$BENCHMARKS_DIR_PATH/campaign/$MACHINE/$MZN_SOLVER-$VERSION-mzn2024"
 mkdir -p $OUTPUT_DIR
 
