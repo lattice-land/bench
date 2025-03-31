@@ -1,9 +1,9 @@
 #!/bin/bash -l
-#SBATCH --time=02:00:00
+#SBATCH --time=10:00:00
 #SBATCH -p plgrid-gpu-gh200
 #SBATCH -A plgturbo-gpu-gh200
 #SBATCH --gres=gpu:4
-#SBATCH --nodes=10
+#SBATCH --nodes=1
 #SBATCH -c 288
 #SBATCH --mem=0
 #SBATCH --qos=normal
@@ -44,7 +44,7 @@ MZN_TIMEOUT=1260000
 REAL_TIMEOUT=1200000
 ARCH="barebones"
 CORES=1 # The number of core used on the node.
-THREADS=132 # The number of core used on the node.
+THREADS=0 # The number of core used on the node.
 FP="wac1"
 WAC1_THRESHOLD=4096
 MACHINE=$(basename "$1" ".sh")
