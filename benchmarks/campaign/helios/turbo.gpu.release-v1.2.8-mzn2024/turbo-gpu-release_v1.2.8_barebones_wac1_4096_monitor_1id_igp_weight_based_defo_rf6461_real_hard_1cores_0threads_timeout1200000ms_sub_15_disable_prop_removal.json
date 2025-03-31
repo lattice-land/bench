@@ -1,0 +1,5 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_wac1_4096_monitor_1id_igp_weight_based_defo_rf6461_real_hard_1cores_0threads_timeout1200000ms_sub_15_disable_prop_removal", "problem": "monitor-placement-1id", "model": "../data/mzn-challenge/2024/monitor-placement-1id/monitor_1id.mzn", "data_file": "../data/mzn-challenge/2024/monitor-placement-1id/igp_weight_based_defo_rf6461_real_hard.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2025-03-31T17:48:43.673317", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "4096"}}
+cpu-bind=MASK - x1002c5s2b1n0, task  0  0 [913807]: mask 0x1 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 4851, "flatIntVars": 79, "flatBoolConstraints": 3141, "flatIntConstraints": 79, "method": "minimize", "flatTime": 693.127}}
+% WARNING: Annotation ctx_neg is unknown and was ignored.
