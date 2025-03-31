@@ -1,4 +1,6 @@
 import pandas as pd
+from warnings import simplefilter
+simplefilter(action="ignore", category=pd.errors.PerformanceWarning)
 import matplotlib.pyplot as plt
 import numpy as np
 import os
@@ -95,6 +97,10 @@ def read_experiments(experiments):
       df['machine'] = os.path.basename(os.path.dirname(e))
     if 'timeout_ms' not in df:
       df['timeout_ms'] = "300000"
+    if 'num_deductions' not in df:
+      df['num_deductions'] = 0
+    if 'num_blocks' not in df:
+      df['num_blocks'] = df['or_nodes']
     # else:
       # df['timeout_ms'] = df.apply(lambda row: "300000" if not isinstance(row['version'], int) else row['version'], axis=1)
      # estimating the number of nodes (lower bound).
@@ -456,9 +462,9 @@ def boxplot_preprocessing_components(df, components):
   pass
 
 def boxplot_tcn_increase(df, ref_vars, ref_cons):
-  parsed_variables
-  tnf_variables
-  variables_after_simplification
+  # parsed_variables
+  # tnf_variables
+  # variables_after_simplification
 
   pass
 
@@ -486,6 +492,8 @@ def analyse_tnf_per_problem(df, logy, source_vars, source_cons, target_vars, tar
   num_problems = df.shape[0]
   print(f"average_vars_increase={sum(all_vars_increase)/num_problems:.2f}")
   print(f"average_cons_increase={sum(all_cons_increase)/num_problems:.2f}")
+  print(f"max_vars_increase={max(all_vars_increase):.2f}")
+  print(f"max_cons_increase={max(all_cons_increase):.2f}")
   print(f"median_vars_increase={sorted(all_vars_increase)[num_problems//2]:.2f}")
   print(f"median_cons_increase={sorted(all_cons_increase)[num_problems//2]:.2f}")
   print(f"stddev_vars_increase={np.std(all_vars_increase, ddof=0):.2f}")

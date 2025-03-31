@@ -16,10 +16,10 @@ for file in $1/*.json; do
   python3 postprocess.py $MZNBENCH_TMP $file
 done
 
-#cd ..  # mzn-bench needs to access the model and data files from "../data".
-#mzn-bench check-solutions $MZNBENCH_TMP || exit 1
-#mzn-bench check-statuses $MZNBENCH_TMP || exit 1
-#cd minizinc
+cd ..  # mzn-bench needs to access the model and data files from "../data".
+mzn-bench check-solutions $MZNBENCH_TMP # || exit 1
+mzn-bench check-statuses $MZNBENCH_TMP # || exit 1
+cd minizinc
 
 mzn-bench collect-objectives $MZNBENCH_TMP $1/../$(basename $1)-objectives.csv
 mzn-bench collect-statistics $MZNBENCH_TMP $1/../$(basename $1).csv
