@@ -1,9 +1,9 @@
 #!/bin/bash -l
-#SBATCH --time=10:00:00
+#SBATCH --time=00:30:00
 #SBATCH -p plgrid-gpu-gh200
 #SBATCH -A plgturbo-gpu-gh200
 #SBATCH --gres=gpu:4
-#SBATCH --nodes=1
+#SBATCH --nodes=24
 #SBATCH -c 288
 #SBATCH --mem=0
 #SBATCH --qos=normal

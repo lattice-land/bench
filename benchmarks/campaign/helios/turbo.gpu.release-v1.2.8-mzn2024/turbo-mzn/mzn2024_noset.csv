@@ -89,3 +89,8 @@
 "network_50_cstr","../data/mzn-challenge/2024/network_50_cstr/efm_cstr.mzn","../data/mzn-challenge/2024/network_50_cstr/toy_network_1000_m.dzn"
 "network_50_cstr","../data/mzn-challenge/2024/network_50_cstr/efm_cstr.mzn","../data/mzn-challenge/2024/network_50_cstr/MODEL2204190004.dzn"
 "network_50_cstr","../data/mzn-challenge/2024/network_50_cstr/efm_cstr.mzn","../data/mzn-challenge/2024/network_50_cstr/MODEL1507180015.dzn"
+"yumi-dynamic","../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn","../data/mzn-challenge/2024/yumi-dynamic/p_5_GG_GGG_yumi_grid_setup_5_5_zones.dzn"
+"yumi-dynamic","../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn","../data/mzn-challenge/2024/yumi-dynamic/p_7_SSSS_SSS_yumi_grid_setup_3_3_zones.dzn"
+"yumi-dynamic","../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn","../data/mzn-challenge/2024/yumi-dynamic/p_9_GSGS_GSGSG_yumi_grid_setup_7_7_zones.dzn"
+"yumi-dynamic","../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn","../data/mzn-challenge/2024/yumi-dynamic/p_5_GSS_SG_yumi_grid_setup_3_4_zones.dzn"
+"yumi-dynamic","../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn","../data/mzn-challenge/2024/yumi-dynamic/p_4_GG_GG_yumi_grid_setup_5_5_zones.dzn"
