@@ -1,0 +1,7 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_wac1_0_monitor_1id_igp_weight_based_rocketfuel_rf6461_real_hard_1cores_0threads_timeout1200000ms_sub_15_disable_prop_removal", "problem": "monitor-placement-1id", "model": "../data/mzn-challenge/2024/monitor-placement-1id/monitor_1id.mzn", "data_file": "../data/mzn-challenge/2024/monitor-placement-1id/igp_weight_based_rocketfuel_rf6461_real_hard.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2025-04-01T06:34:06.561862", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+cpu-bind=MASK - x1002c5s2b0n0, task  0  0 [992819]: mask 0x1 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 4851, "flatIntVars": 79, "flatBoolConstraints": 3141, "flatIntConstraints": 79, "method": "minimize", "flatTime": 709.488}}
+% WARNING: Annotation ctx_neg is unknown and was ignored.
+srun: Job step aborted: Waiting up to 182 seconds for job step to finish.
+slurmstepd: error: *** STEP 134713.11 ON x1002c5s2b0n0 CANCELLED AT 2025-04-01T07:04:08 DUE TO TIME LIMIT ***
