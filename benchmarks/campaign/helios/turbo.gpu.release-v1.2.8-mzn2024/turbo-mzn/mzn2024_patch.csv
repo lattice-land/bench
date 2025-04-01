@@ -1,5 +1,3 @@
 "problem","model","data_file"
-"triangular","../data/mzn-challenge/2024/triangular/triangular.mzn","../data/mzn-challenge/2024/triangular/n9.dzn"
-"accap","../data/mzn-challenge/2024/accap/accap.mzn","../data/mzn-challenge/2024/accap/accap_a3_f20_t10.json"
-"neighbours","../data/mzn-challenge/2024/neighbours/neighbours-rect.mzn","../data/mzn-challenge/2024/neighbours/neightbours-new-6.dzn"
-"portal","../data/mzn-challenge/2024/portal/portal.mzn","../data/mzn-challenge/2024/portal/random_20_1_100.json"
+"monitor-placement-1id","../data/mzn-challenge/2024/monitor-placement-1id/monitor_1id.mzn","../data/mzn-challenge/2024/monitor-placement-1id/igp_weight_based_rocketfuel_rf6461_real_hard.dzn"
+"monitor-placement-1id","../data/mzn-challenge/2024/monitor-placement-1id/monitor_1id.mzn","../data/mzn-challenge/2024/monitor-placement-1id/igp_weight_based_defo_rf6461_real_hard.dzn"
