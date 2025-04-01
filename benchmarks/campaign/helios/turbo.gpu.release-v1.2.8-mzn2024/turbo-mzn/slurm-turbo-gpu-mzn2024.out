@@ -117,18 +117,18 @@ Shell debugging restarted
 + REAL_TIMEOUT=1200000
 + ARCH=barebones
 + CORES=1
-+ THREADS=132
-+ FP=wac1
++ THREADS=0
++ FP=ac1
 + WAC1_THRESHOLD=4096
 ++ basename helios.sh .sh
 + MACHINE=helios
-+ INSTANCES_PATH=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../benchmarking/mzn2024_patch.csv
-+ EXTRA_ARGS_TURBO=' -globalmem '
-+ MZN_COMMAND='minizinc --solver turbo.gpu.release -s --json-stream -t 1260000 --output-mode json --output-time --output-objective -p 132 -network_analysis -arch barebones -fp wac1 -wac1_threshold 4096 -hardware helios -version v1.2.8 -timeout 1200000  -globalmem  '
++ INSTANCES_PATH=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../benchmarking/mzn2024_noset.csv
++ EXTRA_ARGS_TURBO=
++ MZN_COMMAND='minizinc --solver turbo.gpu.release -s --json-stream -t 1260000 --output-mode json --output-time --output-objective -p 0 -arch barebones -fp ac1 -wac1_threshold 4096 -hardware helios -version v1.2.8 -timeout 1200000  '
 + OUTPUT_DIR=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.8-mzn2024
 + mkdir -p /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.8-mzn2024
-+ '[' -n x1002c2s1b1n0 ']'
++ '[' -n x1002c4s3b1n0,x1002c4s4b0n0,x1002c4s4b1n0,x1002c4s5b0n0,x1002c4s5b1n0,x1002c4s6b0n0,x1002c4s6b1n0,x1002c5s0b0n0,x1002c5s0b1n0,x1002c5s1b0n0,x1002c5s1b1n0,x1002c5s2b0n0,x1002c5s2b1n0,x1002c5s3b0n0,x1002c5s3b1n0,x1002c5s4b0n0,x1002c5s4b1n0,x1002c5s5b0n0,x1002c5s5b1n0,x1002c5s6b0n0,x1002c5s6b1n0,x1002c6s0b0n0,x1002c6s0b1n0,x1002c6s1b0n0 ']'
 + SRUN_COMMAND='srun --exclusive --cpus-per-task=1 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose'
-+ NUM_PARALLEL_EXPERIMENTS=4
++ NUM_PARALLEL_EXPERIMENTS=96
 + DUMP_PY_PATH=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py
 + cp -r /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.8-mzn2024/
