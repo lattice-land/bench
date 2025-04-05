@@ -38,6 +38,8 @@ def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machin
       uid += '_globalmem'
     if '_disable_simplify' in config:
       uid += '_disable_simplify'
+    if '_disable_prop_removal' in config:
+      uid += '_no_pr'
     if '_force_ternarize' in config:
       uid += '_force_ternarize'
     if '_ipc' in config:
@@ -97,15 +99,17 @@ def read_experiments(experiments):
       df['machine'] = os.path.basename(os.path.dirname(e))
     if 'timeout_ms' not in df:
       df['timeout_ms'] = "300000"
-    if 'num_deductions' not in df:
-      df['num_deductions'] = 0
     if 'num_blocks' not in df:
       df['num_blocks'] = df['or_nodes']
+    if 'preprocessing_time' not in df:
+      df['preprocessing_time'] = 0.0
     # else:
       # df['timeout_ms'] = df.apply(lambda row: "300000" if not isinstance(row['version'], int) else row['version'], axis=1)
-     # estimating the number of nodes (lower bound).
+    # estimating the number of nodes (lower bound).
     if 'nodes' not in df:
       df['nodes'] = (df['failures'] + df['nSolutions']) * 2 - 1
+    if 'num_deductions' not in df:
+      df['num_deductions'] = df['nodes']
     if df[df['status'] == 'ERROR'].shape[0] > 0:
       print(e, ': Number of erroneous rows: ', df[df['status'] == 'ERROR'].shape[0])
       print(e, df[df['status'] == 'ERROR']['data_file'])
@@ -123,6 +127,7 @@ def read_experiments(experiments):
     all_xp = pd.concat([df, all_xp], ignore_index=True)
   all_xp['version'] = all_xp['version'].apply(version.parse)
   all_xp['nodes'] = all_xp['nodes'].fillna(0).astype(int)
+  all_xp['num_deductions'] = all_xp['num_deductions'].fillna(0).astype(int)
   all_xp['status'] = all_xp['status'].fillna("UNKNOWN").astype(str)
   if 'memory_configuration' not in all_xp:
     all_xp['memory_configuration'] = 'RAM'
@@ -142,10 +147,14 @@ def read_experiments(experiments):
   all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'],
                                                     row['eps_num_subproblems'], row['or_nodes'], row['threads_per_block'], row['search']), axis=1)
   all_xp['short_uid'] = all_xp['uid'].apply(make_short_uid)
-  all_xp['nodes_per_second'] = all_xp['nodes'] / all_xp['solveTime']
+  all_xp['nodes_per_second'] = all_xp['nodes'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
+  all_xp['deductions_per_second'] = all_xp['num_deductions'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
+  all_xp['deductions_per_node'] = all_xp['num_deductions'] / all_xp['nodes']
   all_xp['fp_iterations_per_node'] = all_xp['fixpoint_iterations'] / all_xp['nodes']
-  all_xp['fp_iterations_per_second'] = all_xp['fixpoint_iterations'] / all_xp['solveTime']
+  all_xp['fp_iterations_per_second'] = all_xp['fixpoint_iterations'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
   all_xp['normalized_nodes_per_second'] = 0
+  all_xp['normalized_deductions_per_second'] = 0
+  all_xp['normalized_deductions_per_node'] = 0
   all_xp['normalized_fp_iterations_per_second'] = 0
   all_xp['normalized_fp_iterations_per_node'] = 0
   all_xp = all_xp.copy() # to avoid a warning about fragmented frame.
@@ -164,6 +173,7 @@ def intersect(df):
   target_set = solver_instance.iloc[0]
   for i in range(0, len(solver_instance)):
     # print(f"{i} has {len(solver_instance.iloc[i])} instances.")
+    # print(target_set.difference(solver_instance.iloc[i]))
     target_set = target_set.intersection(solver_instance.iloc[i])
 
   return df[df['model_data_file'].isin(target_set)]
@@ -235,7 +245,7 @@ def compute_normalized_value(df, row, uid1, uid2, key):
 
   # Retrieve the value for each solver for the particular data_file of the row examined.
   nps1 = row[key]
-  nps_vals = df[(df['uid'] == uid2) & (df['data_file'] == row['data_file'])][key].values
+  nps_vals = df[(df['uid'] == uid2) & (df['model_data_file'] == row['model_data_file'])][key].values
   assert(len(nps_vals) == 1)
   nps2 = nps_vals[0]
 
@@ -247,13 +257,14 @@ def compute_normalized_value(df, row, uid1, uid2, key):
 def normalize(df, uid1, uid2, key):
   df2 = df[df['uid'].isin([uid1, uid2])]
   df2['normalized_'+key] = df2.apply(lambda row: compute_normalized_value(df2, row, uid1, uid2, key), axis=1)
-  # print(df2[['uid', 'data_file', 'normalized_'+key, key]])
+  # print(df2[['uid', 'model_data_file', 'normalized_'+key, key]])
   return df2
 
 def comparison_table_md(df, uid1, uid2):
   df2 = normalize(df, uid1, uid2, 'nodes_per_second')
   df2 = normalize(df2, uid1, uid2, 'fp_iterations_per_second')
   df2 = normalize(df2, uid1, uid2, 'fp_iterations_per_node')
+  df2 = normalize(df2, uid1, uid2, 'deductions_per_node')
   df2 = normalize(df2, uid1, uid2, 'propagator_mem')
   df2 = normalize(df2, uid1, uid2, 'store_mem')
   m1 = metrics_table(df2[df2['uid'] == uid1]).squeeze()
@@ -262,6 +273,8 @@ def comparison_table_md(df, uid1, uid2):
   print(f"| Metrics | Normalized average [0,100] | Δ v{m1['version']} | #best (_/{total_pb}) | Average | Δ v{m1['version']} | Median | Δ v{m1['version']} |")
   print("|---------|----------------------------|----------|--------------|---------|----------|--------|----------|")
   print_table_line(m1, m2, "Nodes per second", "nodes_per_second", "")
+  # print_table_line(m1, m2, "Deductions per second", "deductions_per_second", "")
+  print_table_line(m1, m2, "Deductions per node", "deductions_per_node", "")
   print_table_line(m1, m2, "Fixpoint iterations per second", "fp_iterations_per_second", "")
   print_table_line(m1, m2, "Fixpoint iterations per node", "fp_iterations", "")
   print_table_line(m1, m2, "Propagators memory", "propagator_mem_mb", "MB")
@@ -288,6 +301,16 @@ def metrics_table(df):
     median_nodes_per_second=('nodes_per_second', lambda x: x[x != 0].median()),
     avg_normalized_nodes_per_second=('normalized_nodes_per_second', lambda x: x[x != 0].mean()),
     best_nodes_per_second=('normalized_nodes_per_second', lambda x: x[x >= 100.0].count()),
+    avg_deductions_per_node=('deductions_per_node', lambda x: x[x != 0].mean()),
+    median_deductions_per_node=('deductions_per_node', lambda x: x[x != 0].median()),
+    avg_normalized_deductions_per_node=('normalized_deductions_per_node', lambda x: x[x != 0].mean()),
+    median_normalized_deductions_per_node=('normalized_deductions_per_node', lambda x: x[x != 0].median()),
+    best_deductions_per_node=('normalized_deductions_per_node', lambda x: x[x < 100.0].count()),
+    avg_deductions_per_second=('deductions_per_second', lambda x: x[x != 0].mean()),
+    median_deductions_per_second=('deductions_per_second', lambda x: x[x != 0].median()),
+    avg_normalized_deductions_per_second=('normalized_deductions_per_second', lambda x: x[x != 0].mean()),
+    median_normalized_deductions_per_second=('normalized_deductions_per_second', lambda x: x[x != 0].median()),
+    best_deductions_per_second=('normalized_deductions_per_second', lambda x: x[x < 100.0].count()),
     avg_fp_iterations_per_second=('fp_iterations_per_second', 'mean'),
     median_fp_iterations_per_second=('fp_iterations_per_second', 'median'),
     avg_normalized_fp_iterations_per_second=('normalized_fp_iterations_per_second', 'mean'),
@@ -405,8 +428,8 @@ def compare_solvers_pie_chart(df, uid1, uid2, uid1_label = None, uid2_label = No
 def list_problem_where_leq(df, key, uid1, uid2):
   df1 = df[df['uid'] == uid1]
   df2 = df[df['uid'] == uid2]
-  # Merge the two dataframes on the 'data_file' to compare them
-  comparison_df = pd.merge(df1[['data_file', key]], df2[['data_file', key]], on='data_file', suffixes=('_1', '_2'))
+  # Merge the two dataframes on the 'model_data_file' to compare them
+  comparison_df = pd.merge(df1[['model_data_file', key]], df2[['model_data_file', key]], on='model_data_file', suffixes=('_1', '_2'))
   # Find where key is greater on df2
   return comparison_df[comparison_df[key+"_1"] > comparison_df[key+"_2"]]
 
