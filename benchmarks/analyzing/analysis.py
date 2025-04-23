@@ -461,6 +461,9 @@ def plot_time_distribution(arch, df):
   elif arch == "gpu":
     time_columns = gpu_time_cols
 
+  # Remove the problems that could be solved (not unknown).
+  df = df[(df['status'] != 'OPTIMAL_SOLUTION') & (df['status'] != 'UNSATISFIABLE')]
+
   df.sort_values(by="problem_uid", ascending=False, inplace=True)
   # Set the problem names as index
   df.set_index("problem_uid", inplace=True)
@@ -469,7 +472,7 @@ def plot_time_distribution(arch, df):
 
   # Plot
   colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2"]
-  df[time_columns].plot(kind='barh', stacked=True, figsize=(10, num_row / 5), color=colors)
+  ax = df[time_columns].plot(kind='barh', stacked=True, figsize=(10, num_row / 2.5), color=colors)
 
   # Add labels and title
   plt.xlabel("Time (seconds)")
@@ -477,6 +480,18 @@ def plot_time_distribution(arch, df):
   plt.title("Time Distribution in Solver Components for Each Problem (arch = " + arch + ")")
   plt.legend(title="Time Component", bbox_to_anchor=(1.05, 1), loc='upper left')
   plt.tight_layout()
+
+  # Add num_blocks_done labels to the right of the bars if not 0
+  for idx, (index, row) in enumerate(df.iterrows()):
+      total_time = row[time_columns].sum()
+      num_blocks = row.get("num_blocks_done", 0)
+      if num_blocks != 0:
+          ax.text(
+              total_time + 0.5,  # slightly to the right of the end of the bar
+              idx,               # vertical position
+              str(int(num_blocks)),  # convert to string for display
+              va='center', ha='left', fontsize=8, color='black'
+          )
 
   # Show plot
   plt.show()
