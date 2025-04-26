@@ -4,15 +4,20 @@ simplefilter(action="ignore", category=pd.errors.PerformanceWarning)
 import matplotlib.pyplot as plt
 import numpy as np
 import os
+import math
 import seaborn as sns
 import scipy.cluster.hierarchy as sch
 from pathlib import Path
 from packaging import version
+from matplotlib.colors import LinearSegmentedColormap
+import textwrap
 
 # A tentative to have unique experiment names.
 def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, eps_num_subproblems, or_nodes, threads_per_block, search):
   uid = mzn_solver + "_" + str(version) + '_' + machine
   if str(timeout_ms) == "inf":
+    uid += "_notimeout"
+  elif(math.isnan(timeout_ms)):
     uid += "_notimeout"
   elif (int(timeout_ms) % 1000) == 0:
     uid += "_" + str(int(int(timeout_ms)/1000)) + "s"
@@ -208,7 +213,7 @@ def plot_overall_result(df):
   ax = grouped.plot(kind='barh', stacked=True, color=[colors[col] for col in grouped.columns])
   plt.title('Problem Status by Configuration')
   plt.ylabel('Configuration')
-  plt.xlabel('Number of Problems')
+  plt.xlabel('Number of Problems (' + str(int(df.shape[0] / grouped.shape[0])) + ')')
   ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.15), ncol=3)
   plt.tight_layout()
   plt.show()
@@ -331,7 +336,7 @@ def metrics_table(df):
     problem_sat=('status', lambda x: (x == 'SATISFIED').sum()),
     problem_unknown=('status', lambda x: (x == 'UNKNOWN').sum()),
     problem_with_store_shared=('memory_configuration', lambda x: (x == "store_shared").sum()),
-    problem_with_props_shared=('memory_configuration', lambda x: (x == "store_pc_shared").sum())
+    problem_with_props_shared=('memory_configuration', lambda x: ((x == "store_pc_shared") | (x == "tcn_shared")).sum())
   )
 
   # Count problems with non-zero num_blocks_done and not solved to optimality or proven unsatisfiable
@@ -344,18 +349,7 @@ def metrics_table(df):
 
   return overall_metrics
 
-def compare_solvers_pie_chart(df, uid1, uid2, uid1_label = None, uid2_label = None):
-    """
-    Compares the performance of two solvers based on objective value and optimality.
-
-    Parameters:
-    - df: DataFrame containing the data.
-    - uid1: Name of the first solver (str).
-    - uid2: Name of the second solver (str).
-
-    Returns:
-    - Displays a pie chart comparing the performance of the two solvers.
-    """
+def compare_solvers(df, uid1, uid2, uid1_label = None, uid2_label = None):
     if uid1_label == None:
       uid1_label = uid1
     if uid2_label == None:
@@ -364,7 +358,7 @@ def compare_solvers_pie_chart(df, uid1, uid2, uid1_label = None, uid2_label = No
     solvers_df = df[(df['uid'] == uid1) | (df['uid'] == uid2)]
 
     # Pivoting for 'objective', 'method', and 'status' columns
-    pivot_df = solvers_df.pivot_table(index='model_data_file', columns='uid', values=['objective', 'method', 'status'], aggfunc='first')
+    pivot_df = solvers_df.pivot_table(index='model_data_file', columns='uid', values=['model', 'problem', 'data_file', 'objective', 'method', 'status'], aggfunc='first')
 
     # Compare objective values based on method and optimality status
     conditions = [
@@ -401,7 +395,26 @@ def compare_solvers_pie_chart(df, uid1, uid2, uid1_label = None, uid2_label = No
     error_problems = pivot_df[pivot_df['Comparison'] == 'Error'].index.tolist()
     if error_problems:
         print(f"The comparison is 'Error' for the following problems: {', '.join(error_problems)}")
+    return pivot_df
 
+def compare_solvers_pie_chart(df, uid1, uid2, uid1_label = None, uid2_label = None):
+    """
+    Compares the performance of two solvers based on objective value and optimality.
+
+    Parameters:
+    - df: DataFrame containing the data.
+    - uid1: Name of the first solver (str).
+    - uid2: Name of the second solver (str).
+
+    Returns:
+    - Displays a pie chart comparing the performance of the two solvers.
+    """
+    if uid1_label == None:
+      uid1_label = uid1
+    if uid2_label == None:
+      uid2_label = uid2
+
+    pivot_df = compare_solvers(df, uid1, uid2, uid1_label, uid2_label)
     # Get counts for each category
     category_counts = pivot_df['Comparison'].value_counts()
 
@@ -421,7 +434,6 @@ def compare_solvers_pie_chart(df, uid1, uid2, uid1_label = None, uid2_label = No
     plt.ylabel('')
     fig.savefig(f"cmp-{uid1_label}-{uid2_label}.pdf")
     plt.show()
-
     return pivot_df
 
 # List the problems on which the key is greater on the second solver
@@ -604,12 +616,6 @@ def heatmap_operators(df):
   ops = ops.sort_values(by="problem")  # Group instances by problem
   ops = ops.drop(columns=["problem"])  # Remove problem column after sorting
 
-  # ops = ops.iloc[ops.max(axis=1).argsort()]
-  # linkage = sch.linkage(ops, method='ward')
-
-  # Sort the DataFrame based on clustering
-  # ops = ops.iloc[sch.leaves_list(linkage)]
-
   # Column sorting: order by total usage across all instances
   column_order = ops.sum(axis=0).sort_values(ascending=False).index
   ops = ops[column_order]  # Reorder columns
@@ -632,7 +638,6 @@ def heatmap_operators(df):
     ax.text(-0.1, mid_idx, prev_problem, ha="right", va="center", rotation=0)
 
   yticks = []
-  ylabels = []
   prev_problem = None
   for i, problem in enumerate(problems[ops.index]):  # Iterate in sorted order
     if problem != prev_problem:
@@ -648,3 +653,94 @@ def heatmap_operators(df):
   plt.title("Normalized Operator Usage Across Instances")
   fig.savefig("operators-heatmap.pdf", bbox_inches='tight')
   plt.show()
+
+def heatmap_solver_comparison(df, source_solver, target_solvers, global_cons = None):
+    comparisons = []
+    for target in target_solvers:
+        comparisons.append(compare_solvers(df, source_solver[0], target[0], source_solver[1], target[1]))
+
+    # Build the problem list from the comparison pivot
+    problems = comparisons[0][('problem', source_solver[0])]
+
+    heatmap_data = pd.DataFrame(index=problems.index)
+
+    color_map = {
+        f"{source_solver[1]} better": 1,
+        "Equal": 0,
+    }
+    for target in target_solvers:
+        color_map[f"{target[1]} better"] = -1
+
+    for comparison, target in zip(comparisons, target_solvers):
+        mapped = comparison['Comparison'].map(color_map)
+        heatmap_data[target[1]] = mapped
+
+    # Now sort by problems
+    heatmap_data["problem"] = problems.values
+    heatmap_data = heatmap_data.sort_values("problem")
+    heatmap_data = heatmap_data.drop(columns=["problem"])
+
+    # --- Custom colormap ---
+    colors = [
+        (1.0, 0.5, 0.5),  # light red for -1
+        (1.0, 1.0, 1.0),  # white for 0
+        (0.5, 0.8, 0.5),  # light green for +1
+    ]
+    cmap = LinearSegmentedColormap.from_list("custom_cmap", colors)
+
+    # --- Plotting ---
+    plotwidth = 2 * len(target_solvers)
+    if global_cons is not None:
+      plotwidth += 4
+    fig, ax = plt.subplots(figsize=(plotwidth, 9))
+    sns.heatmap(
+        heatmap_data,
+        cmap=cmap,
+        vmin=-1, vmax=1,
+        cbar=False,
+        xticklabels=True,
+        yticklabels=False,
+        ax=ax,
+        linewidths=0.5,
+        linecolor='lightgrey'
+    )
+    ax.set_ylabel("")  # <- no label
+    # Add problem group labels
+    prev_problem = None
+    start_idx = 0
+    for i, idx in enumerate(heatmap_data.index):
+        current_problem = problems.loc[idx]
+        if current_problem != prev_problem and prev_problem is not None:
+            mid_idx = (start_idx + i - 1) / 2
+            ax.text(-0.1, mid_idx + 0.2, prev_problem, ha="right", va="center", rotation=0, fontsize=9)
+            # Add global constraints for the previous group
+            constraint = global_cons.loc[global_cons['problem'] == prev_problem, 'globals'].values
+            if constraint.size > 0 and isinstance(constraint[0], str) and constraint[0] != "":
+                wrapped = "\n".join(textwrap.wrap(constraint[0], width=40))
+                ax.text(len(target_solvers) + 0.1, mid_idx + 0.5, wrapped,
+                        ha="left", va="center", rotation=0, fontsize=8, color='dimgray')
+            start_idx = i
+        prev_problem = current_problem
+
+    if prev_problem is not None:
+        mid_idx = (start_idx + len(heatmap_data) - 1) / 2
+        ax.text(-0.1, mid_idx + 0.2, prev_problem, ha="right", va="center", rotation=0, fontsize=9)
+        constraint = global_cons.loc[global_cons['problem'] == prev_problem, 'globals'].values
+        if constraint.size > 0 and isinstance(constraint[0], str) and constraint[0] != "":
+            wrapped = "\n".join(textwrap.wrap(constraint[0], width=40))
+            ax.text(len(target_solvers) + 0.1, mid_idx + 0.5, wrapped,
+                    ha="left", va="center", rotation=0, fontsize=8, color='dimgray')
+
+    yticks = []
+    prev_problem = None
+    for i, idx in enumerate(heatmap_data.index):  # Iterate in sorted order
+      current_problem = problems.loc[idx]
+      if current_problem != prev_problem:
+        yticks.append(i)  # Place label in the middle of the group
+      prev_problem = current_problem
+    plt.yticks(yticks)
+
+    plt.xlabel("Target Solvers", fontsize=12)
+    plt.title(f"Comparison of {source_solver[1]} against Target Solvers", fontsize=14)
+    plt.tight_layout()
+    plt.show()

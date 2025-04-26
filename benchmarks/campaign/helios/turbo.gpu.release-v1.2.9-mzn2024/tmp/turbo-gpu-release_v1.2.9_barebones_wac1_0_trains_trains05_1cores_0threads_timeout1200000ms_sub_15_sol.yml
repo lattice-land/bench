@@ -1,0 +1,148 @@
+- abstract_domain: pir_itv32_z
+  arch: barebones
+  command_line: /net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/build/gpu-release/turbo
+    -t 1200000 -n 1 -s -arch barebones -or 0 -sub 15 -stack 0 -fp wac1 -wac1_threshold
+    0 -version v1.2.9 -hardware 'helios' -cutnodes 0 /tmp/581162/x1002c7s4b0n0/mznfile9P5vHP.fzn
+  configuration: 
+    turbo-gpu-release_v1.2.9_barebones_wac1_0_trains_trains05_1cores_0threads_timeout1200000ms_sub_15
+  constraints_after_simplification: 55486
+  cores: '1'
+  data_file: ../data/mzn-challenge/2024/train-scheduling/trains05.dzn
+  datetime: '2025-04-26T14:19:37.561438'
+  eliminatedImplications: 48
+  eliminated_constraints_by_as: 5633
+  eliminated_constraints_by_as_fp_iter_1: 5633
+  eliminated_constraints_by_icse: 408
+  eliminated_constraints_by_icse_fp_iter_1: 408
+  eliminated_entailed_constraints: 10408
+  eliminated_entailed_constraints_fp_iter_1: 10408
+  eliminated_equality_constraints: 20054
+  eliminated_equality_constraints_fp_iter_1: 20054
+  eliminated_variables: 35493
+  entailed_prop_removal: deactivated
+  evaluatedReifiedConstraints: 16320
+  fixpoint: wac1
+  flatBoolConstraints: 5364
+  flatBoolVars: 21264
+  flatIntConstraints: 28355
+  flatIntVars: 11127
+  flatTime: 1.5046
+  heap_memory: 51002736640
+  icse_fixpoint_iterations: 3
+  icse_fixpoint_iterations_fp_iter_1: 2
+  memory_configuration: global
+  method: minimize
+  model: ../data/mzn-challenge/2024/train-scheduling/trains.mzn
+  mzn_solver: turbo.gpu.release
+  parsed_constraints: 55652
+  parsed_variables: 41729
+  paths: 0
+  preprocessing_fixpoint_iterations: 2
+  preprocessing_time: 1.949
+  problem: train-scheduling
+  propagator_mem: 887904
+  shared_mem: 0
+  solution:
+    arrive:
+    - [0, 17, 25, 35, 43, 58]
+    - [30, 47, 55, 69, 81, 100]
+    - [60, 77, 89, 103, 115, 134]
+    - [90, 107, 119, 129, 137, 152]
+    - [120, 137, 145, 155, 163, 178]
+    - [150, 167, 175, 185, 193, 208]
+    - [0, 25, 33, 43, 52, 59]
+    - [30, 55, 63, 73, 82, 89]
+    - [60, 85, 93, 103, 112, 119]
+    - [90, 115, 123, 133, 142, 149]
+    - [120, 145, 153, 163, 172, 179]
+    - [150, 175, 187, 201, 214, 225]
+    delay_obj: 150
+    depart:
+    - [10, 17, 25, 35, 43, 68]
+    - [40, 47, 59, 73, 85, 110]
+    - [70, 81, 93, 107, 119, 144]
+    - [100, 111, 119, 129, 137, 162]
+    - [130, 137, 145, 155, 163, 188]
+    - [160, 167, 175, 185, 193, 218]
+    - [10, 25, 33, 43, 52, 69]
+    - [40, 55, 63, 73, 82, 99]
+    - [70, 85, 93, 103, 112, 129]
+    - [100, 115, 123, 133, 142, 159]
+    - [130, 145, 153, 163, 172, 189]
+    - [160, 179, 191, 205, 218, 235]
+    engine:
+    - {e: E1}
+    - {e: E2}
+    - {e: E3}
+    - {e: E4}
+    - {e: E5}
+    - {e: E6}
+    - {e: E4}
+    - {e: E5}
+    - {e: E6}
+    - {e: E1}
+    - {e: E2}
+    - {e: E3}
+    objective: 366
+    prev:
+    - c: e
+      e: {e: E1}
+    - c: e
+      e: {e: E2}
+    - c: e
+      e: {e: E3}
+    - c: s
+      e: {e: R2a}
+    - c: s
+      e: {e: R2b}
+    - c: s
+      e: {e: R2c}
+    - c: e
+      e: {e: E4}
+    - c: e
+      e: {e: E5}
+    - c: e
+      e: {e: E6}
+    - c: s
+      e: {e: R1a}
+    - c: s
+      e: {e: R1b}
+    - c: s
+      e: {e: R1c}
+    skip_obj: 216
+    stopped:
+    - [true, false, false, false, false, true]
+    - [true, false, true, true, true, true]
+    - [true, true, true, true, true, true]
+    - [true, true, false, false, false, true]
+    - [true, false, false, false, false, true]
+    - [true, false, false, false, false, true]
+    - [true, false, false, false, false, true]
+    - [true, false, false, false, false, true]
+    - [true, false, false, false, false, true]
+    - [true, false, false, false, false, true]
+    - [true, false, false, false, false, true]
+    - [true, true, true, true, true, true]
+    wait:
+    - [10, 0, 0, 0, 0, 10]
+    - [10, 0, 4, 4, 4, 10]
+    - [10, 4, 4, 4, 4, 10]
+    - [10, 4, 0, 0, 0, 10]
+    - [10, 0, 0, 0, 0, 10]
+    - [10, 0, 0, 0, 0, 10]
+    - [10, 0, 0, 0, 0, 10]
+    - [10, 0, 0, 0, 0, 10]
+    - [10, 0, 0, 0, 0, 10]
+    - [10, 0, 0, 0, 0, 10]
+    - [10, 0, 0, 0, 0, 10]
+    - [10, 4, 4, 4, 4, 10]
+  status: SATISFIED
+  store_mem: 446752
+  threads: '0'
+  time: 1201.701
+  timeout_ms: '1200000'
+  tnf_constraints: 91989
+  tnf_variables: 91292
+  variables_after_simplification: 55835
+  version: v1.2.9
+  wac1_threshold: '0'
