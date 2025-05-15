@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --time=12:00:00
+#SBATCH --time=01:10:00
 #SBATCH -p plgrid-gpu-gh200
 #SBATCH -A plgturbo-gpu-gh200
 #SBATCH --gres=gpu:4
@@ -8,7 +8,7 @@
 #SBATCH --mem=0
 #SBATCH --qos=normal
 #SBATCH --export=ALL
-#SBATCH --output=slurm-turbo-gpu-mzn2024.out
+#SBATCH --output=slurm-turbo-gpu-mzn2024-2.out
 
 # Exits when an error occurs.
 set -e
@@ -38,7 +38,7 @@ fi
 # I. Define the campaign to run.
 
 MZN_SOLVER="turbo.gpu.release"
-VERSION="v1.2.8" # Note that this is only for the naming of the output directory, we do not verify the actual version of the solver.
+VERSION="v1.2.9" # Note that this is only for the naming of the output directory, we do not verify the actual version of the solver.
 # This is to avoid MiniZinc to kill Turbo before it can print the statistics.
 MZN_TIMEOUT=1260000
 REAL_TIMEOUT=1200000
@@ -48,8 +48,8 @@ THREADS=0 # The number of core used on the node.
 FP="wac1"
 WAC1_THRESHOLD=0
 MACHINE=$(basename "$1" ".sh")
-INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024_noyumi.csv"
-EXTRA_ARGS_TURBO=" "
+INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024_patch2.csv"
+EXTRA_ARGS_TURBO=" -globalmem"
 
 # II. Prepare the command lines and output directory.
 MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream -t $MZN_TIMEOUT --output-mode json --output-time --output-objective -p $THREADS -arch $ARCH -fp $FP -wac1_threshold $WAC1_THRESHOLD -hardware $MACHINE -version $VERSION -timeout $REAL_TIMEOUT $EXTRA_ARGS_TURBO "
