@@ -1,3 +1,2 @@
 "problem","model","data_file"
-"compression","../data/mzn-challenge/2024/compression/compression.mzn","../data/mzn-challenge/2024/compression/bin_8.json"
-"compression","../data/mzn-challenge/2024/compression/compression.mzn","../data/mzn-challenge/2024/compression/bin_10.json"
+"hoist-benchmark","../data/mzn-challenge/2024/hoist-benchmark/hoist-benchmark.mzn","../data/mzn-challenge/2024/hoist-benchmark/PU_2_8_4.dzn"
