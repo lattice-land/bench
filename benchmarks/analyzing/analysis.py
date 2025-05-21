@@ -127,6 +127,17 @@ def read_experiments(experiments):
       print(f"{e}: {len(failed_xps)} failed experiments using turbo.gpu.release have been removed (the faulty experiments have been stored in {failed_xps_path}).")
     if 'search' not in df:
       df['search'] = 'user_defined'
+    if 'best_obj_time' not in df:
+      obj_df = pd.read_csv(os.path.splitext(e)[0] + "-objectives.csv")
+      # Convert the objective column to numeric (in case it contains non-numeric values)
+      obj_df['objective'] = pd.to_numeric(obj_df['objective'], errors='coerce')
+
+      # Find the best objective (minimum or maximum depending on the problem type) and its time
+      best_objective_time = (obj_df.groupby(['configuration', 'problem', 'data_file'])
+                            .tail(1)
+                            .loc[:, ['configuration', 'problem', 'data_file', 'time']]
+                            .rename(columns={'time': 'best_obj_time'}))
+      df = pd.merge(df, best_objective_time, on=['configuration', 'problem', 'data_file'], how='left')
     # print(df[(df['mzn_solver'] == "turbo.gpu.release") & df['threads_per_block'].isna()])
     # df = df[(df['mzn_solver'] != "turbo.gpu.release") | (~df['threads_per_block'].isna())]
     all_xp = pd.concat([df, all_xp], ignore_index=True)
@@ -744,3 +755,143 @@ def heatmap_solver_comparison(df, source_solver, target_solvers, global_cons = N
     plt.title(f"Comparison of {source_solver[1]} against Target Solvers", fontsize=14)
     plt.tight_layout()
     plt.show()
+
+# Helper functions to determine scoring criteria
+def solved(row):
+    """Determine if a solver has successfully solved the problem."""
+    return row['status'] in ['SATISFIED', 'OPTIMAL_SOLUTION']
+
+def optimal(row):
+    """Determine if the solver found the optimal solution."""
+    return row['status'] == 'OPTIMAL_SOLUTION'
+
+def quality(row):
+    """Return the quality of the solution (objective value)."""
+    try:
+        return float(row['objective'])
+    except ValueError:
+        return np.nan
+
+def compute_score(time_s, time_s_prime):
+    """Calculate the score for indistinguishable answers based on time."""
+    if time_s == 0 and time_s_prime == 0:
+        return 0.5
+    return time_s_prime / (time_s_prime + time_s)
+
+def mzn_is_better(row_A, row_B):
+  if row_A['status'] != 'UNKNOWN' and row_B['status'] == 'UNKNOWN':
+    return True
+  if row_A['status'] == 'OPTIMAL_SOLUTION' and row_B['status'] != 'OPTIMAL_SOLUTION':
+    return True
+  if row_A['status'] == 'UNSATISFIABLE' and row_B['status'] != 'UNSATISFIABLE':
+    return True
+  if row_A['status'] == 'SATISFIED' and row_B['status'] == 'SATISFIED':
+    if row_A['method'] == 'minimize' and row_A['objective'] < row_B['objective']:
+      return True
+    elif row_A['method'] == 'maximize' and row_A['objective'] > row_B['objective']:
+      return True
+  return False
+
+def uid_problem_row(df, uid, P):
+  row = df[(df['uid'] == uid) & (df['model_data_file'] == P)]
+  if row.empty:
+    print(f"Warning: Missing data for solvers {uid} on problem {P}.")
+  if len(row) != 1:
+    print(f"Warning: Expected one row for solvers {uid} and on problem {P}, but got {len(row)} (using the first one).")
+  return row.iloc[0] if not row.empty else None
+
+def minizinc_challenge_score(df, solvers_uid=[]):
+  # Initialize a dictionary to store Borda scores for each solver
+  scores = {}
+  solvers = df['uid'].unique() if len(solvers_uid) == 0 else solvers_uid
+  # Iterate over each pair of solvers (A, B)
+  for A in solvers:
+    for B in solvers:
+      if A == B:
+        continue  # Skip comparing the solver to itself
+      for P in df['model_data_file'].unique():
+        scores.setdefault((A, P), 0.0)
+        row_A = uid_problem_row(df, A, P)
+        row_B = uid_problem_row(df, B, P)
+        if row_A is None or row_B is None:
+          continue
+
+        # No point awarded if the status is unknown.
+        if row_A['status'] == 'UNKNOWN':
+          continue
+
+        if mzn_is_better(row_A, row_B):
+          scores[(A,P)] += 1
+        elif row_A['status'] == 'SATISFIED' and row_B['status'] == 'SATISFIED' and row_A['method'] in ['minimize', 'maximize'] and row_A['objective'] == row_B['objective']:
+          if pd.isnull(row_A['best_obj_time']):
+            print(f"Warning: Missing time data for solvers {A} on problem {P}.")
+            continue
+          if pd.isnull(row_B['best_obj_time']):
+            print(f"Warning: Missing time data for solvers {B} on problem {P}.")
+            continue
+          time_A = float(row_A['best_obj_time'])
+          time_B = float(row_B['best_obj_time'])
+          scores[(A,P)] = time_B / (time_A + time_B) if (time_A + time_B) != 0 else 0.5
+
+  return scores
+
+def scores_summary(scoring_method, scores):
+  # Initialize a dictionary to store the total score for each solver
+  total_scores = {}
+  for (solver, _), score in scores.items():
+    if solver not in total_scores:
+      total_scores[solver] = 0.0
+    total_scores[solver] += score
+
+  # Sort the solvers by their total score
+  sorted_solvers = sorted(total_scores.items(), key=lambda x: x[1], reverse=True)
+
+  return pd.DataFrame(sorted_solvers, columns=['solver', scoring_method + ' score'])
+
+def best_solutions_per_instance(df, solvers_uid):
+  best_solutions = {}
+  for P in df['model_data_file'].unique():
+    best_solutions[P] = (None, 'UNKNOWN')
+    for A in solvers_uid:
+      row_A = uid_problem_row(df, A, P)
+      if row_A is None or row_A['status'] == 'UNKNOWN':
+        continue
+      if row_A['status'] == 'OPTIMAL_SOLUTION' or best_solutions[P][0] is None:
+        if row_A['status'] == 'SATISFIED':
+          best_solutions[P] = (row_A['objective'], row_A['status'])
+      elif row_A['method'] == "minimize" and best_solutions[P][0] > row_A['objective']:
+        best_solutions[P] = (row_A['objective'], row_A['status'])
+      elif row_A['method'] == "maximize" and best_solutions[P][0] < row_A['objective']:
+        best_solutions[P] = (row_A['objective'], row_A['status'])
+  return best_solutions
+
+def xcsp3_challenge_score(df, solvers_uid=[]):
+  # Initialize a dictionary to store XCSP3 scores for each solver
+  scores = {}
+  solvers = df['uid'].unique() if len(solvers_uid) == 0 else solvers_uid
+
+  # Compute the best solutions for each instance.
+  best_solutions = best_solutions_per_instance(df, solvers)
+
+  # Compute the scores for each solver on each instance.
+  for A in solvers:
+    for P in df['model_data_file'].unique():
+      scores.setdefault((A, P), 0.0)
+      row_A = uid_problem_row(df, A, P)
+      if row_A is None or row_A['status'] == 'UNKNOWN':
+        continue
+
+      if row_A['method'] == 'satisfy':
+        if row_A['status'] == 'SATISFIED':
+          scores[(A,P)] += 1
+        elif row_A['status'] == 'UNSATISFIABLE':
+          scores[(A,P)] += 1
+      else:
+        if row_A['status'] == 'UNSATISFIABLE':
+          scores[(A,P)] += 1
+        elif row_A['status'] == 'OPTIMAL_SOLUTION':
+          scores[(A,P)] += 1
+        elif row_A['status'] == 'SATISFIED':
+          if row_A['objective'] == best_solutions[P][0]:
+            scores[(A,P)] += 0.5 if best_solutions[P][1] == 'OPTIMAL_SOLUTION' else 1
+  return scores
