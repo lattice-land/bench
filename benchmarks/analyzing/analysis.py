@@ -115,6 +115,10 @@ def read_experiments(experiments):
       df['nodes'] = (df['failures'] + df['nSolutions']) * 2 - 1
     if 'num_deductions' not in df:
       df['num_deductions'] = df['nodes']
+    if 'cumulative_time_block_sec' not in df:
+      df['cumulative_time_block_sec'] = df['num_blocks'] * (df['timeout_ms'].astype(float) / 1000.0)
+    if 'deductions_per_block_second' not in df:
+      df['deductions_per_block_second'] = df['num_deductions'] / df['num_blocks'] / df['cumulative_time_block_sec']
     if df[df['status'] == 'ERROR'].shape[0] > 0:
       print(e, ': Number of erroneous rows: ', df[df['status'] == 'ERROR'].shape[0])
       print(e, df[df['status'] == 'ERROR']['data_file'])
@@ -430,8 +434,8 @@ def compare_solvers_pie_chart(df, uid1, uid2, uid1_label = None, uid2_label = No
     category_counts = pivot_df['Comparison'].value_counts()
 
     color_mapping = {
-        f'{uid1_label} better': 'green' if category_counts.get(f'{uid1_label} better', 0) >= category_counts.get(f'{uid2_label} better', 0) else 'orange',
-        f'{uid2_label} better': 'green' if category_counts.get(f'{uid2_label} better', 0) > category_counts.get(f'{uid1_label} better', 0) else 'orange',
+        f'{uid1_label} better': 'green',
+        f'{uid2_label} better': 'orange',
         'Equal': (0.678, 0.847, 0.902), # light blue
         'Unknown': 'red',
         'Error': 'red'
@@ -443,7 +447,7 @@ def compare_solvers_pie_chart(df, uid1, uid2, uid1_label = None, uid2_label = No
     category_counts.plot(kind='pie', autopct='%1.1f%%', startangle=140, colors=colors)
     # plt.title(f'Objective Value and Optimality Comparison between {uid1} and {uid2}')
     plt.ylabel('')
-    fig.savefig(f"cmp-{uid1_label}-{uid2_label}.pdf")
+    fig.savefig(f"cmp-{uid1_label}-{uid2_label}.png")
     plt.show()
     return pivot_df
 

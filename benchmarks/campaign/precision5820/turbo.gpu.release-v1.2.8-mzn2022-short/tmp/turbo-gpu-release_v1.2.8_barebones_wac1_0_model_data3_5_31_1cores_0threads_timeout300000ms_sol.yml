@@ -1,0 +1,68 @@
+- abstract_domain: pir_itv32_z
+  arch: barebones
+  command_line: /home/ptalbot/repositories/lattice-land/turbo/build/gpu-release/turbo
+    -t 300000 -n 1 -s -arch barebones -or 0 -sub 15 -stack 0 -fp wac1 -wac1_threshold
+    0 -eps_var_order default -eps_value_order default -version v1.2.8 -hardware 'precision5820'
+    -cutnodes 0 /tmp/mznfileaMuPKR.fzn
+  configuration: 
+    turbo-gpu-release_v1.2.8_barebones_wac1_0_model_data3_5_31_1cores_0threads_timeout300000ms
+  constraints_after_simplification: 25141
+  cores: '1'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2025-06-02T19:26:23.659571'
+  eliminated_constraints_by_as: 8
+  eliminated_constraints_by_as_fp_iter_1: 0
+  eliminated_constraints_by_as_fp_iter_2: 8
+  eliminated_constraints_by_icse: 3874
+  eliminated_constraints_by_icse_fp_iter_1: 3874
+  eliminated_constraints_by_icse_fp_iter_2: 0
+  eliminated_entailed_constraints: 1
+  eliminated_entailed_constraints_fp_iter_1: 0
+  eliminated_entailed_constraints_fp_iter_2: 1
+  eliminated_equality_constraints: 7920
+  eliminated_equality_constraints_fp_iter_1: 7920
+  eliminated_equality_constraints_fp_iter_2: 0
+  eliminated_variables: 11875
+  entailed_prop_removal: deactivated
+  evaluatedReifiedConstraints: 7764
+  fixpoint: wac1
+  flatBoolVars: 7764
+  flatIntConstraints: 17514
+  flatIntVars: 7982
+  flatTime: 0.370926
+  heap_memory: 12635734016
+  icse_fixpoint_iterations: 5
+  icse_fixpoint_iterations_fp_iter_1: 3
+  icse_fixpoint_iterations_fp_iter_2: 1
+  memory_configuration: global
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: turbo.gpu.release
+  parsed_constraints: 25684
+  parsed_variables: 15932
+  paths: 0
+  preprocessing_fixpoint_iterations: 3
+  preprocessing_time: 1.516
+  problem: team-assignment
+  propagator_mem: 402384
+  shared_mem: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 10, 9, 11,
+      15, 12, 13, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+      31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+      22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+      13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
+      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 23, 31, 21,
+      30, 22, 24, 26, 27, 29, 25, 19, 28]
+    objective: 7262
+  status: SATISFIED
+  store_mem: 188720
+  threads: '0'
+  time: 300.497
+  timeout_ms: '300000'
+  tnf_constraints: 36944
+  tnf_variables: 35447
+  variables_after_simplification: 23581
+  version: v1.2.8
+  wac1_threshold: '0'
