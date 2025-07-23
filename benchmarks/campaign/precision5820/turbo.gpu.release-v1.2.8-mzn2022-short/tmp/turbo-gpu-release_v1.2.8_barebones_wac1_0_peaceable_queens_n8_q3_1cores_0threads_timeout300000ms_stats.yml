@@ -1,0 +1,28 @@
+{abstract_domain: pir_itv32_z, arch: barebones, best_obj_time: 159.585, command_line: /home/ptalbot/repositories/lattice-land/turbo/build/gpu-release/turbo
+-t 300000 -n 1 -s -arch barebones -or 0 -sub 15 -stack 0 -fp wac1 -wac1_threshold
+0 -eps_var_order default -eps_value_order default -version v1.2.8 -hardware 'precision5820'
+-cutnodes 0 /tmp/mznfiledgY5UT.fzn, configuration: turbo-gpu-release_v1.2.8_barebones_wac1_0_peaceable_queens_n8_q3_1cores_0threads_timeout300000ms,
+constraints_after_simplification: 16923, cores: '1', cuda_version: 12080, cutnodes: 0,
+data_file: ../data/mzn-challenge/2022/generalized-peacable-queens/n8_q3.json, datetime: '2025-06-02T19:12:57.468470',
+dive_time: 0.0, eliminated_constraints_by_as: 6, eliminated_constraints_by_as_fp_iter_1: 6,
+eliminated_constraints_by_icse: 2256, eliminated_constraints_by_icse_fp_iter_1: 2256,
+eliminated_entailed_constraints: 3172, eliminated_entailed_constraints_fp_iter_1: 3172,
+eliminated_equality_constraints: 2038, eliminated_equality_constraints_fp_iter_1: 2038,
+eliminated_variables: 7247, entailed_prop_removal: deactivated, eps_num_subproblems: 32768,
+eps_skipped_subproblems: 0, eps_solved_subproblems: 28, eps_value_order: default,
+eps_var_order: default, evaluatedReifiedConstraints: 1384, failures: 9706333, first_block_idle_time: 0.0,
+fixpoint: wac1, fixpoint_iterations: 351251619, fixpoint_time: 295.719, flatBoolConstraints: 1679,
+flatBoolVars: 1788, flatIntConstraints: 1783, flatIntVars: 826, flatTime: 0.266357,
+free_search: no, hardware: precision5820, heap_memory: 12635734016, icse_fixpoint_iterations: 3,
+icse_fixpoint_iterations_fp_iter_1: 2, initTime: 0.634, memory_configuration: global,
+method: maximize, model: ../data/mzn-challenge/2022/generalized-peacable-queens/peaceable_queens.mzn,
+mzn_solver: turbo.gpu.release, nSolutions: 1, nodes: 19420233, num_blocks: 192, num_blocks_done: 0,
+num_deductions: 6780047143584, num_solutions: 5, objective: 4, or_nodes: 0, parsed_constraints: 8273,
+parsed_variables: 2940, paths: 0, peakDepth: 48, preprocessing_fixpoint_iterations: 2,
+preprocessing_time: 0.634, problem: generalized-peacable-queens, problem_path: /tmp/mznfiledgY5UT.fzn,
+propagator_mem: 270896, propagators: 16923, search_time: 3.014, select_fp_functions_time: 0.533,
+shared_mem: 0, solveTime: 300.096, solve_time: 1.563, solver: Turbo, stack_size: 0,
+status: SATISFIED, store_mem: 103888, threads: '0', threads_per_block: 256, timeout_ms: 300000,
+tnf_constraints: 24395, tnf_variables: 20188, transfer_cpu2gpu_time: 0.0, transfer_gpu2cpu_time: 0.0,
+variables: 12977, variables_after_simplification: 12977, version: v1.2.8, wac1_threshold: 0,
+wait_cpu_time: 0.0}

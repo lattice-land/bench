@@ -1,16 +1,23 @@
 import pandas as pd
+from warnings import simplefilter
+simplefilter(action="ignore", category=pd.errors.PerformanceWarning)
 import matplotlib.pyplot as plt
 import numpy as np
 import os
+import math
 import seaborn as sns
 import scipy.cluster.hierarchy as sch
 from pathlib import Path
 from packaging import version
+from matplotlib.colors import LinearSegmentedColormap
+import textwrap
 
 # A tentative to have unique experiment names.
 def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, eps_num_subproblems, or_nodes, threads_per_block, search):
   uid = mzn_solver + "_" + str(version) + '_' + machine
   if str(timeout_ms) == "inf":
+    uid += "_notimeout"
+  elif(math.isnan(timeout_ms)):
     uid += "_notimeout"
   elif (int(timeout_ms) % 1000) == 0:
     uid += "_" + str(int(int(timeout_ms)/1000)) + "s"
@@ -36,6 +43,8 @@ def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machin
       uid += '_globalmem'
     if '_disable_simplify' in config:
       uid += '_disable_simplify'
+    if '_disable_prop_removal' in config:
+      uid += '_no_pr'
     if '_force_ternarize' in config:
       uid += '_force_ternarize'
     if '_ipc' in config:
@@ -95,11 +104,21 @@ def read_experiments(experiments):
       df['machine'] = os.path.basename(os.path.dirname(e))
     if 'timeout_ms' not in df:
       df['timeout_ms'] = "300000"
+    if 'num_blocks' not in df:
+      df['num_blocks'] = df['or_nodes']
+    if 'preprocessing_time' not in df:
+      df['preprocessing_time'] = 0.0
     # else:
       # df['timeout_ms'] = df.apply(lambda row: "300000" if not isinstance(row['version'], int) else row['version'], axis=1)
-     # estimating the number of nodes (lower bound).
+    # estimating the number of nodes (lower bound).
     if 'nodes' not in df:
       df['nodes'] = (df['failures'] + df['nSolutions']) * 2 - 1
+    if 'num_deductions' not in df:
+      df['num_deductions'] = df['nodes']
+    if 'cumulative_time_block_sec' not in df:
+      df['cumulative_time_block_sec'] = df['num_blocks'] * (df['timeout_ms'].astype(float) / 1000.0)
+    if 'deductions_per_block_second' not in df:
+      df['deductions_per_block_second'] = df['num_deductions'] / df['num_blocks'] / df['cumulative_time_block_sec']
     if df[df['status'] == 'ERROR'].shape[0] > 0:
       print(e, ': Number of erroneous rows: ', df[df['status'] == 'ERROR'].shape[0])
       print(e, df[df['status'] == 'ERROR']['data_file'])
@@ -112,11 +131,23 @@ def read_experiments(experiments):
       print(f"{e}: {len(failed_xps)} failed experiments using turbo.gpu.release have been removed (the faulty experiments have been stored in {failed_xps_path}).")
     if 'search' not in df:
       df['search'] = 'user_defined'
+    if 'best_obj_time' not in df:
+      obj_df = pd.read_csv(os.path.splitext(e)[0] + "-objectives.csv")
+      # Convert the objective column to numeric (in case it contains non-numeric values)
+      obj_df['objective'] = pd.to_numeric(obj_df['objective'], errors='coerce')
+
+      # Find the best objective (minimum or maximum depending on the problem type) and its time
+      best_objective_time = (obj_df.groupby(['configuration', 'problem', 'data_file'])
+                            .tail(1)
+                            .loc[:, ['configuration', 'problem', 'data_file', 'time']]
+                            .rename(columns={'time': 'best_obj_time'}))
+      df = pd.merge(df, best_objective_time, on=['configuration', 'problem', 'data_file'], how='left')
     # print(df[(df['mzn_solver'] == "turbo.gpu.release") & df['threads_per_block'].isna()])
     # df = df[(df['mzn_solver'] != "turbo.gpu.release") | (~df['threads_per_block'].isna())]
     all_xp = pd.concat([df, all_xp], ignore_index=True)
   all_xp['version'] = all_xp['version'].apply(version.parse)
   all_xp['nodes'] = all_xp['nodes'].fillna(0).astype(int)
+  all_xp['num_deductions'] = all_xp['num_deductions'].fillna(0).astype(int)
   all_xp['status'] = all_xp['status'].fillna("UNKNOWN").astype(str)
   if 'memory_configuration' not in all_xp:
     all_xp['memory_configuration'] = 'RAM'
@@ -136,10 +167,14 @@ def read_experiments(experiments):
   all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'],
                                                     row['eps_num_subproblems'], row['or_nodes'], row['threads_per_block'], row['search']), axis=1)
   all_xp['short_uid'] = all_xp['uid'].apply(make_short_uid)
-  all_xp['nodes_per_second'] = all_xp['nodes'] / all_xp['solveTime']
+  all_xp['nodes_per_second'] = all_xp['nodes'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
+  all_xp['deductions_per_second'] = all_xp['num_deductions'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
+  all_xp['deductions_per_node'] = all_xp['num_deductions'] / all_xp['nodes']
   all_xp['fp_iterations_per_node'] = all_xp['fixpoint_iterations'] / all_xp['nodes']
-  all_xp['fp_iterations_per_second'] = all_xp['fixpoint_iterations'] / all_xp['solveTime']
+  all_xp['fp_iterations_per_second'] = all_xp['fixpoint_iterations'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
   all_xp['normalized_nodes_per_second'] = 0
+  all_xp['normalized_deductions_per_second'] = 0
+  all_xp['normalized_deductions_per_node'] = 0
   all_xp['normalized_fp_iterations_per_second'] = 0
   all_xp['normalized_fp_iterations_per_node'] = 0
   all_xp = all_xp.copy() # to avoid a warning about fragmented frame.
@@ -158,6 +193,7 @@ def intersect(df):
   target_set = solver_instance.iloc[0]
   for i in range(0, len(solver_instance)):
     # print(f"{i} has {len(solver_instance.iloc[i])} instances.")
+    # print(target_set.difference(solver_instance.iloc[i]))
     target_set = target_set.intersection(solver_instance.iloc[i])
 
   return df[df['model_data_file'].isin(target_set)]
@@ -192,7 +228,7 @@ def plot_overall_result(df):
   ax = grouped.plot(kind='barh', stacked=True, color=[colors[col] for col in grouped.columns])
   plt.title('Problem Status by Configuration')
   plt.ylabel('Configuration')
-  plt.xlabel('Number of Problems')
+  plt.xlabel('Number of Problems (' + str(int(df.shape[0] / grouped.shape[0])) + ')')
   ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.15), ncol=3)
   plt.tight_layout()
   plt.show()
@@ -229,7 +265,7 @@ def compute_normalized_value(df, row, uid1, uid2, key):
 
   # Retrieve the value for each solver for the particular data_file of the row examined.
   nps1 = row[key]
-  nps_vals = df[(df['uid'] == uid2) & (df['data_file'] == row['data_file'])][key].values
+  nps_vals = df[(df['uid'] == uid2) & (df['model_data_file'] == row['model_data_file'])][key].values
   assert(len(nps_vals) == 1)
   nps2 = nps_vals[0]
 
@@ -241,13 +277,14 @@ def compute_normalized_value(df, row, uid1, uid2, key):
 def normalize(df, uid1, uid2, key):
   df2 = df[df['uid'].isin([uid1, uid2])]
   df2['normalized_'+key] = df2.apply(lambda row: compute_normalized_value(df2, row, uid1, uid2, key), axis=1)
-  # print(df2[['uid', 'data_file', 'normalized_'+key, key]])
+  # print(df2[['uid', 'model_data_file', 'normalized_'+key, key]])
   return df2
 
 def comparison_table_md(df, uid1, uid2):
   df2 = normalize(df, uid1, uid2, 'nodes_per_second')
   df2 = normalize(df2, uid1, uid2, 'fp_iterations_per_second')
   df2 = normalize(df2, uid1, uid2, 'fp_iterations_per_node')
+  df2 = normalize(df2, uid1, uid2, 'deductions_per_node')
   df2 = normalize(df2, uid1, uid2, 'propagator_mem')
   df2 = normalize(df2, uid1, uid2, 'store_mem')
   m1 = metrics_table(df2[df2['uid'] == uid1]).squeeze()
@@ -256,6 +293,8 @@ def comparison_table_md(df, uid1, uid2):
   print(f"| Metrics | Normalized average [0,100] | Δ v{m1['version']} | #best (_/{total_pb}) | Average | Δ v{m1['version']} | Median | Δ v{m1['version']} |")
   print("|---------|----------------------------|----------|--------------|---------|----------|--------|----------|")
   print_table_line(m1, m2, "Nodes per second", "nodes_per_second", "")
+  # print_table_line(m1, m2, "Deductions per second", "deductions_per_second", "")
+  print_table_line(m1, m2, "Deductions per node", "deductions_per_node", "")
   print_table_line(m1, m2, "Fixpoint iterations per second", "fp_iterations_per_second", "")
   print_table_line(m1, m2, "Fixpoint iterations per node", "fp_iterations", "")
   print_table_line(m1, m2, "Propagators memory", "propagator_mem_mb", "MB")
@@ -282,6 +321,16 @@ def metrics_table(df):
     median_nodes_per_second=('nodes_per_second', lambda x: x[x != 0].median()),
     avg_normalized_nodes_per_second=('normalized_nodes_per_second', lambda x: x[x != 0].mean()),
     best_nodes_per_second=('normalized_nodes_per_second', lambda x: x[x >= 100.0].count()),
+    avg_deductions_per_node=('deductions_per_node', lambda x: x[x != 0].mean()),
+    median_deductions_per_node=('deductions_per_node', lambda x: x[x != 0].median()),
+    avg_normalized_deductions_per_node=('normalized_deductions_per_node', lambda x: x[x != 0].mean()),
+    median_normalized_deductions_per_node=('normalized_deductions_per_node', lambda x: x[x != 0].median()),
+    best_deductions_per_node=('normalized_deductions_per_node', lambda x: x[x < 100.0].count()),
+    avg_deductions_per_second=('deductions_per_second', lambda x: x[x != 0].mean()),
+    median_deductions_per_second=('deductions_per_second', lambda x: x[x != 0].median()),
+    avg_normalized_deductions_per_second=('normalized_deductions_per_second', lambda x: x[x != 0].mean()),
+    median_normalized_deductions_per_second=('normalized_deductions_per_second', lambda x: x[x != 0].median()),
+    best_deductions_per_second=('normalized_deductions_per_second', lambda x: x[x < 100.0].count()),
     avg_fp_iterations_per_second=('fp_iterations_per_second', 'mean'),
     median_fp_iterations_per_second=('fp_iterations_per_second', 'median'),
     avg_normalized_fp_iterations_per_second=('normalized_fp_iterations_per_second', 'mean'),
@@ -302,7 +351,7 @@ def metrics_table(df):
     problem_sat=('status', lambda x: (x == 'SATISFIED').sum()),
     problem_unknown=('status', lambda x: (x == 'UNKNOWN').sum()),
     problem_with_store_shared=('memory_configuration', lambda x: (x == "store_shared").sum()),
-    problem_with_props_shared=('memory_configuration', lambda x: (x == "store_pc_shared").sum())
+    problem_with_props_shared=('memory_configuration', lambda x: ((x == "store_pc_shared") | (x == "tcn_shared")).sum())
   )
 
   # Count problems with non-zero num_blocks_done and not solved to optimality or proven unsatisfiable
@@ -315,18 +364,7 @@ def metrics_table(df):
 
   return overall_metrics
 
-def compare_solvers_pie_chart(df, uid1, uid2, uid1_label = None, uid2_label = None):
-    """
-    Compares the performance of two solvers based on objective value and optimality.
-
-    Parameters:
-    - df: DataFrame containing the data.
-    - uid1: Name of the first solver (str).
-    - uid2: Name of the second solver (str).
-
-    Returns:
-    - Displays a pie chart comparing the performance of the two solvers.
-    """
+def compare_solvers(df, uid1, uid2, uid1_label = None, uid2_label = None):
     if uid1_label == None:
       uid1_label = uid1
     if uid2_label == None:
@@ -335,7 +373,7 @@ def compare_solvers_pie_chart(df, uid1, uid2, uid1_label = None, uid2_label = No
     solvers_df = df[(df['uid'] == uid1) | (df['uid'] == uid2)]
 
     # Pivoting for 'objective', 'method', and 'status' columns
-    pivot_df = solvers_df.pivot_table(index='model_data_file', columns='uid', values=['objective', 'method', 'status'], aggfunc='first')
+    pivot_df = solvers_df.pivot_table(index='model_data_file', columns='uid', values=['model', 'problem', 'data_file', 'objective', 'method', 'status'], aggfunc='first')
 
     # Compare objective values based on method and optimality status
     conditions = [
@@ -372,13 +410,32 @@ def compare_solvers_pie_chart(df, uid1, uid2, uid1_label = None, uid2_label = No
     error_problems = pivot_df[pivot_df['Comparison'] == 'Error'].index.tolist()
     if error_problems:
         print(f"The comparison is 'Error' for the following problems: {', '.join(error_problems)}")
+    return pivot_df
 
+def compare_solvers_pie_chart(df, uid1, uid2, uid1_label = None, uid2_label = None):
+    """
+    Compares the performance of two solvers based on objective value and optimality.
+
+    Parameters:
+    - df: DataFrame containing the data.
+    - uid1: Name of the first solver (str).
+    - uid2: Name of the second solver (str).
+
+    Returns:
+    - Displays a pie chart comparing the performance of the two solvers.
+    """
+    if uid1_label == None:
+      uid1_label = uid1
+    if uid2_label == None:
+      uid2_label = uid2
+
+    pivot_df = compare_solvers(df, uid1, uid2, uid1_label, uid2_label)
     # Get counts for each category
     category_counts = pivot_df['Comparison'].value_counts()
 
     color_mapping = {
-        f'{uid1_label} better': 'green' if category_counts.get(f'{uid1_label} better', 0) >= category_counts.get(f'{uid2_label} better', 0) else 'orange',
-        f'{uid2_label} better': 'green' if category_counts.get(f'{uid2_label} better', 0) > category_counts.get(f'{uid1_label} better', 0) else 'orange',
+        f'{uid1_label} better': 'green',
+        f'{uid2_label} better': 'orange',
         'Equal': (0.678, 0.847, 0.902), # light blue
         'Unknown': 'red',
         'Error': 'red'
@@ -390,17 +447,16 @@ def compare_solvers_pie_chart(df, uid1, uid2, uid1_label = None, uid2_label = No
     category_counts.plot(kind='pie', autopct='%1.1f%%', startangle=140, colors=colors)
     # plt.title(f'Objective Value and Optimality Comparison between {uid1} and {uid2}')
     plt.ylabel('')
-    fig.savefig(f"cmp-{uid1_label}-{uid2_label}.pdf")
+    fig.savefig(f"cmp-{uid1_label}-{uid2_label}.png")
     plt.show()
-
     return pivot_df
 
 # List the problems on which the key is greater on the second solver
 def list_problem_where_leq(df, key, uid1, uid2):
   df1 = df[df['uid'] == uid1]
   df2 = df[df['uid'] == uid2]
-  # Merge the two dataframes on the 'data_file' to compare them
-  comparison_df = pd.merge(df1[['data_file', key]], df2[['data_file', key]], on='data_file', suffixes=('_1', '_2'))
+  # Merge the two dataframes on the 'model_data_file' to compare them
+  comparison_df = pd.merge(df1[['model_data_file', key]], df2[['model_data_file', key]], on='model_data_file', suffixes=('_1', '_2'))
   # Find where key is greater on df2
   return comparison_df[comparison_df[key+"_1"] > comparison_df[key+"_2"]]
 
@@ -432,6 +488,9 @@ def plot_time_distribution(arch, df):
   elif arch == "gpu":
     time_columns = gpu_time_cols
 
+  # Remove the problems that could be solved (not unknown).
+  df = df[(df['status'] != 'OPTIMAL_SOLUTION') & (df['status'] != 'UNSATISFIABLE')]
+
   df.sort_values(by="problem_uid", ascending=False, inplace=True)
   # Set the problem names as index
   df.set_index("problem_uid", inplace=True)
@@ -440,7 +499,7 @@ def plot_time_distribution(arch, df):
 
   # Plot
   colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2"]
-  df[time_columns].plot(kind='barh', stacked=True, figsize=(10, num_row / 5), color=colors)
+  ax = df[time_columns].plot(kind='barh', stacked=True, figsize=(10, num_row / 2.5), color=colors)
 
   # Add labels and title
   plt.xlabel("Time (seconds)")
@@ -449,6 +508,18 @@ def plot_time_distribution(arch, df):
   plt.legend(title="Time Component", bbox_to_anchor=(1.05, 1), loc='upper left')
   plt.tight_layout()
 
+  # Add num_blocks_done labels to the right of the bars if not 0
+  for idx, (index, row) in enumerate(df.iterrows()):
+      total_time = row[time_columns].sum()
+      num_blocks = row.get("num_blocks_done", 0)
+      if num_blocks != 0:
+          ax.text(
+              total_time + 0.5,  # slightly to the right of the end of the bar
+              idx,               # vertical position
+              str(int(num_blocks)),  # convert to string for display
+              va='center', ha='left', fontsize=8, color='black'
+          )
+
   # Show plot
   plt.show()
 
@@ -456,9 +527,9 @@ def boxplot_preprocessing_components(df, components):
   pass
 
 def boxplot_tcn_increase(df, ref_vars, ref_cons):
-  parsed_variables
-  tnf_variables
-  variables_after_simplification
+  # parsed_variables
+  # tnf_variables
+  # variables_after_simplification
 
   pass
 
@@ -486,6 +557,8 @@ def analyse_tnf_per_problem(df, logy, source_vars, source_cons, target_vars, tar
   num_problems = df.shape[0]
   print(f"average_vars_increase={sum(all_vars_increase)/num_problems:.2f}")
   print(f"average_cons_increase={sum(all_cons_increase)/num_problems:.2f}")
+  print(f"max_vars_increase={max(all_vars_increase):.2f}")
+  print(f"max_cons_increase={max(all_cons_increase):.2f}")
   print(f"median_vars_increase={sorted(all_vars_increase)[num_problems//2]:.2f}")
   print(f"median_cons_increase={sorted(all_cons_increase)[num_problems//2]:.2f}")
   print(f"stddev_vars_increase={np.std(all_vars_increase, ddof=0):.2f}")
@@ -558,12 +631,6 @@ def heatmap_operators(df):
   ops = ops.sort_values(by="problem")  # Group instances by problem
   ops = ops.drop(columns=["problem"])  # Remove problem column after sorting
 
-  # ops = ops.iloc[ops.max(axis=1).argsort()]
-  # linkage = sch.linkage(ops, method='ward')
-
-  # Sort the DataFrame based on clustering
-  # ops = ops.iloc[sch.leaves_list(linkage)]
-
   # Column sorting: order by total usage across all instances
   column_order = ops.sum(axis=0).sort_values(ascending=False).index
   ops = ops[column_order]  # Reorder columns
@@ -586,7 +653,6 @@ def heatmap_operators(df):
     ax.text(-0.1, mid_idx, prev_problem, ha="right", va="center", rotation=0)
 
   yticks = []
-  ylabels = []
   prev_problem = None
   for i, problem in enumerate(problems[ops.index]):  # Iterate in sorted order
     if problem != prev_problem:
@@ -602,3 +668,234 @@ def heatmap_operators(df):
   plt.title("Normalized Operator Usage Across Instances")
   fig.savefig("operators-heatmap.pdf", bbox_inches='tight')
   plt.show()
+
+def heatmap_solver_comparison(df, source_solver, target_solvers, global_cons = None):
+    comparisons = []
+    for target in target_solvers:
+        comparisons.append(compare_solvers(df, source_solver[0], target[0], source_solver[1], target[1]))
+
+    # Build the problem list from the comparison pivot
+    problems = comparisons[0][('problem', source_solver[0])]
+
+    heatmap_data = pd.DataFrame(index=problems.index)
+
+    color_map = {
+        f"{source_solver[1]} better": 1,
+        "Equal": 0,
+    }
+    for target in target_solvers:
+        color_map[f"{target[1]} better"] = -1
+
+    for comparison, target in zip(comparisons, target_solvers):
+        mapped = comparison['Comparison'].map(color_map)
+        heatmap_data[target[1]] = mapped
+
+    # Now sort by problems
+    heatmap_data["problem"] = problems.values
+    heatmap_data = heatmap_data.sort_values("problem")
+    heatmap_data = heatmap_data.drop(columns=["problem"])
+
+    # --- Custom colormap ---
+    colors = [
+        (1.0, 0.5, 0.5),  # light red for -1
+        (1.0, 1.0, 1.0),  # white for 0
+        (0.5, 0.8, 0.5),  # light green for +1
+    ]
+    cmap = LinearSegmentedColormap.from_list("custom_cmap", colors)
+
+    # --- Plotting ---
+    plotwidth = 2 * len(target_solvers)
+    if global_cons is not None:
+      plotwidth += 4
+    fig, ax = plt.subplots(figsize=(plotwidth, 9))
+    sns.heatmap(
+        heatmap_data,
+        cmap=cmap,
+        vmin=-1, vmax=1,
+        cbar=False,
+        xticklabels=True,
+        yticklabels=False,
+        ax=ax,
+        linewidths=0.5,
+        linecolor='lightgrey'
+    )
+    ax.set_ylabel("")  # <- no label
+    # Add problem group labels
+    prev_problem = None
+    start_idx = 0
+    for i, idx in enumerate(heatmap_data.index):
+        current_problem = problems.loc[idx]
+        if current_problem != prev_problem and prev_problem is not None:
+            mid_idx = (start_idx + i - 1) / 2
+            ax.text(-0.1, mid_idx + 0.2, prev_problem, ha="right", va="center", rotation=0, fontsize=9)
+            # Add global constraints for the previous group
+            constraint = global_cons.loc[global_cons['problem'] == prev_problem, 'globals'].values
+            if constraint.size > 0 and isinstance(constraint[0], str) and constraint[0] != "":
+                wrapped = "\n".join(textwrap.wrap(constraint[0], width=40))
+                ax.text(len(target_solvers) + 0.1, mid_idx + 0.5, wrapped,
+                        ha="left", va="center", rotation=0, fontsize=8, color='dimgray')
+            start_idx = i
+        prev_problem = current_problem
+
+    if prev_problem is not None:
+        mid_idx = (start_idx + len(heatmap_data) - 1) / 2
+        ax.text(-0.1, mid_idx + 0.2, prev_problem, ha="right", va="center", rotation=0, fontsize=9)
+        constraint = global_cons.loc[global_cons['problem'] == prev_problem, 'globals'].values
+        if constraint.size > 0 and isinstance(constraint[0], str) and constraint[0] != "":
+            wrapped = "\n".join(textwrap.wrap(constraint[0], width=40))
+            ax.text(len(target_solvers) + 0.1, mid_idx + 0.5, wrapped,
+                    ha="left", va="center", rotation=0, fontsize=8, color='dimgray')
+
+    yticks = []
+    prev_problem = None
+    for i, idx in enumerate(heatmap_data.index):  # Iterate in sorted order
+      current_problem = problems.loc[idx]
+      if current_problem != prev_problem:
+        yticks.append(i)  # Place label in the middle of the group
+      prev_problem = current_problem
+    plt.yticks(yticks)
+
+    plt.xlabel("Target Solvers", fontsize=12)
+    plt.title(f"Comparison of {source_solver[1]} against Target Solvers", fontsize=14)
+    plt.tight_layout()
+    plt.show()
+
+# Helper functions to determine scoring criteria
+def solved(row):
+    """Determine if a solver has successfully solved the problem."""
+    return row['status'] in ['SATISFIED', 'OPTIMAL_SOLUTION']
+
+def optimal(row):
+    """Determine if the solver found the optimal solution."""
+    return row['status'] == 'OPTIMAL_SOLUTION'
+
+def quality(row):
+    """Return the quality of the solution (objective value)."""
+    try:
+        return float(row['objective'])
+    except ValueError:
+        return np.nan
+
+def compute_score(time_s, time_s_prime):
+    """Calculate the score for indistinguishable answers based on time."""
+    if time_s == 0 and time_s_prime == 0:
+        return 0.5
+    return time_s_prime / (time_s_prime + time_s)
+
+def mzn_is_better(row_A, row_B):
+  if row_A['status'] != 'UNKNOWN' and row_B['status'] == 'UNKNOWN':
+    return True
+  if row_A['status'] == 'OPTIMAL_SOLUTION' and row_B['status'] != 'OPTIMAL_SOLUTION':
+    return True
+  if row_A['status'] == 'UNSATISFIABLE' and row_B['status'] != 'UNSATISFIABLE':
+    return True
+  if row_A['status'] == 'SATISFIED' and row_B['status'] == 'SATISFIED':
+    if row_A['method'] == 'minimize' and row_A['objective'] < row_B['objective']:
+      return True
+    elif row_A['method'] == 'maximize' and row_A['objective'] > row_B['objective']:
+      return True
+  return False
+
+def uid_problem_row(df, uid, P):
+  row = df[(df['uid'] == uid) & (df['model_data_file'] == P)]
+  if row.empty:
+    print(f"Warning: Missing data for solvers {uid} on problem {P}.")
+  if len(row) != 1:
+    print(f"Warning: Expected one row for solvers {uid} and on problem {P}, but got {len(row)} (using the first one).")
+  return row.iloc[0] if not row.empty else None
+
+def minizinc_challenge_score(df, solvers_uid=[]):
+  # Initialize a dictionary to store Borda scores for each solver
+  scores = {}
+  solvers = df['uid'].unique() if len(solvers_uid) == 0 else solvers_uid
+  # Iterate over each pair of solvers (A, B)
+  for A in solvers:
+    for B in solvers:
+      if A == B:
+        continue  # Skip comparing the solver to itself
+      for P in df['model_data_file'].unique():
+        scores.setdefault((A, P), 0.0)
+        row_A = uid_problem_row(df, A, P)
+        row_B = uid_problem_row(df, B, P)
+        if row_A is None or row_B is None:
+          continue
+
+        # No point awarded if the status is unknown.
+        if row_A['status'] == 'UNKNOWN':
+          continue
+
+        if mzn_is_better(row_A, row_B):
+          scores[(A,P)] += 1
+        elif row_A['status'] == 'SATISFIED' and row_B['status'] == 'SATISFIED' and row_A['method'] in ['minimize', 'maximize'] and row_A['objective'] == row_B['objective']:
+          if pd.isnull(row_A['best_obj_time']):
+            print(f"Warning: Missing time data for solvers {A} on problem {P}.")
+            continue
+          if pd.isnull(row_B['best_obj_time']):
+            print(f"Warning: Missing time data for solvers {B} on problem {P}.")
+            continue
+          time_A = float(row_A['best_obj_time'])
+          time_B = float(row_B['best_obj_time'])
+          scores[(A,P)] = time_B / (time_A + time_B) if (time_A + time_B) != 0 else 0.5
+
+  return scores
+
+def scores_summary(scoring_method, scores):
+  # Initialize a dictionary to store the total score for each solver
+  total_scores = {}
+  for (solver, _), score in scores.items():
+    if solver not in total_scores:
+      total_scores[solver] = 0.0
+    total_scores[solver] += score
+
+  # Sort the solvers by their total score
+  sorted_solvers = sorted(total_scores.items(), key=lambda x: x[1], reverse=True)
+
+  return pd.DataFrame(sorted_solvers, columns=['solver', scoring_method + ' score'])
+
+def best_solutions_per_instance(df, solvers_uid):
+  best_solutions = {}
+  for P in df['model_data_file'].unique():
+    best_solutions[P] = (None, 'UNKNOWN')
+    for A in solvers_uid:
+      row_A = uid_problem_row(df, A, P)
+      if row_A is None or row_A['status'] == 'UNKNOWN':
+        continue
+      if row_A['status'] == 'OPTIMAL_SOLUTION' or best_solutions[P][0] is None:
+        if row_A['status'] == 'SATISFIED':
+          best_solutions[P] = (row_A['objective'], row_A['status'])
+      elif row_A['method'] == "minimize" and best_solutions[P][0] > row_A['objective']:
+        best_solutions[P] = (row_A['objective'], row_A['status'])
+      elif row_A['method'] == "maximize" and best_solutions[P][0] < row_A['objective']:
+        best_solutions[P] = (row_A['objective'], row_A['status'])
+  return best_solutions
+
+def xcsp3_challenge_score(df, solvers_uid=[]):
+  # Initialize a dictionary to store XCSP3 scores for each solver
+  scores = {}
+  solvers = df['uid'].unique() if len(solvers_uid) == 0 else solvers_uid
+
+  # Compute the best solutions for each instance.
+  best_solutions = best_solutions_per_instance(df, solvers)
+
+  # Compute the scores for each solver on each instance.
+  for A in solvers:
+    for P in df['model_data_file'].unique():
+      scores.setdefault((A, P), 0.0)
+      row_A = uid_problem_row(df, A, P)
+      if row_A is None or row_A['status'] == 'UNKNOWN':
+        continue
+
+      if row_A['method'] == 'satisfy':
+        if row_A['status'] == 'SATISFIED':
+          scores[(A,P)] += 1
+        elif row_A['status'] == 'UNSATISFIABLE':
+          scores[(A,P)] += 1
+      else:
+        if row_A['status'] == 'UNSATISFIABLE':
+          scores[(A,P)] += 1
+        elif row_A['status'] == 'OPTIMAL_SOLUTION':
+          scores[(A,P)] += 1
+        elif row_A['status'] == 'SATISFIED':
+          if row_A['objective'] == best_solutions[P][0]:
+            scores[(A,P)] += 0.5 if best_solutions[P][1] == 'OPTIMAL_SOLUTION' else 1
+  return scores
