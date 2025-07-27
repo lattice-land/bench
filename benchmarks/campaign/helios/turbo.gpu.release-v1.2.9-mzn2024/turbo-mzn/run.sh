@@ -1,21 +1,21 @@
 #!/bin/bash -l
-#SBATCH --time=10:00:00
-#SBATCH -p plgrid-gpu-gh200
-#SBATCH -A plgturbo-gpu-gh200
+#SBATCH --time=01:00:00
+#SBATCH --partition=gpu
+#SBATCH --nodes=2
 #SBATCH --gres=gpu:4
-#SBATCH --nodes=1
-#SBATCH -c 288
+#SBATCH --exclusive
+#SBATCH --ntasks-per-node=4 # 4 GPUs so 4 tasks per nodes.
 #SBATCH --mem=0
 #SBATCH --qos=normal
 #SBATCH --export=ALL
-#SBATCH --output=slurm-turbo-gpu-mzn2024.out
+#SBATCH --output=slurm-turbo-gpu.out
 
 # Exits when an error occurs.
 set -e
 set -x # useful for debugging.
 
 # Shortcuts of paths to benchmarking directories.
-MZN_WORKFLOW_PATH=$(dirname $(realpath "run-helios.sh"))
+MZN_WORKFLOW_PATH=$(dirname $(realpath "run.sh"))
 BENCHMARKING_DIR_PATH="$MZN_WORKFLOW_PATH/.."
 BENCHMARKS_DIR_PATH="$MZN_WORKFLOW_PATH/../.."
 
@@ -25,7 +25,7 @@ if [ -z "$1" ]; then
   echo "  Name of the machine running the experiments with the configuration of the environment."
   exit 1
 fi
-source ${MZN_WORKFLOW_PATH}/$1
+source $1
 source ${BENCHMARKS_DIR_PATH}/../pybench/bin/activate
 
 # If it has an argument, we retry the jobs that failed on a previous run.
@@ -38,22 +38,22 @@ fi
 # I. Define the campaign to run.
 
 MZN_SOLVER="turbo.gpu.release"
-VERSION="v1.2.9" # Note that this is only for the naming of the output directory, we do not verify the actual version of the solver.
+VERSION="v1.2.8" # Note that this is only for the naming of the output directory, we do not verify the actual version of the solver.
 # This is to avoid MiniZinc to kill Turbo before it can print the statistics.
-MZN_TIMEOUT=1260000
-REAL_TIMEOUT=1200000
+MZN_TIMEOUT=360000
+REAL_TIMEOUT=300000
 ARCH="barebones"
-CORES=1 # The number of core used on the node.
-THREADS=0 # The number of core used on the node.
 FP="wac1"
 WAC1_THRESHOLD=0
+CORES=1 # The number of core used on the node.
+THREADS=0 # The number of threads (-p option).
 MACHINE=$(basename "$1" ".sh")
-INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024.csv"
+INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/short.csv"
 EXTRA_ARGS_TURBO=" "
 
 # II. Prepare the command lines and output directory.
-MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream -t $MZN_TIMEOUT --output-mode json --output-time --output-objective -p $THREADS -arch $ARCH -fp $FP -wac1_threshold $WAC1_THRESHOLD -hardware $MACHINE -version $VERSION -timeout $REAL_TIMEOUT $EXTRA_ARGS_TURBO "
-OUTPUT_DIR="$BENCHMARKS_DIR_PATH/campaign/$MACHINE/$MZN_SOLVER-$VERSION-mzn2024"
+MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream -t $MZN_TIMEOUT --output-mode json --output-time --output-objective -p $THREADS -arch $ARCH -fp $FP -wac1_threshold $WAC1_THRESHOLD -hardware $MACHINE -version $VERSION -timeout $REAL_TIMEOUT $EXTRA_ARGS_TURBO"
+OUTPUT_DIR="$BENCHMARKS_DIR_PATH/campaign/$MACHINE/$MZN_SOLVER-$VERSION-mzn2022-short"
 mkdir -p $OUTPUT_DIR
 
 # If we are on the HPC, we encapsulate the command in a srun command to reserve the resources needed.
@@ -71,7 +71,7 @@ cp -r $MZN_WORKFLOW_PATH $OUTPUT_DIR/
 cp $INSTANCES_PATH $OUTPUT_DIR/$(basename "$MZN_WORKFLOW_PATH")/
 
 # Store the description of the hardware on which this campaign is run.
-# lshw -json > $OUTPUT_DIR/$(basename "$MZN_WORKFLOW_PATH")/hardware-"$MACHINE".json 2> /dev/null
+lshw -json > $OUTPUT_DIR/$(basename "$MZN_WORKFLOW_PATH")/hardware-"$MACHINE".json 2> /dev/null
 
 # III. Run the experiments in parallel.
 # The `parallel` command spawns one `srun` command per experiment, which executes the minizinc solver with the right resources.
