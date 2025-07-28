@@ -14,7 +14,7 @@ import textwrap
 from statistics import mean, median, stdev
 
 # A tentative to have unique experiment names.
-def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, eps_num_subproblems, or_nodes, threads_per_block, search):
+def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, eps_num_subproblems, or_nodes, threads_per_block, search, eps_val, eps_var):
   uid = mzn_solver + "_" + str(version) + '_' + machine
   if str(timeout_ms) == "inf":
     uid += "_notimeout"
@@ -57,6 +57,8 @@ def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machin
       uid += "_" + str(int(cores)) + "cores"
   if search == "free":
     uid += "_free"
+  if isinstance(eps_var, str) and eps_var != "" and (eps_var != "default" or eps_val != "default"):
+    uid += f"_{eps_var}_{eps_val}"
   return uid
 
 def make_short_uid(uid):
@@ -165,8 +167,7 @@ def read_experiments(experiments):
   all_xp['fixpoint'] = all_xp.apply(lambda row: "ac1" if row['fixpoint'] == "" and (row['mzn_solver'] == 'turbo.gpu.release' or row['mzn_solver'] == "turbo.cpu.release") else row['fixpoint'], axis=1)
   all_xp['wac1_threshold'] = all_xp['wac1_threshold'].fillna(0).astype(int) if "wac1_threshold" in all_xp else ""
   all_xp['cores'] = all_xp['cores'].fillna(1).astype(int)
-  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'],
-                                                    row['eps_num_subproblems'], row['or_nodes'], row['threads_per_block'], row['search']), axis=1)
+  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'], row['eps_num_subproblems'], row['or_nodes'], row['threads_per_block'], row['search'], row['eps_value_order'], row['eps_var_order']), axis=1)
   all_xp['short_uid'] = all_xp['uid'].apply(make_short_uid)
   all_xp['nodes_per_second'] = all_xp['nodes'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
   all_xp['deductions_per_second'] = all_xp['num_deductions'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
