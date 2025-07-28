@@ -5,7 +5,6 @@ import os
 import minizinc
 import json
 import datetime
-import shutil
 
 if os.environ.get("MZN_DEBUG", "OFF") == "ON":
   import logging
@@ -13,19 +12,17 @@ if os.environ.get("MZN_DEBUG", "OFF") == "ON":
 
 if __name__ == "__main__":
   output_dir = sys.argv[1]
-  problem = sys.argv[2]
-  model = Path(sys.argv[3])
-  data = Path(sys.argv[4])
-  solver = sys.argv[5]
-  solver_version = sys.argv[6]
-  timeout_ms = sys.argv[7]
-  cores = sys.argv[8]
-  threads = sys.argv[9]
-  arch = sys.argv[10]
-  fp = sys.argv[11]
-  wac1_threshold = sys.argv[12]
+  model_data = Path(sys.argv[2])
+  solver = sys.argv[3]
+  solver_version = sys.argv[4]
+  timeout_ms = sys.argv[5]
+  cores = sys.argv[6]
+  threads = sys.argv[7]
+  arch = sys.argv[8]
+  fp = sys.argv[9]
+  wac1_threshold = sys.argv[10]
   extras = []
-  for i in range(13, len(sys.argv)):
+  for i in range(11, len(sys.argv)):
     arg = sys.argv[i].strip().replace(' ', '-')
     if arg != "" and arg != "-s": # we use "-s" when there are "no special options to be used".
       extras.append(arg)
@@ -35,7 +32,7 @@ if __name__ == "__main__":
   fp2 = fp
   if fp == "wac1":
     fp2 += f"_{wac1_threshold}"
-  uid = solver.replace('.', '-') + "_" + solver_version + "_" + arch + "_" + fp2 + "_" + model.stem + "_" + data.stem
+  uid = solver.replace('.', '-') + "_" + solver_version + "_" + arch + "_" + fp2 + "_" + model_data.stem
   if cores != "1" or threads != "1":
     uid += f"_{cores}cores_{threads}threads"
   uid += f"_timeout{timeout_ms}ms"
@@ -51,9 +48,7 @@ if __name__ == "__main__":
 
   stat_base = {
     "configuration": uid,
-    "problem": problem,
-    "model": str(model),
-    "data_file": str(data),
+    "model_data": str(model_data),
     "mzn_solver": solver,
     "version": solver_version,
     "timeout_ms": timeout_ms,
@@ -76,9 +71,9 @@ if __name__ == "__main__":
     msg = {"type": "statistics", "statistics": stat_base}
     json.dump(msg, file)
     file.write("\n")
+    content = ""
     for line in stdin:
-      file.write(line)
-      file.flush()
-  # src = "/tmp/tmp.fzn"
-  # dst = "/home/ptalbot/repositories/lattice-land/turbo/benchmarks/data/mzn2024/" + model.stem + "_" + data.stem + ".fzn"
-  # shutil.copyfile(src, dst)
+      content += line
+    msg = {"backtracking": content}
+    json.dump(msg, file)
+    file.write("\n")

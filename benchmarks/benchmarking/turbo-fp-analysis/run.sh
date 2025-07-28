@@ -18,8 +18,9 @@ set -x # useful for debugging.
 MZN_WORKFLOW_PATH=$(dirname $(realpath "run.sh"))
 BENCHMARKING_DIR_PATH="$MZN_WORKFLOW_PATH/.."
 BENCHMARKS_DIR_PATH="$MZN_WORKFLOW_PATH/../.."
+TURBO_PATH="$BENCHMARKS_DIR_PATH/../../turbo/build/gpu-release-local/turbo"
+FZN_BENCHMARKS="$BENCHMARKS_DIR_PATH/../../turbo/benchmarks/data/mzn2024"
 
-# Configure the environment.
 if [ -z "$1" ]; then
   echo "Usage: $0 <machine.sh>"
   echo "  Name of the machine running the experiments with the configuration of the environment."
@@ -39,22 +40,20 @@ fi
 
 MZN_SOLVER="turbo.gpu.release"
 VERSION="v1.2.9" # Note that this is only for the naming of the output directory, we do not verify the actual version of the solver.
-# This is to avoid MiniZinc to kill Turbo before it can print the statistics.
-MZN_TIMEOUT=360000
 REAL_TIMEOUT=300000
 ARCH="barebones"
 FP="wac1"
 WAC1_THRESHOLD=0
 CORES=1 # The number of core used on the node.
-THREADS=0 # The number of threads (-p option).
+THREADS=48 # The number of threads (-p option).
 MACHINE=$(basename "$1" ".sh")
-INSTANCES="mzn2024_short"
+INSTANCES="fzn2024_short"
 INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/$INSTANCES.csv"
 EXTRA_ARGS_TURBO=" "
 
 # II. Prepare the command lines and output directory.
-MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream -t $MZN_TIMEOUT --output-mode json --output-time --output-objective -p $THREADS -arch $ARCH -fp $FP -wac1_threshold $WAC1_THRESHOLD -hardware $MACHINE -version $VERSION -timeout $REAL_TIMEOUT $EXTRA_ARGS_TURBO"
-OUTPUT_DIR="$BENCHMARKS_DIR_PATH/campaign/$MACHINE/$MZN_SOLVER-$VERSION-$INSTANCES"
+TURBO_COMMAND="$TURBO_PATH -t $REAL_TIMEOUT -or $THREADS -arch $ARCH -fp $FP -wac1_threshold $WAC1_THRESHOLD -hardware $MACHINE -version $VERSION $EXTRA_ARGS_TURBO"
+OUTPUT_DIR="$BENCHMARKS_DIR_PATH/campaign/$MACHINE/$MZN_SOLVER-$VERSION-fp-analysis-$INSTANCES"
 mkdir -p $OUTPUT_DIR
 
 # If we are on the HPC, we encapsulate the command in a srun command to reserve the resources needed.
@@ -78,4 +77,4 @@ lshw -json > $OUTPUT_DIR/$(basename "$MZN_WORKFLOW_PATH")/hardware-"$MACHINE".js
 # The `parallel` command spawns one `srun` command per experiment, which executes the minizinc solver with the right resources.
 
 COMMANDS_LOG="$OUTPUT_DIR/$(basename "$MZN_WORKFLOW_PATH")/jobs.log"
-parallel --verbose --no-run-if-empty --rpl '{} uq()' -k --colsep ',' --skip-first-line -j $NUM_PARALLEL_EXPERIMENTS --joblog $COMMANDS_LOG $SRUN_COMMAND $MZN_COMMAND $BENCHMARKING_DIR_PATH/{2} $BENCHMARKING_DIR_PATH/{3} '2>&1' '|' python3 $DUMP_PY_PATH $OUTPUT_DIR {1} {2} {3} $MZN_SOLVER $VERSION $REAL_TIMEOUT $CORES $THREADS $ARCH $FP $WAC1_THRESHOLD :::: $INSTANCES_PATH
+parallel --verbose --no-run-if-empty --rpl '{} uq()' -k --colsep ',' --skip-first-line -j $NUM_PARALLEL_EXPERIMENTS --joblog $COMMANDS_LOG $SRUN_COMMAND $TURBO_COMMAND {1} '2>&1' '|' python3 $DUMP_PY_PATH $OUTPUT_DIR {1} $MZN_SOLVER $VERSION $REAL_TIMEOUT $CORES $THREADS $ARCH $FP $WAC1_THRESHOLD :::: $INSTANCES_PATH
