@@ -1,0 +1,27 @@
+{abstract_domain: pir_itv32_z, arch: barebones, best_obj_time: 24.055, command_line: /home/ptalbot/repositories/lattice-land/turbo/build/gpu-release/turbo
+-t 300000 -n 1 -s -arch barebones -or 0 -sub 15 -stack 0 -fp wac1 -wac1_threshold
+0 -eps_var_order default -eps_value_order default -version v1.2.8 -hardware 'precision5820'
+-cutnodes 0 /tmp/mznfilebAv1vX.fzn, configuration: turbo-gpu-release_v1.2.8_barebones_wac1_0_dcmst_c_v20_a190_d4_1cores_0threads_timeout300000ms,
+constraints_after_simplification: 9234, cores: '1', cuda_version: 12080, cutnodes: 0,
+data_file: ../data/mzn-challenge/2022/diameterc-mst/c_v20_a190_d4.dzn, datetime: '2025-06-02T19:24:34.766387',
+dive_time: 0.0, eliminated_constraints_by_as: 0, eliminated_constraints_by_as_fp_iter_1: 0,
+eliminated_constraints_by_icse: 820, eliminated_constraints_by_icse_fp_iter_1: 820,
+eliminated_entailed_constraints: 0, eliminated_entailed_constraints_fp_iter_1: 0,
+eliminated_equality_constraints: 842, eliminated_equality_constraints_fp_iter_1: 842,
+eliminated_variables: 1686, entailed_prop_removal: deactivated, eps_num_subproblems: 32768,
+eps_skipped_subproblems: 1280, eps_solved_subproblems: 31488, eps_value_order: default,
+eps_var_order: default, evaluatedReifiedConstraints: 1571, failures: 993125, first_block_idle_time: 7.164,
+fixpoint: wac1, fixpoint_iterations: 28737830, fixpoint_time: 9.09, flatBoolConstraints: 3852,
+flatBoolVars: 2141, flatIntConstraints: 1785, flatIntVars: 252, flatTime: 0.266856,
+free_search: no, hardware: precision5820, heap_memory: 12635734016, icse_fixpoint_iterations: 3,
+icse_fixpoint_iterations_fp_iter_1: 2, initTime: 0.308, memory_configuration: global,
+method: minimize, model: ../data/mzn-challenge/2022/diameterc-mst/dcmst.mzn, mzn_solver: turbo.gpu.release,
+nSolutions: 1, nodes: 2427777, num_blocks: 192, num_blocks_done: 192, num_deductions: 295368851104,
+num_solutions: 212, objective: 349, or_nodes: 0, parsed_constraints: 6962, parsed_variables: 3045,
+paths: 0, peakDepth: 26, preprocessing_fixpoint_iterations: 2, preprocessing_time: 0.308,
+problem: diameterc-mst, problem_path: /tmp/mznfilebAv1vX.fzn, propagator_mem: 147872,
+propagators: 9234, search_time: 0.156, select_fp_functions_time: 0.132, shared_mem: 0,
+solveTime: 107.906, solve_time: 0.562, solver: Turbo, stack_size: 0, status: OPTIMAL_SOLUTION,
+store_mem: 45464, threads: '0', threads_per_block: 256, timeout_ms: 300000, tnf_constraints: 10896,
+tnf_variables: 7336, transfer_cpu2gpu_time: 0.0, transfer_gpu2cpu_time: 0.0, variables: 5674,
+variables_after_simplification: 5674, version: v1.2.8, wac1_threshold: 0, wait_cpu_time: 0.0}

@@ -1,0 +1,22 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-cpu-release_v1.2.9_cpu_ac1_yumi-dynamic_p_9_GSGS_GSGSG_yumi_grid_setup_7_7_zones_timeout0ms", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_9_GSGS_GSGSG_yumi_grid_setup_7_7_zones.dzn", "mzn_solver": "turbo.cpu.release", "version": "v1.2.9", "timeout_ms": "0", "datetime": "2025-07-23T10:05:15.608226", "status": "UNKNOWN", "cores": "1", "threads": "1", "arch": "cpu", "fixpoint": "ac1", "wac1_threshold": "0"}}
+cpu-bind=MASK - aion-0322, task  0  0 [288122]: mask 0x1 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 516661, "flatIntVars": 1648625, "flatBoolConstraints": 186219, "flatIntConstraints": 2006977, "evaluatedReifiedConstraints": 343782, "method": "minimize", "flatTime": 162.787}}
+% WARNING: Annotation add_to_output is unknown and was ignored.
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "status", "status": "ERROR", "time": 1048824}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"command_line": "/mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/cpu-release/turbo -t 0 -n 1 -s -arch cpu -p 1 -network_analysis -fp ac1 -seed 0 -eps_var_order default -eps_value_order default -version v1.2.9 -hardware 'aion' -cutnodes 1 /tmp/mznfilefuSswz.fzn"}}
+slurmstepd: error: Detected 1 oom_kill event in StepId=8716898.97. Some of the step tasks have been OOM Killed.
+srun: error: aion-0322: task 0: Out Of Memory
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-cpu-release_v1.2.9_cpu_ac1_yumi-dynamic_p_9_GSGS_GSGSG_yumi_grid_setup_7_7_zones_timeout0ms", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_9_GSGS_GSGSG_yumi_grid_setup_7_7_zones.dzn", "mzn_solver": "turbo.cpu.release", "version": "v1.2.9", "timeout_ms": "0", "datetime": "2025-07-23T11:47:26.174153", "status": "UNKNOWN", "cores": "1", "threads": "1", "arch": "cpu", "fixpoint": "ac1", "wac1_threshold": "0"}}
+cpu-bind=MASK - aion-0098, task  0  0 [1349999]: mask 0x1 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 516661, "flatIntVars": 1648625, "flatBoolConstraints": 186219, "flatIntConstraints": 2006977, "evaluatedReifiedConstraints": 343782, "method": "minimize", "flatTime": 162.81}}
+% WARNING: Annotation add_to_output is unknown and was ignored.
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "status", "status": "ERROR", "time": 1057642}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"command_line": "/mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/cpu-release/turbo -t 0 -n 1 -s -arch cpu -p 1 -network_analysis -fp ac1 -seed 0 -eps_var_order default -eps_value_order default -version v1.2.9 -hardware 'aion' -cutnodes 1 /tmp/mznfilew7Sj9I.fzn"}}
+slurmstepd: error: Detected 1 oom_kill event in StepId=8717034.0. Some of the step tasks have been OOM Killed.
+srun: error: aion-0098: task 0: Out Of Memory
