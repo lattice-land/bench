@@ -110,6 +110,10 @@ def read_experiments(experiments):
       df['preprocessing_time'] = 0.0
     # else:
       # df['timeout_ms'] = df.apply(lambda row: "300000" if not isinstance(row['version'], int) else row['version'], axis=1)
+    if 'failures' not in df:
+      df['failures'] = 0
+    if 'nSolutions' not in df:
+      df['nSolutions'] = 0
     # estimating the number of nodes (lower bound).
     if 'nodes' not in df:
       df['nodes'] = (df['failures'] + df['nSolutions']) * 2 - 1
@@ -167,16 +171,17 @@ def read_experiments(experiments):
   all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'],
                                                     row['eps_num_subproblems'], row['or_nodes'], row['threads_per_block'], row['search']), axis=1)
   all_xp['short_uid'] = all_xp['uid'].apply(make_short_uid)
-  all_xp['nodes_per_second'] = all_xp['nodes'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
-  all_xp['deductions_per_second'] = all_xp['num_deductions'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
-  all_xp['deductions_per_node'] = all_xp['num_deductions'] / all_xp['nodes']
-  all_xp['fp_iterations_per_node'] = all_xp['fixpoint_iterations'] / all_xp['nodes']
-  all_xp['fp_iterations_per_second'] = all_xp['fixpoint_iterations'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
-  all_xp['normalized_nodes_per_second'] = 0
-  all_xp['normalized_deductions_per_second'] = 0
-  all_xp['normalized_deductions_per_node'] = 0
-  all_xp['normalized_fp_iterations_per_second'] = 0
-  all_xp['normalized_fp_iterations_per_node'] = 0
+  if 'solveTime' in all_xp:
+    all_xp['nodes_per_second'] = all_xp['nodes'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
+    all_xp['deductions_per_second'] = all_xp['num_deductions'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
+    all_xp['deductions_per_node'] = all_xp['num_deductions'] / all_xp['nodes']
+    all_xp['fp_iterations_per_node'] = all_xp['fixpoint_iterations'] / all_xp['nodes']
+    all_xp['fp_iterations_per_second'] = all_xp['fixpoint_iterations'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
+    all_xp['normalized_nodes_per_second'] = 0
+    all_xp['normalized_deductions_per_second'] = 0
+    all_xp['normalized_deductions_per_node'] = 0
+    all_xp['normalized_fp_iterations_per_second'] = 0
+    all_xp['normalized_fp_iterations_per_node'] = 0
   all_xp = all_xp.copy() # to avoid a warning about fragmented frame.
   all_xp['normalized_propagator_mem'] = 0
   all_xp['normalized_store_mem'] = 0
