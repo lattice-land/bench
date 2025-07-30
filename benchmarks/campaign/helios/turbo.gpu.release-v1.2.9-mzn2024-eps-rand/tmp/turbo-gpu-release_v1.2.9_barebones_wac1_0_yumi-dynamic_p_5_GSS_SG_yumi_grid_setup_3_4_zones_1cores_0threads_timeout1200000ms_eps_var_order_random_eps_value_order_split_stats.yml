@@ -1,0 +1,20 @@
+{abstract_domain: pir_itv32_z, arch: barebones, command_line: /net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/build/gpu-release/turbo
+    -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold
+    0 -seed 0 -eps_var_order random -eps_value_order split -version v1.2.9 -hardware
+    'helios' -cutnodes 0 /tmp/1068296/x1002c0s3b1n0/mznfileNBL4S6.fzn, configuration: turbo-gpu-release_v1.2.9_barebones_wac1_0_yumi-dynamic_p_5_GSS_SG_yumi_grid_setup_3_4_zones_1cores_0threads_timeout1200000ms_eps_var_order_random_eps_value_order_split,
+  constraints_after_simplification: 3499533, cores: '1', data_file: ../data/mzn-challenge/2024/yumi-dynamic/p_5_GSS_SG_yumi_grid_setup_3_4_zones.dzn,
+  datetime: '2025-07-27T23:56:18.139177', eliminated_constraints_by_as: 1541, eliminated_constraints_by_as_fp_iter_1: 1541,
+  eliminated_constraints_by_icse: 0, eliminated_constraints_by_icse_fp_iter_1: 0,
+  eliminated_entailed_constraints: 905206, eliminated_entailed_constraints_fp_iter_1: 905206,
+  eliminated_equality_constraints: 697752, eliminated_equality_constraints_fp_iter_1: 697752,
+  eliminated_variables: 1271065, entailed_prop_removal: deactivated, evaluatedReifiedConstraints: 156290,
+  fixpoint: wac1, flatBoolConstraints: 81429, flatBoolVars: 234408, flatIntConstraints: 415900,
+  flatIntVars: 256166, flatTime: 11.4611, heap_memory: 96825073464, icse_fixpoint_iterations: 0,
+  icse_fixpoint_iterations_fp_iter_1: 0, mem_per_block: 238646664, memory_configuration: global,
+  method: minimize, model: ../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn,
+  mzn_solver: turbo.gpu.release, nSolutions: 0, num_blocks: 405, parsed_constraints: 1921254,
+  parsed_variables: 707201, paths: 0, preprocessing_fixpoint_iterations: 2, preprocessing_time: 78.284,
+  problem: yumi-dynamic, propagator_mem: 55992656, shared_mem: 0, status: ERROR, store_mem: 23436160,
+  threads: '0', timeout_ms: '1200000', tnf_constraints: 5104032, tnf_variables: 4200561,
+  total_global_mem_bytes: 102005473280, variables_after_simplification: 2929511, version: v1.2.9,
+  wac1_threshold: '0'}

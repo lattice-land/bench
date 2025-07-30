@@ -11,9 +11,10 @@ from pathlib import Path
 from packaging import version
 from matplotlib.colors import LinearSegmentedColormap
 import textwrap
+from statistics import mean, median, stdev
 
 # A tentative to have unique experiment names.
-def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, eps_num_subproblems, or_nodes, threads_per_block, search):
+def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, eps_num_subproblems, or_nodes, threads_per_block, search, eps_val, eps_var):
   uid = mzn_solver + "_" + str(version) + '_' + machine
   if str(timeout_ms) == "inf":
     uid += "_notimeout"
@@ -56,6 +57,8 @@ def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machin
       uid += "_" + str(int(cores)) + "cores"
   if search == "free":
     uid += "_free"
+  if isinstance(eps_var, str) and eps_var != "" and (eps_var != "default" or eps_val != "default"):
+    uid += f"_{eps_var}_{eps_val}"
   return uid
 
 def make_short_uid(uid):
@@ -110,6 +113,10 @@ def read_experiments(experiments):
       df['preprocessing_time'] = 0.0
     # else:
       # df['timeout_ms'] = df.apply(lambda row: "300000" if not isinstance(row['version'], int) else row['version'], axis=1)
+    if 'failures' not in df:
+      df['failures'] = 0
+    if 'nSolutions' not in df:
+      df['nSolutions'] = 0
     # estimating the number of nodes (lower bound).
     if 'nodes' not in df:
       df['nodes'] = (df['failures'] + df['nSolutions']) * 2 - 1
@@ -164,19 +171,19 @@ def read_experiments(experiments):
   all_xp['fixpoint'] = all_xp.apply(lambda row: "ac1" if row['fixpoint'] == "" and (row['mzn_solver'] == 'turbo.gpu.release' or row['mzn_solver'] == "turbo.cpu.release") else row['fixpoint'], axis=1)
   all_xp['wac1_threshold'] = all_xp['wac1_threshold'].fillna(0).astype(int) if "wac1_threshold" in all_xp else ""
   all_xp['cores'] = all_xp['cores'].fillna(1).astype(int)
-  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'],
-                                                    row['eps_num_subproblems'], row['or_nodes'], row['threads_per_block'], row['search']), axis=1)
+  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'], row['eps_num_subproblems'], row['or_nodes'], row['threads_per_block'], row['search'], row['eps_value_order'], row['eps_var_order']), axis=1)
   all_xp['short_uid'] = all_xp['uid'].apply(make_short_uid)
-  all_xp['nodes_per_second'] = all_xp['nodes'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
-  all_xp['deductions_per_second'] = all_xp['num_deductions'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
-  all_xp['deductions_per_node'] = all_xp['num_deductions'] / all_xp['nodes']
-  all_xp['fp_iterations_per_node'] = all_xp['fixpoint_iterations'] / all_xp['nodes']
-  all_xp['fp_iterations_per_second'] = all_xp['fixpoint_iterations'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
-  all_xp['normalized_nodes_per_second'] = 0
-  all_xp['normalized_deductions_per_second'] = 0
-  all_xp['normalized_deductions_per_node'] = 0
-  all_xp['normalized_fp_iterations_per_second'] = 0
-  all_xp['normalized_fp_iterations_per_node'] = 0
+  if 'solveTime' in all_xp:
+    all_xp['nodes_per_second'] = all_xp['nodes'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
+    all_xp['deductions_per_second'] = all_xp['num_deductions'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
+    all_xp['deductions_per_node'] = all_xp['num_deductions'] / all_xp['nodes']
+    all_xp['fp_iterations_per_node'] = all_xp['fixpoint_iterations'] / all_xp['nodes']
+    all_xp['fp_iterations_per_second'] = all_xp['fixpoint_iterations'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
+    all_xp['normalized_nodes_per_second'] = 0
+    all_xp['normalized_deductions_per_second'] = 0
+    all_xp['normalized_deductions_per_node'] = 0
+    all_xp['normalized_fp_iterations_per_second'] = 0
+    all_xp['normalized_fp_iterations_per_node'] = 0
   all_xp = all_xp.copy() # to avoid a warning about fragmented frame.
   all_xp['normalized_propagator_mem'] = 0
   all_xp['normalized_store_mem'] = 0
@@ -899,3 +906,104 @@ def xcsp3_challenge_score(df, solvers_uid=[]):
           if row_A['objective'] == best_solutions[P][0]:
             scores[(A,P)] += 0.5 if best_solutions[P][1] == 'OPTIMAL_SOLUTION' else 1
   return scores
+
+def analyze_fp_iterations_on_backtrack(df):
+  df = df[df['depth'] != 0]
+  df['original_index'] = df.index
+  df_sorted = df.sort_values(by=['blockIdx', 'original_index'])
+
+  # Lists to store fp_iterations
+  fp_after_backtrack_per_blocks = {}
+  fp_no_backtrack_per_blocks = {}
+  fp_after_backtrack = []
+  fp_no_backtrack = []
+
+  # Track previous depth per blockIdx
+  previous_depths = {}
+
+  for _, row in df_sorted.iterrows():
+    block = row['blockIdx']
+    depth = row['depth']
+    fp = float(row['fp_iterations'])
+    if block not in fp_after_backtrack_per_blocks:
+      fp_after_backtrack_per_blocks[block] = []
+      fp_no_backtrack_per_blocks[block] = []
+
+    if block not in previous_depths or depth > previous_depths[block]:
+      fp_no_backtrack.append(fp)
+      fp_no_backtrack_per_blocks[block].append(fp)
+    else:
+      fp_after_backtrack.append(fp)
+      fp_after_backtrack_per_blocks[block].append(fp)
+    previous_depths[block] = depth
+
+  print(f'Number of backtracks/total: {len(fp_after_backtrack)}/{len(fp_no_backtrack)}\n')
+
+  if len(fp_no_backtrack_per_blocks) > 1:
+    print("Standard deviation of average fp_iterations per block:")
+    print("  After backtrack:", stdev([mean(fps) for fps in fp_after_backtrack_per_blocks.values() if fps]))
+    print("  Without backtrack:", stdev([mean(fps) for fps in fp_no_backtrack_per_blocks.values() if fps]))
+
+    print("\nStandard deviation of median fp_iterations per block:")
+    print("  After backtrack:", stdev([median(fps) for fps in fp_after_backtrack_per_blocks.values() if fps]))
+    print("  Without backtrack:", stdev([median(fps) for fps in fp_no_backtrack_per_blocks.values() if fps]))
+
+  print(f"\n\n  Average fp_iterations: {mean(fp_after_backtrack + fp_no_backtrack)}")
+  print(f"  Median fp_iterations: {median(fp_after_backtrack + fp_no_backtrack)}")
+
+  print("\nAfter a backtrack:")
+  print(f"  Average fp_iterations: {mean(fp_after_backtrack)}")
+  print(f"  Median fp_iterations: {median(fp_after_backtrack)}")
+  print(f"  Standard deviation fp_iterations: {stdev(fp_after_backtrack)}")
+  print(f"  Min fp_iterations: {min(fp_after_backtrack)}")
+  print(f"  Max fp_iterations: {max(fp_after_backtrack)}")
+
+  print("\nWithout a backtrack:")
+  print(f"  Average fp_iterations: {mean(fp_no_backtrack)}")
+  print(f"  Median fp_iterations: {median(fp_no_backtrack)}")
+  print(f"  Standard deviation fp_iterations: {stdev(fp_no_backtrack)}")
+  print(f"  Min fp_iterations: {min(fp_no_backtrack)}")
+  print(f"  Max fp_iterations: {max(fp_no_backtrack)}")
+
+
+def plot_mem_distribution(df):
+  mem_columns = [
+    "store_mem_kb",
+    "propagator_mem_kb"
+  ]
+
+  df["store_mem_kb"] = df["store_mem"] / 1000
+  df["propagator_mem_kb"] = df["propagator_mem"] / 1000
+  df["estimated_copy_strat_mb"] = (df["store_mem_kb"] + df["propagator_mem_kb"]) * df["peakDepth"] * df["num_blocks"]
+  df["estimated_copy_strat_mb"] = df["estimated_copy_strat_mb"].astype(float) / 1000.0 / 1000.0
+
+  df.sort_values(by="problem_uid", ascending=False, inplace=True)
+  # Set the problem names as index
+  df.set_index("problem_uid", inplace=True)
+
+  num_row = df.shape[0]
+
+  # Plot
+  colors = ["#1f77b4", "#ff7f0e"]
+  ax = df[mem_columns].plot(kind='barh', stacked=True, figsize=(10, num_row / 2.5), color=colors)
+
+  # Add labels and title
+  plt.xlabel("Memory (KB)")
+  plt.xscale('log')
+  plt.ylabel("Problem")
+  plt.title("Memory Distribution for Each Problem (and estimated memory (MB) for full copying)")
+  plt.legend(title="Memory Component", bbox_to_anchor=(1.05, 1), loc='upper left')
+  plt.tight_layout()
+
+  # Add label indicating the estimated memory taken by a full copying restoration strategy.
+  for idx, (index, row) in enumerate(df.iterrows()):
+    total_mem = row[mem_columns].sum()
+    if total_mem != 0:
+      ax.text(
+        total_mem + 0.5,  # slightly to the right of the end of the bar
+        idx,               # vertical position
+        ('%.1f' % row["estimated_copy_strat_mb"]) + ' | ' + str(int(row["peakDepth"])),  # convert to string for display
+        va='center', ha='left', fontsize=10, color='black'
+      )
+
+  plt.show()

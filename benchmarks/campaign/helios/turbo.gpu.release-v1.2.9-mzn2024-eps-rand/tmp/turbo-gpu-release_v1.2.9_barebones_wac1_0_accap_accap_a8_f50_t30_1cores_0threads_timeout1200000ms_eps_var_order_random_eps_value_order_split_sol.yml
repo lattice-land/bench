@@ -1,0 +1,63 @@
+- abstract_domain: pir_itv32_z
+  arch: barebones
+  command_line: /net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/build/gpu-release/turbo
+    -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold
+    0 -seed 0 -eps_var_order random -eps_value_order split -version v1.2.9 -hardware
+    'helios' -cutnodes 0 /tmp/1068296/x1002c0s3b1n0/mznfilepTCTfN.fzn
+  configuration: turbo-gpu-release_v1.2.9_barebones_wac1_0_accap_accap_a8_f50_t30_1cores_0threads_timeout1200000ms_eps_var_order_random_eps_value_order_split
+  constraints_after_simplification: 3104
+  cores: '1'
+  data_file: ../data/mzn-challenge/2024/accap/accap_a8_f50_t30.json
+  datetime: '2025-07-27T18:30:30.130191'
+  eliminated_constraints_by_as: 0
+  eliminated_constraints_by_as_fp_iter_1: 0
+  eliminated_constraints_by_icse: 0
+  eliminated_constraints_by_icse_fp_iter_1: 0
+  eliminated_entailed_constraints: 0
+  eliminated_entailed_constraints_fp_iter_1: 0
+  eliminated_equality_constraints: 59
+  eliminated_equality_constraints_fp_iter_1: 59
+  eliminated_variables: 99
+  entailed_prop_removal: deactivated
+  evaluatedReifiedConstraints: 524
+  fixpoint: wac1
+  flatBoolConstraints: 262
+  flatBoolVars: 524
+  flatIntConstraints: 863
+  flatIntVars: 60
+  flatTime: 0.132827
+  heap_memory: 306209072
+  icse_fixpoint_iterations: 2
+  icse_fixpoint_iterations_fp_iter_1: 1
+  mem_per_block: 579624
+  memory_configuration: store_shared
+  method: minimize
+  model: ../data/mzn-challenge/2024/accap/accap.mzn
+  mzn_solver: turbo.gpu.release
+  num_blocks: 528
+  parsed_constraints: 1248
+  parsed_variables: 643
+  paths: 0
+  preprocessing_fixpoint_iterations: 2
+  preprocessing_time: 0.062
+  problem: accap
+  propagator_mem: 49792
+  shared_mem: 23472
+  solution:
+    D: 42
+    S: [146, 10, 14, 6, 6, 6, 14, 10]
+    objective: 254
+    yCoor: [6, 1, 12, 4, 14, 16, 16, 8, 36, 1, 29, 25, 5, 23, 3, 8, 16, 22, 8, 29,
+      8, 27, 14, 1, 14, 25, 32, 14, 20, 3, 20, 8, 33, 30, 31, 41, 4, 20, 22, 1, 14,
+      32, 27, 3, 19, 14, 1, 22, 36, 21]
+  status: SATISFIED
+  store_mem: 23344
+  threads: '0'
+  time: 1200.161
+  timeout_ms: '1200000'
+  tnf_constraints: 3163
+  tnf_variables: 2969
+  total_global_mem_bytes: 102005473280
+  variables_after_simplification: 2909
+  version: v1.2.9
+  wac1_threshold: '0'

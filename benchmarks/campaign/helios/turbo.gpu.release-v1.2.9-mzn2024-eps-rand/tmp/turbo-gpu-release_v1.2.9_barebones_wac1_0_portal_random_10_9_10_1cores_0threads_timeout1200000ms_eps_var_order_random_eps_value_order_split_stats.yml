@@ -1,0 +1,28 @@
+{abstract_domain: pir_itv32_z, arch: barebones, best_obj_time: 5.499, command_line: /net/scratch/hscra/plgrid/plgptalbot/lattice-land/turbo/build/gpu-release/turbo
+    -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold
+    0 -seed 0 -eps_var_order random -eps_value_order split -version v1.2.9 -hardware
+    'helios' -cutnodes 0 /tmp/1068296/x1002c0s3b1n0/mznfileg9Z8Sv.fzn, configuration: turbo-gpu-release_v1.2.9_barebones_wac1_0_portal_random_10_9_10_1cores_0threads_timeout1200000ms_eps_var_order_random_eps_value_order_split,
+  constraints_after_simplification: 24218, cores: '1', cuda_version: 12080, cumulative_time_block_sec: 203.62,
+  cutnodes: 0, data_file: ../data/mzn-challenge/2024/portal/random_10_9_10.json, datetime: '2025-07-27T19:10:32.486988',
+  deductions_per_block_second: 374733.930852, dive_time: 0.215, eliminatedImplications: 38,
+  eliminated_constraints_by_as: 0, eliminated_constraints_by_as_fp_iter_1: 0, eliminated_constraints_by_icse: 24347,
+  eliminated_constraints_by_icse_fp_iter_1: 24347, eliminated_entailed_constraints: 94,
+  eliminated_entailed_constraints_fp_iter_1: 94, eliminated_equality_constraints: 212,
+  eliminated_equality_constraints_fp_iter_1: 212, eliminated_variables: 24685, entailed_prop_removal: deactivated,
+  eps_num_subproblems: 16384, eps_skipped_subproblems: 15136, eps_solved_subproblems: 1248,
+  eps_value_order: split, eps_var_order: random, evaluatedReifiedConstraints: 533,
+  failures: 37891, first_block_idle_time: 1.823, fixpoint: wac1, fixpoint_iterations: 1614834,
+  fixpoint_time: 0.364, flatBoolConstraints: 799, flatBoolVars: 865, flatIntConstraints: 543,
+  flatIntVars: 229, flatTime: 0.178092, free_search: no, hardware: helios, heap_memory: 970890304,
+  icse_fixpoint_iterations: 4, icse_fixpoint_iterations_fp_iter_1: 3, initTime: 0.629,
+  mem_per_block: 1837080, memory_configuration: global, method: minimize, model: ../data/mzn-challenge/2024/portal/portal.mzn,
+  mzn_solver: turbo.gpu.release, nSolutions: 1, nodes: 167591, num_blocks: 528, num_blocks_done: 528,
+  num_deductions: 40288155008, num_solutions: 1, objective: 9, or_nodes: 0, parsed_constraints: 12945,
+  parsed_variables: 1114, paths: 0, peakDepth: 19, preprocessing_fixpoint_iterations: 2,
+  preprocessing_time: 0.629, problem: portal, problem_path: /tmp/1068296/x1002c0s3b1n0/mznfileg9Z8Sv.fzn,
+  propagator_mem: 387616, propagators: 24218, search_time: 0.02, seed: 0, select_fp_functions_time: 0.001,
+  shared_mem: 0, solveTime: 7.849, solve_time: 0.014, solver: Turbo, stack_size: 0,
+  status: OPTIMAL_SOLUTION, store_mem: 104672, threads: '0', threads_per_block: 256,
+  timeout_ms: 1200000, tnf_constraints: 48871, tnf_variables: 37722, total_global_mem_bytes: 102005473280,
+  transfer_cpu2gpu_time: 0.0, transfer_gpu2cpu_time: 0.0, variables: 13075, variables_after_simplification: 13075,
+  version: v1.2.9, wac1_threshold: 0, wait_cpu_time: 0.0}
