@@ -1,0 +1,9 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_ctw_A033_1cores_0threads_timeout1200000ms_eps_var_order_random_eps_value_order_split", "problem": "cable-tree-wiring", "model": "../data/mzn-challenge/2024/cable-tree-wiring/ctw.mzn", "data_file": "../data/mzn-challenge/2024/cable-tree-wiring/A033.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-07-30T08:51:28.605351", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+srun: Job 4244578 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Job 4244578 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4244578 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4244578 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4244578 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4244578 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4244578 step creation still disabled, retrying (Requested nodes are busy)

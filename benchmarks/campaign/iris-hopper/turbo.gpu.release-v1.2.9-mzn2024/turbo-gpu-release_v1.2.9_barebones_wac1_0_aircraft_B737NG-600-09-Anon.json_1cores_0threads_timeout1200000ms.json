@@ -1,0 +1,12 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_aircraft_B737NG-600-09-Anon.json_1cores_0threads_timeout1200000ms", "problem": "aircraft-disassembly", "model": "../data/mzn-challenge/2024/aircraft-disassembly/aircraft.mzn", "data_file": "../data/mzn-challenge/2024/aircraft-disassembly/B737NG-600-09-Anon.json.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-07-29T21:49:46.552633", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+srun: Job 4244571 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Job 4244571 step creation still disabled, retrying (Requested nodes are busy)
+srun: Step created for StepId=4244571.49
+cpu-bind=MASK - iris-197, task  0  0 [328822]: mask 0xffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 893103, "flatIntVars": 286736, "flatBoolConstraints": 518749, "flatIntConstraints": 901768, "evaluatedReifiedConstraints": 607299, "method": "minimize", "flatTime": 55.8629}}
+{"type": "statistics", "statistics": {"command_line": "/mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/gpu-release/turbo -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold 0 -seed 0 -eps_var_order default -eps_value_order default -version v1.2.9 -hardware 'iris-hopper' -cutnodes 0 /tmp/mznfileljo2NP.fzn", "parsed_variables": 2323390, "parsed_constraints": 2850807, "abstract_domain": "pir_itv32_z", "entailed_prop_removal": "deactivated", "tnf_variables": 5671645, "tnf_constraints": 5884161, "eliminated_entailed_constraints_fp_iter_1": 124704, "eliminated_equality_constraints_fp_iter_1": 1421825, "eliminated_constraints_by_icse_fp_iter_1": 0, "eliminated_constraints_by_as_fp_iter_1": 131150, "icse_fixpoint_iterations_fp_iter_1": 0, "eliminated_entailed_constraints": 124704, "eliminated_equality_constraints": 1421825, "eliminated_constraints_by_icse": 0, "eliminated_constraints_by_as": 131150, "icse_fixpoint_iterations": 0, "eliminated_variables": 1686911, "preprocessing_fixpoint_iterations": 1, "variables_after_simplification": 0, "constraints_after_simplification": 0, "preprocessing_time": 110.716}}
+{"type": "status", "status": "UNSATISFIABLE", "time": 174950}
+terminate called after throwing an instance of 'MiniZinc::MultipleErrors<MiniZinc::SyntaxError>'
+  what():  multiple errors
+srun: error: iris-197: task 0: Aborted (core dumped)

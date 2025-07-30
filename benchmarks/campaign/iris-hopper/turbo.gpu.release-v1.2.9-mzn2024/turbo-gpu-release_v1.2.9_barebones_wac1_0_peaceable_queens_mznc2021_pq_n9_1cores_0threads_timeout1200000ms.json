@@ -1,0 +1,7 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_peaceable_queens_mznc2021_pq_n9_1cores_0threads_timeout1200000ms", "problem": "peacable_queens", "model": "../data/mzn-challenge/2024/peacable_queens/peaceable_queens_mznc2021.mzn", "data_file": "../data/mzn-challenge/2024/peacable_queens/pq_n9.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-07-30T01:30:04.993295", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+srun: Job 4244571 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Job 4244571 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4244571 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4244571 step creation still disabled, retrying (Requested nodes are busy)
+srun: error: Unable to create step for job 4244571: Job/step already completing or completed
