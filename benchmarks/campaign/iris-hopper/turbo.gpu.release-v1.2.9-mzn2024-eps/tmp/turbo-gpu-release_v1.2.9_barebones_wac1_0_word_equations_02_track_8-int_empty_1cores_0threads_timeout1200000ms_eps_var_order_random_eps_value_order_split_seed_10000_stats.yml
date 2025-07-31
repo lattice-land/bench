@@ -1,0 +1,5 @@
+{arch: barebones, configuration: turbo-gpu-release_v1.2.9_barebones_wac1_0_word_equations_02_track_8-int_empty_1cores_0threads_timeout1200000ms_eps_var_order_random_eps_value_order_split_seed_10000,
+  cores: '1', data_file: ../data/mzn-challenge/2024/word-equations/empty.dzn, datetime: '2025-07-31T14:14:55.879618',
+  fixpoint: wac1, model: ../data/mzn-challenge/2024/word-equations/word_equations_02_track_8-int.mzn,
+  mzn_solver: turbo.gpu.release, problem: word-equations, status: UNKNOWN, threads: '0',
+  timeout_ms: '1200000', version: v1.2.9, wac1_threshold: '0'}

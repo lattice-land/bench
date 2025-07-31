@@ -1,0 +1,66 @@
+- abstract_domain: pir_itv32_z
+  arch: barebones
+  command_line: /mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/gpu-release/turbo
+    -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold
+    0 -seed 0 -eps_var_order default -eps_value_order default -version v1.2.9 -hardware
+    'iris-hopper' -cutnodes 0 /tmp/mznfilePMrlUh.fzn
+  configuration: turbo-gpu-release_v1.2.9_barebones_wac1_0_yumi-dynamic_p_4_GG_GG_yumi_grid_setup_5_5_zones_1cores_0threads_timeout1200000ms
+  constraints_after_simplification: 7316764
+  cores: '1'
+  data_file: ../data/mzn-challenge/2024/yumi-dynamic/p_4_GG_GG_yumi_grid_setup_5_5_zones.dzn
+  datetime: '2025-07-31T17:59:52.840460'
+  eliminated_constraints_by_as: 1508
+  eliminated_constraints_by_as_fp_iter_1: 1508
+  eliminated_constraints_by_icse: 0
+  eliminated_constraints_by_icse_fp_iter_1: 0
+  eliminated_entailed_constraints: 3301665
+  eliminated_entailed_constraints_fp_iter_1: 3301665
+  eliminated_equality_constraints: 1722808
+  eliminated_equality_constraints_fp_iter_1: 1722808
+  eliminated_variables: 3797676
+  entailed_prop_removal: deactivated
+  evaluatedReifiedConstraints: 58994
+  fixpoint: wac1
+  flatBoolConstraints: 31327
+  flatBoolVars: 88433
+  flatIntConstraints: 260776
+  flatIntVars: 197413
+  flatTime: 10.883
+  heap_memory: 89459619528
+  icse_fixpoint_iterations: 0
+  icse_fixpoint_iterations_fp_iter_1: 0
+  mem_per_block: 578671712
+  memory_configuration: global
+  method: minimize
+  model: ../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn
+  mzn_solver: turbo.gpu.release
+  num_blocks: 52
+  parsed_constraints: 3686682
+  parsed_variables: 505512
+  paths: 0
+  preprocessing_fixpoint_iterations: 2
+  preprocessing_time: 172.242
+  problem: yumi-dynamic
+  propagator_mem: 117068352
+  shared_mem: 0
+  solution:
+    agent: [1, 1, 1, 2, 1, 2, 1, 1, 1, 2, 1, 2, 2, 1, 1, 2, 2, 1, 2, 1, 2]
+    arrival_time: [0, 299, 155, 187, 423, 529, 70, 360, 224, 292, 475, 644, 352, 414,
+      274, 376, 383, 0, 187, 565, 752]
+    location: [5, 10, 13, 2, 43, 44, 43, 43, 44, 44, 44, 47, 43, 43, 44, 44, 44, 5,
+      2, 5, 2]
+    objective: 565
+    task: [18, 1, 7, 3, 9, 15, 2, 8, 14, 5, 11, 20, 19, 4, 10, 13, 16, 17, 6, 12,
+      21]
+  status: SATISFIED
+  store_mem: 45421288
+  subproblems_power: -1
+  threads: '0'
+  time: 1219.176
+  timeout_ms: '1200000'
+  tnf_constraints: 12342745
+  tnf_variables: 9475290
+  total_global_mem_bytes: 99977658368
+  variables_after_simplification: 5677652
+  version: v1.2.9
+  wac1_threshold: '0'

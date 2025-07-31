@@ -1,0 +1,65 @@
+- abstract_domain: pir_itv32_z
+  arch: barebones
+  command_line: /mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/gpu-release/turbo
+    -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold
+    0 -seed 0 -eps_var_order random -eps_value_order split -version v1.2.9 -hardware
+    'iris-hopper' -cutnodes 0 /tmp/mznfile6MlBSF.fzn
+  configuration: turbo-gpu-release_v1.2.9_barebones_wac1_0_ctw_A041_1cores_0threads_timeout1200000ms_eps_var_order_random_eps_value_order_split
+  constraints_after_simplification: 16427
+  cores: '1'
+  data_file: ../data/mzn-challenge/2024/cable-tree-wiring/A041.dzn
+  datetime: '2025-07-30T09:51:33.401586'
+  eliminated_constraints_by_as: 0
+  eliminated_constraints_by_as_fp_iter_1: 0
+  eliminated_constraints_by_icse: 0
+  eliminated_constraints_by_icse_fp_iter_1: 0
+  eliminated_entailed_constraints: 0
+  eliminated_entailed_constraints_fp_iter_1: 0
+  eliminated_equality_constraints: 2624
+  eliminated_equality_constraints_fp_iter_1: 2624
+  eliminated_variables: 2647
+  entailed_prop_removal: deactivated
+  evaluatedReifiedConstraints: 2528
+  fixpoint: wac1
+  flatBoolConstraints: 2439
+  flatBoolVars: 4928
+  flatIntConstraints: 8219
+  flatIntVars: 2779
+  flatTime: 0.279294
+  heap_memory: 679690464
+  icse_fixpoint_iterations: 2
+  icse_fixpoint_iterations_fp_iter_1: 1
+  mem_per_block: 1714296
+  memory_configuration: global
+  method: minimize
+  model: ../data/mzn-challenge/2024/cable-tree-wiring/ctw.mzn
+  mzn_solver: turbo.gpu.release
+  num_blocks: 396
+  parsed_constraints: 13588
+  parsed_variables: 7856
+  paths: 0
+  preprocessing_fixpoint_iterations: 2
+  preprocessing_time: 0.494
+  problem: cable-tree-wiring
+  propagator_mem: 262960
+  shared_mem: 0
+  solution:
+    cfp: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+      22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+      41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+    objective: 2419252
+    pfc: [32, 35, 36, 39, 40, 44, 19, 17, 26, 27, 29, 33, 34, 22, 37, 38, 43, 46,
+      49, 24, 28, 30, 31, 42, 45, 12, 14, 15, 8, 10, 50, 20, 18, 21, 16, 1, 9, 11,
+      23, 13, 4, 7, 47, 48, 25, 2, 3, 5, 6, 41]
+  status: SATISFIED
+  store_mem: 113040
+  subproblems_power: -1
+  threads: '0'
+  time: 1200.383
+  timeout_ms: '1200000'
+  tnf_constraints: 19051
+  tnf_variables: 16745
+  total_global_mem_bytes: 99977658368
+  variables_after_simplification: 14121
+  version: v1.2.9
+  wac1_threshold: '0'

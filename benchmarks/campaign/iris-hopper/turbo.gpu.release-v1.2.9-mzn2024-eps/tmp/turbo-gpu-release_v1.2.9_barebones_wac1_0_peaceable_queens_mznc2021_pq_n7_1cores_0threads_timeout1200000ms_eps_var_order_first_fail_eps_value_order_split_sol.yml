@@ -1,0 +1,109 @@
+- abstract_domain: pir_itv32_z
+  arch: barebones
+  command_line: /mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/gpu-release/turbo
+    -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold
+    0 -seed 0 -eps_var_order first_fail -eps_value_order split -version v1.2.9 -hardware
+    'iris-hopper' -cutnodes 0 /tmp/mznfileSJiopY.fzn
+  configuration: turbo-gpu-release_v1.2.9_barebones_wac1_0_peaceable_queens_mznc2021_pq_n7_1cores_0threads_timeout1200000ms_eps_var_order_first_fail_eps_value_order_split
+  constraints_after_simplification: 9359
+  cores: '1'
+  data_file: ../data/mzn-challenge/2024/peacable_queens/pq_n7.dzn
+  datetime: '2025-07-31T01:01:34.056055'
+  eliminated_constraints_by_as: 2
+  eliminated_constraints_by_as_fp_iter_1: 2
+  eliminated_constraints_by_icse: 1259
+  eliminated_constraints_by_icse_fp_iter_1: 1259
+  eliminated_entailed_constraints: 880
+  eliminated_entailed_constraints_fp_iter_1: 880
+  eliminated_equality_constraints: 765
+  eliminated_equality_constraints_fp_iter_1: 765
+  eliminated_variables: 2839
+  entailed_prop_removal: deactivated
+  evaluatedReifiedConstraints: 979
+  fixpoint: wac1
+  flatBoolConstraints: 1394
+  flatBoolVars: 1312
+  flatIntConstraints: 1053
+  flatIntVars: 478
+  flatTime: 0.131692
+  heap_memory: 441564192
+  icse_fixpoint_iterations: 4
+  icse_fixpoint_iterations_fp_iter_1: 3
+  mem_per_block: 1113912
+  memory_configuration: store_shared
+  method: maximize
+  model: ../data/mzn-challenge/2024/peacable_queens/peaceable_queens_mznc2021.mzn
+  mzn_solver: turbo.gpu.release
+  num_blocks: 396
+  parsed_constraints: 4564
+  parsed_variables: 2035
+  paths: 0
+  preprocessing_fixpoint_iterations: 2
+  preprocessing_time: 0.217
+  problem: peacable_queens
+  propagator_mem: 149872
+  shared_mem: 60944
+  solution:
+    objective: 7
+    x:
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: BLACK}
+      - {e: BLACK}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: BLACK}
+      - {e: BLACK}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: BLACK}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: WHITE}
+      - {e: WHITE}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: WHITE}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: WHITE}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: BLACK}
+      - {e: BLACK}
+    - - {e: EMPTY}
+      - {e: WHITE}
+      - {e: WHITE}
+      - {e: WHITE}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+  status: SATISFIED
+  store_mem: 60816
+  subproblems_power: -1
+  threads: '0'
+  time: 1200.219
+  timeout_ms: '1200000'
+  tnf_constraints: 12265
+  tnf_variables: 10389
+  total_global_mem_bytes: 99977658368
+  variables_after_simplification: 7593
+  version: v1.2.9
+  wac1_threshold: '0'

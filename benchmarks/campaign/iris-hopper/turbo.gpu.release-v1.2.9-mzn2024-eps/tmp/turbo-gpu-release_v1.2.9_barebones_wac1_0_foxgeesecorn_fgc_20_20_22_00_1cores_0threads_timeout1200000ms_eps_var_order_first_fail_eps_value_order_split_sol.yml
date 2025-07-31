@@ -1,0 +1,69 @@
+- abstract_domain: pir_itv32_z
+  arch: barebones
+  command_line: /mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/gpu-release/turbo
+    -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold
+    0 -seed 0 -eps_var_order first_fail -eps_value_order split -version v1.2.9 -hardware
+    'iris-hopper' -cutnodes 0 /tmp/mznfile98Kak4.fzn
+  configuration: turbo-gpu-release_v1.2.9_barebones_wac1_0_foxgeesecorn_fgc_20_20_22_00_1cores_0threads_timeout1200000ms_eps_var_order_first_fail_eps_value_order_split
+  constraints_after_simplification: 3004
+  cores: '1'
+  data_file: ../data/mzn-challenge/2024/fox-geese-corn/fgc_20_20_22_00.dzn
+  datetime: '2025-07-30T19:41:15.970730'
+  eliminated_constraints_by_as: 2
+  eliminated_constraints_by_as_fp_iter_1: 2
+  eliminated_constraints_by_icse: 391
+  eliminated_constraints_by_icse_fp_iter_1: 391
+  eliminated_entailed_constraints: 71
+  eliminated_entailed_constraints_fp_iter_1: 71
+  eliminated_equality_constraints: 372
+  eliminated_equality_constraints_fp_iter_1: 372
+  eliminated_variables: 806
+  entailed_prop_removal: deactivated
+  evaluatedReifiedConstraints: 417
+  fixpoint: wac1
+  flatBoolConstraints: 180
+  flatBoolVars: 447
+  flatIntConstraints: 644
+  flatIntVars: 381
+  flatTime: 0.069601
+  heap_memory: 248269752
+  icse_fixpoint_iterations: 3
+  icse_fixpoint_iterations_fp_iter_1: 2
+  mem_per_block: 626512
+  memory_configuration: tcn_shared
+  method: maximize
+  model: ../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn.mzn
+  mzn_solver: turbo.gpu.release
+  num_blocks: 396
+  parsed_constraints: 1908
+  parsed_variables: 1243
+  paths: 0
+  preprocessing_fixpoint_iterations: 2
+  preprocessing_time: 0.066
+  problem: fox-geese-corn
+  propagator_mem: 48192
+  shared_mem: 72664
+  solution:
+    corn: [4, 4, 0, 0, 0, 0, 0, 0, 6, 0, 6, 0, 0, 0, 0]
+    ecorn: [0, 4, 0, 0, 0, 0, 0, 0, 0, 6, 5, 11, 1, 0, 1, 0]
+    efox: [0, 1, 1, 7, 6, 12, 12, 18, 18, 18, 17, 17, 1, 0, 1, 0]
+    egeese: [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    fox: [1, 0, 6, 1, 6, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0]
+    geese: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    objective: 146
+    trips: 11
+    wcorn: [22, 18, 22, 21, 21, 20, 20, 20, 20, 14, 14, 8, 0, 1, 0, 0]
+    wfox: [20, 19, 19, 12, 13, 6, 6, 0, 0, 0, 0, 0, 1, 1, 0, 0]
+    wgeese: [20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  status: SATISFIED
+  store_mem: 24344
+  subproblems_power: -1
+  threads: '0'
+  time: 1200.131
+  timeout_ms: '1200000'
+  tnf_constraints: 3840
+  tnf_variables: 3833
+  total_global_mem_bytes: 99977658368
+  variables_after_simplification: 3034
+  version: v1.2.9
+  wac1_threshold: '0'

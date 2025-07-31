@@ -1,0 +1,65 @@
+- abstract_domain: pir_itv32_z
+  arch: barebones
+  command_line: /mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/gpu-release/turbo
+    -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold
+    0 -seed 0 -eps_var_order anti_first_fail -eps_value_order split -version v1.2.9
+    -hardware 'iris-hopper' -cutnodes 0 /tmp/mznfileUmrHJp.fzn
+  configuration: turbo-gpu-release_v1.2.9_barebones_wac1_0_concert-hall-cap_concert-cap.mznc2018.04_1cores_0threads_timeout1200000ms_eps_var_order_anti_first_fail_eps_value_order_split
+  constraints_after_simplification: 3585
+  cores: '1'
+  data_file: ../data/mzn-challenge/2024/concert-hall-cap/concert-cap.mznc2018.04.dzn
+  datetime: '2025-07-30T20:23:05.454946'
+  eliminated_constraints_by_as: 220
+  eliminated_constraints_by_as_fp_iter_1: 220
+  eliminated_constraints_by_as_fp_iter_2: 0
+  eliminated_constraints_by_icse: 3243
+  eliminated_constraints_by_icse_fp_iter_1: 3243
+  eliminated_constraints_by_icse_fp_iter_2: 0
+  eliminated_entailed_constraints: 916
+  eliminated_entailed_constraints_fp_iter_1: 906
+  eliminated_entailed_constraints_fp_iter_2: 10
+  eliminated_equality_constraints: 1206
+  eliminated_equality_constraints_fp_iter_1: 1205
+  eliminated_equality_constraints_fp_iter_2: 1
+  eliminated_variables: 5146
+  entailed_prop_removal: deactivated
+  evaluatedReifiedConstraints: 340
+  fixpoint: wac1
+  flatBoolVars: 340
+  flatIntConstraints: 1186
+  flatIntVars: 731
+  flatTime: 0.145971
+  heap_memory: 252399016
+  icse_fixpoint_iterations: 5
+  icse_fixpoint_iterations_fp_iter_1: 3
+  icse_fixpoint_iterations_fp_iter_2: 1
+  mem_per_block: 636960
+  memory_configuration: store_shared
+  method: maximize
+  model: ../data/mzn-challenge/2024/concert-hall-cap/concert-hall-cap.mzn
+  mzn_solver: turbo.gpu.release
+  num_blocks: 396
+  parsed_constraints: 3880
+  parsed_variables: 1532
+  paths: 0
+  preprocessing_fixpoint_iterations: 3
+  preprocessing_time: 0.104
+  problem: concert-hall-cap
+  propagator_mem: 57488
+  shared_mem: 20984
+  solution:
+    assign: [6, 0, 0, 0, 0, 1, 2, 3, 4, 5, 7, 8, 1, 2, 0, 0, 7, 5, 0, 0, 0, 8, 0,
+      0, 10, 1, 2, 3, 4, 0]
+    objective: 36366
+  status: SATISFIED
+  store_mem: 20856
+  subproblems_power: -1
+  threads: '0'
+  time: 1200.183
+  timeout_ms: '1200000'
+  tnf_constraints: 9170
+  tnf_variables: 7736
+  total_global_mem_bytes: 99977658368
+  variables_after_simplification: 2598
+  version: v1.2.9
+  wac1_threshold: '0'

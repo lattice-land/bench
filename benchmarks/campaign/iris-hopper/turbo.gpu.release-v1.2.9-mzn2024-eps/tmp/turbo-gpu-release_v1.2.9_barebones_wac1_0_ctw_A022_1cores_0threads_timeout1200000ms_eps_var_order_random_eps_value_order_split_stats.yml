@@ -1,0 +1,28 @@
+{abstract_domain: pir_itv32_z, arch: barebones, best_obj_time: 0.0, command_line: /mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/gpu-release/turbo
+    -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold
+    0 -seed 0 -eps_var_order random -eps_value_order split -version v1.2.9 -hardware
+    'iris-hopper' -cutnodes 0 /tmp/mznfilehgAsg4.fzn, configuration: turbo-gpu-release_v1.2.9_barebones_wac1_0_ctw_A022_1cores_0threads_timeout1200000ms_eps_var_order_random_eps_value_order_split,
+  constraints_after_simplification: 40773, cores: '1', cuda_version: 12060, cumulative_time_block_sec: 474498.78,
+  cutnodes: 0, data_file: ../data/mzn-challenge/2024/cable-tree-wiring/A022.dzn, datetime: '2025-07-30T10:11:34.899119',
+  deductions_per_block_second: 405334.052576, dive_time: 0.159, eliminated_constraints_by_as: 0,
+  eliminated_constraints_by_as_fp_iter_1: 0, eliminated_constraints_by_icse: 0, eliminated_constraints_by_icse_fp_iter_1: 0,
+  eliminated_entailed_constraints: 0, eliminated_entailed_constraints_fp_iter_1: 0,
+  eliminated_equality_constraints: 6633, eliminated_equality_constraints_fp_iter_1: 6633,
+  eliminated_variables: 6692, entailed_prop_removal: deactivated, eps_num_subproblems: 16384,
+  eps_skipped_subproblems: 854, eps_solved_subproblems: 1293, eps_value_order: split,
+  eps_var_order: random, evaluatedReifiedConstraints: 6660, failures: 50293801, first_block_idle_time: 1198.23,
+  fixpoint: wac1, fixpoint_iterations: 1363049100, fixpoint_time: 1184.48, flatBoolConstraints: 6393,
+  flatBoolVars: 12900, flatIntConstraints: 20287, flatIntVars: 6935, flatTime: 0.440124,
+  free_search: no, hardware: iris-hopper, heap_memory: 1467864728, icse_fixpoint_iterations: 2,
+  icse_fixpoint_iterations_fp_iter_1: 1, initTime: 1.337, mem_per_block: 3701584,
+  memory_configuration: global, method: minimize, model: ../data/mzn-challenge/2024/cable-tree-wiring/ctw.mzn,
+  mzn_solver: turbo.gpu.release, nSolutions: 0, nodes: 100622075, num_blocks: 396,
+  num_blocks_done: 0, num_deductions: 76162883322592, num_solutions: 0, or_nodes: 0,
+  parsed_constraints: 33856, parsed_variables: 20074, paths: 0, peakDepth: 67, preprocessing_fixpoint_iterations: 2,
+  preprocessing_time: 1.337, problem: cable-tree-wiring, problem_path: /tmp/mznfilehgAsg4.fzn,
+  propagator_mem: 652496, propagators: 40773, search_time: 13.341, seed: 0, select_fp_functions_time: 0.407,
+  shared_mem: 0, solveTime: 1200.027, solve_time: 3.03, solver: Turbo, stack_size: 0,
+  status: UNKNOWN, store_mem: 276776, subproblems_power: -1, threads: '0', threads_per_block: 256,
+  timeout_ms: 1200000, tnf_constraints: 47406, tnf_variables: 41221, total_global_mem_bytes: 99977658368,
+  transfer_cpu2gpu_time: 0.0, transfer_gpu2cpu_time: 0.0, variables: 34588, variables_after_simplification: 34588,
+  version: v1.2.9, wac1_threshold: 0, wait_cpu_time: 0.0}

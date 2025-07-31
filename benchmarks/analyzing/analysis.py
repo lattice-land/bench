@@ -179,7 +179,14 @@ def read_experiments(experiments):
   all_xp['fixpoint'] = all_xp.apply(lambda row: "ac1" if row['fixpoint'] == "" and (row['mzn_solver'] == 'turbo.gpu.release' or row['mzn_solver'] == "turbo.cpu.release") else row['fixpoint'], axis=1)
   all_xp['wac1_threshold'] = all_xp['wac1_threshold'].fillna(0).astype(int) if "wac1_threshold" in all_xp else ""
   all_xp['cores'] = all_xp['cores'].fillna(1).astype(int)
-  all_xp['seed'] = all_xp['seed'].fillna(0).astype(int)
+  if 'seed' not in all_xp:
+    all_xp['seed'] = 0
+  else:
+    all_xp['seed'] = all_xp['seed'].fillna(0).astype(int)
+  if 'eps_value_order' not in all_xp:
+    all_xp['eps_value_order'] = 'default'
+  if 'eps_var_order' not in all_xp:
+    all_xp['eps_var_order'] = 'default'
   all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'], row['subproblems_power'], row['or_nodes'], row['threads_per_block'], row['search'], row['eps_value_order'], row['eps_var_order'], row['seed']), axis=1)
   all_xp['short_uid'] = all_xp['uid'].apply(make_short_uid)
   if 'solveTime' in all_xp:
