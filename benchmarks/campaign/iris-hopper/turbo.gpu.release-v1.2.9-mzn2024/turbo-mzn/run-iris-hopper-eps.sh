@@ -47,7 +47,7 @@ THREADS=0 # The number of core used on the node.
 FP="wac1"
 WAC1_THRESHOLD=0
 MACHINE=$(basename "$1" ".sh")
-INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024.csv"
+INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024_patch.csv"
 EXTRA_ARGS_TURBO=" "
 
 # II. Prepare the command lines and output directory.

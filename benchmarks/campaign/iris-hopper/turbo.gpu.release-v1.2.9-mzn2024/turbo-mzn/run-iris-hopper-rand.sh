@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --time=08:00:00
+#SBATCH --time=24:00:00
 #SBATCH --partition=hopper
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:4
@@ -7,7 +7,7 @@
 #SBATCH --exclusive
 #SBATCH --qos=besteffort
 #SBATCH --export=ALL
-#SBATCH --output=slurm-turbo-iris-hopper.out
+#SBATCH --output=slurm-turbo-iris-hopper-rand.out
 
 # Exits when an error occurs.
 set -e
@@ -47,12 +47,12 @@ THREADS=0 # The number of core used on the node.
 FP="wac1"
 WAC1_THRESHOLD=0
 MACHINE=$(basename "$1" ".sh")
-INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024_patch2.csv"
+INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024.csv"
 EXTRA_ARGS_TURBO=" "
 
 # II. Prepare the command lines and output directory.
 MZN_COMMAND="minizinc --solver $MZN_SOLVER -s --json-stream -t $MZN_TIMEOUT --output-mode json --output-time --output-objective -p $THREADS -arch $ARCH -fp $FP -wac1_threshold $WAC1_THRESHOLD -hardware $MACHINE -version $VERSION -timeout $REAL_TIMEOUT $EXTRA_ARGS_TURBO "
-OUTPUT_DIR="$BENCHMARKS_DIR_PATH/campaign/$MACHINE/$MZN_SOLVER-$VERSION-mzn2024"
+OUTPUT_DIR="$BENCHMARKS_DIR_PATH/campaign/$MACHINE/$MZN_SOLVER-$VERSION-mzn2024-eps"
 mkdir -p $OUTPUT_DIR
 
 # If we are on the HPC, we encapsulate the command in a srun command to reserve the resources needed.
@@ -76,5 +76,5 @@ cp $INSTANCES_PATH $OUTPUT_DIR/$(basename "$MZN_WORKFLOW_PATH")/
 # The `parallel` command spawns one `srun` command per experiment, which executes the minizinc solver with the right resources.
 
 COMMANDS_LOG="$OUTPUT_DIR/$(basename "$MZN_WORKFLOW_PATH")/jobs.log"
-parallel --verbose --no-run-if-empty --rpl '{} uq()' -k --colsep ',' --skip-first-line -j $NUM_PARALLEL_EXPERIMENTS --joblog $COMMANDS_LOG $SRUN_COMMAND $MZN_COMMAND $BENCHMARKING_DIR_PATH/{2} $BENCHMARKING_DIR_PATH/{3} '2>&1' '|' python3 $DUMP_PY_PATH $OUTPUT_DIR {1} {2} {3} $MZN_SOLVER $VERSION $REAL_TIMEOUT $CORES $THREADS $ARCH $FP $WAC1_THRESHOLD :::: $INSTANCES_PATH
+parallel --verbose --no-run-if-empty --rpl '{} uq()' -k --colsep ',' --skip-first-line -j $NUM_PARALLEL_EXPERIMENTS --joblog $COMMANDS_LOG $SRUN_COMMAND $MZN_COMMAND {4} {5} {6} $BENCHMARKING_DIR_PATH/{2} $BENCHMARKING_DIR_PATH/{3} '2>&1' '|' python3 $DUMP_PY_PATH $OUTPUT_DIR {1} {2} {3} $MZN_SOLVER $VERSION $REAL_TIMEOUT $CORES $THREADS $ARCH $FP $WAC1_THRESHOLD {4} {5} {6} :::: $INSTANCES_PATH ::: "-eps_var_order random" ::: "-eps_value_order split" ::: "-seed 42" "-seed 10000"
 

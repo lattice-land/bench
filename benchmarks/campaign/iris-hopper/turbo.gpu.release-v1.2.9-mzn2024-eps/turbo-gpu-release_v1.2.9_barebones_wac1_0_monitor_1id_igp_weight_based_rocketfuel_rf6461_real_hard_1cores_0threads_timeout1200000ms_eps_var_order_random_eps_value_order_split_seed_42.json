@@ -1,0 +1,7 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_monitor_1id_igp_weight_based_rocketfuel_rf6461_real_hard_1cores_0threads_timeout1200000ms_eps_var_order_random_eps_value_order_split_seed_42", "problem": "monitor-placement-1id", "model": "../data/mzn-challenge/2024/monitor-placement-1id/monitor_1id.mzn", "data_file": "../data/mzn-challenge/2024/monitor-placement-1id/igp_weight_based_rocketfuel_rf6461_real_hard.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-07-31T14:29:06.113274", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+srun: Step created for StepId=4258450.32
+cpu-bind=MASK - iris-197, task  0  0 [751076]: mask 0xffffffff0000000000000000 set
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: got SIGCONT
+srun: got SIGCONT
