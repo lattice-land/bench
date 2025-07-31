@@ -1,0 +1,14 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_efm_cstr_MODEL1507180015_1cores_0threads_timeout1200000ms_eps_var_order_first_fail_eps_value_order_split", "problem": "network_50_cstr", "model": "../data/mzn-challenge/2024/network_50_cstr/efm_cstr.mzn", "data_file": "../data/mzn-challenge/2024/network_50_cstr/MODEL1507180015.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-07-31T10:24:04.136586", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+srun: Job 4256888 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Job 4256888 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4256888 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4256888 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4256888 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4256888 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4256888 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4256888 step creation still disabled, retrying (Requested nodes are busy)
+srun: Step created for StepId=4256888.25
+cpu-bind=MASK - iris-197, task  0  0 [709513]: mask 0xffffffff00000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 2593, "flatIntVars": 4860, "flatBoolConstraints": 1, "flatIntConstraints": 7083, "evaluatedReifiedConstraints": 2593, "method": "minimize", "flatTime": 19.6301}}
+% WARNING: Annotation ctx_neg is unknown and was ignored.

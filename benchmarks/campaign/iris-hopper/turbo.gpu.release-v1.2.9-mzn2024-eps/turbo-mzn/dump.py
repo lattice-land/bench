@@ -5,6 +5,7 @@ import os
 import minizinc
 import json
 import datetime
+import shutil
 
 if os.environ.get("MZN_DEBUG", "OFF") == "ON":
   import logging
@@ -78,3 +79,6 @@ if __name__ == "__main__":
     for line in stdin:
       file.write(line)
       file.flush()
+  # src = "/tmp/tmp.fzn"
+  # dst = "/home/ptalbot/repositories/lattice-land/turbo/benchmarks/data/mzn2024/" + model.stem + "_" + data.stem + ".fzn"
+  # shutil.copyfile(src, dst)

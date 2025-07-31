@@ -1,0 +1,31 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_trains_trains09_1cores_0threads_timeout1200000ms_eps_var_order_random_eps_value_order_split", "problem": "train-scheduling", "model": "../data/mzn-challenge/2024/train-scheduling/trains.mzn", "data_file": "../data/mzn-challenge/2024/train-scheduling/trains09.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-07-30T11:31:39.938251", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+srun: Job 4244578 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Job 4244578 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4244578 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4244578 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4244578 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4244578 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4244578 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4244578 step creation still disabled, retrying (Requested nodes are busy)
+srun: Step created for StepId=4244578.114
+cpu-bind=MASK - iris-197, task  0  0 [474542]: mask 0xffffffff0000000000000000 set
+Double track L C-D:
+Double track R C-D:
+Double track L C-H:
+Double track R C-H:
+Double track L D-E:
+Double track R D-E:
+Double track L H-I:
+Double track R H-I:
+Single track A-B:
+Single track B-C:
+Single track C-G:
+Single track F-G:
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 23268, "flatIntVars": 11873, "flatBoolConstraints": 6044, "flatIntConstraints": 30256, "evaluatedReifiedConstraints": 17738, "eliminatedImplications": 56, "method": "minimize", "flatTime": 0.585847}}
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "statistics", "statistics": {"command_line": "/mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/gpu-release/turbo -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold 0 -seed 0 -eps_var_order random -eps_value_order split -version v1.2.9 -hardware 'iris-hopper' -cutnodes 0 /tmp/mznfile3n3WXU.fzn", "parsed_variables": 47231, "parsed_constraints": 64323, "abstract_domain": "pir_itv32_z", "entailed_prop_removal": "deactivated", "tnf_variables": 107205, "tnf_constraints": 110252, "eliminated_entailed_constraints_fp_iter_1": 9738, "eliminated_equality_constraints_fp_iter_1": 24040, "eliminated_constraints_by_icse_fp_iter_1": 1706, "eliminated_constraints_by_as_fp_iter_1": 4003, "icse_fixpoint_iterations_fp_iter_1": 3, "eliminated_entailed_constraints_fp_iter_2": 30, "eliminated_equality_constraints_fp_iter_2": 1, "eliminated_constraints_by_icse_fp_iter_2": 0, "eliminated_constraints_by_as_fp_iter_2": 0, "icse_fixpoint_iterations_fp_iter_2": 1, "eliminated_entailed_constraints": 9768, "eliminated_equality_constraints": 24041, "eliminated_constraints_by_icse": 1706, "eliminated_constraints_by_as": 4003, "icse_fixpoint_iterations": 5, "eliminated_variables": 37898, "preprocessing_fixpoint_iterations": 3, "variables_after_simplification": 69366, "constraints_after_simplification": 70734, "preprocessing_time": 2.814}}
+{"type": "statistics", "statistics": {"subproblems_power": -1, "heap_memory": 2590117432, "mem_per_block": 6530832, "total_global_mem_bytes": 99977658368, "num_blocks": 396, "memory_configuration": "global", "shared_mem": 0, "store_mem": 555000, "propagator_mem": 1131872}}
+{"type": "status", "status": "UNKNOWN", "time": 1200877}
+{"type": "statistics", "statistics": {"problem_path": "/tmp/mznfile3n3WXU.fzn", "solver": "Turbo", "version": "v1.2.9", "hardware": "iris-hopper", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": 0, "seed": 0, "eps_var_order": "random", "eps_value_order": "split", "free_search": "no", "or_nodes": 0, "timeout_ms": 1200000, "threads_per_block": 256, "stack_size": 0, "cuda_version": 12060, "cutnodes": 0, "num_blocks": 396, "nodes": 82159367, "failures": 41057847, "variables": 69366, "propagators": 70734, "peakDepth": 422, "initTime": 2.814, "solveTime": 1200.092, "num_solutions": 0, "eps_num_subproblems": 16384, "eps_solved_subproblems": 44, "eps_skipped_subproblems": 816, "num_blocks_done": 0, "fixpoint_iterations": 886453211, "num_deductions": 75429715648864, "cumulative_time_block_sec": 473942.905, "deductions_per_block_second": 401903.009648, "solve_time": 3.03, "search_time": 19.282, "fixpoint_time": 1169.187, "transfer_cpu2gpu_time": 0.0, "transfer_gpu2cpu_time": 0.0, "select_fp_functions_time": 8.355, "wait_cpu_time": 0.0, "dive_time": 0.121, "best_obj_time": 0.0, "first_block_idle_time": 1196.828}}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
