@@ -12,3 +12,12 @@ cpu-bind=MASK - iris-197, task  0  0 [711952]: mask 0xffffffff set
 {"type": "status", "status": "ERROR", "time": 122157}
 {"type": "statistics", "statistics": {"nSolutions": 0}}
 srun: error: iris-197: task 0: Exited with exit code 1
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_yumi-dynamic_p_7_SSSS_SSS_yumi_grid_setup_3_3_zones_1cores_0threads_timeout1200000ms_eps_var_order_random_eps_value_order_split", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_7_SSSS_SSS_yumi_grid_setup_3_3_zones.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-07-31T20:20:40.115937", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+srun: Job 4260793 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Job 4260793 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4260793 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4260793 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4260793 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4260793 step creation still disabled, retrying (Requested nodes are busy)
+srun: error: Unable to create step for job 4260793: Job/step already completing or completed
