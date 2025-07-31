@@ -11,3 +11,10 @@ cpu-bind=MASK - iris-197, task  0  0 [683560]: mask 0xffffffff00000000 set
 {"type": "status", "status": "ERROR", "time": 121652}
 {"type": "statistics", "statistics": {"nSolutions": 0}}
 srun: error: iris-197: task 0: Exited with exit code 1
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_yumi-dynamic_p_7_SSSS_SSS_yumi_grid_setup_3_3_zones_1cores_0threads_timeout1200000ms", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_7_SSSS_SSS_yumi_grid_setup_3_3_zones.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-07-31T11:48:29.394706", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+srun: Step created for StepId=4258430.6
+cpu-bind=MASK - iris-197, task  0  0 [722494]: mask 0xffffffff0000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 466678, "flatIntVars": 416801, "flatBoolConstraints": 163592, "flatIntConstraints": 730925, "evaluatedReifiedConstraints": 310897, "method": "minimize", "flatTime": 17.2883}}
+% WARNING: Annotation add_to_output is unknown and was ignored.
+% WARNING: Annotation domain is unknown and was ignored.
