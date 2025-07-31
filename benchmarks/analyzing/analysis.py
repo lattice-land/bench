@@ -14,7 +14,7 @@ import textwrap
 from statistics import mean, median, stdev
 
 # A tentative to have unique experiment names.
-def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, eps_num_subproblems, or_nodes, threads_per_block, search, eps_val, eps_var):
+def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, subproblems_power, or_nodes, threads_per_block, search, eps_val, eps_var, seed):
   uid = mzn_solver + "_" + str(version) + '_' + machine
   if str(timeout_ms) == "inf":
     uid += "_notimeout"
@@ -33,7 +33,10 @@ def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machin
   if 'java11' in config:
     uid += '_java11'
   if mzn_solver == 'turbo.gpu.release':
-    uid += '_' + str(int(eps_num_subproblems))+ '_' + str(int(or_nodes))
+    if int(subproblems_power) != -1:
+      uid += '_' + str(int(subproblems_power)) + "sub"
+    if int(or_nodes) != 0:
+      uid += '_' + str(int(or_nodes)) + "blk"
     if cores > 1 and arch.lower() == 'hybrid':
       uid += "_" + str(int(cores))
     if int(threads_per_block) != 256:
@@ -58,7 +61,10 @@ def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machin
   if search == "free":
     uid += "_free"
   if isinstance(eps_var, str) and eps_var != "" and (eps_var != "default" or eps_val != "default"):
-    uid += f"_{eps_var}_{eps_val}"
+    uid += f"_{eps_var}"
+    if eps_var == "random":
+      uid += f"{seed}"
+    uid += f"_{eps_val}"
   return uid
 
 def make_short_uid(uid):
@@ -163,6 +169,8 @@ def read_experiments(experiments):
   all_xp['store_mem'] = all_xp['store_mem'].fillna(0).astype(int) if 'store_mem' in all_xp else 0
   all_xp['fixpoint_iterations'] = pd.to_numeric(all_xp['fixpoint_iterations'], errors='coerce').fillna(0).astype(int) if 'fixpoint_iterations' in all_xp else 0
   all_xp['eps_num_subproblems'] = pd.to_numeric(all_xp['eps_num_subproblems'], errors='coerce').fillna(1).astype(int) if 'eps_num_subproblems' in all_xp else 1
+  all_xp['subproblems_power'] = all_xp.apply(lambda row: int(math.log2(row['eps_num_subproblems'])) if math.isnan(row['subproblems_power']) else row['subproblems_power'], axis=1)  if 'subproblems_power' in all_xp else 0
+  all_xp['subproblems_power'] = all_xp['subproblems_power'].astype(int)
   all_xp['num_blocks_done'] = pd.to_numeric(all_xp['num_blocks_done'], errors='coerce').fillna(0).astype(int) if 'num_blocks_done' in all_xp else 0
   all_xp['hardware'] = all_xp['machine'].apply(determine_hardware)
   all_xp['cores'] = all_xp['cores'].fillna(1).astype(int)
@@ -171,7 +179,8 @@ def read_experiments(experiments):
   all_xp['fixpoint'] = all_xp.apply(lambda row: "ac1" if row['fixpoint'] == "" and (row['mzn_solver'] == 'turbo.gpu.release' or row['mzn_solver'] == "turbo.cpu.release") else row['fixpoint'], axis=1)
   all_xp['wac1_threshold'] = all_xp['wac1_threshold'].fillna(0).astype(int) if "wac1_threshold" in all_xp else ""
   all_xp['cores'] = all_xp['cores'].fillna(1).astype(int)
-  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'], row['eps_num_subproblems'], row['or_nodes'], row['threads_per_block'], row['search'], row['eps_value_order'], row['eps_var_order']), axis=1)
+  all_xp['seed'] = all_xp['seed'].fillna(0).astype(int)
+  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'], row['subproblems_power'], row['or_nodes'], row['threads_per_block'], row['search'], row['eps_value_order'], row['eps_var_order'], row['seed']), axis=1)
   all_xp['short_uid'] = all_xp['uid'].apply(make_short_uid)
   if 'solveTime' in all_xp:
     all_xp['nodes_per_second'] = all_xp['nodes'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
@@ -519,6 +528,8 @@ def plot_time_distribution(arch, df):
   for idx, (index, row) in enumerate(df.iterrows()):
       total_time = row[time_columns].sum()
       num_blocks = row.get("num_blocks_done", 0)
+      if(row['model_data_file'] == "../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn.mzn - ../data/mzn-challenge/2024/fox-geese-corn/foxgeesecorn_17.dzn"):
+        print(row['model_data_file'], row['num_blocks_done'])
       if num_blocks != 0:
           ax.text(
               total_time + 0.5,  # slightly to the right of the end of the bar
