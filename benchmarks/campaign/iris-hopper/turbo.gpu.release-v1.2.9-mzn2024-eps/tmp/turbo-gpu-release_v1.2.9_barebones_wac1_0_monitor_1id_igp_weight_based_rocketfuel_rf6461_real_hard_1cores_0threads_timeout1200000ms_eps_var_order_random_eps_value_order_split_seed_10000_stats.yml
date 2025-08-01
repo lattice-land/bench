@@ -1,5 +1,0 @@
-{arch: barebones, configuration: turbo-gpu-release_v1.2.9_barebones_wac1_0_monitor_1id_igp_weight_based_rocketfuel_rf6461_real_hard_1cores_0threads_timeout1200000ms_eps_var_order_random_eps_value_order_split_seed_10000,
-  cores: '1', data_file: ../data/mzn-challenge/2024/monitor-placement-1id/igp_weight_based_rocketfuel_rf6461_real_hard.dzn,
-  datetime: '2025-07-31T14:29:25.987268', fixpoint: wac1, model: ../data/mzn-challenge/2024/monitor-placement-1id/monitor_1id.mzn,
-  mzn_solver: turbo.gpu.release, problem: monitor-placement-1id, status: UNKNOWN,
-  threads: '0', timeout_ms: '1200000', version: v1.2.9, wac1_threshold: '0'}
