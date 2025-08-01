@@ -24,3 +24,75 @@ cpu-bind=MASK - iris-197, task  0  0 [722802]: mask 0xffffffff00000000 set
 {"type": "status", "status": "ERROR", "time": 99166}
 {"type": "statistics", "statistics": {"nSolutions": 0}}
 srun: error: iris-197: task 0: Exited with exit code 1
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_yumi-dynamic_p_5_GSS_SG_yumi_grid_setup_3_4_zones_1cores_0threads_timeout1200000ms", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_5_GSS_SG_yumi_grid_setup_3_4_zones.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-07-31T14:39:53.082198", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+srun: Step created for StepId=4259436.7
+cpu-bind=MASK - iris-197, task  0  0 [754903]: mask 0xffffffff00000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 206699, "flatIntVars": 243352, "flatBoolConstraints": 72201, "flatIntConstraints": 384605, "evaluatedReifiedConstraints": 137809, "method": "minimize", "flatTime": 11.2446}}
+% WARNING: Annotation add_to_output is unknown and was ignored.
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "statistics", "statistics": {"command_line": "/mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/gpu-release/turbo -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold 0 -seed 0 -eps_var_order default -eps_value_order default -version v1.2.9 -hardware 'iris-hopper' -cutnodes 0 /tmp/mznfile4rFGpB.fzn", "parsed_variables": 666678, "parsed_constraints": 1867917, "abstract_domain": "pir_itv32_z", "entailed_prop_removal": "deactivated", "tnf_variables": 4091783, "tnf_constraints": 4995254, "eliminated_entailed_constraints_fp_iter_1": 905150, "eliminated_equality_constraints_fp_iter_1": 688499, "eliminated_constraints_by_icse_fp_iter_1": 0, "eliminated_constraints_by_as_fp_iter_1": 1541, "icse_fixpoint_iterations_fp_iter_1": 0, "eliminated_entailed_constraints": 905150, "eliminated_equality_constraints": 688499, "eliminated_constraints_by_icse": 0, "eliminated_constraints_by_as": 1541, "icse_fixpoint_iterations": 0, "eliminated_variables": 1261829, "preprocessing_fixpoint_iterations": 2, "variables_after_simplification": 2830011, "constraints_after_simplification": 3400064, "preprocessing_time": 83.607}}
+{"type": "statistics", "statistics": {"subproblems_power": -1, "heap_memory": 89839291968, "mem_per_block": 276764472, "total_global_mem_bytes": 99977658368, "num_blocks": 324, "memory_configuration": "global", "shared_mem": 0, "store_mem": 22640160, "propagator_mem": 54401152}}
+{"type": "comment", "comment": "% ERROR: CUDA kernel failed due to an illegal memory access. This might be due to a stack overflow because it is too small. Try increasing the stack size with the options -stack. If it does not work, please report it as a bug.\n"}
+{"type": "status", "status": "ERROR", "time": 98621}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+srun: error: iris-197: task 0: Exited with exit code 1
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_yumi-dynamic_p_5_GSS_SG_yumi_grid_setup_3_4_zones_1cores_0threads_timeout1200000ms", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_5_GSS_SG_yumi_grid_setup_3_4_zones.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-07-31T14:54:53.281506", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+srun: Step created for StepId=4259541.7
+cpu-bind=MASK - iris-197, task  0  0 [758935]: mask 0xffffffff00000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 206699, "flatIntVars": 243352, "flatBoolConstraints": 72201, "flatIntConstraints": 384605, "evaluatedReifiedConstraints": 137809, "method": "minimize", "flatTime": 10.7406}}
+% WARNING: Annotation add_to_output is unknown and was ignored.
+% WARNING: Annotation domain is unknown and was ignored.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: got SIGCONT
+srun: got SIGCONT
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_yumi-dynamic_p_5_GSS_SG_yumi_grid_setup_3_4_zones_1cores_0threads_timeout1200000ms", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_5_GSS_SG_yumi_grid_setup_3_4_zones.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-07-31T16:01:50.052177", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_yumi-dynamic_p_5_GSS_SG_yumi_grid_setup_3_4_zones_1cores_0threads_timeout1200000ms", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_5_GSS_SG_yumi_grid_setup_3_4_zones.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-07-31T16:01:56.078045", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 206699, "flatIntVars": 243352, "flatBoolConstraints": 72201, "flatIntConstraints": 384605, "evaluatedReifiedConstraints": 137809, "method": "minimize", "flatTime": 10.8612}}
+% WARNING: Annotation add_to_output is unknown and was ignored.
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "statistics", "statistics": {"command_line": "/mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/gpu-release/turbo -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold 0 -seed 0 -eps_var_order default -eps_value_order default -version v1.2.9 -hardware 'iris-hopper' -cutnodes 0 /tmp/mznfile2EBbvD.fzn", "parsed_variables": 666678, "parsed_constraints": 1867917, "abstract_domain": "pir_itv32_z", "entailed_prop_removal": "deactivated", "tnf_variables": 4091783, "tnf_constraints": 4995254, "eliminated_entailed_constraints_fp_iter_1": 905150, "eliminated_equality_constraints_fp_iter_1": 688499, "eliminated_constraints_by_icse_fp_iter_1": 0, "eliminated_constraints_by_as_fp_iter_1": 1541, "icse_fixpoint_iterations_fp_iter_1": 0, "eliminated_entailed_constraints": 905150, "eliminated_equality_constraints": 688499, "eliminated_constraints_by_icse": 0, "eliminated_constraints_by_as": 1541, "icse_fixpoint_iterations": 0, "eliminated_variables": 1261829, "preprocessing_fixpoint_iterations": 2, "variables_after_simplification": 2830011, "constraints_after_simplification": 3400064, "preprocessing_time": 83.33}}
+{"type": "statistics", "statistics": {"subproblems_power": -1, "heap_memory": 89839291968, "mem_per_block": 276764472, "total_global_mem_bytes": 99977658368, "num_blocks": 324, "memory_configuration": "global", "shared_mem": 0, "store_mem": 22640160, "propagator_mem": 54401152}}
+{"type": "comment", "comment": "% ERROR: CUDA kernel failed due to an illegal memory access. This might be due to a stack overflow because it is too small. Try increasing the stack size with the options -stack. If it does not work, please report it as a bug.\n"}
+{"type": "status", "status": "ERROR", "time": 97960}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_yumi-dynamic_p_5_GSS_SG_yumi_grid_setup_3_4_zones_1cores_0threads_timeout1200000ms", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_5_GSS_SG_yumi_grid_setup_3_4_zones.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-07-31T16:08:28.363277", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 206699, "flatIntVars": 243352, "flatBoolConstraints": 72201, "flatIntConstraints": 384605, "evaluatedReifiedConstraints": 137809, "method": "minimize", "flatTime": 10.8576}}
+% WARNING: Annotation add_to_output is unknown and was ignored.
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "statistics", "statistics": {"command_line": "/mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/gpu-release/turbo -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold 0 -seed 0 -eps_var_order default -eps_value_order default -version v1.2.9 -hardware 'iris-hopper' -cutnodes 0 /tmp/mznfilehaDzOk.fzn", "parsed_variables": 666678, "parsed_constraints": 1867917, "abstract_domain": "pir_itv32_z", "entailed_prop_removal": "deactivated", "tnf_variables": 4091783, "tnf_constraints": 4995254, "eliminated_entailed_constraints_fp_iter_1": 905150, "eliminated_equality_constraints_fp_iter_1": 688499, "eliminated_constraints_by_icse_fp_iter_1": 0, "eliminated_constraints_by_as_fp_iter_1": 1541, "icse_fixpoint_iterations_fp_iter_1": 0, "eliminated_entailed_constraints": 905150, "eliminated_equality_constraints": 688499, "eliminated_constraints_by_icse": 0, "eliminated_constraints_by_as": 1541, "icse_fixpoint_iterations": 0, "eliminated_variables": 1261829, "preprocessing_fixpoint_iterations": 2, "variables_after_simplification": 2830011, "constraints_after_simplification": 3400064, "preprocessing_time": 83.395}}
+{"type": "statistics", "statistics": {"subproblems_power": -1, "heap_memory": 89839291968, "mem_per_block": 276764472, "total_global_mem_bytes": 99977658368, "num_blocks": 132, "memory_configuration": "global", "shared_mem": 0, "store_mem": 22640160, "propagator_mem": 54401152}}
+{"type": "comment", "comment": "% ERROR: CUDA kernel failed due to an illegal memory access. This might be due to a stack overflow because it is too small. Try increasing the stack size with the options -stack. If it does not work, please report it as a bug.\n"}
+{"type": "status", "status": "ERROR", "time": 100923}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_yumi-dynamic_p_5_GSS_SG_yumi_grid_setup_3_4_zones_1cores_0threads_timeout1200000ms", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_5_GSS_SG_yumi_grid_setup_3_4_zones.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-07-31T17:42:29.275345", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+srun: Job 4260022 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Job 4260022 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4260022 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4260022 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4260022 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4260022 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4260022 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4260022 step creation still disabled, retrying (Requested nodes are busy)
+srun: Step created for StepId=4260022.7
+cpu-bind=MASK - iris-197, task  0  0 [1241988]: mask 0xffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 206699, "flatIntVars": 243352, "flatBoolConstraints": 72201, "flatIntConstraints": 384605, "evaluatedReifiedConstraints": 137809, "method": "minimize", "flatTime": 10.9571}}
+% WARNING: Annotation add_to_output is unknown and was ignored.
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "status", "status": "UNKNOWN", "time": 1275323}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"command_line": "/mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/gpu-release/turbo -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold 0 -seed 0 -eps_var_order default -eps_value_order default -version v1.2.9 -hardware 'iris-hopper' -cutnodes 0 /tmp/mznfileoh1T90.fzn"}}
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_yumi-dynamic_p_5_GSS_SG_yumi_grid_setup_3_4_zones_1cores_0threads_timeout1200000ms", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_5_GSS_SG_yumi_grid_setup_3_4_zones.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-07-31T20:40:56.612926", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+cpu-bind=MASK - iris-197, task  0  0 [1271373]: mask 0xffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 206699, "flatIntVars": 243352, "flatBoolConstraints": 72201, "flatIntConstraints": 384605, "evaluatedReifiedConstraints": 137809, "method": "minimize", "flatTime": 10.9655}}
+% WARNING: Annotation add_to_output is unknown and was ignored.
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "status", "status": "UNKNOWN", "time": 1275422}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"command_line": "/mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/gpu-release/turbo -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -stack 0 -fp wac1 -wac1_threshold 0 -seed 0 -eps_var_order default -eps_value_order default -version v1.2.9 -hardware 'iris-hopper' -cutnodes 0 /tmp/mznfile1z4Jwn.fzn"}}

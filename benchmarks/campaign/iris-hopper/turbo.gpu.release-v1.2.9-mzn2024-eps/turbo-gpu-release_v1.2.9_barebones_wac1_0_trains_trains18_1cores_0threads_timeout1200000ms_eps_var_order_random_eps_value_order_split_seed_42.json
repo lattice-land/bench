@@ -1,0 +1,12 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_trains_trains18_1cores_0threads_timeout1200000ms_eps_var_order_random_eps_value_order_split_seed_42", "problem": "train-scheduling", "model": "../data/mzn-challenge/2024/train-scheduling/trains.mzn", "data_file": "../data/mzn-challenge/2024/train-scheduling/trains18.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-08-01T08:48:22.086319", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+srun: Job 4261438 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Job 4261438 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4261438 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4261438 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4261438 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 4261438 step creation still disabled, retrying (Requested nodes are busy)
+srun: Step created for StepId=4261438.111
+cpu-bind=MASK - iris-197, task  0  0 [1400032]: mask 0xffffffff00000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 556, "flatIntVars": 421, "flatBoolConstraints": 276, "flatIntConstraints": 907, "evaluatedReifiedConstraints": 470, "eliminatedImplications": 24, "method": "minimize", "flatTime": 0.173564}}
+% WARNING: Annotation domain is unknown and was ignored.
