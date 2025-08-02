@@ -1,2 +1,5 @@
 "problem","model","data_file"
-"yumi-dynamic","../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn","../data/mzn-challenge/2024/yumi-dynamic/p_5_GSS_SG_yumi_grid_setup_3_4_zones.dzn"
+"word-equations","../data/mzn-challenge/2024/word-equations/word_equations_01_track_123-int.mzn","../data/mzn-challenge/2024/word-equations/empty.dzn"
+"word-equations","../data/mzn-challenge/2024/word-equations/word_equations_02_track_8-int.mzn","../data/mzn-challenge/2024/word-equations/empty.dzn"
+"word-equations","../data/mzn-challenge/2024/word-equations/word_equations_01_track_140-int.mzn","../data/mzn-challenge/2024/word-equations/empty.dzn"
+"monitor-placement-1id","../data/mzn-challenge/2024/monitor-placement-1id/monitor_1id.mzn","../data/mzn-challenge/2024/monitor-placement-1id/hop_counting_based_zoo_Forthnet.dzn"
