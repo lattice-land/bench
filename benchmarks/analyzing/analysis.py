@@ -14,7 +14,7 @@ import textwrap
 from statistics import mean, median, stdev
 
 # A tentative to have unique experiment names.
-def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, subproblems_power, or_nodes, threads_per_block, search, eps_val, eps_var, seed):
+def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, subproblems_power, subfactor, or_nodes, threads_per_block, search, eps_val, eps_var, seed):
   uid = mzn_solver + "_" + str(version) + '_' + machine
   if str(timeout_ms) == "inf":
     uid += "_notimeout"
@@ -33,6 +33,8 @@ def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machin
   if 'java11' in config:
     uid += '_java11'
   if mzn_solver == 'turbo.gpu.release':
+    if int(subfactor) != 30:
+      uid += '_' + str(int(subfactor)) + "sf"
     if int(subproblems_power) != -1:
       uid += '_' + str(int(subproblems_power)) + "sub"
     if int(or_nodes) != 0:
@@ -144,6 +146,8 @@ def read_experiments(experiments):
       print(f"{e}: {len(failed_xps)} failed experiments using turbo.gpu.release have been removed (the faulty experiments have been stored in {failed_xps_path}).")
     if 'search' not in df:
       df['search'] = 'user_defined'
+    if 'subfactor' not in df:
+      df['subfactor'] = 30
     if 'best_obj_time' not in df:
       obj_df = pd.read_csv(os.path.splitext(e)[0] + "-objectives.csv")
       # Convert the objective column to numeric (in case it contains non-numeric values)
@@ -187,7 +191,7 @@ def read_experiments(experiments):
     all_xp['eps_value_order'] = 'default'
   if 'eps_var_order' not in all_xp:
     all_xp['eps_var_order'] = 'default'
-  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'], row['subproblems_power'], row['or_nodes'], row['threads_per_block'], row['search'], row['eps_value_order'], row['eps_var_order'], row['seed']), axis=1)
+  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'], row['subproblems_power'], row['subfactor'], row['or_nodes'], row['threads_per_block'], row['search'], row['eps_value_order'], row['eps_var_order'], row['seed']), axis=1)
   all_xp['short_uid'] = all_xp['uid'].apply(make_short_uid)
   if 'solveTime' in all_xp:
     all_xp['nodes_per_second'] = all_xp['nodes'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
