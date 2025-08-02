@@ -200,6 +200,9 @@ def read_experiments(experiments):
     all_xp['normalized_deductions_per_node'] = 0
     all_xp['normalized_fp_iterations_per_second'] = 0
     all_xp['normalized_fp_iterations_per_node'] = 0
+    all_xp['dive_time'] = all_xp['dive_time'].fillna(0).astype(float) if 'dive_time' in all_xp else 0.0
+    all_xp['preprocessing_time'] = all_xp['preprocessing_time'].fillna(0).astype(float) if 'preprocessing_time' in all_xp else 0.0
+    all_xp['subproblem_solve_time'] = all_xp['solveTime'] - all_xp['preprocessing_time'] - all_xp['dive_time']
   all_xp = all_xp.copy() # to avoid a warning about fragmented frame.
   all_xp['normalized_propagator_mem'] = 0
   all_xp['normalized_store_mem'] = 0
@@ -511,6 +514,13 @@ def plot_time_distribution(arch, df):
   elif arch == "gpu":
     time_columns = gpu_time_cols
 
+
+  df2 = df[df['num_blocks_done'] == 0]
+  df2['proportion_fixpoint'] = df2['fixpoint_time'] / (df2['solveTime'] - df2['preprocessing_time'])
+  print("Average proportion of time spent in fixpoint: ", df2['proportion_fixpoint'].mean())
+  print("Median proportion of time spent in fixpoint: ", df2['proportion_fixpoint'].median())
+  print("Standard deviation of proportion of time spent in fixpoint: ", np.std(df2['proportion_fixpoint'], ddof=0))
+
   # Remove the problems that could be solved (not unknown).
   df = df[(df['status'] != 'OPTIMAL_SOLUTION') & (df['status'] != 'UNSATISFIABLE')]
 
@@ -547,6 +557,41 @@ def plot_time_distribution(arch, df):
 
   # Show plot
   plt.show()
+
+def dive_solve_distribution(df, plot=False):
+  time_columns = [
+    "preprocessing_time",
+    "dive_time",
+    "subproblem_solve_time"
+  ]
+
+  df2 = df[df['num_blocks_done'] == 0]
+  df2['proportion_diving'] = df2['dive_time'] / (df2['dive_time'] + df2['subproblem_solve_time'])
+  print("Average proportion of time spent in diving: ", df2['proportion_diving'].mean())
+  print("Median proportion of time spent in diving: ", df2['proportion_diving'].median())
+  print("Standard deviation of proportion of time spent in diving: ", np.std(df2['proportion_diving'], ddof=0))
+
+  if plot:
+    df.sort_values(by="problem_uid", ascending=False, inplace=True)
+    # Set the problem names as index
+    df.set_index("problem_uid", inplace=True)
+
+    num_row = df.shape[0]
+
+
+    # Plot
+    colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2"]
+    ax = df[time_columns].plot(kind='barh', stacked=True, figsize=(10, num_row / 2.5), color=colors)
+
+    # Add labels and title
+    plt.xlabel("Time (seconds)")
+    plt.ylabel("Problem")
+    plt.title("Time Distribution in Solver Components for Each Problem")
+    plt.legend(title="Time Component", bbox_to_anchor=(1.05, 1), loc='upper left')
+    plt.tight_layout()
+
+    # Show plot
+    plt.show()
 
 def boxplot_preprocessing_components(df, components):
   pass
