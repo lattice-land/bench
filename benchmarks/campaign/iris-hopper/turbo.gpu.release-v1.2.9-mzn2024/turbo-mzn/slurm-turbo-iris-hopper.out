@@ -5,16 +5,6 @@
 + BENCHMARKS_DIR_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../..
 + '[' -z iris-hopper.sh ']'
 + source /mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/iris-hopper.sh
-++ module use /work/projects/software_set/easybuild/iris/2023b/hopper/modules/all
-++ '[' -z '' ']'
-++ case "$-" in
-++ __lmod_sh_dbg=x
-++ '[' -n x ']'
-++ set +x
-Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
-Shell debugging restarted
-++ unset __lmod_sh_dbg
-++ return 0
 ++ module load system/CUDA
 ++ '[' -z '' ']'
 ++ case "$-" in
@@ -101,7 +91,8 @@ Shell debugging restarted
 + WAC1_THRESHOLD=0
 ++ basename iris-hopper.sh .sh
 + MACHINE=iris-hopper
-+ INSTANCES_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../benchmarking/mzn2024_patch2.csv
++ INSTANCES_PATH=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../benchmarking/mzn2024.csv
++ SUBFACTOR=300
 + EXTRA_ARGS_TURBO=' '
 + MZN_COMMAND='minizinc --solver turbo.gpu.release -s --json-stream -t 1260000 --output-mode json --output-time --output-objective -p 0 -arch barebones -fp wac1 -wac1_threshold 0 -hardware iris-hopper -version v1.2.9 -timeout 1200000   '
 + OUTPUT_DIR=/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/iris-hopper/turbo.gpu.release-v1.2.9-mzn2024

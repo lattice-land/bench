@@ -1,0 +1,3 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.9_barebones_wac1_0_neighbours-rect_neightbours-new-2_1cores_0threads_timeout1200000ms_eps_var_order_random_eps_value_order_split_seed_42", "problem": "neighbours", "model": "../data/mzn-challenge/2024/neighbours/neighbours-rect.mzn", "data_file": "../data/mzn-challenge/2024/neighbours/neightbours-new-2.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.9", "timeout_ms": "1200000", "datetime": "2025-08-01T13:35:31.516928", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0"}}
+srun: error: Unable to create step for job 4261438: Job/step already completing or completed
