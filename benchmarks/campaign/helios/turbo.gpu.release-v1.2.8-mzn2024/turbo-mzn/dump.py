@@ -5,6 +5,7 @@ import os
 import minizinc
 import json
 import datetime
+import shutil
 
 if os.environ.get("MZN_DEBUG", "OFF") == "ON":
   import logging
@@ -23,8 +24,9 @@ if __name__ == "__main__":
   arch = sys.argv[10]
   fp = sys.argv[11]
   wac1_threshold = sys.argv[12]
+  subfactor = sys.argv[13]
   extras = []
-  for i in range(13, len(sys.argv)):
+  for i in range(14, len(sys.argv)):
     arg = sys.argv[i].strip().replace(' ', '-')
     if arg != "" and arg != "-s": # we use "-s" when there are "no special options to be used".
       extras.append(arg)
@@ -38,6 +40,7 @@ if __name__ == "__main__":
   if cores != "1" or threads != "1":
     uid += f"_{cores}cores_{threads}threads"
   uid += f"_timeout{timeout_ms}ms"
+  uid += f"_subfactor{subfactor}"
   if len(extras) > 0:
     uid += "_"
     uid += "_".join(extras)
@@ -62,7 +65,8 @@ if __name__ == "__main__":
     "threads": threads,
     "arch": arch,
     "fixpoint": fp,
-    "wac1_threshold": wac1_threshold
+    "wac1_threshold": wac1_threshold,
+    "subfactor": subfactor
   }
 
   # If the file exists, we do not delete what is already inside but append new content.
@@ -78,3 +82,6 @@ if __name__ == "__main__":
     for line in stdin:
       file.write(line)
       file.flush()
+  # src = "/tmp/tmp.fzn"
+  # dst = "/home/ptalbot/repositories/lattice-land/turbo/benchmarks/data/mzn2024/" + model.stem + "_" + data.stem + ".fzn"
+  # shutil.copyfile(src, dst)
