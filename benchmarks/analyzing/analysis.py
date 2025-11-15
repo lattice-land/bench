@@ -33,7 +33,7 @@ def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machin
   if 'java11' in config:
     uid += '_java11'
   if mzn_solver == 'turbo.gpu.release':
-    if int(subproblems_power) != -1:
+    if int(subproblems_power) != -1 and int(subproblems_power) != 0:
       uid += '_' + str(int(subproblems_power)) + "sub"
     if int(or_nodes) != 0:
       uid += '_' + str(int(or_nodes)) + "blk"
@@ -214,6 +214,8 @@ def read_experiments(experiments):
 def intersect(df):
   # Group by 'mzn_solver' and convert the 'model_data_file' column to a set
   solver_instance = df.groupby('uid')['model_data_file'].apply(set)
+
+  # print(solver_instance)
 
   # Intersection of the solvers' instances.
   target_set = solver_instance.iloc[0]
@@ -458,7 +460,7 @@ def compare_solvers_pie_chart(df, uid1, uid2, uid1_label = None, uid2_label = No
     pivot_df = compare_solvers(df, uid1, uid2, uid1_label, uid2_label)
     # Get counts for each category
     category_counts = pivot_df['Comparison'].value_counts()
-
+    print(category_counts)
     color_mapping = {
         f'{uid1_label} better': 'green',
         f'{uid2_label} better': 'orange',
