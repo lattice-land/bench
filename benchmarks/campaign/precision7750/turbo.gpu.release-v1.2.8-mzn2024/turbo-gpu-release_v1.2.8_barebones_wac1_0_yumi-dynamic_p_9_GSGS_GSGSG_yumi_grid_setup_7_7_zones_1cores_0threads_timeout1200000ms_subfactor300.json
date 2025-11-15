@@ -1,0 +1,8 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_wac1_0_yumi-dynamic_p_9_GSGS_GSGSG_yumi_grid_setup_7_7_zones_1cores_0threads_timeout1200000ms_subfactor300", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_9_GSGS_GSGSG_yumi_grid_setup_7_7_zones.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2025-11-15T01:41:28.206176", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0", "subfactor": "300"}}
+ERROR: ld.so: object '/lib/$LIB/liblsp.so' from /etc/ld.so.preload cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/lib/$LIB/liblsp.so' from /etc/ld.so.preload cannot be preloaded (cannot open shared object file): ignored.
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 516568, "flatIntVars": 1640458, "flatBoolConstraints": 186188, "flatIntConstraints": 1998748, "evaluatedReifiedConstraints": 343720, "method": "minimize", "flatTime": 110.084}}
+% WARNING: Annotation add_to_output is unknown and was ignored.
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "status", "status": "UNKNOWN", "time": 209594}

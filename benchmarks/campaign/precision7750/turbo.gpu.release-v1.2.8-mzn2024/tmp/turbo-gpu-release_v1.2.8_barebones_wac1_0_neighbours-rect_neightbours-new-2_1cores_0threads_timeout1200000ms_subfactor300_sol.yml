@@ -1,0 +1,65 @@
+- abstract_domain: pir_itv32_z
+  arch: barebones
+  command_line: /home/ptalbot/repositories/lattice-land/turbo/build/gpu-release/turbo
+    -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -subfactor 300 -stack 0 -fp wac1
+    -wac1_threshold 0 -seed 0 -eps_var_order default -eps_value_order default -version
+    v1.2.8 -hardware 'precision7750' -cutnodes 0 /tmp/mznfilecITlz6.fzn
+  configuration: turbo-gpu-release_v1.2.8_barebones_wac1_0_neighbours-rect_neightbours-new-2_1cores_0threads_timeout1200000ms_subfactor300
+  constraints_after_simplification: 411
+  cores: '1'
+  data_file: ../data/mzn-challenge/2024/neighbours/neightbours-new-2.dzn
+  datetime: '2025-11-14T13:52:43.963548'
+  eliminated_constraints_by_as: 0
+  eliminated_constraints_by_as_fp_iter_1: 0
+  eliminated_constraints_by_icse: 19
+  eliminated_constraints_by_icse_fp_iter_1: 19
+  eliminated_entailed_constraints: 12
+  eliminated_entailed_constraints_fp_iter_1: 12
+  eliminated_equality_constraints: 17
+  eliminated_equality_constraints_fp_iter_1: 17
+  eliminated_variables: 77
+  entailed_prop_removal: deactivated
+  evaluatedReifiedConstraints: 122
+  fixpoint: wac1
+  flatBoolConstraints: 99
+  flatBoolVars: 134
+  flatIntConstraints: 102
+  flatIntVars: 9
+  flatTime: 0.127004
+  heap_memory: 37993688
+  icse_fixpoint_iterations: 3
+  icse_fixpoint_iterations_fp_iter_1: 2
+  mem_per_block: 395528
+  memory_configuration: tcn_shared
+  method: maximize
+  model: ../data/mzn-challenge/2024/neighbours/neighbours-rect.mzn
+  mzn_solver: turbo.gpu.release
+  num_blocks: 96
+  parsed_constraints: 228
+  parsed_variables: 159
+  paths: 0
+  preprocessing_fixpoint_iterations: 2
+  preprocessing_time: 0.014
+  problem: neighbours
+  propagator_mem: 6704
+  shared_mem: 9872
+  solution:
+    objective: 17
+    x:
+    - [1, 2]
+    - [4, 3]
+    - [2, 1]
+    - [3, 1]
+  status: SATISFIED
+  store_mem: 3040
+  subfactor: '300'
+  subproblems_power: -1
+  threads: '0'
+  time: 3.446
+  timeout_ms: '1200000'
+  tnf_constraints: 459
+  tnf_variables: 411
+  total_global_mem_bytes: 16703094784
+  variables_after_simplification: 371
+  version: v1.2.8
+  wac1_threshold: '0'
