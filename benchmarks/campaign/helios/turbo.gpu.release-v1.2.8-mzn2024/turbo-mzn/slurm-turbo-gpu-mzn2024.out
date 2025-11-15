@@ -136,7 +136,7 @@ Shell debugging restarted
 + '[' -n '' ']'
 + MZN_SOLVER=turbo.gpu.release
 + VERSION=v1.2.8
-+ MZN_TIMEOUT=1260000
++ MZN_TIMEOUT=3600000
 + REAL_TIMEOUT=1200000
 + ARCH=barebones
 + CORES=1
@@ -145,13 +145,13 @@ Shell debugging restarted
 + WAC1_THRESHOLD=0
 ++ basename helios.sh .sh
 + MACHINE=helios
-+ INSTANCES_PATH=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../benchmarking/mzn2024.csv
++ INSTANCES_PATH=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../benchmarking/mzn2024_patch.csv
 + SUBFACTOR=300
 + EXTRA_ARGS_TURBO=' '
-+ MZN_COMMAND='minizinc --solver turbo.gpu.release -s --json-stream -t 1260000 --output-mode json --output-time --output-objective -p 0 -arch barebones -fp wac1 -wac1_threshold 0 -subfactor 300 -hardware helios -version v1.2.8 -timeout 1200000   '
++ MZN_COMMAND='minizinc --solver turbo.gpu.release -s --json-stream -t 3600000 --output-mode json --output-time --output-objective -p 0 -arch barebones -fp wac1 -wac1_threshold 0 -subfactor 300 -hardware helios -version v1.2.8 -timeout 1200000   '
 + OUTPUT_DIR=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.8-mzn2024
 + mkdir -p /net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/../../campaign/helios/turbo.gpu.release-v1.2.8-mzn2024
-+ '[' -n x1002c2s4b1n0 ']'
++ '[' -n x1002c6s2b1n0 ']'
 + SRUN_COMMAND='srun --exclusive --cpus-per-task=1 --gpus-per-task=1 --nodes=1 --ntasks=1 --cpu-bind=verbose'
 + NUM_PARALLEL_EXPERIMENTS=4
 + DUMP_PY_PATH=/net/scratch/hscra/plgrid/plgptalbot/lattice-land/bench/benchmarks/benchmarking/turbo-mzn/dump.py
