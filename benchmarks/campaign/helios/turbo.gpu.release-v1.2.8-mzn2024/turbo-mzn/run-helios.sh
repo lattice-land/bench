@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --time=10:00:00
+#SBATCH --time=01:10:00
 #SBATCH -p plgrid-gpu-gh200
 #SBATCH -A plgturbo-gpu-gh200
 #SBATCH --gres=gpu:4
@@ -40,7 +40,7 @@ fi
 MZN_SOLVER="turbo.gpu.release"
 VERSION="v1.2.8" # Note that this is only for the naming of the output directory, we do not verify the actual version of the solver.
 # This is to avoid MiniZinc to kill Turbo before it can print the statistics.
-MZN_TIMEOUT=1260000
+MZN_TIMEOUT=3600000
 REAL_TIMEOUT=1200000
 ARCH="barebones"
 CORES=1 # The number of core used on the node.
@@ -48,7 +48,7 @@ THREADS=0 # The number of core used on the node.
 FP="wac1"
 WAC1_THRESHOLD=0
 MACHINE=$(basename "$1" ".sh")
-INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024.csv"
+INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024_patch.csv"
 SUBFACTOR=300
 EXTRA_ARGS_TURBO=" "
 
