@@ -1,0 +1,5 @@
+{arch: barebones, configuration: turbo-gpu-release_v1.2.8_barebones_wac1_0_aircraft_B737NG-600-04-Anon.json_1cores_0threads_timeout1200000ms_subfactor300,
+  cores: '1', data_file: ../data/mzn-challenge/2024/aircraft-disassembly/B737NG-600-04-Anon.json.dzn,
+  datetime: '2025-11-14T12:25:02.969320', fixpoint: wac1, model: ../data/mzn-challenge/2024/aircraft-disassembly/aircraft.mzn,
+  mzn_solver: turbo.gpu.release, problem: aircraft-disassembly, status: UNKNOWN, subfactor: '300',
+  threads: '0', timeout_ms: '1200000', version: v1.2.8, wac1_threshold: '0'}

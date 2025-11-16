@@ -1,0 +1,70 @@
+- abstract_domain: pir_itv32_z
+  arch: barebones
+  command_line: /home/ptalbot/repositories/lattice-land/turbo/build/gpu-release/turbo
+    -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -subfactor 300 -stack 0 -fp wac1
+    -wac1_threshold 0 -seed 0 -eps_var_order default -eps_value_order default -version
+    v1.2.8 -hardware 'precision7750' -cutnodes 0 /tmp/mznfileBVvSb9.fzn
+  configuration: turbo-gpu-release_v1.2.8_barebones_wac1_0_ctw_A046_1cores_0threads_timeout1200000ms_subfactor300
+  constraints_after_simplification: 42091
+  cores: '1'
+  data_file: ../data/mzn-challenge/2024/cable-tree-wiring/A046.dzn
+  datetime: '2025-11-14T07:42:18.889094'
+  eliminated_constraints_by_as: 0
+  eliminated_constraints_by_as_fp_iter_1: 0
+  eliminated_constraints_by_icse: 0
+  eliminated_constraints_by_icse_fp_iter_1: 0
+  eliminated_entailed_constraints: 0
+  eliminated_entailed_constraints_fp_iter_1: 0
+  eliminated_equality_constraints: 6610
+  eliminated_equality_constraints_fp_iter_1: 6610
+  eliminated_variables: 6640
+  entailed_prop_removal: deactivated
+  evaluatedReifiedConstraints: 6481
+  fixpoint: wac1
+  flatBoolConstraints: 6315
+  flatBoolVars: 12721
+  flatIntConstraints: 21044
+  flatIntVars: 6874
+  flatTime: 0.462828
+  heap_memory: 368900448
+  icse_fixpoint_iterations: 2
+  icse_fixpoint_iterations_fp_iter_1: 1
+  mem_per_block: 3820688
+  memory_configuration: global
+  method: minimize
+  model: ../data/mzn-challenge/2024/cable-tree-wiring/ctw.mzn
+  mzn_solver: turbo.gpu.release
+  num_blocks: 96
+  parsed_constraints: 34474
+  parsed_variables: 19834
+  paths: 0
+  preprocessing_fixpoint_iterations: 2
+  preprocessing_time: 1.673
+  problem: cable-tree-wiring
+  propagator_mem: 673584
+  shared_mem: 0
+  solution:
+    cfp: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+      22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+      41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59,
+      60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78,
+      79, 80]
+    objective: 18558417
+    pfc: [22, 35, 37, 44, 50, 53, 58, 60, 69, 72, 17, 23, 25, 27, 29, 32, 34, 36,
+      43, 24, 49, 52, 59, 71, 74, 76, 26, 28, 30, 31, 33, 1, 18, 19, 57, 62, 64, 10,
+      13, 14, 65, 55, 48, 51, 40, 39, 41, 2, 70, 73, 12, 16, 67, 66, 3, 4, 46, 45,
+      42, 77, 47, 38, 21, 80, 75, 15, 78, 79, 8, 7, 5, 20, 68, 63, 54, 56, 61, 6,
+      9, 11]
+  status: SATISFIED
+  store_mem: 287944
+  subfactor: '300'
+  subproblems_power: -1
+  threads: '0'
+  time: 1200.684
+  timeout_ms: '1200000'
+  tnf_constraints: 48701
+  tnf_variables: 42594
+  total_global_mem_bytes: 16703094784
+  variables_after_simplification: 35984
+  version: v1.2.8
+  wac1_threshold: '0'

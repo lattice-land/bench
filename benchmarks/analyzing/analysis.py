@@ -14,7 +14,7 @@ import textwrap
 from statistics import mean, median, stdev
 
 # A tentative to have unique experiment names.
-def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, subproblems_power, or_nodes, threads_per_block, search, eps_val, eps_var, seed):
+def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machine, cores, timeout_ms, subproblems_power, subproblems_factor, or_nodes, threads_per_block, search, eps_val, eps_var, seed):
   uid = mzn_solver + "_" + str(version) + '_' + machine
   if str(timeout_ms) == "inf":
     uid += "_notimeout"
@@ -33,7 +33,9 @@ def make_uid(config, arch, fixpoint, wac1_threshold, mzn_solver, version, machin
   if 'java11' in config:
     uid += '_java11'
   if mzn_solver == 'turbo.gpu.release':
-    if int(subproblems_power) != -1 and int(subproblems_power) != 0:
+    if int(subproblems_factor) != 30:
+      uid += '_' + str(int(subproblems_factor)) + "sf"
+    if int(subproblems_power) > 0:
       uid += '_' + str(int(subproblems_power)) + "sub"
     if int(or_nodes) != 0:
       uid += '_' + str(int(or_nodes)) + "blk"
@@ -92,6 +94,7 @@ def read_experiments(experiments):
   for e in experiments:
     df = pd.read_csv(e)
     df.rename(columns={"timeout_sec": "timeout_ms"}) # due to a mistake in the naming of that column.
+    df.rename(columns={"subfactor": "subproblems_factor"}) # due to a mistake in the naming of that column.
     if "java11" in e:
       df['configuration'] = df['configuration'].apply(lambda x: x + "_java11")
     # Find how many subproblems are running in parallel.
@@ -144,6 +147,8 @@ def read_experiments(experiments):
       print(f"{e}: {len(failed_xps)} failed experiments using turbo.gpu.release have been removed (the faulty experiments have been stored in {failed_xps_path}).")
     if 'search' not in df:
       df['search'] = 'user_defined'
+    if 'subproblems_factor' not in df:
+      df['subproblems_factor'] = 30
     if 'best_obj_time' not in df:
       obj_df = pd.read_csv(os.path.splitext(e)[0] + "-objectives.csv")
       # Convert the objective column to numeric (in case it contains non-numeric values)
@@ -187,7 +192,8 @@ def read_experiments(experiments):
     all_xp['eps_value_order'] = 'default'
   if 'eps_var_order' not in all_xp:
     all_xp['eps_var_order'] = 'default'
-  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'], row['subproblems_power'], row['or_nodes'], row['threads_per_block'], row['search'], row['eps_value_order'], row['eps_var_order'], row['seed']), axis=1)
+  all_xp['subproblems_factor'] = all_xp['subproblems_factor'].fillna(30).astype(int)
+  all_xp['uid'] = all_xp.apply(lambda row: make_uid(row['configuration'], row['arch'], row['fixpoint'], row['wac1_threshold'], row['mzn_solver'], row['version'], row['machine'], row['cores'], row['timeout_ms'], row['subproblems_power'], row['subproblems_factor'], row['or_nodes'], row['threads_per_block'], row['search'], row['eps_value_order'], row['eps_var_order'], row['seed']), axis=1)
   all_xp['short_uid'] = all_xp['uid'].apply(make_short_uid)
   if 'solveTime' in all_xp:
     all_xp['nodes_per_second'] = all_xp['nodes'] / (all_xp['solveTime'] - all_xp['preprocessing_time'])
@@ -487,6 +493,18 @@ def list_problem_where_leq(df, key, uid1, uid2):
   comparison_df = pd.merge(df1[['model_data_file', key]], df2[['model_data_file', key]], on='model_data_file', suffixes=('_1', '_2'))
   # Find where key is greater on df2
   return comparison_df[comparison_df[key+"_1"] > comparison_df[key+"_2"]]
+
+def block_idling_analysis(df, uids):
+  print("uid | problems with blocks idling | avg proportion idling | median proportion idling | std proportion idling")
+  print("--- | --- | --- | --- | ---")
+  for uid in uids:
+    df2 = df[df['uid'] == uid]
+    df2 = df2[df2['num_blocks_done'] > 0]
+    df2 = df2[(df2['status'] != 'OPTIMAL_SOLUTION') & (df2['status'] != 'UNSATISFIABLE')]
+
+    df2['proportion_idling'] = df2['num_blocks_done'] / df2['num_blocks']
+
+    print(f"{uid} | {df2.shape[0]} | {df2['proportion_idling'].mean():.2f} | {df2['proportion_idling'].median():.2f} | {np.std(df2['proportion_idling'], ddof=0):.2f}")
 
 def plot_time_distribution(arch, df):
   hybrid_time_cols = [
