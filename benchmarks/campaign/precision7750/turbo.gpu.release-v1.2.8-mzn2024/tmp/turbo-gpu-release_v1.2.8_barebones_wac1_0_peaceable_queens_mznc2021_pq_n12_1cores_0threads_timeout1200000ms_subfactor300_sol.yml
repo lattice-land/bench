@@ -1,0 +1,205 @@
+- abstract_domain: pir_itv32_z
+  arch: barebones
+  command_line: /home/ptalbot/repositories/lattice-land/turbo/build/gpu-release/turbo
+    -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -subfactor 300 -stack 0 -fp wac1
+    -wac1_threshold 0 -seed 0 -eps_var_order default -eps_value_order default -version
+    v1.2.8 -hardware 'precision7750' -cutnodes 0 /tmp/mznfileKSSDvJ.fzn
+  configuration: turbo-gpu-release_v1.2.8_barebones_wac1_0_peaceable_queens_mznc2021_pq_n12_1cores_0threads_timeout1200000ms_subfactor300
+  constraints_after_simplification: 43274
+  cores: '1'
+  data_file: ../data/mzn-challenge/2024/peacable_queens/pq_n12.dzn
+  datetime: '2025-11-14T23:33:42.394740'
+  eliminated_constraints_by_as: 2
+  eliminated_constraints_by_as_fp_iter_1: 2
+  eliminated_constraints_by_icse: 4605
+  eliminated_constraints_by_icse_fp_iter_1: 4605
+  eliminated_entailed_constraints: 2490
+  eliminated_entailed_constraints_fp_iter_1: 2490
+  eliminated_equality_constraints: 2220
+  eliminated_equality_constraints_fp_iter_1: 2220
+  eliminated_variables: 9153
+  entailed_prop_removal: deactivated
+  evaluatedReifiedConstraints: 5805
+  fixpoint: wac1
+  flatBoolConstraints: 7828
+  flatBoolVars: 7733
+  flatIntConstraints: 5168
+  flatIntVars: 1478
+  flatTime: 0.683976
+  heap_memory: 374056360
+  icse_fixpoint_iterations: 4
+  icse_fixpoint_iterations_fp_iter_1: 3
+  mem_per_block: 3874232
+  memory_configuration: global
+  method: maximize
+  model: ../data/mzn-challenge/2024/peacable_queens/peaceable_queens_mznc2021.mzn
+  mzn_solver: turbo.gpu.release
+  num_blocks: 96
+  parsed_constraints: 19508
+  parsed_variables: 9931
+  paths: 0
+  preprocessing_fixpoint_iterations: 2
+  preprocessing_time: 2.87
+  problem: peacable_queens
+  propagator_mem: 692512
+  shared_mem: 0
+  solution:
+    objective: 10
+    x:
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: BLACK}
+      - {e: EMPTY}
+      - {e: BLACK}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: BLACK}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: BLACK}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: BLACK}
+      - {e: BLACK}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: WHITE}
+      - {e: WHITE}
+      - {e: WHITE}
+      - {e: WHITE}
+      - {e: WHITE}
+      - {e: WHITE}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: BLACK}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: BLACK}
+      - {e: BLACK}
+      - {e: BLACK}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: WHITE}
+      - {e: EMPTY}
+      - {e: WHITE}
+      - {e: WHITE}
+      - {e: WHITE}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+  status: SATISFIED
+  store_mem: 287296
+  subfactor: '300'
+  subproblems_power: -1
+  threads: '0'
+  time: 1200.904
+  timeout_ms: '1200000'
+  tnf_constraints: 52591
+  tnf_variables: 45020
+  total_global_mem_bytes: 16703094784
+  variables_after_simplification: 35903
+  version: v1.2.8
+  wac1_threshold: '0'

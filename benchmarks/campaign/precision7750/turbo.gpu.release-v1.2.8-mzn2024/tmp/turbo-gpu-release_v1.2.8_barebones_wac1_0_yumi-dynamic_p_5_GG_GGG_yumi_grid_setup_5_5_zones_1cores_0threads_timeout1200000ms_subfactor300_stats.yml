@@ -1,0 +1,7 @@
+{arch: barebones, configuration: turbo-gpu-release_v1.2.8_barebones_wac1_0_yumi-dynamic_p_5_GG_GGG_yumi_grid_setup_5_5_zones_1cores_0threads_timeout1200000ms_subfactor300,
+  cores: '1', data_file: ../data/mzn-challenge/2024/yumi-dynamic/p_5_GG_GGG_yumi_grid_setup_5_5_zones.dzn,
+  datetime: '2025-11-15T01:17:51.399063', evaluatedReifiedConstraints: 99498, fixpoint: wac1,
+  flatBoolConstraints: 52977, flatBoolVars: 149279, flatIntConstraints: 391000, flatIntVars: 286548,
+  flatTime: 16.5203, method: minimize, model: ../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn,
+  mzn_solver: turbo.gpu.release, paths: 0, problem: yumi-dynamic, status: UNKNOWN,
+  subfactor: '300', threads: '0', timeout_ms: '1200000', version: v1.2.8, wac1_threshold: '0'}
