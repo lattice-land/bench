@@ -94,9 +94,12 @@ def read_experiments(experiments):
   for e in experiments:
     df = pd.read_csv(e)
     df.rename(columns={"timeout_sec": "timeout_ms"}) # due to a mistake in the naming of that column.
-    df.rename(columns={"subfactor": "subproblems_factor"}) # due to a mistake in the naming of that column.
     if "java11" in e:
       df['configuration'] = df['configuration'].apply(lambda x: x + "_java11")
+    # Fix a bug
+    if 'subproblems_factor' in df:
+      if df['subproblems_factor'].iloc[0] == "lu":
+        df['subproblems_factor'] = df['subfactor']
     # Find how many subproblems are running in parallel.
     if 'or_nodes' not in df:
       if 'threads' in df:
@@ -357,6 +360,8 @@ def metrics_table(df):
     best_nodes_per_second=('normalized_nodes_per_second', lambda x: x[x >= 100.0].count()),
     avg_deductions_per_node=('deductions_per_node', lambda x: x[x != 0].mean()),
     median_deductions_per_node=('deductions_per_node', lambda x: x[x != 0].median()),
+    avg_deductions_per_block_second=('deductions_per_block_second', lambda x: x[x != 0].mean()),
+    median_deductions_per_block_second=('deductions_per_block_second', lambda x: x[x != 0].median()),
     avg_normalized_deductions_per_node=('normalized_deductions_per_node', lambda x: x[x != 0].mean()),
     median_normalized_deductions_per_node=('normalized_deductions_per_node', lambda x: x[x != 0].median()),
     best_deductions_per_node=('normalized_deductions_per_node', lambda x: x[x < 100.0].count()),
