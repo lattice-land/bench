@@ -1,0 +1,247 @@
+- abstract_domain: pir_itv32_z
+  arch: barebones
+  command_line: /home/ptalbot/repositories/lattice-land/turbo/build/gpu-release/turbo
+    -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -subfactor 300 -stack 0 -fp wac1
+    -wac1_threshold 0 -seed 0 -eps_var_order default -eps_value_order default -version
+    v1.2.8 -hardware 'precision5820' -cutnodes 0 /tmp/mznfileIYm1rc.fzn
+  configuration: 
+    turbo-gpu-release_v1.2.8_barebones_wac1_0_harmony_brother_1cores_0threads_timeout1200000ms_subfactor300
+  constraints_after_simplification: 17925
+  cores: '1'
+  data_file: ../data/mzn-challenge/2024/harmony/brother.dzn
+  datetime: '2025-11-14T23:03:58.106035'
+  eliminated_constraints_by_as: 816
+  eliminated_constraints_by_as_fp_iter_1: 816
+  eliminated_constraints_by_as_fp_iter_2: 0
+  eliminated_constraints_by_icse: 20795
+  eliminated_constraints_by_icse_fp_iter_1: 20795
+  eliminated_constraints_by_icse_fp_iter_2: 0
+  eliminated_entailed_constraints: 9157
+  eliminated_entailed_constraints_fp_iter_1: 5860
+  eliminated_entailed_constraints_fp_iter_2: 3297
+  eliminated_equality_constraints: 5008
+  eliminated_equality_constraints_fp_iter_1: 3887
+  eliminated_equality_constraints_fp_iter_2: 1121
+  eliminated_variables: 30765
+  entailed_prop_removal: deactivated
+  evaluatedReifiedConstraints: 2509
+  fixpoint: wac1
+  flatBoolConstraints: 4693
+  flatBoolVars: 2963
+  flatIntConstraints: 4017
+  flatIntVars: 2768
+  flatTime: 0.513098
+  heap_memory: 228382584
+  icse_fixpoint_iterations: 5
+  icse_fixpoint_iterations_fp_iter_1: 3
+  icse_fixpoint_iterations_fp_iter_2: 1
+  mem_per_block: 1777640
+  memory_configuration: global
+  method: minimize
+  model: ../data/mzn-challenge/2024/harmony/harmony.mzn
+  mzn_solver: turbo.gpu.release
+  num_blocks: 128
+  parsed_constraints: 21208
+  parsed_variables: 7619
+  paths: 0
+  preprocessing_fixpoint_iterations: 3
+  preprocessing_time: 1.386
+  problem: harmony
+  propagator_mem: 286928
+  shared_mem: 0
+  solution:
+    cadences:
+    - - {e: I}
+      - {e: IV}
+    - - {e: I}
+      - {e: IV}
+    - - {e: I}
+      - {e: iii}
+    - - {e: I}
+      - {e: V}
+    - - {e: I}
+      - {e: IV}
+    - - {e: I}
+      - {e: vi}
+    - - {e: IV}
+      - {e: I}
+    - - {e: IV}
+      - {e: I}
+    chords:
+    - {e: vi}
+    - {e: ii}
+    - {e: I}
+    - {e: IV}
+    - {e: I}
+    - {e: ii}
+    - {e: I}
+    - {e: IV}
+    - {e: I}
+    - {e: ii}
+    - {e: I}
+    - {e: iii}
+    - {e: I}
+    - {e: ii}
+    - {e: I}
+    - {e: V}
+    - {e: I}
+    - {e: ii}
+    - {e: I}
+    - {e: IV}
+    - {e: I}
+    - {e: ii}
+    - {e: I}
+    - {e: vi}
+    - {e: I}
+    - {e: iii}
+    - {e: IV}
+    - {e: I}
+    - {e: IV}
+    - {e: I}
+    - {e: IV}
+    - {e: I}
+    music:
+    - - {c: Pitch, e: 72}
+      - {c: Pitch, e: 74}
+      - {c: Pitch, e: 76}
+      - {c: Pitch, e: 72}
+      - {c: Pitch, e: 72}
+      - {c: Pitch, e: 74}
+      - {c: Pitch, e: 76}
+      - {c: Pitch, e: 72}
+      - {c: Pitch, e: 76}
+      - {c: Pitch, e: 77}
+      - {c: Pitch, e: 79}
+      - {c: Pitch, e: 79}
+      - {c: Pitch, e: 76}
+      - {c: Pitch, e: 77}
+      - {c: Pitch, e: 79}
+      - {c: Pitch, e: 79}
+      - {c: Pitch, e: 79}
+      - {c: Pitch, e: 65}
+      - {c: Pitch, e: 76}
+      - {c: Pitch, e: 72}
+      - {c: Pitch, e: 79}
+      - {c: Pitch, e: 65}
+      - {c: Pitch, e: 76}
+      - {c: Pitch, e: 72}
+      - {c: Pitch, e: 72}
+      - {c: Pitch, e: 67}
+      - {c: Pitch, e: 72}
+      - {c: Pitch, e: 72}
+      - {c: Pitch, e: 72}
+      - {c: Pitch, e: 67}
+      - {c: Pitch, e: 72}
+      - {c: Pitch, e: 72}
+    - - {c: Pitch, e: 64}
+      - {c: Pitch, e: 62}
+      - {c: Pitch, e: 67}
+      - {c: Pitch, e: 60}
+      - {c: Pitch, e: 64}
+      - {c: Pitch, e: 62}
+      - {c: Pitch, e: 67}
+      - {c: Pitch, e: 65}
+      - {c: Pitch, e: 64}
+      - {c: Pitch, e: 69}
+      - {c: Pitch, e: 67}
+      - {c: Pitch, e: 71}
+      - {c: Pitch, e: 64}
+      - {c: Pitch, e: 69}
+      - {c: Pitch, e: 67}
+      - {c: Pitch, e: 71}
+      - {c: Pitch, e: 67}
+      - {c: Pitch, e: 57}
+      - {c: Pitch, e: 64}
+      - {c: Pitch, e: 65}
+      - {c: Pitch, e: 67}
+      - {c: Pitch, e: 57}
+      - {c: Pitch, e: 64}
+      - {c: Pitch, e: 64}
+      - {c: Pitch, e: 60}
+      - {c: Pitch, e: 59}
+      - {c: Pitch, e: 60}
+      - {c: Pitch, e: 64}
+      - {c: Pitch, e: 60}
+      - {c: Pitch, e: 60}
+      - {c: Pitch, e: 69}
+      - {c: Pitch, e: 60}
+    - - {c: Pitch, e: 52}
+      - {c: Pitch, e: 53}
+      - {c: Pitch, e: 55}
+      - {c: Pitch, e: 53}
+      - {c: Pitch, e: 52}
+      - {c: Pitch, e: 53}
+      - {c: Pitch, e: 55}
+      - {c: Pitch, e: 57}
+      - {c: Pitch, e: 55}
+      - {c: Pitch, e: 62}
+      - {c: Pitch, e: 64}
+      - {c: Pitch, e: 64}
+      - {c: Pitch, e: 55}
+      - {c: Pitch, e: 62}
+      - {c: Pitch, e: 64}
+      - {c: Pitch, e: 59}
+      - {c: Pitch, e: 60}
+      - {c: Pitch, e: 53}
+      - {c: Pitch, e: 55}
+      - {c: Pitch, e: 53}
+      - {c: Pitch, e: 64}
+      - {c: Pitch, e: 50}
+      - {c: Pitch, e: 55}
+      - {c: Pitch, e: 57}
+      - {c: Pitch, e: 52}
+      - {c: Pitch, e: 52}
+      - {c: Pitch, e: 57}
+      - {c: Pitch, e: 55}
+      - {c: Pitch, e: 53}
+      - {c: Pitch, e: 52}
+      - {c: Pitch, e: 65}
+      - {c: Pitch, e: 52}
+    - - {c: Pitch, e: 45}
+      - {c: Pitch, e: 45}
+      - {c: Pitch, e: 48}
+      - {c: Pitch, e: 45}
+      - {c: Pitch, e: 43}
+      - {c: Pitch, e: 45}
+      - {c: Pitch, e: 48}
+      - {c: Pitch, e: 41}
+      - {c: Pitch, e: 48}
+      - {c: Pitch, e: 41}
+      - {c: Pitch, e: 48}
+      - {c: Pitch, e: 43}
+      - {c: Pitch, e: 48}
+      - {c: Pitch, e: 41}
+      - {c: Pitch, e: 48}
+      - {c: Pitch, e: 50}
+      - {c: Pitch, e: 52}
+      - {c: Pitch, e: 50}
+      - {c: Pitch, e: 48}
+      - {c: Pitch, e: 45}
+      - {c: Pitch, e: 48}
+      - {c: Pitch, e: 41}
+      - {c: Pitch, e: 48}
+      - {c: Pitch, e: 45}
+      - {c: Pitch, e: 43}
+      - {c: Pitch, e: 43}
+      - {c: Pitch, e: 41}
+      - {c: Pitch, e: 48}
+      - {c: Pitch, e: 45}
+      - {c: Pitch, e: 48}
+      - {c: Pitch, e: 48}
+      - {c: Pitch, e: 43}
+    non_doubled_root: 22
+    non_root: 18
+    objective: 85
+  status: SATISFIED
+  store_mem: 111328
+  subfactor: '300'
+  subproblems_power: -1
+  threads: '0'
+  time: 1200.648
+  timeout_ms: '1200000'
+  tnf_constraints: 53701
+  tnf_variables: 44665
+  total_global_mem_bytes: 25259999232
+  variables_after_simplification: 13907
+  version: v1.2.8
+  wac1_threshold: '0'

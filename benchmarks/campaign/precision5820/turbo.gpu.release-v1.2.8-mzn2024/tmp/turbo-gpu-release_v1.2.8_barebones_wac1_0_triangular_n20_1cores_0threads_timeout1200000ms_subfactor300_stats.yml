@@ -1,0 +1,28 @@
+{abstract_domain: pir_itv32_z, arch: barebones, best_obj_time: 147.552, command_line: /home/ptalbot/repositories/lattice-land/turbo/build/gpu-release/turbo
+-t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -subfactor 300 -stack 0 -fp wac1
+-wac1_threshold 0 -seed 0 -eps_var_order default -eps_value_order default -version
+v1.2.8 -hardware 'precision5820' -cutnodes 0 /tmp/mznfilefXlaLr.fzn, configuration: turbo-gpu-release_v1.2.8_barebones_wac1_0_triangular_n20_1cores_0threads_timeout1200000ms_subfactor300,
+constraints_after_simplification: 15051, cores: '1', cuda_version: 13000, cumulative_time_block_sec: 153520.053,
+cutnodes: 0, data_file: ../data/mzn-challenge/2024/triangular/n20.dzn, datetime: '2025-11-15T01:04:08.114797',
+deductions_per_block_second: 799133.342652, dive_time: 0.011, eliminated_constraints_by_as: 0,
+eliminated_constraints_by_as_fp_iter_1: 0, eliminated_constraints_by_icse: 0, eliminated_constraints_by_icse_fp_iter_1: 0,
+eliminated_entailed_constraints: 0, eliminated_entailed_constraints_fp_iter_1: 0,
+eliminated_equality_constraints: 632, eliminated_equality_constraints_fp_iter_1: 632,
+eliminated_variables: 865, entailed_prop_removal: deactivated, eps_num_subproblems: 65536,
+eps_skipped_subproblems: 0, eps_solved_subproblems: 0, eps_value_order: default, eps_var_order: default,
+failures: 62650942, first_block_idle_time: 1200.039, fixpoint: wac1, fixpoint_iterations: 860746337,
+fixpoint_time: 1134.552, flatIntConstraints: 7316, flatIntVars: 211, flatTime: 0.256551,
+free_search: no, hardware: precision5820, heap_memory: 217675704, icse_fixpoint_iterations: 2,
+icse_fixpoint_iterations_fp_iter_1: 1, initTime: 0.469, mem_per_block: 1693928, memory_configuration: global,
+method: maximize, model: ../data/mzn-challenge/2024/triangular/triangular.mzn, mzn_solver: turbo.gpu.release,
+nSolutions: 1, nodes: 125306482, num_blocks: 128, num_blocks_done: 0, num_deductions: 15703423119136,
+num_solutions: 88, objective: 46, or_nodes: 0, parsed_constraints: 8350, parsed_variables: 1032,
+paths: 0, peakDepth: 49, preprocessing_fixpoint_iterations: 2, preprocessing_time: 0.469,
+problem: triangular, problem_path: /tmp/mznfilefXlaLr.fzn, propagator_mem: 240944,
+propagators: 15051, search_time: 30.567, seed: 0, select_fp_functions_time: 34.254,
+shared_mem: 0, solveTime: 1200.04, solve_time: 9.375, solver: Turbo, stack_size: 0,
+status: SATISFIED, store_mem: 122176, subfactor: '300', subproblems_factor: lu, subproblems_power: -1,
+threads: '0', threads_per_block: 256, timeout_ms: 1200000, tnf_constraints: 15683,
+tnf_variables: 16087, total_global_mem_bytes: 25259999232, transfer_cpu2gpu_time: 0.0,
+transfer_gpu2cpu_time: 0.0, variables: 15263, variables_after_simplification: 15263,
+version: v1.2.8, wac1_threshold: 0, wait_cpu_time: 0.0}
