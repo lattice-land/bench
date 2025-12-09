@@ -1,0 +1,8 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_ac1_triangular_n31_1cores_0threads_timeout1200000ms_subfactor300", "problem": "triangular", "model": "../data/mzn-challenge/2024/triangular/triangular.mzn", "data_file": "../data/mzn-challenge/2024/triangular/n31.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2025-12-08T16:04:23.839401", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "ac1", "wac1_threshold": "0", "subfactor": "300"}}
+srun: Step created for StepId=4614185.5
+cpu-bind=MASK - iris-197, task  0  0 [1845896]: mask 0xffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 497, "flatIntConstraints": 40921, "method": "maximize", "flatTime": 0.801498}}
+{"type": "status", "status": "ERROR", "time": 4083}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+srun: error: iris-197: task 0: Exited with exit code 1

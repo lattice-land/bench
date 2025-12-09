@@ -1,0 +1,8 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_ac1_concert-hall-cap_concert_200_20_1cores_0threads_timeout1200000ms_subfactor300", "problem": "concert-hall-cap", "model": "../data/mzn-challenge/2024/concert-hall-cap/concert-hall-cap.mzn", "data_file": "../data/mzn-challenge/2024/concert-hall-cap/concert_200_20.json", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2025-12-08T16:17:11.938055", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "ac1", "wac1_threshold": "0", "subfactor": "300"}}
+srun: Step created for StepId=4614185.70
+cpu-bind=MASK - iris-197, task  0  0 [1855877]: mask 0xffffffff0000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 4178, "flatIntVars": 13066, "flatIntConstraints": 20825, "evaluatedReifiedConstraints": 4178, "method": "maximize", "flatTime": 1.25293}}
+{"type": "status", "status": "ERROR", "time": 14329}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+srun: error: iris-197: task 0: Exited with exit code 1

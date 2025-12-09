@@ -1,0 +1,10 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_ac1_efm_cstr_MODEL1507180022_1cores_0threads_timeout1200000ms_subfactor300", "problem": "network_50_cstr", "model": "../data/mzn-challenge/2024/network_50_cstr/efm_cstr.mzn", "data_file": "../data/mzn-challenge/2024/network_50_cstr/MODEL1507180022.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2025-12-08T16:18:14.952662", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "ac1", "wac1_threshold": "0", "subfactor": "300"}}
+srun: Step created for StepId=4614185.90
+cpu-bind=MASK - iris-197, task  0  0 [1858659]: mask 0xffffffff0000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 1581, "flatIntVars": 2818, "flatBoolConstraints": 1, "flatIntConstraints": 4148, "evaluatedReifiedConstraints": 1581, "method": "minimize", "flatTime": 8.25906}}
+% WARNING: Annotation ctx_neg is unknown and was ignored.
+{"type": "status", "status": "ERROR", "time": 9175}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"command_line": "/mnt/aiongpfs/users/ptalbot/lattice-land/turbo/build/gpu-release/turbo -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -subfactor 300 -stack 0 -fp ac1 -seed 0 -eps_var_order default -eps_value_order default -version v1.2.8 -hardware 'iris-hopper' -cutnodes 0 /tmp/mznfileZCgNdE.fzn"}}
+srun: error: iris-197: task 0: Exited with exit code 1

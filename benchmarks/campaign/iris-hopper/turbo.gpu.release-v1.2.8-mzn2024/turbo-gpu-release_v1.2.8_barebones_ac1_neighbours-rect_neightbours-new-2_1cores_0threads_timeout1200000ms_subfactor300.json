@@ -1,0 +1,8 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_ac1_neighbours-rect_neightbours-new-2_1cores_0threads_timeout1200000ms_subfactor300", "problem": "neighbours", "model": "../data/mzn-challenge/2024/neighbours/neighbours-rect.mzn", "data_file": "../data/mzn-challenge/2024/neighbours/neightbours-new-2.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2025-12-08T16:16:47.365728", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "ac1", "wac1_threshold": "0", "subfactor": "300"}}
+srun: Step created for StepId=4614185.57
+cpu-bind=MASK - iris-197, task  0  0 [1854228]: mask 0xffffffff0000000000000000 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 185, "flatIntVars": 9, "flatBoolConstraints": 149, "flatIntConstraints": 131, "evaluatedReifiedConstraints": 165, "method": "maximize", "flatTime": 0.0603422}}
+{"type": "status", "status": "ERROR", "time": 516}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+srun: error: iris-197: task 0: Exited with exit code 1

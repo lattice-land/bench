@@ -1,0 +1,8 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_ac1_aircraft_B737NG-600-04-Anon.json_1cores_0threads_timeout1200000ms_subfactor300", "problem": "aircraft-disassembly", "model": "../data/mzn-challenge/2024/aircraft-disassembly/aircraft.mzn", "data_file": "../data/mzn-challenge/2024/aircraft-disassembly/B737NG-600-04-Anon.json.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2025-12-08T16:14:07.428005", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "ac1", "wac1_threshold": "0", "subfactor": "300"}}
+srun: Step created for StepId=4614185.46
+cpu-bind=MASK - iris-197, task  0  0 [1852490]: mask 0xffffffff set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 320328, "flatIntVars": 106465, "flatBoolConstraints": 135484, "flatIntConstraints": 334227, "evaluatedReifiedConstraints": 213893, "method": "minimize", "flatTime": 19.065}}
+{"type": "status", "status": "ERROR", "time": 67300}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+srun: error: iris-197: task 0: Exited with exit code 1
