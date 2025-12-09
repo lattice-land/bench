@@ -1,8 +1,0 @@
-{"type": "lattice-land", "lattice-land": "start"}
-{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_ac1_ctw_R193_1cores_0threads_timeout1200000ms_subfactor300", "problem": "cable-tree-wiring", "model": "../data/mzn-challenge/2024/cable-tree-wiring/ctw.mzn", "data_file": "../data/mzn-challenge/2024/cable-tree-wiring/R193.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2025-12-08T16:13:36.854765", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "ac1", "wac1_threshold": "0", "subfactor": "300"}}
-srun: Step created for StepId=4614185.32
-cpu-bind=MASK - iris-197, task  0  0 [1850572]: mask 0xffffffff0000000000000000 set
-{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 21507, "flatIntVars": 11441, "flatBoolConstraints": 10685, "flatIntConstraints": 33977, "evaluatedReifiedConstraints": 10899, "method": "minimize", "flatTime": 0.536323}}
-{"type": "status", "status": "ERROR", "time": 3507}
-{"type": "statistics", "statistics": {"nSolutions": 0}}
-srun: error: iris-197: task 0: Exited with exit code 1

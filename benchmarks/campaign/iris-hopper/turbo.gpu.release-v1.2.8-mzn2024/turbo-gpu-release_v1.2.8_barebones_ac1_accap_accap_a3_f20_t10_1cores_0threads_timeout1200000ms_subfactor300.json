@@ -1,8 +1,0 @@
-{"type": "lattice-land", "lattice-land": "start"}
-{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_ac1_accap_accap_a3_f20_t10_1cores_0threads_timeout1200000ms_subfactor300", "problem": "accap", "model": "../data/mzn-challenge/2024/accap/accap.mzn", "data_file": "../data/mzn-challenge/2024/accap/accap_a3_f20_t10.json", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2025-12-08T16:12:41.333325", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "ac1", "wac1_threshold": "0", "subfactor": "300"}}
-srun: Step created for StepId=4614185.23
-cpu-bind=MASK - iris-197, task  0  0 [1849393]: mask 0xffffffff set
-{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 320, "flatIntVars": 25, "flatBoolConstraints": 160, "flatIntConstraints": 459, "evaluatedReifiedConstraints": 320, "method": "minimize", "flatTime": 0.066578}}
-{"type": "status", "status": "ERROR", "time": 519}
-{"type": "statistics", "statistics": {"nSolutions": 0}}
-srun: error: iris-197: task 0: Exited with exit code 1

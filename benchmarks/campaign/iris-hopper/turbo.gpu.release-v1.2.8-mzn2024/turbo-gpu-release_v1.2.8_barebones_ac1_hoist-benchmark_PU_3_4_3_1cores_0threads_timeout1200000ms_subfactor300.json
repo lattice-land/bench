@@ -1,9 +1,0 @@
-{"type": "lattice-land", "lattice-land": "start"}
-{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_ac1_hoist-benchmark_PU_3_4_3_1cores_0threads_timeout1200000ms_subfactor300", "problem": "hoist-benchmark", "model": "../data/mzn-challenge/2024/hoist-benchmark/hoist-benchmark.mzn", "data_file": "../data/mzn-challenge/2024/hoist-benchmark/PU_3_4_3.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2025-12-08T16:14:02.676848", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "ac1", "wac1_threshold": "0", "subfactor": "300"}}
-srun: Step created for StepId=4614185.42
-cpu-bind=MASK - iris-197, task  0  0 [1851899]: mask 0xffffffff0000000000000000 set
-{"type": "warning", "location": {"filename": "/mnt/aiongpfs/users/ptalbot/lattice-land/bench/benchmarks/data/mzn-challenge/2024/hoist-benchmark/hoist-benchmark.mzn", "firstLine": 102, "firstColumn": 50, "lastLine": 102, "lastColumn": 53}, "message": "variable `k` shadows variable with the same name in line 102.66"}
-{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 4030, "flatIntVars": 146, "flatBoolConstraints": 1998, "flatIntConstraints": 3546, "evaluatedReifiedConstraints": 3364, "method": "minimize", "flatTime": 0.205407}}
-{"type": "status", "status": "ERROR", "time": 1006}
-{"type": "statistics", "statistics": {"nSolutions": 0}}
-srun: error: iris-197: task 0: Exited with exit code 1

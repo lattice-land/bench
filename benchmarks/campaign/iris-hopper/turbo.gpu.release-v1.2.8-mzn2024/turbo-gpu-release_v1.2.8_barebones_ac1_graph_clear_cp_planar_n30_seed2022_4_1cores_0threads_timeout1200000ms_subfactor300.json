@@ -1,8 +1,0 @@
-{"type": "lattice-land", "lattice-land": "start"}
-{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_ac1_graph_clear_cp_planar_n30_seed2022_4_1cores_0threads_timeout1200000ms_subfactor300", "problem": "graph-clear", "model": "../data/mzn-challenge/2024/graph-clear/graph_clear_cp.mzn", "data_file": "../data/mzn-challenge/2024/graph-clear/planar_n30_seed2022_4.json", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2025-12-08T16:17:44.683173", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "ac1", "wac1_threshold": "0", "subfactor": "300"}}
-srun: Step created for StepId=4614185.75
-cpu-bind=MASK - iris-197, task  0  0 [1856533]: mask 0xffffffff0000000000000000 set
-{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 13708, "flatIntVars": 3989, "flatBoolConstraints": 4980, "flatIntConstraints": 14232, "evaluatedReifiedConstraints": 10108, "eliminatedImplications": 240, "method": "minimize", "flatTime": 0.622714}}
-{"type": "status", "status": "ERROR", "time": 2936}
-{"type": "statistics", "statistics": {"nSolutions": 0}}
-srun: error: iris-197: task 0: Exited with exit code 1
