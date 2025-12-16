@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --time=01:10:00
+#SBATCH --time=10:00:00
 #SBATCH -p plgrid-gpu-gh200
 #SBATCH -A plgturbo-gpu-gh200
 #SBATCH --gres=gpu:4
@@ -45,10 +45,10 @@ REAL_TIMEOUT=1200000
 ARCH="barebones"
 CORES=1 # The number of core used on the node.
 THREADS=0 # The number of core used on the node.
-FP="wac1"
+FP="ac1"
 WAC1_THRESHOLD=0
 MACHINE=$(basename "$1" ".sh")
-INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024_patch.csv"
+INSTANCES_PATH="$BENCHMARKS_DIR_PATH/benchmarking/mzn2024.csv"
 SUBFACTOR=300
 EXTRA_ARGS_TURBO=" "
 
