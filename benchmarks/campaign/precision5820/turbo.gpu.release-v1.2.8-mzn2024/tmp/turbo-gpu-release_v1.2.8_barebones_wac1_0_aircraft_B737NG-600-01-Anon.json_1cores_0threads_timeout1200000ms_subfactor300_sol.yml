@@ -1,0 +1,443 @@
+- abstract_domain: pir_itv32_z
+  arch: barebones
+  command_line: /home/ptalbot/repositories/lattice-land/turbo/build/gpu-release/turbo
+    -t 1200000 -n 1 -s -arch barebones -or 0 -sub -1 -subfactor 300 -stack 0 -fp wac1
+    -wac1_threshold 0 -seed 0 -eps_var_order default -eps_value_order default -version
+    v1.2.8 -hardware 'precision5820' -cutnodes 0 /tmp/mznfilekBcKMy.fzn
+  configuration: 
+    turbo-gpu-release_v1.2.8_barebones_wac1_0_aircraft_B737NG-600-01-Anon.json_1cores_0threads_timeout1200000ms_subfactor300
+  constraints_after_simplification: 136487
+  cores: '1'
+  data_file: ../data/mzn-challenge/2024/aircraft-disassembly/B737NG-600-01-Anon.json.dzn
+  datetime: '2025-11-15T12:22:06.519815'
+  eliminated_constraints_by_as: 0
+  eliminated_constraints_by_as_fp_iter_1: 0
+  eliminated_constraints_by_icse: 214935
+  eliminated_constraints_by_icse_fp_iter_1: 214935
+  eliminated_entailed_constraints: 0
+  eliminated_entailed_constraints_fp_iter_1: 0
+  eliminated_equality_constraints: 145569
+  eliminated_equality_constraints_fp_iter_1: 145569
+  eliminated_variables: 361673
+  entailed_prop_removal: deactivated
+  evaluatedReifiedConstraints: 62024
+  fixpoint: wac1
+  flatBoolConstraints: 33778
+  flatBoolVars: 93549
+  flatIntConstraints: 107357
+  flatIntVars: 31510
+  flatTime: 6.44562
+  heap_memory: 1589338424
+  icse_fixpoint_iterations: 3
+  icse_fixpoint_iterations_fp_iter_1: 2
+  mem_per_block: 12357096
+  memory_configuration: global
+  method: minimize
+  model: ../data/mzn-challenge/2024/aircraft-disassembly/aircraft.mzn
+  mzn_solver: turbo.gpu.release
+  num_blocks: 128
+  parsed_constraints: 287651
+  parsed_variables: 240062
+  paths: 0
+  preprocessing_fixpoint_iterations: 2
+  preprocessing_time: 13.63
+  problem: aircraft-disassembly
+  propagator_mem: 2183920
+  shared_mem: 0
+  solution:
+    assign:
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, true, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false]
+    - [false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false]
+    contrib:
+    - - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, true]
+      - [false, false, true]
+      - [false, true, true]
+      - [true, false, true]
+    - - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, true]
+      - [false, false, true]
+      - [false, true, true]
+      - [true, false, true]
+    - - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, true]
+      - [false, false, true]
+      - [false, true, true]
+      - [true, false, true]
+    - - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, true]
+      - [false, false, true]
+      - [false, true, true]
+      - [true, false, true]
+    - - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [true, false, true]
+      - [true, false, true]
+      - [false, true, true]
+      - [false, true, true]
+    - - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, false, true]
+      - [true, false, true]
+      - [false, true, true]
+      - [false, true, true]
+    - - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, false, true]
+      - [false, false, true]
+      - [false, true, true]
+      - [true, true, true]
+    - - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, false, true]
+      - [false, false, true]
+      - [true, true, true]
+      - [false, true, true]
+    - - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, false, true]
+      - [false, false, true]
+      - [false, true, true]
+      - [true, true, true]
+    - - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, false, true]
+      - [false, false, true]
+      - [false, true, true]
+      - [true, true, true]
+    - - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, false, true]
+      - [false, false, true]
+      - [false, true, true]
+      - [true, true, true]
+    - - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, false, true]
+      - [true, false, true]
+      - [false, true, true]
+      - [false, true, true]
+    - - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [true, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, false, true]
+      - [false, false, true]
+      - [false, true, true]
+      - [false, true, true]
+    - - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [true, false, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, false, true]
+      - [false, false, true]
+      - [false, true, true]
+      - [false, true, true]
+    - - [true, true, true]
+      - [true, true, true]
+      - [true, true, true]
+      - [true, true, true]
+      - [true, true, true]
+      - [true, true, true]
+      - [true, true, true]
+      - [true, true, true]
+      - [true, true, true]
+      - [true, true, true]
+      - [true, true, true]
+      - [true, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [true, true, true]
+      - [true, true, true]
+      - [false, true, true]
+      - [false, true, true]
+    - - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [false, false, false]
+      - [true, false, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, true, false]
+      - [false, false, true]
+      - [false, false, true]
+      - [false, true, true]
+      - [false, true, true]
+    objective: 5448750
+    overlap: [false, false, false, false, false, false, false, false, false, true,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, true, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, true, false, true, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, true, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true]
+    start: [0, 32, 36, 44, 44, 45, 46, 46, 48, 50, 51, 49, 47, 51, 52, 53]
+  status: SATISFIED
+  store_mem: 1089024
+  subfactor: '300'
+  subproblems_power: -1
+  threads: '0'
+  time: 1207.371
+  timeout_ms: '1200000'
+  tnf_constraints: 496991
+  tnf_variables: 497732
+  total_global_mem_bytes: 25259999232
+  variables_after_simplification: 136119
+  version: v1.2.8
+  wac1_threshold: '0'

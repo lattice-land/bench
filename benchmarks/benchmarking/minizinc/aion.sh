@@ -5,4 +5,4 @@
 
 module load compiler/GCCcore/13.2.0
 module load lang/Python/3.11.5-GCCcore-13.2.0
-module load lang/Java/21.0.2 # for Choco
+# module load lang/Java/21.0.2 # for Choco
