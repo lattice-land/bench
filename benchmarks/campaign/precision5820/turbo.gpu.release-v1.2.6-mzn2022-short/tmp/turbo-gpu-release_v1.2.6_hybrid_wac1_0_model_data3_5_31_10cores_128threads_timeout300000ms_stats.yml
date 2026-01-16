@@ -1,0 +1,20 @@
+{abstract_domain: pir_itv32_z, arch: hybrid, command_line: /home/ptalbot/repositories/lattice-land/turbo/build/gpu-release/turbo
+-t 300000 -n 1 -s -arch hybrid -or 128 -sub 15 -stack 0 -disable_simplify -fp wac1
+-wac1_threshold 0 -version v1.2.6 -hardware 'precision5820' -cutnodes 0 /tmp/mznfilecdeoz7.fzn,
+configuration: turbo-gpu-release_v1.2.6_hybrid_wac1_0_model_data3_5_31_10cores_128threads_timeout300000ms,
+cores: '10', cuda_version: 12080, cutnodes: 0, data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn,
+datetime: '2025-04-14T18:59:33.697540', dive_time: 0.107, entailed_prop_removal: by_indexes_scan,
+eps_num_subproblems: 32768, eps_skipped_subproblems: 0, eps_solved_subproblems: 0,
+evaluatedReifiedConstraints: 7764, failures: 3352747, fixpoint: wac1, fixpoint_iterations: 79983647,
+fixpoint_time: 217.493, flatBoolVars: 7764, flatIntConstraints: 17514, flatIntVars: 7982,
+flatTime: 0.378945, free_search: no, hardware: precision5820, heap_memory: 22655847629,
+initTime: 115.544, memory_configuration: global, method: maximize, model: ../data/mzn-challenge/2022/team-assignment/model.mzn,
+mzn_solver: turbo.gpu.release, nSolutions: 1, nodes: 6721027, num_blocks: 128, num_blocks_done: 0,
+num_deductions: 2833144473248, num_solutions: 71, objective: 7255, or_nodes: 128,
+parsed_constraints: 25684, parsed_variables: 15932, paths: 0, peakDepth: 144, preprocessing_time: 0.895,
+problem: team-assignment, problem_path: /tmp/mznfilecdeoz7.fzn, propagator_mem: 591204,
+propagators: 36942, search_time: 5.471, select_fp_functions_time: 7.202, shared_mem: 0,
+solveTime: 300.05, solve_time: 298.598, solver: Turbo, stack_memory: 98304000, stack_size: 0,
+status: SATISFIED, store_mem: 283620, threads: '128', threads_per_block: 256, timeout_ms: 300000,
+tnf_constraints: 36942, tnf_variables: 35445, transfer_cpu2gpu_time: 12.056, transfer_gpu2cpu_time: 2.062,
+variables: 35445, version: v1.2.6, wac1_threshold: 0, wait_cpu_time: 26.824}

@@ -1,0 +1,49 @@
+- abstract_domain: pir_itv32_z
+  arch: hybrid
+  command_line: /home/ptalbot/repositories/lattice-land/turbo/build/gpu-release/turbo
+    -t 300000 -n 1 -s -arch hybrid -or 128 -sub 15 -stack 0 -disable_simplify -fp
+    wac1 -wac1_threshold 0 -version v1.2.6 -hardware 'precision5820' -cutnodes 0 /tmp/mznfilecdeoz7.fzn
+  configuration: 
+    turbo-gpu-release_v1.2.6_hybrid_wac1_0_model_data3_5_31_10cores_128threads_timeout300000ms
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/team-assignment/data3_5_31.dzn
+  datetime: '2025-04-14T18:59:33.697540'
+  entailed_prop_removal: by_indexes_scan
+  evaluatedReifiedConstraints: 7764
+  fixpoint: wac1
+  flatBoolVars: 7764
+  flatIntConstraints: 17514
+  flatIntVars: 7982
+  flatTime: 0.378945
+  heap_memory: 22655847629
+  memory_configuration: global
+  method: maximize
+  model: ../data/mzn-challenge/2022/team-assignment/model.mzn
+  mzn_solver: turbo.gpu.release
+  parsed_constraints: 25684
+  parsed_variables: 15932
+  paths: 0
+  preprocessing_time: 0.895
+  problem: team-assignment
+  propagator_mem: 591204
+  shared_mem: 0
+  solution:
+    Team: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12,
+      15, 11, 13, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+      31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+      22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+      13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
+      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 23, 21, 22,
+      31, 30, 24, 26, 27, 28, 25, 19, 29]
+    objective: 7255
+  stack_memory: 98304000
+  status: SATISFIED
+  store_mem: 283620
+  threads: '128'
+  time: 300.557
+  timeout_ms: '300000'
+  tnf_constraints: 36942
+  tnf_variables: 35445
+  version: v1.2.6
+  wac1_threshold: '0'

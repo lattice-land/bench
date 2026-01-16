@@ -1,0 +1,131 @@
+- abstract_domain: pir_itv32_z
+  arch: hybrid
+  command_line: /home/ptalbot/repositories/lattice-land/turbo/build/gpu-release/turbo
+    -t 300000 -n 1 -s -arch hybrid -or 128 -sub 15 -stack 0 -fp wac1 -wac1_threshold
+    0 -version v1.2.7 -hardware 'precision5820' -cutnodes 0 /tmp/mznfileCwA5Mt.fzn
+  configuration: 
+    turbo-gpu-release_v1.2.7_hybrid_wac1_0_peaceable_queens_n8_q3_10cores_128threads_timeout300000ms
+  constraints_after_simplification: 16922
+  cores: '10'
+  data_file: ../data/mzn-challenge/2022/generalized-peacable-queens/n8_q3.json
+  datetime: '2025-04-15T09:54:39.472738'
+  eliminated_constraints_by_as: 6
+  eliminated_constraints_by_as_fp_iter_1: 6
+  eliminated_constraints_by_icse: 2256
+  eliminated_constraints_by_icse_fp_iter_1: 2256
+  eliminated_entailed_constraints: 3172
+  eliminated_entailed_constraints_fp_iter_1: 3172
+  eliminated_equality_constraints: 2037
+  eliminated_equality_constraints_fp_iter_1: 2037
+  eliminated_variables: 7248
+  entailed_prop_removal: by_indexes_scan
+  evaluatedReifiedConstraints: 1384
+  fixpoint: wac1
+  flatBoolConstraints: 1679
+  flatBoolVars: 1788
+  flatIntConstraints: 1783
+  flatIntVars: 826
+  flatTime: 0.268465
+  heap_memory: 22655847629
+  icse_fixpoint_iterations: 3
+  icse_fixpoint_iterations_fp_iter_1: 2
+  memory_configuration: global
+  method: maximize
+  model: ../data/mzn-challenge/2022/generalized-peacable-queens/peaceable_queens.mzn
+  mzn_solver: turbo.gpu.release
+  parsed_constraints: 8273
+  parsed_variables: 2940
+  paths: 0
+  preprocessing_fixpoint_iterations: 2
+  preprocessing_time: 0.602
+  problem: generalized-peacable-queens
+  propagator_mem: 270884
+  shared_mem: 0
+  solution:
+    counts: [3, 3, 3]
+    objective: 3
+    x:
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 1}
+      - c: Q
+        e: {c: Army, e: 1}
+      - c: Q
+        e: {c: Army, e: 1}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 2}
+      - {e: EMPTY}
+    - - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - c: Q
+        e: {c: Army, e: 2}
+      - c: Q
+        e: {c: Army, e: 2}
+    - - c: Q
+        e: {c: Army, e: 3}
+      - c: Q
+        e: {c: Army, e: 3}
+      - c: Q
+        e: {c: Army, e: 3}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+      - {e: EMPTY}
+  stack_memory: 98304000
+  status: SATISFIED
+  store_mem: 103868
+  threads: '128'
+  time: 300.423
+  timeout_ms: '300000'
+  tnf_constraints: 24393
+  tnf_variables: 20186
+  variables_after_simplification: 12976
+  version: v1.2.7
+  wac1_threshold: '0'
