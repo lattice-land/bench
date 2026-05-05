@@ -1,0 +1,10 @@
+{"type": "lattice-land", "lattice-land": "start"}
+{"type": "statistics", "statistics": {"configuration": "turbo-gpu-release_v1.2.8_barebones_wac1_0_yumi-dynamic_p_5_GSS_SG_yumi_grid_setup_3_4_zones_1cores_0threads_timeout1200000ms_subfactor300", "problem": "yumi-dynamic", "model": "../data/mzn-challenge/2024/yumi-dynamic/yumi-dynamic.mzn", "data_file": "../data/mzn-challenge/2024/yumi-dynamic/p_5_GSS_SG_yumi_grid_setup_3_4_zones.dzn", "mzn_solver": "turbo.gpu.release", "version": "v1.2.8", "timeout_ms": "1200000", "datetime": "2026-03-24T22:44:04.897294", "status": "UNKNOWN", "cores": "1", "threads": "0", "arch": "barebones", "fixpoint": "wac1", "wac1_threshold": "0", "subfactor": "300"}}
+cpu_bind=THREADS - mel2054, task  0  0 [8340]: mask 0x2 set
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 228623, "flatIntVars": 251898, "flatBoolConstraints": 79500, "flatIntConstraints": 407776, "evaluatedReifiedConstraints": 152434, "method": "minimize", "flatTime": 17.337}}
+% WARNING: Annotation add_to_output is unknown and was ignored.
+% WARNING: Annotation domain is unknown and was ignored.
+{"type": "status", "status": "UNKNOWN"}
+terminate called after throwing an instance of 'MiniZinc::MultipleErrors<MiniZinc::SyntaxError>'
+  what():  multiple errors
+srun: error: mel2054: task 0: Aborted
